@@ -28,9 +28,13 @@ clone_or_update Amphion https://github.com/open-mmlab/Amphion.git
 clone_or_update DiffSinger https://github.com/MoonInTheRiver/DiffSinger.git
 clone_or_update RVC-WebUI https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI.git
 clone_or_update GPT-SoVITS https://github.com/RVC-Boss/GPT-SoVITS.git
+clone_or_update ACE-Step https://github.com/ace-step/ACE-Step.git
 clone_or_update ACE-Step-1.5 https://github.com/ace-step/ACE-Step-1.5.git
+clone_or_update DiffRhythm https://github.com/ASLP-lab/DiffRhythm.git
+clone_or_update SongGen https://github.com/LiuZH-19/SongGen.git
 clone_or_update YuE https://github.com/multimodal-art-projection/YuE.git
+clone_or_update HeartMuLa https://github.com/HeartMuLa/heartlib.git
+clone_or_update MOSS-Music https://github.com/OpenMOSS/MOSS-Music.git
 
 echo "Research repositories are under $THIRD_PARTY."
 echo "Model weights are not downloaded automatically; check each license and setup guide first."
-

@@ -45,6 +45,10 @@ input song
 | [`scripts/download_open_songs.py`](scripts/download_open_songs.py) | Downloads free/open test songs. |
 | [`scripts/run_pipeline.py`](scripts/run_pipeline.py) | Runs separation, transcription, beats, chords, and report generation. |
 | [`scripts/install_research_repos.sh`](scripts/install_research_repos.sh) | Shallow-clones optional research repositories into `third_party/`. |
+| [`scripts/download_quality_backends.sh`](scripts/download_quality_backends.sh) | Downloads high-quality research backends and model weights into ignored local folders. |
+| [`scripts/install_quality_envs.sh`](scripts/install_quality_envs.sh) | Creates isolated repo-local conda/uv environments for large singing and music models. |
+| [`scripts/run_soulx_env.sh`](scripts/run_soulx_env.sh) | Runs SoulX-Singer with the cloned repo on `PYTHONPATH`. |
+| [`scripts/run_moss_music_env.sh`](scripts/run_moss_music_env.sh) | Runs MOSS-Music with the required FFmpeg, TorchCodec, and CUDA library paths. |
 | [`scripts/musai_lyricfit_openai.py`](scripts/musai_lyricfit_openai.py) | Optional OpenAI-powered lyric adaptation helper. |
 | [`references/`](references/) | Architecture, deep research, and local setup notes. |
 | [`TODO.md`](TODO.md) | Build checklist and next engineering steps. |
@@ -83,6 +87,16 @@ Recorded result:
 - Lyrics status: `ok`
 
 See [`references/local-setup-and-test-report.md`](references/local-setup-and-test-report.md).
+
+## High-Quality Backends
+
+The local machine has staged heavier research backends for better vocal quality and music understanding:
+
+- Strict song localization: SoulX-Singer and YingMusic-Singer-Plus.
+- Full-song alternatives: ACE-Step 1.5, YuE, DiffRhythm, SongGen, HeartMuLa.
+- Music understanding and QA: MOSS-Music.
+
+See [`references/high-quality-vocal-backends.md`](references/high-quality-vocal-backends.md) and [`references/local-quality-backend-install-status.md`](references/local-quality-backend-install-status.md).
 
 ## Architecture Direction
 

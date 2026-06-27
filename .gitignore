@@ -8,8 +8,13 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
+.cache/
+.conda/
 
 .DS_Store
+
+downloads/pro-vocal-tools/*.exe
+downloads/pro-vocal-tools/*.pkg
 
 data/open_songs/
 data/runs/
@@ -25,4 +30,3 @@ third_party/
 *.mid
 *.mp4
 *.mov
-
