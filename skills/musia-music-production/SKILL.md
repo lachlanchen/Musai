@@ -39,6 +39,11 @@ English stress, Chinese tone comfort, Japanese mora flow, and emotional clarity.
 Revise lyrics before generation if the LLM flags awkward rhythm, weak rhyme,
 overlong lines, or unnatural CJK wording.
 
+Do not cram words into the song just to preserve every detail. Use musical
+space: 留白, held vowels, rests, repeated hooks, and breath-friendly pauses.
+Some lines should be sparse and some can be fuller; the goal is a proper fit
+to the melody and emotion, not the fewest words and not the most words.
+
 ## Fast Workflow
 
 Create a song package:
