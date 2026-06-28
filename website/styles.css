@@ -788,7 +788,9 @@ body.capture-mode {
 }
 
 body.capture-mode .page-shell {
-  padding-bottom: 18px;
+  width: 100%;
+  max-width: none;
+  padding: 18px 28px;
 }
 
 body.capture-mode .full-lyrics-section {
@@ -797,6 +799,17 @@ body.capture-mode .full-lyrics-section {
 
 body.capture-mode .hero-grid {
   min-height: calc(100vh - 96px);
+  grid-template-columns: minmax(0, 1.08fr) minmax(520px, .88fr);
+  gap: 20px;
+}
+
+body.capture-mode .player-card,
+body.capture-mode .lyrics-card {
+  padding: 18px;
+}
+
+body.capture-mode .stage-line {
+  max-width: min(980px, 94%);
 }
 
 @media (max-width: 980px) {
