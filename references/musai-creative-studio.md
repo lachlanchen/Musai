@@ -188,6 +188,13 @@ musai chat --mode worker "Create a project from this song idea and register arti
 musai artifacts <session-id>
 ```
 
+From the public npm registry:
+
+```bash
+npm install -g @lazyingart/musai
+musai doctor
+```
+
 The npm package is dependency-free; it delegates to the repo-local Python scripts using `conda run -n musai` unless `MUSAI_PYTHON` or `MUSAI_NO_CONDA=1` is set.
 
 ### Control Modes

@@ -35,3 +35,6 @@ references/private-musai-control-needs-2026-06-28.md
 *.mid
 *.mp4
 *.mov
+.npmrc
+npm-debug.log*
+*.tgz

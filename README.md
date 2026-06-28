@@ -107,6 +107,13 @@ musai doctor
 musai studio --tmux
 ```
 
+From npm:
+
+```bash
+npm install -g @lazyingart/musai
+musai doctor
+```
+
 Or without linking:
 
 ```bash
