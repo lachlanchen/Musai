@@ -1,0 +1,522 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "rain-day-full-song-trilingual",
+  "songId": "rain-day-full-song-trilingual",
+  "lyricSetId": "yue-vocal",
+  "language": {
+    "code": "zh-Hans",
+    "label": "Mandarin Chinese",
+    "nativeLabel": "中文",
+    "script": "Hans",
+    "pronunciation": "pinyin"
+  },
+  "lines": [
+    {
+      "id": "line-001",
+      "start": 1.17,
+      "end": 11.24,
+      "text": "雨声敲窗叫醒房间",
+      "singableText": "雨声敲窗叫醒房间",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "雨",
+          "start": 1.17,
+          "end": 2.429,
+          "pinyin": "yu3"
+        },
+        {
+          "text": "声",
+          "start": 2.429,
+          "end": 3.688,
+          "pinyin": "sheng1"
+        },
+        {
+          "text": "敲",
+          "start": 3.688,
+          "end": 4.946,
+          "pinyin": "qiao1"
+        },
+        {
+          "text": "窗",
+          "start": 4.946,
+          "end": 6.205,
+          "pinyin": "chuang1"
+        },
+        {
+          "text": "叫",
+          "start": 6.205,
+          "end": 7.464,
+          "pinyin": "jiao4"
+        },
+        {
+          "text": "醒",
+          "start": 7.464,
+          "end": 8.723,
+          "pinyin": "xing3"
+        },
+        {
+          "text": "房",
+          "start": 8.723,
+          "end": 9.981,
+          "pinyin": "fang2"
+        },
+        {
+          "text": "间",
+          "start": 9.981,
+          "end": 11.24,
+          "pinyin": "jian1"
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "start": 13.4,
+      "end": 19.34,
+      "text": "霓虹开花我独自走",
+      "singableText": "霓虹开花我独自走",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "霓",
+          "start": 13.4,
+          "end": 14.143,
+          "pinyin": "ni2"
+        },
+        {
+          "text": "虹",
+          "start": 14.143,
+          "end": 14.885,
+          "pinyin": "hong2"
+        },
+        {
+          "text": "开",
+          "start": 14.885,
+          "end": 15.628,
+          "pinyin": "kai1"
+        },
+        {
+          "text": "花",
+          "start": 15.628,
+          "end": 16.37,
+          "pinyin": "hua1"
+        },
+        {
+          "text": "我",
+          "start": 16.37,
+          "end": 17.113,
+          "pinyin": "wo3"
+        },
+        {
+          "text": "独",
+          "start": 17.113,
+          "end": 17.855,
+          "pinyin": "du2"
+        },
+        {
+          "text": "自",
+          "start": 17.855,
+          "end": 18.598,
+          "pinyin": "zi4"
+        },
+        {
+          "text": "走",
+          "start": 18.598,
+          "end": 19.34,
+          "pinyin": "zou3"
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "start": 22.1,
+      "end": 27.1,
+      "text": "每片倒影都寄来你的信",
+      "singableText": "每片倒影都寄来你的信",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "每",
+          "start": 22.1,
+          "end": 22.6,
+          "pinyin": "mei3"
+        },
+        {
+          "text": "片",
+          "start": 22.6,
+          "end": 23.1,
+          "pinyin": "pian4"
+        },
+        {
+          "text": "倒",
+          "start": 23.1,
+          "end": 23.6,
+          "pinyin": "dao4"
+        },
+        {
+          "text": "影",
+          "start": 23.6,
+          "end": 24.1,
+          "pinyin": "ying3"
+        },
+        {
+          "text": "都",
+          "start": 24.1,
+          "end": 24.6,
+          "pinyin": "dou1"
+        },
+        {
+          "text": "寄",
+          "start": 24.6,
+          "end": 25.1,
+          "pinyin": "ji4"
+        },
+        {
+          "text": "来",
+          "start": 25.1,
+          "end": 25.6,
+          "pinyin": "lai2"
+        },
+        {
+          "text": "你",
+          "start": 25.6,
+          "end": 26.1,
+          "pinyin": "ni3"
+        },
+        {
+          "text": "的",
+          "start": 26.1,
+          "end": 26.6,
+          "pinyin": "de5"
+        },
+        {
+          "text": "信",
+          "start": 26.6,
+          "end": 27.1,
+          "pinyin": "xin4"
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "start": 28.1,
+      "end": 40.28,
+      "text": "若夜太重就落在我掌心",
+      "singableText": "若夜太重就落在我掌心",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "若",
+          "start": 28.1,
+          "end": 29.318,
+          "pinyin": "ruo4"
+        },
+        {
+          "text": "夜",
+          "start": 29.318,
+          "end": 30.536,
+          "pinyin": "ye4"
+        },
+        {
+          "text": "太",
+          "start": 30.536,
+          "end": 31.754,
+          "pinyin": "tai4"
+        },
+        {
+          "text": "重",
+          "start": 31.754,
+          "end": 32.972,
+          "pinyin": "zhong4"
+        },
+        {
+          "text": "就",
+          "start": 32.972,
+          "end": 34.19,
+          "pinyin": "jiu4"
+        },
+        {
+          "text": "落",
+          "start": 34.19,
+          "end": 35.408,
+          "pinyin": "luo4"
+        },
+        {
+          "text": "在",
+          "start": 35.408,
+          "end": 36.626,
+          "pinyin": "zai4"
+        },
+        {
+          "text": "我",
+          "start": 36.626,
+          "end": 37.844,
+          "pinyin": "wo3"
+        },
+        {
+          "text": "掌",
+          "start": 37.844,
+          "end": 39.062,
+          "pinyin": "zhang3"
+        },
+        {
+          "text": "心",
+          "start": 39.062,
+          "end": 40.28,
+          "pinyin": "xin1"
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "start": 40.28,
+      "end": 44.74,
+      "text": "陪我站在银色雨里",
+      "singableText": "陪我站在银色雨里",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "陪",
+          "start": 40.28,
+          "end": 40.837,
+          "pinyin": "pei2"
+        },
+        {
+          "text": "我",
+          "start": 40.837,
+          "end": 41.395,
+          "pinyin": "wo3"
+        },
+        {
+          "text": "站",
+          "start": 41.395,
+          "end": 41.953,
+          "pinyin": "zhan4"
+        },
+        {
+          "text": "在",
+          "start": 41.953,
+          "end": 42.51,
+          "pinyin": "zai4"
+        },
+        {
+          "text": "银",
+          "start": 42.51,
+          "end": 43.068,
+          "pinyin": "yin2"
+        },
+        {
+          "text": "色",
+          "start": 43.068,
+          "end": 43.625,
+          "pinyin": "se4"
+        },
+        {
+          "text": "雨",
+          "start": 43.625,
+          "end": 44.183,
+          "pinyin": "yu3"
+        },
+        {
+          "text": "里",
+          "start": 44.183,
+          "end": 44.74,
+          "pinyin": "li3"
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "start": 44.74,
+      "end": 48.78,
+      "text": "碎光也能变成火焰",
+      "singableText": "碎光也能变成火焰",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "碎",
+          "start": 44.74,
+          "end": 45.245,
+          "pinyin": "sui4"
+        },
+        {
+          "text": "光",
+          "start": 45.245,
+          "end": 45.75,
+          "pinyin": "guang1"
+        },
+        {
+          "text": "也",
+          "start": 45.75,
+          "end": 46.255,
+          "pinyin": "ye3"
+        },
+        {
+          "text": "能",
+          "start": 46.255,
+          "end": 46.76,
+          "pinyin": "neng2"
+        },
+        {
+          "text": "变",
+          "start": 46.76,
+          "end": 47.265,
+          "pinyin": "bian4"
+        },
+        {
+          "text": "成",
+          "start": 47.265,
+          "end": 47.77,
+          "pinyin": "cheng2"
+        },
+        {
+          "text": "火",
+          "start": 47.77,
+          "end": 48.275,
+          "pinyin": "huo3"
+        },
+        {
+          "text": "焰",
+          "start": 48.275,
+          "end": 48.78,
+          "pinyin": "yan4"
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "start": 51.8,
+      "end": 55.95,
+      "text": "没有太阳也能找到路",
+      "singableText": "没有太阳也能找到路",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "没",
+          "start": 51.8,
+          "end": 52.261,
+          "pinyin": "mei2"
+        },
+        {
+          "text": "有",
+          "start": 52.261,
+          "end": 52.722,
+          "pinyin": "you3"
+        },
+        {
+          "text": "太",
+          "start": 52.722,
+          "end": 53.183,
+          "pinyin": "tai4"
+        },
+        {
+          "text": "阳",
+          "start": 53.183,
+          "end": 53.644,
+          "pinyin": "yang2"
+        },
+        {
+          "text": "也",
+          "start": 53.644,
+          "end": 54.106,
+          "pinyin": "ye3"
+        },
+        {
+          "text": "能",
+          "start": 54.106,
+          "end": 54.567,
+          "pinyin": "neng2"
+        },
+        {
+          "text": "找",
+          "start": 54.567,
+          "end": 55.028,
+          "pinyin": "zhao3"
+        },
+        {
+          "text": "到",
+          "start": 55.028,
+          "end": 55.489,
+          "pinyin": "dao4"
+        },
+        {
+          "text": "路",
+          "start": 55.489,
+          "end": 55.95,
+          "pinyin": "lu4"
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "start": 57.23,
+      "end": 63.33,
+      "text": "你的声音是雨天的归处",
+      "singableText": "你的声音是雨天的归处",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "你",
+          "start": 57.23,
+          "end": 57.84,
+          "pinyin": "ni3"
+        },
+        {
+          "text": "的",
+          "start": 57.84,
+          "end": 58.45,
+          "pinyin": "de5"
+        },
+        {
+          "text": "声",
+          "start": 58.45,
+          "end": 59.06,
+          "pinyin": "sheng1"
+        },
+        {
+          "text": "音",
+          "start": 59.06,
+          "end": 59.67,
+          "pinyin": "yin1"
+        },
+        {
+          "text": "是",
+          "start": 59.67,
+          "end": 60.28,
+          "pinyin": "shi4"
+        },
+        {
+          "text": "雨",
+          "start": 60.28,
+          "end": 60.89,
+          "pinyin": "yu3"
+        },
+        {
+          "text": "天",
+          "start": 60.89,
+          "end": 61.5,
+          "pinyin": "tian1"
+        },
+        {
+          "text": "的",
+          "start": 61.5,
+          "end": 62.11,
+          "pinyin": "de5"
+        },
+        {
+          "text": "归",
+          "start": 62.11,
+          "end": 62.72,
+          "pinyin": "gui1"
+        },
+        {
+          "text": "处",
+          "start": 62.72,
+          "end": 63.33,
+          "pinyin": "chu4"
+        }
+      ]
+    }
+  ]
+}

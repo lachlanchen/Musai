@@ -13,14 +13,15 @@
       "kind": "song",
       "title": "One Sky, Three Lights",
       "artist": "Musia",
-      "summary": "A 64-second mixed English, Mandarin-pinyin, and Japanese-romaji song with trilingual native-script lyrics, pinyin, furigana, chord timing, and translation-word highlighting.",
+      "summary": "A mixed-language song with a separate same-melody Cantonese vocal alternate, synced multilingual lyrics, and chord timing.",
       "manifest": "data/songs/one-sky-three-lights-mixed/manifest.json",
       "cover": "assets/covers/one-sky-three-lights-16x9.png",
       "languages": [
         "mul",
         "en",
         "zh-Hans",
-        "ja"
+        "ja",
+        "yue-Hant"
       ],
       "tags": [
         "music",
@@ -29,7 +30,9 @@
         "ACE-Step",
         "pinyin",
         "furigana",
-        "translation-highlight"
+        "translation-highlight",
+        "Cantonese",
+        "SoulX"
       ]
     },
     {
@@ -59,13 +62,14 @@
       "kind": "song",
       "title": "Small Under the Red Sky",
       "artist": "Musia",
-      "summary": "An 82-second cinematic Mars desert song with separate English, Mandarin, and Japanese renders, per-vocal trilingual lyrics, pinyin, furigana, and chord timing.",
+      "summary": "An 82-second cinematic Mars desert song with English, Mandarin, Japanese, and Cantonese vocal versions, per-vocal synced lyrics, pinyin, furigana, and chord timing.",
       "manifest": "data/songs/mars-red-sky-trilingual/manifest.json",
       "cover": "assets/covers/mars-red-sky-16x9.png",
       "languages": [
         "en",
         "zh-Hans",
-        "ja"
+        "ja",
+        "yue-Hant"
       ],
       "tags": [
         "music",
@@ -74,7 +78,9 @@
         "ACE-Step",
         "mars",
         "pinyin",
-        "furigana"
+        "furigana",
+        "Cantonese",
+        "SoulX"
       ]
     },
     {
@@ -82,20 +88,23 @@
       "kind": "song",
       "title": "Rain Day Full Song",
       "artist": "Musia",
-      "summary": "A 78-second generated song with separate English, Japanese, and Mandarin renders plus analysis-tuned lyric timing.",
+      "summary": "A full rain-day song with English, Mandarin, Japanese, and Cantonese vocal versions, plus per-vocal synced lyrics.",
       "manifest": "data/songs/rain-day-full-song-trilingual/manifest.json",
       "cover": "assets/covers/rain-day-full-song-16x9.png",
       "languages": [
         "en",
         "zh-Hans",
-        "ja"
+        "ja",
+        "yue-Hant"
       ],
       "tags": [
         "music",
         "full-song",
         "trilingual",
         "ACE-Step",
-        "rain"
+        "rain",
+        "Cantonese",
+        "SoulX"
       ]
     }
   ]

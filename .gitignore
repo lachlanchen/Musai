@@ -47,10 +47,13 @@ references/private-musia-control-needs-2026-06-28.md
 !website/assets/audio/mars-red-sky-en.mp3
 !website/assets/audio/mars-red-sky-zh.mp3
 !website/assets/audio/mars-red-sky-ja.mp3
+!website/assets/audio/mars-red-sky-yue-Hant.mp3
 !website/assets/audio/one-sky-three-lights-mixed.mp3
+!website/assets/audio/one-sky-three-lights-yue-Hant.mp3
 !website/assets/audio/take-care-of-yourself-en.mp3
 !website/assets/audio/take-care-of-yourself-zh-Hans.mp3
 !website/assets/audio/take-care-of-yourself-yue-Hant.mp3
+!website/assets/audio/rain-day-full-song-yue-Hant.mp3
 .npmrc
 npm-debug.log*
 *.tgz

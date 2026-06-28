@@ -1,0 +1,615 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "one-sky-three-lights-mixed",
+  "songId": "one-sky-three-lights-mixed",
+  "lyricSetId": "yue-vocal",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "lines": [
+    {
+      "id": "line-001",
+      "start": 13.17,
+      "end": 18.93,
+      "text": "In the hush before morning, I hear the city breathe",
+      "singableText": "In the hush before morning, I hear the city breathe",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "In",
+          "start": 13.17,
+          "end": 13.746
+        },
+        {
+          "text": "the",
+          "start": 13.746,
+          "end": 14.322
+        },
+        {
+          "text": "hush",
+          "start": 14.322,
+          "end": 14.898
+        },
+        {
+          "text": "before",
+          "start": 14.898,
+          "end": 15.474
+        },
+        {
+          "text": "morning",
+          "start": 15.474,
+          "end": 16.05
+        },
+        {
+          "text": "I",
+          "start": 16.05,
+          "end": 16.626
+        },
+        {
+          "text": "hear",
+          "start": 16.626,
+          "end": 17.202
+        },
+        {
+          "text": "the",
+          "start": 17.202,
+          "end": 17.778
+        },
+        {
+          "text": "city",
+          "start": 17.778,
+          "end": 18.354
+        },
+        {
+          "text": "breathe",
+          "start": 18.354,
+          "end": 18.93
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "start": 18.93,
+      "end": 23.99,
+      "text": "Under the stars, I laugh with you toward the sky",
+      "singableText": "Under the stars, I laugh with you toward the sky",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Under",
+          "start": 18.93,
+          "end": 19.436
+        },
+        {
+          "text": "the",
+          "start": 19.436,
+          "end": 19.942
+        },
+        {
+          "text": "stars",
+          "start": 19.942,
+          "end": 20.448
+        },
+        {
+          "text": "I",
+          "start": 20.448,
+          "end": 20.954
+        },
+        {
+          "text": "laugh",
+          "start": 20.954,
+          "end": 21.46
+        },
+        {
+          "text": "with",
+          "start": 21.46,
+          "end": 21.966
+        },
+        {
+          "text": "you",
+          "start": 21.966,
+          "end": 22.472
+        },
+        {
+          "text": "toward",
+          "start": 22.472,
+          "end": 22.978
+        },
+        {
+          "text": "the",
+          "start": 22.978,
+          "end": 23.484
+        },
+        {
+          "text": "sky",
+          "start": 23.484,
+          "end": 23.99
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "start": 23.99,
+      "end": 26.93,
+      "text": "The far wind says there is no need to fear",
+      "singableText": "The far wind says there is no need to fear",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 23.99,
+          "end": 24.284
+        },
+        {
+          "text": "far",
+          "start": 24.284,
+          "end": 24.578
+        },
+        {
+          "text": "wind",
+          "start": 24.578,
+          "end": 24.872
+        },
+        {
+          "text": "says",
+          "start": 24.872,
+          "end": 25.166
+        },
+        {
+          "text": "there",
+          "start": 25.166,
+          "end": 25.46
+        },
+        {
+          "text": "is",
+          "start": 25.46,
+          "end": 25.754
+        },
+        {
+          "text": "no",
+          "start": 25.754,
+          "end": 26.048
+        },
+        {
+          "text": "need",
+          "start": 26.048,
+          "end": 26.342
+        },
+        {
+          "text": "to",
+          "start": 26.342,
+          "end": 26.636
+        },
+        {
+          "text": "fear",
+          "start": 26.636,
+          "end": 26.93
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "start": 26.93,
+      "end": 29.47,
+      "text": "The light inside the heart will return",
+      "singableText": "The light inside the heart will return",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 26.93,
+          "end": 27.293
+        },
+        {
+          "text": "light",
+          "start": 27.293,
+          "end": 27.656
+        },
+        {
+          "text": "inside",
+          "start": 27.656,
+          "end": 28.019
+        },
+        {
+          "text": "the",
+          "start": 28.019,
+          "end": 28.381
+        },
+        {
+          "text": "heart",
+          "start": 28.381,
+          "end": 28.744
+        },
+        {
+          "text": "will",
+          "start": 28.744,
+          "end": 29.107
+        },
+        {
+          "text": "return",
+          "start": 29.107,
+          "end": 29.47
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "start": 30.19,
+      "end": 32.69,
+      "text": "Across the quiet sea",
+      "singableText": "Across the quiet sea",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Across",
+          "start": 30.19,
+          "end": 30.815
+        },
+        {
+          "text": "the",
+          "start": 30.815,
+          "end": 31.44
+        },
+        {
+          "text": "quiet",
+          "start": 31.44,
+          "end": 32.065
+        },
+        {
+          "text": "sea",
+          "start": 32.065,
+          "end": 32.69
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "start": 32.69,
+      "end": 34.93,
+      "text": "Three voices find a home",
+      "singableText": "Three voices find a home",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Three",
+          "start": 32.69,
+          "end": 33.138
+        },
+        {
+          "text": "voices",
+          "start": 33.138,
+          "end": 33.586
+        },
+        {
+          "text": "find",
+          "start": 33.586,
+          "end": 34.034
+        },
+        {
+          "text": "a",
+          "start": 34.034,
+          "end": 34.482
+        },
+        {
+          "text": "home",
+          "start": 34.482,
+          "end": 34.93
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "start": 34.93,
+      "end": 36.81,
+      "text": "We sing under one sky",
+      "singableText": "We sing under one sky",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "We",
+          "start": 34.93,
+          "end": 35.306
+        },
+        {
+          "text": "sing",
+          "start": 35.306,
+          "end": 35.682
+        },
+        {
+          "text": "under",
+          "start": 35.682,
+          "end": 36.058
+        },
+        {
+          "text": "one",
+          "start": 36.058,
+          "end": 36.434
+        },
+        {
+          "text": "sky",
+          "start": 36.434,
+          "end": 36.81
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "start": 36.81,
+      "end": 39.89,
+      "text": "One sky, one sky",
+      "singableText": "One sky, one sky",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "One",
+          "start": 36.81,
+          "end": 37.58
+        },
+        {
+          "text": "sky",
+          "start": 37.58,
+          "end": 38.35
+        },
+        {
+          "text": "one",
+          "start": 38.35,
+          "end": 39.12
+        },
+        {
+          "text": "sky",
+          "start": 39.12,
+          "end": 39.89
+        }
+      ]
+    },
+    {
+      "id": "line-009",
+      "start": 39.89,
+      "end": 43.27,
+      "text": "Let light open the dark night",
+      "singableText": "Let light open the dark night",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Let",
+          "start": 39.89,
+          "end": 40.453
+        },
+        {
+          "text": "light",
+          "start": 40.453,
+          "end": 41.017
+        },
+        {
+          "text": "open",
+          "start": 41.017,
+          "end": 41.58
+        },
+        {
+          "text": "the",
+          "start": 41.58,
+          "end": 42.143
+        },
+        {
+          "text": "dark",
+          "start": 42.143,
+          "end": 42.707
+        },
+        {
+          "text": "night",
+          "start": 42.707,
+          "end": 43.27
+        }
+      ]
+    },
+    {
+      "id": "line-010",
+      "start": 43.27,
+      "end": 46.31,
+      "text": "We rise, we rise",
+      "singableText": "We rise, we rise",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "We",
+          "start": 43.27,
+          "end": 44.03
+        },
+        {
+          "text": "rise",
+          "start": 44.03,
+          "end": 44.79
+        },
+        {
+          "text": "we",
+          "start": 44.79,
+          "end": 45.55
+        },
+        {
+          "text": "rise",
+          "start": 45.55,
+          "end": 46.31
+        }
+      ]
+    },
+    {
+      "id": "line-011",
+      "start": 46.31,
+      "end": 49.42,
+      "text": "With you, I will not lose the way",
+      "singableText": "With you, I will not lose the way",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "With",
+          "start": 46.31,
+          "end": 46.699
+        },
+        {
+          "text": "you",
+          "start": 46.699,
+          "end": 47.088
+        },
+        {
+          "text": "I",
+          "start": 47.088,
+          "end": 47.476
+        },
+        {
+          "text": "will",
+          "start": 47.476,
+          "end": 47.865
+        },
+        {
+          "text": "not",
+          "start": 47.865,
+          "end": 48.254
+        },
+        {
+          "text": "lose",
+          "start": 48.254,
+          "end": 48.642
+        },
+        {
+          "text": "the",
+          "start": 48.642,
+          "end": 49.031
+        },
+        {
+          "text": "way",
+          "start": 49.031,
+          "end": 49.42
+        }
+      ]
+    },
+    {
+      "id": "line-012",
+      "start": 49.42,
+      "end": 51.24,
+      "text": "The road is shining",
+      "singableText": "The road is shining",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 49.42,
+          "end": 49.875
+        },
+        {
+          "text": "road",
+          "start": 49.875,
+          "end": 50.33
+        },
+        {
+          "text": "is",
+          "start": 50.33,
+          "end": 50.785
+        },
+        {
+          "text": "shining",
+          "start": 50.785,
+          "end": 51.24
+        }
+      ]
+    },
+    {
+      "id": "line-013",
+      "start": 51.96,
+      "end": 54.48,
+      "text": "One sky, three lights",
+      "singableText": "One sky, three lights",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "One",
+          "start": 51.96,
+          "end": 52.59
+        },
+        {
+          "text": "sky",
+          "start": 52.59,
+          "end": 53.22
+        },
+        {
+          "text": "three",
+          "start": 53.22,
+          "end": 53.85
+        },
+        {
+          "text": "lights",
+          "start": 53.85,
+          "end": 54.48
+        }
+      ]
+    },
+    {
+      "id": "line-014",
+      "start": 54.48,
+      "end": 57.92,
+      "text": "One road, one sky",
+      "singableText": "One road, one sky",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "One",
+          "start": 54.48,
+          "end": 55.34
+        },
+        {
+          "text": "road",
+          "start": 55.34,
+          "end": 56.2
+        },
+        {
+          "text": "one",
+          "start": 56.2,
+          "end": 57.06
+        },
+        {
+          "text": "sky",
+          "start": 57.06,
+          "end": 57.92
+        }
+      ]
+    },
+    {
+      "id": "line-015",
+      "start": 58.5,
+      "end": 60.94,
+      "text": "Three lights, one dream alive",
+      "singableText": "Three lights, one dream alive",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Three",
+          "start": 58.5,
+          "end": 58.988
+        },
+        {
+          "text": "lights",
+          "start": 58.988,
+          "end": 59.476
+        },
+        {
+          "text": "one",
+          "start": 59.476,
+          "end": 59.964
+        },
+        {
+          "text": "dream",
+          "start": 59.964,
+          "end": 60.452
+        },
+        {
+          "text": "alive",
+          "start": 60.452,
+          "end": 60.94
+        }
+      ]
+    }
+  ]
+}

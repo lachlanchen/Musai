@@ -8,7 +8,8 @@
     "en": "Small Under the Red Sky",
     "zh": "红色天空下",
     "zh-Hans": "红色天空下",
-    "ja": "赤い空の下で"
+    "ja": "赤い空の下で",
+    "yue-Hant": "紅天下好渺小"
   },
   "artist": "Musia",
   "subtitle": "A trilingual Mars desert song about smallness, courage, and the vast universe",
@@ -690,6 +691,20 @@
             }
           ]
         }
+      },
+      {
+        "id": "mars-yue",
+        "label": "Cantonese vocal",
+        "roleLabel": "Vocal",
+        "role": "same-score-localized-vocal",
+        "languageCode": "yue-Hant",
+        "languageLabel": "廣東話",
+        "lyricSetId": "yue-vocal",
+        "sourceModel": "SoulX-Singer",
+        "qualityGate": "review-pass",
+        "src": "assets/audio/mars-red-sky-yue-Hant.mp3",
+        "mime": "audio/mpeg",
+        "guide": "English vocal guide"
       }
     ]
   },
@@ -928,6 +943,48 @@
           "path": "lyrics/ja-vocal/en.json"
         }
       ]
+    },
+    {
+      "id": "yue-vocal",
+      "label": "Cantonese vocal lyric set",
+      "languageCode": "yue-Hant",
+      "tracks": [
+        {
+          "code": "yue-Hant",
+          "label": "Cantonese",
+          "nativeLabel": "廣東話",
+          "script": "Hant",
+          "features": [
+            "active-timing",
+            "jyutping",
+            "word-highlight"
+          ],
+          "path": "lyrics/yue-vocal/yue-Hant.json"
+        },
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "translation",
+            "rough-highlight"
+          ],
+          "path": "lyrics/yue-vocal/en.json"
+        },
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "translation",
+            "pinyin",
+            "rough-highlight"
+          ],
+          "path": "lyrics/yue-vocal/zh-Hans.json"
+        }
+      ]
     }
   ],
   "timeline": {
@@ -1008,7 +1065,13 @@
   "provenance": {
     "researchBrief": "references/mars-desert-song-brief-2026-06-28.md",
     "generationModel": "ACE-Step 1.5 XL turbo local checkpoint",
-    "note": "Three vocal renders are independent full-song generations with shared prompt direction. Lyrics are intended singable text aligned to ASR-derived timing; generated vocals contain minor imperfections."
+    "note": "Three vocal renders are independent full-song generations with shared prompt direction. Lyrics are intended singable text aligned to ASR-derived timing; generated vocals contain minor imperfections.",
+    "cantoneseVocal": {
+      "backend": "SoulX-Singer",
+      "guide": "English vocal guide",
+      "targetLines": "data/creative_projects/cantonese-localizations-20260628/mars-red-sky/target_lines_yue-Hant.json",
+      "audio": "assets/audio/mars-red-sky-yue-Hant.mp3"
+    }
   },
   "artifacts": [
     {

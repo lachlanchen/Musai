@@ -1,0 +1,796 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "one-sky-three-lights-mixed",
+  "songId": "one-sky-three-lights-mixed",
+  "lyricSetId": "yue-vocal",
+  "language": {
+    "code": "zh-Hans",
+    "label": "Mandarin Chinese",
+    "nativeLabel": "中文",
+    "script": "Hans",
+    "pronunciation": "pinyin"
+  },
+  "lines": [
+    {
+      "id": "line-001",
+      "start": 13.17,
+      "end": 18.93,
+      "text": "清晨静到听见城市呼吸",
+      "singableText": "清晨静到听见城市呼吸",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "清",
+          "start": 13.17,
+          "end": 13.746,
+          "pinyin": "qing1"
+        },
+        {
+          "text": "晨",
+          "start": 13.746,
+          "end": 14.322,
+          "pinyin": "chen2"
+        },
+        {
+          "text": "静",
+          "start": 14.322,
+          "end": 14.898,
+          "pinyin": "jing4"
+        },
+        {
+          "text": "到",
+          "start": 14.898,
+          "end": 15.474,
+          "pinyin": "dao4"
+        },
+        {
+          "text": "听",
+          "start": 15.474,
+          "end": 16.05,
+          "pinyin": "ting1"
+        },
+        {
+          "text": "见",
+          "start": 16.05,
+          "end": 16.626,
+          "pinyin": "jian4"
+        },
+        {
+          "text": "城",
+          "start": 16.626,
+          "end": 17.202,
+          "pinyin": "cheng2"
+        },
+        {
+          "text": "市",
+          "start": 17.202,
+          "end": 17.778,
+          "pinyin": "shi4"
+        },
+        {
+          "text": "呼",
+          "start": 17.778,
+          "end": 18.354,
+          "pinyin": "hu1"
+        },
+        {
+          "text": "吸",
+          "start": 18.354,
+          "end": 18.93,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "start": 18.93,
+      "end": 23.99,
+      "text": "星空下和你笑向天空",
+      "singableText": "星空下和你笑向天空",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "星",
+          "start": 18.93,
+          "end": 19.492,
+          "pinyin": "xing1"
+        },
+        {
+          "text": "空",
+          "start": 19.492,
+          "end": 20.054,
+          "pinyin": "kong1"
+        },
+        {
+          "text": "下",
+          "start": 20.054,
+          "end": 20.617,
+          "pinyin": "xia4"
+        },
+        {
+          "text": "和",
+          "start": 20.617,
+          "end": 21.179,
+          "pinyin": "he2"
+        },
+        {
+          "text": "你",
+          "start": 21.179,
+          "end": 21.741,
+          "pinyin": "ni3"
+        },
+        {
+          "text": "笑",
+          "start": 21.741,
+          "end": 22.303,
+          "pinyin": "xiao4"
+        },
+        {
+          "text": "向",
+          "start": 22.303,
+          "end": 22.866,
+          "pinyin": "xiang4"
+        },
+        {
+          "text": "天",
+          "start": 22.866,
+          "end": 23.428,
+          "pinyin": "tian1"
+        },
+        {
+          "text": "空",
+          "start": 23.428,
+          "end": 23.99,
+          "pinyin": "kong1"
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "start": 23.99,
+      "end": 26.93,
+      "text": "远方的风说不用怕",
+      "singableText": "远方的风说不用怕",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "远",
+          "start": 23.99,
+          "end": 24.357,
+          "pinyin": "yuan3"
+        },
+        {
+          "text": "方",
+          "start": 24.357,
+          "end": 24.725,
+          "pinyin": "fang1"
+        },
+        {
+          "text": "的",
+          "start": 24.725,
+          "end": 25.092,
+          "pinyin": "de5"
+        },
+        {
+          "text": "风",
+          "start": 25.092,
+          "end": 25.46,
+          "pinyin": "feng1"
+        },
+        {
+          "text": "说",
+          "start": 25.46,
+          "end": 25.828,
+          "pinyin": "shuo1"
+        },
+        {
+          "text": "不",
+          "start": 25.828,
+          "end": 26.195,
+          "pinyin": "bu4"
+        },
+        {
+          "text": "用",
+          "start": 26.195,
+          "end": 26.562,
+          "pinyin": "yong4"
+        },
+        {
+          "text": "怕",
+          "start": 26.562,
+          "end": 26.93,
+          "pinyin": "pa4"
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "start": 26.93,
+      "end": 29.47,
+      "text": "心里的光会回来",
+      "singableText": "心里的光会回来",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 26.93,
+          "end": 27.293,
+          "pinyin": "xin1"
+        },
+        {
+          "text": "里",
+          "start": 27.293,
+          "end": 27.656,
+          "pinyin": "li3"
+        },
+        {
+          "text": "的",
+          "start": 27.656,
+          "end": 28.019,
+          "pinyin": "de5"
+        },
+        {
+          "text": "光",
+          "start": 28.019,
+          "end": 28.381,
+          "pinyin": "guang1"
+        },
+        {
+          "text": "会",
+          "start": 28.381,
+          "end": 28.744,
+          "pinyin": "hui4"
+        },
+        {
+          "text": "回",
+          "start": 28.744,
+          "end": 29.107,
+          "pinyin": "hui2"
+        },
+        {
+          "text": "来",
+          "start": 29.107,
+          "end": 29.47,
+          "pinyin": "lai2"
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "start": 30.19,
+      "end": 32.69,
+      "text": "飘过安静的海",
+      "singableText": "飘过安静的海",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "飘",
+          "start": 30.19,
+          "end": 30.607,
+          "pinyin": "piao1"
+        },
+        {
+          "text": "过",
+          "start": 30.607,
+          "end": 31.023,
+          "pinyin": "guo4"
+        },
+        {
+          "text": "安",
+          "start": 31.023,
+          "end": 31.44,
+          "pinyin": "an1"
+        },
+        {
+          "text": "静",
+          "start": 31.44,
+          "end": 31.857,
+          "pinyin": "jing4"
+        },
+        {
+          "text": "的",
+          "start": 31.857,
+          "end": 32.273,
+          "pinyin": "de5"
+        },
+        {
+          "text": "海",
+          "start": 32.273,
+          "end": 32.69,
+          "pinyin": "hai3"
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "start": 32.69,
+      "end": 34.93,
+      "text": "三把声音找到家",
+      "singableText": "三把声音找到家",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "三",
+          "start": 32.69,
+          "end": 33.01,
+          "pinyin": "san1"
+        },
+        {
+          "text": "把",
+          "start": 33.01,
+          "end": 33.33,
+          "pinyin": "ba3"
+        },
+        {
+          "text": "声",
+          "start": 33.33,
+          "end": 33.65,
+          "pinyin": "sheng1"
+        },
+        {
+          "text": "音",
+          "start": 33.65,
+          "end": 33.97,
+          "pinyin": "yin1"
+        },
+        {
+          "text": "找",
+          "start": 33.97,
+          "end": 34.29,
+          "pinyin": "zhao3"
+        },
+        {
+          "text": "到",
+          "start": 34.29,
+          "end": 34.61,
+          "pinyin": "dao4"
+        },
+        {
+          "text": "家",
+          "start": 34.61,
+          "end": 34.93,
+          "pinyin": "jia1"
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "start": 34.93,
+      "end": 36.81,
+      "text": "同一天空下歌唱",
+      "singableText": "同一天空下歌唱",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "同",
+          "start": 34.93,
+          "end": 35.199,
+          "pinyin": "tong2"
+        },
+        {
+          "text": "一",
+          "start": 35.199,
+          "end": 35.467,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "天",
+          "start": 35.467,
+          "end": 35.736,
+          "pinyin": "tian1"
+        },
+        {
+          "text": "空",
+          "start": 35.736,
+          "end": 36.004,
+          "pinyin": "kong1"
+        },
+        {
+          "text": "下",
+          "start": 36.004,
+          "end": 36.273,
+          "pinyin": "xia4"
+        },
+        {
+          "text": "歌",
+          "start": 36.273,
+          "end": 36.541,
+          "pinyin": "ge1"
+        },
+        {
+          "text": "唱",
+          "start": 36.541,
+          "end": 36.81,
+          "pinyin": "chang4"
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "start": 36.81,
+      "end": 39.89,
+      "text": "一片天，一片天",
+      "singableText": "一片天，一片天",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "一",
+          "start": 36.81,
+          "end": 37.323,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "片",
+          "start": 37.323,
+          "end": 37.837,
+          "pinyin": "pian4"
+        },
+        {
+          "text": "天",
+          "start": 37.837,
+          "end": 38.35,
+          "pinyin": "tian1"
+        },
+        {
+          "text": "一",
+          "start": 38.35,
+          "end": 38.863,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "片",
+          "start": 38.863,
+          "end": 39.377,
+          "pinyin": "pian4"
+        },
+        {
+          "text": "天",
+          "start": 39.377,
+          "end": 39.89,
+          "pinyin": "tian1"
+        }
+      ]
+    },
+    {
+      "id": "line-009",
+      "start": 39.89,
+      "end": 43.27,
+      "text": "让光打开黑夜",
+      "singableText": "让光打开黑夜",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "让",
+          "start": 39.89,
+          "end": 40.453,
+          "pinyin": "rang4"
+        },
+        {
+          "text": "光",
+          "start": 40.453,
+          "end": 41.017,
+          "pinyin": "guang1"
+        },
+        {
+          "text": "打",
+          "start": 41.017,
+          "end": 41.58,
+          "pinyin": "da3"
+        },
+        {
+          "text": "开",
+          "start": 41.58,
+          "end": 42.143,
+          "pinyin": "kai1"
+        },
+        {
+          "text": "黑",
+          "start": 42.143,
+          "end": 42.707,
+          "pinyin": "hei1"
+        },
+        {
+          "text": "夜",
+          "start": 42.707,
+          "end": 43.27,
+          "pinyin": "ye4"
+        }
+      ]
+    },
+    {
+      "id": "line-010",
+      "start": 43.27,
+      "end": 46.31,
+      "text": "我们升起，升起",
+      "singableText": "我们升起，升起",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "我",
+          "start": 43.27,
+          "end": 43.777,
+          "pinyin": "wo3"
+        },
+        {
+          "text": "们",
+          "start": 43.777,
+          "end": 44.283,
+          "pinyin": "men5"
+        },
+        {
+          "text": "升",
+          "start": 44.283,
+          "end": 44.79,
+          "pinyin": "sheng1"
+        },
+        {
+          "text": "起",
+          "start": 44.79,
+          "end": 45.297,
+          "pinyin": "qi3"
+        },
+        {
+          "text": "升",
+          "start": 45.297,
+          "end": 45.803,
+          "pinyin": "sheng1"
+        },
+        {
+          "text": "起",
+          "start": 45.803,
+          "end": 46.31,
+          "pinyin": "qi3"
+        }
+      ]
+    },
+    {
+      "id": "line-011",
+      "start": 46.31,
+      "end": 49.42,
+      "text": "和你一起就不会迷路",
+      "singableText": "和你一起就不会迷路",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "和",
+          "start": 46.31,
+          "end": 46.656,
+          "pinyin": "he2"
+        },
+        {
+          "text": "你",
+          "start": 46.656,
+          "end": 47.001,
+          "pinyin": "ni3"
+        },
+        {
+          "text": "一",
+          "start": 47.001,
+          "end": 47.347,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "起",
+          "start": 47.347,
+          "end": 47.692,
+          "pinyin": "qi3"
+        },
+        {
+          "text": "就",
+          "start": 47.692,
+          "end": 48.038,
+          "pinyin": "jiu4"
+        },
+        {
+          "text": "不",
+          "start": 48.038,
+          "end": 48.383,
+          "pinyin": "bu4"
+        },
+        {
+          "text": "会",
+          "start": 48.383,
+          "end": 48.729,
+          "pinyin": "hui4"
+        },
+        {
+          "text": "迷",
+          "start": 48.729,
+          "end": 49.074,
+          "pinyin": "mi2"
+        },
+        {
+          "text": "路",
+          "start": 49.074,
+          "end": 49.42,
+          "pinyin": "lu4"
+        }
+      ]
+    },
+    {
+      "id": "line-012",
+      "start": 49.42,
+      "end": 51.24,
+      "text": "道路发光",
+      "singableText": "道路发光",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "道",
+          "start": 49.42,
+          "end": 49.875,
+          "pinyin": "dao4"
+        },
+        {
+          "text": "路",
+          "start": 49.875,
+          "end": 50.33,
+          "pinyin": "lu4"
+        },
+        {
+          "text": "发",
+          "start": 50.33,
+          "end": 50.785,
+          "pinyin": "fa1"
+        },
+        {
+          "text": "光",
+          "start": 50.785,
+          "end": 51.24,
+          "pinyin": "guang1"
+        }
+      ]
+    },
+    {
+      "id": "line-013",
+      "start": 51.96,
+      "end": 54.48,
+      "text": "一片天，三盏灯",
+      "singableText": "一片天，三盏灯",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "一",
+          "start": 51.96,
+          "end": 52.38,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "片",
+          "start": 52.38,
+          "end": 52.8,
+          "pinyin": "pian4"
+        },
+        {
+          "text": "天",
+          "start": 52.8,
+          "end": 53.22,
+          "pinyin": "tian1"
+        },
+        {
+          "text": "三",
+          "start": 53.22,
+          "end": 53.64,
+          "pinyin": "san1"
+        },
+        {
+          "text": "盏",
+          "start": 53.64,
+          "end": 54.06,
+          "pinyin": "zhan3"
+        },
+        {
+          "text": "灯",
+          "start": 54.06,
+          "end": 54.48,
+          "pinyin": "deng1"
+        }
+      ]
+    },
+    {
+      "id": "line-014",
+      "start": 54.48,
+      "end": 57.92,
+      "text": "一条路，一片天",
+      "singableText": "一条路，一片天",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "一",
+          "start": 54.48,
+          "end": 55.053,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "条",
+          "start": 55.053,
+          "end": 55.627,
+          "pinyin": "tiao2"
+        },
+        {
+          "text": "路",
+          "start": 55.627,
+          "end": 56.2,
+          "pinyin": "lu4"
+        },
+        {
+          "text": "一",
+          "start": 56.2,
+          "end": 56.773,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "片",
+          "start": 56.773,
+          "end": 57.347,
+          "pinyin": "pian4"
+        },
+        {
+          "text": "天",
+          "start": 57.347,
+          "end": 57.92,
+          "pinyin": "tian1"
+        }
+      ]
+    },
+    {
+      "id": "line-015",
+      "start": 58.5,
+      "end": 60.94,
+      "text": "三盏灯，一个梦醒来",
+      "singableText": "三盏灯，一个梦醒来",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "三",
+          "start": 58.5,
+          "end": 58.805,
+          "pinyin": "san1"
+        },
+        {
+          "text": "盏",
+          "start": 58.805,
+          "end": 59.11,
+          "pinyin": "zhan3"
+        },
+        {
+          "text": "灯",
+          "start": 59.11,
+          "end": 59.415,
+          "pinyin": "deng1"
+        },
+        {
+          "text": "一",
+          "start": 59.415,
+          "end": 59.72,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "个",
+          "start": 59.72,
+          "end": 60.025,
+          "pinyin": "ge4"
+        },
+        {
+          "text": "梦",
+          "start": 60.025,
+          "end": 60.33,
+          "pinyin": "meng4"
+        },
+        {
+          "text": "醒",
+          "start": 60.33,
+          "end": 60.635,
+          "pinyin": "xing3"
+        },
+        {
+          "text": "来",
+          "start": 60.635,
+          "end": 60.94,
+          "pinyin": "lai2"
+        }
+      ]
+    }
+  ]
+}

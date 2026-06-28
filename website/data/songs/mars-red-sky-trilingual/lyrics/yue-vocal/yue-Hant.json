@@ -1,0 +1,792 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "mars-red-sky-trilingual",
+  "songId": "mars-red-sky-trilingual",
+  "lyricSetId": "yue-vocal",
+  "language": {
+    "code": "yue-Hant",
+    "label": "Cantonese",
+    "nativeLabel": "廣東話",
+    "script": "Hant",
+    "pronunciation": "jyutping"
+  },
+  "lines": [
+    {
+      "id": "line-001",
+      "start": 13.1,
+      "end": 16.06,
+      "text": "紅沙蓋住我腳印",
+      "singableText": "紅沙蓋住我腳印",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "紅",
+          "start": 13.1,
+          "end": 13.523,
+          "reading": "hung4"
+        },
+        {
+          "text": "沙",
+          "start": 13.523,
+          "end": 13.946,
+          "reading": "saa1"
+        },
+        {
+          "text": "蓋",
+          "start": 13.946,
+          "end": 14.369,
+          "reading": "goi3"
+        },
+        {
+          "text": "住",
+          "start": 14.369,
+          "end": 14.791,
+          "reading": "zyu6"
+        },
+        {
+          "text": "我",
+          "start": 14.791,
+          "end": 15.214,
+          "reading": "ngo5"
+        },
+        {
+          "text": "腳",
+          "start": 15.214,
+          "end": 15.637,
+          "reading": "goek3"
+        },
+        {
+          "text": "印",
+          "start": 15.637,
+          "end": 16.06,
+          "reading": "jan3"
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "start": 16.06,
+      "end": 18.2,
+      "text": "藍日落入風塵",
+      "singableText": "藍日落入風塵",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "藍",
+          "start": 16.06,
+          "end": 16.417,
+          "reading": "laam4"
+        },
+        {
+          "text": "日",
+          "start": 16.417,
+          "end": 16.773,
+          "reading": "jat6"
+        },
+        {
+          "text": "落",
+          "start": 16.773,
+          "end": 17.13,
+          "reading": "lok6"
+        },
+        {
+          "text": "入",
+          "start": 17.13,
+          "end": 17.487,
+          "reading": "jap6"
+        },
+        {
+          "text": "風",
+          "start": 17.487,
+          "end": 17.843,
+          "reading": "fung1"
+        },
+        {
+          "text": "塵",
+          "start": 17.843,
+          "end": 18.2,
+          "reading": "can4"
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "start": 18.2,
+      "end": 20.52,
+      "text": "我似峽谷邊一口氣",
+      "singableText": "我似峽谷邊一口氣",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "我",
+          "start": 18.2,
+          "end": 18.49,
+          "reading": "ngo5"
+        },
+        {
+          "text": "似",
+          "start": 18.49,
+          "end": 18.78,
+          "reading": "ci5"
+        },
+        {
+          "text": "峽",
+          "start": 18.78,
+          "end": 19.07,
+          "reading": "hap6"
+        },
+        {
+          "text": "谷",
+          "start": 19.07,
+          "end": 19.36,
+          "reading": "guk1"
+        },
+        {
+          "text": "邊",
+          "start": 19.36,
+          "end": 19.65,
+          "reading": "bin1"
+        },
+        {
+          "text": "一",
+          "start": 19.65,
+          "end": 19.94,
+          "reading": "jat1"
+        },
+        {
+          "text": "口",
+          "start": 19.94,
+          "end": 20.23,
+          "reading": "hau2"
+        },
+        {
+          "text": "氣",
+          "start": 20.23,
+          "end": 20.52,
+          "reading": "hei3"
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "start": 20.52,
+      "end": 23.66,
+      "text": "仍然抬頭向前信",
+      "singableText": "仍然抬頭向前信",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "仍",
+          "start": 20.52,
+          "end": 20.969,
+          "reading": "jing4"
+        },
+        {
+          "text": "然",
+          "start": 20.969,
+          "end": 21.417,
+          "reading": "jin4"
+        },
+        {
+          "text": "抬",
+          "start": 21.417,
+          "end": 21.866,
+          "reading": "toi4"
+        },
+        {
+          "text": "頭",
+          "start": 21.866,
+          "end": 22.314,
+          "reading": "tau4"
+        },
+        {
+          "text": "向",
+          "start": 22.314,
+          "end": 22.763,
+          "reading": "hoeng3"
+        },
+        {
+          "text": "前",
+          "start": 22.763,
+          "end": 23.211,
+          "reading": "cin4"
+        },
+        {
+          "text": "信",
+          "start": 23.211,
+          "end": 23.66,
+          "reading": "seon3"
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "start": 23.66,
+      "end": 29.32,
+      "text": "星光無聲又凍又遠",
+      "singableText": "星光無聲又凍又遠",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "星",
+          "start": 23.66,
+          "end": 24.367,
+          "reading": "sing1"
+        },
+        {
+          "text": "光",
+          "start": 24.367,
+          "end": 25.075,
+          "reading": "gwong1"
+        },
+        {
+          "text": "無",
+          "start": 25.075,
+          "end": 25.782,
+          "reading": "mou4"
+        },
+        {
+          "text": "聲",
+          "start": 25.782,
+          "end": 26.49,
+          "reading": "sing1"
+        },
+        {
+          "text": "又",
+          "start": 26.49,
+          "end": 27.198,
+          "reading": "jau6"
+        },
+        {
+          "text": "凍",
+          "start": 27.198,
+          "end": 27.905,
+          "reading": "dung3"
+        },
+        {
+          "text": "又",
+          "start": 27.905,
+          "end": 28.613,
+          "reading": "jau6"
+        },
+        {
+          "text": "遠",
+          "start": 28.613,
+          "end": 29.32,
+          "reading": "jyun5"
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "start": 29.9,
+      "end": 35.48,
+      "text": "佢哋唔答卻留天空",
+      "singableText": "佢哋唔答卻留天空",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "佢",
+          "start": 29.9,
+          "end": 30.597,
+          "reading": "keoi5"
+        },
+        {
+          "text": "哋",
+          "start": 30.597,
+          "end": 31.295,
+          "reading": "dei6"
+        },
+        {
+          "text": "唔",
+          "start": 31.295,
+          "end": 31.992,
+          "reading": "m4"
+        },
+        {
+          "text": "答",
+          "start": 31.992,
+          "end": 32.69,
+          "reading": "daap3"
+        },
+        {
+          "text": "卻",
+          "start": 32.69,
+          "end": 33.387,
+          "reading": "koek3"
+        },
+        {
+          "text": "留",
+          "start": 33.387,
+          "end": 34.085,
+          "reading": "lau4"
+        },
+        {
+          "text": "天",
+          "start": 34.085,
+          "end": 34.782,
+          "reading": "tin1"
+        },
+        {
+          "text": "空",
+          "start": 34.782,
+          "end": 35.48,
+          "reading": "hung1"
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "start": 36.1,
+      "end": 40.22,
+      "text": "星光無聲又凍又遠",
+      "singableText": "星光無聲又凍又遠",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "星",
+          "start": 36.1,
+          "end": 36.615,
+          "reading": "sing1"
+        },
+        {
+          "text": "光",
+          "start": 36.615,
+          "end": 37.13,
+          "reading": "gwong1"
+        },
+        {
+          "text": "無",
+          "start": 37.13,
+          "end": 37.645,
+          "reading": "mou4"
+        },
+        {
+          "text": "聲",
+          "start": 37.645,
+          "end": 38.16,
+          "reading": "sing1"
+        },
+        {
+          "text": "又",
+          "start": 38.16,
+          "end": 38.675,
+          "reading": "jau6"
+        },
+        {
+          "text": "凍",
+          "start": 38.675,
+          "end": 39.19,
+          "reading": "dung3"
+        },
+        {
+          "text": "又",
+          "start": 39.19,
+          "end": 39.705,
+          "reading": "jau6"
+        },
+        {
+          "text": "遠",
+          "start": 39.705,
+          "end": 40.22,
+          "reading": "jyun5"
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "start": 42.65,
+      "end": 47.97,
+      "text": "佢哋唔答卻留天空",
+      "singableText": "佢哋唔答卻留天空",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "佢",
+          "start": 42.65,
+          "end": 43.315,
+          "reading": "keoi5"
+        },
+        {
+          "text": "哋",
+          "start": 43.315,
+          "end": 43.98,
+          "reading": "dei6"
+        },
+        {
+          "text": "唔",
+          "start": 43.98,
+          "end": 44.645,
+          "reading": "m4"
+        },
+        {
+          "text": "答",
+          "start": 44.645,
+          "end": 45.31,
+          "reading": "daap3"
+        },
+        {
+          "text": "卻",
+          "start": 45.31,
+          "end": 45.975,
+          "reading": "koek3"
+        },
+        {
+          "text": "留",
+          "start": 45.975,
+          "end": 46.64,
+          "reading": "lau4"
+        },
+        {
+          "text": "天",
+          "start": 46.64,
+          "end": 47.305,
+          "reading": "tin1"
+        },
+        {
+          "text": "空",
+          "start": 47.305,
+          "end": 47.97,
+          "reading": "hung1"
+        }
+      ]
+    },
+    {
+      "id": "line-009",
+      "start": 48.65,
+      "end": 51.55,
+      "text": "紅天下我好渺小",
+      "singableText": "紅天下我好渺小",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "紅",
+          "start": 48.65,
+          "end": 49.064,
+          "reading": "hung4"
+        },
+        {
+          "text": "天",
+          "start": 49.064,
+          "end": 49.479,
+          "reading": "tin1"
+        },
+        {
+          "text": "下",
+          "start": 49.479,
+          "end": 49.893,
+          "reading": "haa6"
+        },
+        {
+          "text": "我",
+          "start": 49.893,
+          "end": 50.307,
+          "reading": "ngo5"
+        },
+        {
+          "text": "好",
+          "start": 50.307,
+          "end": 50.721,
+          "reading": "hou2"
+        },
+        {
+          "text": "渺",
+          "start": 50.721,
+          "end": 51.136,
+          "reading": "miu5"
+        },
+        {
+          "text": "小",
+          "start": 51.136,
+          "end": 51.55,
+          "reading": "siu2"
+        }
+      ]
+    },
+    {
+      "id": "line-010",
+      "start": 51.55,
+      "end": 54.81,
+      "text": "舉起心火續向前",
+      "singableText": "舉起心火續向前",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "舉",
+          "start": 51.55,
+          "end": 52.016,
+          "reading": "geoi2"
+        },
+        {
+          "text": "起",
+          "start": 52.016,
+          "end": 52.481,
+          "reading": "hei2"
+        },
+        {
+          "text": "心",
+          "start": 52.481,
+          "end": 52.947,
+          "reading": "sam1"
+        },
+        {
+          "text": "火",
+          "start": 52.947,
+          "end": 53.413,
+          "reading": "fo2"
+        },
+        {
+          "text": "續",
+          "start": 53.413,
+          "end": 53.879,
+          "reading": "zuk6"
+        },
+        {
+          "text": "向",
+          "start": 53.879,
+          "end": 54.344,
+          "reading": "hoeng3"
+        },
+        {
+          "text": "前",
+          "start": 54.344,
+          "end": 54.81,
+          "reading": "cin4"
+        }
+      ]
+    },
+    {
+      "id": "line-011",
+      "start": 54.81,
+      "end": 60.63,
+      "text": "黑暗再長一點火都成路",
+      "singableText": "黑暗再長一點火都成路",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "黑",
+          "start": 54.81,
+          "end": 55.392,
+          "reading": "hak1"
+        },
+        {
+          "text": "暗",
+          "start": 55.392,
+          "end": 55.974,
+          "reading": "am3"
+        },
+        {
+          "text": "再",
+          "start": 55.974,
+          "end": 56.556,
+          "reading": "zoi3"
+        },
+        {
+          "text": "長",
+          "start": 56.556,
+          "end": 57.138,
+          "reading": "zoeng6"
+        },
+        {
+          "text": "一",
+          "start": 57.138,
+          "end": 57.72,
+          "reading": "jat1"
+        },
+        {
+          "text": "點",
+          "start": 57.72,
+          "end": 58.302,
+          "reading": "dim2"
+        },
+        {
+          "text": "火",
+          "start": 58.302,
+          "end": 58.884,
+          "reading": "fo2"
+        },
+        {
+          "text": "都",
+          "start": 58.884,
+          "end": 59.466,
+          "reading": "dou1"
+        },
+        {
+          "text": "成",
+          "start": 59.466,
+          "end": 60.048,
+          "reading": "sing4"
+        },
+        {
+          "text": "路",
+          "start": 60.048,
+          "end": 60.63,
+          "reading": "lou6"
+        }
+      ]
+    },
+    {
+      "id": "line-012",
+      "start": 60.63,
+      "end": 63.81,
+      "text": "紅天下我好渺小",
+      "singableText": "紅天下我好渺小",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "紅",
+          "start": 60.63,
+          "end": 61.084,
+          "reading": "hung4"
+        },
+        {
+          "text": "天",
+          "start": 61.084,
+          "end": 61.539,
+          "reading": "tin1"
+        },
+        {
+          "text": "下",
+          "start": 61.539,
+          "end": 61.993,
+          "reading": "haa6"
+        },
+        {
+          "text": "我",
+          "start": 61.993,
+          "end": 62.447,
+          "reading": "ngo5"
+        },
+        {
+          "text": "好",
+          "start": 62.447,
+          "end": 62.901,
+          "reading": "hou2"
+        },
+        {
+          "text": "渺",
+          "start": 62.901,
+          "end": 63.356,
+          "reading": "miu5"
+        },
+        {
+          "text": "小",
+          "start": 63.356,
+          "end": 63.81,
+          "reading": "siu2"
+        }
+      ]
+    },
+    {
+      "id": "line-013",
+      "start": 63.81,
+      "end": 67.05,
+      "text": "聽見明日叫我走",
+      "singableText": "聽見明日叫我走",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "聽",
+          "start": 63.81,
+          "end": 64.273,
+          "reading": "ting3"
+        },
+        {
+          "text": "見",
+          "start": 64.273,
+          "end": 64.736,
+          "reading": "gin3"
+        },
+        {
+          "text": "明",
+          "start": 64.736,
+          "end": 65.199,
+          "reading": "ming4"
+        },
+        {
+          "text": "日",
+          "start": 65.199,
+          "end": 65.661,
+          "reading": "jat6"
+        },
+        {
+          "text": "叫",
+          "start": 65.661,
+          "end": 66.124,
+          "reading": "giu3"
+        },
+        {
+          "text": "我",
+          "start": 66.124,
+          "end": 66.587,
+          "reading": "ngo5"
+        },
+        {
+          "text": "走",
+          "start": 66.587,
+          "end": 67.05,
+          "reading": "zau2"
+        }
+      ]
+    },
+    {
+      "id": "line-014",
+      "start": 67.49,
+      "end": 72.73,
+      "text": "宇宙越廣勇氣越高",
+      "singableText": "宇宙越廣勇氣越高",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "宇",
+          "start": 67.49,
+          "end": 68.145,
+          "reading": "jyu5"
+        },
+        {
+          "text": "宙",
+          "start": 68.145,
+          "end": 68.8,
+          "reading": "zau6"
+        },
+        {
+          "text": "越",
+          "start": 68.8,
+          "end": 69.455,
+          "reading": "jyut6"
+        },
+        {
+          "text": "廣",
+          "start": 69.455,
+          "end": 70.11,
+          "reading": "gwong2"
+        },
+        {
+          "text": "勇",
+          "start": 70.11,
+          "end": 70.765,
+          "reading": "jung5"
+        },
+        {
+          "text": "氣",
+          "start": 70.765,
+          "end": 71.42,
+          "reading": "hei3"
+        },
+        {
+          "text": "越",
+          "start": 71.42,
+          "end": 72.075,
+          "reading": "jyut6"
+        },
+        {
+          "text": "高",
+          "start": 72.075,
+          "end": 72.73,
+          "reading": "gou1"
+        }
+      ]
+    }
+  ]
+}

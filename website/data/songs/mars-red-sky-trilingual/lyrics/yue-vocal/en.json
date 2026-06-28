@@ -1,0 +1,660 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "mars-red-sky-trilingual",
+  "songId": "mars-red-sky-trilingual",
+  "lyricSetId": "yue-vocal",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "lines": [
+    {
+      "id": "line-001",
+      "start": 13.1,
+      "end": 16.06,
+      "text": "Red sand covers my footprints",
+      "singableText": "Red sand covers my footprints",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Red",
+          "start": 13.1,
+          "end": 13.692
+        },
+        {
+          "text": "sand",
+          "start": 13.692,
+          "end": 14.284
+        },
+        {
+          "text": "covers",
+          "start": 14.284,
+          "end": 14.876
+        },
+        {
+          "text": "my",
+          "start": 14.876,
+          "end": 15.468
+        },
+        {
+          "text": "footprints",
+          "start": 15.468,
+          "end": 16.06
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "start": 16.06,
+      "end": 18.2,
+      "text": "A blue sun sinks into dust",
+      "singableText": "A blue sun sinks into dust",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "A",
+          "start": 16.06,
+          "end": 16.417
+        },
+        {
+          "text": "blue",
+          "start": 16.417,
+          "end": 16.773
+        },
+        {
+          "text": "sun",
+          "start": 16.773,
+          "end": 17.13
+        },
+        {
+          "text": "sinks",
+          "start": 17.13,
+          "end": 17.487
+        },
+        {
+          "text": "into",
+          "start": 17.487,
+          "end": 17.843
+        },
+        {
+          "text": "dust",
+          "start": 17.843,
+          "end": 18.2
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "start": 18.2,
+      "end": 20.52,
+      "text": "I am one breath beside the canyon",
+      "singableText": "I am one breath beside the canyon",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 18.2,
+          "end": 18.531
+        },
+        {
+          "text": "am",
+          "start": 18.531,
+          "end": 18.863
+        },
+        {
+          "text": "one",
+          "start": 18.863,
+          "end": 19.194
+        },
+        {
+          "text": "breath",
+          "start": 19.194,
+          "end": 19.526
+        },
+        {
+          "text": "beside",
+          "start": 19.526,
+          "end": 19.857
+        },
+        {
+          "text": "the",
+          "start": 19.857,
+          "end": 20.189
+        },
+        {
+          "text": "canyon",
+          "start": 20.189,
+          "end": 20.52
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "start": 20.52,
+      "end": 23.66,
+      "text": "Still I lift my head and believe forward",
+      "singableText": "Still I lift my head and believe forward",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Still",
+          "start": 20.52,
+          "end": 20.913
+        },
+        {
+          "text": "I",
+          "start": 20.913,
+          "end": 21.305
+        },
+        {
+          "text": "lift",
+          "start": 21.305,
+          "end": 21.697
+        },
+        {
+          "text": "my",
+          "start": 21.697,
+          "end": 22.09
+        },
+        {
+          "text": "head",
+          "start": 22.09,
+          "end": 22.483
+        },
+        {
+          "text": "and",
+          "start": 22.483,
+          "end": 22.875
+        },
+        {
+          "text": "believe",
+          "start": 22.875,
+          "end": 23.267
+        },
+        {
+          "text": "forward",
+          "start": 23.267,
+          "end": 23.66
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "start": 23.66,
+      "end": 29.32,
+      "text": "Starlight is silent, cold, and far",
+      "singableText": "Starlight is silent, cold, and far",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Starlight",
+          "start": 23.66,
+          "end": 24.603
+        },
+        {
+          "text": "is",
+          "start": 24.603,
+          "end": 25.547
+        },
+        {
+          "text": "silent",
+          "start": 25.547,
+          "end": 26.49
+        },
+        {
+          "text": "cold",
+          "start": 26.49,
+          "end": 27.433
+        },
+        {
+          "text": "and",
+          "start": 27.433,
+          "end": 28.377
+        },
+        {
+          "text": "far",
+          "start": 28.377,
+          "end": 29.32
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "start": 29.9,
+      "end": 35.48,
+      "text": "They do not answer, but leave me sky",
+      "singableText": "They do not answer, but leave me sky",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "They",
+          "start": 29.9,
+          "end": 30.597
+        },
+        {
+          "text": "do",
+          "start": 30.597,
+          "end": 31.295
+        },
+        {
+          "text": "not",
+          "start": 31.295,
+          "end": 31.992
+        },
+        {
+          "text": "answer",
+          "start": 31.992,
+          "end": 32.69
+        },
+        {
+          "text": "but",
+          "start": 32.69,
+          "end": 33.387
+        },
+        {
+          "text": "leave",
+          "start": 33.387,
+          "end": 34.085
+        },
+        {
+          "text": "me",
+          "start": 34.085,
+          "end": 34.782
+        },
+        {
+          "text": "sky",
+          "start": 34.782,
+          "end": 35.48
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "start": 36.1,
+      "end": 40.22,
+      "text": "Starlight is silent, cold, and far",
+      "singableText": "Starlight is silent, cold, and far",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Starlight",
+          "start": 36.1,
+          "end": 36.787
+        },
+        {
+          "text": "is",
+          "start": 36.787,
+          "end": 37.473
+        },
+        {
+          "text": "silent",
+          "start": 37.473,
+          "end": 38.16
+        },
+        {
+          "text": "cold",
+          "start": 38.16,
+          "end": 38.847
+        },
+        {
+          "text": "and",
+          "start": 38.847,
+          "end": 39.533
+        },
+        {
+          "text": "far",
+          "start": 39.533,
+          "end": 40.22
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "start": 42.65,
+      "end": 47.97,
+      "text": "They do not answer, but leave me sky",
+      "singableText": "They do not answer, but leave me sky",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "They",
+          "start": 42.65,
+          "end": 43.315
+        },
+        {
+          "text": "do",
+          "start": 43.315,
+          "end": 43.98
+        },
+        {
+          "text": "not",
+          "start": 43.98,
+          "end": 44.645
+        },
+        {
+          "text": "answer",
+          "start": 44.645,
+          "end": 45.31
+        },
+        {
+          "text": "but",
+          "start": 45.31,
+          "end": 45.975
+        },
+        {
+          "text": "leave",
+          "start": 45.975,
+          "end": 46.64
+        },
+        {
+          "text": "me",
+          "start": 46.64,
+          "end": 47.305
+        },
+        {
+          "text": "sky",
+          "start": 47.305,
+          "end": 47.97
+        }
+      ]
+    },
+    {
+      "id": "line-009",
+      "start": 48.65,
+      "end": 51.55,
+      "text": "Under the red sky I am so small",
+      "singableText": "Under the red sky I am so small",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Under",
+          "start": 48.65,
+          "end": 49.012
+        },
+        {
+          "text": "the",
+          "start": 49.012,
+          "end": 49.375
+        },
+        {
+          "text": "red",
+          "start": 49.375,
+          "end": 49.737
+        },
+        {
+          "text": "sky",
+          "start": 49.737,
+          "end": 50.1
+        },
+        {
+          "text": "I",
+          "start": 50.1,
+          "end": 50.462
+        },
+        {
+          "text": "am",
+          "start": 50.462,
+          "end": 50.825
+        },
+        {
+          "text": "so",
+          "start": 50.825,
+          "end": 51.188
+        },
+        {
+          "text": "small",
+          "start": 51.188,
+          "end": 51.55
+        }
+      ]
+    },
+    {
+      "id": "line-010",
+      "start": 51.55,
+      "end": 54.81,
+      "text": "I raise my heart-fire and keep moving",
+      "singableText": "I raise my heart-fire and keep moving",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 51.55,
+          "end": 51.957
+        },
+        {
+          "text": "raise",
+          "start": 51.957,
+          "end": 52.365
+        },
+        {
+          "text": "my",
+          "start": 52.365,
+          "end": 52.773
+        },
+        {
+          "text": "heart",
+          "start": 52.773,
+          "end": 53.18
+        },
+        {
+          "text": "fire",
+          "start": 53.18,
+          "end": 53.587
+        },
+        {
+          "text": "and",
+          "start": 53.587,
+          "end": 53.995
+        },
+        {
+          "text": "keep",
+          "start": 53.995,
+          "end": 54.403
+        },
+        {
+          "text": "moving",
+          "start": 54.403,
+          "end": 54.81
+        }
+      ]
+    },
+    {
+      "id": "line-011",
+      "start": 54.81,
+      "end": 60.63,
+      "text": "However long the dark, one spark becomes a road",
+      "singableText": "However long the dark, one spark becomes a road",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "However",
+          "start": 54.81,
+          "end": 55.457
+        },
+        {
+          "text": "long",
+          "start": 55.457,
+          "end": 56.103
+        },
+        {
+          "text": "the",
+          "start": 56.103,
+          "end": 56.75
+        },
+        {
+          "text": "dark",
+          "start": 56.75,
+          "end": 57.397
+        },
+        {
+          "text": "one",
+          "start": 57.397,
+          "end": 58.043
+        },
+        {
+          "text": "spark",
+          "start": 58.043,
+          "end": 58.69
+        },
+        {
+          "text": "becomes",
+          "start": 58.69,
+          "end": 59.337
+        },
+        {
+          "text": "a",
+          "start": 59.337,
+          "end": 59.983
+        },
+        {
+          "text": "road",
+          "start": 59.983,
+          "end": 60.63
+        }
+      ]
+    },
+    {
+      "id": "line-012",
+      "start": 60.63,
+      "end": 63.81,
+      "text": "Under the red sky I am so small",
+      "singableText": "Under the red sky I am so small",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Under",
+          "start": 60.63,
+          "end": 61.028
+        },
+        {
+          "text": "the",
+          "start": 61.028,
+          "end": 61.425
+        },
+        {
+          "text": "red",
+          "start": 61.425,
+          "end": 61.823
+        },
+        {
+          "text": "sky",
+          "start": 61.823,
+          "end": 62.22
+        },
+        {
+          "text": "I",
+          "start": 62.22,
+          "end": 62.617
+        },
+        {
+          "text": "am",
+          "start": 62.617,
+          "end": 63.015
+        },
+        {
+          "text": "so",
+          "start": 63.015,
+          "end": 63.413
+        },
+        {
+          "text": "small",
+          "start": 63.413,
+          "end": 63.81
+        }
+      ]
+    },
+    {
+      "id": "line-013",
+      "start": 63.81,
+      "end": 67.05,
+      "text": "I hear tomorrow calling me onward",
+      "singableText": "I hear tomorrow calling me onward",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 63.81,
+          "end": 64.35
+        },
+        {
+          "text": "hear",
+          "start": 64.35,
+          "end": 64.89
+        },
+        {
+          "text": "tomorrow",
+          "start": 64.89,
+          "end": 65.43
+        },
+        {
+          "text": "calling",
+          "start": 65.43,
+          "end": 65.97
+        },
+        {
+          "text": "me",
+          "start": 65.97,
+          "end": 66.51
+        },
+        {
+          "text": "onward",
+          "start": 66.51,
+          "end": 67.05
+        }
+      ]
+    },
+    {
+      "id": "line-014",
+      "start": 67.49,
+      "end": 72.73,
+      "text": "The wider the universe, the taller my courage",
+      "singableText": "The wider the universe, the taller my courage",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 67.49,
+          "end": 68.145
+        },
+        {
+          "text": "wider",
+          "start": 68.145,
+          "end": 68.8
+        },
+        {
+          "text": "the",
+          "start": 68.8,
+          "end": 69.455
+        },
+        {
+          "text": "universe",
+          "start": 69.455,
+          "end": 70.11
+        },
+        {
+          "text": "the",
+          "start": 70.11,
+          "end": 70.765
+        },
+        {
+          "text": "taller",
+          "start": 70.765,
+          "end": 71.42
+        },
+        {
+          "text": "my",
+          "start": 71.42,
+          "end": 72.075
+        },
+        {
+          "text": "courage",
+          "start": 72.075,
+          "end": 72.73
+        }
+      ]
+    }
+  ]
+}

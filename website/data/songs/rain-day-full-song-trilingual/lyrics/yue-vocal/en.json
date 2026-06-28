@@ -1,0 +1,400 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "rain-day-full-song-trilingual",
+  "songId": "rain-day-full-song-trilingual",
+  "lyricSetId": "yue-vocal",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "lines": [
+    {
+      "id": "line-001",
+      "start": 1.17,
+      "end": 11.24,
+      "text": "Rain taps the window and wakes the room",
+      "singableText": "Rain taps the window and wakes the room",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Rain",
+          "start": 1.17,
+          "end": 2.429
+        },
+        {
+          "text": "taps",
+          "start": 2.429,
+          "end": 3.688
+        },
+        {
+          "text": "the",
+          "start": 3.688,
+          "end": 4.946
+        },
+        {
+          "text": "window",
+          "start": 4.946,
+          "end": 6.205
+        },
+        {
+          "text": "and",
+          "start": 6.205,
+          "end": 7.464
+        },
+        {
+          "text": "wakes",
+          "start": 7.464,
+          "end": 8.723
+        },
+        {
+          "text": "the",
+          "start": 8.723,
+          "end": 9.981
+        },
+        {
+          "text": "room",
+          "start": 9.981,
+          "end": 11.24
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "start": 13.4,
+      "end": 19.34,
+      "text": "Neon blooms while I walk alone",
+      "singableText": "Neon blooms while I walk alone",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Neon",
+          "start": 13.4,
+          "end": 14.39
+        },
+        {
+          "text": "blooms",
+          "start": 14.39,
+          "end": 15.38
+        },
+        {
+          "text": "while",
+          "start": 15.38,
+          "end": 16.37
+        },
+        {
+          "text": "I",
+          "start": 16.37,
+          "end": 17.36
+        },
+        {
+          "text": "walk",
+          "start": 17.36,
+          "end": 18.35
+        },
+        {
+          "text": "alone",
+          "start": 18.35,
+          "end": 19.34
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "start": 22.1,
+      "end": 27.1,
+      "text": "Every reflection sends me your letter",
+      "singableText": "Every reflection sends me your letter",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Every",
+          "start": 22.1,
+          "end": 22.933
+        },
+        {
+          "text": "reflection",
+          "start": 22.933,
+          "end": 23.767
+        },
+        {
+          "text": "sends",
+          "start": 23.767,
+          "end": 24.6
+        },
+        {
+          "text": "me",
+          "start": 24.6,
+          "end": 25.433
+        },
+        {
+          "text": "your",
+          "start": 25.433,
+          "end": 26.267
+        },
+        {
+          "text": "letter",
+          "start": 26.267,
+          "end": 27.1
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "start": 28.1,
+      "end": 40.28,
+      "text": "If tonight is too heavy, let it fall into my palm",
+      "singableText": "If tonight is too heavy, let it fall into my palm",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "If",
+          "start": 28.1,
+          "end": 29.207
+        },
+        {
+          "text": "tonight",
+          "start": 29.207,
+          "end": 30.315
+        },
+        {
+          "text": "is",
+          "start": 30.315,
+          "end": 31.422
+        },
+        {
+          "text": "too",
+          "start": 31.422,
+          "end": 32.529
+        },
+        {
+          "text": "heavy",
+          "start": 32.529,
+          "end": 33.636
+        },
+        {
+          "text": "let",
+          "start": 33.636,
+          "end": 34.744
+        },
+        {
+          "text": "it",
+          "start": 34.744,
+          "end": 35.851
+        },
+        {
+          "text": "fall",
+          "start": 35.851,
+          "end": 36.958
+        },
+        {
+          "text": "into",
+          "start": 36.958,
+          "end": 38.065
+        },
+        {
+          "text": "my",
+          "start": 38.065,
+          "end": 39.173
+        },
+        {
+          "text": "palm",
+          "start": 39.173,
+          "end": 40.28
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "start": 40.28,
+      "end": 44.74,
+      "text": "Stay with me inside the silver rain",
+      "singableText": "Stay with me inside the silver rain",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Stay",
+          "start": 40.28,
+          "end": 40.917
+        },
+        {
+          "text": "with",
+          "start": 40.917,
+          "end": 41.554
+        },
+        {
+          "text": "me",
+          "start": 41.554,
+          "end": 42.191
+        },
+        {
+          "text": "inside",
+          "start": 42.191,
+          "end": 42.829
+        },
+        {
+          "text": "the",
+          "start": 42.829,
+          "end": 43.466
+        },
+        {
+          "text": "silver",
+          "start": 43.466,
+          "end": 44.103
+        },
+        {
+          "text": "rain",
+          "start": 44.103,
+          "end": 44.74
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "start": 44.74,
+      "end": 48.78,
+      "text": "Broken light can still become flame",
+      "singableText": "Broken light can still become flame",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Broken",
+          "start": 44.74,
+          "end": 45.413
+        },
+        {
+          "text": "light",
+          "start": 45.413,
+          "end": 46.087
+        },
+        {
+          "text": "can",
+          "start": 46.087,
+          "end": 46.76
+        },
+        {
+          "text": "still",
+          "start": 46.76,
+          "end": 47.433
+        },
+        {
+          "text": "become",
+          "start": 47.433,
+          "end": 48.107
+        },
+        {
+          "text": "flame",
+          "start": 48.107,
+          "end": 48.78
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "start": 51.8,
+      "end": 55.95,
+      "text": "Even without the sun, we can find the road",
+      "singableText": "Even without the sun, we can find the road",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Even",
+          "start": 51.8,
+          "end": 52.261
+        },
+        {
+          "text": "without",
+          "start": 52.261,
+          "end": 52.722
+        },
+        {
+          "text": "the",
+          "start": 52.722,
+          "end": 53.183
+        },
+        {
+          "text": "sun",
+          "start": 53.183,
+          "end": 53.644
+        },
+        {
+          "text": "we",
+          "start": 53.644,
+          "end": 54.106
+        },
+        {
+          "text": "can",
+          "start": 54.106,
+          "end": 54.567
+        },
+        {
+          "text": "find",
+          "start": 54.567,
+          "end": 55.028
+        },
+        {
+          "text": "the",
+          "start": 55.028,
+          "end": 55.489
+        },
+        {
+          "text": "road",
+          "start": 55.489,
+          "end": 55.95
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "start": 57.23,
+      "end": 63.33,
+      "text": "Your voice is home on a rainy day",
+      "singableText": "Your voice is home on a rainy day",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Your",
+          "start": 57.23,
+          "end": 57.992
+        },
+        {
+          "text": "voice",
+          "start": 57.992,
+          "end": 58.755
+        },
+        {
+          "text": "is",
+          "start": 58.755,
+          "end": 59.517
+        },
+        {
+          "text": "home",
+          "start": 59.517,
+          "end": 60.28
+        },
+        {
+          "text": "on",
+          "start": 60.28,
+          "end": 61.042
+        },
+        {
+          "text": "a",
+          "start": 61.042,
+          "end": 61.805
+        },
+        {
+          "text": "rainy",
+          "start": 61.805,
+          "end": 62.567
+        },
+        {
+          "text": "day",
+          "start": 62.567,
+          "end": 63.33
+        }
+      ]
+    }
+  ]
+}

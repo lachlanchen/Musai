@@ -4,6 +4,7 @@ const state = {
   manifestUrl: "",
   defaultTracks: [],
   lyricSets: [],
+  activeLyricSetId: "",
   tracks: [],
   trackByCode: new Map(),
   selectedLyricLangs: new Set(),
@@ -362,11 +363,14 @@ function activeLyricSetForAsset(asset = activePlayableAsset()) {
 function applyActiveLyricSet({ resetSelection = false } = {}) {
   const set = activeLyricSetForAsset();
   const tracks = set?.tracks?.length ? set.tracks : state.defaultTracks;
+  const lyricSetId = set?.id || "__default__";
+  const changedLyricSet = lyricSetId !== state.activeLyricSetId;
+  state.activeLyricSetId = lyricSetId;
   state.tracks = tracks;
   state.trackByCode = new Map(state.tracks.map((track) => [track.language.code, track]));
 
   const available = new Set(state.tracks.map((track) => track.language.code));
-  if (resetSelection || !state.selectedLyricLangs.size) {
+  if (resetSelection || changedLyricSet || !state.selectedLyricLangs.size) {
     state.selectedLyricLangs = new Set(available);
     return;
   }
@@ -859,6 +863,7 @@ async function loadMediaItem(item, updateHash = false) {
   })));
   state.tracks = [];
   state.trackByCode = new Map();
+  state.activeLyricSetId = "";
   state.selectedLyricLangs = new Set();
 
   const musical = state.manifest.musical || {};

@@ -1,0 +1,742 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "one-sky-three-lights-mixed",
+  "songId": "one-sky-three-lights-mixed",
+  "lyricSetId": "yue-vocal",
+  "language": {
+    "code": "yue-Hant",
+    "label": "Cantonese",
+    "nativeLabel": "廣東話",
+    "script": "Hant",
+    "pronunciation": "jyutping"
+  },
+  "lines": [
+    {
+      "id": "line-001",
+      "start": 13.17,
+      "end": 18.93,
+      "text": "清晨靜到聽見城呼吸",
+      "singableText": "清晨靜到聽見城呼吸",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "清",
+          "start": 13.17,
+          "end": 13.81,
+          "reading": "cing1"
+        },
+        {
+          "text": "晨",
+          "start": 13.81,
+          "end": 14.45,
+          "reading": "san4"
+        },
+        {
+          "text": "靜",
+          "start": 14.45,
+          "end": 15.09,
+          "reading": "zing6"
+        },
+        {
+          "text": "到",
+          "start": 15.09,
+          "end": 15.73,
+          "reading": "dou3"
+        },
+        {
+          "text": "聽",
+          "start": 15.73,
+          "end": 16.37,
+          "reading": "ting3"
+        },
+        {
+          "text": "見",
+          "start": 16.37,
+          "end": 17.01,
+          "reading": "gin3"
+        },
+        {
+          "text": "城",
+          "start": 17.01,
+          "end": 17.65,
+          "reading": "sing4"
+        },
+        {
+          "text": "呼",
+          "start": 17.65,
+          "end": 18.29,
+          "reading": "fu1"
+        },
+        {
+          "text": "吸",
+          "start": 18.29,
+          "end": 18.93,
+          "reading": "kap1"
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "start": 18.93,
+      "end": 23.99,
+      "text": "星下面同你笑向天空",
+      "singableText": "星下面同你笑向天空",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "星",
+          "start": 18.93,
+          "end": 19.492,
+          "reading": "sing1"
+        },
+        {
+          "text": "下",
+          "start": 19.492,
+          "end": 20.054,
+          "reading": "haa6"
+        },
+        {
+          "text": "面",
+          "start": 20.054,
+          "end": 20.617,
+          "reading": "min6"
+        },
+        {
+          "text": "同",
+          "start": 20.617,
+          "end": 21.179,
+          "reading": "tung4"
+        },
+        {
+          "text": "你",
+          "start": 21.179,
+          "end": 21.741,
+          "reading": "nei5"
+        },
+        {
+          "text": "笑",
+          "start": 21.741,
+          "end": 22.303,
+          "reading": "siu3"
+        },
+        {
+          "text": "向",
+          "start": 22.303,
+          "end": 22.866,
+          "reading": "hoeng3"
+        },
+        {
+          "text": "天",
+          "start": 22.866,
+          "end": 23.428,
+          "reading": "tin1"
+        },
+        {
+          "text": "空",
+          "start": 23.428,
+          "end": 23.99,
+          "reading": "hung1"
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "start": 23.99,
+      "end": 26.93,
+      "text": "遠方風話唔使怕",
+      "singableText": "遠方風話唔使怕",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "遠",
+          "start": 23.99,
+          "end": 24.41,
+          "reading": "jyun5"
+        },
+        {
+          "text": "方",
+          "start": 24.41,
+          "end": 24.83,
+          "reading": "fong1"
+        },
+        {
+          "text": "風",
+          "start": 24.83,
+          "end": 25.25,
+          "reading": "fung1"
+        },
+        {
+          "text": "話",
+          "start": 25.25,
+          "end": 25.67,
+          "reading": "waa6"
+        },
+        {
+          "text": "唔",
+          "start": 25.67,
+          "end": 26.09,
+          "reading": "m4"
+        },
+        {
+          "text": "使",
+          "start": 26.09,
+          "end": 26.51,
+          "reading": "sai2"
+        },
+        {
+          "text": "怕",
+          "start": 26.51,
+          "end": 26.93,
+          "reading": "paa3"
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "start": 26.93,
+      "end": 29.47,
+      "text": "心入面光會返嚟",
+      "singableText": "心入面光會返嚟",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 26.93,
+          "end": 27.293,
+          "reading": "sam1"
+        },
+        {
+          "text": "入",
+          "start": 27.293,
+          "end": 27.656,
+          "reading": "jap6"
+        },
+        {
+          "text": "面",
+          "start": 27.656,
+          "end": 28.019,
+          "reading": "min6"
+        },
+        {
+          "text": "光",
+          "start": 28.019,
+          "end": 28.381,
+          "reading": "gwong1"
+        },
+        {
+          "text": "會",
+          "start": 28.381,
+          "end": 28.744,
+          "reading": "wui6"
+        },
+        {
+          "text": "返",
+          "start": 28.744,
+          "end": 29.107,
+          "reading": "faan1"
+        },
+        {
+          "text": "嚟",
+          "start": 29.107,
+          "end": 29.47,
+          "reading": "lai4"
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "start": 30.19,
+      "end": 32.69,
+      "text": "飄過安靜海",
+      "singableText": "飄過安靜海",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "飄",
+          "start": 30.19,
+          "end": 30.69,
+          "reading": "piu1"
+        },
+        {
+          "text": "過",
+          "start": 30.69,
+          "end": 31.19,
+          "reading": "gwo3"
+        },
+        {
+          "text": "安",
+          "start": 31.19,
+          "end": 31.69,
+          "reading": "on1"
+        },
+        {
+          "text": "靜",
+          "start": 31.69,
+          "end": 32.19,
+          "reading": "zing6"
+        },
+        {
+          "text": "海",
+          "start": 32.19,
+          "end": 32.69,
+          "reading": "hoi2"
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "start": 32.69,
+      "end": 34.93,
+      "text": "三把聲搵到家",
+      "singableText": "三把聲搵到家",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "三",
+          "start": 32.69,
+          "end": 33.063,
+          "reading": "saam1"
+        },
+        {
+          "text": "把",
+          "start": 33.063,
+          "end": 33.437,
+          "reading": "baa2"
+        },
+        {
+          "text": "聲",
+          "start": 33.437,
+          "end": 33.81,
+          "reading": "sing1"
+        },
+        {
+          "text": "搵",
+          "start": 33.81,
+          "end": 34.183,
+          "reading": "wan2"
+        },
+        {
+          "text": "到",
+          "start": 34.183,
+          "end": 34.557,
+          "reading": "dou3"
+        },
+        {
+          "text": "家",
+          "start": 34.557,
+          "end": 34.93,
+          "reading": "gaa1"
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "start": 34.93,
+      "end": 36.81,
+      "text": "同一天空唱",
+      "singableText": "同一天空唱",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "同",
+          "start": 34.93,
+          "end": 35.306,
+          "reading": "tung4"
+        },
+        {
+          "text": "一",
+          "start": 35.306,
+          "end": 35.682,
+          "reading": "jat1"
+        },
+        {
+          "text": "天",
+          "start": 35.682,
+          "end": 36.058,
+          "reading": "tin1"
+        },
+        {
+          "text": "空",
+          "start": 36.058,
+          "end": 36.434,
+          "reading": "hung1"
+        },
+        {
+          "text": "唱",
+          "start": 36.434,
+          "end": 36.81,
+          "reading": "coeng3"
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "start": 36.81,
+      "end": 39.89,
+      "text": "一片天一片天",
+      "singableText": "一片天一片天",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "一",
+          "start": 36.81,
+          "end": 37.323,
+          "reading": "jat1"
+        },
+        {
+          "text": "片",
+          "start": 37.323,
+          "end": 37.837,
+          "reading": "pin3"
+        },
+        {
+          "text": "天",
+          "start": 37.837,
+          "end": 38.35,
+          "reading": "tin1"
+        },
+        {
+          "text": "一",
+          "start": 38.35,
+          "end": 38.863,
+          "reading": "jat1"
+        },
+        {
+          "text": "片",
+          "start": 38.863,
+          "end": 39.377,
+          "reading": "pin3"
+        },
+        {
+          "text": "天",
+          "start": 39.377,
+          "end": 39.89,
+          "reading": "tin1"
+        }
+      ]
+    },
+    {
+      "id": "line-009",
+      "start": 39.89,
+      "end": 43.27,
+      "text": "讓光打開黑夜",
+      "singableText": "讓光打開黑夜",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "讓",
+          "start": 39.89,
+          "end": 40.453,
+          "reading": "joeng6"
+        },
+        {
+          "text": "光",
+          "start": 40.453,
+          "end": 41.017,
+          "reading": "gwong1"
+        },
+        {
+          "text": "打",
+          "start": 41.017,
+          "end": 41.58,
+          "reading": "daa2"
+        },
+        {
+          "text": "開",
+          "start": 41.58,
+          "end": 42.143,
+          "reading": "hoi1"
+        },
+        {
+          "text": "黑",
+          "start": 42.143,
+          "end": 42.707,
+          "reading": "hak1"
+        },
+        {
+          "text": "夜",
+          "start": 42.707,
+          "end": 43.27,
+          "reading": "je6"
+        }
+      ]
+    },
+    {
+      "id": "line-010",
+      "start": 43.27,
+      "end": 46.31,
+      "text": "我哋升起升起",
+      "singableText": "我哋升起升起",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "我",
+          "start": 43.27,
+          "end": 43.777,
+          "reading": "ngo5"
+        },
+        {
+          "text": "哋",
+          "start": 43.777,
+          "end": 44.283,
+          "reading": "dei6"
+        },
+        {
+          "text": "升",
+          "start": 44.283,
+          "end": 44.79,
+          "reading": "sing1"
+        },
+        {
+          "text": "起",
+          "start": 44.79,
+          "end": 45.297,
+          "reading": "hei2"
+        },
+        {
+          "text": "升",
+          "start": 45.297,
+          "end": 45.803,
+          "reading": "sing1"
+        },
+        {
+          "text": "起",
+          "start": 45.803,
+          "end": 46.31,
+          "reading": "hei2"
+        }
+      ]
+    },
+    {
+      "id": "line-011",
+      "start": 46.31,
+      "end": 49.42,
+      "text": "同你就唔會迷路",
+      "singableText": "同你就唔會迷路",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "同",
+          "start": 46.31,
+          "end": 46.754,
+          "reading": "tung4"
+        },
+        {
+          "text": "你",
+          "start": 46.754,
+          "end": 47.199,
+          "reading": "nei5"
+        },
+        {
+          "text": "就",
+          "start": 47.199,
+          "end": 47.643,
+          "reading": "zau6"
+        },
+        {
+          "text": "唔",
+          "start": 47.643,
+          "end": 48.087,
+          "reading": "m4"
+        },
+        {
+          "text": "會",
+          "start": 48.087,
+          "end": 48.531,
+          "reading": "wui6"
+        },
+        {
+          "text": "迷",
+          "start": 48.531,
+          "end": 48.976,
+          "reading": "mai4"
+        },
+        {
+          "text": "路",
+          "start": 48.976,
+          "end": 49.42,
+          "reading": "lou6"
+        }
+      ]
+    },
+    {
+      "id": "line-012",
+      "start": 49.42,
+      "end": 51.24,
+      "text": "條路發光",
+      "singableText": "條路發光",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "條",
+          "start": 49.42,
+          "end": 49.875,
+          "reading": "tiu4"
+        },
+        {
+          "text": "路",
+          "start": 49.875,
+          "end": 50.33,
+          "reading": "lou6"
+        },
+        {
+          "text": "發",
+          "start": 50.33,
+          "end": 50.785,
+          "reading": "faat3"
+        },
+        {
+          "text": "光",
+          "start": 50.785,
+          "end": 51.24,
+          "reading": "gwong1"
+        }
+      ]
+    },
+    {
+      "id": "line-013",
+      "start": 51.96,
+      "end": 54.48,
+      "text": "一片天三盞燈",
+      "singableText": "一片天三盞燈",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "一",
+          "start": 51.96,
+          "end": 52.38,
+          "reading": "jat1"
+        },
+        {
+          "text": "片",
+          "start": 52.38,
+          "end": 52.8,
+          "reading": "pin3"
+        },
+        {
+          "text": "天",
+          "start": 52.8,
+          "end": 53.22,
+          "reading": "tin1"
+        },
+        {
+          "text": "三",
+          "start": 53.22,
+          "end": 53.64,
+          "reading": "saam1"
+        },
+        {
+          "text": "盞",
+          "start": 53.64,
+          "end": 54.06,
+          "reading": "zaan2"
+        },
+        {
+          "text": "燈",
+          "start": 54.06,
+          "end": 54.48,
+          "reading": "dang1"
+        }
+      ]
+    },
+    {
+      "id": "line-014",
+      "start": 54.48,
+      "end": 57.92,
+      "text": "一條路一片天",
+      "singableText": "一條路一片天",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "一",
+          "start": 54.48,
+          "end": 55.053,
+          "reading": "jat1"
+        },
+        {
+          "text": "條",
+          "start": 55.053,
+          "end": 55.627,
+          "reading": "tiu4"
+        },
+        {
+          "text": "路",
+          "start": 55.627,
+          "end": 56.2,
+          "reading": "lou6"
+        },
+        {
+          "text": "一",
+          "start": 56.2,
+          "end": 56.773,
+          "reading": "jat1"
+        },
+        {
+          "text": "片",
+          "start": 56.773,
+          "end": 57.347,
+          "reading": "pin3"
+        },
+        {
+          "text": "天",
+          "start": 57.347,
+          "end": 57.92,
+          "reading": "tin1"
+        }
+      ]
+    },
+    {
+      "id": "line-015",
+      "start": 58.5,
+      "end": 60.94,
+      "text": "三盞燈一個夢醒",
+      "singableText": "三盞燈一個夢醒",
+      "role": "active-vocal",
+      "tokens": [
+        {
+          "text": "三",
+          "start": 58.5,
+          "end": 58.849,
+          "reading": "saam1"
+        },
+        {
+          "text": "盞",
+          "start": 58.849,
+          "end": 59.197,
+          "reading": "zaan2"
+        },
+        {
+          "text": "燈",
+          "start": 59.197,
+          "end": 59.546,
+          "reading": "dang1"
+        },
+        {
+          "text": "一",
+          "start": 59.546,
+          "end": 59.894,
+          "reading": "jat1"
+        },
+        {
+          "text": "個",
+          "start": 59.894,
+          "end": 60.243,
+          "reading": "go3"
+        },
+        {
+          "text": "夢",
+          "start": 60.243,
+          "end": 60.591,
+          "reading": "mung6"
+        },
+        {
+          "text": "醒",
+          "start": 60.591,
+          "end": 60.94,
+          "reading": "sing2"
+        }
+      ]
+    }
+  ]
+}

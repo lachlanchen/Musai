@@ -8,7 +8,8 @@
     "en": "Rain Day Full Song",
     "zh": "雨夜完整歌",
     "zh-Hans": "雨夜完整歌",
-    "ja": "雨の日のフルソング"
+    "ja": "雨の日のフルソング",
+    "yue-Hant": "雨天全曲"
   },
   "artist": "Musia",
   "subtitle": "Separate English, Mandarin, and Japanese full-song renders with analysis-tuned lyric timing",
@@ -954,6 +955,20 @@
             }
           ]
         }
+      },
+      {
+        "id": "full-yue",
+        "label": "Cantonese vocal",
+        "roleLabel": "Vocal",
+        "role": "same-score-localized-vocal",
+        "languageCode": "yue-Hant",
+        "languageLabel": "廣東話",
+        "lyricSetId": "yue-vocal",
+        "sourceModel": "SoulX-Singer",
+        "qualityGate": "review-pass",
+        "src": "assets/audio/rain-day-full-song-yue-Hant.mp3",
+        "mime": "audio/mpeg",
+        "guide": "Japanese vocal guide"
       }
     ],
     "stems": {}
@@ -989,7 +1004,13 @@
       },
       "note": "The three language files are independent full-song renders; the website keeps per-language timing and does not claim strict same-stem localization for this demo."
     },
-    "lyricProtocol": "per-vocal lyricSets: en-vocal, zh-vocal, ja-vocal. Each set has its own trilingual tracks based on that render ASR and corrected against prompt lyrics."
+    "lyricProtocol": "per-vocal lyricSets: en-vocal, zh-vocal, ja-vocal. Each set has its own trilingual tracks based on that render ASR and corrected against prompt lyrics.",
+    "cantoneseVocal": {
+      "backend": "SoulX-Singer",
+      "guide": "Japanese vocal guide",
+      "targetLines": "data/creative_projects/cantonese-localizations-20260628/rain-day-full/target_lines_yue-Hant.json",
+      "audio": "assets/audio/rain-day-full-song-yue-Hant.mp3"
+    }
   },
   "musical": {
     "key": "D minor",
@@ -1361,6 +1382,48 @@
             "translation"
           ],
           "path": "lyrics/ja-vocal/en.json"
+        }
+      ]
+    },
+    {
+      "id": "yue-vocal",
+      "label": "Cantonese vocal lyric set",
+      "languageCode": "yue-Hant",
+      "tracks": [
+        {
+          "code": "yue-Hant",
+          "label": "Cantonese",
+          "nativeLabel": "廣東話",
+          "script": "Hant",
+          "features": [
+            "active-timing",
+            "jyutping",
+            "word-highlight"
+          ],
+          "path": "lyrics/yue-vocal/yue-Hant.json"
+        },
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "translation",
+            "rough-highlight"
+          ],
+          "path": "lyrics/yue-vocal/en.json"
+        },
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "translation",
+            "pinyin",
+            "rough-highlight"
+          ],
+          "path": "lyrics/yue-vocal/zh-Hans.json"
         }
       ]
     }

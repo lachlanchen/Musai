@@ -9,7 +9,8 @@
     "en": "One Sky, Three Lights",
     "zh": "一片天空，三道光",
     "zh-Hans": "一片天空，三道光",
-    "ja": "ひとつの空、三つの光"
+    "ja": "ひとつの空、三つの光",
+    "yue-Hant": "一片天三盞燈"
   },
   "artist": "Musia",
   "subtitle": "A mixed English, Mandarin-pinyin, and Japanese-romaji song with trilingual lyric display",
@@ -324,7 +325,23 @@
         "label": "Local instrumental stem",
         "localPath": "data/runs/one-sky-three-lights-ace-phonetic-analysis/stems/instrumental.wav"
       }
-    }
+    },
+    "alternateAudio": [
+      {
+        "id": "one-sky-yue",
+        "label": "Cantonese vocal",
+        "roleLabel": "Vocal",
+        "role": "same-score-localized-vocal",
+        "languageCode": "yue-Hant",
+        "languageLabel": "廣東話",
+        "lyricSetId": "yue-vocal",
+        "sourceModel": "SoulX-Singer",
+        "qualityGate": "review-pass",
+        "src": "assets/audio/one-sky-three-lights-yue-Hant.mp3",
+        "mime": "audio/mpeg",
+        "guide": "Mixed vocal guide"
+      }
+    ]
   },
   "lyricSets": [
     {
@@ -380,6 +397,48 @@
             "roughWordTiming"
           ],
           "path": "lyrics/mixed-vocal/ja.json"
+        }
+      ]
+    },
+    {
+      "id": "yue-vocal",
+      "label": "Cantonese vocal lyric set",
+      "languageCode": "yue-Hant",
+      "tracks": [
+        {
+          "code": "yue-Hant",
+          "label": "Cantonese",
+          "nativeLabel": "廣東話",
+          "script": "Hant",
+          "features": [
+            "active-timing",
+            "jyutping",
+            "word-highlight"
+          ],
+          "path": "lyrics/yue-vocal/yue-Hant.json"
+        },
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "translation",
+            "rough-highlight"
+          ],
+          "path": "lyrics/yue-vocal/en.json"
+        },
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "translation",
+            "pinyin",
+            "rough-highlight"
+          ],
+          "path": "lyrics/yue-vocal/zh-Hans.json"
         }
       ]
     }
@@ -486,7 +545,13 @@
     "lyricsSource": "data/creative_projects/one-sky-three-lights-mixed-20260628/lyrics/mul_phonetic_songgen.txt",
     "analysisRun": "data/runs/one-sky-three-lights-ace-phonetic-analysis",
     "coverSource": "/home/lachlan/.codex/generated_images/019f0842-25ba-7bd2-9d4b-0b1c60d8a951/ig_09b1d3ca27fa59c0016a40ee5115448191a3cf4d6354f5699f.png",
-    "coverPrompt": "16:9 premium album cover for One Sky, Three Lights; twilight city and calm sea; three elegant streams of light crossing into one sky; no text."
+    "coverPrompt": "16:9 premium album cover for One Sky, Three Lights; twilight city and calm sea; three elegant streams of light crossing into one sky; no text.",
+    "cantoneseVocal": {
+      "backend": "SoulX-Singer",
+      "guide": "Mixed vocal guide",
+      "targetLines": "data/creative_projects/cantonese-localizations-20260628/one-sky-three-lights/target_lines_yue-Hant.json",
+      "audio": "assets/audio/one-sky-three-lights-yue-Hant.mp3"
+    }
   },
   "artifacts": [
     {
