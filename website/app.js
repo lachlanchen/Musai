@@ -4,14 +4,12 @@ const state = {
   manifestUrl: "",
   tracks: [],
   trackByCode: new Map(),
-  view: "all",
+  selectedLang: "zh-Hans",
   kindFilter: "all",
   activeMediaId: "",
   activeAssetId: "",
-  activeAssetType: "",
   mediaElement: null,
   sourceNodes: new Map(),
-  audioReady: false,
   audioContext: null,
   analyser: null,
   source: null,
@@ -40,17 +38,15 @@ function escapeHtml(value) {
 
 function formatTime(seconds) {
   const safe = Number.isFinite(seconds) ? Math.max(0, seconds) : 0;
-  const mins = Math.floor(safe / 60);
-  const secs = Math.floor(safe % 60).toString().padStart(2, "0");
-  return `${mins}:${secs}`;
+  return `${Math.floor(safe / 60)}:${Math.floor(safe % 60).toString().padStart(2, "0")}`;
 }
 
 function labelKind(kind) {
   return {
     song: "Music",
-    "localized-song": "Localized Song",
+    "localized-song": "Localized",
     mv: "MV",
-    "short-film": "Short Film",
+    "short-film": "Short film",
     video: "Video",
     "youtube-video": "YouTube"
   }[kind] || "Media";
@@ -81,8 +77,7 @@ function tokenLabel(token) {
 
 function renderRubyToken(token) {
   if (token.pinyin) {
-    const rt = `${tokenLabel(token)}${pinyinTone(token.pinyin)}`;
-    return `<ruby>${escapeHtml(token.text)}<rt>${escapeHtml(rt)}</rt></ruby>`;
+    return `<ruby>${escapeHtml(token.text)}<rt>${escapeHtml(pinyinTone(token.pinyin))}</rt></ruby>`;
   }
   if (token.reading) {
     return `<ruby>${escapeHtml(token.text)}<rt>${escapeHtml(token.reading)}</rt></ruby>`;
@@ -90,24 +85,26 @@ function renderRubyToken(token) {
   return escapeHtml(token.text);
 }
 
-function renderTrackLine(track, line) {
+function renderTrackLine(track, line, { compact = false } = {}) {
+  if (!line) return "";
   const tokens = Array.isArray(line.tokens) ? line.tokens : [];
-  const timedTokens = tokens.some((token) => Number.isFinite(token.start) && Number.isFinite(token.end));
-  const rubyTokens = tokens.some((token) => token.pinyin || token.reading);
+  const hasRuby = tokens.some((token) => token.pinyin || token.reading);
+  const hasTiming = tokens.some((token) => Number.isFinite(token.start) && Number.isFinite(token.end));
+  const text = line.singableText || line.text;
 
-  if (rubyTokens) {
-    return `<p class="ruby-line">${tokens.map(renderRubyToken).join("")}</p>`;
+  if (hasRuby) {
+    return `<div class="${compact ? "ruby-line compact" : "ruby-line"}">${tokens.map(renderRubyToken).join("")}</div>`;
   }
 
-  if (timedTokens) {
-    return `<p class="token-line">${tokens.map((token) => `
+  if (hasTiming && !compact) {
+    return `<div class="token-line">${tokens.map((token) => `
       <span class="text-token" data-token-start="${token.start}" data-token-end="${token.end}">
         ${escapeHtml(token.text)}
       </span>
-    `).join("")}</p>`;
+    `).join("")}</div>`;
   }
 
-  return `<p>${escapeHtml(line.text)}</p>`;
+  return `<div class="plain-line">${escapeHtml(text)}</div>`;
 }
 
 function manifestLines() {
@@ -118,18 +115,22 @@ function chords() {
   return state.manifest?.musical?.chords || [];
 }
 
+function selectedTrack() {
+  return state.trackByCode.get(state.selectedLang) || state.tracks[0] || null;
+}
+
+function lineForTrack(track, lineId) {
+  return track?.lines?.find((line) => line.id === lineId) || null;
+}
+
 function activeLineAt(time) {
   const lines = manifestLines();
-  return lines.find((line) => time >= line.start && time < line.end) || lines.at(-1) || null;
+  return lines.find((line) => time >= line.start && time < line.end) || lines[0] || null;
 }
 
 function activeChordAt(time) {
   const list = chords();
-  return list.find((chord) => time >= chord.start && time < chord.end) || list.at(-1) || null;
-}
-
-function lineForTrack(track, lineId) {
-  return track.lines.find((line) => line.id === lineId);
+  return list.find((chord) => time >= chord.start && time < chord.end) || list[0] || null;
 }
 
 function youtubeIdFromUrl(value) {
@@ -156,11 +157,7 @@ function youtubeEmbedUrl(asset) {
   if (asset.embedUrl) return asset.embedUrl;
   const videoId = asset.videoId || youtubeIdFromUrl(asset.url || asset.src);
   if (!videoId) return "";
-  const params = new URLSearchParams({
-    rel: "0",
-    modestbranding: "1",
-    playsinline: "1"
-  });
+  const params = new URLSearchParams({ rel: "0", modestbranding: "1", playsinline: "1" });
   return `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?${params}`;
 }
 
@@ -178,46 +175,25 @@ function youtubeThumbnailUrl(asset) {
 function playableAssets(manifest) {
   const assets = manifest.assets || {};
   const result = [];
-  if (assets.primaryAudio?.src) {
-    result.push({ id: "primary", label: assets.primaryAudio.label || "Mix", type: "audio", src: assets.primaryAudio.src });
-  }
-  if (assets.primaryVideo?.src) {
-    result.push({ id: "video", label: assets.primaryVideo.label || "Video", type: "video", src: assets.primaryVideo.src });
-  }
+  if (assets.primaryAudio?.src) result.push({ id: "primary", label: assets.primaryAudio.label || "Mix", type: "audio", src: assets.primaryAudio.src });
+  if (assets.primaryVideo?.src) result.push({ id: "video", label: assets.primaryVideo.label || "Video", type: "video", src: assets.primaryVideo.src });
   if (assets.youtube) {
     const embedUrl = youtubeEmbedUrl(assets.youtube);
-    if (embedUrl) {
-      result.push({
-        id: assets.youtube.id || "youtube",
-        label: assets.youtube.label || "YouTube",
-        type: "external-video",
-        provider: "youtube",
-        embedUrl,
-        url: youtubeWatchUrl(assets.youtube)
-      });
-    }
+    if (embedUrl) result.push({ id: assets.youtube.id || "youtube", label: assets.youtube.label || "YouTube", type: "external-video", embedUrl, url: youtubeWatchUrl(assets.youtube) });
   }
   for (const item of assets.externalVideos || []) {
     const provider = item.provider || (youtubeIdFromUrl(item.url || item.embedUrl || item.src) ? "youtube" : "external");
     const embedUrl = provider === "youtube" ? youtubeEmbedUrl(item) : (item.embedUrl || item.src || "");
-    if (embedUrl) {
-      result.push({
-        id: item.id || item.label || embedUrl,
-        label: item.label || (provider === "youtube" ? "YouTube" : "External Video"),
-        type: "external-video",
-        provider,
-        embedUrl,
-        url: provider === "youtube" ? youtubeWatchUrl(item) : (item.url || embedUrl)
-      });
-    }
+    if (embedUrl) result.push({ id: item.id || item.label || embedUrl, label: item.label || "External", type: "external-video", embedUrl, url: provider === "youtube" ? youtubeWatchUrl(item) : (item.url || embedUrl) });
   }
   for (const item of assets.alternateAudio || []) {
     if (item.src) result.push({ id: item.id || item.label || item.src, label: item.label || item.id || "Audio", type: "audio", src: item.src });
   }
-  for (const [id, item] of Object.entries(assets.stems || {})) {
-    if (item?.src) result.push({ id, label: item.label || id, type: "audio", src: item.src });
-  }
   return result;
+}
+
+function coverUrl(manifest) {
+  return manifest.assets?.cover?.src || manifest.assets?.poster?.src || manifest.share?.image || youtubeThumbnailUrl(manifest.assets?.youtube) || "";
 }
 
 function setMeta(selector, value, attr = "content") {
@@ -225,18 +201,10 @@ function setMeta(selector, value, attr = "content") {
   if (node && value) node.setAttribute(attr, value);
 }
 
-function shareImageUrl(manifest) {
-  return manifest.share?.image || manifest.assets?.cover?.src || manifest.assets?.poster?.src || youtubeThumbnailUrl(manifest.assets?.youtube) || "";
-}
-
-function coverUrl(manifest) {
-  return manifest.assets?.cover?.src || manifest.assets?.poster?.src || manifest.share?.image || youtubeThumbnailUrl(manifest.assets?.youtube) || "";
-}
-
 function updateShareMetadata(manifest) {
   const title = manifest.share?.title || manifest.title;
   const description = manifest.share?.description || manifest.description || manifest.subtitle || "";
-  const image = shareImageUrl(manifest);
+  const image = manifest.share?.image || coverUrl(manifest);
   const url = manifest.share?.url || manifest.canonicalUrl || "https://fun.lazying.art";
   document.title = `${manifest.title} - Fun Lazying Art`;
   setMeta('meta[name="description"]', description);
@@ -255,9 +223,7 @@ function setMediaSource(asset, keepTime = false) {
   const previousTime = previous?.currentTime || 0;
   const wasPlaying = previous && !previous.paused;
   if (previous) previous.pause();
-
   state.activeAssetId = asset.id;
-  state.activeAssetType = asset.type;
 
   if (asset.type === "external-video") {
     state.mediaElement = null;
@@ -266,8 +232,6 @@ function setMediaSource(asset, keepTime = false) {
     video.removeAttribute("src");
     externalPlayer.hidden = false;
     externalPlayer.src = asset.embedUrl;
-    canvas.classList.add("dimmed");
-    coverArt.classList.add("dimmed");
     $("play").disabled = true;
     $("play").title = "Use the embedded player controls";
     $("play-symbol").textContent = "▶";
@@ -281,11 +245,8 @@ function setMediaSource(asset, keepTime = false) {
   state.mediaElement = asset.type === "video" ? video : audio;
   audio.hidden = asset.type === "video";
   video.hidden = asset.type !== "video";
-  canvas.classList.toggle("dimmed", asset.type === "video");
-  coverArt.classList.toggle("dimmed", asset.type === "video");
   $("play").disabled = false;
   $("play").title = "";
-
   state.mediaElement.src = resolveSitePath(asset.src);
   if (keepTime) state.mediaElement.currentTime = Math.min(previousTime, (state.manifest.duration || previousTime) - 0.1);
   if (wasPlaying) state.mediaElement.play();
@@ -296,10 +257,9 @@ function setMediaSource(asset, keepTime = false) {
 function renderLibrary() {
   const items = state.catalog.items || [];
   $("media-library").innerHTML = items.map((item) => `
-    <button class="media-tile ${item.id === state.activeMediaId ? "active" : ""}" type="button" data-media-id="${escapeHtml(item.id)}" ${state.kindFilter !== "all" && item.kind !== state.kindFilter ? "hidden" : ""}>
+    <button class="media-chip ${item.id === state.activeMediaId ? "active" : ""}" type="button" data-media-id="${escapeHtml(item.id)}" ${state.kindFilter !== "all" && item.kind !== state.kindFilter ? "hidden" : ""}>
       <span>${escapeHtml(labelKind(item.kind))}</span>
       <strong>${escapeHtml(item.title)}</strong>
-      <small>${escapeHtml((item.languages || []).join(" / "))}</small>
     </button>
   `).join("");
   document.querySelectorAll("[data-media-id]").forEach((button) => {
@@ -314,9 +274,7 @@ function renderLibrary() {
 function renderAssetSwitcher() {
   const assets = playableAssets(state.manifest);
   $("asset-switcher").innerHTML = assets.map((asset) => `
-    <button class="${asset.id === state.activeAssetId ? "active" : ""}" type="button" data-asset-id="${escapeHtml(asset.id)}">
-      ${escapeHtml(asset.label)}
-    </button>
+    <button class="${asset.id === state.activeAssetId ? "active" : ""}" type="button" data-asset-id="${escapeHtml(asset.id)}">${escapeHtml(asset.label)}</button>
   `).join("");
   document.querySelectorAll("[data-asset-id]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -326,35 +284,31 @@ function renderAssetSwitcher() {
   });
 }
 
-function renderTabs() {
+function renderLanguageButtons() {
   if (!state.tracks.length) {
-    $("track-tabs").innerHTML = `<span class="muted pill-note">No text tracks</span>`;
+    $("language-tabs").innerHTML = `<span class="soft-note">No lyrics</span>`;
     return;
   }
-  const buttons = [
-    `<button class="active" type="button" data-view="all">All</button>`,
-    ...state.tracks.map((track) => `
-      <button type="button" data-view="${escapeHtml(track.language.code)}">
-        ${escapeHtml(track.language.nativeLabel || track.language.label || track.language.code)}
-      </button>
-    `)
-  ];
-  $("track-tabs").innerHTML = buttons.join("");
-  document.querySelectorAll("[data-view]").forEach((button) => {
+  $("language-tabs").innerHTML = state.tracks.map((track) => `
+    <button class="${track.language.code === state.selectedLang ? "active" : ""}" type="button" data-lang="${escapeHtml(track.language.code)}">
+      ${escapeHtml(track.language.nativeLabel || track.language.label || track.language.code)}
+    </button>
+  `).join("");
+  document.querySelectorAll("[data-lang]").forEach((button) => {
     button.addEventListener("click", () => {
-      state.view = button.dataset.view;
-      applyViewFilter();
+      state.selectedLang = button.dataset.lang;
+      renderLanguageButtons();
+      updateSync();
     });
   });
 }
 
-function renderChords() {
+function renderChords(activeChord = null) {
   const list = chords();
-  $("chord-strip").hidden = list.length === 0;
-  $("chord-strip").innerHTML = list.map((chord, index) => `
-    <button class="chord" type="button" data-chord-index="${index}">
-      <strong>${escapeHtml(chord.name)}</strong>
-      <small>${escapeHtml(chord.degree || "")}</small>
+  $("chord-row").hidden = list.length === 0;
+  $("chord-row").innerHTML = list.map((chord, index) => `
+    <button class="chord-pill ${chord === activeChord ? "active" : ""}" type="button" data-chord-index="${index}">
+      <strong>${escapeHtml(chord.name)}</strong><span>${escapeHtml(chord.degree || "")}</span>
     </button>
   `).join("");
   document.querySelectorAll("[data-chord-index]").forEach((button) => {
@@ -367,95 +321,54 @@ function renderChords() {
   });
 }
 
-function renderSourceWords(line) {
-  const words = Array.isArray(line.words) ? line.words : [];
-  if (!words.length) return escapeHtml(line.sourceText || "");
-  return words.map((word) => {
-    const joiner = word.joiner ?? " ";
-    return `<span class="word" data-word-start="${word.start}" data-word-end="${word.end}">${escapeHtml(word.text)}</span>${escapeHtml(joiner)}`;
-  }).join("");
-}
-
-function renderTextLines() {
-  if (!manifestLines().length) {
-    $("text-lines").innerHTML = `
-      <article class="empty-state">
-        <span class="eyebrow">${escapeHtml(labelKind(state.manifest.kind))}</span>
-        <h2>${escapeHtml(state.manifest.title)}</h2>
-        <p>${escapeHtml(state.manifest.description || "No timed lyrics or subtitles are attached yet.")}</p>
-      </article>
-    `;
+function renderCarousel(activeLine) {
+  const track = selectedTrack();
+  const lines = manifestLines();
+  if (!track || !lines.length) {
+    $("lyric-carousel").innerHTML = `<div class="empty-state"><h2>${escapeHtml(state.manifest.title)}</h2><p>${escapeHtml(state.manifest.description || "No timed lyrics are attached yet.")}</p></div>`;
     return;
   }
-  $("text-lines").innerHTML = manifestLines().map((line, index) => {
-    const tracks = state.tracks.map((track) => {
-      const trackLine = lineForTrack(track, line.id);
-      if (!trackLine) return "";
-      const label = track.language.nativeLabel || track.language.label || track.language.code;
-      const role = trackLine.role || "text";
+  const activeIndex = Math.max(0, lines.findIndex((line) => line.id === activeLine?.id));
+  const items = [activeIndex - 1, activeIndex, activeIndex + 1]
+    .filter((index) => index >= 0 && index < lines.length)
+    .map((index) => {
+      const line = lineForTrack(track, lines[index].id);
+      const active = index === activeIndex;
       return `
-        <div class="translation" data-track-code="${escapeHtml(track.language.code)}">
-          <span class="label">${escapeHtml(label)} / ${escapeHtml(role)}</span>
-          ${renderTrackLine(track, trackLine)}
-          ${trackLine.singableText ? `<p class="singable">${escapeHtml(trackLine.singableText)}</p>` : ""}
+        <div class="carousel-line ${active ? "active" : ""}">
+          <span>${formatTime(lines[index].start)}</span>
+          ${renderTrackLine(track, line)}
         </div>
       `;
     }).join("");
-    return `
-      <article class="lyric-line" data-line-index="${index}" style="--line-progress:0%">
-        <div class="line-progress"></div>
-        <div class="source">${renderSourceWords(line)}</div>
-        <div class="translations">${tracks}</div>
-      </article>
-    `;
-  }).join("");
-  applyViewFilter();
+  $("lyric-carousel").innerHTML = items;
 }
 
-function applyViewFilter() {
-  document.querySelectorAll("[data-view]").forEach((button) => {
-    button.classList.toggle("active", button.dataset.view === state.view);
-  });
-  document.querySelectorAll(".translation").forEach((node) => {
-    node.hidden = state.view !== "all" && node.dataset.trackCode !== state.view;
-  });
-}
-
-function renderFocusLine(line, chord) {
-  if (!line) {
-    $("active-line").innerHTML = `<span class="muted">No timeline loaded.</span>`;
+function renderFullLyrics(activeLine = null) {
+  const lines = manifestLines();
+  if (!lines.length) {
+    $("full-lyrics").innerHTML = "";
     return;
   }
-  const activeTracks = state.tracks.map((track) => {
-    const trackLine = lineForTrack(track, line.id);
-    if (!trackLine) return "";
-    return `
-      <div>
-        <span class="label">${escapeHtml(track.language.nativeLabel || track.language.code)}</span>
-        ${renderTrackLine(track, trackLine)}
+  $("full-lyrics").innerHTML = lines.map((line, index) => `
+    <article class="full-row ${line.id === activeLine?.id ? "active" : ""}">
+      <div class="line-index">${String(index + 1).padStart(2, "0")}<span>${formatTime(line.start)}</span></div>
+      <div class="language-lines">
+        ${state.tracks.map((track) => {
+          const trackLine = lineForTrack(track, line.id);
+          return `
+            <section>
+              <label>${escapeHtml(track.language.nativeLabel || track.language.code)}</label>
+              ${renderTrackLine(track, trackLine, { compact: true })}
+            </section>
+          `;
+        }).join("")}
       </div>
-    `;
-  }).join("");
-
-  $("active-line").innerHTML = `
-    <div>
-      <span class="label">Canonical line</span>
-      <div class="big">${escapeHtml(line.sourceText || "")}</div>
-    </div>
-    ${activeTracks}
-    <div>
-      <span class="label">Music</span>
-      <p>${escapeHtml(chord?.name || "--")} ${chord?.degree ? `· ${escapeHtml(chord.degree)}` : ""}</p>
-    </div>
-  `;
+    </article>
+  `).join("");
 }
 
 function updateTokenHighlights(time) {
-  document.querySelectorAll("[data-word-start]").forEach((node) => {
-    const start = Number(node.dataset.wordStart);
-    const end = Number(node.dataset.wordEnd);
-    node.classList.toggle("active", time >= start && time < end);
-  });
   document.querySelectorAll("[data-token-start]").forEach((node) => {
     const start = Number(node.dataset.tokenStart);
     const end = Number(node.dataset.tokenEnd);
@@ -468,36 +381,23 @@ function updateSync() {
   const media = state.mediaElement;
   const time = media?.currentTime || 0;
   const duration = media?.duration || state.manifest.duration || 1;
-  const line = activeLineAt(time);
-  const chord = activeChordAt(time);
+  const activeLine = activeLineAt(time);
+  const activeChord = activeChordAt(time);
+  const track = selectedTrack();
+  const trackLine = lineForTrack(track, activeLine?.id);
   const progress = Math.min(100, Math.max(0, (time / duration) * 100));
+
   $("current-time").textContent = formatTime(time);
   $("duration").textContent = formatTime(duration);
   $("seek").value = String(Math.round((time / duration) * 1000));
   $("progress-fill").style.width = `${progress}%`;
-  $("now-chord").textContent = chord?.name || "--";
-  $("now-degree").textContent = chord?.degree || "--";
-  $("stage-line").textContent = line?.sourceText || state.manifest.caption || labelKind(state.manifest.kind);
-  renderFocusLine(line, chord);
-
-  document.querySelectorAll(".chord").forEach((node, index) => {
-    node.classList.toggle("active", chords()[index] === chord);
-  });
-
-  document.querySelectorAll(".lyric-line").forEach((node, index) => {
-    const item = manifestLines()[index];
-    if (!item) return;
-    const isActive = item === line;
-    node.classList.toggle("active", isActive);
-    const span = Math.max(0.001, item.end - item.start);
-    const lineProgress = isActive ? ((time - item.start) / span) * 100 : time >= item.end ? 100 : 0;
-    node.style.setProperty("--line-progress", `${Math.min(100, Math.max(0, lineProgress))}%`);
-    if (isActive && !node.dataset.seen) {
-      node.dataset.seen = "1";
-      node.scrollIntoView({ block: "center", behavior: "smooth" });
-      window.setTimeout(() => { node.dataset.seen = ""; }, 600);
-    }
-  });
+  $("now-chord").textContent = activeChord?.name || "--";
+  $("now-degree").textContent = activeChord?.degree || "";
+  $("stage-line").textContent = trackLine?.singableText || trackLine?.text || state.manifest.caption || "";
+  $("current-lyric-label").textContent = track?.language?.nativeLabel || "Lyrics";
+  renderCarousel(activeLine);
+  renderFullLyrics(activeLine);
+  renderChords(activeChord);
   updateTokenHighlights(time);
 }
 
@@ -519,7 +419,6 @@ function initAudioGraph() {
   state.source.connect(state.analyser);
   state.analyser.connect(state.audioContext.destination);
   state.sourceElement = media;
-  state.audioReady = true;
 }
 
 function drawVisualizer() {
@@ -530,33 +429,16 @@ function drawVisualizer() {
     canvas.height = height;
   }
   ctx.clearRect(0, 0, width, height);
-  const grad = ctx.createLinearGradient(0, 0, width, height);
-  grad.addColorStop(0, "rgba(82, 218, 205, .34)");
-  grad.addColorStop(.45, "rgba(238, 196, 88, .2)");
-  grad.addColorStop(1, "rgba(245, 116, 132, .18)");
-  ctx.fillStyle = grad;
-
-  const bars = state.frequencyData?.length || 56;
+  const bars = state.frequencyData?.length || 48;
   if (state.analyser && state.frequencyData) state.analyser.getByteFrequencyData(state.frequencyData);
   for (let i = 0; i < bars; i += 1) {
-    const fallback = (Math.sin(Date.now() / 680 + i * 0.7) + 1) / 2;
-    const value = state.frequencyData ? state.frequencyData[i] / 255 : fallback;
-    const barWidth = width / bars * 0.64;
+    const value = state.frequencyData ? state.frequencyData[i] / 255 : (Math.sin(Date.now() / 700 + i * 0.7) + 1) / 2;
+    const barWidth = width / bars * 0.56;
     const x = i * (width / bars) + (width / bars - barWidth) / 2;
-    const barHeight = Math.max(12, value * height * 0.56);
-    const y = height - barHeight - 28 - Math.sin(i * 0.75) * 10;
-    ctx.fillRect(x, y, barWidth, barHeight);
+    const barHeight = Math.max(10, value * height * 0.42);
+    ctx.fillStyle = `rgba(55, 132, 122, ${0.16 + value * 0.36})`;
+    ctx.fillRect(x, height - barHeight - 18, barWidth, barHeight);
   }
-
-  ctx.strokeStyle = "rgba(255,255,255,.18)";
-  ctx.lineWidth = Math.max(1, window.devicePixelRatio);
-  ctx.beginPath();
-  for (let x = 0; x <= width; x += width / 20) {
-    const y = height * 0.34 + Math.sin(x / width * Math.PI * 4 + Date.now() / 1200) * 20;
-    if (x === 0) ctx.moveTo(x, y);
-    else ctx.lineTo(x, y);
-  }
-  ctx.stroke();
   requestAnimationFrame(drawVisualizer);
 }
 
@@ -586,28 +468,11 @@ function bindEvents() {
   mediaListeners(video);
   document.querySelectorAll("[data-kind-filter]").forEach((button) => {
     button.addEventListener("click", () => {
-      document.querySelectorAll("[data-kind-filter]").forEach((node) => node.classList.remove("active"));
-      button.classList.add("active");
       state.kindFilter = button.dataset.kindFilter;
-      document.querySelectorAll(".media-tile").forEach((tile) => {
-        const item = state.catalog.items.find((entry) => entry.id === tile.dataset.mediaId);
-        tile.hidden = state.kindFilter !== "all" && item?.kind !== state.kindFilter;
-      });
+      document.querySelectorAll("[data-kind-filter]").forEach((node) => node.classList.toggle("active", node === button));
+      renderLibrary();
     });
   });
-}
-
-function renderArtifacts() {
-  const manifest = state.manifest;
-  const assets = playableAssets(manifest);
-  const artifactLinks = [
-    ...assets.map((asset) => ({ label: asset.label, href: asset.url || asset.embedUrl || (asset.src ? resolveSitePath(asset.src) : "") })),
-    ...(manifest.artifacts || []).map((item) => ({ label: item.label || item.id || item.href, href: resolveSitePath(item.href || item.src || "") })),
-    ...state.tracks.map((track) => ({ label: `${track.language.nativeLabel || track.language.code} JSON`, href: track.__url }))
-  ].filter((item) => item.href);
-  $("artifact-list").innerHTML = artifactLinks.map((item) => `
-    <li><a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a></li>
-  `).join("");
 }
 
 async function loadJson(url) {
@@ -618,10 +483,8 @@ async function loadJson(url) {
 
 async function loadMediaItem(item, updateHash = false) {
   if (!item) throw new Error("No media item in catalog.");
-  const previous = state.mediaElement;
-  if (previous) previous.pause();
+  if (state.mediaElement) state.mediaElement.pause();
   externalPlayer.src = "about:blank";
-
   state.activeMediaId = item.id;
   state.manifestUrl = resolveSitePath(item.manifest);
   state.manifest = await loadJson(state.manifestUrl);
@@ -632,7 +495,7 @@ async function loadMediaItem(item, updateHash = false) {
     return track;
   }));
   state.trackByCode = new Map(state.tracks.map((track) => [track.language.code, track]));
-  state.view = "all";
+  state.selectedLang = state.trackByCode.has(state.selectedLang) ? state.selectedLang : (state.tracks[0]?.language.code || "en");
 
   const musical = state.manifest.musical || {};
   $("kind-label").textContent = labelKind(state.manifest.kind);
@@ -641,8 +504,6 @@ async function loadMediaItem(item, updateHash = false) {
   $("media-caption").textContent = state.manifest.caption || labelKind(state.manifest.kind);
   $("key-label").textContent = musical.key || "No key";
   $("bpm-label").textContent = musical.bpm ? `${musical.bpm} BPM` : "No BPM";
-  $("manifest-link").href = state.manifestUrl;
-  $("command-box").textContent = state.manifest.createCommand || "musai website build";
   updateShareMetadata(state.manifest);
   const cover = coverUrl(state.manifest);
   coverArt.src = cover ? resolveSitePath(cover) : "";
@@ -650,12 +511,8 @@ async function loadMediaItem(item, updateHash = false) {
   coverThumb.src = coverArt.src;
   coverThumb.alt = coverArt.alt;
 
-  renderTabs();
-  renderChords();
-  renderTextLines();
-  renderArtifacts();
   renderLibrary();
-
+  renderLanguageButtons();
   const firstAsset = playableAssets(state.manifest)[0];
   if (!firstAsset) throw new Error("No playable media asset in manifest.");
   setMediaSource(firstAsset);
@@ -663,21 +520,17 @@ async function loadMediaItem(item, updateHash = false) {
   if (updateHash) history.replaceState(null, "", `#${encodeURIComponent(item.id)}`);
 }
 
-async function loadDefaultMedia() {
+async function boot() {
+  bindEvents();
   state.catalog = await loadJson("data/catalog.json");
   const hashId = decodeURIComponent(window.location.hash.replace(/^#/, ""));
   const item = state.catalog.items.find((entry) => entry.id === hashId)
     || state.catalog.items.find((entry) => entry.id === state.catalog.defaultMedia)
     || state.catalog.items[0];
   await loadMediaItem(item);
-}
-
-async function boot() {
-  bindEvents();
-  await loadDefaultMedia();
   drawVisualizer();
 }
 
 boot().catch((error) => {
-  document.body.innerHTML = `<pre style="padding:24px;color:white">${escapeHtml(error.stack || error.message)}</pre>`;
+  document.body.innerHTML = `<pre style="padding:24px;color:#111827">${escapeHtml(error.stack || error.message)}</pre>`;
 });

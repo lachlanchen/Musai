@@ -11,11 +11,11 @@
     {
       "id": "rain-day-bilingual-verse",
       "kind": "song",
-      "title": "Rain Day Bilingual Verse",
+      "title": "Rain Day Trilingual Verse",
       "artist": "Musai SoulX",
-      "summary": "A bilingual rainy-day vocal demo with synced Chinese, Japanese, and English text tracks.",
+      "summary": "A rainy-day vocal demo with three same-timing localized lyric tracks.",
       "manifest": "data/songs/rain-day-bilingual-verse/manifest.json",
-      "cover": "assets/covers/rain-day-bilingual-verse.png",
+      "cover": "assets/covers/rain-day-trilingual-poster-16x9.png",
       "languages": ["zh-Hans", "ja", "en"],
       "tags": ["music", "lyrics", "pinyin", "furigana", "SoulX"]
     }

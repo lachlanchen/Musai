@@ -51,6 +51,8 @@ website/data/songs/rain-day-bilingual-verse/lyrics/zh-Hans.json
 website/data/songs/rain-day-bilingual-verse/lyrics/ja.json
 website/assets/audio/rain-day-bilingual-verse.mp3
 website/assets/audio/rain-day-bilingual-verse-vocal.mp3
+website/assets/audio/rain-day-trilingual-melody-guide.mp3
+website/assets/covers/rain-day-trilingual-poster-16x9.png
 website/assets/covers/rain-day-bilingual-verse.png
 website/assets/covers/rain-day-bilingual-verse.svg
 ```
@@ -58,15 +60,15 @@ website/assets/covers/rain-day-bilingual-verse.svg
 Media facts:
 
 - Kind: `song`
-- Duration: `16.3` seconds
+- Duration: `18.4` seconds
 - Key: `D minor`
 - BPM: `78`
 - Text tracks: `zh-Hans`, `ja`, `en`
-- Playable assets: final mix and vocal-only audio
-- Cover/poster: `website/assets/covers/rain-day-bilingual-verse.png`
+- Playable assets: Chinese generated mix, Chinese vocal-only audio, and melody guide
+- Cover/poster: `website/assets/covers/rain-day-trilingual-poster-16x9.png`
 - Source workflow: `musai soulx-verse`
 - Model noted in provenance: `SoulX-Singer`
-- Lyric refinement noted in provenance: `DeepSeek`
+- Lyric refinement noted in provenance: manual Musai LyricFit pass
 
 ## Player UI
 
@@ -83,9 +85,9 @@ The UI has four main areas:
 
 - top navigation for media categories: all, music, localized songs, MV, short film, YouTube
 - library panel for catalog items
-- player panel with cover art, waveform, transport, asset switcher, and current chord
-- synced text panel with chords, active lyric/subtitle lines, pinyin, furigana, and translations
-- inspector panel with current line, protocol links, artifact links, and creation command
+- player panel with 16:9 poster art, waveform, transport, asset switcher, and current chord
+- current lyric carousel with one selected language at a time
+- full trilingual lyrics section, line by line
 
 For pure audio, the player uses `assets.cover` or `assets.poster` as the stage image behind the waveform. For video/MV/short-film media, `assets.primaryVideo` can replace the waveform stage while the same poster remains available for loading states and share previews. YouTube-uploaded media can use `assets.youtube` or `assets.externalVideos[]`; the site embeds the YouTube player and keeps the same catalog, artifact, and subtitle panels.
 
@@ -185,8 +187,8 @@ Every shareable media item should have artwork.
 
 For pure audio:
 
-- generate a square cover
-- save as `website/assets/covers/<media-id>.png`
+- generate a 16:9 poster by default
+- save as `website/assets/covers/<media-id>-poster-16x9.png`
 - optionally keep editable art as `website/assets/covers/<media-id>.svg`
 - set `assets.cover.src`
 - set `assets.poster.src`
@@ -196,13 +198,13 @@ For pure audio:
 For MV or short film:
 
 - use `assets.poster` for the video poster/loading image
-- use `assets.cover` for square cards and social previews
+- use the same 16:9 poster for `assets.cover` and social previews unless a separate thumbnail is required
 - keep generated or designed source files as artifacts when useful
 
 Recommended prompt shape:
 
 ```text
-Square album/poster cover for "<title>" on Fun Lazying Art.
+16:9 widescreen poster for "<title>" on Fun Lazying Art.
 Describe the song/film mood and visual concept.
 Premium clean media artwork, cinematic composition, no readable text,
 no logo, high-quality cover/poster, suitable for a public media player.

@@ -14,63 +14,67 @@
       "id": "line-001",
       "start": 0.0,
       "end": 4.6,
-      "text": "Outside the window, rain falls softly on the street.",
-      "role": "translation",
+      "text": "Rain by the window, soft on the street",
+      "singableText": "Rain by the window, soft on the street",
+      "role": "localized-lyric",
       "tokens": [
-        {"text": "Outside", "start": 0.3, "end": 0.72},
-        {"text": "the", "start": 0.72, "end": 1.2},
-        {"text": "window,", "start": 1.2, "end": 1.62},
-        {"text": "rain", "start": 1.62, "end": 2.04},
-        {"text": "falls", "start": 2.04, "end": 2.52},
-        {"text": "softly", "start": 2.52, "end": 2.94},
-        {"text": "on", "start": 2.94, "end": 3.36},
-        {"text": "the street.", "start": 3.36, "end": 4.12}
+        {"text": "Rain", "start": 0.3, "end": 0.72},
+        {"text": "by", "start": 0.72, "end": 1.2},
+        {"text": "the", "start": 1.2, "end": 1.62},
+        {"text": "window,", "start": 1.62, "end": 2.04},
+        {"text": "soft", "start": 2.04, "end": 2.52},
+        {"text": "on", "start": 2.52, "end": 2.94},
+        {"text": "the", "start": 2.94, "end": 3.36},
+        {"text": "street", "start": 3.36, "end": 4.12}
       ]
     },
     {
       "id": "line-002",
       "start": 4.6,
-      "end": 8.36,
-      "text": "City lights glow through the rainy window.",
-      "role": "translation",
+      "end": 9.2,
+      "text": "City lights shimmer under the rain",
+      "singableText": "City lights shimmer under the rain",
+      "role": "localized-lyric",
       "tokens": [
-        {"text": "City", "start": 4.9, "end": 5.32},
-        {"text": "lights", "start": 5.32, "end": 5.8},
-        {"text": "glow", "start": 5.8, "end": 6.22},
-        {"text": "through", "start": 6.22, "end": 6.64},
-        {"text": "the", "start": 6.64, "end": 7.12},
-        {"text": "rainy window.", "start": 7.12, "end": 7.88}
+        {"text": "City", "start": 4.9, "end": 5.38},
+        {"text": "lights", "start": 5.38, "end": 5.86},
+        {"text": "shimmer", "start": 5.86, "end": 6.58},
+        {"text": "under", "start": 6.58, "end": 7.18},
+        {"text": "the", "start": 7.18, "end": 7.66},
+        {"text": "rain", "start": 7.66, "end": 8.72}
       ]
     },
     {
       "id": "line-003",
-      "start": 8.36,
-      "end": 12.12,
-      "text": "The heart whispers inside, warm and slow.",
-      "role": "translation",
+      "start": 9.2,
+      "end": 13.8,
+      "text": "My heart keeps whispering slow and warm",
+      "singableText": "My heart keeps whispering slow and warm",
+      "role": "localized-lyric",
       "tokens": [
-        {"text": "The heart", "start": 8.66, "end": 9.08},
-        {"text": "whispers", "start": 9.08, "end": 9.56},
-        {"text": "inside,", "start": 9.56, "end": 9.98},
-        {"text": "warm", "start": 9.98, "end": 10.4},
-        {"text": "and", "start": 10.4, "end": 10.88},
-        {"text": "slow.", "start": 10.88, "end": 11.64}
+        {"text": "My", "start": 9.5, "end": 9.92},
+        {"text": "heart", "start": 9.92, "end": 10.4},
+        {"text": "keeps", "start": 10.4, "end": 10.82},
+        {"text": "whispering", "start": 10.82, "end": 11.72},
+        {"text": "slow", "start": 11.72, "end": 12.2},
+        {"text": "and warm", "start": 12.2, "end": 13.22}
       ]
     },
     {
       "id": "line-004",
-      "start": 12.12,
-      "end": 16.3,
-      "text": "We stay here together with the rainy glow.",
-      "role": "translation",
+      "start": 13.8,
+      "end": 18.4,
+      "text": "Stay with me inside this rainy glow",
+      "singableText": "Stay with me inside this rainy glow",
+      "role": "localized-lyric",
       "tokens": [
-        {"text": "We", "start": 12.42, "end": 12.84},
-        {"text": "stay", "start": 12.84, "end": 13.32},
-        {"text": "here", "start": 13.32, "end": 13.74},
-        {"text": "together", "start": 13.74, "end": 14.16},
-        {"text": "with", "start": 14.16, "end": 14.64},
-        {"text": "the rainy", "start": 14.64, "end": 15.06},
-        {"text": "glow.", "start": 15.06, "end": 15.82}
+        {"text": "Stay", "start": 14.1, "end": 14.52},
+        {"text": "with", "start": 14.52, "end": 15.0},
+        {"text": "me", "start": 15.0, "end": 15.42},
+        {"text": "inside", "start": 15.42, "end": 16.2},
+        {"text": "this", "start": 16.2, "end": 16.68},
+        {"text": "rainy", "start": 16.68, "end": 17.1},
+        {"text": "glow", "start": 17.1, "end": 17.88}
       ]
     }
   ]

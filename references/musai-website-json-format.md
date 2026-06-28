@@ -64,7 +64,7 @@ Important fields:
 - `defaultMedia`: media id loaded first
 - `items[].kind`: `song`, `localized-song`, `mv`, `short-film`, `video`, or `youtube-video`
 - `items[].manifest`: path to the media manifest
-- `items[].cover`: library thumbnail
+- `items[].cover`: library thumbnail, preferably a 16:9 poster unless a square-only thumbnail is required
 
 ## Manifest
 
@@ -74,8 +74,8 @@ Important fields:
 
 - `schema`: `fun.lazying.media.manifest.v1`
 - `kind`: `song`, `localized-song`, `mv`, `short-film`, `video`, or `youtube-video`
-- `assets.cover`: square artwork for audio/song cards and social previews
-- `assets.poster`: poster/loading image for video, MV, and short film
+- `assets.cover`: default artwork for audio/song cards and social previews; prefer a 16:9 image
+- `assets.poster`: default 16:9 poster/loading image for the player, video, MV, and short film
 - `assets.primaryAudio`: final audio mix
 - `assets.primaryVideo`: final video file
 - `assets.youtube`: YouTube embed descriptor for already-published videos
@@ -111,12 +111,12 @@ Important fields:
 
 ## Cover / Poster Rule
 
-Pure audio must have `assets.cover`. MV and short film items should have both `assets.poster` and, when useful, `assets.cover`.
+Pure audio must have visual artwork. The default artwork aspect ratio is **16:9** so songs, MVs, short films, and YouTube embeds can share the same player frame. Square album-art assets may still be kept as secondary thumbnails, but the player hero and `share.image` should prefer a 16:9 poster.
 
 Recommended cover pipeline:
 
-1. Generate a clean cover image with AgInTi/imagegen from the media brief.
-2. Save it under `website/assets/covers/<media-id>.png`.
+1. Generate a clean 16:9 poster image with AgInTi/imagegen from the media brief.
+2. Save it under `website/assets/covers/<media-id>-poster-16x9.png`.
 3. Store the exact image prompt in `manifest.provenance.coverPrompt`.
 4. Reference the PNG from `assets.cover.src`, `assets.poster.src`, and `share.image`.
 5. Keep editable/source art, if any, as an artifact link.

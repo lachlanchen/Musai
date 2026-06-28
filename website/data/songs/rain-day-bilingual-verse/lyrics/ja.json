@@ -15,80 +15,64 @@
       "id": "line-001",
       "start": 0.0,
       "end": 4.6,
-      "text": "窓の外、雨が静かに通りへ落ちる。",
-      "role": "translation",
+      "text": "窓辺の雨、そっと街へ",
+      "singableText": "窓辺の雨、そっと街へ",
+      "role": "localized-lyric",
       "tokens": [
-        {"text": "窓", "reading": "まど"},
+        {"text": "窓辺", "reading": "まどべ"},
         {"text": "の"},
-        {"text": "外", "reading": "そと"},
-        {"text": "、"},
         {"text": "雨", "reading": "あめ"},
-        {"text": "が"},
-        {"text": "静", "reading": "しず"},
-        {"text": "かに"},
-        {"text": "通", "reading": "とお"},
-        {"text": "りへ"},
-        {"text": "落", "reading": "お"},
-        {"text": "ちる。"}
+        {"text": "、そっと"},
+        {"text": "街", "reading": "まち"},
+        {"text": "へ"}
       ]
     },
     {
       "id": "line-002",
       "start": 4.6,
-      "end": 8.36,
-      "text": "街の灯りが雨の窓を通して光る。",
-      "role": "translation",
+      "end": 9.2,
+      "text": "街の灯り、雨ににじむ",
+      "singableText": "街の灯り、雨ににじむ",
+      "role": "localized-lyric",
       "tokens": [
         {"text": "街", "reading": "まち"},
         {"text": "の"},
         {"text": "灯", "reading": "あか"},
-        {"text": "りが"},
+        {"text": "り、"},
         {"text": "雨", "reading": "あめ"},
-        {"text": "の"},
-        {"text": "窓", "reading": "まど"},
-        {"text": "を"},
-        {"text": "通", "reading": "とお"},
-        {"text": "して"},
-        {"text": "光", "reading": "ひか"},
-        {"text": "る。"}
+        {"text": "ににじむ"}
       ]
     },
     {
       "id": "line-003",
-      "start": 8.36,
-      "end": 12.12,
-      "text": "心の中で、温かな囁きがゆっくり響く。",
-      "role": "translation",
+      "start": 9.2,
+      "end": 13.8,
+      "text": "胸のささやき、ゆるく温い",
+      "singableText": "胸のささやき、ゆるく温い",
+      "role": "localized-lyric",
       "tokens": [
-        {"text": "心", "reading": "こころ"},
-        {"text": "の"},
-        {"text": "中", "reading": "なか"},
-        {"text": "で、"},
-        {"text": "温", "reading": "あたた"},
-        {"text": "かな"},
-        {"text": "囁", "reading": "ささや"},
-        {"text": "きがゆっくり"},
-        {"text": "響", "reading": "ひび"},
-        {"text": "く。"}
+        {"text": "胸", "reading": "むね"},
+        {"text": "のささやき、ゆるく"},
+        {"text": "温", "reading": "ぬく"},
+        {"text": "い"}
       ]
     },
     {
       "id": "line-004",
-      "start": 12.12,
-      "end": 16.3,
-      "text": "僕らはここにいて、雨の光に寄り添う。",
-      "role": "translation",
+      "start": 13.8,
+      "end": 18.4,
+      "text": "ここで寄り添う、雨の光",
+      "singableText": "ここで寄り添う、雨の光",
+      "role": "localized-lyric",
       "tokens": [
-        {"text": "僕", "reading": "ぼく"},
-        {"text": "らはここにいて、"},
-        {"text": "雨", "reading": "あめ"},
-        {"text": "の"},
-        {"text": "光", "reading": "ひかり"},
-        {"text": "に"},
+        {"text": "ここで"},
         {"text": "寄", "reading": "よ"},
         {"text": "り"},
         {"text": "添", "reading": "そ"},
-        {"text": "う。"}
+        {"text": "う、"},
+        {"text": "雨", "reading": "あめ"},
+        {"text": "の"},
+        {"text": "光", "reading": "ひかり"}
       ]
     }
   ]
