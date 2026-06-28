@@ -45,6 +45,7 @@ Creative CLI:
   musia song review --project-dir data/creative_projects/... --audio song.wav --run-analysis
   musia song correct --project-dir data/creative_projects/... --issues "vocal too quiet"
   musia song handoff --project-dir data/creative_projects/... --audio song.wav
+  musia mv-pack --audio song.wav --title "Four Buddies MV" --duration 15 --copy-references
   musia plan --title "Vocal" --generation-mode free_vocal --lyrics "..."
   musia plan --title "Controlled" --generation-mode controlled_song --control-level melody_sheet --melody "..."
   musia plan --title "Licensed CN Version" --generation-mode localization --control-level strict_localization --rights-confirmed --target-language zh-CN --reference-audio song.wav
@@ -205,7 +206,8 @@ function npmSmoke() {
     ["bin/musia.js", path.join(ROOT, "bin", "musia.js")],
     ["musia/studio.py", path.join(ROOT, "musia", "studio.py")],
     ["scripts/musia_studio_web.py", path.join(ROOT, "scripts", "musia_studio_web.py")],
-    ["scripts/musia_create.py", path.join(ROOT, "scripts", "musia_create.py")]
+    ["scripts/musia_create.py", path.join(ROOT, "scripts", "musia_create.py")],
+    ["scripts/prepare_lalachan_mv_pack.py", path.join(ROOT, "scripts", "prepare_lalachan_mv_pack.py")]
   ];
   const missing = checks.filter(([, file]) => !fs.existsSync(file));
   if (missing.length) {
@@ -264,6 +266,10 @@ function main() {
   }
   if (command === "song" || command === "song-workbench") {
     runPython("scripts/musia_song_workbench.py", rest);
+    return;
+  }
+  if (command === "mv-pack" || command === "lalachan-mv-pack") {
+    runSystemPython("scripts/prepare_lalachan_mv_pack.py", rest);
     return;
   }
   if (PY_COMMANDS.has(command)) {

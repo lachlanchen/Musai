@@ -33,6 +33,7 @@
     "scripts/*.sh",
     "website/",
     "references/*.md",
+    "references/**/*.md",
     "!references/private-musia-control-needs-2026-06-28.md",
     "i18n/*.md",
     "README.md",
