@@ -816,6 +816,76 @@ body.capture-mode .stage-line {
   max-width: min(980px, 94%);
 }
 
+body.capture-mode.capture-portrait .page-shell {
+  min-height: 100vh;
+  padding: 22px 28px;
+}
+
+body.capture-mode.capture-portrait .site-header {
+  margin-bottom: 16px;
+}
+
+body.capture-mode.capture-portrait .hero-grid {
+  min-height: calc(100vh - 86px);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+body.capture-mode.capture-portrait .player-card,
+body.capture-mode.capture-portrait .lyrics-card {
+  border-radius: 18px;
+  padding: 18px;
+}
+
+body.capture-mode.capture-portrait .title-row {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+body.capture-mode.capture-portrait .cover-thumb {
+  width: 76px;
+}
+
+body.capture-mode.capture-portrait h1 {
+  font-size: 44px;
+}
+
+body.capture-mode.capture-portrait .stage-line {
+  font-size: 42px;
+}
+
+body.capture-mode.capture-portrait .transport {
+  margin-top: 12px;
+}
+
+body.capture-mode.capture-portrait .meta-row,
+body.capture-mode.capture-portrait .asset-switcher {
+  margin-top: 10px;
+}
+
+body.capture-mode.capture-portrait .lyrics-card {
+  min-height: 0;
+  grid-template-rows: auto auto minmax(0, 1fr);
+}
+
+body.capture-mode.capture-portrait .lyric-carousel {
+  min-height: 0;
+  align-content: center;
+}
+
+body.capture-mode.capture-portrait .carousel-line {
+  padding: 10px 4px;
+}
+
+body.capture-mode.capture-portrait .carousel-track .plain-line,
+body.capture-mode.capture-portrait .carousel-track .token-line,
+body.capture-mode.capture-portrait .carousel-track .ruby-line {
+  font-size: 28px;
+}
+
 @media (max-width: 980px) {
   .site-header,
   .section-title {

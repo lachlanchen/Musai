@@ -97,6 +97,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--keep-frames", action="store_true", help="Do not delete captured PNG frames.")
     parser.add_argument("--full-page", action="store_true", help="Capture the full scrollable page instead of only the viewport.")
     parser.add_argument("--include-full-lyrics", action="store_true", help="Keep the bottom full lyrics visible during capture.")
+    parser.add_argument("--portrait", action="store_true", help="Use portrait capture layout for vertical videos.")
     parser.add_argument("--chrome-channel", default="chrome", help="Playwright Chromium channel, usually chrome or chromium.")
     return parser.parse_args()
 
@@ -151,6 +152,7 @@ def main() -> None:
         "capture": "1",
         "fullLyrics": "1" if args.include_full_lyrics else "0",
         "media": media_id,
+        "portrait": "1" if args.portrait else "0",
         "skipIntro": "1" if args.skip_intro else "0",
     })
     url = f"{base_url}?{query}#{media_id}"
