@@ -23,7 +23,7 @@
         "required": ["id", "kind", "title", "manifest"],
         "properties": {
           "id": {"type": "string"},
-          "kind": {"enum": ["song", "mv", "short-film", "video", "album", "playlist"]},
+          "kind": {"enum": ["song", "localized-song", "mv", "short-film", "video", "youtube-video", "album", "playlist"]},
           "title": {"type": "string"},
           "artist": {"type": "string"},
           "summary": {"type": "string"},

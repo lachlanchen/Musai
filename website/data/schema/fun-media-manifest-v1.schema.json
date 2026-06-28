@@ -8,7 +8,7 @@
     "schema": {"const": "fun.lazying.media.manifest.v1"},
     "version": {"const": 1},
     "id": {"type": "string"},
-    "kind": {"enum": ["song", "mv", "short-film", "video"]},
+    "kind": {"enum": ["song", "localized-song", "mv", "short-film", "video", "youtube-video"]},
     "title": {"type": "string"},
     "artist": {"type": "string"},
     "subtitle": {"type": "string"},
@@ -33,6 +33,8 @@
         "poster": {"$ref": "#/$defs/asset"},
         "primaryAudio": {"$ref": "#/$defs/asset"},
         "primaryVideo": {"$ref": "#/$defs/asset"},
+        "youtube": {"$ref": "#/$defs/externalVideo"},
+        "externalVideos": {"type": "array", "items": {"$ref": "#/$defs/externalVideo"}},
         "alternateAudio": {"type": "array", "items": {"$ref": "#/$defs/asset"}},
         "stems": {
           "type": "object",
@@ -95,6 +97,26 @@
         "width": {"type": "integer"},
         "height": {"type": "integer"}
       },
+      "additionalProperties": true
+    },
+    "externalVideo": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "label": {"type": "string"},
+        "provider": {"enum": ["youtube", "vimeo", "bilibili", "external"]},
+        "videoId": {"type": "string"},
+        "url": {"type": "string"},
+        "embedUrl": {"type": "string"},
+        "src": {"type": "string"},
+        "role": {"type": "string"}
+      },
+      "anyOf": [
+        {"required": ["videoId"]},
+        {"required": ["url"]},
+        {"required": ["embedUrl"]},
+        {"required": ["src"]}
+      ],
       "additionalProperties": true
     },
     "timedChord": {

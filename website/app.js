@@ -5,7 +5,10 @@ const state = {
   tracks: [],
   trackByCode: new Map(),
   view: "all",
+  kindFilter: "all",
+  activeMediaId: "",
   activeAssetId: "",
+  activeAssetType: "",
   mediaElement: null,
   sourceNodes: new Map(),
   audioReady: false,
@@ -19,6 +22,7 @@ const state = {
 const $ = (id) => document.getElementById(id);
 const audio = $("audio");
 const video = $("video");
+const externalPlayer = $("external-player");
 const coverArt = $("cover-art");
 const coverThumb = $("cover-thumb");
 const canvas = $("visualizer");
@@ -44,9 +48,11 @@ function formatTime(seconds) {
 function labelKind(kind) {
   return {
     song: "Music",
+    "localized-song": "Localized Song",
     mv: "MV",
     "short-film": "Short Film",
-    video: "Video"
+    video: "Video",
+    "youtube-video": "YouTube"
   }[kind] || "Media";
 }
 
@@ -126,6 +132,49 @@ function lineForTrack(track, lineId) {
   return track.lines.find((line) => line.id === lineId);
 }
 
+function youtubeIdFromUrl(value) {
+  if (!value) return "";
+  const text = String(value).trim();
+  if (/^[a-zA-Z0-9_-]{6,}$/.test(text) && !text.includes("/")) return text;
+  try {
+    const url = new URL(text);
+    if (url.hostname.includes("youtu.be")) return url.pathname.replace("/", "");
+    if (url.hostname.includes("youtube.com")) {
+      if (url.searchParams.get("v")) return url.searchParams.get("v");
+      const embedMatch = url.pathname.match(/\/embed\/([^/?#]+)/);
+      if (embedMatch) return embedMatch[1];
+      const shortsMatch = url.pathname.match(/\/shorts\/([^/?#]+)/);
+      if (shortsMatch) return shortsMatch[1];
+    }
+  } catch {
+    return "";
+  }
+  return "";
+}
+
+function youtubeEmbedUrl(asset) {
+  if (asset.embedUrl) return asset.embedUrl;
+  const videoId = asset.videoId || youtubeIdFromUrl(asset.url || asset.src);
+  if (!videoId) return "";
+  const params = new URLSearchParams({
+    rel: "0",
+    modestbranding: "1",
+    playsinline: "1"
+  });
+  return `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?${params}`;
+}
+
+function youtubeWatchUrl(asset) {
+  if (asset.url) return asset.url;
+  const videoId = asset.videoId || youtubeIdFromUrl(asset.embedUrl || asset.src);
+  return videoId ? `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}` : asset.embedUrl || asset.src || "";
+}
+
+function youtubeThumbnailUrl(asset) {
+  const videoId = asset?.videoId || youtubeIdFromUrl(asset?.url || asset?.embedUrl || asset?.src);
+  return videoId ? `https://i.ytimg.com/vi/${encodeURIComponent(videoId)}/hqdefault.jpg` : "";
+}
+
 function playableAssets(manifest) {
   const assets = manifest.assets || {};
   const result = [];
@@ -134,6 +183,33 @@ function playableAssets(manifest) {
   }
   if (assets.primaryVideo?.src) {
     result.push({ id: "video", label: assets.primaryVideo.label || "Video", type: "video", src: assets.primaryVideo.src });
+  }
+  if (assets.youtube) {
+    const embedUrl = youtubeEmbedUrl(assets.youtube);
+    if (embedUrl) {
+      result.push({
+        id: assets.youtube.id || "youtube",
+        label: assets.youtube.label || "YouTube",
+        type: "external-video",
+        provider: "youtube",
+        embedUrl,
+        url: youtubeWatchUrl(assets.youtube)
+      });
+    }
+  }
+  for (const item of assets.externalVideos || []) {
+    const provider = item.provider || (youtubeIdFromUrl(item.url || item.embedUrl || item.src) ? "youtube" : "external");
+    const embedUrl = provider === "youtube" ? youtubeEmbedUrl(item) : (item.embedUrl || item.src || "");
+    if (embedUrl) {
+      result.push({
+        id: item.id || item.label || embedUrl,
+        label: item.label || (provider === "youtube" ? "YouTube" : "External Video"),
+        type: "external-video",
+        provider,
+        embedUrl,
+        url: provider === "youtube" ? youtubeWatchUrl(item) : (item.url || embedUrl)
+      });
+    }
   }
   for (const item of assets.alternateAudio || []) {
     if (item.src) result.push({ id: item.id || item.label || item.src, label: item.label || item.id || "Audio", type: "audio", src: item.src });
@@ -150,11 +226,11 @@ function setMeta(selector, value, attr = "content") {
 }
 
 function shareImageUrl(manifest) {
-  return manifest.share?.image || manifest.assets?.cover?.src || manifest.assets?.poster?.src || "";
+  return manifest.share?.image || manifest.assets?.cover?.src || manifest.assets?.poster?.src || youtubeThumbnailUrl(manifest.assets?.youtube) || "";
 }
 
 function coverUrl(manifest) {
-  return manifest.assets?.cover?.src || manifest.assets?.poster?.src || manifest.share?.image || "";
+  return manifest.assets?.cover?.src || manifest.assets?.poster?.src || manifest.share?.image || youtubeThumbnailUrl(manifest.assets?.youtube) || "";
 }
 
 function updateShareMetadata(manifest) {
@@ -180,14 +256,37 @@ function setMediaSource(asset, keepTime = false) {
   const wasPlaying = previous && !previous.paused;
   if (previous) previous.pause();
 
+  state.activeAssetId = asset.id;
+  state.activeAssetType = asset.type;
+
+  if (asset.type === "external-video") {
+    state.mediaElement = null;
+    audio.hidden = true;
+    video.hidden = true;
+    video.removeAttribute("src");
+    externalPlayer.hidden = false;
+    externalPlayer.src = asset.embedUrl;
+    canvas.classList.add("dimmed");
+    coverArt.classList.add("dimmed");
+    $("play").disabled = true;
+    $("play").title = "Use the embedded player controls";
+    $("play-symbol").textContent = "▶";
+    renderAssetSwitcher();
+    updateSync();
+    return;
+  }
+
+  externalPlayer.hidden = true;
+  externalPlayer.src = "about:blank";
   state.mediaElement = asset.type === "video" ? video : audio;
   audio.hidden = asset.type === "video";
   video.hidden = asset.type !== "video";
   canvas.classList.toggle("dimmed", asset.type === "video");
   coverArt.classList.toggle("dimmed", asset.type === "video");
+  $("play").disabled = false;
+  $("play").title = "";
 
   state.mediaElement.src = resolveSitePath(asset.src);
-  state.activeAssetId = asset.id;
   if (keepTime) state.mediaElement.currentTime = Math.min(previousTime, (state.manifest.duration || previousTime) - 0.1);
   if (wasPlaying) state.mediaElement.play();
   renderAssetSwitcher();
@@ -197,12 +296,19 @@ function setMediaSource(asset, keepTime = false) {
 function renderLibrary() {
   const items = state.catalog.items || [];
   $("media-library").innerHTML = items.map((item) => `
-    <button class="media-tile active" type="button" data-media-id="${escapeHtml(item.id)}">
+    <button class="media-tile ${item.id === state.activeMediaId ? "active" : ""}" type="button" data-media-id="${escapeHtml(item.id)}" ${state.kindFilter !== "all" && item.kind !== state.kindFilter ? "hidden" : ""}>
       <span>${escapeHtml(labelKind(item.kind))}</span>
       <strong>${escapeHtml(item.title)}</strong>
       <small>${escapeHtml((item.languages || []).join(" / "))}</small>
     </button>
   `).join("");
+  document.querySelectorAll("[data-media-id]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const item = state.catalog.items.find((entry) => entry.id === button.dataset.mediaId);
+      if (!item || item.id === state.activeMediaId) return;
+      await loadMediaItem(item, true);
+    });
+  });
 }
 
 function renderAssetSwitcher() {
@@ -221,6 +327,10 @@ function renderAssetSwitcher() {
 }
 
 function renderTabs() {
+  if (!state.tracks.length) {
+    $("track-tabs").innerHTML = `<span class="muted pill-note">No text tracks</span>`;
+    return;
+  }
   const buttons = [
     `<button class="active" type="button" data-view="all">All</button>`,
     ...state.tracks.map((track) => `
@@ -267,6 +377,16 @@ function renderSourceWords(line) {
 }
 
 function renderTextLines() {
+  if (!manifestLines().length) {
+    $("text-lines").innerHTML = `
+      <article class="empty-state">
+        <span class="eyebrow">${escapeHtml(labelKind(state.manifest.kind))}</span>
+        <h2>${escapeHtml(state.manifest.title)}</h2>
+        <p>${escapeHtml(state.manifest.description || "No timed lyrics or subtitles are attached yet.")}</p>
+      </article>
+    `;
+    return;
+  }
   $("text-lines").innerHTML = manifestLines().map((line, index) => {
     const tracks = state.tracks.map((track) => {
       const trackLine = lineForTrack(track, line.id);
@@ -344,10 +464,10 @@ function updateTokenHighlights(time) {
 }
 
 function updateSync() {
-  if (!state.manifest || !state.mediaElement) return;
+  if (!state.manifest) return;
   const media = state.mediaElement;
-  const time = media.currentTime || 0;
-  const duration = media.duration || state.manifest.duration || 1;
+  const time = media?.currentTime || 0;
+  const duration = media?.duration || state.manifest.duration || 1;
   const line = activeLineAt(time);
   const chord = activeChordAt(time);
   const progress = Math.min(100, Math.max(0, (time / duration) * 100));
@@ -357,7 +477,7 @@ function updateSync() {
   $("progress-fill").style.width = `${progress}%`;
   $("now-chord").textContent = chord?.name || "--";
   $("now-degree").textContent = chord?.degree || "--";
-  $("stage-line").textContent = line?.sourceText || "Playing";
+  $("stage-line").textContent = line?.sourceText || state.manifest.caption || labelKind(state.manifest.kind);
   renderFocusLine(line, chord);
 
   document.querySelectorAll(".chord").forEach((node, index) => {
@@ -366,6 +486,7 @@ function updateSync() {
 
   document.querySelectorAll(".lyric-line").forEach((node, index) => {
     const item = manifestLines()[index];
+    if (!item) return;
     const isActive = item === line;
     node.classList.toggle("active", isActive);
     const span = Math.max(0.001, item.end - item.start);
@@ -467,10 +588,10 @@ function bindEvents() {
     button.addEventListener("click", () => {
       document.querySelectorAll("[data-kind-filter]").forEach((node) => node.classList.remove("active"));
       button.classList.add("active");
-      const kind = button.dataset.kindFilter;
+      state.kindFilter = button.dataset.kindFilter;
       document.querySelectorAll(".media-tile").forEach((tile) => {
         const item = state.catalog.items.find((entry) => entry.id === tile.dataset.mediaId);
-        tile.hidden = kind !== "all" && item?.kind !== kind;
+        tile.hidden = state.kindFilter !== "all" && item?.kind !== state.kindFilter;
       });
     });
   });
@@ -480,7 +601,7 @@ function renderArtifacts() {
   const manifest = state.manifest;
   const assets = playableAssets(manifest);
   const artifactLinks = [
-    ...assets.map((asset) => ({ label: asset.label, href: resolveSitePath(asset.src) })),
+    ...assets.map((asset) => ({ label: asset.label, href: asset.url || asset.embedUrl || (asset.src ? resolveSitePath(asset.src) : "") })),
     ...(manifest.artifacts || []).map((item) => ({ label: item.label || item.id || item.href, href: resolveSitePath(item.href || item.src || "") })),
     ...state.tracks.map((track) => ({ label: `${track.language.nativeLabel || track.language.code} JSON`, href: track.__url }))
   ].filter((item) => item.href);
@@ -495,12 +616,13 @@ async function loadJson(url) {
   return response.json();
 }
 
-async function loadDefaultMedia() {
-  state.catalog = await loadJson("data/catalog.json");
-  renderLibrary();
-  const item = state.catalog.items.find((entry) => entry.id === state.catalog.defaultMedia) || state.catalog.items[0];
+async function loadMediaItem(item, updateHash = false) {
   if (!item) throw new Error("No media item in catalog.");
+  const previous = state.mediaElement;
+  if (previous) previous.pause();
+  externalPlayer.src = "about:blank";
 
+  state.activeMediaId = item.id;
   state.manifestUrl = resolveSitePath(item.manifest);
   state.manifest = await loadJson(state.manifestUrl);
   state.tracks = await Promise.all((state.manifest.textTracks || []).map(async (trackInfo) => {
@@ -510,6 +632,7 @@ async function loadDefaultMedia() {
     return track;
   }));
   state.trackByCode = new Map(state.tracks.map((track) => [track.language.code, track]));
+  state.view = "all";
 
   const musical = state.manifest.musical || {};
   $("kind-label").textContent = labelKind(state.manifest.kind);
@@ -531,11 +654,22 @@ async function loadDefaultMedia() {
   renderChords();
   renderTextLines();
   renderArtifacts();
+  renderLibrary();
 
   const firstAsset = playableAssets(state.manifest)[0];
   if (!firstAsset) throw new Error("No playable media asset in manifest.");
   setMediaSource(firstAsset);
   updateSync();
+  if (updateHash) history.replaceState(null, "", `#${encodeURIComponent(item.id)}`);
+}
+
+async function loadDefaultMedia() {
+  state.catalog = await loadJson("data/catalog.json");
+  const hashId = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+  const item = state.catalog.items.find((entry) => entry.id === hashId)
+    || state.catalog.items.find((entry) => entry.id === state.catalog.defaultMedia)
+    || state.catalog.items[0];
+  await loadMediaItem(item);
 }
 
 async function boot() {

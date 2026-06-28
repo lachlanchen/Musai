@@ -12,6 +12,7 @@ from urllib.parse import urlparse
 CATALOG_SCHEMA = "fun.lazying.media.catalog.v1"
 MANIFEST_SCHEMA = "fun.lazying.media.manifest.v1"
 TEXT_TRACK_SCHEMA = "fun.lazying.media.text-track.v1"
+MEDIA_KINDS = {"song", "localized-song", "mv", "short-film", "video", "youtube-video", "album", "playlist"}
 
 
 def load_json(path: Path) -> dict:
@@ -50,6 +51,19 @@ def iter_asset_paths(node):
             yield from iter_asset_paths(item)
 
 
+def validate_external_videos(manifest_path: Path, manifest: dict) -> None:
+    assets = manifest.get("assets", {})
+    external_items = []
+    if isinstance(assets.get("youtube"), dict):
+        external_items.append(assets["youtube"])
+    external_items.extend(assets.get("externalVideos", []) or [])
+    for item in external_items:
+        provider = item.get("provider", "youtube")
+        require(provider in {"youtube", "vimeo", "bilibili", "external"}, f"{manifest_path}: unsupported external video provider {provider}")
+        has_locator = any(item.get(key) for key in ("videoId", "url", "embedUrl", "src"))
+        require(has_locator, f"{manifest_path}: external video must include videoId, url, embedUrl, or src")
+
+
 def validate_text_track(manifest_path: Path, manifest: dict, track_info: dict, timeline_ids: set[str]) -> None:
     track_path = manifest_path.parent / track_info["path"]
     require(track_path.exists(), f"{manifest_path}: missing text track {track_path}")
@@ -83,9 +97,9 @@ def validate_manifest(root: Path, item: dict) -> None:
         check_local_path(root, asset_path, str(manifest_path))
     for artifact_path in iter_asset_paths(manifest.get("artifacts", [])):
         check_local_path(root, artifact_path, str(manifest_path))
+    validate_external_videos(manifest_path, manifest)
 
     lines = manifest.get("timeline", {}).get("lines", [])
-    require(lines, f"{manifest_path}: timeline.lines is required")
     last_start = -1.0
     timeline_ids = set()
     for line in lines:
@@ -97,7 +111,7 @@ def validate_manifest(root: Path, item: dict) -> None:
         timeline_ids.add(line["id"])
 
     tracks = manifest.get("textTracks", [])
-    require(tracks, f"{manifest_path}: textTracks is required")
+    require(lines or not tracks, f"{manifest_path}: textTracks require matching timeline lines")
     for track_info in tracks:
         require(track_info.get("path"), f"{manifest_path}: text track missing path")
         validate_text_track(manifest_path, manifest, track_info, timeline_ids)
@@ -115,6 +129,7 @@ def validate(root: Path) -> None:
 
     for item in items:
         require(item.get("kind"), f"{catalog_path}: item {item.get('id')} missing kind")
+        require(item.get("kind") in MEDIA_KINDS, f"{catalog_path}: item {item.get('id')} has unsupported kind {item.get('kind')}")
         require(item.get("manifest"), f"{catalog_path}: item {item.get('id')} missing manifest")
         check_local_path(root, item.get("cover", ""), f"catalog item {item['id']}")
         validate_manifest(root, item)

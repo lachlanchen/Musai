@@ -114,6 +114,16 @@ h2 {
   color: var(--muted);
 }
 
+.pill-note {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.045);
+}
+
 .top-nav,
 .status-line,
 .tabs,
@@ -295,6 +305,7 @@ h2 {
 
 #visualizer,
 #video,
+#external-player,
 .cover-art,
 .stage-shade {
   position: absolute;
@@ -314,7 +325,14 @@ h2 {
   background: #07090b;
 }
 
-#video[hidden] {
+#external-player {
+  border: 0;
+  background: #07090b;
+  z-index: 1;
+}
+
+#video[hidden],
+#external-player[hidden] {
   display: none;
 }
 
@@ -396,6 +414,11 @@ h2 {
   color: #0e1114;
   font-size: 21px;
   font-weight: 900;
+}
+
+.play-button:disabled {
+  cursor: not-allowed;
+  opacity: .46;
 }
 
 .time-readout {
@@ -484,6 +507,19 @@ h2 {
   display: grid;
   gap: 12px;
   align-content: start;
+}
+
+.empty-state {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  background: rgba(255,255,255,.04);
+}
+
+.empty-state p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .lyric-line {

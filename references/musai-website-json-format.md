@@ -16,6 +16,12 @@ Operational website, deployment, cover/poster, and publishing details are docume
 references/fun-lazying-art-website.md
 ```
 
+LALACHAN and YouTube publishing details are documented in:
+
+```text
+references/lalachan-fun-media-publishing.md
+```
+
 ## Layout
 
 ```text
@@ -56,7 +62,7 @@ Important fields:
 
 - `schema`: `fun.lazying.media.catalog.v1`
 - `defaultMedia`: media id loaded first
-- `items[].kind`: `song`, `mv`, `short-film`, or `video`
+- `items[].kind`: `song`, `localized-song`, `mv`, `short-film`, `video`, or `youtube-video`
 - `items[].manifest`: path to the media manifest
 - `items[].cover`: library thumbnail
 
@@ -67,11 +73,13 @@ Each media item has one `manifest.json`.
 Important fields:
 
 - `schema`: `fun.lazying.media.manifest.v1`
-- `kind`: `song`, `mv`, `short-film`, or `video`
+- `kind`: `song`, `localized-song`, `mv`, `short-film`, `video`, or `youtube-video`
 - `assets.cover`: square artwork for audio/song cards and social previews
 - `assets.poster`: poster/loading image for video, MV, and short film
 - `assets.primaryAudio`: final audio mix
 - `assets.primaryVideo`: final video file
+- `assets.youtube`: YouTube embed descriptor for already-published videos
+- `assets.externalVideos`: external video embeds, including YouTube
 - `assets.alternateAudio`: vocal-only, instrumental, commentary, language versions
 - `assets.stems`: `bass`, `drums`, `vocals`, `other`, `instrumental`
 - `musical.chords`: optional timed chord timeline

@@ -24,6 +24,8 @@ The website is meant to become a clean public platform for:
 - localized songs
 - music videos
 - musical short films
+- LALACHAN short films and MVs from `../LALACHAN`
+- YouTube-uploaded public videos
 - pure audio with generated cover art
 - synced subtitles and lyrics
 - Chinese pinyin and Japanese furigana learning views
@@ -79,13 +81,13 @@ website/favicon.svg
 
 The UI has four main areas:
 
-- top navigation for media categories: all, music, MV, short film
+- top navigation for media categories: all, music, localized songs, MV, short film, YouTube
 - library panel for catalog items
 - player panel with cover art, waveform, transport, asset switcher, and current chord
 - synced text panel with chords, active lyric/subtitle lines, pinyin, furigana, and translations
 - inspector panel with current line, protocol links, artifact links, and creation command
 
-For pure audio, the player uses `assets.cover` or `assets.poster` as the stage image behind the waveform. For video/MV/short-film media, `assets.primaryVideo` can replace the waveform stage while the same poster remains available for loading states and share previews.
+For pure audio, the player uses `assets.cover` or `assets.poster` as the stage image behind the waveform. For video/MV/short-film media, `assets.primaryVideo` can replace the waveform stage while the same poster remains available for loading states and share previews. YouTube-uploaded media can use `assets.youtube` or `assets.externalVideos[]`; the site embeds the YouTube player and keeps the same catalog, artifact, and subtitle panels.
 
 ## Data Protocol
 
@@ -116,6 +118,12 @@ Detailed format reference:
 
 ```text
 references/musai-website-json-format.md
+```
+
+LALACHAN and YouTube publishing guide:
+
+```text
+references/lalachan-fun-media-publishing.md
 ```
 
 ## Required Files For A New Media Item
@@ -151,6 +159,18 @@ website/data/films/<media-id>/manifest.json
 website/data/films/<media-id>/subtitles/en.json
 website/data/films/<media-id>/subtitles/zh-Hans.json
 website/data/films/<media-id>/subtitles/ja.json
+```
+
+For a YouTube-uploaded video:
+
+```text
+website/data/youtube/<media-id>/manifest.json
+```
+
+or use:
+
+```bash
+npm run website:add-youtube -- --title "Title" --youtube-url "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
 Then add the item to:
@@ -339,4 +359,3 @@ Planned fields that fit the current protocol:
 - `rights` for ownership, license, and public/private status
 - `quality` for loudness, duration, ASR overlap, and human review status
 - `collections` or playlists for albums, MV sets, and short-film series
-

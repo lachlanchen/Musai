@@ -31,8 +31,10 @@
       <nav class="top-nav" aria-label="Media categories">
         <button class="active" type="button" data-kind-filter="all">All</button>
         <button type="button" data-kind-filter="song">Music</button>
+        <button type="button" data-kind-filter="localized-song">Localized</button>
         <button type="button" data-kind-filter="mv">MV</button>
         <button type="button" data-kind-filter="short-film">Short Film</button>
+        <button type="button" data-kind-filter="youtube-video">YouTube</button>
       </nav>
       <a class="repo-link" href="https://github.com/lachlanchen/Musai">GitHub</a>
     </header>
@@ -66,6 +68,7 @@
         <img id="cover-art" class="cover-art" src="assets/covers/rain-day-bilingual-verse.png" alt="Rain Day Bilingual Verse cover" decoding="async">
         <canvas id="visualizer" width="900" height="420" aria-label="Audio visualizer"></canvas>
         <video id="video" playsinline preload="metadata" aria-label="Video player"></video>
+        <iframe id="external-player" title="External video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen hidden></iframe>
         <div class="stage-shade"></div>
         <div class="stage-copy">
           <p id="media-caption">Rainy bilingual vocal demo</p>
