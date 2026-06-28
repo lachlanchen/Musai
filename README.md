@@ -54,6 +54,7 @@ input song
 | [`scripts/run_soulx_svs.sh`](scripts/run_soulx_svs.sh) | Runs SoulX-Singer SVS inference with prompt and target metadata. |
 | [`scripts/soulx_rewrite_metadata.py`](scripts/soulx_rewrite_metadata.py) | Rewrites SoulX metadata with Mandarin target lyrics while preserving note/F0 timing. |
 | [`scripts/mix_vocal_with_instrumental.sh`](scripts/mix_vocal_with_instrumental.sh) | Mixes a generated vocal with an instrumental stem and loudness-normalizes it. |
+| [`scripts/run_localization_performance_pipeline.sh`](scripts/run_localization_performance_pipeline.sh) | Dedicated EN/ZH localization performance demo using DeepSeek or OpenAI for lyric/check packages. |
 | [`scripts/run_moss_music_env.sh`](scripts/run_moss_music_env.sh) | Runs MOSS-Music with the required FFmpeg, TorchCodec, and CUDA library paths. |
 | [`scripts/musai_lyricfit_openai.py`](scripts/musai_lyricfit_openai.py) | Optional OpenAI-powered lyric adaptation helper. |
 | [`references/`](references/) | Architecture, deep research, and local setup notes. |
@@ -87,6 +88,20 @@ Generated audio, downloaded songs, model weights, and third-party clones are ign
 
 For the full setup/test guide, see [`SETUP_AND_TEST.md`](SETUP_AND_TEST.md).
 
+Run the dedicated localization performance demo after the smoke/matrix artifacts exist:
+
+```bash
+MUSAI_LYRIC_PROVIDER=deepseek \
+DEEPSEEK_MODEL=deepseek-reasoner \
+scripts/run_localization_performance_pipeline.sh
+```
+
+If your OpenAI account has access to GPT-5.5-compatible chat completions, the same demo can be run with:
+
+```bash
+scripts/run_localization_performance_pipeline.sh --provider openai --model gpt-5.5
+```
+
 ## Local Validation
 
 The local smoke test on an open Wikimedia Commons recording passed on a machine with an NVIDIA RTX 4090 D:
@@ -113,6 +128,8 @@ MAX_DURATION=60 ASR_MODEL=small DEMUCS_DEVICE=cuda scripts/test_open_songs_matri
 ```
 
 See [`references/open-song-test-report-2026-06-28.md`](references/open-song-test-report-2026-06-28.md) for exact input songs, output paths, SoulX/YingMusic attempts, and the current quality gate results.
+
+The dedicated DeepSeek/OpenAI localization performance script was also run on 2026-06-28. See [`references/localization-performance-demo-2026-06-28.md`](references/localization-performance-demo-2026-06-28.md).
 
 ## High-Quality Backends
 

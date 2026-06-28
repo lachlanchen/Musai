@@ -18,7 +18,7 @@ Large generated files are ignored by git:
 - FFmpeg, installed by the bootstrap script through conda
 - NVIDIA CUDA GPU recommended for Demucs separation, but CPU can work more slowly
 
-No API key is required for the core smoke test. `OPENAI_API_KEY` is only needed for the optional lyric-adaptation helper.
+No API key is required for the core smoke test. `DEEPSEEK_API_KEY` or `OPENAI_API_KEY` is only needed for the optional lyric/localization performance scripts.
 
 ## One-Command Smoke Test
 
@@ -147,6 +147,35 @@ CONTROL=score scripts/run_soulx_svs.sh \
   data/runs/soulx-wrapper-demo-zh
 ```
 
+## Dedicated Localization Performance Demo
+
+After the open-song matrix and optional SoulX demo artifacts exist, run:
+
+```bash
+MUSAI_LYRIC_PROVIDER=deepseek \
+DEEPSEEK_MODEL=deepseek-reasoner \
+scripts/run_localization_performance_pipeline.sh
+```
+
+This writes:
+
+```text
+data/runs/localization-performance-20260628/REPORT.md
+data/runs/localization-performance-20260628/localization_performance.json
+data/runs/localization-performance-20260628/en-to-zh-danny/target_lyrics_zh.txt
+data/runs/localization-performance-20260628/en-to-zh-danny/soulx_target_metadata_zh.json
+data/runs/localization-performance-20260628/zh-to-en-molihua/target_lyrics_en.txt
+```
+
+Provider options:
+
+```bash
+scripts/run_localization_performance_pipeline.sh --provider deepseek --model deepseek-reasoner
+scripts/run_localization_performance_pipeline.sh --provider openai --model gpt-5.5
+```
+
+The script creates lyric packages and checks existing render artifacts. It does not claim production quality unless the rendered singing passes the intelligibility gate in its report.
+
 ## Script Map
 
 | Script | Purpose |
@@ -162,6 +191,8 @@ CONTROL=score scripts/run_soulx_svs.sh \
 | `scripts/run_soulx_svs.sh` | Run SoulX-Singer SVS inference. |
 | `scripts/soulx_rewrite_metadata.py` | Replace SoulX lyric/phoneme metadata while preserving timing. |
 | `scripts/mix_vocal_with_instrumental.sh` | Mix generated vocal with instrumental and normalize loudness. |
+| `scripts/run_localization_performance_pipeline.sh` | Dedicated EN/ZH localization performance demo using DeepSeek/OpenAI. |
+| `scripts/run_localization_performance_pipeline.py` | Python implementation for the dedicated localization performance demo. |
 | `scripts/musai_lyricfit_openai.py` | Optional OpenAI lyric adaptation helper. |
 
 ## Current Quality Boundary
