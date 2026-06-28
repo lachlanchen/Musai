@@ -1,0 +1,55 @@
+{
+  "name": "musai",
+  "version": "0.1.0",
+  "description": "Local-first AI song localization studio: CLI, webapp, stems, lyrics, beats, chords, and creative music workflows.",
+  "keywords": [
+    "ai-music",
+    "music-localization",
+    "song-localization",
+    "singing-voice",
+    "demucs",
+    "whisper",
+    "chords",
+    "beats",
+    "cli",
+    "webapp"
+  ],
+  "homepage": "https://lazying.art",
+  "bugs": {
+    "url": "https://github.com/lachlanchen/Musai/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lachlanchen/Musai.git"
+  },
+  "license": "UNLICENSED",
+  "bin": {
+    "musai": "bin/musai.js"
+  },
+  "files": [
+    "bin/",
+    "musai/*.py",
+    "scripts/*.py",
+    "scripts/*.sh",
+    "references/*.md",
+    "!references/private-musai-control-needs-2026-06-28.md",
+    "i18n/*.md",
+    "README.md",
+    "SETUP_AND_TEST.md",
+    "TODO.md",
+    "AGENTS.md",
+    "CITATION.cff",
+    "environment.yml",
+    ".env.example"
+  ],
+  "scripts": {
+    "check": "node --check bin/musai.js && node bin/musai.js --version && node bin/musai.js doctor --json",
+    "smoke": "node bin/musai.js npm-smoke",
+    "test": "npm run check && npm run smoke",
+    "pack:dry-run": "npm pack --dry-run",
+    "pack:json": "npm pack --json"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

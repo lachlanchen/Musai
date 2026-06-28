@@ -87,6 +87,7 @@ class CreativeMaterials:
     lyrics: str = ""
     chords: str = ""
     notation: str = ""
+    melody: str = ""
     style: str = ""
     genre: str = ""
     mood: str = ""
@@ -95,6 +96,12 @@ class CreativeMaterials:
     reference_audio: str = ""
     reference_lyrics: str = ""
     target_language: str = ""
+    generation_mode: str = "auto"
+    control_level: str = "auto"
+    style_references: str = ""
+    voice_notes: str = ""
+    rights_confirmed: bool = False
+    voice_consent: bool = False
     duration: int = 120
     bpm: int | None = None
     keyscale: str = ""
@@ -148,10 +155,27 @@ def copy_material(path_text: str, materials_dir: Path) -> str:
 
 
 def classify_workflow(materials: CreativeMaterials) -> str:
+    mode = (materials.generation_mode or "auto").strip().lower().replace("-", "_")
+    if mode in {
+        "free_vocal",
+        "vocal",
+        "vocal_only",
+        "prompt_vocal",
+    }:
+        return "free_vocal_generation"
+    if mode in {"melody", "melody_generation", "xuanlv", "rhythm_melody"}:
+        return "melody_rhythm_generation"
+    if mode in {"full_song", "full_production", "production"}:
+        return "full_production_song"
+    if mode in {"controlled", "controlled_song", "edit_from_materials"}:
+        return "controlled_song_from_materials"
+    if mode in {"localization", "localize", "song_localization"}:
+        return "licensed_song_localization"
+
     has_reference = bool(materials.reference_audio)
     has_lyrics = bool(materials.lyrics.strip())
     has_chords = bool(materials.chords.strip())
-    has_notation = bool(materials.notation.strip())
+    has_notation = bool(materials.notation.strip() or materials.melody.strip())
     has_target = bool(materials.target_language.strip())
     if has_reference and has_target:
         return "localize_reference_song"
@@ -220,9 +244,11 @@ def call_brief_model(provider: str, model: str, materials: CreativeMaterials, wo
         "return_schema": {
             "concept": "one paragraph",
             "production_strategy": "how to use the provided materials",
+            "control_plan": "how to preserve or invent lyrics, melody, rhythm, arrangement, vocal timbre, and language",
             "song_structure": ["intro", "verse", "chorus"],
             "lyrics": "complete or revised lyrics with section labels",
             "caption_for_music_model": "rich production prompt for ACE-Step or similar",
+            "soulx_vocal_plan": "when useful, how to prepare SoulX prompt wav, prompt metadata, target metadata, control mode, and QA",
             "vocal_direction": "singer, language, delivery, emotion",
             "harmony_rhythm_notes": "chords, beat, groove, notation guidance",
             "recommended_backend": "ace-step-1.5 or soulx-singer or analysis-only",
@@ -235,7 +261,8 @@ def call_brief_model(provider: str, model: str, materials: CreativeMaterials, wo
             "role": "system",
             "content": (
                 "You are Musai Producer: a senior songwriter, arranger, lyricist, and AI music QA engineer. "
-                "Return strict JSON only. Prefer concrete, singable lyrics and actionable model settings."
+                "Return strict JSON only. Prefer concrete, singable lyrics and actionable model settings. "
+                "Treat celebrity names only as broad influence references unless explicit voice consent is present; do not request deceptive impersonation."
             ),
         },
         {"role": "user", "content": json.dumps(payload, ensure_ascii=False)},
@@ -259,8 +286,8 @@ def call_brief_model(provider: str, model: str, materials: CreativeMaterials, wo
 def offline_brief(materials: CreativeMaterials, workflow: str, analysis_manifest: dict[str, Any] | None) -> dict[str, Any]:
     title = materials.title or "Untitled song"
     language = materials.vocal_language or materials.language or "en"
-    style = ", ".join(part for part in [materials.genre, materials.style, materials.mood] if part) or "clear modern pop production"
-    source = materials.idea or materials.lyrics or materials.chords or materials.notation or "an original song idea"
+    style = ", ".join(part for part in [materials.genre, materials.style, materials.mood, materials.style_references] if part) or "clear modern pop production"
+    source = materials.idea or materials.lyrics or materials.chords or materials.notation or materials.melody or "an original song idea"
     lyrics = materials.lyrics.strip()
     if not lyrics:
         lyrics = (
@@ -273,6 +300,7 @@ def offline_brief(materials: CreativeMaterials, workflow: str, analysis_manifest
         )
     caption_parts = [
         f"High quality {language} vocal song titled {title}.",
+        f"Generation mode: {materials.generation_mode or 'auto'}; control level: {materials.control_level or 'auto'}.",
         f"Style: {style}.",
         "Professional arrangement, clear lead vocal, polished mix, memorable chorus.",
     ]
@@ -280,6 +308,10 @@ def offline_brief(materials: CreativeMaterials, workflow: str, analysis_manifest
         caption_parts.append(f"Respect this chord/harmony idea: {materials.chords[:700]}")
     if materials.notation:
         caption_parts.append(f"Respect this notation or melody sketch: {materials.notation[:700]}")
+    if materials.melody:
+        caption_parts.append(f"Respect this melody/rhythm (xuanlv) brief: {materials.melody[:700]}")
+    if materials.voice_notes:
+        caption_parts.append(f"Vocal direction and constraints: {materials.voice_notes[:700]}")
     if analysis_manifest:
         caption_parts.append(
             f"Reference analysis: tempo {analysis_manifest.get('tempo_bpm')} BPM, "
@@ -288,17 +320,20 @@ def offline_brief(materials: CreativeMaterials, workflow: str, analysis_manifest
     return {
         "concept": f"{title}: {source[:500]}",
         "production_strategy": strategy_for_workflow(workflow),
+        "control_plan": control_plan_for_materials(materials, workflow),
         "song_structure": ["Intro", "Verse 1", "Pre-Chorus", "Chorus", "Verse 2", "Bridge", "Final Chorus", "Outro"],
         "lyrics": lyrics,
         "caption_for_music_model": " ".join(caption_parts),
+        "soulx_vocal_plan": soulx_plan_for_materials(materials, workflow),
         "vocal_direction": f"Lead vocal in {language}; natural phrasing, emotionally direct, no spoken TTS.",
-        "harmony_rhythm_notes": materials.chords or materials.notation or "Let the model create harmony; keep rhythm singable and chorus-forward.",
-        "recommended_backend": "soulx-singer" if workflow == "localize_reference_song" else "ace-step-1.5",
+        "harmony_rhythm_notes": materials.chords or materials.notation or materials.melody or "Let the model create harmony; keep rhythm singable and chorus-forward.",
+        "recommended_backend": recommended_backend_for_workflow(workflow),
         "quality_checklist": [
             "Lead vocal is sung and intelligible.",
             "Lyrics scan naturally in the target language.",
             "The chorus has a memorable melodic hook.",
             "Reference chords/rhythm are reflected when provided.",
+            "For SoulX vocal-only output, keep the generated vocal dry/clean and mix later.",
             "Final loudness and vocal balance are checked before accepting.",
         ],
         "risks": [
@@ -310,6 +345,11 @@ def offline_brief(materials: CreativeMaterials, workflow: str, analysis_manifest
 
 def strategy_for_workflow(workflow: str) -> str:
     strategies = {
+        "free_vocal_generation": "Use DeepSeek/OpenAI/Codex to refine lyrics and vocal direction first, then prepare a SoulX vocal package; mix later only if an instrumental exists.",
+        "melody_rhythm_generation": "Use the AI layer to turn requirements into a melody/rhythm brief, then create note/duration metadata or a MIDI/sheet draft before singing synthesis.",
+        "full_production_song": "Use DeepSeek/OpenAI/Codex to refine song concept, lyrics, structure, style, and prompts, then generate with ACE-Step/YuE-style full-song models and QA the result.",
+        "controlled_song_from_materials": "Preserve supplied lyrics, chords, sheet/notation, melody sketches, or friend recordings; analyze references before generating, then route vocal-only work to SoulX and full arrangement work to ACE-Step.",
+        "licensed_song_localization": "Use rights-confirmed source material, extract stems/lyrics/beats/chords, adapt lyrics for singability, generate a new target-language vocal with SoulX/YingMusic, then mix with the licensed instrumental.",
         "idea_to_complete_song": "Expand idea into lyrics, arrangement, prompt, then generate with ACE-Step.",
         "lyrics_to_complete_song": "Refine lyrics for singability, generate a rich music caption, then use ACE-Step.",
         "lyrics_plus_music_skeleton": "Preserve lyric intent plus chords/notation; use ACE-Step for a full demo and optionally export MIDI for professional vocal tools.",
@@ -319,6 +359,48 @@ def strategy_for_workflow(workflow: str) -> str:
         "localize_reference_song": "Use Demucs/analysis plus SoulX/YingMusic-style singing synthesis; keep output marked experimental until ASR and listening checks pass.",
     }
     return strategies.get(workflow, "Create a song brief and route to the best available backend.")
+
+
+def recommended_backend_for_workflow(workflow: str) -> str:
+    if workflow in {"free_vocal_generation", "licensed_song_localization", "localize_reference_song"}:
+        return "soulx-singer"
+    if workflow in {"melody_rhythm_generation", "controlled_song_from_materials"}:
+        return "soulx-singer + ace-step-1.5"
+    if workflow == "full_production_song":
+        return "ace-step-1.5"
+    return "ace-step-1.5"
+
+
+def control_plan_for_materials(materials: CreativeMaterials, workflow: str) -> str:
+    level = materials.control_level or "auto"
+    parts = [f"Control level: {level}. Workflow: {workflow}."]
+    if materials.lyrics:
+        parts.append("Treat supplied lyrics as primary text; polish only when asked or when singability requires it.")
+    if materials.melody or materials.notation:
+        parts.append("Treat melody/rhythm/notation as the musical spine; preserve phrase duration and note count before adding arrangement.")
+    if materials.chords:
+        parts.append("Preserve the harmonic intent and chord rhythm unless the user asks for reharmonization.")
+    if materials.reference_audio:
+        parts.append("Analyze the reference audio for stems, tempo, beat grid, chords, and vocal contour before generation.")
+    if materials.target_language:
+        parts.append("For localization, preserve meaning, section shape, phrase duration, rhyme where possible, and natural target-language singing.")
+    if materials.style_references:
+        parts.append("Use named artists only as non-deceptive style references; avoid voice impersonation unless explicit consent is recorded.")
+    if materials.rights_confirmed:
+        parts.append("User marked rights confirmed for this project.")
+    if materials.voice_consent:
+        parts.append("User marked voice consent for this project.")
+    return " ".join(parts)
+
+
+def soulx_plan_for_materials(materials: CreativeMaterials, workflow: str) -> str:
+    if recommended_backend_for_workflow(workflow).startswith("ace-step"):
+        return "SoulX is optional for vocal replacement or later high-quality lead vocal rendering."
+    return (
+        "Prepare a SoulX package with prompt_wav, prompt_metadata, target_metadata, control=score when note durations are reliable "
+        "or control=melody when F0 contour is the main guide. Preserve every generated vocal as dry human_sound first; mix with "
+        "instrumental only after listening, ASR/lyrics checks, and level checks pass."
+    )
 
 
 def ace_language_code(materials: CreativeMaterials) -> str:
@@ -405,13 +487,23 @@ def render_brief_markdown(project: CreativeProject, brief: dict[str, Any], model
         f"- Idea: {materials.idea or '(none)'}",
         f"- Language: `{materials.language}`",
         f"- Vocal language: `{materials.vocal_language}`",
+        f"- Generation mode: `{materials.generation_mode}`",
+        f"- Control level: `{materials.control_level}`",
         f"- Genre/style/mood: `{materials.genre}` / `{materials.style}` / `{materials.mood}`",
+        f"- Style references: `{materials.style_references or '(none)'}`",
+        f"- Voice notes: `{materials.voice_notes or '(none)'}`",
         f"- Reference audio: `{materials.reference_audio or '(none)'}`",
         f"- Target language: `{materials.target_language or '(none)'}`",
+        f"- Rights confirmed: `{materials.rights_confirmed}`",
+        f"- Voice consent: `{materials.voice_consent}`",
         "",
         "## Recommended Workflow",
         "",
         brief.get("production_strategy", ""),
+        "",
+        "## Control Plan",
+        "",
+        brief.get("control_plan", ""),
         "",
         "## Concept",
         "",
@@ -430,6 +522,10 @@ def render_brief_markdown(project: CreativeProject, brief: dict[str, Any], model
         "## Harmony / Rhythm / Notation",
         "",
         brief.get("harmony_rhythm_notes", ""),
+        "",
+        "## SoulX Vocal Plan",
+        "",
+        brief.get("soulx_vocal_plan", ""),
         "",
         "## Backend Routing",
         "",
@@ -468,6 +564,8 @@ def render_commands(project_dir: Path, ace_config: Path, workflow: str, language
             "",
             f"# Project: {project_dir}",
             f"# Workflow: {workflow}",
+            f"ROOT_DIR={toml_string(str(ROOT))}",
+            "cd \"$ROOT_DIR\"",
             "",
             "case \"${1:-help}\" in",
             "  ace)",
@@ -484,13 +582,95 @@ def render_commands(project_dir: Path, ace_config: Path, workflow: str, language
             "    if [[ -z \"${audio:-}\" ]]; then echo 'No ACE-Step wav output found.' >&2; exit 1; fi",
             f"    PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_quality_check.py \"$audio\" --language {language} --expected-lyrics-file {project_dir / 'lyrics_draft.txt'} --output-dir {project_dir}",
             "    ;;",
+            "  soulx-demo-en)",
+            f"    CONTROL=score scripts/run_soulx_svs.sh third_party/SoulX-Singer/example/audio/en_prompt.mp3 third_party/SoulX-Singer/example/audio/en_prompt.json third_party/SoulX-Singer/example/audio/en_target.json {project_dir / 'soulx_demo_en'}",
+            "    ;;",
+            "  soulx-demo-zh)",
+            f"    CONTROL=score scripts/run_soulx_svs.sh third_party/SoulX-Singer/example/audio/zh_prompt.mp3 third_party/SoulX-Singer/example/audio/zh_prompt.json third_party/SoulX-Singer/example/audio/zh_target.json {project_dir / 'soulx_demo_zh'}",
+            "    ;;",
+            "  soulx-custom)",
+            "    : \"${PROMPT_WAV:?set PROMPT_WAV}\"",
+            "    : \"${PROMPT_METADATA:?set PROMPT_METADATA}\"",
+            "    : \"${TARGET_METADATA:?set TARGET_METADATA}\"",
+            f"    CONTROL=\"${{CONTROL:-score}}\" scripts/run_soulx_svs.sh \"$PROMPT_WAV\" \"$PROMPT_METADATA\" \"$TARGET_METADATA\" {project_dir / 'soulx_custom'}",
+            "    ;;",
+            "  qa-soulx)",
+            f"    audio=$(find {project_dir} -path '*soulx*' -type f -name 'generated.wav' 2>/dev/null | sort | tail -n 1 || true)",
+            "    if [[ -z \"${audio:-}\" ]]; then echo 'No SoulX generated.wav output found.' >&2; exit 1; fi",
+            f"    PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_quality_check.py \"$audio\" --language {language} --expected-lyrics-file {project_dir / 'lyrics_draft.txt'} --output-dir {project_dir}",
+            "    ;;",
             "  *)",
-            "    echo 'Usage: commands.sh ace|ace-tmux|qa-ace|show'",
+            "    echo 'Usage: commands.sh ace|ace-tmux|qa-ace|soulx-demo-en|soulx-demo-zh|soulx-custom|qa-soulx|show'",
             "    ;;",
             "esac",
             "",
         ]
     )
+
+
+def render_soulx_request(project: CreativeProject, brief: dict[str, Any]) -> str:
+    materials = project.materials
+    return f"""# SoulX Vocal Request
+
+Project: `{project.project_id}`
+Workflow: `{project.workflow}`
+Recommended backend: `{brief.get('recommended_backend', '')}`
+
+## Why SoulX
+
+Use SoulX when the desired artifact is mainly a clean sung human voice / `human_sound` stem. It is the strongest local route currently available for vocal-only experiments, cross-language singing, and controlled melody/score-conditioned singing.
+
+## Inputs
+
+- Generation mode: `{materials.generation_mode}`
+- Control level: `{materials.control_level}`
+- Vocal language: `{materials.vocal_language}`
+- Target language: `{materials.target_language or '(none)'}`
+- Lyrics supplied: `{bool(materials.lyrics.strip())}`
+- Melody / 旋律 supplied: `{bool(materials.melody.strip() or materials.notation.strip())}`
+- Reference audio supplied: `{bool(materials.reference_audio)}`
+- Rights confirmed: `{materials.rights_confirmed}`
+- Voice consent: `{materials.voice_consent}`
+
+## Control Plan
+
+{brief.get('control_plan', '')}
+
+## SoulX Plan
+
+{brief.get('soulx_vocal_plan', '')}
+
+## Commands
+
+Known-good example vocal renders:
+
+```bash
+{project.artifacts.get('commands', '')} soulx-demo-en
+{project.artifacts.get('commands', '')} soulx-demo-zh
+```
+
+Custom metadata render:
+
+```bash
+PROMPT_WAV=/path/to/prompt.wav \\
+PROMPT_METADATA=/path/to/prompt.json \\
+TARGET_METADATA=/path/to/target.json \\
+CONTROL=score \\
+{project.artifacts.get('commands', '')} soulx-custom
+```
+
+Quality check:
+
+```bash
+{project.artifacts.get('commands', '')} qa-soulx
+```
+
+## Metadata Rule
+
+SoulX quality depends heavily on metadata. Good metadata includes aligned text tokens, phonemes, note durations, note pitch, note type, and F0. For Chinese lyric editing, character count must match sung-token count unless a full preprocessing/alignment step is rerun.
+
+Do not treat a SoulX render as final until the vocal is audible, sung, intelligible, aligned to the intended phrase rhythm, and documented with the exact prompt/metadata files used.
+"""
 
 
 def render_aginti_handoff(project: CreativeProject) -> str:
@@ -516,6 +696,7 @@ Key files:
 {project.root}/BRIEF.md
 {project.root}/lyrics_draft.txt
 {project.root}/ace_step_config.toml
+{project.root}/SOULX_REQUEST.md
 {project.root}/commands.sh
 ```
 
@@ -544,6 +725,7 @@ def create_project(
     materials.lyrics = read_text_source(materials.lyrics)
     materials.chords = read_text_source(materials.chords)
     materials.notation = read_text_source(materials.notation)
+    materials.melody = read_text_source(materials.melody)
     materials.reference_lyrics = read_text_source(materials.reference_lyrics)
     materials.reference_audio = copy_material(materials.reference_audio, materials_dir)
 
@@ -586,6 +768,7 @@ def create_project(
             "brief_md": str(project_dir / "BRIEF.md"),
             "lyrics_draft": str(project_dir / "lyrics_draft.txt"),
             "ace_step_config": str(ace_config),
+            "soulx_request": str(project_dir / "SOULX_REQUEST.md"),
             "commands": str(commands_path),
             "aginti_handoff": str(project_dir / "AGINTI_HANDOFF.md"),
         }
@@ -594,6 +777,10 @@ def create_project(
         "show": f"{commands_path} show",
         "ace": f"{commands_path} ace",
         "ace_tmux": f"{commands_path} ace-tmux",
+        "soulx_demo_en": f"{commands_path} soulx-demo-en",
+        "soulx_demo_zh": f"{commands_path} soulx-demo-zh",
+        "soulx_custom": f"{commands_path} soulx-custom",
+        "qa_soulx": f"{commands_path} qa-soulx",
         "web": "scripts/start_musai_studio_tmux.sh",
     }
 
@@ -602,6 +789,7 @@ def create_project(
     (project_dir / "BRIEF.md").write_text(render_brief_markdown(project, brief, model_meta, analysis_manifest), encoding="utf-8")
     commands_path.write_text(render_commands(project_dir, ace_config, workflow, ace_language_code(materials)), encoding="utf-8")
     commands_path.chmod(0o755)
+    (project_dir / "SOULX_REQUEST.md").write_text(render_soulx_request(project, brief), encoding="utf-8")
     (project_dir / "AGINTI_HANDOFF.md").write_text(render_aginti_handoff(project), encoding="utf-8")
     write_json(project_dir / "project.json", asdict(project))
     return project

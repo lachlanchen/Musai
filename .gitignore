@@ -19,9 +19,13 @@ downloads/pro-vocal-tools/*.pkg
 data/open_songs/
 data/creative_projects/
 data/runs/
+data/studio/
 data/uploads/
 models/
 third_party/
+
+# Private product notes / user requirement captures.
+references/private-musai-control-needs-2026-06-28.md
 
 *.wav
 *.mp3

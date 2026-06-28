@@ -32,6 +32,12 @@ fi
 
 printf '%s\n' "$PORT" > "$PORT_FILE"
 
+for var_name in OPENAI_API_KEY OPENAI_MODEL DEEPSEEK_API_KEY DEEPSEEK_BASE_URL DEEPSEEK_MODEL HF_TOKEN MUSAI_CODEX_TIMEOUT MUSAI_CODEX_WORKER_TIMEOUT; do
+  if [[ -n "${!var_name:-}" ]]; then
+    tmux set-environment -g "$var_name" "${!var_name}"
+  fi
+done
+
 tmux new-session -d -s "$SESSION" \
   "cd '$ROOT_DIR' && PYTHONNOUSERSITE=1 conda run -n '$ENV_NAME' python scripts/musai_studio_web.py --host '$HOST' --port '$PORT' 2>&1 | tee '$LOG_FILE'"
 

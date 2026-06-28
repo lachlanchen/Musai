@@ -125,6 +125,99 @@ If that port is busy, the starter picks the next free port and prints the actual
 
 The web app can create projects from idea, lyrics, chords, notation, and reference audio paths. It also lists project briefs and command files.
 
+### Chat, Worker, And Artifact Canvas
+
+Musai Studio now has a LazyBlog/AgInTiFlow-style chat surface:
+
+```text
+left panel   = setup status, sessions, model profiles, project list
+center panel = chat router, worker launcher, project creation form
+right panel  = worker jobs, artifact pipe, canvas/editor/PDF viewer
+```
+
+Default Studio profiles are saved in:
+
+```text
+data/studio/settings.json
+```
+
+Default routing:
+
+| Profile | Provider | Model | Reasoning | Use |
+| --- | --- | --- | --- | --- |
+| `chat` | Codex CLI | `gpt-5.5` | `medium` | conversational planning, setup explanations, lightweight routing |
+| `worker` | Codex CLI | `gpt-5.5` | `xhigh` | long tasks, code edits, project setup, analysis, generation orchestration |
+| `writer` | DeepSeek API | `deepseek-reasoner` | `high` | lyric/brief writing fallback when API key is available |
+
+The browser buttons map to:
+
+```text
+Chat   -> synchronous chat profile
+Worker -> background worker profile
+Auto   -> keyword router; setup/run/generate/analyze/install/localize go to worker
+```
+
+Artifacts created by chat or workers are registered under:
+
+```text
+data/studio/artifacts/<session-id>/
+```
+
+The artifact pipe accepts generated files from safe repo areas such as `data/`, `references/`, `VoidAbyssSong/`, and `downloads/`, while blocking secret-like paths such as `.env`, `.git`, token files, and private keys.
+
+Useful CLI commands:
+
+```bash
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py setup
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py sessions
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py chat --mode chat "What should I do next for this song?"
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py chat --mode worker "Analyze VoidAbyssSong/Wang and register the important artifacts."
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py jobs --session-id <session-id>
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py artifacts <session-id>
+```
+
+The same commands are available through the npm wrapper:
+
+```bash
+npm install
+npm link
+musai doctor
+musai studio --tmux
+musai setup
+musai chat --mode worker "Create a project from this song idea and register artifacts."
+musai artifacts <session-id>
+```
+
+The npm package is dependency-free; it delegates to the repo-local Python scripts using `conda run -n musai` unless `MUSAI_PYTHON` or `MUSAI_NO_CONDA=1` is set.
+
+### Control Modes
+
+Musai project creation now accepts explicit control fields:
+
+```text
+generation_mode = auto | free_vocal | melody_generation | full_production | controlled_song | localization
+control_level   = auto | free | lyrics | lyrics_chords | melody_sheet | reference_audio | strict_localization
+```
+
+Use `melody` for 旋律, melody contour, phrase rhythm, hook shape, numbered notation, staff notes, or a rough singer/demo description. Use `rights_confirmed` and `voice_consent` when source-song rights or voice/timbre consent are confirmed.
+
+Every project now writes:
+
+```text
+SOULX_REQUEST.md
+```
+
+and `commands.sh` exposes:
+
+```bash
+commands.sh soulx-demo-en
+commands.sh soulx-demo-zh
+PROMPT_WAV=... PROMPT_METADATA=... TARGET_METADATA=... commands.sh soulx-custom
+commands.sh qa-soulx
+```
+
+See [`musai-control-and-soulx-workflow.md`](musai-control-and-soulx-workflow.md) for the product model.
+
 ## AgInTiFlow Handoff
 
 Every creative project includes `AGINTI_HANDOFF.md`. It contains a Codex/AgInTiFlow prompt like:

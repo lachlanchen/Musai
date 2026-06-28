@@ -41,6 +41,8 @@ input song
 | Path | Purpose |
 | --- | --- |
 | [`musai/`](musai/) | Local Python analysis toolkit. |
+| [`package.json`](package.json) | npm package metadata for the `musai` CLI/webapp wrapper. |
+| [`bin/musai.js`](bin/musai.js) | npm executable that launches Musai Studio and Python workflows. |
 | [`SETUP_AND_TEST.md`](SETUP_AND_TEST.md) | Fresh-clone setup, smoke test, matrix test, and script map. |
 | [`scripts/setup_and_smoke_test.sh`](scripts/setup_and_smoke_test.sh) | One-command core setup plus open-song smoke test. |
 | [`scripts/bootstrap_musai.sh`](scripts/bootstrap_musai.sh) | Creates the conda environment and installs the local stack. |
@@ -92,6 +94,46 @@ Generated audio, downloaded songs, model weights, and third-party clones are ign
 
 For the full setup/test guide, see [`SETUP_AND_TEST.md`](SETUP_AND_TEST.md).
 
+## npm CLI And Webapp
+
+Musai also ships as an npm package wrapper around the local Python/conda engine.
+
+From this repo:
+
+```bash
+npm install
+npm link
+musai doctor
+musai studio --tmux
+```
+
+Or without linking:
+
+```bash
+npm run check
+node bin/musai.js studio --tmux
+```
+
+Useful npm/CLI commands:
+
+```bash
+musai setup
+musai models
+musai plan --title "My Song" --idea "A cinematic song about..." --provider deepseek
+musai chat --mode chat "What should I do next?"
+musai chat --mode worker "Analyze this project and register artifacts."
+musai pipeline data/open_songs/danny-boy-1917/original.ogg --run-name npm-smoke --max-duration 45
+npm run pack:dry-run
+```
+
+The npm CLI uses `conda run -n musai python ...` by default. Override with:
+
+```bash
+MUSAI_CONDA_ENV=musai
+MUSAI_PYTHON=/path/to/python
+MUSAI_NO_CONDA=1
+```
+
 Run the dedicated localization performance demo after the smoke/matrix artifacts exist:
 
 ```bash
@@ -124,6 +166,8 @@ scripts/start_musai_studio_tmux.sh
 ```
 
 See [`references/musai-creative-studio.md`](references/musai-creative-studio.md).
+
+For the new control-level model and the SoulX vocal-only workflow, see [`references/musai-control-and-soulx-workflow.md`](references/musai-control-and-soulx-workflow.md).
 
 ## Local Validation
 
@@ -163,6 +207,8 @@ The local machine has staged heavier research backends for better vocal quality 
 - Music understanding and QA: MOSS-Music.
 
 See [`references/high-quality-vocal-backends.md`](references/high-quality-vocal-backends.md) and [`references/local-quality-backend-install-status.md`](references/local-quality-backend-install-status.md).
+For the practical control modes, including vocal-only SoulX generation, melody/旋律 generation, full production, controlled material-based generation, and licensed localization, see [`references/musai-control-and-soulx-workflow.md`](references/musai-control-and-soulx-workflow.md).
+For the local SoulX vocal-only outputs that sounded usable, see [`references/soulx-good-vocal-runs-2026-06-28.md`](references/soulx-good-vocal-runs-2026-06-28.md).
 
 For the broader EN/ZH/JP model map, including Chinese-company repos and Microsoft Muzic, see [`references/en-zh-jp-music-model-repos.md`](references/en-zh-jp-music-model-repos.md).
 
