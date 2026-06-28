@@ -14,77 +14,239 @@
     {
       "id": "line-001",
       "start": 0.0,
-      "end": 4.6,
+      "end": 3.86,
       "text": "窗边雨，轻轻落街口",
       "singableText": "窗边雨，轻轻落街口",
       "role": "localized-lyric",
       "tokens": [
-        {"text": "窗", "pinyin": "chuang1", "display": "chuang", "tone": 1},
-        {"text": "边", "pinyin": "bian1", "display": "bian", "tone": 1},
-        {"text": "雨", "pinyin": "yu3", "display": "yu", "tone": 3},
-        {"text": "，"},
-        {"text": "轻", "pinyin": "qing1", "display": "qing", "tone": 1},
-        {"text": "轻", "pinyin": "qing1", "display": "qing", "tone": 1},
-        {"text": "落", "pinyin": "luo4", "display": "luo", "tone": 4},
-        {"text": "街", "pinyin": "jie1", "display": "jie", "tone": 1},
-        {"text": "口", "pinyin": "kou3", "display": "kou", "tone": 3}
+        {
+          "text": "窗",
+          "pinyin": "chuang1",
+          "display": "chuang",
+          "tone": 1
+        },
+        {
+          "text": "边",
+          "pinyin": "bian1",
+          "display": "bian",
+          "tone": 1
+        },
+        {
+          "text": "雨",
+          "pinyin": "yu3",
+          "display": "yu",
+          "tone": 3
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "轻",
+          "pinyin": "qing1",
+          "display": "qing",
+          "tone": 1
+        },
+        {
+          "text": "轻",
+          "pinyin": "qing1",
+          "display": "qing",
+          "tone": 1
+        },
+        {
+          "text": "落",
+          "pinyin": "luo4",
+          "display": "luo",
+          "tone": 4
+        },
+        {
+          "text": "街",
+          "pinyin": "jie1",
+          "display": "jie",
+          "tone": 1
+        },
+        {
+          "text": "口",
+          "pinyin": "kou3",
+          "display": "kou",
+          "tone": 3
+        }
       ]
     },
     {
       "id": "line-002",
-      "start": 4.6,
-      "end": 9.2,
+      "start": 3.86,
+      "end": 8.22,
       "text": "城里灯，穿雨照窗口",
       "singableText": "城里灯，穿雨照窗口",
       "role": "localized-lyric",
       "tokens": [
-        {"text": "城", "pinyin": "cheng2", "display": "cheng", "tone": 2},
-        {"text": "里", "pinyin": "li3", "display": "li", "tone": 3},
-        {"text": "灯", "pinyin": "deng1", "display": "deng", "tone": 1},
-        {"text": "，"},
-        {"text": "穿", "pinyin": "chuan1", "display": "chuan", "tone": 1},
-        {"text": "雨", "pinyin": "yu3", "display": "yu", "tone": 3},
-        {"text": "照", "pinyin": "zhao4", "display": "zhao", "tone": 4},
-        {"text": "窗", "pinyin": "chuang1", "display": "chuang", "tone": 1},
-        {"text": "口", "pinyin": "kou3", "display": "kou", "tone": 3}
+        {
+          "text": "城",
+          "pinyin": "cheng2",
+          "display": "cheng",
+          "tone": 2
+        },
+        {
+          "text": "里",
+          "pinyin": "li3",
+          "display": "li",
+          "tone": 3
+        },
+        {
+          "text": "灯",
+          "pinyin": "deng1",
+          "display": "deng",
+          "tone": 1
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "穿",
+          "pinyin": "chuan1",
+          "display": "chuan",
+          "tone": 1
+        },
+        {
+          "text": "雨",
+          "pinyin": "yu3",
+          "display": "yu",
+          "tone": 3
+        },
+        {
+          "text": "照",
+          "pinyin": "zhao4",
+          "display": "zhao",
+          "tone": 4
+        },
+        {
+          "text": "窗",
+          "pinyin": "chuang1",
+          "display": "chuang",
+          "tone": 1
+        },
+        {
+          "text": "口",
+          "pinyin": "kou3",
+          "display": "kou",
+          "tone": 3
+        }
       ]
     },
     {
       "id": "line-003",
-      "start": 9.2,
-      "end": 13.8,
-      "text": "心低语，温柔慢慢走",
-      "singableText": "心低语，温柔慢慢走",
+      "start": 9.0,
+      "end": 13.08,
+      "text": "心底雨，温柔漫漫",
+      "singableText": "心底雨，温柔漫漫",
       "role": "localized-lyric",
       "tokens": [
-        {"text": "心", "pinyin": "xin1", "display": "xin", "tone": 1},
-        {"text": "低", "pinyin": "di1", "display": "di", "tone": 1},
-        {"text": "语", "pinyin": "yu3", "display": "yu", "tone": 3},
-        {"text": "，"},
-        {"text": "温", "pinyin": "wen1", "display": "wen", "tone": 1},
-        {"text": "柔", "pinyin": "rou2", "display": "rou", "tone": 2},
-        {"text": "慢", "pinyin": "man4", "display": "man", "tone": 4},
-        {"text": "慢", "pinyin": "man4", "display": "man", "tone": 4},
-        {"text": "走", "pinyin": "zou3", "display": "zou", "tone": 3}
+        {
+          "text": "心",
+          "pinyin": "xin1",
+          "display": "xin",
+          "tone": 1
+        },
+        {
+          "text": "底",
+          "pinyin": "di3",
+          "display": "di",
+          "tone": 3
+        },
+        {
+          "text": "雨",
+          "pinyin": "yu3",
+          "display": "yu",
+          "tone": 3
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "温",
+          "pinyin": "wen1",
+          "display": "wen",
+          "tone": 1
+        },
+        {
+          "text": "柔",
+          "pinyin": "rou2",
+          "display": "rou",
+          "tone": 2
+        },
+        {
+          "text": "漫",
+          "pinyin": "man4",
+          "display": "man",
+          "tone": 4
+        },
+        {
+          "text": "漫",
+          "pinyin": "man4",
+          "display": "man",
+          "tone": 4
+        }
       ]
     },
     {
       "id": "line-004",
-      "start": 13.8,
-      "end": 18.4,
+      "start": 13.94,
+      "end": 17.2,
       "text": "陪我停，在这片雨光",
       "singableText": "陪我停，在这片雨光",
       "role": "localized-lyric",
       "tokens": [
-        {"text": "陪", "pinyin": "pei2", "display": "pei", "tone": 2},
-        {"text": "我", "pinyin": "wo3", "display": "wo", "tone": 3},
-        {"text": "停", "pinyin": "ting2", "display": "ting", "tone": 2},
-        {"text": "，"},
-        {"text": "在", "pinyin": "zai4", "display": "zai", "tone": 4},
-        {"text": "这", "pinyin": "zhe4", "display": "zhe", "tone": 4},
-        {"text": "片", "pinyin": "pian4", "display": "pian", "tone": 4},
-        {"text": "雨", "pinyin": "yu3", "display": "yu", "tone": 3},
-        {"text": "光", "pinyin": "guang1", "display": "guang", "tone": 1}
+        {
+          "text": "陪",
+          "pinyin": "pei2",
+          "display": "pei",
+          "tone": 2
+        },
+        {
+          "text": "我",
+          "pinyin": "wo3",
+          "display": "wo",
+          "tone": 3
+        },
+        {
+          "text": "停",
+          "pinyin": "ting2",
+          "display": "ting",
+          "tone": 2
+        },
+        {
+          "text": "，"
+        },
+        {
+          "text": "在",
+          "pinyin": "zai4",
+          "display": "zai",
+          "tone": 4
+        },
+        {
+          "text": "这",
+          "pinyin": "zhe4",
+          "display": "zhe",
+          "tone": 4
+        },
+        {
+          "text": "片",
+          "pinyin": "pian4",
+          "display": "pian",
+          "tone": 4
+        },
+        {
+          "text": "雨",
+          "pinyin": "yu3",
+          "display": "yu",
+          "tone": 3
+        },
+        {
+          "text": "光",
+          "pinyin": "guang1",
+          "display": "guang",
+          "tone": 1
+        }
       ]
     }
   ]

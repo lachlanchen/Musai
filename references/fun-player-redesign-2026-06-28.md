@@ -8,10 +8,12 @@ Default visual media should use a 16:9 poster. Square album-cover assets may sti
 
 - One media player on the left.
 - The player stage uses a 16:9 poster/video frame by default.
-- One selected-language lyric carousel on the right.
-- Language tabs switch the current lyric view between Chinese, Japanese, and English.
+- One lyric carousel on the right, showing all selected languages by default.
+- Language buttons are multi-select toggles, so Chinese, Japanese, and English can be shown together or filtered.
 - The bottom section shows the full lyrics line by line in all available languages.
-- Chords stay on the player surface instead of becoming separate lyric cards.
+- Chords are a single horizontal carousel at the top of the lyric card.
+- Media selection lives in a collapsible left drawer opened by the header library button.
+- Search is an icon-only header action and opens the drawer when active.
 
 ## Lyric Tracks
 
@@ -21,7 +23,7 @@ The `rain-day-bilingual-verse` demo now has three same-timing localized lyric tr
 - Japanese with furigana: `website/data/songs/rain-day-bilingual-verse/lyrics/ja.json`
 - Chinese with pinyin: `website/data/songs/rain-day-bilingual-verse/lyrics/zh-Hans.json`
 
-These are singable adaptations written for the same four phrase windows, not literal line-by-line translations. The manifest timeline carries only shared phrase timing; language-specific text and ruby/pinyin data live in each language JSON.
+These are singable adaptations written for the same four phrase windows, not literal line-by-line translations. The manifest timeline carries the canonical phrase ids; language-specific text, timing, ruby, and pinyin data live in each language JSON.
 
 ## Generated Media Assets
 
@@ -33,7 +35,9 @@ These are singable adaptations written for the same four phrase windows, not lit
 - Website melody guide MP3: `website/assets/audio/rain-day-trilingual-melody-guide.mp3`
 - Generated lyric sheet: `data/soulx_verses/rain-day-trilingual-zh-localized-20260628/lyrics.md`
 
-The current generated audio is a real Chinese SoulX vocal render plus melody guide using the Chinese localized lyric. English and Japanese are same-timing localized lyric tracks in the website data, but they are not yet separate re-sung vocal renders because the current local SoulX metadata builder supports Mandarin/English tokens and still needs a Japanese phoneme path.
+The current generated short-verse audio is a real Chinese SoulX vocal render plus melody guide using the Chinese localized lyric. English and Japanese are synced localized lyric tracks in the website data, but they are not yet separate re-sung vocal renders because the current local SoulX metadata builder supports Mandarin/English tokens and still needs a Japanese phoneme path.
+
+The full-song catalog item, `rain-day-full-song-trilingual`, does have separate English, Chinese, and Japanese playable MP3s. Those are ACE-Step creative generation outputs, not strict same-music/stem localization renders.
 
 ## Validation
 

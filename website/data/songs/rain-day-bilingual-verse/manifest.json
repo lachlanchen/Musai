@@ -5,8 +5,8 @@
   "kind": "song",
   "title": "Rain Day Trilingual Verse",
   "artist": "Musai SoulX",
-  "subtitle": "One melody, three singable localized lyric tracks",
-  "description": "A compact SoulX-Singer Chinese vocal render with English, Japanese, and Chinese lyrics adapted to the same phrase timing.",
+  "subtitle": "Mandarin SoulX vocal render with three singable localized lyric tracks",
+  "description": "A compact SoulX-Singer Mandarin vocal render. English and Japanese are synced singable lyric tracks for future rerendering; the playable vocal in this demo is Chinese.",
   "caption": "Same melody, localized lyrics",
   "duration": 18.4,
   "canonicalUrl": "https://fun.lazying.art/#rain-day-bilingual-verse",
@@ -74,21 +74,66 @@
     "model": "SoulX-Singer",
     "lyricRefinement": "manual Musai LyricFit pass",
     "coverPrompt": "16:9 rainy city window, waveform lines, lyric timing, premium clean music poster, teal, gold, rose, no people, no text.",
-    "lyricAdaptation": "Each language uses the same four timed phrase slots but has its own singable lyric rather than a literal translation."
+    "lyricAdaptation": "Each language uses the same four timed phrase slots but has its own singable lyric rather than a literal translation.",
+    "analysis": {
+      "run": "data/runs/generated-rain-day-short-zh-analysis",
+      "tempoBpm": 112.3471,
+      "note": "Mandarin lyric timing was retuned from the generated SoulX vocal ASR; English/Japanese are lyric tracks, not separate vocal files in this short demo."
+    }
   },
   "musical": {
     "key": "D minor",
     "bpm": 78,
     "timeSignature": "4/4",
     "chords": [
-      {"start": 0.0, "end": 2.3, "name": "Dm9", "degree": "i9"},
-      {"start": 2.3, "end": 4.6, "name": "Bbmaj7", "degree": "VImaj7"},
-      {"start": 4.6, "end": 6.9, "name": "Fadd9", "degree": "IIIadd9"},
-      {"start": 6.9, "end": 9.2, "name": "C", "degree": "VII"},
-      {"start": 9.2, "end": 11.5, "name": "Gm7", "degree": "iv7"},
-      {"start": 11.5, "end": 13.8, "name": "Dm/A", "degree": "i/5"},
-      {"start": 13.8, "end": 16.1, "name": "Bbmaj7", "degree": "VImaj7"},
-      {"start": 16.1, "end": 18.4, "name": "Cadd9", "degree": "VIIadd9"}
+      {
+        "start": 0.0,
+        "end": 2.3,
+        "name": "Dm9",
+        "degree": "i9"
+      },
+      {
+        "start": 2.3,
+        "end": 4.6,
+        "name": "Bbmaj7",
+        "degree": "VImaj7"
+      },
+      {
+        "start": 4.6,
+        "end": 6.9,
+        "name": "Fadd9",
+        "degree": "IIIadd9"
+      },
+      {
+        "start": 6.9,
+        "end": 9.2,
+        "name": "C",
+        "degree": "VII"
+      },
+      {
+        "start": 9.2,
+        "end": 11.5,
+        "name": "Gm7",
+        "degree": "iv7"
+      },
+      {
+        "start": 11.5,
+        "end": 13.8,
+        "name": "Dm/A",
+        "degree": "i/5"
+      },
+      {
+        "start": 13.8,
+        "end": 16.1,
+        "name": "Bbmaj7",
+        "degree": "VImaj7"
+      },
+      {
+        "start": 16.1,
+        "end": 18.4,
+        "name": "Cadd9",
+        "degree": "VIIadd9"
+      }
     ]
   },
   "textTracks": [
@@ -97,7 +142,12 @@
       "label": "Chinese",
       "nativeLabel": "中文",
       "script": "Hans",
-      "features": ["lyrics", "translation", "pinyin", "tones"],
+      "features": [
+        "lyrics",
+        "translation",
+        "pinyin",
+        "tones"
+      ],
       "path": "lyrics/zh-Hans.json"
     },
     {
@@ -105,7 +155,11 @@
       "label": "Japanese",
       "nativeLabel": "日本語",
       "script": "Jpan",
-      "features": ["lyrics", "translation", "furigana"],
+      "features": [
+        "lyrics",
+        "translation",
+        "furigana"
+      ],
       "path": "lyrics/ja.json"
     },
     {
@@ -113,7 +167,11 @@
       "label": "English",
       "nativeLabel": "English",
       "script": "Latn",
-      "features": ["lyrics", "translation", "wordTiming"],
+      "features": [
+        "lyrics",
+        "translation",
+        "wordTiming"
+      ],
       "path": "lyrics/en.json"
     }
   ],
@@ -123,25 +181,25 @@
       {
         "id": "line-001",
         "start": 0.0,
-        "end": 4.6,
+        "end": 3.86,
         "sourceText": "Rain by the window, soft on the street"
       },
       {
         "id": "line-002",
-        "start": 4.6,
-        "end": 9.2,
+        "start": 3.86,
+        "end": 8.22,
         "sourceText": "City lights shimmer under the rain"
       },
       {
         "id": "line-003",
-        "start": 9.2,
-        "end": 13.8,
+        "start": 9.0,
+        "end": 13.08,
         "sourceText": "My heart keeps whispering slow and warm"
       },
       {
         "id": "line-004",
-        "start": 13.8,
-        "end": 18.4,
+        "start": 13.94,
+        "end": 17.2,
         "sourceText": "Stay with me inside this rainy glow"
       }
     ]
@@ -149,8 +207,16 @@
   "chapters": [],
   "shots": [],
   "artifacts": [
-    {"id": "cover-svg", "label": "editable cover SVG", "href": "assets/covers/rain-day-bilingual-verse.svg"},
-    {"id": "manifest", "label": "media manifest JSON", "href": "data/songs/rain-day-bilingual-verse/manifest.json"}
+    {
+      "id": "cover-svg",
+      "label": "editable cover SVG",
+      "href": "assets/covers/rain-day-bilingual-verse.svg"
+    },
+    {
+      "id": "manifest",
+      "label": "media manifest JSON",
+      "href": "data/songs/rain-day-bilingual-verse/manifest.json"
+    }
   ],
   "createCommand": "musai soulx-verse --title \"Rain Day\" --provider deepseek && musai website add-media"
 }

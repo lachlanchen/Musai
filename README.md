@@ -103,7 +103,7 @@ For the full setup/test guide, see [`SETUP_AND_TEST.md`](SETUP_AND_TEST.md).
 
 The public media site lives in [`website/`](website/) and is intended for songs, localized songs, MVs, short films, covers, synced lyrics, subtitles, chords, stems, and shareable media pages.
 
-The default catalog item is the short SoulX trilingual verse. The catalog also includes a selectable/searchable 78-second full-song demo, `Rain Day Full Song`, with separate English, Mandarin, and Japanese generated renders plus synchronized trilingual lyrics.
+The default catalog item is the short SoulX verse: one Mandarin vocal render with synced English, Japanese, and Chinese lyric tracks. The catalog also includes a selectable/searchable 78-second full-song demo, `Rain Day Full Song`, with separate English, Mandarin, and Japanese generated renders plus analysis-tuned trilingual lyrics.
 
 ```bash
 npm run website:validate

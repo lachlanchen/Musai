@@ -7,20 +7,375 @@
     "code": "ja",
     "label": "Japanese",
     "nativeLabel": "日本語",
-    "script": "Jpan"
+    "script": "Jpan",
+    "pronunciation": "furigana"
   },
   "lines": [
-    {"id": "line-001", "start": 0.0, "end": 6.5, "text": "雨が窓を鳴らし 部屋を起こす", "singableText": "雨が窓を鳴らし 部屋を起こす", "role": "localized-lyric"},
-    {"id": "line-002", "start": 6.5, "end": 13.0, "text": "ネオン咲く街を ひとり歩く", "singableText": "ネオン咲く街を ひとり歩く", "role": "localized-lyric"},
-    {"id": "line-003", "start": 13.0, "end": 19.5, "text": "映る光ぜんぶ 君からの手紙", "singableText": "映る光ぜんぶ 君からの手紙", "role": "localized-lyric"},
-    {"id": "line-004", "start": 19.5, "end": 26.0, "text": "重い夜なら この手に降らせて", "singableText": "重い夜なら この手に降らせて", "role": "localized-lyric"},
-    {"id": "line-005", "start": 26.0, "end": 32.5, "text": "銀の雨の中 そばにいて", "singableText": "銀の雨の中 そばにいて", "role": "localized-lyric"},
-    {"id": "line-006", "start": 32.5, "end": 39.0, "text": "割れた光を 火に変えて", "singableText": "割れた光を 火に変えて", "role": "localized-lyric"},
-    {"id": "line-007", "start": 39.0, "end": 45.5, "text": "太陽なしでも 道は見える", "singableText": "太陽なしでも 道は見える", "role": "localized-lyric"},
-    {"id": "line-008", "start": 45.5, "end": 52.0, "text": "君の声が 雨の日の帰る場所", "singableText": "君の声が 雨の日の帰る場所", "role": "localized-lyric"},
-    {"id": "line-009", "start": 52.0, "end": 58.5, "text": "終電が遠く 街がほどける", "singableText": "終電が遠く 街がほどける", "role": "localized-lyric"},
-    {"id": "line-010", "start": 58.5, "end": 65.0, "text": "君の鼓動を 胸にしまう", "singableText": "君の鼓動を 胸にしまう", "role": "localized-lyric"},
-    {"id": "line-011", "start": 65.0, "end": 71.5, "text": "銀の雨の中 そばにいて", "singableText": "銀の雨の中 そばにいて", "role": "localized-lyric"},
-    {"id": "line-012", "start": 71.5, "end": 78.0, "text": "しずくが君の名を歌う", "singableText": "しずくが君の名を歌う", "role": "localized-lyric"}
+    {
+      "id": "line-001",
+      "start": 1.17,
+      "end": 11.24,
+      "text": "雨が窓を鳴らし 部屋を起こす",
+      "singableText": "雨が窓を鳴らし 部屋を起こす",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "雨",
+          "reading": "あめ"
+        },
+        {
+          "text": "が"
+        },
+        {
+          "text": "窓",
+          "reading": "まど"
+        },
+        {
+          "text": "を"
+        },
+        {
+          "text": "鳴",
+          "reading": "な"
+        },
+        {
+          "text": "らし "
+        },
+        {
+          "text": "部屋",
+          "reading": "へや"
+        },
+        {
+          "text": "を"
+        },
+        {
+          "text": "起",
+          "reading": "お"
+        },
+        {
+          "text": "こす"
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "start": 13.4,
+      "end": 19.34,
+      "text": "ネオン咲く街を ひとり歩く",
+      "singableText": "ネオン咲く街を ひとり歩く",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "ネオン"
+        },
+        {
+          "text": "咲",
+          "reading": "さ"
+        },
+        {
+          "text": "く"
+        },
+        {
+          "text": "街",
+          "reading": "まち"
+        },
+        {
+          "text": "を ひとり"
+        },
+        {
+          "text": "歩",
+          "reading": "ある"
+        },
+        {
+          "text": "く"
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "start": 22.1,
+      "end": 27.1,
+      "text": "映る光ぜんぶ 君からの手紙",
+      "singableText": "映る光ぜんぶ 君からの手紙",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "映",
+          "reading": "うつ"
+        },
+        {
+          "text": "る"
+        },
+        {
+          "text": "光",
+          "reading": "ひかり"
+        },
+        {
+          "text": "ぜんぶ "
+        },
+        {
+          "text": "君",
+          "reading": "きみ"
+        },
+        {
+          "text": "からの"
+        },
+        {
+          "text": "手紙",
+          "reading": "てがみ"
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "start": 28.1,
+      "end": 40.28,
+      "text": "重い夜なら この手に降らせて",
+      "singableText": "重い夜なら この手に降らせて",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "重",
+          "reading": "おも"
+        },
+        {
+          "text": "い"
+        },
+        {
+          "text": "夜",
+          "reading": "よる"
+        },
+        {
+          "text": "なら この"
+        },
+        {
+          "text": "手",
+          "reading": "て"
+        },
+        {
+          "text": "に"
+        },
+        {
+          "text": "降",
+          "reading": "ふ"
+        },
+        {
+          "text": "らせて"
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "start": 40.28,
+      "end": 44.74,
+      "text": "銀の雨の中 そばにいて",
+      "singableText": "銀の雨の中 そばにいて",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "銀",
+          "reading": "ぎん"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "雨",
+          "reading": "あめ"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "中",
+          "reading": "なか"
+        },
+        {
+          "text": " そばにいて"
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "start": 44.74,
+      "end": 48.78,
+      "text": "割れた光を 火に変えて",
+      "singableText": "割れた光を 火に変えて",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "割",
+          "reading": "わ"
+        },
+        {
+          "text": "れた"
+        },
+        {
+          "text": "光",
+          "reading": "ひかり"
+        },
+        {
+          "text": "を "
+        },
+        {
+          "text": "火",
+          "reading": "ひ"
+        },
+        {
+          "text": "に"
+        },
+        {
+          "text": "変",
+          "reading": "か"
+        },
+        {
+          "text": "えて"
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "start": 51.8,
+      "end": 55.95,
+      "text": "太陽なしでも 道は見える",
+      "singableText": "太陽なしでも 道は見える",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "太陽",
+          "reading": "たいよう"
+        },
+        {
+          "text": "なしでも "
+        },
+        {
+          "text": "道",
+          "reading": "みち"
+        },
+        {
+          "text": "は"
+        },
+        {
+          "text": "見",
+          "reading": "み"
+        },
+        {
+          "text": "える"
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "start": 57.23,
+      "end": 63.33,
+      "text": "君の声が 雨の日の帰る場所",
+      "singableText": "君の声が 雨の日の帰る場所",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "君",
+          "reading": "きみ"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "声",
+          "reading": "こえ"
+        },
+        {
+          "text": "が "
+        },
+        {
+          "text": "雨",
+          "reading": "あめ"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "日",
+          "reading": "ひ"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "帰",
+          "reading": "かえ"
+        },
+        {
+          "text": "る"
+        },
+        {
+          "text": "場所",
+          "reading": "ばしょ"
+        }
+      ]
+    },
+    {
+      "id": "line-009",
+      "start": 63.33,
+      "end": 70.0,
+      "text": "銀の雨の中 そばにいて",
+      "singableText": "銀の雨の中 そばにいて",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "銀",
+          "reading": "ぎん"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "雨",
+          "reading": "あめ"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "中",
+          "reading": "なか"
+        },
+        {
+          "text": " そばにいて"
+        }
+      ]
+    },
+    {
+      "id": "line-010",
+      "start": 70.0,
+      "end": 78.0,
+      "text": "しずくが君の名を歌う",
+      "singableText": "しずくが君の名を歌う",
+      "role": "localized-lyric",
+      "tokens": [
+        {
+          "text": "しずくが"
+        },
+        {
+          "text": "君",
+          "reading": "きみ"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "名",
+          "reading": "な"
+        },
+        {
+          "text": "を"
+        },
+        {
+          "text": "歌",
+          "reading": "うた"
+        },
+        {
+          "text": "う"
+        }
+      ]
+    }
   ]
 }

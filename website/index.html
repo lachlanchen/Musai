@@ -21,13 +21,34 @@
 <body>
   <main class="page-shell">
     <header class="site-header" aria-label="Site header">
-      <a class="brand" href="https://fun.lazying.art" aria-label="Fun Lazying Art home">
-        <span class="mark">F</span>
-        <span>
-          <strong>Fun Lazying Art</strong>
-          <small>Music, films, and localized songs</small>
-        </span>
-      </a>
+      <div class="header-left">
+        <button id="library-toggle" class="icon-button" type="button" aria-label="Open media library" aria-expanded="false">☰</button>
+        <a class="brand" href="https://fun.lazying.art" aria-label="Fun Lazying Art home">
+          <span class="mark">F</span>
+          <span>
+            <strong>Fun Lazying Art</strong>
+            <small>Music, films, and localized songs</small>
+          </span>
+        </a>
+      </div>
+      <div class="header-actions">
+        <button id="search-toggle" class="icon-button" type="button" aria-label="Search media" aria-expanded="false">⌕</button>
+        <label id="header-search" class="header-search" hidden>
+          <span>Search</span>
+          <input id="catalog-search" type="search" placeholder="Search songs, languages, tags" autocomplete="off">
+        </label>
+      </div>
+    </header>
+
+    <div id="library-backdrop" class="library-backdrop" hidden></div>
+    <aside id="library-panel" class="library-panel" aria-label="Media library" hidden>
+      <div class="library-head">
+        <div>
+          <span class="eyebrow">Library</span>
+          <h2>Media</h2>
+        </div>
+        <button id="library-close" class="icon-button" type="button" aria-label="Close media library">×</button>
+      </div>
       <nav class="kind-nav" aria-label="Media categories">
         <button class="active" type="button" data-kind-filter="all">All</button>
         <button type="button" data-kind-filter="song">Music</button>
@@ -36,15 +57,8 @@
         <button type="button" data-kind-filter="short-film">Short film</button>
         <button type="button" data-kind-filter="youtube-video">YouTube</button>
       </nav>
-    </header>
-
-    <section class="library-strip" aria-label="Media library">
-      <label class="search-box">
-        <span>Search</span>
-        <input id="catalog-search" type="search" placeholder="Search songs, languages, tags" autocomplete="off">
-      </label>
       <div id="media-library" class="media-library"></div>
-    </section>
+    </aside>
 
     <section class="hero-grid">
       <article class="player-card" aria-label="Media player">
@@ -101,10 +115,10 @@
           </div>
           <div id="language-tabs" class="language-tabs" aria-label="Localization language"></div>
         </div>
+        <div id="chord-row" class="chord-row" aria-label="Chord timeline"></div>
         <div id="lyric-carousel" class="lyric-carousel">
           <div class="empty-state"><h2>Loading</h2><p>Media data is loading.</p></div>
         </div>
-        <div id="chord-row" class="chord-row" aria-label="Chord timeline"></div>
       </article>
     </section>
 

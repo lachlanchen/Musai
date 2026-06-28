@@ -69,6 +69,15 @@ Media facts:
 - Source workflow: `musai soulx-verse`
 - Model noted in provenance: `SoulX-Singer`
 - Lyric refinement noted in provenance: manual Musai LyricFit pass
+- Important: this short demo has one Mandarin vocal render. English and Japanese are synced singable lyric tracks for future re-rendering, not separate playable EN/JA vocals.
+
+Second catalog item:
+
+```text
+rain-day-full-song-trilingual
+```
+
+This item contains separate English, Chinese, and Japanese generated MP3 renders, each with its own lyric timing data. It is a creative full-song generation demo, not a strict same-stems song-localization output.
 
 ## Player UI
 
@@ -83,10 +92,10 @@ website/favicon.svg
 
 The UI has four main areas:
 
-- top navigation for media categories: all, music, localized songs, MV, short film, YouTube
-- library panel for catalog items
+- compact top header with a library button and icon-only search
+- collapsible left library drawer for catalog items and media categories
 - player panel with 16:9 poster art, waveform, transport, asset switcher, and current chord
-- current lyric carousel with one selected language at a time
+- current lyric carousel that can show multiple selected languages at once
 - full trilingual lyrics section, line by line
 
 For pure audio, the player uses `assets.cover` or `assets.poster` as the stage image behind the waveform. For video/MV/short-film media, `assets.primaryVideo` can replace the waveform stage while the same poster remains available for loading states and share previews. YouTube-uploaded media can use `assets.youtube` or `assets.externalVideos[]`; the site embeds the YouTube player and keeps the same catalog, artifact, and subtitle panels.
@@ -105,6 +114,7 @@ Protocol overview:
 - each media item has one `manifest.json`.
 - every language has its own text-track JSON file.
 - `timeline.lines[].id` is the canonical sync key shared by every language.
+- each text track may carry its own `lines[].start/end` when separate language renders need different timing.
 - audio/video/cover/stem files are referenced from the manifest.
 - chords, chapters, shots, provenance, artifacts, and share metadata are optional structured extensions.
 

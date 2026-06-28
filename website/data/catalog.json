@@ -13,22 +13,42 @@
       "kind": "song",
       "title": "Rain Day Trilingual Verse",
       "artist": "Musai SoulX",
-      "summary": "A rainy-day vocal demo with three same-timing localized lyric tracks.",
+      "summary": "A short Mandarin SoulX vocal demo with synced English, Japanese, and Chinese lyric tracks.",
       "manifest": "data/songs/rain-day-bilingual-verse/manifest.json",
       "cover": "assets/covers/rain-day-trilingual-poster-16x9.png",
-      "languages": ["zh-Hans", "ja", "en"],
-      "tags": ["music", "lyrics", "pinyin", "furigana", "SoulX"]
+      "languages": [
+        "zh-Hans",
+        "ja",
+        "en"
+      ],
+      "tags": [
+        "music",
+        "lyrics",
+        "pinyin",
+        "furigana",
+        "SoulX"
+      ]
     },
     {
       "id": "rain-day-full-song-trilingual",
       "kind": "song",
       "title": "Rain Day Full Song",
       "artist": "Musai ACE-Step",
-      "summary": "A 78-second complete rainy-day song with separate English, Japanese, and Mandarin full-song renders.",
+      "summary": "A 78-second generated song with separate English, Japanese, and Mandarin renders plus analysis-tuned lyric timing.",
       "manifest": "data/songs/rain-day-full-song-trilingual/manifest.json",
       "cover": "assets/covers/rain-day-full-song-16x9.png",
-      "languages": ["en", "zh-Hans", "ja"],
-      "tags": ["music", "full-song", "trilingual", "ACE-Step", "rain"]
+      "languages": [
+        "en",
+        "zh-Hans",
+        "ja"
+      ],
+      "tags": [
+        "music",
+        "full-song",
+        "trilingual",
+        "ACE-Step",
+        "rain"
+      ]
     }
   ]
 }

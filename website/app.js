@@ -7,6 +7,8 @@ const state = {
   selectedLyricLangs: new Set(),
   kindFilter: "all",
   searchQuery: "",
+  libraryOpen: false,
+  searchOpen: false,
   activeMediaId: "",
   activeAssetId: "",
   mediaElement: null,
@@ -112,6 +114,21 @@ function manifestLines() {
   return state.manifest?.timeline?.lines || [];
 }
 
+function activeTimingTrack() {
+  const activeAsset = activePlayableAsset();
+  return state.trackByCode.get(activeAsset?.languageCode) || selectedLyricTracks()[0] || state.tracks[0] || null;
+}
+
+function timingLines() {
+  const track = activeTimingTrack();
+  return Array.isArray(track?.lines) && track.lines.length ? track.lines : manifestLines();
+}
+
+function lineStartForDisplay(line) {
+  const timing = lineForTrack(activeTimingTrack(), line?.id);
+  return Number.isFinite(timing?.start) ? timing.start : line?.start || 0;
+}
+
 function chords() {
   return state.manifest?.musical?.chords || [];
 }
@@ -138,8 +155,11 @@ function lineForTrack(track, lineId) {
 }
 
 function activeLineAt(time) {
-  const lines = manifestLines();
-  return lines.find((line) => time >= line.start && time < line.end) || lines[0] || null;
+  const lines = timingLines();
+  return lines.find((line) => time >= line.start && time < line.end)
+    || [...lines].reverse().find((line) => time >= line.start)
+    || lines[0]
+    || null;
 }
 
 function activeChordAt(time) {
@@ -208,6 +228,23 @@ function playableAssets(manifest) {
 
 function activePlayableAsset() {
   return playableAssets(state.manifest || {}).find((asset) => asset.id === state.activeAssetId) || null;
+}
+
+function setLibraryOpen(open) {
+  state.libraryOpen = Boolean(open);
+  $("library-panel").hidden = !state.libraryOpen;
+  $("library-backdrop").hidden = !state.libraryOpen;
+  $("library-toggle").setAttribute("aria-expanded", state.libraryOpen ? "true" : "false");
+}
+
+function setSearchOpen(open) {
+  state.searchOpen = Boolean(open);
+  $("header-search").hidden = !state.searchOpen;
+  $("search-toggle").setAttribute("aria-expanded", state.searchOpen ? "true" : "false");
+  if (state.searchOpen) {
+    $("catalog-search").focus();
+    setLibraryOpen(true);
+  }
 }
 
 function coverUrl(manifest) {
@@ -296,8 +333,13 @@ function renderLibrary() {
   document.querySelectorAll("[data-media-id]").forEach((button) => {
     button.addEventListener("click", async () => {
       const item = state.catalog.items.find((entry) => entry.id === button.dataset.mediaId);
-      if (!item || item.id === state.activeMediaId) return;
+      if (!item) return;
+      if (item.id === state.activeMediaId) {
+        setLibraryOpen(false);
+        return;
+      }
       await loadMediaItem(item, true);
+      setLibraryOpen(false);
     });
   });
 }
@@ -386,7 +428,7 @@ function renderCarousel(activeLine) {
       const active = index === activeIndex;
       return `
         <div class="carousel-line ${active ? "active" : ""}">
-          <span>${formatTime(lines[index].start)}</span>
+          <span>${formatTime(lineStartForDisplay(lines[index]))}</span>
           <div class="carousel-translations">
             ${tracks.map((track) => {
               const line = lineForTrack(track, lines[index].id);
@@ -412,7 +454,7 @@ function renderFullLyrics(activeLine = null) {
   }
   $("full-lyrics").innerHTML = lines.map((line, index) => `
     <article class="full-row ${line.id === activeLine?.id ? "active" : ""}">
-      <div class="line-index">${String(index + 1).padStart(2, "0")}<span>${formatTime(line.start)}</span></div>
+      <div class="line-index">${String(index + 1).padStart(2, "0")}<span>${formatTime(lineStartForDisplay(line))}</span></div>
       <div class="language-lines">
         ${state.tracks.map((track) => {
           const trackLine = lineForTrack(track, line.id);
@@ -444,8 +486,7 @@ function updateSync() {
   const activeLine = activeLineAt(time);
   const activeChord = activeChordAt(time);
   const activeAsset = activePlayableAsset();
-  const stageTrack = state.trackByCode.get(activeAsset?.languageCode) || selectedLyricTracks()[0] || state.tracks[0] || null;
-  const track = stageTrack;
+  const track = activeTimingTrack() || state.trackByCode.get(activeAsset?.languageCode) || selectedLyricTracks()[0] || state.tracks[0] || null;
   const trackLine = lineForTrack(track, activeLine?.id);
   const progress = Math.min(100, Math.max(0, (time / duration) * 100));
 
@@ -528,6 +569,10 @@ function bindEvents() {
   });
   mediaListeners(audio);
   mediaListeners(video);
+  $("library-toggle").addEventListener("click", () => setLibraryOpen(!state.libraryOpen));
+  $("library-close").addEventListener("click", () => setLibraryOpen(false));
+  $("library-backdrop").addEventListener("click", () => setLibraryOpen(false));
+  $("search-toggle").addEventListener("click", () => setSearchOpen(!state.searchOpen));
   document.querySelectorAll("[data-kind-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       state.kindFilter = button.dataset.kindFilter;
@@ -537,7 +582,18 @@ function bindEvents() {
   });
   $("catalog-search").addEventListener("input", () => {
     state.searchQuery = $("catalog-search").value;
+    setLibraryOpen(true);
     renderLibrary();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setLibraryOpen(false);
+      setSearchOpen(false);
+    }
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+      event.preventDefault();
+      setSearchOpen(true);
+    }
   });
 }
 

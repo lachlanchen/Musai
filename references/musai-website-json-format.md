@@ -84,7 +84,7 @@ Important fields:
 - `assets.stems`: `bass`, `drums`, `vocals`, `other`, `instrumental`
 - `musical.chords`: optional timed chord timeline
 - `textTracks[]`: one JSON file per language
-- `timeline.lines[]`: canonical timed line ids shared by every language
+- `timeline.lines[]`: canonical line ids shared by every language; timings are the default/canonical timing
 - `share`: public title, description, URL, and image
 - `provenance`: model/tool prompts and generation source
 
@@ -104,10 +104,19 @@ Important fields:
 - `mediaId`: manifest id
 - `language.code`: `en`, `zh-Hans`, `ja`, etc.
 - `lines[].id`: must match `manifest.timeline.lines[].id`
+- `lines[].start/end`: language-specific timing for this text track. Use this when EN/ZH/JA are separate renders with different vocal phrasing.
 - `lines[].text`: lyric, subtitle, or translation
 - `lines[].tokens[].pinyin`: Chinese pronunciation
 - `lines[].tokens[].reading`: Japanese furigana
 - `lines[].tokens[].start/end`: optional word or token timing
+
+The Fun player uses the currently playing asset language to choose timing. Example:
+
+- if the Chinese audio is selected, `lyrics/zh-Hans.json` drives current-line sync;
+- if the Japanese audio is selected, `lyrics/ja.json` drives current-line sync;
+- if a track has no language-specific timing, the player falls back to `manifest.timeline.lines[]`.
+
+This allows one media item to present strict same-timeline localized songs or separate full-song generation renders with their own phrase timings.
 
 ## Cover / Poster Rule
 

@@ -23,6 +23,34 @@ rain-day-bilingual-verse
 
 The full song is selectable through the media library and searchable by title, language, and tags.
 
+## Analysis Retiming
+
+After generation, each website MP3 was run back through the Musai analysis pipeline:
+
+```text
+data/runs/generated-rain-day-full-en-analysis/
+data/runs/generated-rain-day-full-zh-analysis/
+data/runs/generated-rain-day-full-ja-analysis/
+data/runs/generated-rain-day-short-zh-analysis/
+```
+
+The public lyric tracks were then retimed from the detected sung phrases:
+
+- English full song: detected around `78.30` BPM.
+- Chinese full song: detected at double-time `151.99` BPM, displayed as the normalized musical pulse near `76` BPM.
+- Japanese full song: detected around `76.00` BPM.
+- Short SoulX Mandarin verse: detected around `112.35` BPM; the website keeps this as analysis provenance while preserving the original creative key/phrase concept.
+
+The full-song website manifest now uses per-language timing from each text track. This is important because the English, Chinese, and Japanese files are separate generated renders, not one strict same-stems localization pass.
+
+The displayed chord row is a simplified analysis-derived D minor progression from the cleanest full-song chord pass:
+
+```text
+Dm -> Bb -> F -> Dm -> Bb -> F -> Dm -> ...
+```
+
+The row is intentionally compact so it works as a single horizontal chord carousel above the current lyric card.
+
 ## Generation
 
 Working run folder:
@@ -59,6 +87,13 @@ Automated QA checked duration, sample rate, peak/RMS level, ASR availability, an
 The player now separates:
 
 - audio/vocal render selection: single-select, because only one render can play at a time;
-- lyric language selection: multi-select, defaulting to all available tracks.
+- lyric language selection: multi-select, defaulting to all available tracks;
+- media selection: a collapsible left drawer opened by the header menu button;
+- search: icon-only in the header; opening it also opens the media drawer;
+- chords: one single-row horizontal carousel at the top of the lyric panel.
 
 This fixes the earlier confusion where the right lyric carousel appeared to show only one language even when the media item had multiple text tracks.
+
+## Current Limitation
+
+The generated audio quality is good enough for a public demo, but the analysis shows that some generated vocals do not sing every prompt-planned line exactly. The website lyrics now favor the detected sung phrase timing and natural localized lyric text. A true production localization should regenerate or manually correct the vocal until ASR, human listening, lyric timing, and chord/melody checks all agree.
