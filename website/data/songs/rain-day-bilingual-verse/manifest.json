@@ -103,7 +103,7 @@
     "analysis": {
       "zh-Hans": {
         "audio": "website/assets/audio/rain-day-bilingual-verse.mp3",
-        "asr": "窗边雨轻轻落尖 / 城里灯穿雨交冲 / 心底雨温柔 / 陪我停在这片雨",
+        "asr": "窗边雨轻轻落尖 / 城里灯穿雨交冲 / 心底雨温柔漫漫 / 陪我停在这片雨",
         "qualityGate": "review"
       },
       "en": {
@@ -234,7 +234,7 @@
       {
         "id": "line-003",
         "start": 8.6,
-        "end": 12.0,
+        "end": 13.08,
         "sourceText": "A warm whispering heart"
       },
       {

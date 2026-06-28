@@ -154,11 +154,11 @@
     {
       "id": "line-003",
       "start": 9.0,
-      "end": 11.62,
-      "text": "心底雨，温柔",
-      "singableText": "心底雨，温柔",
+      "end": 13.08,
+      "text": "心底雨，温柔漫漫",
+      "singableText": "心底雨，温柔漫漫",
       "role": "asr-adjusted-lyric",
-      "asrText": "心底雨温柔",
+      "asrText": "心底雨温柔漫漫",
       "tokens": [
         {
           "text": "心",
@@ -201,7 +201,23 @@
           "display": "rou",
           "tone": 2,
           "start": 11.2,
-          "end": 11.62
+          "end": 11.7
+        },
+        {
+          "text": "漫",
+          "pinyin": "man4",
+          "display": "man",
+          "tone": 4,
+          "start": 11.7,
+          "end": 12.04
+        },
+        {
+          "text": "漫",
+          "pinyin": "man4",
+          "display": "man",
+          "tone": 4,
+          "start": 12.04,
+          "end": 13.08
         }
       ]
     },
