@@ -57,7 +57,7 @@ scripts/create_soulx_same_score_localizations.py
 Example:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/create_soulx_same_score_localizations.py \
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/create_soulx_same_score_localizations.py \
   --f0-csv data/runs/take-care-of-yourself-20260628-20260628-185010-analysis/analysis/melody_f0.csv \
   --output-dir data/creative_projects/take-care-of-yourself-20260628/localized_soulx
 ```

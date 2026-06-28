@@ -18,3 +18,7 @@ bash scripts/bootstrap_musia.sh
 PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --id danny-boy-1917
 PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
 ```
+
+Legacy naming: old local notes may mention `Musai`, `musai`, or `MUSAI_*`.
+Treat those as compatibility fallbacks only. New code, docs, and commands should
+use `Musia`, `musia`, and `MUSIA_*`.

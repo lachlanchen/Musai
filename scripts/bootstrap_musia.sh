@@ -3,6 +3,10 @@ set -euo pipefail
 
 export PYTHONNOUSERSITE=1
 
+LEGACY_ENV_NAME="musai"
+if [[ -n "${MUSAI_ENV_NAME:-}" && -z "${MUSIA_ENV_NAME:-}" ]]; then
+  echo "MUSAI_ENV_NAME is legacy; prefer MUSIA_ENV_NAME or the default 'musia' env." >&2
+fi
 ENV_NAME="${MUSIA_ENV_NAME:-${MUSAI_ENV_NAME:-musia}}"
 CLONE_FROM=""
 WITH_BASIC_PITCH=0
@@ -36,6 +40,11 @@ fi
 if conda env list | awk '{print $1}' | grep -qx "$ENV_NAME"; then
   echo "Conda env '$ENV_NAME' already exists."
 else
+  if [[ -z "$CLONE_FROM" && "$ENV_NAME" == "musia" ]] && conda env list | awk '{print $1}' | grep -qx "$LEGACY_ENV_NAME"; then
+    CLONE_FROM="$LEGACY_ENV_NAME"
+    echo "Found legacy conda env '$LEGACY_ENV_NAME'; cloning it to '$ENV_NAME'."
+  fi
+
   if [[ -n "$CLONE_FROM" ]]; then
     echo "Cloning conda env '$CLONE_FROM' to '$ENV_NAME'."
     conda create -y -n "$ENV_NAME" --clone "$CLONE_FROM"

@@ -189,6 +189,11 @@ MUSIA_PYTHON=/path/to/python
 MUSIA_NO_CONDA=1
 ```
 
+Legacy note: older local setups may still have the previous `Musai` / `musai`
+name or `MUSAI_*` environment variables. Treat those as compatibility fallbacks
+only. New commands, docs, and environments should use `Musia`, `musia`, and
+`MUSIA_*`.
+
 Run the dedicated localization performance demo after the smoke/matrix artifacts exist:
 
 ```bash

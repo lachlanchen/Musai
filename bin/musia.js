@@ -72,6 +72,9 @@ Runtime selection:
   MUSIA_CONDA_ENV=musia          conda env name, default "musia"
   MUSIA_PYTHON=/path/python      use a direct Python interpreter
   MUSIA_NO_CONDA=1               use python3/python instead of conda
+
+Legacy compatibility:
+  old MUSAI_* env vars are still read as fallbacks, but new scripts should use MUSIA_*.
 `;
 }
 
@@ -90,6 +93,10 @@ function stripArgs(args, names) {
 
 function envValue(primary, fallback, defaultValue = "") {
   return process.env[primary] || process.env[fallback] || defaultValue;
+}
+
+function usedLegacyEnv(primary, fallback) {
+  return !process.env[primary] && Boolean(process.env[fallback]);
 }
 
 function findExecutable(names) {
@@ -183,6 +190,11 @@ function doctor(jsonOutput = false) {
     npm: npm || "",
     conda: conda || "",
     conda_env: envValue("MUSIA_CONDA_ENV", "MUSAI_CONDA_ENV", DEFAULT_ENV),
+    legacy_env_vars: [
+      ["MUSIA_CONDA_ENV", "MUSAI_CONDA_ENV"],
+      ["MUSIA_PYTHON", "MUSAI_PYTHON"],
+      ["MUSIA_NO_CONDA", "MUSAI_NO_CONDA"]
+    ].filter(([primary, fallback]) => usedLegacyEnv(primary, fallback)).map(([, fallback]) => fallback),
     python: python || "",
     ffmpeg: ffmpeg || "",
     tmux: tmux || "",

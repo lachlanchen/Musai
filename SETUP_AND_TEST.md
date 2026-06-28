@@ -38,6 +38,10 @@ The script does this:
 4. Runs the Musia pipeline on the first 45 seconds.
 5. Writes stems, lyrics, beats, chords, manifest, and report under `data/runs/smoke-danny/`.
 
+Legacy note: older local setups may still have the previous `musai` conda
+environment. `scripts/bootstrap_musia.sh` can clone that legacy env into
+`musia`, but new commands and docs should use `Musia` / `musia`.
+
 Expected outputs:
 
 ```text
