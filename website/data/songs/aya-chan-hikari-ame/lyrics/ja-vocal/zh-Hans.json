@@ -1,0 +1,616 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "aya-chan-hikari-ame",
+  "lineCoverage": "translation-of-active-vocal",
+  "language": {
+    "code": "zh-Hans",
+    "label": "Mandarin Chinese",
+    "nativeLabel": "中文",
+    "script": "Hans",
+    "pronunciation": "pinyin"
+  },
+  "notes": "Japanese selected Aya render. Lines are corrected from faster-whisper ASR plus prompt/listening; ASR confirms the repeated “ひとりじゃない” and omits the final “花になる”, so the public lyric stops at the audible small-courage phrase.",
+  "provenance": {
+    "activeVocalLanguage": "ja",
+    "lyricSet": "ja-vocal",
+    "sources": [
+      "faster-whisper ASR on separated vocal stem",
+      "original prompt/reference lyric",
+      "manual correction pass"
+    ],
+    "rule": "audio truth first; prompt/reference used only to correct obvious ASR homophones or missing function words"
+  },
+  "quality": {
+    "timing": "active vocal line timing from Musia run_pipeline ASR segments; token timing evenly distributed by player when exact word timing is not trusted",
+    "translation": "line-by-line translation of the active vocal text"
+  },
+  "lines": [
+    {
+      "id": "ja-001",
+      "start": 0.11,
+      "end": 9.69,
+      "text": "窗边小小阿芽酱，把雨滴变成星光",
+      "singableText": "窗边小小阿芽酱，把雨滴变成星光",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "窗",
+          "pinyin": "chuang1",
+          "start": 0.11,
+          "end": 0.749
+        },
+        {
+          "text": "边",
+          "pinyin": "bian1",
+          "start": 0.749,
+          "end": 1.387
+        },
+        {
+          "text": "小",
+          "pinyin": "xiao3",
+          "start": 1.387,
+          "end": 2.026
+        },
+        {
+          "text": "小",
+          "pinyin": "xiao3",
+          "start": 2.026,
+          "end": 2.665
+        },
+        {
+          "text": "阿",
+          "pinyin": "a1",
+          "start": 2.665,
+          "end": 3.303
+        },
+        {
+          "text": "芽",
+          "pinyin": "ya2",
+          "start": 3.303,
+          "end": 3.942
+        },
+        {
+          "text": "酱",
+          "pinyin": "jiang4",
+          "start": 3.942,
+          "end": 4.581
+        },
+        {
+          "text": "，",
+          "start": 4.581,
+          "end": 5.219
+        },
+        {
+          "text": "把",
+          "pinyin": "ba3",
+          "start": 5.219,
+          "end": 5.858
+        },
+        {
+          "text": "雨",
+          "pinyin": "yu3",
+          "start": 5.858,
+          "end": 6.497
+        },
+        {
+          "text": "滴",
+          "pinyin": "di1",
+          "start": 6.497,
+          "end": 7.135
+        },
+        {
+          "text": "变",
+          "pinyin": "bian4",
+          "start": 7.135,
+          "end": 7.774
+        },
+        {
+          "text": "成",
+          "pinyin": "cheng2",
+          "start": 7.774,
+          "end": 8.413
+        },
+        {
+          "text": "星",
+          "pinyin": "xing1",
+          "start": 8.413,
+          "end": 9.051
+        },
+        {
+          "text": "光",
+          "pinyin": "guang1",
+          "start": 9.051,
+          "end": 9.69
+        }
+      ]
+    },
+    {
+      "id": "ja-002",
+      "start": 11.2,
+      "end": 21.82,
+      "text": "红尾巴轻轻摇晃，向沉睡街道歌唱",
+      "singableText": "红尾巴轻轻摇晃，向沉睡街道歌唱",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "红",
+          "pinyin": "hong2",
+          "start": 11.2,
+          "end": 11.908
+        },
+        {
+          "text": "尾",
+          "pinyin": "wei3",
+          "start": 11.908,
+          "end": 12.616
+        },
+        {
+          "text": "巴",
+          "pinyin": "ba1",
+          "start": 12.616,
+          "end": 13.324
+        },
+        {
+          "text": "轻",
+          "pinyin": "qing1",
+          "start": 13.324,
+          "end": 14.032
+        },
+        {
+          "text": "轻",
+          "pinyin": "qing1",
+          "start": 14.032,
+          "end": 14.74
+        },
+        {
+          "text": "摇",
+          "pinyin": "yao2",
+          "start": 14.74,
+          "end": 15.448
+        },
+        {
+          "text": "晃",
+          "pinyin": "huang3",
+          "start": 15.448,
+          "end": 16.156
+        },
+        {
+          "text": "，",
+          "start": 16.156,
+          "end": 16.864
+        },
+        {
+          "text": "向",
+          "pinyin": "xiang4",
+          "start": 16.864,
+          "end": 17.572
+        },
+        {
+          "text": "沉",
+          "pinyin": "chen2",
+          "start": 17.572,
+          "end": 18.28
+        },
+        {
+          "text": "睡",
+          "pinyin": "shui4",
+          "start": 18.28,
+          "end": 18.988
+        },
+        {
+          "text": "街",
+          "pinyin": "jie1",
+          "start": 18.988,
+          "end": 19.696
+        },
+        {
+          "text": "道",
+          "pinyin": "dao4",
+          "start": 19.696,
+          "end": 20.404
+        },
+        {
+          "text": "歌",
+          "pinyin": "ge1",
+          "start": 20.404,
+          "end": 21.112
+        },
+        {
+          "text": "唱",
+          "pinyin": "chang4",
+          "start": 21.112,
+          "end": 21.82
+        }
+      ]
+    },
+    {
+      "id": "ja-003",
+      "start": 21.82,
+      "end": 30.06,
+      "text": "别害怕，我在这里，胸口铃声照亮夜",
+      "singableText": "别害怕，我在这里，胸口铃声照亮夜",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "别",
+          "pinyin": "bie2",
+          "start": 21.82,
+          "end": 22.335
+        },
+        {
+          "text": "害",
+          "pinyin": "hai4",
+          "start": 22.335,
+          "end": 22.85
+        },
+        {
+          "text": "怕",
+          "pinyin": "pa4",
+          "start": 22.85,
+          "end": 23.365
+        },
+        {
+          "text": "，",
+          "start": 23.365,
+          "end": 23.88
+        },
+        {
+          "text": "我",
+          "pinyin": "wo3",
+          "start": 23.88,
+          "end": 24.395
+        },
+        {
+          "text": "在",
+          "pinyin": "zai4",
+          "start": 24.395,
+          "end": 24.91
+        },
+        {
+          "text": "这",
+          "pinyin": "zhe4",
+          "start": 24.91,
+          "end": 25.425
+        },
+        {
+          "text": "里",
+          "pinyin": "li3",
+          "start": 25.425,
+          "end": 25.94
+        },
+        {
+          "text": "，",
+          "start": 25.94,
+          "end": 26.455
+        },
+        {
+          "text": "胸",
+          "pinyin": "xiong1",
+          "start": 26.455,
+          "end": 26.97
+        },
+        {
+          "text": "口",
+          "pinyin": "kou3",
+          "start": 26.97,
+          "end": 27.485
+        },
+        {
+          "text": "铃",
+          "pinyin": "ling2",
+          "start": 27.485,
+          "end": 28.0
+        },
+        {
+          "text": "声",
+          "pinyin": "sheng1",
+          "start": 28.0,
+          "end": 28.515
+        },
+        {
+          "text": "照",
+          "pinyin": "zhao4",
+          "start": 28.515,
+          "end": 29.03
+        },
+        {
+          "text": "亮",
+          "pinyin": "liang4",
+          "start": 29.03,
+          "end": 29.545
+        },
+        {
+          "text": "夜",
+          "pinyin": "ye4",
+          "start": 29.545,
+          "end": 30.06
+        }
+      ]
+    },
+    {
+      "id": "ja-004",
+      "start": 33.22,
+      "end": 38.66,
+      "text": "闪呀闪呀阿芽酱，穿过云缝向前跑",
+      "singableText": "闪呀闪呀阿芽酱，穿过云缝向前跑",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "闪",
+          "pinyin": "shan3",
+          "start": 33.22,
+          "end": 33.583
+        },
+        {
+          "text": "呀",
+          "pinyin": "ya5",
+          "start": 33.583,
+          "end": 33.945
+        },
+        {
+          "text": "闪",
+          "pinyin": "shan3",
+          "start": 33.945,
+          "end": 34.308
+        },
+        {
+          "text": "呀",
+          "pinyin": "ya5",
+          "start": 34.308,
+          "end": 34.671
+        },
+        {
+          "text": "阿",
+          "pinyin": "a1",
+          "start": 34.671,
+          "end": 35.033
+        },
+        {
+          "text": "芽",
+          "pinyin": "ya2",
+          "start": 35.033,
+          "end": 35.396
+        },
+        {
+          "text": "酱",
+          "pinyin": "jiang4",
+          "start": 35.396,
+          "end": 35.759
+        },
+        {
+          "text": "，",
+          "start": 35.759,
+          "end": 36.121
+        },
+        {
+          "text": "穿",
+          "pinyin": "chuan1",
+          "start": 36.121,
+          "end": 36.484
+        },
+        {
+          "text": "过",
+          "pinyin": "guo4",
+          "start": 36.484,
+          "end": 36.847
+        },
+        {
+          "text": "云",
+          "pinyin": "yun2",
+          "start": 36.847,
+          "end": 37.209
+        },
+        {
+          "text": "缝",
+          "pinyin": "feng4",
+          "start": 37.209,
+          "end": 37.572
+        },
+        {
+          "text": "向",
+          "pinyin": "xiang4",
+          "start": 37.572,
+          "end": 37.935
+        },
+        {
+          "text": "前",
+          "pinyin": "qian2",
+          "start": 37.935,
+          "end": 38.297
+        },
+        {
+          "text": "跑",
+          "pinyin": "pao3",
+          "start": 38.297,
+          "end": 38.66
+        }
+      ]
+    },
+    {
+      "id": "ja-005",
+      "start": 38.66,
+      "end": 47.8,
+      "text": "你不孤单，不孤单，梦不会散",
+      "singableText": "你不孤单，不孤单，梦不会散",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "你",
+          "pinyin": "ni3",
+          "start": 38.66,
+          "end": 39.363
+        },
+        {
+          "text": "不",
+          "pinyin": "bu4",
+          "start": 39.363,
+          "end": 40.066
+        },
+        {
+          "text": "孤",
+          "pinyin": "gu1",
+          "start": 40.066,
+          "end": 40.769
+        },
+        {
+          "text": "单",
+          "pinyin": "dan1",
+          "start": 40.769,
+          "end": 41.472
+        },
+        {
+          "text": "，",
+          "start": 41.472,
+          "end": 42.175
+        },
+        {
+          "text": "不",
+          "pinyin": "bu4",
+          "start": 42.175,
+          "end": 42.878
+        },
+        {
+          "text": "孤",
+          "pinyin": "gu1",
+          "start": 42.878,
+          "end": 43.582
+        },
+        {
+          "text": "单",
+          "pinyin": "dan1",
+          "start": 43.582,
+          "end": 44.285
+        },
+        {
+          "text": "，",
+          "start": 44.285,
+          "end": 44.988
+        },
+        {
+          "text": "梦",
+          "pinyin": "meng4",
+          "start": 44.988,
+          "end": 45.691
+        },
+        {
+          "text": "不",
+          "pinyin": "bu4",
+          "start": 45.691,
+          "end": 46.394
+        },
+        {
+          "text": "会",
+          "pinyin": "hui4",
+          "start": 46.394,
+          "end": 47.097
+        },
+        {
+          "text": "散",
+          "pinyin": "san4",
+          "start": 47.097,
+          "end": 47.8
+        }
+      ]
+    },
+    {
+      "id": "ja-006",
+      "start": 47.8,
+      "end": 59.26,
+      "text": "在光雨里跳舞，清晨来时勇气苏醒",
+      "singableText": "在光雨里跳舞，清晨来时勇气苏醒",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "在",
+          "pinyin": "zai4",
+          "start": 47.8,
+          "end": 48.564
+        },
+        {
+          "text": "光",
+          "pinyin": "guang1",
+          "start": 48.564,
+          "end": 49.328
+        },
+        {
+          "text": "雨",
+          "pinyin": "yu3",
+          "start": 49.328,
+          "end": 50.092
+        },
+        {
+          "text": "里",
+          "pinyin": "li3",
+          "start": 50.092,
+          "end": 50.856
+        },
+        {
+          "text": "跳",
+          "pinyin": "tiao4",
+          "start": 50.856,
+          "end": 51.62
+        },
+        {
+          "text": "舞",
+          "pinyin": "wu3",
+          "start": 51.62,
+          "end": 52.384
+        },
+        {
+          "text": "，",
+          "start": 52.384,
+          "end": 53.148
+        },
+        {
+          "text": "清",
+          "pinyin": "qing1",
+          "start": 53.148,
+          "end": 53.912
+        },
+        {
+          "text": "晨",
+          "pinyin": "chen2",
+          "start": 53.912,
+          "end": 54.676
+        },
+        {
+          "text": "来",
+          "pinyin": "lai2",
+          "start": 54.676,
+          "end": 55.44
+        },
+        {
+          "text": "时",
+          "pinyin": "shi2",
+          "start": 55.44,
+          "end": 56.204
+        },
+        {
+          "text": "勇",
+          "pinyin": "yong3",
+          "start": 56.204,
+          "end": 56.968
+        },
+        {
+          "text": "气",
+          "pinyin": "qi4",
+          "start": 56.968,
+          "end": 57.732
+        },
+        {
+          "text": "苏",
+          "pinyin": "su1",
+          "start": 57.732,
+          "end": 58.496
+        },
+        {
+          "text": "醒",
+          "pinyin": "xing3",
+          "start": 58.496,
+          "end": 59.26
+        }
+      ]
+    }
+  ]
+}

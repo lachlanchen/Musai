@@ -9,7 +9,7 @@
     "nativeLabel": "中文",
     "script": "Hans"
   },
-  "notes": "Planned lyrics with rough timing for ACE-Step review candidates; ASR did not confirm final exact words.",
+  "notes": "Planned lyrics with rough timing for ACE-Step review candidates; ASR did not confirm final exact words. Visible English hooks replaced with native-language translations after script audit.",
   "lines": [
     {
       "id": "l01",
@@ -339,97 +339,37 @@
       "id": "l07",
       "start": 37.5,
       "end": 41.0,
-      "text": "Take care of yourself",
-      "singableText": "Take care of yourself",
+      "text": "照顾好自己",
+      "singableText": "照顾好自己",
       "tokens": [
         {
-          "text": "T",
+          "text": "照",
+          "pinyin": "zhao4",
           "start": 37.5,
-          "end": 37.694
+          "end": 38.2
         },
         {
-          "text": "a",
-          "start": 37.694,
-          "end": 37.889
+          "text": "顾",
+          "pinyin": "gu4",
+          "start": 38.2,
+          "end": 38.9
         },
         {
-          "text": "k",
-          "start": 37.889,
-          "end": 38.083
+          "text": "好",
+          "pinyin": "hao3",
+          "start": 38.9,
+          "end": 39.6
         },
         {
-          "text": "e",
-          "start": 38.083,
-          "end": 38.278
+          "text": "自",
+          "pinyin": "zi4",
+          "start": 39.6,
+          "end": 40.3
         },
         {
-          "text": "c",
-          "start": 38.278,
-          "end": 38.472
-        },
-        {
-          "text": "a",
-          "start": 38.472,
-          "end": 38.667
-        },
-        {
-          "text": "r",
-          "start": 38.667,
-          "end": 38.861
-        },
-        {
-          "text": "e",
-          "start": 38.861,
-          "end": 39.056
-        },
-        {
-          "text": "o",
-          "start": 39.056,
-          "end": 39.25
-        },
-        {
-          "text": "f",
-          "start": 39.25,
-          "end": 39.444
-        },
-        {
-          "text": "y",
-          "start": 39.444,
-          "end": 39.639
-        },
-        {
-          "text": "o",
-          "start": 39.639,
-          "end": 39.833
-        },
-        {
-          "text": "u",
-          "start": 39.833,
-          "end": 40.028
-        },
-        {
-          "text": "r",
-          "start": 40.028,
-          "end": 40.222
-        },
-        {
-          "text": "s",
-          "start": 40.222,
-          "end": 40.417
-        },
-        {
-          "text": "e",
-          "start": 40.417,
-          "end": 40.611
-        },
-        {
-          "text": "l",
-          "start": 40.611,
-          "end": 40.806
-        },
-        {
-          "text": "f",
-          "start": 40.806,
+          "text": "己",
+          "pinyin": "ji3",
+          "start": 40.3,
           "end": 41.0
         }
       ]
@@ -501,97 +441,37 @@
       "id": "l09",
       "start": 47.0,
       "end": 50.2,
-      "text": "Take care of yourself",
-      "singableText": "Take care of yourself",
+      "text": "照顾好自己",
+      "singableText": "照顾好自己",
       "tokens": [
         {
-          "text": "T",
+          "text": "照",
+          "pinyin": "zhao4",
           "start": 47.0,
-          "end": 47.178
+          "end": 47.64
         },
         {
-          "text": "a",
-          "start": 47.178,
-          "end": 47.356
+          "text": "顾",
+          "pinyin": "gu4",
+          "start": 47.64,
+          "end": 48.28
         },
         {
-          "text": "k",
-          "start": 47.356,
-          "end": 47.533
+          "text": "好",
+          "pinyin": "hao3",
+          "start": 48.28,
+          "end": 48.92
         },
         {
-          "text": "e",
-          "start": 47.533,
-          "end": 47.711
+          "text": "自",
+          "pinyin": "zi4",
+          "start": 48.92,
+          "end": 49.56
         },
         {
-          "text": "c",
-          "start": 47.711,
-          "end": 47.889
-        },
-        {
-          "text": "a",
-          "start": 47.889,
-          "end": 48.067
-        },
-        {
-          "text": "r",
-          "start": 48.067,
-          "end": 48.244
-        },
-        {
-          "text": "e",
-          "start": 48.244,
-          "end": 48.422
-        },
-        {
-          "text": "o",
-          "start": 48.422,
-          "end": 48.6
-        },
-        {
-          "text": "f",
-          "start": 48.6,
-          "end": 48.778
-        },
-        {
-          "text": "y",
-          "start": 48.778,
-          "end": 48.956
-        },
-        {
-          "text": "o",
-          "start": 48.956,
-          "end": 49.133
-        },
-        {
-          "text": "u",
-          "start": 49.133,
-          "end": 49.311
-        },
-        {
-          "text": "r",
-          "start": 49.311,
-          "end": 49.489
-        },
-        {
-          "text": "s",
-          "start": 49.489,
-          "end": 49.667
-        },
-        {
-          "text": "e",
-          "start": 49.667,
-          "end": 49.844
-        },
-        {
-          "text": "l",
-          "start": 49.844,
-          "end": 50.022
-        },
-        {
-          "text": "f",
-          "start": 50.022,
+          "text": "己",
+          "pinyin": "ji3",
+          "start": 49.56,
           "end": 50.2
         }
       ]
@@ -753,97 +633,37 @@
       "id": "l13",
       "start": 67.0,
       "end": 70.0,
-      "text": "Take care of yourself",
-      "singableText": "Take care of yourself",
+      "text": "照顾好自己",
+      "singableText": "照顾好自己",
       "tokens": [
         {
-          "text": "T",
+          "text": "照",
+          "pinyin": "zhao4",
           "start": 67.0,
-          "end": 67.167
+          "end": 67.6
         },
         {
-          "text": "a",
-          "start": 67.167,
-          "end": 67.333
+          "text": "顾",
+          "pinyin": "gu4",
+          "start": 67.6,
+          "end": 68.2
         },
         {
-          "text": "k",
-          "start": 67.333,
-          "end": 67.5
+          "text": "好",
+          "pinyin": "hao3",
+          "start": 68.2,
+          "end": 68.8
         },
         {
-          "text": "e",
-          "start": 67.5,
-          "end": 67.667
+          "text": "自",
+          "pinyin": "zi4",
+          "start": 68.8,
+          "end": 69.4
         },
         {
-          "text": "c",
-          "start": 67.667,
-          "end": 67.833
-        },
-        {
-          "text": "a",
-          "start": 67.833,
-          "end": 68.0
-        },
-        {
-          "text": "r",
-          "start": 68.0,
-          "end": 68.167
-        },
-        {
-          "text": "e",
-          "start": 68.167,
-          "end": 68.333
-        },
-        {
-          "text": "o",
-          "start": 68.333,
-          "end": 68.5
-        },
-        {
-          "text": "f",
-          "start": 68.5,
-          "end": 68.667
-        },
-        {
-          "text": "y",
-          "start": 68.667,
-          "end": 68.833
-        },
-        {
-          "text": "o",
-          "start": 68.833,
-          "end": 69.0
-        },
-        {
-          "text": "u",
-          "start": 69.0,
-          "end": 69.167
-        },
-        {
-          "text": "r",
-          "start": 69.167,
-          "end": 69.333
-        },
-        {
-          "text": "s",
-          "start": 69.333,
-          "end": 69.5
-        },
-        {
-          "text": "e",
-          "start": 69.5,
-          "end": 69.667
-        },
-        {
-          "text": "l",
-          "start": 69.667,
-          "end": 69.833
-        },
-        {
-          "text": "f",
-          "start": 69.833,
+          "text": "己",
+          "pinyin": "ji3",
+          "start": 69.4,
           "end": 70.0
         }
       ]

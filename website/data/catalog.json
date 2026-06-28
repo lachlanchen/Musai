@@ -36,6 +36,30 @@
       ]
     },
     {
+      "id": "aya-chan-hikari-ame",
+      "kind": "song",
+      "title": "Aya Chan Hikari Ame",
+      "artist": "Musia",
+      "summary": "A warm Aya Chan rain-of-light character song with Japanese, English, and Mandarin ACE-Step vocal renders, per-vocal corrected trilingual lyrics, pinyin, furigana, and chord timing.",
+      "manifest": "data/songs/aya-chan-hikari-ame/manifest.json",
+      "cover": "assets/covers/aya-chan-hikari-ame-16x9.png",
+      "languages": [
+        "ja",
+        "en",
+        "zh-Hans"
+      ],
+      "tags": [
+        "music",
+        "Aya Chan",
+        "LALACHAN",
+        "trilingual",
+        "ACE-Step",
+        "pinyin",
+        "furigana",
+        "ASR-corrected"
+      ]
+    },
+    {
       "id": "take-care-of-yourself-same-score",
       "kind": "localized-song",
       "title": "Take Care of Yourself",

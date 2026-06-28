@@ -399,7 +399,9 @@
     "audioModel": "ACE-Step 1.5 XL turbo",
     "qualityNote": "data/creative_projects/take-care-of-yourself-oldmodel-review-20260628/QUALITY_NOTE.md",
     "qualityGate": "review-asr-low",
-    "decision": "Website review item, not final accepted publication."
+    "decision": "Website review item, not final accepted publication.",
+    "coverSource": "Generated 16:9 Take Care of Yourself cover used by Fun Lazying Art.",
+    "lyricCorrection": "Visible JP/ZH hook translations checked by script audit; English hook text removed from non-English visible tracks on 2026-06-28."
   },
   "artifacts": [
     {

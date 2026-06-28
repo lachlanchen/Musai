@@ -1,0 +1,384 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "aya-chan-hikari-ame",
+  "lineCoverage": "translation-of-active-vocal",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "notes": "Mandarin selected candidate. Faster-whisper ASR used internal zh code; visible website language is zh-Hans. Lines are corrected from ASR plus the reference lyric and shortened where the model compressed phrases.",
+  "provenance": {
+    "activeVocalLanguage": "zh-Hans",
+    "lyricSet": "zh-vocal",
+    "sources": [
+      "faster-whisper ASR on separated vocal stem",
+      "original prompt/reference lyric",
+      "manual correction pass"
+    ],
+    "rule": "audio truth first; prompt/reference used only to correct obvious ASR homophones or missing function words"
+  },
+  "quality": {
+    "timing": "active vocal line timing from Musia run_pipeline ASR segments; token timing evenly distributed by player when exact word timing is not trusted",
+    "translation": "line-by-line translation of the active vocal text"
+  },
+  "lines": [
+    {
+      "id": "zh-001",
+      "start": 10.26,
+      "end": 15.48,
+      "text": "Little Aya by the window turns raindrops into starlight",
+      "singableText": "Little Aya by the window turns raindrops into starlight",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Little",
+          "start": 10.26,
+          "end": 10.84
+        },
+        {
+          "text": "Aya",
+          "start": 10.84,
+          "end": 11.42
+        },
+        {
+          "text": "by",
+          "start": 11.42,
+          "end": 12.0
+        },
+        {
+          "text": "the",
+          "start": 12.0,
+          "end": 12.58
+        },
+        {
+          "text": "window",
+          "start": 12.58,
+          "end": 13.16
+        },
+        {
+          "text": "turns",
+          "start": 13.16,
+          "end": 13.74
+        },
+        {
+          "text": "raindrops",
+          "start": 13.74,
+          "end": 14.32
+        },
+        {
+          "text": "into",
+          "start": 14.32,
+          "end": 14.9
+        },
+        {
+          "text": "starlight",
+          "start": 14.9,
+          "end": 15.48
+        }
+      ]
+    },
+    {
+      "id": "zh-002",
+      "start": 15.48,
+      "end": 21.16,
+      "text": "Her red tail sways gently and sings to the sleeping town",
+      "singableText": "Her red tail sways gently and sings to the sleeping town",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Her",
+          "start": 15.48,
+          "end": 15.996
+        },
+        {
+          "text": "red",
+          "start": 15.996,
+          "end": 16.513
+        },
+        {
+          "text": "tail",
+          "start": 16.513,
+          "end": 17.029
+        },
+        {
+          "text": "sways",
+          "start": 17.029,
+          "end": 17.545
+        },
+        {
+          "text": "gently",
+          "start": 17.545,
+          "end": 18.062
+        },
+        {
+          "text": "and",
+          "start": 18.062,
+          "end": 18.578
+        },
+        {
+          "text": "sings",
+          "start": 18.578,
+          "end": 19.095
+        },
+        {
+          "text": "to",
+          "start": 19.095,
+          "end": 19.611
+        },
+        {
+          "text": "the",
+          "start": 19.611,
+          "end": 20.127
+        },
+        {
+          "text": "sleeping",
+          "start": 20.127,
+          "end": 20.644
+        },
+        {
+          "text": "town",
+          "start": 20.644,
+          "end": 21.16
+        }
+      ]
+    },
+    {
+      "id": "zh-003",
+      "start": 21.82,
+      "end": 29.68,
+      "text": "Do not be afraid, I am here; the bell at my heart lights the night",
+      "singableText": "Do not be afraid, I am here; the bell at my heart lights the night",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Do",
+          "start": 21.82,
+          "end": 22.282
+        },
+        {
+          "text": "not",
+          "start": 22.282,
+          "end": 22.745
+        },
+        {
+          "text": "be",
+          "start": 22.745,
+          "end": 23.207
+        },
+        {
+          "text": "afraid",
+          "start": 23.207,
+          "end": 23.669
+        },
+        {
+          "text": ",",
+          "start": 23.669,
+          "end": 24.132
+        },
+        {
+          "text": "I",
+          "start": 24.132,
+          "end": 24.594
+        },
+        {
+          "text": "am",
+          "start": 24.594,
+          "end": 25.056
+        },
+        {
+          "text": "here",
+          "start": 25.056,
+          "end": 25.519
+        },
+        {
+          "text": ";",
+          "start": 25.519,
+          "end": 25.981
+        },
+        {
+          "text": "the",
+          "start": 25.981,
+          "end": 26.444
+        },
+        {
+          "text": "bell",
+          "start": 26.444,
+          "end": 26.906
+        },
+        {
+          "text": "at",
+          "start": 26.906,
+          "end": 27.368
+        },
+        {
+          "text": "my",
+          "start": 27.368,
+          "end": 27.831
+        },
+        {
+          "text": "heart",
+          "start": 27.831,
+          "end": 28.293
+        },
+        {
+          "text": "lights",
+          "start": 28.293,
+          "end": 28.755
+        },
+        {
+          "text": "the",
+          "start": 28.755,
+          "end": 29.218
+        },
+        {
+          "text": "night",
+          "start": 29.218,
+          "end": 29.68
+        }
+      ]
+    },
+    {
+      "id": "zh-004",
+      "start": 32.01,
+      "end": 43.46,
+      "text": "Shimmer, shimmer, run ahead; you are not alone, dance with me",
+      "singableText": "Shimmer, shimmer, run ahead; you are not alone, dance with me",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Shimmer",
+          "start": 32.01,
+          "end": 32.773
+        },
+        {
+          "text": ",",
+          "start": 32.773,
+          "end": 33.537
+        },
+        {
+          "text": "shimmer",
+          "start": 33.537,
+          "end": 34.3
+        },
+        {
+          "text": ",",
+          "start": 34.3,
+          "end": 35.063
+        },
+        {
+          "text": "run",
+          "start": 35.063,
+          "end": 35.827
+        },
+        {
+          "text": "ahead",
+          "start": 35.827,
+          "end": 36.59
+        },
+        {
+          "text": ";",
+          "start": 36.59,
+          "end": 37.353
+        },
+        {
+          "text": "you",
+          "start": 37.353,
+          "end": 38.117
+        },
+        {
+          "text": "are",
+          "start": 38.117,
+          "end": 38.88
+        },
+        {
+          "text": "not",
+          "start": 38.88,
+          "end": 39.643
+        },
+        {
+          "text": "alone",
+          "start": 39.643,
+          "end": 40.407
+        },
+        {
+          "text": ",",
+          "start": 40.407,
+          "end": 41.17
+        },
+        {
+          "text": "dance",
+          "start": 41.17,
+          "end": 41.933
+        },
+        {
+          "text": "with",
+          "start": 41.933,
+          "end": 42.697
+        },
+        {
+          "text": "me",
+          "start": 42.697,
+          "end": 43.46
+        }
+      ]
+    },
+    {
+      "id": "zh-005",
+      "start": 43.46,
+      "end": 51.07,
+      "text": "When morning smiles, little courage opens into flowers",
+      "singableText": "When morning smiles, little courage opens into flowers",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "When",
+          "start": 43.46,
+          "end": 44.306
+        },
+        {
+          "text": "morning",
+          "start": 44.306,
+          "end": 45.151
+        },
+        {
+          "text": "smiles",
+          "start": 45.151,
+          "end": 45.997
+        },
+        {
+          "text": ",",
+          "start": 45.997,
+          "end": 46.842
+        },
+        {
+          "text": "little",
+          "start": 46.842,
+          "end": 47.688
+        },
+        {
+          "text": "courage",
+          "start": 47.688,
+          "end": 48.533
+        },
+        {
+          "text": "opens",
+          "start": 48.533,
+          "end": 49.379
+        },
+        {
+          "text": "into",
+          "start": 49.379,
+          "end": 50.224
+        },
+        {
+          "text": "flowers",
+          "start": 50.224,
+          "end": 51.07
+        }
+      ]
+    }
+  ]
+}

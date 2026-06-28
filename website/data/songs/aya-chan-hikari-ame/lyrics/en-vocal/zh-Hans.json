@@ -1,0 +1,662 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "aya-chan-hikari-ame",
+  "lineCoverage": "translation-of-active-vocal",
+  "language": {
+    "code": "zh-Hans",
+    "label": "Mandarin Chinese",
+    "nativeLabel": "中文",
+    "script": "Hans",
+    "pronunciation": "pinyin"
+  },
+  "notes": "English selected candidate v1. Compact candidate was rejected because ASR recovered less text. These lines are ASR-corrected from the selected v1 vocal; several planned chorus words were compressed by the model.",
+  "provenance": {
+    "activeVocalLanguage": "en",
+    "lyricSet": "en-vocal",
+    "sources": [
+      "faster-whisper ASR on separated vocal stem",
+      "original prompt/reference lyric",
+      "manual correction pass"
+    ],
+    "rule": "audio truth first; prompt/reference used only to correct obvious ASR homophones or missing function words"
+  },
+  "quality": {
+    "timing": "active vocal line timing from Musia run_pipeline ASR segments; token timing evenly distributed by player when exact word timing is not trusted",
+    "translation": "line-by-line translation of the active vocal text"
+  },
+  "lines": [
+    {
+      "id": "en-001",
+      "start": 0.08,
+      "end": 1.76,
+      "text": "啦，呀，呀，呀",
+      "singableText": "啦，呀，呀，呀",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "啦",
+          "pinyin": "la5",
+          "start": 0.08,
+          "end": 0.32
+        },
+        {
+          "text": "，",
+          "start": 0.32,
+          "end": 0.56
+        },
+        {
+          "text": "呀",
+          "pinyin": "ya5",
+          "start": 0.56,
+          "end": 0.8
+        },
+        {
+          "text": "，",
+          "start": 0.8,
+          "end": 1.04
+        },
+        {
+          "text": "呀",
+          "pinyin": "ya5",
+          "start": 1.04,
+          "end": 1.28
+        },
+        {
+          "text": "，",
+          "start": 1.28,
+          "end": 1.52
+        },
+        {
+          "text": "呀",
+          "pinyin": "ya5",
+          "start": 1.52,
+          "end": 1.76
+        }
+      ]
+    },
+    {
+      "id": "en-002",
+      "start": 10.78,
+      "end": 14.04,
+      "text": "窗边的小小阿芽酱",
+      "singableText": "窗边的小小阿芽酱",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "窗",
+          "pinyin": "chuang1",
+          "start": 10.78,
+          "end": 11.188
+        },
+        {
+          "text": "边",
+          "pinyin": "bian1",
+          "start": 11.188,
+          "end": 11.595
+        },
+        {
+          "text": "的",
+          "pinyin": "de5",
+          "start": 11.595,
+          "end": 12.002
+        },
+        {
+          "text": "小",
+          "pinyin": "xiao3",
+          "start": 12.002,
+          "end": 12.41
+        },
+        {
+          "text": "小",
+          "pinyin": "xiao3",
+          "start": 12.41,
+          "end": 12.817
+        },
+        {
+          "text": "阿",
+          "pinyin": "a1",
+          "start": 12.817,
+          "end": 13.225
+        },
+        {
+          "text": "芽",
+          "pinyin": "ya2",
+          "start": 13.225,
+          "end": 13.633
+        },
+        {
+          "text": "酱",
+          "pinyin": "jiang4",
+          "start": 13.633,
+          "end": 14.04
+        }
+      ]
+    },
+    {
+      "id": "en-003",
+      "start": 14.04,
+      "end": 16.78,
+      "text": "把雨滴变成星光",
+      "singableText": "把雨滴变成星光",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "把",
+          "pinyin": "ba3",
+          "start": 14.04,
+          "end": 14.431
+        },
+        {
+          "text": "雨",
+          "pinyin": "yu3",
+          "start": 14.431,
+          "end": 14.823
+        },
+        {
+          "text": "滴",
+          "pinyin": "di1",
+          "start": 14.823,
+          "end": 15.214
+        },
+        {
+          "text": "变",
+          "pinyin": "bian4",
+          "start": 15.214,
+          "end": 15.606
+        },
+        {
+          "text": "成",
+          "pinyin": "cheng2",
+          "start": 15.606,
+          "end": 15.997
+        },
+        {
+          "text": "星",
+          "pinyin": "xing1",
+          "start": 15.997,
+          "end": 16.389
+        },
+        {
+          "text": "光",
+          "pinyin": "guang1",
+          "start": 16.389,
+          "end": 16.78
+        }
+      ]
+    },
+    {
+      "id": "en-004",
+      "start": 16.78,
+      "end": 19.38,
+      "text": "红尾巴温柔摇晃",
+      "singableText": "红尾巴温柔摇晃",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "红",
+          "pinyin": "hong2",
+          "start": 16.78,
+          "end": 17.151
+        },
+        {
+          "text": "尾",
+          "pinyin": "wei3",
+          "start": 17.151,
+          "end": 17.523
+        },
+        {
+          "text": "巴",
+          "pinyin": "ba1",
+          "start": 17.523,
+          "end": 17.894
+        },
+        {
+          "text": "温",
+          "pinyin": "wen1",
+          "start": 17.894,
+          "end": 18.266
+        },
+        {
+          "text": "柔",
+          "pinyin": "rou2",
+          "start": 18.266,
+          "end": 18.637
+        },
+        {
+          "text": "摇",
+          "pinyin": "yao2",
+          "start": 18.637,
+          "end": 19.009
+        },
+        {
+          "text": "晃",
+          "pinyin": "huang3",
+          "start": 19.009,
+          "end": 19.38
+        }
+      ]
+    },
+    {
+      "id": "en-005",
+      "start": 19.38,
+      "end": 21.86,
+      "text": "把歌声送过街巷",
+      "singableText": "把歌声送过街巷",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "把",
+          "pinyin": "ba3",
+          "start": 19.38,
+          "end": 19.734
+        },
+        {
+          "text": "歌",
+          "pinyin": "ge1",
+          "start": 19.734,
+          "end": 20.089
+        },
+        {
+          "text": "声",
+          "pinyin": "sheng1",
+          "start": 20.089,
+          "end": 20.443
+        },
+        {
+          "text": "送",
+          "pinyin": "song4",
+          "start": 20.443,
+          "end": 20.797
+        },
+        {
+          "text": "过",
+          "pinyin": "guo4",
+          "start": 20.797,
+          "end": 21.151
+        },
+        {
+          "text": "街",
+          "pinyin": "jie1",
+          "start": 21.151,
+          "end": 21.506
+        },
+        {
+          "text": "巷",
+          "pinyin": "xiang4",
+          "start": 21.506,
+          "end": 21.86
+        }
+      ]
+    },
+    {
+      "id": "en-006",
+      "start": 21.86,
+      "end": 25.96,
+      "text": "别害怕，我在这里",
+      "singableText": "别害怕，我在这里",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "别",
+          "pinyin": "bie2",
+          "start": 21.86,
+          "end": 22.372
+        },
+        {
+          "text": "害",
+          "pinyin": "hai4",
+          "start": 22.372,
+          "end": 22.885
+        },
+        {
+          "text": "怕",
+          "pinyin": "pa4",
+          "start": 22.885,
+          "end": 23.398
+        },
+        {
+          "text": "，",
+          "start": 23.398,
+          "end": 23.91
+        },
+        {
+          "text": "我",
+          "pinyin": "wo3",
+          "start": 23.91,
+          "end": 24.422
+        },
+        {
+          "text": "在",
+          "pinyin": "zai4",
+          "start": 24.422,
+          "end": 24.935
+        },
+        {
+          "text": "这",
+          "pinyin": "zhe4",
+          "start": 24.935,
+          "end": 25.448
+        },
+        {
+          "text": "里",
+          "pinyin": "li3",
+          "start": 25.448,
+          "end": 25.96
+        }
+      ]
+    },
+    {
+      "id": "en-007",
+      "start": 25.96,
+      "end": 37.5,
+      "text": "铃声的光照亮夜晚",
+      "singableText": "铃声的光照亮夜晚",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "铃",
+          "pinyin": "ling2",
+          "start": 25.96,
+          "end": 27.402
+        },
+        {
+          "text": "声",
+          "pinyin": "sheng1",
+          "start": 27.402,
+          "end": 28.845
+        },
+        {
+          "text": "的",
+          "pinyin": "de5",
+          "start": 28.845,
+          "end": 30.288
+        },
+        {
+          "text": "光",
+          "pinyin": "guang1",
+          "start": 30.288,
+          "end": 31.73
+        },
+        {
+          "text": "照",
+          "pinyin": "zhao4",
+          "start": 31.73,
+          "end": 33.172
+        },
+        {
+          "text": "亮",
+          "pinyin": "liang4",
+          "start": 33.172,
+          "end": 34.615
+        },
+        {
+          "text": "夜",
+          "pinyin": "ye4",
+          "start": 34.615,
+          "end": 36.058
+        },
+        {
+          "text": "晚",
+          "pinyin": "wan3",
+          "start": 36.058,
+          "end": 37.5
+        }
+      ]
+    },
+    {
+      "id": "en-008",
+      "start": 38.3,
+      "end": 40.8,
+      "text": "奔过天上的云",
+      "singableText": "奔过天上的云",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "奔",
+          "pinyin": "ben1",
+          "start": 38.3,
+          "end": 38.717
+        },
+        {
+          "text": "过",
+          "pinyin": "guo4",
+          "start": 38.717,
+          "end": 39.133
+        },
+        {
+          "text": "天",
+          "pinyin": "tian1",
+          "start": 39.133,
+          "end": 39.55
+        },
+        {
+          "text": "上",
+          "pinyin": "shang4",
+          "start": 39.55,
+          "end": 39.967
+        },
+        {
+          "text": "的",
+          "pinyin": "de5",
+          "start": 39.967,
+          "end": 40.383
+        },
+        {
+          "text": "云",
+          "pinyin": "yun2",
+          "start": 40.383,
+          "end": 40.8
+        }
+      ]
+    },
+    {
+      "id": "en-009",
+      "start": 43.32,
+      "end": 45.34,
+      "text": "你并不孤单",
+      "singableText": "你并不孤单",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "你",
+          "pinyin": "ni3",
+          "start": 43.32,
+          "end": 43.724
+        },
+        {
+          "text": "并",
+          "pinyin": "bing4",
+          "start": 43.724,
+          "end": 44.128
+        },
+        {
+          "text": "不",
+          "pinyin": "bu4",
+          "start": 44.128,
+          "end": 44.532
+        },
+        {
+          "text": "孤",
+          "pinyin": "gu1",
+          "start": 44.532,
+          "end": 44.936
+        },
+        {
+          "text": "单",
+          "pinyin": "dan1",
+          "start": 44.936,
+          "end": 45.34
+        }
+      ]
+    },
+    {
+      "id": "en-010",
+      "start": 45.34,
+      "end": 50.78,
+      "text": "梦在光雨里不会消散",
+      "singableText": "梦在光雨里不会消散",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "梦",
+          "pinyin": "meng4",
+          "start": 45.34,
+          "end": 45.944
+        },
+        {
+          "text": "在",
+          "pinyin": "zai4",
+          "start": 45.944,
+          "end": 46.549
+        },
+        {
+          "text": "光",
+          "pinyin": "guang1",
+          "start": 46.549,
+          "end": 47.153
+        },
+        {
+          "text": "雨",
+          "pinyin": "yu3",
+          "start": 47.153,
+          "end": 47.758
+        },
+        {
+          "text": "里",
+          "pinyin": "li3",
+          "start": 47.758,
+          "end": 48.362
+        },
+        {
+          "text": "不",
+          "pinyin": "bu4",
+          "start": 48.362,
+          "end": 48.967
+        },
+        {
+          "text": "会",
+          "pinyin": "hui4",
+          "start": 48.967,
+          "end": 49.571
+        },
+        {
+          "text": "消",
+          "pinyin": "xiao1",
+          "start": 49.571,
+          "end": 50.176
+        },
+        {
+          "text": "散",
+          "pinyin": "san4",
+          "start": 50.176,
+          "end": 50.78
+        }
+      ]
+    },
+    {
+      "id": "en-011",
+      "start": 53.51,
+      "end": 58.95,
+      "text": "当清晨再次微笑",
+      "singableText": "当清晨再次微笑",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "当",
+          "pinyin": "dang1",
+          "start": 53.51,
+          "end": 54.287
+        },
+        {
+          "text": "清",
+          "pinyin": "qing1",
+          "start": 54.287,
+          "end": 55.064
+        },
+        {
+          "text": "晨",
+          "pinyin": "chen2",
+          "start": 55.064,
+          "end": 55.841
+        },
+        {
+          "text": "再",
+          "pinyin": "zai4",
+          "start": 55.841,
+          "end": 56.619
+        },
+        {
+          "text": "次",
+          "pinyin": "ci4",
+          "start": 56.619,
+          "end": 57.396
+        },
+        {
+          "text": "微",
+          "pinyin": "wei1",
+          "start": 57.396,
+          "end": 58.173
+        },
+        {
+          "text": "笑",
+          "pinyin": "xiao4",
+          "start": 58.173,
+          "end": 58.95
+        }
+      ]
+    },
+    {
+      "id": "en-012",
+      "start": 58.95,
+      "end": 62.35,
+      "text": "小小勇气开成花",
+      "singableText": "小小勇气开成花",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "小",
+          "pinyin": "xiao3",
+          "start": 58.95,
+          "end": 59.436
+        },
+        {
+          "text": "小",
+          "pinyin": "xiao3",
+          "start": 59.436,
+          "end": 59.921
+        },
+        {
+          "text": "勇",
+          "pinyin": "yong3",
+          "start": 59.921,
+          "end": 60.407
+        },
+        {
+          "text": "气",
+          "pinyin": "qi4",
+          "start": 60.407,
+          "end": 60.893
+        },
+        {
+          "text": "开",
+          "pinyin": "kai1",
+          "start": 60.893,
+          "end": 61.379
+        },
+        {
+          "text": "成",
+          "pinyin": "cheng2",
+          "start": 61.379,
+          "end": 61.864
+        },
+        {
+          "text": "花",
+          "pinyin": "hua1",
+          "start": 61.864,
+          "end": 62.35
+        }
+      ]
+    }
+  ]
+}

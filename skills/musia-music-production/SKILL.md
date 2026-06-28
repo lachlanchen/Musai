@@ -168,6 +168,13 @@ Correct every public lyric set from at least two evidence sources: ASR/STT from 
 musia fun-audit --media-id <media-id>
 ```
 
+For EN/JP/ZH companion renders, double-check every visible translation track
+before publishing. `ja.json` should not silently contain English hooks, and
+`zh-Hans.json` / `zh-Hant.json` should not silently contain English hooks,
+unless the active vocal truly sang a mixed-language line and the manifest says
+so. Use `musia fun-audit --media-id <media-id> --strict` to catch wrong-script
+visible text.
+
 The Fun player should keep public song playback clean: native-language dropdown labels, a two-line KTV lyric carousel, visible current-chord highlighting, and capture mode for videos. To record a share clip with the original audio muxed directly, run:
 
 ```bash

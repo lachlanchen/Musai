@@ -9,7 +9,7 @@
     "nativeLabel": "日本語",
     "script": "Jpan"
   },
-  "notes": "Planned lyrics with rough timing for ACE-Step review candidates; ASR did not confirm final exact words.",
+  "notes": "Planned lyrics with rough timing for ACE-Step review candidates; ASR did not confirm final exact words. Visible English hooks replaced with native-language translations after script audit.",
   "lines": [
     {
       "id": "l01",
@@ -255,27 +255,41 @@
       "id": "l07",
       "start": 37.5,
       "end": 41.0,
-      "text": "Take care of yourself",
-      "singableText": "Take care of yourself",
+      "text": "自分を大切に",
+      "singableText": "自分を大切に",
       "tokens": [
         {
-          "text": "Take",
+          "text": "自",
+          "reading": "じ",
           "start": 37.5,
-          "end": 38.375
+          "end": 38.083
         },
         {
-          "text": "care",
-          "start": 38.375,
+          "text": "分",
+          "reading": "ぶん",
+          "start": 38.083,
+          "end": 38.667
+        },
+        {
+          "text": "を",
+          "start": 38.667,
           "end": 39.25
         },
         {
-          "text": "of",
+          "text": "大",
+          "reading": "たい",
           "start": 39.25,
-          "end": 40.125
+          "end": 39.833
         },
         {
-          "text": "yourself",
-          "start": 40.125,
+          "text": "切",
+          "reading": "せつ",
+          "start": 39.833,
+          "end": 40.417
+        },
+        {
+          "text": "に",
+          "start": 40.417,
           "end": 41.0
         }
       ]
@@ -329,27 +343,41 @@
       "id": "l09",
       "start": 47.0,
       "end": 50.2,
-      "text": "Take care of yourself",
-      "singableText": "Take care of yourself",
+      "text": "自分を大切に",
+      "singableText": "自分を大切に",
       "tokens": [
         {
-          "text": "Take",
+          "text": "自",
+          "reading": "じ",
           "start": 47.0,
-          "end": 47.8
+          "end": 47.533
         },
         {
-          "text": "care",
-          "start": 47.8,
+          "text": "分",
+          "reading": "ぶん",
+          "start": 47.533,
+          "end": 48.067
+        },
+        {
+          "text": "を",
+          "start": 48.067,
           "end": 48.6
         },
         {
-          "text": "of",
+          "text": "大",
+          "reading": "たい",
           "start": 48.6,
-          "end": 49.4
+          "end": 49.133
         },
         {
-          "text": "yourself",
-          "start": 49.4,
+          "text": "切",
+          "reading": "せつ",
+          "start": 49.133,
+          "end": 49.667
+        },
+        {
+          "text": "に",
+          "start": 49.667,
           "end": 50.2
         }
       ]
@@ -481,27 +509,41 @@
       "id": "l13",
       "start": 67.0,
       "end": 70.0,
-      "text": "Take care of yourself",
-      "singableText": "Take care of yourself",
+      "text": "自分を大切に",
+      "singableText": "自分を大切に",
       "tokens": [
         {
-          "text": "Take",
+          "text": "自",
+          "reading": "じ",
           "start": 67.0,
-          "end": 67.75
+          "end": 67.5
         },
         {
-          "text": "care",
-          "start": 67.75,
+          "text": "分",
+          "reading": "ぶん",
+          "start": 67.5,
+          "end": 68.0
+        },
+        {
+          "text": "を",
+          "start": 68.0,
           "end": 68.5
         },
         {
-          "text": "of",
+          "text": "大",
+          "reading": "たい",
           "start": 68.5,
-          "end": 69.25
+          "end": 69.0
         },
         {
-          "text": "yourself",
-          "start": 69.25,
+          "text": "切",
+          "reading": "せつ",
+          "start": 69.0,
+          "end": 69.5
+        },
+        {
+          "text": "に",
+          "start": 69.5,
           "end": 70.0
         }
       ]

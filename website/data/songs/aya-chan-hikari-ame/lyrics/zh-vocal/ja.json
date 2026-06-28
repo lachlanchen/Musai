@@ -1,0 +1,609 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "aya-chan-hikari-ame",
+  "lineCoverage": "translation-of-active-vocal",
+  "language": {
+    "code": "ja",
+    "label": "Japanese",
+    "nativeLabel": "日本語",
+    "script": "Jpan",
+    "pronunciation": "furigana"
+  },
+  "notes": "Mandarin selected candidate. Faster-whisper ASR used internal zh code; visible website language is zh-Hans. Lines are corrected from ASR plus the reference lyric and shortened where the model compressed phrases.",
+  "provenance": {
+    "activeVocalLanguage": "zh-Hans",
+    "lyricSet": "zh-vocal",
+    "sources": [
+      "faster-whisper ASR on separated vocal stem",
+      "original prompt/reference lyric",
+      "manual correction pass"
+    ],
+    "rule": "audio truth first; prompt/reference used only to correct obvious ASR homophones or missing function words"
+  },
+  "quality": {
+    "timing": "active vocal line timing from Musia run_pipeline ASR segments; token timing evenly distributed by player when exact word timing is not trusted",
+    "translation": "line-by-line translation of the active vocal text"
+  },
+  "lines": [
+    {
+      "id": "zh-001",
+      "start": 10.26,
+      "end": 15.48,
+      "text": "窓辺の小さなアヤちゃんが雨粒を星明かりに変える",
+      "singableText": "窓辺の小さなアヤちゃんが雨粒を星明かりに変える",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "窓",
+          "reading": "まど",
+          "start": 10.26,
+          "end": 10.487
+        },
+        {
+          "text": "辺",
+          "reading": "べ",
+          "start": 10.487,
+          "end": 10.714
+        },
+        {
+          "text": "の",
+          "start": 10.714,
+          "end": 10.941
+        },
+        {
+          "text": "小",
+          "reading": "ちい",
+          "start": 10.941,
+          "end": 11.168
+        },
+        {
+          "text": "さ",
+          "start": 11.168,
+          "end": 11.395
+        },
+        {
+          "text": "な",
+          "start": 11.395,
+          "end": 11.622
+        },
+        {
+          "text": "ア",
+          "start": 11.622,
+          "end": 11.849
+        },
+        {
+          "text": "ヤ",
+          "start": 11.849,
+          "end": 12.076
+        },
+        {
+          "text": "ち",
+          "start": 12.076,
+          "end": 12.303
+        },
+        {
+          "text": "ゃ",
+          "start": 12.303,
+          "end": 12.53
+        },
+        {
+          "text": "ん",
+          "start": 12.53,
+          "end": 12.757
+        },
+        {
+          "text": "が",
+          "start": 12.757,
+          "end": 12.983
+        },
+        {
+          "text": "雨",
+          "reading": "あめ",
+          "start": 12.983,
+          "end": 13.21
+        },
+        {
+          "text": "粒",
+          "reading": "つぶ",
+          "start": 13.21,
+          "end": 13.437
+        },
+        {
+          "text": "を",
+          "start": 13.437,
+          "end": 13.664
+        },
+        {
+          "text": "星",
+          "reading": "ほし",
+          "start": 13.664,
+          "end": 13.891
+        },
+        {
+          "text": "明",
+          "reading": "あ",
+          "start": 13.891,
+          "end": 14.118
+        },
+        {
+          "text": "か",
+          "start": 14.118,
+          "end": 14.345
+        },
+        {
+          "text": "り",
+          "start": 14.345,
+          "end": 14.572
+        },
+        {
+          "text": "に",
+          "start": 14.572,
+          "end": 14.799
+        },
+        {
+          "text": "変",
+          "reading": "か",
+          "start": 14.799,
+          "end": 15.026
+        },
+        {
+          "text": "え",
+          "start": 15.026,
+          "end": 15.253
+        },
+        {
+          "text": "る",
+          "start": 15.253,
+          "end": 15.48
+        }
+      ]
+    },
+    {
+      "id": "zh-002",
+      "start": 15.48,
+      "end": 21.16,
+      "text": "赤いしっぽがそっと揺れて眠る街へ歌う",
+      "singableText": "赤いしっぽがそっと揺れて眠る街へ歌う",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "赤",
+          "reading": "あか",
+          "start": 15.48,
+          "end": 15.796
+        },
+        {
+          "text": "い",
+          "start": 15.796,
+          "end": 16.111
+        },
+        {
+          "text": "し",
+          "start": 16.111,
+          "end": 16.427
+        },
+        {
+          "text": "っ",
+          "start": 16.427,
+          "end": 16.742
+        },
+        {
+          "text": "ぽ",
+          "start": 16.742,
+          "end": 17.058
+        },
+        {
+          "text": "が",
+          "start": 17.058,
+          "end": 17.373
+        },
+        {
+          "text": "そ",
+          "start": 17.373,
+          "end": 17.689
+        },
+        {
+          "text": "っ",
+          "start": 17.689,
+          "end": 18.004
+        },
+        {
+          "text": "と",
+          "start": 18.004,
+          "end": 18.32
+        },
+        {
+          "text": "揺",
+          "reading": "ゆ",
+          "start": 18.32,
+          "end": 18.636
+        },
+        {
+          "text": "れ",
+          "start": 18.636,
+          "end": 18.951
+        },
+        {
+          "text": "て",
+          "start": 18.951,
+          "end": 19.267
+        },
+        {
+          "text": "眠",
+          "reading": "ねむ",
+          "start": 19.267,
+          "end": 19.582
+        },
+        {
+          "text": "る",
+          "start": 19.582,
+          "end": 19.898
+        },
+        {
+          "text": "街",
+          "reading": "まち",
+          "start": 19.898,
+          "end": 20.213
+        },
+        {
+          "text": "へ",
+          "start": 20.213,
+          "end": 20.529
+        },
+        {
+          "text": "歌",
+          "reading": "うた",
+          "start": 20.529,
+          "end": 20.844
+        },
+        {
+          "text": "う",
+          "start": 20.844,
+          "end": 21.16
+        }
+      ]
+    },
+    {
+      "id": "zh-003",
+      "start": 21.82,
+      "end": 29.68,
+      "text": "怖くないよ ここにいるよ 胸の鈴が夜を照らす",
+      "singableText": "怖くないよ ここにいるよ 胸の鈴が夜を照らす",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "怖",
+          "reading": "こわ",
+          "start": 21.82,
+          "end": 22.213
+        },
+        {
+          "text": "く",
+          "start": 22.213,
+          "end": 22.606
+        },
+        {
+          "text": "な",
+          "start": 22.606,
+          "end": 22.999
+        },
+        {
+          "text": "い",
+          "start": 22.999,
+          "end": 23.392
+        },
+        {
+          "text": "よ",
+          "start": 23.392,
+          "end": 23.785
+        },
+        {
+          "text": "こ",
+          "start": 23.785,
+          "end": 24.178
+        },
+        {
+          "text": "こ",
+          "start": 24.178,
+          "end": 24.571
+        },
+        {
+          "text": "に",
+          "start": 24.571,
+          "end": 24.964
+        },
+        {
+          "text": "い",
+          "start": 24.964,
+          "end": 25.357
+        },
+        {
+          "text": "る",
+          "start": 25.357,
+          "end": 25.75
+        },
+        {
+          "text": "よ",
+          "start": 25.75,
+          "end": 26.143
+        },
+        {
+          "text": "胸",
+          "reading": "むね",
+          "start": 26.143,
+          "end": 26.536
+        },
+        {
+          "text": "の",
+          "start": 26.536,
+          "end": 26.929
+        },
+        {
+          "text": "鈴",
+          "reading": "すず",
+          "start": 26.929,
+          "end": 27.322
+        },
+        {
+          "text": "が",
+          "start": 27.322,
+          "end": 27.715
+        },
+        {
+          "text": "夜",
+          "reading": "よる",
+          "start": 27.715,
+          "end": 28.108
+        },
+        {
+          "text": "を",
+          "start": 28.108,
+          "end": 28.501
+        },
+        {
+          "text": "照",
+          "reading": "て",
+          "start": 28.501,
+          "end": 28.894
+        },
+        {
+          "text": "ら",
+          "start": 28.894,
+          "end": 29.287
+        },
+        {
+          "text": "す",
+          "start": 29.287,
+          "end": 29.68
+        }
+      ]
+    },
+    {
+      "id": "zh-004",
+      "start": 32.01,
+      "end": 43.46,
+      "text": "きらりきらり前へ走って ひとりじゃない 一緒に踊ろう",
+      "singableText": "きらりきらり前へ走って ひとりじゃない 一緒に踊ろう",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "き",
+          "start": 32.01,
+          "end": 32.487
+        },
+        {
+          "text": "ら",
+          "start": 32.487,
+          "end": 32.964
+        },
+        {
+          "text": "り",
+          "start": 32.964,
+          "end": 33.441
+        },
+        {
+          "text": "き",
+          "start": 33.441,
+          "end": 33.918
+        },
+        {
+          "text": "ら",
+          "start": 33.918,
+          "end": 34.395
+        },
+        {
+          "text": "り",
+          "start": 34.395,
+          "end": 34.873
+        },
+        {
+          "text": "前",
+          "reading": "まえ",
+          "start": 34.873,
+          "end": 35.35
+        },
+        {
+          "text": "へ",
+          "start": 35.35,
+          "end": 35.827
+        },
+        {
+          "text": "走",
+          "reading": "はし",
+          "start": 35.827,
+          "end": 36.304
+        },
+        {
+          "text": "っ",
+          "start": 36.304,
+          "end": 36.781
+        },
+        {
+          "text": "て",
+          "start": 36.781,
+          "end": 37.258
+        },
+        {
+          "text": "ひ",
+          "start": 37.258,
+          "end": 37.735
+        },
+        {
+          "text": "と",
+          "start": 37.735,
+          "end": 38.212
+        },
+        {
+          "text": "り",
+          "start": 38.212,
+          "end": 38.689
+        },
+        {
+          "text": "じ",
+          "start": 38.689,
+          "end": 39.166
+        },
+        {
+          "text": "ゃ",
+          "start": 39.166,
+          "end": 39.643
+        },
+        {
+          "text": "な",
+          "start": 39.643,
+          "end": 40.12
+        },
+        {
+          "text": "い",
+          "start": 40.12,
+          "end": 40.597
+        },
+        {
+          "text": "一",
+          "reading": "ひと",
+          "start": 40.597,
+          "end": 41.075
+        },
+        {
+          "text": "緒",
+          "reading": "緒",
+          "start": 41.075,
+          "end": 41.552
+        },
+        {
+          "text": "に",
+          "start": 41.552,
+          "end": 42.029
+        },
+        {
+          "text": "踊",
+          "reading": "おど",
+          "start": 42.029,
+          "end": 42.506
+        },
+        {
+          "text": "ろ",
+          "start": 42.506,
+          "end": 42.983
+        },
+        {
+          "text": "う",
+          "start": 42.983,
+          "end": 43.46
+        }
+      ]
+    },
+    {
+      "id": "zh-005",
+      "start": 43.46,
+      "end": 51.07,
+      "text": "朝が笑えば小さな勇気が花になる",
+      "singableText": "朝が笑えば小さな勇気が花になる",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "朝",
+          "reading": "あさ",
+          "start": 43.46,
+          "end": 43.967
+        },
+        {
+          "text": "が",
+          "start": 43.967,
+          "end": 44.475
+        },
+        {
+          "text": "笑",
+          "reading": "わら",
+          "start": 44.475,
+          "end": 44.982
+        },
+        {
+          "text": "え",
+          "start": 44.982,
+          "end": 45.489
+        },
+        {
+          "text": "ば",
+          "start": 45.489,
+          "end": 45.997
+        },
+        {
+          "text": "小",
+          "reading": "ちい",
+          "start": 45.997,
+          "end": 46.504
+        },
+        {
+          "text": "さ",
+          "start": 46.504,
+          "end": 47.011
+        },
+        {
+          "text": "な",
+          "start": 47.011,
+          "end": 47.519
+        },
+        {
+          "text": "勇",
+          "reading": "ゆう",
+          "start": 47.519,
+          "end": 48.026
+        },
+        {
+          "text": "気",
+          "reading": "き",
+          "start": 48.026,
+          "end": 48.533
+        },
+        {
+          "text": "が",
+          "start": 48.533,
+          "end": 49.041
+        },
+        {
+          "text": "花",
+          "reading": "はな",
+          "start": 49.041,
+          "end": 49.548
+        },
+        {
+          "text": "に",
+          "start": 49.548,
+          "end": 50.055
+        },
+        {
+          "text": "な",
+          "start": 50.055,
+          "end": 50.563
+        },
+        {
+          "text": "る",
+          "start": 50.563,
+          "end": 51.07
+        }
+      ]
+    }
+  ]
+}

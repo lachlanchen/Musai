@@ -41,6 +41,11 @@ Use this priority:
 audio truth > ASR text > input/reference lyric > translation draft
 ```
 
+Normalize model-facing language codes before ASR/model calls: use `zh` for
+Mandarin when the website track is `zh-Hans` / `zh-Hant`, and use `yue` for
+Cantonese when the website track is `yue-Hant` / `yue-Hans`. Keep the public
+website JSON code as `zh-Hans`, `zh-Hant`, or `yue-Hant`.
+
 3. Choose the JSON shape:
 
 - shared `textTracks[]` only when all playable vocals truly share line IDs and timing;
@@ -94,6 +99,13 @@ Use strict audit mode before public release when reasonable:
 musia fun-audit --media-id <media-id> --strict
 ```
 
+The audit checks visible lyric script. Treat a warning such as Japanese or
+Chinese visible text having high Latin content as a blocker unless the active
+vocal is intentionally mixed-language and documented as mixed-language. Do not
+leave English hooks in `ja.json`, `zh-Hans.json`, or `yue-Hant.json` just
+because they came from a planning lyric; translate them or mark the active track
+as mixed-language when the audio truly sings them.
+
 8. Preview and record:
 
 ```bash
@@ -110,6 +122,8 @@ Before calling an item public-demo quality:
 - confirm the first highlighted line begins at the real vocal entrance;
 - confirm active-vocal word highlighting does not jump into another language's future line;
 - confirm translation highlighting stays within the current line ID;
+- confirm the visible text language matches the track code, especially for
+  Japanese/Chinese/Cantonese tracks;
 - confirm pinyin/furigana/Jyutping display once and cleanly;
 - confirm the chord row has a current highlighted chord when chord data exists;
 - confirm title, artist `Musia`, cover, social image, and localized titles are present;

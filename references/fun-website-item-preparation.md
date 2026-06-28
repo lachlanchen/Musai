@@ -94,6 +94,16 @@ active playable asset -> lyricSetId -> active timing track -> current line.id
 
 Only the active vocal language needs exact word highlighting. Translation tracks may rough-highlight corresponding tokens in the same line. Do not let English/Japanese/Chinese highlight unrelated future lines while another vocal is playing.
 
+Language-code note: website/public text tracks may use BCP-style display codes such as `zh-Hans`, but Whisper/faster-whisper and some generation backends expect `zh`. Normalize `zh-Hans` / `zh-Hant` to `zh` and `yue-Hant` / `yue-Hans` to `yue` for ASR/model calls, then write the website JSON with the public display code.
+
+Before publishing, run the visible-script audit:
+
+```bash
+musia fun-audit --media-id <media-id> --strict
+```
+
+This audit checks the visible `lines[].text`, not ruby metadata. Japanese tracks should contain Japanese script, Mandarin/Cantonese tracks should contain CJK text, and English-only hooks such as `Take care of yourself` must not remain visible in `ja.json` or `zh-Hans.json` unless the active vocal truly sang a mixed-language line and the track is explicitly marked as mixed-language.
+
 ## 3. Ruby, Furigana, Pinyin
 
 Every public CJK lyric track needs pronunciation metadata.

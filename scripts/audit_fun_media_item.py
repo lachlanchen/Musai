@@ -14,6 +14,7 @@ from urllib.parse import urlparse
 TEXT_TRACK_SCHEMA = "fun.lazying.media.text-track.v1"
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
 KANA_RE = re.compile(r"[\u3040-\u30ff]")
+LATIN_RE = re.compile(r"[A-Za-z]")
 
 
 def load_json(path: Path) -> dict:
@@ -53,6 +54,10 @@ def has_cjk(value: str) -> bool:
 
 def has_kana(value: str) -> bool:
     return bool(KANA_RE.search(value or ""))
+
+
+def visible_line_text(track: dict) -> str:
+    return " ".join(str(line.get("text") or line.get("singableText") or "") for line in track.get("lines", []))
 
 
 def line_ids(track: dict) -> list[str]:
@@ -194,9 +199,32 @@ class Audit:
             self.warn(f"{track_path}: {missing_reading} Cantonese CJK tokens missing Jyutping/reading")
         if code in {"zh-Hans", "zh-Hant", "ja", "yue-Hant", "yue-Hans"} and not has_pronunciation:
             self.warn(f"{track_path}: no ruby pronunciation metadata found")
+        self.check_visible_script(track_path, track)
         notes = line_note_blob(track)
         if active and not any(word in notes for word in ("asr", "stt", "listening", "corrected", "whisper")):
             self.warn(f"{track_path}: active track has no ASR/STT/listening correction note")
+
+    def check_visible_script(self, track_path: Path, track: dict) -> None:
+        code = (track.get("language") or {}).get("code", "")
+        text = visible_line_text(track)
+        latin = len(LATIN_RE.findall(text))
+        cjk = len(CJK_RE.findall(text))
+        kana = len(KANA_RE.findall(text))
+        total_letters = latin + cjk + kana
+        if not total_letters:
+            return
+        if code == "en" and latin == 0:
+            self.warn(f"{track_path}: English visible lyric text has no Latin letters")
+        if code == "ja":
+            if cjk + kana == 0:
+                self.warn(f"{track_path}: Japanese visible lyric text has no Japanese script")
+            elif latin > max(12, int(0.3 * total_letters)):
+                self.warn(f"{track_path}: Japanese visible lyric text has high Latin content; check for wrong-language translation")
+        if code.startswith("zh") or code.startswith("yue"):
+            if cjk == 0:
+                self.warn(f"{track_path}: Chinese/Cantonese visible lyric text has no CJK characters")
+            elif latin > max(8, int(0.25 * total_letters)):
+                self.warn(f"{track_path}: Chinese/Cantonese visible lyric text has high Latin content; check for wrong-language translation")
 
     def check_lyric_sets(self, manifest_path: Path, manifest: dict) -> None:
         lyric_sets = manifest.get("lyricSets") or []

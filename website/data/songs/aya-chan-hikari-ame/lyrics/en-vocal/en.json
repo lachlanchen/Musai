@@ -1,0 +1,499 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "aya-chan-hikari-ame",
+  "lineCoverage": "asr-listening-corrected",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "notes": "English selected candidate v1. Compact candidate was rejected because ASR recovered less text. These lines are ASR-corrected from the selected v1 vocal; several planned chorus words were compressed by the model.",
+  "provenance": {
+    "activeVocalLanguage": "en",
+    "lyricSet": "en-vocal",
+    "sources": [
+      "faster-whisper ASR on separated vocal stem",
+      "original prompt/reference lyric",
+      "manual correction pass"
+    ],
+    "rule": "audio truth first; prompt/reference used only to correct obvious ASR homophones or missing function words"
+  },
+  "quality": {
+    "timing": "active vocal line timing from Musia run_pipeline ASR segments; token timing evenly distributed by player when exact word timing is not trusted",
+    "translation": "line-by-line translation of the active vocal text"
+  },
+  "lines": [
+    {
+      "id": "en-001",
+      "start": 0.08,
+      "end": 1.76,
+      "text": "Lay, ay, ay, ay",
+      "singableText": "Lay, ay, ay, ay",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "Lay",
+          "start": 0.08,
+          "end": 0.32
+        },
+        {
+          "text": ",",
+          "start": 0.32,
+          "end": 0.56
+        },
+        {
+          "text": "ay",
+          "start": 0.56,
+          "end": 0.8
+        },
+        {
+          "text": ",",
+          "start": 0.8,
+          "end": 1.04
+        },
+        {
+          "text": "ay",
+          "start": 1.04,
+          "end": 1.28
+        },
+        {
+          "text": ",",
+          "start": 1.28,
+          "end": 1.52
+        },
+        {
+          "text": "ay",
+          "start": 1.52,
+          "end": 1.76
+        }
+      ]
+    },
+    {
+      "id": "en-002",
+      "start": 10.78,
+      "end": 14.04,
+      "text": "Little Aya by the window",
+      "singableText": "Little Aya by the window",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "Little",
+          "start": 10.78,
+          "end": 11.432
+        },
+        {
+          "text": "Aya",
+          "start": 11.432,
+          "end": 12.084
+        },
+        {
+          "text": "by",
+          "start": 12.084,
+          "end": 12.736
+        },
+        {
+          "text": "the",
+          "start": 12.736,
+          "end": 13.388
+        },
+        {
+          "text": "window",
+          "start": 13.388,
+          "end": 14.04
+        }
+      ]
+    },
+    {
+      "id": "en-003",
+      "start": 14.04,
+      "end": 16.78,
+      "text": "Turns the raindrops into stars",
+      "singableText": "Turns the raindrops into stars",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "Turns",
+          "start": 14.04,
+          "end": 14.588
+        },
+        {
+          "text": "the",
+          "start": 14.588,
+          "end": 15.136
+        },
+        {
+          "text": "raindrops",
+          "start": 15.136,
+          "end": 15.684
+        },
+        {
+          "text": "into",
+          "start": 15.684,
+          "end": 16.232
+        },
+        {
+          "text": "stars",
+          "start": 16.232,
+          "end": 16.78
+        }
+      ]
+    },
+    {
+      "id": "en-004",
+      "start": 16.78,
+      "end": 19.38,
+      "text": "Red tail swaying soft and gentle",
+      "singableText": "Red tail swaying soft and gentle",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "Red",
+          "start": 16.78,
+          "end": 17.213
+        },
+        {
+          "text": "tail",
+          "start": 17.213,
+          "end": 17.647
+        },
+        {
+          "text": "swaying",
+          "start": 17.647,
+          "end": 18.08
+        },
+        {
+          "text": "soft",
+          "start": 18.08,
+          "end": 18.513
+        },
+        {
+          "text": "and",
+          "start": 18.513,
+          "end": 18.947
+        },
+        {
+          "text": "gentle",
+          "start": 18.947,
+          "end": 19.38
+        }
+      ]
+    },
+    {
+      "id": "en-005",
+      "start": 19.38,
+      "end": 21.86,
+      "text": "Sends her song across the town",
+      "singableText": "Sends her song across the town",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "Sends",
+          "start": 19.38,
+          "end": 19.793
+        },
+        {
+          "text": "her",
+          "start": 19.793,
+          "end": 20.207
+        },
+        {
+          "text": "song",
+          "start": 20.207,
+          "end": 20.62
+        },
+        {
+          "text": "across",
+          "start": 20.62,
+          "end": 21.033
+        },
+        {
+          "text": "the",
+          "start": 21.033,
+          "end": 21.447
+        },
+        {
+          "text": "town",
+          "start": 21.447,
+          "end": 21.86
+        }
+      ]
+    },
+    {
+      "id": "en-006",
+      "start": 21.86,
+      "end": 25.96,
+      "text": "Do not fear, I am here",
+      "singableText": "Do not fear, I am here",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "Do",
+          "start": 21.86,
+          "end": 22.446
+        },
+        {
+          "text": "not",
+          "start": 22.446,
+          "end": 23.031
+        },
+        {
+          "text": "fear",
+          "start": 23.031,
+          "end": 23.617
+        },
+        {
+          "text": ",",
+          "start": 23.617,
+          "end": 24.203
+        },
+        {
+          "text": "I",
+          "start": 24.203,
+          "end": 24.789
+        },
+        {
+          "text": "am",
+          "start": 24.789,
+          "end": 25.374
+        },
+        {
+          "text": "here",
+          "start": 25.374,
+          "end": 25.96
+        }
+      ]
+    },
+    {
+      "id": "en-007",
+      "start": 25.96,
+      "end": 37.5,
+      "text": "The bell lights up the night",
+      "singableText": "The bell lights up the night",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 25.96,
+          "end": 27.883
+        },
+        {
+          "text": "bell",
+          "start": 27.883,
+          "end": 29.807
+        },
+        {
+          "text": "lights",
+          "start": 29.807,
+          "end": 31.73
+        },
+        {
+          "text": "up",
+          "start": 31.73,
+          "end": 33.653
+        },
+        {
+          "text": "the",
+          "start": 33.653,
+          "end": 35.577
+        },
+        {
+          "text": "night",
+          "start": 35.577,
+          "end": 37.5
+        }
+      ]
+    },
+    {
+      "id": "en-008",
+      "start": 38.3,
+      "end": 40.8,
+      "text": "Running through the clouds above",
+      "singableText": "Running through the clouds above",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "Running",
+          "start": 38.3,
+          "end": 38.8
+        },
+        {
+          "text": "through",
+          "start": 38.8,
+          "end": 39.3
+        },
+        {
+          "text": "the",
+          "start": 39.3,
+          "end": 39.8
+        },
+        {
+          "text": "clouds",
+          "start": 39.8,
+          "end": 40.3
+        },
+        {
+          "text": "above",
+          "start": 40.3,
+          "end": 40.8
+        }
+      ]
+    },
+    {
+      "id": "en-009",
+      "start": 43.32,
+      "end": 45.34,
+      "text": "You are not alone",
+      "singableText": "You are not alone",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "You",
+          "start": 43.32,
+          "end": 43.825
+        },
+        {
+          "text": "are",
+          "start": 43.825,
+          "end": 44.33
+        },
+        {
+          "text": "not",
+          "start": 44.33,
+          "end": 44.835
+        },
+        {
+          "text": "alone",
+          "start": 44.835,
+          "end": 45.34
+        }
+      ]
+    },
+    {
+      "id": "en-010",
+      "start": 45.34,
+      "end": 50.78,
+      "text": "Dreams will not fade in the rain of light",
+      "singableText": "Dreams will not fade in the rain of light",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "Dreams",
+          "start": 45.34,
+          "end": 45.944
+        },
+        {
+          "text": "will",
+          "start": 45.944,
+          "end": 46.549
+        },
+        {
+          "text": "not",
+          "start": 46.549,
+          "end": 47.153
+        },
+        {
+          "text": "fade",
+          "start": 47.153,
+          "end": 47.758
+        },
+        {
+          "text": "in",
+          "start": 47.758,
+          "end": 48.362
+        },
+        {
+          "text": "the",
+          "start": 48.362,
+          "end": 48.967
+        },
+        {
+          "text": "rain",
+          "start": 48.967,
+          "end": 49.571
+        },
+        {
+          "text": "of",
+          "start": 49.571,
+          "end": 50.176
+        },
+        {
+          "text": "light",
+          "start": 50.176,
+          "end": 50.78
+        }
+      ]
+    },
+    {
+      "id": "en-011",
+      "start": 53.51,
+      "end": 58.95,
+      "text": "When the morning smiles again",
+      "singableText": "When the morning smiles again",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "When",
+          "start": 53.51,
+          "end": 54.598
+        },
+        {
+          "text": "the",
+          "start": 54.598,
+          "end": 55.686
+        },
+        {
+          "text": "morning",
+          "start": 55.686,
+          "end": 56.774
+        },
+        {
+          "text": "smiles",
+          "start": 56.774,
+          "end": 57.862
+        },
+        {
+          "text": "again",
+          "start": 57.862,
+          "end": 58.95
+        }
+      ]
+    },
+    {
+      "id": "en-012",
+      "start": 58.95,
+      "end": 62.35,
+      "text": "Little courage blooms as flowers",
+      "singableText": "Little courage blooms as flowers",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "Little",
+          "start": 58.95,
+          "end": 59.63
+        },
+        {
+          "text": "courage",
+          "start": 59.63,
+          "end": 60.31
+        },
+        {
+          "text": "blooms",
+          "start": 60.31,
+          "end": 60.99
+        },
+        {
+          "text": "as",
+          "start": 60.99,
+          "end": 61.67
+        },
+        {
+          "text": "flowers",
+          "start": 61.67,
+          "end": 62.35
+        }
+      ]
+    }
+  ]
+}

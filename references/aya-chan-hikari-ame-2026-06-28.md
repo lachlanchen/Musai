@@ -15,6 +15,10 @@ This folder is ignored by git because it contains generated WAV/MP3 media.
 ```text
 data/creative_projects/aya-chan-hikari-ame-20260628/final/aya-chan-hikari-ame-selected.wav
 data/creative_projects/aya-chan-hikari-ame-20260628/final/aya-chan-hikari-ame-selected.mp3
+data/creative_projects/aya-chan-hikari-ame-20260628/final/aya-chan-hikari-ame-en-selected.wav
+data/creative_projects/aya-chan-hikari-ame-20260628/final/aya-chan-hikari-ame-en-selected.mp3
+data/creative_projects/aya-chan-hikari-ame-20260628/final/aya-chan-hikari-ame-zh-Hans-selected.wav
+data/creative_projects/aya-chan-hikari-ame-20260628/final/aya-chan-hikari-ame-zh-Hans-selected.mp3
 ```
 
 Cover/poster:
@@ -38,17 +42,19 @@ data/creative_projects/aya-chan-hikari-ame-20260628/SELECTED_VERSION.md
 ## Generation
 
 - Backend: ACE-Step 1.5 XL turbo
-- Language: Japanese
+- Languages: Japanese selected reference, English companion render, Mandarin companion render
 - Duration: 68 seconds
 - BPM: 92
 - Key: G major
-- Seed: 731028
+- Seeds: Japanese `731028`, English `731128`, Mandarin `731129`
 - Vocal direction: clear upfront young female Japanese vocal; original fictional character theme; no real singer imitation.
 
 Lyrics:
 
 ```text
 data/creative_projects/aya-chan-hikari-ame-20260628/lyrics/ja.txt
+data/creative_projects/aya-chan-hikari-ame-20260628/lyrics/en.txt
+data/creative_projects/aya-chan-hikari-ame-20260628/lyrics/zh-Hans.txt
 ```
 
 Prompt/config:
@@ -71,6 +77,8 @@ Full analysis:
 
 ```text
 data/runs/aya-chan-hikari-ame-20260628-20260628-154133-analysis/
+data/runs/aya-chan-hikari-ame-en-20260628-20260628-225631-analysis/
+data/runs/aya-chan-hikari-ame-zh-20260628-20260628-225746-analysis/
 ```
 
 Artifacts:
@@ -97,6 +105,24 @@ Analysis result:
 - Chord analysis: 60 chord segments.
 - Stems: Demucs completed successfully.
 
+The website item is:
+
+```text
+website/data/songs/aya-chan-hikari-ame/manifest.json
+website/assets/audio/aya-chan-hikari-ame-ja.mp3
+website/assets/audio/aya-chan-hikari-ame-en.mp3
+website/assets/audio/aya-chan-hikari-ame-zh-Hans.mp3
+website/assets/covers/aya-chan-hikari-ame-16x9.png
+```
+
+Each vocal has its own trilingual lyric set:
+
+```text
+website/data/songs/aya-chan-hikari-ame/lyrics/ja-vocal/{ja,en,zh-Hans}.json
+website/data/songs/aya-chan-hikari-ame/lyrics/en-vocal/{en,ja,zh-Hans}.json
+website/data/songs/aya-chan-hikari-ame/lyrics/zh-vocal/{zh-Hans,en,ja}.json
+```
+
 ## Candidate Comparison
 
 | Candidate | Result | Decision |
@@ -104,10 +130,21 @@ Analysis result:
 | v1, 68s original lyric | ASR recovered partial lyric; best overall current candidate | selected |
 | v2, 48s simplified lyric | ASR recovered only the first short phrase | rejected |
 | v3, 48s kana-heavy lyric | ASR returned empty text | rejected |
+| English v1, 68s | ASR recovered verse, pre-chorus, several chorus phrases, and outro | selected companion render |
+| English compact, 68s | ASR recovered less text than English v1 | rejected |
+| Mandarin v1, 68s | ASR recovered the main Mandarin phrases; lyric overlap passed basic gate | selected companion render |
 
 ## Quality Caveat
 
 The selected song is usable as a first LALACHAN video reference, but not yet a final professional Japanese lyric-accurate release. The audio levels and music structure are usable; ASR only recovers part of the intended lyric. For a public music release, run a new correction pass with a Japanese-specialized vocal workflow or manually correct the vocal in a DAW.
+
+For Fun Lazying Art publication, planned lyrics were not copied blindly. Each vocal language owns its own timing and visible text:
+
+- Japanese: 6 ASR/listening-corrected lines.
+- English: 12 ASR/listening-corrected lines from the selected v1 render.
+- Mandarin: 5 ASR/listening-corrected lines from the selected Mandarin render.
+
+Translations were checked line-by-line so `ja.json` and `zh-Hans.json` do not contain accidental English visible text. The stricter `scripts/audit_fun_media_item.py` visible-script check was added after fixing the earlier Take Care review item, where `Take care of yourself` had leaked into Japanese and Chinese tracks.
 
 ## Recommended LALACHAN Use
 

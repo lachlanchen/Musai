@@ -4,6 +4,23 @@ from pathlib import Path
 from typing import Any
 
 
+WHISPER_LANGUAGE_ALIASES = {
+    "zh-hans": "zh",
+    "zh-hant": "zh",
+    "cmn": "zh",
+    "mandarin": "zh",
+    "yue-hant": "yue",
+    "yue-hans": "yue",
+    "cantonese": "yue",
+}
+
+
+def normalize_whisper_language(language: str | None) -> str | None:
+    if not language:
+        return None
+    return WHISPER_LANGUAGE_ALIASES.get(language.lower(), language)
+
+
 def transcribe_with_faster_whisper(audio_path: Path, model_size: str = "tiny", language: str | None = None) -> dict[str, Any]:
     try:
         from faster_whisper import WhisperModel
@@ -19,7 +36,7 @@ def transcribe_with_faster_whisper(audio_path: Path, model_size: str = "tiny", l
     model = WhisperModel(model_size, device="auto", compute_type="auto")
     segments, info = model.transcribe(
         str(audio_path),
-        language=language,
+        language=normalize_whisper_language(language),
         beam_size=5,
         vad_filter=True,
         word_timestamps=True,
@@ -58,4 +75,3 @@ def transcribe_with_faster_whisper(audio_path: Path, model_size: str = "tiny", l
         "text": " ".join(text_parts).strip(),
         "segments": serialized_segments,
     }
-
