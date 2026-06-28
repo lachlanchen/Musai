@@ -124,6 +124,7 @@ https://fun.lazying.art
 ```
 
 The reusable data protocol is documented in [`references/musai-website-json-format.md`](references/musai-website-json-format.md).
+The full song-generation and website-publishing workflow is documented in [`references/musai-song-generation-and-website-runbook.md`](references/musai-song-generation-and-website-runbook.md).
 
 ## Song Workbench
 

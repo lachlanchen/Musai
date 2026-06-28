@@ -1,0 +1,302 @@
+# Musai Song Generation And Website Runbook
+
+This is the practical rulebook for creating beautiful Musai songs and publishing them on `fun.lazying.art`.
+
+## Core Principle
+
+Respect the user's creative instruction, but also respect the rendered audio.
+
+Prompt lyrics are an intention. A generated vocal is evidence. If the vocal does not sing the prompt exactly, publish the lyric/timing data that matches the actual sound, with translations derived from that actual vocal line. Do not force another vocal's timeline or another language's planned lyric onto a render.
+
+## Song Creation Modes
+
+| Input | Best route | Output |
+| --- | --- | --- |
+| Idea only | Write a producer brief and singable lyric, then use ACE-Step/YuE-style full-song generation | full mixed song candidate |
+| Lyrics only | Rewrite for singability first, then generate | full mixed song candidate |
+| Lyrics + chords | Preserve chord intent in the prompt and final analysis notes | song candidate with chord reference |
+| Lyrics + numbered notation / melody sketch | Keep the melody/rhythm constraints visible in prompt and handoff | more controlled song candidate |
+| Reference recording | Run Musai analysis, then write a new-song or localization brief | stems, chords, beats, lyric reference, new song candidate |
+| Strict same-song localization | Analyze source, adapt lyrics phrase by phrase, use singing synthesis or pro vocal workflow | same arrangement, new-language vocal |
+
+## Production Standard
+
+A song is not accepted because a model produced a WAV. A usable song needs:
+
+- clear audible singing, not just instrumental or hum;
+- healthy loudness and no severe clipping;
+- a saved prompt, lyrics, and model config;
+- ASR or manual lyric review;
+- beat and chord analysis;
+- a cover/poster if it will be published;
+- a website manifest that matches the real audio;
+- a short human listening pass.
+
+If the song is meant to be beautiful and moving, run at least one correction pass when:
+
+- final words are clipped;
+- the vocal is buried;
+- the language sounds wrong;
+- the generated melody ignores the emotional arc;
+- ASR recovers almost none of the target lyric;
+- the song feels like disconnected lines instead of one continuous performance.
+
+## Writing Better Lyrics For AI Singing
+
+Use short image-heavy lines. Avoid dense clauses and abstract overload.
+
+Good generation lyrics:
+
+```text
+Red sand over my boots
+A blue sun falls through dust
+I am a breath beside the canyon
+But still I rise, still I trust
+```
+
+Risky generation lyrics:
+
+```text
+In the existential aftermath of planetary isolation I discover a cosmological courage
+```
+
+For Chinese and Japanese:
+
+- keep lines short;
+- avoid rare words when pronunciation matters;
+- reduce hard-to-sing kanji compounds in Japanese if the model mispronounces them;
+- for Mandarin, prefer natural phrases with good vowel endings on long notes;
+- allow adaptation instead of literal translation.
+
+## Prompt Shape
+
+Every serious generation should have:
+
+```text
+title
+language
+duration
+bpm/key/time signature if known
+form: intro / verse / pre-chorus / chorus / bridge / final
+emotional arc
+arrangement
+vocal identity without imitating a real singer
+negative instructions: no real singer clone, no clipped endings, no buried vocal
+lyrics
+```
+
+Example vocal prompt:
+
+```text
+Clear upfront expressive female vocal, natural Mandarin diction, connected full-song phrasing,
+no famous singer imitation, no clipped final syllables, vocal slightly above the mix.
+```
+
+## Generation Workflow
+
+1. Create the project.
+
+```bash
+musai song init \
+  --title "Song Title" \
+  --idea "creative direction" \
+  --vocal-language zh-Hans \
+  --genre "cinematic pop ballad" \
+  --style "piano, warm strings, wide drums, subtle synth" \
+  --mood "vast, lonely, hopeful" \
+  --voice-notes "clear upfront vocal, no real singer imitation" \
+  --duration 82 \
+  --bpm 82 \
+  --keyscale "E minor" \
+  --lyrics-file lyrics.txt
+```
+
+2. Generate.
+
+```bash
+data/creative_projects/<song-id>/commands.sh generate
+```
+
+3. Review.
+
+```bash
+data/creative_projects/<song-id>/commands.sh review
+```
+
+4. Correct if needed.
+
+```bash
+musai song correct \
+  --project-dir data/creative_projects/<song-id> \
+  --issues "vocal unclear; ending syllables clipped; lyric too dense" \
+  --caption-extra "clearer vocal, fewer words per line, smoother full-song phrasing" \
+  --lyrics-file corrected-lyrics.txt
+```
+
+5. Select only the render that passes the quality gate.
+
+## Analysis Workflow
+
+Run every selected render through Musai analysis before website publication:
+
+```bash
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py AUDIO \
+  --run-name <song-id>-<lang>-analysis \
+  --max-duration 120 \
+  --asr-model small \
+  --language LANG \
+  --demucs-device cuda
+```
+
+Expected outputs:
+
+```text
+data/runs/<run-name>/stems/vocals.wav
+data/runs/<run-name>/stems/drums.wav
+data/runs/<run-name>/stems/bass.wav
+data/runs/<run-name>/stems/other.wav
+data/runs/<run-name>/stems/instrumental.wav
+data/runs/<run-name>/analysis/lyrics.json
+data/runs/<run-name>/analysis/beats.csv
+data/runs/<run-name>/analysis/chords.csv
+```
+
+Use ASR as evidence, not as unquestioned truth. Correct obvious recognition errors with:
+
+- the intended lyric;
+- repeated listening;
+- line duration and phrase boundary;
+- language knowledge.
+
+## Website Data Rule
+
+Use shared `textTracks[]` only when the playable vocals truly share the same line structure.
+
+Use `lyricSets[]` when vocals are independent renders, imperfect localizations, or have different line counts/timings.
+
+Per-vocal layout:
+
+```text
+lyrics/en-vocal/en.json
+lyrics/en-vocal/zh-Hans.json
+lyrics/en-vocal/ja.json
+lyrics/zh-vocal/en.json
+lyrics/zh-vocal/zh-Hans.json
+lyrics/zh-vocal/ja.json
+lyrics/ja-vocal/en.json
+lyrics/ja-vocal/zh-Hans.json
+lyrics/ja-vocal/ja.json
+```
+
+Each playable asset must point to its lyric set:
+
+```json
+{
+  "languageCode": "zh-Hans",
+  "lyricSetId": "zh-vocal"
+}
+```
+
+Rules:
+
+- The active vocal language owns timing.
+- The active vocal language is the only language with current-word highlighting.
+- Other languages in that set are translations of the active vocal's actual sung lines.
+- If a vocal does not sing a planned line, do not show that planned line in that vocal set.
+- If a vocal repeats a line, show the repeated line if it is audible.
+- If ASR is garbled but the audio clearly matches the intended line, correct the text and keep the ASR-derived timing.
+
+## Website Publishing Workflow
+
+Prepare:
+
+```text
+website/assets/audio/<media-id>-en.mp3
+website/assets/audio/<media-id>-zh.mp3
+website/assets/audio/<media-id>-ja.mp3
+website/assets/covers/<media-id>-16x9.png
+website/data/songs/<media-id>/manifest.json
+website/data/songs/<media-id>/lyrics/...
+```
+
+Cover rule:
+
+- default aspect ratio is 16:9;
+- no readable text unless intentionally designed;
+- image should communicate the song mood;
+- save the source prompt in the production note or manifest provenance.
+
+Validate:
+
+```bash
+npm run website:validate
+node --check website/app.js
+npm run check
+npm run smoke
+git diff --check
+```
+
+Preview:
+
+```bash
+python3 -m http.server 9174 --directory website
+```
+
+Browser smoke:
+
+- load the media hash;
+- switch every vocal language;
+- confirm each vocal shows its own trilingual lines;
+- confirm pinyin/furigana do not duplicate;
+- confirm the chord row follows the active render;
+- confirm the short/hidden demos are not visible unless intentionally in the catalog.
+
+Publish:
+
+```bash
+git add website references README.md
+git commit -m "Add or fix media item"
+git push origin main
+gh run watch <deploy-run-id> --exit-status
+```
+
+Live checks:
+
+```bash
+curl -fsSL https://fun.lazying.art/data/catalog.json
+curl -fsSL https://fun.lazying.art/data/songs/<media-id>/manifest.json
+curl -fsSI -L https://fun.lazying.art/assets/audio/<file>.mp3
+```
+
+## Documentation Required Per Song
+
+For every serious song, write a note under `references/` with:
+
+- user creative direction;
+- research anchors if any;
+- lyrics;
+- generation model and selected files;
+- analysis run folders;
+- ASR/lyric correction decisions;
+- website asset paths;
+- quality caveats;
+- validation commands;
+- live URL after deployment.
+
+Examples:
+
+```text
+references/mars-red-sky-song-production-2026-06-28.md
+references/fun-player-full-song-demo-2026-06-28.md
+```
+
+## Decision Language
+
+Use honest labels:
+
+- `production candidate`: sounds good, still may need manual release review;
+- `public demo`: acceptable for website demo, with documented imperfections;
+- `experimental`: useful artifact, not a final song;
+- `blocked`: missing model weights, permissions, or quality backend.
+
+Do not call an output perfect unless it has passed listening, ASR/timing, lyric, mix, and website checks.

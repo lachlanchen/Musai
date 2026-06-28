@@ -33,43 +33,37 @@ The website is meant to become a clean public platform for:
 
 The current implementation is intentionally static. This keeps it easy to host on GitHub Pages, easy to clone, and easy for future CLI/agent tools to publish by writing JSON and assets.
 
-## Current Demo
+## Current Demos
 
-Current catalog item:
+Default catalog item:
 
 ```text
-rain-day-bilingual-verse
+mars-red-sky-trilingual
 ```
 
 Files:
 
 ```text
 website/data/catalog.json
-website/data/songs/rain-day-bilingual-verse/manifest.json
-website/data/songs/rain-day-bilingual-verse/lyrics/en.json
-website/data/songs/rain-day-bilingual-verse/lyrics/zh-Hans.json
-website/data/songs/rain-day-bilingual-verse/lyrics/ja.json
-website/assets/audio/rain-day-bilingual-verse.mp3
-website/assets/audio/rain-day-bilingual-verse-vocal.mp3
-website/assets/audio/rain-day-trilingual-melody-guide.mp3
-website/assets/covers/rain-day-trilingual-poster-16x9.png
-website/assets/covers/rain-day-bilingual-verse.png
-website/assets/covers/rain-day-bilingual-verse.svg
+website/data/songs/mars-red-sky-trilingual/manifest.json
+website/data/songs/mars-red-sky-trilingual/lyrics/en-vocal/
+website/data/songs/mars-red-sky-trilingual/lyrics/zh-vocal/
+website/data/songs/mars-red-sky-trilingual/lyrics/ja-vocal/
+website/assets/audio/mars-red-sky-en.mp3
+website/assets/audio/mars-red-sky-zh.mp3
+website/assets/audio/mars-red-sky-ja.mp3
+website/assets/covers/mars-red-sky-16x9.png
 ```
 
 Media facts:
 
 - Kind: `song`
-- Duration: `18.4` seconds
-- Key: `D minor`
-- BPM: `78`
-- Text tracks: `zh-Hans`, `ja`, `en`
-- Playable assets: Chinese generated mix, Chinese vocal-only audio, and melody guide
-- Cover/poster: `website/assets/covers/rain-day-trilingual-poster-16x9.png`
-- Source workflow: `musai soulx-verse`
-- Model noted in provenance: `SoulX-Singer`
-- Lyric refinement noted in provenance: manual Musai LyricFit pass
-- Important: this short demo has one Mandarin vocal render. English and Japanese are synced singable lyric tracks for future re-rendering, not separate playable EN/JA vocals.
+- Duration: `82` seconds
+- Key: `E minor`
+- Playable assets: English, Mandarin, and Japanese generated full-song renders
+- Lyric protocol: per-vocal `lyricSets` with trilingual display for each render
+- Cover/poster: `website/assets/covers/mars-red-sky-16x9.png`
+- Source workflow: ACE-Step full-song generation plus Musai analysis and ASR-corrected lyric timing
 
 Second catalog item:
 
@@ -77,7 +71,15 @@ Second catalog item:
 rain-day-full-song-trilingual
 ```
 
-This item contains separate English, Chinese, and Japanese generated MP3 renders, each with its own lyric timing data. It is a creative full-song generation demo, not a strict same-stems song-localization output.
+This item contains separate English, Chinese, and Japanese generated MP3 renders. It now also uses per-vocal `lyricSets`, because the three renders do not sing exactly the same line structure. It is a creative full-song generation demo, not a strict same-stems song-localization output.
+
+Hidden historical demo:
+
+```text
+rain-day-bilingual-verse
+```
+
+The short verse files remain in the repo for reference, but the item is not visible in `website/data/catalog.json` because its quality is lower than the full-song demos.
 
 ## Player UI
 
@@ -114,7 +116,7 @@ Protocol overview:
 - each media item has one `manifest.json`.
 - every language has its own text-track JSON file.
 - `timeline.lines[].id` is the canonical sync key shared by every language.
-- each text track may carry its own `lines[].start/end` when separate language renders need different timing.
+- `lyricSets[]` groups per-vocal text tracks when separate generated renders need different timing or different line counts.
 - audio/video/cover/stem files are referenced from the manifest.
 - chords, chapters, shots, provenance, artifacts, and share metadata are optional structured extensions.
 
@@ -149,6 +151,20 @@ website/data/songs/<media-id>/manifest.json
 website/data/songs/<media-id>/lyrics/en.json
 website/data/songs/<media-id>/lyrics/zh-Hans.json
 website/data/songs/<media-id>/lyrics/ja.json
+```
+
+For separate EN/ZH/JA vocal renders, prefer per-vocal lyric sets:
+
+```text
+website/data/songs/<media-id>/lyrics/en-vocal/en.json
+website/data/songs/<media-id>/lyrics/en-vocal/zh-Hans.json
+website/data/songs/<media-id>/lyrics/en-vocal/ja.json
+website/data/songs/<media-id>/lyrics/zh-vocal/en.json
+website/data/songs/<media-id>/lyrics/zh-vocal/zh-Hans.json
+website/data/songs/<media-id>/lyrics/zh-vocal/ja.json
+website/data/songs/<media-id>/lyrics/ja-vocal/en.json
+website/data/songs/<media-id>/lyrics/ja-vocal/zh-Hans.json
+website/data/songs/<media-id>/lyrics/ja-vocal/ja.json
 ```
 
 For an MV:
