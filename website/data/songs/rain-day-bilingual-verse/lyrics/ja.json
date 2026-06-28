@@ -13,125 +13,108 @@
   "lines": [
     {
       "id": "line-001",
-      "start": 0.0,
-      "end": 3.86,
-      "text": "窓辺の雨、そっと街へ",
-      "singableText": "窓辺の雨、そっと街へ",
-      "role": "localized-lyric",
+      "start": 0.4,
+      "end": 3.58,
+      "text": "そっと雨は街へ",
+      "singableText": "そっと雨は街へ",
+      "role": "asr-adjusted-lyric",
+      "asrText": "そっと雨は散れ",
       "tokens": [
         {
-          "text": "窓辺",
-          "reading": "まどべ"
-        },
-        {
-          "text": "の"
+          "text": "そっと",
+          "start": 0.4,
+          "end": 1.36
         },
         {
           "text": "雨",
-          "reading": "あめ"
+          "reading": "あめ",
+          "start": 1.36,
+          "end": 1.9
         },
         {
-          "text": "、そっと"
+          "text": "は",
+          "start": 1.9,
+          "end": 2.56
         },
         {
           "text": "街",
-          "reading": "まち"
+          "reading": "まち",
+          "start": 2.56,
+          "end": 2.94
         },
         {
-          "text": "へ"
+          "text": "へ",
+          "start": 2.94,
+          "end": 3.58
         }
       ]
     },
     {
       "id": "line-002",
-      "start": 3.86,
-      "end": 8.22,
-      "text": "街の灯り、雨ににじむ",
-      "singableText": "街の灯り、雨ににじむ",
-      "role": "localized-lyric",
+      "start": 3.74,
+      "end": 6.08,
+      "text": "あかりがにじむ",
+      "singableText": "あかりがにじむ",
+      "role": "asr-adjusted-lyric",
+      "asrText": "明かりがにしじめ",
       "tokens": [
         {
-          "text": "街",
-          "reading": "まち"
+          "text": "あかり",
+          "start": 3.74,
+          "end": 4.36
         },
         {
-          "text": "の"
+          "text": "が",
+          "start": 4.36,
+          "end": 4.62
         },
         {
-          "text": "灯",
-          "reading": "あか"
+          "text": "に",
+          "start": 4.62,
+          "end": 4.92
         },
         {
-          "text": "り、"
+          "text": "じ",
+          "start": 4.92,
+          "end": 5.52
         },
         {
-          "text": "雨",
-          "reading": "あめ"
-        },
-        {
-          "text": "ににじむ"
+          "text": "む",
+          "start": 5.52,
+          "end": 6.08
         }
       ]
     },
     {
       "id": "line-003",
-      "start": 9.0,
-      "end": 13.08,
-      "text": "胸のささやき、ゆるく温い",
-      "singableText": "胸のささやき、ゆるく温い",
-      "role": "localized-lyric",
+      "start": 6.62,
+      "end": 9.8,
+      "text": "胸の声だった",
+      "singableText": "胸の声だった",
+      "role": "asr-adjusted-lyric",
+      "asrText": "胸の子だった",
       "tokens": [
         {
           "text": "胸",
-          "reading": "むね"
+          "reading": "むね",
+          "start": 6.62,
+          "end": 7.18
         },
         {
-          "text": "のささやき、ゆるく"
+          "text": "の",
+          "start": 7.18,
+          "end": 7.4
         },
         {
-          "text": "温",
-          "reading": "ぬく"
+          "text": "声",
+          "reading": "こえ",
+          "start": 7.4,
+          "end": 8.1
         },
         {
-          "text": "い"
-        }
-      ]
-    },
-    {
-      "id": "line-004",
-      "start": 13.94,
-      "end": 17.2,
-      "text": "ここで寄り添う、雨の光",
-      "singableText": "ここで寄り添う、雨の光",
-      "role": "localized-lyric",
-      "tokens": [
-        {
-          "text": "ここで"
-        },
-        {
-          "text": "寄",
-          "reading": "よ"
-        },
-        {
-          "text": "り"
-        },
-        {
-          "text": "添",
-          "reading": "そ"
-        },
-        {
-          "text": "う、"
-        },
-        {
-          "text": "雨",
-          "reading": "あめ"
-        },
-        {
-          "text": "の"
-        },
-        {
-          "text": "光",
-          "reading": "ひかり"
+          "text": "だった",
+          "start": 8.1,
+          "end": 9.8
         }
       ]
     }

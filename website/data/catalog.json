@@ -12,8 +12,8 @@
       "id": "rain-day-bilingual-verse",
       "kind": "song",
       "title": "Rain Day Trilingual Verse",
-      "artist": "Musai SoulX",
-      "summary": "A short Mandarin SoulX vocal demo with synced English, Japanese, and Chinese lyric tracks.",
+      "artist": "Musai SoulX / ACE-Step",
+      "summary": "A short rain-day verse with separate Chinese, English, and Japanese playable renders plus per-language ASR-adjusted lyric timing.",
       "manifest": "data/songs/rain-day-bilingual-verse/manifest.json",
       "cover": "assets/covers/rain-day-trilingual-poster-16x9.png",
       "languages": [
@@ -26,7 +26,9 @@
         "lyrics",
         "pinyin",
         "furigana",
-        "SoulX"
+        "SoulX",
+        "ACE-Step",
+        "ASR-timed"
       ]
     },
     {

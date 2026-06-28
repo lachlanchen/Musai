@@ -11,182 +11,110 @@
   },
   "lines": [
     {
-      "id": "line-001",
-      "start": 0.0,
-      "end": 3.86,
-      "text": "Rain by the window, soft on the street",
-      "singableText": "Rain by the window, soft on the street",
-      "role": "localized-lyric",
-      "tokens": [
-        {
-          "text": "Rain",
-          "start": 0.0,
-          "end": 0.44
-        },
-        {
-          "text": "by",
-          "start": 0.48,
-          "end": 0.93
-        },
-        {
-          "text": "the",
-          "start": 0.96,
-          "end": 1.41
-        },
-        {
-          "text": "window",
-          "start": 1.45,
-          "end": 1.89
-        },
-        {
-          "text": "soft",
-          "start": 1.93,
-          "end": 2.37
-        },
-        {
-          "text": "on",
-          "start": 2.41,
-          "end": 2.86
-        },
-        {
-          "text": "the",
-          "start": 2.9,
-          "end": 3.34
-        },
-        {
-          "text": "street",
-          "start": 3.38,
-          "end": 3.82
-        }
-      ]
-    },
-    {
       "id": "line-002",
-      "start": 3.86,
-      "end": 8.22,
-      "text": "City lights shimmer under the rain",
-      "singableText": "City lights shimmer under the rain",
-      "role": "localized-lyric",
+      "start": 4.59,
+      "end": 6.57,
+      "text": "City lights shimmer under rain",
+      "singableText": "City lights shimmer under rain",
+      "role": "asr-adjusted-lyric",
+      "asrText": "Say light shimmer under",
       "tokens": [
         {
           "text": "City",
-          "start": 3.86,
-          "end": 4.53
+          "start": 4.59,
+          "end": 5.13
         },
         {
           "text": "lights",
-          "start": 4.59,
-          "end": 5.26
+          "start": 5.13,
+          "end": 5.57
         },
         {
           "text": "shimmer",
-          "start": 5.31,
-          "end": 5.98
+          "start": 5.57,
+          "end": 5.95
         },
         {
           "text": "under",
-          "start": 6.04,
-          "end": 6.71
-        },
-        {
-          "text": "the",
-          "start": 6.77,
-          "end": 7.44
+          "start": 5.95,
+          "end": 6.57
         },
         {
           "text": "rain",
-          "start": 7.49,
-          "end": 8.16
+          "start": 6.57,
+          "end": 7.0
         }
       ]
     },
     {
       "id": "line-003",
-      "start": 9.0,
-      "end": 13.08,
-      "text": "My heart keeps whispering slow and warm",
-      "singableText": "My heart keeps whispering slow and warm",
-      "role": "localized-lyric",
+      "start": 8.6,
+      "end": 12.0,
+      "text": "My heart whispers slow and warm",
+      "singableText": "My heart whispers slow and warm",
+      "role": "asr-adjusted-lyric",
+      "asrText": "my heart whispers slow elm",
       "tokens": [
         {
           "text": "My",
-          "start": 9.0,
-          "end": 9.54
+          "start": 8.6,
+          "end": 8.94
         },
         {
           "text": "heart",
-          "start": 9.58,
-          "end": 10.12
+          "start": 8.94,
+          "end": 9.4
         },
         {
-          "text": "keeps",
-          "start": 10.17,
-          "end": 10.7
-        },
-        {
-          "text": "whispering",
-          "start": 10.75,
-          "end": 11.28
+          "text": "whispers",
+          "start": 9.4,
+          "end": 9.76
         },
         {
           "text": "slow",
-          "start": 11.33,
-          "end": 11.87
-        },
-        {
-          "text": "and",
-          "start": 11.91,
-          "end": 12.45
+          "start": 9.76,
+          "end": 10.32
         },
         {
           "text": "warm",
-          "start": 12.5,
-          "end": 13.03
+          "start": 10.32,
+          "end": 12.0
         }
       ]
     },
     {
       "id": "line-004",
-      "start": 13.94,
-      "end": 17.2,
-      "text": "Stay with me inside this rainy glow",
-      "singableText": "Stay with me inside this rainy glow",
-      "role": "localized-lyric",
+      "start": 12.0,
+      "end": 14.48,
+      "text": "Stay with me in rainy glow",
+      "singableText": "Stay with me in rainy glow",
+      "role": "asr-adjusted-lyric",
+      "asrText": "Stay with me in Rio",
       "tokens": [
         {
           "text": "Stay",
-          "start": 13.94,
-          "end": 14.37
+          "start": 12.0,
+          "end": 12.54
         },
         {
           "text": "with",
-          "start": 14.41,
-          "end": 14.83
+          "start": 12.54,
+          "end": 13.06
         },
         {
           "text": "me",
-          "start": 14.87,
-          "end": 15.3
+          "start": 13.06,
+          "end": 13.52
         },
         {
-          "text": "inside",
-          "start": 15.34,
-          "end": 15.77
+          "text": "in",
+          "start": 13.52,
+          "end": 14.02
         },
         {
-          "text": "this",
-          "start": 15.8,
-          "end": 16.23
-        },
-        {
-          "text": "rainy",
-          "start": 16.27,
-          "end": 16.7
-        },
-        {
-          "text": "glow",
-          "start": 16.73,
-          "end": 17.16
+          "text": "rainy glow",
+          "start": 14.02,
+          "end": 14.48
         }
       ]
     }

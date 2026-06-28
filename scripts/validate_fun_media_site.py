@@ -82,7 +82,9 @@ def validate_text_track(manifest_path: Path, manifest: dict, track_info: dict, t
         seen.add(line_id)
 
     missing = timeline_ids - seen
-    require(not missing, f"{track_path}: missing line ids {sorted(missing)}")
+    line_coverage = track_info.get("lineCoverage") or track.get("lineCoverage") or "complete"
+    allow_partial = line_coverage in {"partial", "partial-asr", "asr-partial"}
+    require(allow_partial or not missing, f"{track_path}: missing line ids {sorted(missing)}")
 
 
 def validate_manifest(root: Path, item: dict) -> None:

@@ -78,21 +78,61 @@ function tokenLabel(token) {
   return token.display || (token.pinyin ? token.pinyin.replace(/\d/g, "") : token.text);
 }
 
+function tokenHasTiming(token) {
+  return Number.isFinite(Number(token?.start)) && Number.isFinite(Number(token?.end));
+}
+
+function isSungToken(token) {
+  const text = String(token?.text || "");
+  return text.trim() && !/^[,，、。.!?？；;：:\s]+$/.test(text);
+}
+
+function timedTokensForLine(line) {
+  const tokens = Array.isArray(line?.tokens) ? line.tokens.map((token) => ({ ...token })) : [];
+  const start = Number(line?.start);
+  const end = Number(line?.end);
+  const sungIndexes = tokens
+    .map((token, index) => isSungToken(token) ? index : -1)
+    .filter((index) => index >= 0);
+
+  if (!sungIndexes.length || !Number.isFinite(start) || !Number.isFinite(end) || end <= start) {
+    return tokens;
+  }
+  if (sungIndexes.every((index) => tokenHasTiming(tokens[index]))) {
+    return tokens;
+  }
+
+  const slot = (end - start) / sungIndexes.length;
+  sungIndexes.forEach((tokenIndex, sungIndex) => {
+    if (!tokenHasTiming(tokens[tokenIndex])) {
+      tokens[tokenIndex].start = Number((start + slot * sungIndex).toFixed(3));
+      tokens[tokenIndex].end = Number((start + slot * (sungIndex + 1)).toFixed(3));
+    }
+  });
+  return tokens;
+}
+
+function timingAttrs(token) {
+  if (!tokenHasTiming(token)) return "";
+  return ` data-token-start="${Number(token.start)}" data-token-end="${Number(token.end)}"`;
+}
+
 function renderRubyToken(token) {
+  const attrs = timingAttrs(token);
   if (token.pinyin) {
-    return `<ruby>${escapeHtml(token.text)}<rt>${escapeHtml(pinyinTone(token.pinyin))}</rt></ruby>`;
+    return `<span class="text-token ruby-token"${attrs}><ruby>${escapeHtml(token.text)}<rt>${escapeHtml(pinyinTone(token.pinyin))}</rt></ruby></span>`;
   }
   if (token.reading) {
-    return `<ruby>${escapeHtml(token.text)}<rt>${escapeHtml(token.reading)}</rt></ruby>`;
+    return `<span class="text-token ruby-token"${attrs}><ruby>${escapeHtml(token.text)}<rt>${escapeHtml(token.reading)}</rt></ruby></span>`;
   }
-  return escapeHtml(token.text);
+  return attrs ? `<span class="text-token ruby-token"${attrs}>${escapeHtml(token.text)}</span>` : escapeHtml(token.text);
 }
 
 function renderTrackLine(track, line, { compact = false } = {}) {
   if (!line) return "";
-  const tokens = Array.isArray(line.tokens) ? line.tokens : [];
+  const tokens = timedTokensForLine(line);
   const hasRuby = tokens.some((token) => token.pinyin || token.reading);
-  const hasTiming = tokens.some((token) => Number.isFinite(token.start) && Number.isFinite(token.end));
+  const hasTiming = tokens.some(tokenHasTiming);
   const text = line.singableText || line.text;
 
   if (hasRuby) {
@@ -101,7 +141,7 @@ function renderTrackLine(track, line, { compact = false } = {}) {
 
   if (hasTiming && !compact) {
     return `<div class="token-line">${tokens.map((token) => `
-      <span class="text-token" data-token-start="${token.start}" data-token-end="${token.end}">
+      <span class="text-token"${timingAttrs(token)}>
         ${escapeHtml(token.text)}
       </span>
     `).join("")}</div>`;
@@ -157,14 +197,15 @@ function lineForTrack(track, lineId) {
 function activeLineAt(time) {
   const lines = timingLines();
   return lines.find((line) => time >= line.start && time < line.end)
-    || [...lines].reverse().find((line) => time >= line.start)
-    || lines[0]
+    || [...lines].reverse().find((line) => time >= line.end)
     || null;
 }
 
 function activeChordAt(time) {
   const list = chords();
-  return list.find((chord) => time >= chord.start && time < chord.end) || list[0] || null;
+  return list.find((chord) => time >= chord.start && time < chord.end)
+    || [...list].reverse().find((chord) => time >= chord.end)
+    || null;
 }
 
 function youtubeIdFromUrl(value) {
@@ -416,19 +457,22 @@ function renderChords(activeChord = null) {
 
 function renderCarousel(activeLine) {
   const tracks = selectedLyricTracks();
-  const lines = manifestLines();
+  const lines = timingLines();
   if (!tracks.length || !lines.length) {
     $("lyric-carousel").innerHTML = `<div class="empty-state"><h2>${escapeHtml(state.manifest.title)}</h2><p>${escapeHtml(state.manifest.description || "No timed lyrics are attached yet.")}</p></div>`;
     return;
   }
-  const activeIndex = Math.max(0, lines.findIndex((line) => line.id === activeLine?.id));
-  const items = [activeIndex - 1, activeIndex, activeIndex + 1]
+  const rawActiveIndex = activeLine ? lines.findIndex((line) => line.id === activeLine.id) : -1;
+  const time = state.mediaElement?.currentTime || 0;
+  const upcomingIndex = lines.findIndex((line) => time < line.end);
+  const centerIndex = rawActiveIndex >= 0 ? rawActiveIndex : Math.max(0, upcomingIndex);
+  const items = [centerIndex - 1, centerIndex, centerIndex + 1]
     .filter((index) => index >= 0 && index < lines.length)
     .map((index) => {
-      const active = index === activeIndex;
+      const active = rawActiveIndex >= 0 && index === rawActiveIndex;
       return `
         <div class="carousel-line ${active ? "active" : ""}">
-          <span>${formatTime(lineStartForDisplay(lines[index]))}</span>
+          <span>${formatTime(lines[index].start)}</span>
           <div class="carousel-translations">
             ${tracks.map((track) => {
               const line = lineForTrack(track, lines[index].id);

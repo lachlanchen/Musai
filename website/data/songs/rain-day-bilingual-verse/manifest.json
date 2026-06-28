@@ -5,10 +5,10 @@
   "kind": "song",
   "title": "Rain Day Trilingual Verse",
   "artist": "Musai SoulX",
-  "subtitle": "Mandarin SoulX vocal render with three singable localized lyric tracks",
-  "description": "A compact SoulX-Singer Mandarin vocal render. English and Japanese are synced singable lyric tracks for future rerendering; the playable vocal in this demo is Chinese.",
+  "subtitle": "Three playable short verse renders with per-language ASR-adjusted lyric timing",
+  "description": "A compact rain-day localization demo with separate Mandarin, English, and Japanese short renders. The lyric display follows each selected audio language and uses ASR-adjusted timing instead of one shared English timeline.",
   "caption": "Same melody, localized lyrics",
-  "duration": 18.4,
+  "duration": 36.024,
   "canonicalUrl": "https://fun.lazying.art/#rain-day-bilingual-verse",
   "share": {
     "title": "Rain Day Trilingual Verse - Fun Lazying Art",
@@ -37,18 +37,43 @@
       "height": 900
     },
     "primaryAudio": {
-      "id": "mix",
-      "label": "Chinese mix",
-      "roleLabel": "Mix",
-      "role": "localized-vocal-mix",
+      "id": "short-zh",
+      "label": "Chinese short verse",
+      "roleLabel": "中文",
+      "role": "short-verse-render",
       "languageCode": "zh-Hans",
       "languageLabel": "中文",
       "src": "assets/audio/rain-day-bilingual-verse.mp3",
-      "mime": "audio/mpeg"
+      "mime": "audio/mpeg",
+      "qualityGate": "review"
     },
     "alternateAudio": [
       {
-        "id": "vocal",
+        "id": "short-en",
+        "label": "English short verse",
+        "roleLabel": "English",
+        "role": "short-verse-render",
+        "languageCode": "en",
+        "languageLabel": "English",
+        "sourceModel": "SoulX-Singer",
+        "qualityGate": "review",
+        "src": "assets/audio/rain-day-short-verse-en.mp3",
+        "mime": "audio/mpeg"
+      },
+      {
+        "id": "short-ja",
+        "label": "Japanese short verse",
+        "roleLabel": "日本語",
+        "role": "short-verse-render",
+        "languageCode": "ja",
+        "languageLabel": "日本語",
+        "sourceModel": "acestep-v15-xl-turbo",
+        "qualityGate": "pass",
+        "src": "assets/audio/rain-day-short-verse-ja.mp3",
+        "mime": "audio/mpeg"
+      },
+      {
+        "id": "vocal-zh",
         "label": "Chinese vocal",
         "roleLabel": "Vocal",
         "role": "localized-vocal",
@@ -69,16 +94,29 @@
     "stems": {}
   },
   "provenance": {
-    "generator": "musai soulx-verse",
-    "run": "data/soulx_verses/rain-day-trilingual-zh-localized-20260628",
+    "generator": "SoulX-Singer + ACE-Step 1.5",
+    "run": "data/soulx_verses/rain-day-trilingual-zh-localized-20260628 and data/creative_projects/rain-day-short-trilingual-20260628",
     "model": "SoulX-Singer",
     "lyricRefinement": "manual Musai LyricFit pass",
     "coverPrompt": "16:9 rainy city window, waveform lines, lyric timing, premium clean music poster, teal, gold, rose, no people, no text.",
     "lyricAdaptation": "Each language uses the same four timed phrase slots but has its own singable lyric rather than a literal translation.",
     "analysis": {
-      "run": "data/runs/generated-rain-day-short-zh-analysis",
-      "tempoBpm": 112.3471,
-      "note": "Mandarin lyric timing was retuned from the generated SoulX vocal ASR; English/Japanese are lyric tracks, not separate vocal files in this short demo."
+      "zh-Hans": {
+        "audio": "website/assets/audio/rain-day-bilingual-verse.mp3",
+        "asr": "窗边雨轻轻落尖 / 城里灯穿雨交冲 / 心底雨温柔 / 陪我停在这片雨",
+        "qualityGate": "review"
+      },
+      "en": {
+        "audio": "website/assets/audio/rain-day-short-verse-en.mp3",
+        "asr": "Say light shimmer under, my heart whispers slow elm / Stay with me in Rio",
+        "qualityGate": "review"
+      },
+      "ja": {
+        "audio": "website/assets/audio/rain-day-short-verse-ja.mp3",
+        "asr": "そっと雨は散れ / 明かりがにしじめ / 胸の子だった",
+        "qualityGate": "pass"
+      },
+      "note": "Text tracks are ASR-adjusted per selected audio. They are not strict same-stem localizations."
     }
   },
   "musical": {
@@ -88,49 +126,49 @@
     "chords": [
       {
         "start": 0.0,
-        "end": 2.3,
+        "end": 4.0,
         "name": "Dm9",
         "degree": "i9"
       },
       {
-        "start": 2.3,
-        "end": 4.6,
+        "start": 4.0,
+        "end": 8.0,
         "name": "Bbmaj7",
         "degree": "VImaj7"
       },
       {
-        "start": 4.6,
-        "end": 6.9,
+        "start": 8.0,
+        "end": 12.0,
         "name": "Fadd9",
         "degree": "IIIadd9"
       },
       {
-        "start": 6.9,
-        "end": 9.2,
+        "start": 12.0,
+        "end": 16.0,
         "name": "C",
         "degree": "VII"
       },
       {
-        "start": 9.2,
-        "end": 11.5,
+        "start": 16.0,
+        "end": 20.0,
         "name": "Gm7",
         "degree": "iv7"
       },
       {
-        "start": 11.5,
-        "end": 13.8,
+        "start": 20.0,
+        "end": 24.0,
         "name": "Dm/A",
         "degree": "i/5"
       },
       {
-        "start": 13.8,
-        "end": 16.1,
+        "start": 24.0,
+        "end": 28.0,
         "name": "Bbmaj7",
         "degree": "VImaj7"
       },
       {
-        "start": 16.1,
-        "end": 18.4,
+        "start": 28.0,
+        "end": 36.024,
         "name": "Cadd9",
         "degree": "VIIadd9"
       }
@@ -148,7 +186,8 @@
         "pinyin",
         "tones"
       ],
-      "path": "lyrics/zh-Hans.json"
+      "path": "lyrics/zh-Hans.json",
+      "lineCoverage": "complete-asr"
     },
     {
       "code": "ja",
@@ -160,7 +199,8 @@
         "translation",
         "furigana"
       ],
-      "path": "lyrics/ja.json"
+      "path": "lyrics/ja.json",
+      "lineCoverage": "partial-asr"
     },
     {
       "code": "en",
@@ -172,7 +212,8 @@
         "translation",
         "wordTiming"
       ],
-      "path": "lyrics/en.json"
+      "path": "lyrics/en.json",
+      "lineCoverage": "partial-asr"
     }
   ],
   "timeline": {
@@ -181,26 +222,26 @@
       {
         "id": "line-001",
         "start": 0.0,
-        "end": 3.86,
-        "sourceText": "Rain by the window, soft on the street"
+        "end": 3.78,
+        "sourceText": "Rain by the window"
       },
       {
         "id": "line-002",
-        "start": 3.86,
+        "start": 4.59,
         "end": 8.22,
-        "sourceText": "City lights shimmer under the rain"
+        "sourceText": "City lights in the rain"
       },
       {
         "id": "line-003",
-        "start": 9.0,
-        "end": 13.08,
-        "sourceText": "My heart keeps whispering slow and warm"
+        "start": 8.6,
+        "end": 12.0,
+        "sourceText": "A warm whispering heart"
       },
       {
         "id": "line-004",
-        "start": 13.94,
-        "end": 17.2,
-        "sourceText": "Stay with me inside this rainy glow"
+        "start": 12.0,
+        "end": 17.22,
+        "sourceText": "Stay inside the rainy glow"
       }
     ]
   },
