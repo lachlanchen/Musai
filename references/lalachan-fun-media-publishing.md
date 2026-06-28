@@ -1,6 +1,6 @@
 # LALACHAN To Fun Lazying Art Publishing
 
-`fun.lazying.art` can show LALACHAN media alongside Musai media:
+`fun.lazying.art` can show LALACHAN media alongside Musia media:
 
 - LALACHAN short films
 - LALACHAN music videos

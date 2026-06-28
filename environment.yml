@@ -1,4 +1,4 @@
-name: musai
+name: musia
 channels:
   - conda-forge
 dependencies:

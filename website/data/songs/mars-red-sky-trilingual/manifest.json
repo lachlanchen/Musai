@@ -10,7 +10,7 @@
     "zh-Hans": "红色天空下",
     "ja": "赤い空の下で"
   },
-  "artist": "Musai",
+  "artist": "Musia",
   "subtitle": "A trilingual Mars desert song about smallness, courage, and the vast universe",
   "description": "An original 82-second cinematic Mars desert song generated in English, Mandarin, and Japanese with per-vocal trilingual lyric sets, pinyin, furigana, word highlighting, and detected chord timelines.",
   "caption": "Tiny human, vast Mars, courage under the red sky",
@@ -1014,7 +1014,7 @@
     {
       "id": "research-brief",
       "label": "research and production brief",
-      "href": "https://github.com/lachlanchen/Musai/blob/main/references/mars-desert-song-brief-2026-06-28.md"
+      "href": "https://github.com/lachlanchen/Musia/blob/main/references/mars-desert-song-brief-2026-06-28.md"
     }
   ]
 }

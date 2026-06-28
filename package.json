@@ -1,5 +1,5 @@
 {
-  "name": "@lazyingart/musai",
+  "name": "@lazyingart/musia",
   "version": "0.1.1",
   "description": "Local-first AI song localization studio: CLI, webapp, stems, lyrics, beats, chords, and creative music workflows.",
   "keywords": [
@@ -16,24 +16,24 @@
   ],
   "homepage": "https://lazying.art",
   "bugs": {
-    "url": "https://github.com/lachlanchen/Musai/issues"
+    "url": "https://github.com/lachlanchen/Musia/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lachlanchen/Musai.git"
+    "url": "git+https://github.com/lachlanchen/Musia.git"
   },
   "license": "UNLICENSED",
   "bin": {
-    "musai": "bin/musai.js"
+    "musia": "bin/musia.js"
   },
   "files": [
     "bin/",
-    "musai/*.py",
+    "musia/*.py",
     "scripts/*.py",
     "scripts/*.sh",
     "website/",
     "references/*.md",
-    "!references/private-musai-control-needs-2026-06-28.md",
+    "!references/private-musia-control-needs-2026-06-28.md",
     "i18n/*.md",
     "README.md",
     "SETUP_AND_TEST.md",
@@ -44,11 +44,11 @@
     ".env.example"
   ],
   "scripts": {
-    "check": "node --check bin/musai.js && node bin/musai.js --version && node bin/musai.js doctor --json",
+    "check": "node --check bin/musia.js && node bin/musia.js --version && node bin/musia.js doctor --json",
     "website:validate": "python3 scripts/validate_fun_media_site.py --root website",
     "website:add-youtube": "python3 scripts/add_fun_media_youtube.py",
     "website:record": "python3 scripts/record_fun_player.py",
-    "smoke": "node bin/musai.js npm-smoke",
+    "smoke": "node bin/musia.js npm-smoke",
     "test": "npm run check && npm run smoke",
     "pack:dry-run": "npm pack --dry-run",
     "pack:json": "npm pack --json"

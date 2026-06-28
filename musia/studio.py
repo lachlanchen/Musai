@@ -26,7 +26,7 @@ SESSION_ROOT = STUDIO_ROOT / "sessions"
 ARTIFACT_ROOT = STUDIO_ROOT / "artifacts"
 JOB_ROOT = STUDIO_ROOT / "jobs"
 SETTINGS_PATH = STUDIO_ROOT / "settings.json"
-PROJECT_SESSION_DIR = Path(".musai") / "sessions"
+PROJECT_SESSION_DIR = Path(".musia") / "sessions"
 
 TEXT_SUFFIXES = {
     ".txt",
@@ -158,7 +158,7 @@ class Artifact:
     title: str
     kind: str
     path: str
-    source: str = "musai"
+    source: str = "musia"
     tab: str = "explorer"
     selected: bool = False
     created_at: str = ""
@@ -205,7 +205,7 @@ def profile_settings(profile: str) -> dict[str, Any]:
     profiles = settings.get("profiles", {})
     selected = dict(profiles.get(profile) or profiles.get("chat") or DEFAULT_SETTINGS["profiles"]["chat"])
     if selected.get("provider") == "codex":
-        timeout_key = "MUSAI_CODEX_WORKER_TIMEOUT" if profile == "worker" else "MUSAI_CODEX_TIMEOUT"
+        timeout_key = "MUSIA_CODEX_WORKER_TIMEOUT" if profile == "worker" else "MUSIA_CODEX_TIMEOUT"
         timeout_value = os.getenv(timeout_key)
         if timeout_value:
             try:
@@ -275,13 +275,13 @@ def update_session_working_dir(session_id: str, working_dir: str | Path | None =
     return session
 
 
-def create_session(title: str = "Musai chat", working_dir: str | Path | None = None) -> dict[str, Any]:
+def create_session(title: str = "Musia chat", working_dir: str | Path | None = None) -> dict[str, Any]:
     session_id = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S") + "-" + short_id()
     root = ensure_dir(session_dir(session_id))
     resolved_working_dir = resolve_working_dir(working_dir)
     data = {
         "id": session_id,
-        "title": title or "Musai chat",
+        "title": title or "Musia chat",
         "working_dir": str(resolved_working_dir),
         "project_session_pointer": str(session_pointer_path(resolved_working_dir, session_id)),
         "created_at": utc_now(),
@@ -293,7 +293,7 @@ def create_session(title: str = "Musai chat", working_dir: str | Path | None = N
     return data
 
 
-def ensure_session(session_id: str | None = None, title: str = "Musai chat", working_dir: str | Path | None = None) -> dict[str, Any]:
+def ensure_session(session_id: str | None = None, title: str = "Musia chat", working_dir: str | Path | None = None) -> dict[str, Any]:
     if session_id:
         existing = update_session_working_dir(session_id, working_dir)
         if existing:
@@ -344,9 +344,9 @@ def append_message(session_id: str, role: str, content: str, profile: str = "", 
     )
     with messages_path(session_id).open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(asdict(message), ensure_ascii=False) + "\n")
-    session = load_session(session_id) or {"id": session_id, "title": "Musai chat", "created_at": utc_now()}
+    session = load_session(session_id) or {"id": session_id, "title": "Musia chat", "created_at": utc_now()}
     session["updated_at"] = utc_now()
-    if role == "user" and content and session.get("title") == "Musai chat":
+    if role == "user" and content and session.get("title") == "Musia chat":
         session["title"] = content[:60]
     write_json(session_dir(session_id) / "session.json", session)
     write_session_pointer(session)
@@ -461,7 +461,7 @@ def register_artifact(
     path: str | None = None,
     text: str | None = None,
     kind: str | None = None,
-    source: str = "musai",
+    source: str = "musia",
     tab: str | None = None,
     selected: bool = False,
     metadata: dict[str, Any] | None = None,
@@ -580,7 +580,7 @@ def session_working_dir(session_id: str) -> Path:
 def build_chat_prompt(session_id: str, message: str) -> str:
     history = format_history(load_messages(session_id))
     working_dir = session_working_dir(session_id)
-    return f"""You are Musai Studio Chat, a concise producer-engineer assistant for AI song creation and localization.
+    return f"""You are Musia Studio Chat, a concise producer-engineer assistant for AI song creation and localization.
 
 Repository: {ROOT}
 Working directory for this session: {working_dir}
@@ -589,8 +589,8 @@ Default worker wrapper: Codex GPT-5.5 xhigh.
 
 Answer the user directly. For heavy work, recommend or trigger the worker path instead of pretending it ran.
 Use the working directory as the user's music project folder. Read supplied material from that folder when paths are relative.
-Prefer concrete Musai commands, project paths, and quality gates. Do not claim audio was generated unless a file exists.
-Use Musai control language: free_vocal, melody_generation, full_production, controlled_song, localization; and control levels free, lyrics, lyrics_chords, melody_sheet, reference_audio, strict_localization.
+Prefer concrete Musia commands, project paths, and quality gates. Do not claim audio was generated unless a file exists.
+Use Musia control language: free_vocal, melody_generation, full_production, controlled_song, localization; and control levels free, lyrics, lyrics_chords, melody_sheet, reference_audio, strict_localization.
 
 Recent session history:
 {history}
@@ -603,10 +603,10 @@ Current user message:
 def build_worker_prompt(session_id: str, message: str) -> str:
     history = format_history(load_messages(session_id), limit=20)
     working_dir = session_working_dir(session_id)
-    return f"""You are Musai Studio Worker, running through the high-reasoning Codex wrapper.
+    return f"""You are Musia Studio Worker, running through the high-reasoning Codex wrapper.
 
 Goal:
-Handle the user's requested Musai setup, analysis, project creation, artifact generation, or code/workflow task in this repository.
+Handle the user's requested Musia setup, analysis, project creation, artifact generation, or code/workflow task in this repository.
 
 Repository:
 {ROOT}
@@ -616,7 +616,7 @@ Session working directory:
 
 Rules:
 - Inspect before changing.
-- Prefer existing Musai scripts and repo patterns.
+- Prefer existing Musia scripts and repo patterns.
 - Treat the session working directory as the user's music project folder; relative material paths are relative to that folder.
 - Keep raw/private media out of Git unless explicitly requested.
 - For song localization, produce explicit paths for stems, lyrics, beats, chords, vocals, mixes, and QA notes.
@@ -712,7 +712,7 @@ def run_api_profile(prompt: str, profile: dict[str, Any]) -> dict[str, Any]:
     if client is None:
         return {"status": "fallback", "answer": f"Missing API key for {provider_name}.", "model": model_name}
     messages = [
-        {"role": "system", "content": "You are Musai Studio Chat. Be concise, concrete, and production-minded."},
+        {"role": "system", "content": "You are Musia Studio Chat. Be concise, concrete, and production-minded."},
         {"role": "user", "content": prompt},
     ]
     try:
@@ -735,7 +735,7 @@ def run_profile(prompt: str, profile_name: str, output_dir: Path, cwd_override: 
 def discover_artifact_paths(text: str) -> list[Path]:
     candidates: list[str] = []
     patterns = [
-        r"(/home/lachlan/ProjectsLFS/Musai/[^\s`'\"<>]+)",
+        r"(/home/lachlan/ProjectsLFS/Musia/[^\s`'\"<>]+)",
         r"\b((?:data|references|VoidAbyssSong|downloads)/[^\s`'\"<>]+)",
     ]
     for pattern in patterns:

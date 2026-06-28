@@ -3,7 +3,7 @@ set -euo pipefail
 
 export PYTHONNOUSERSITE=1
 
-ENV_NAME="${MUSAI_ENV_NAME:-musai}"
+ENV_NAME="${MUSIA_ENV_NAME:-${MUSAI_ENV_NAME:-musia}}"
 CLONE_FROM=""
 WITH_BASIC_PITCH=0
 
@@ -45,7 +45,7 @@ else
   fi
 fi
 
-echo "Installing Musai core packages into '$ENV_NAME'."
+echo "Installing Musia core packages into '$ENV_NAME'."
 conda run -n "$ENV_NAME" python -m pip install --upgrade pip setuptools wheel
 conda run -n "$ENV_NAME" python -m pip install \
   torch==2.3.0 \
@@ -79,7 +79,7 @@ conda run -n "$ENV_NAME" python -c "import importlib.util, torch; mods=['torch',
 
 cat <<EOF
 
-Musai environment is ready.
+Musia environment is ready.
 
 Run:
   PYTHONNOUSERSITE=1 conda run -n $ENV_NAME python scripts/download_open_songs.py --id danny-boy-1917

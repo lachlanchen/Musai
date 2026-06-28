@@ -2,7 +2,7 @@
 
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-# Musai
+# Musia
 
 *AI-локализация песен: извлечение человеческого голоса, stems, текста, битов и аккордов из песни и подготовка пути к исполнимому многоязычному перепеву.*
 
@@ -11,7 +11,7 @@
 [![CUDA](https://img.shields.io/badge/CUDA-tested-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](../references/local-setup-and-test-report.md)
 [![Sponsor](https://img.shields.io/badge/Sponsor-lachlanchen-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 
-Musai — локальный исследовательский прототип для AI-локализации музыки. Текущий MVP принимает песню, разделяет ее на четыре Demucs-stems `bass`, `drums`, `vocals` и `other`, создает микс `instrumental`, сохраняет вокал как `human_sound`, транскрибирует текст, оценивает биты и создает сегменты аккордов в стиле Chordify.
+Musia — локальный исследовательский прототип для AI-локализации музыки. Текущий MVP принимает песню, разделяет ее на четыре Demucs-stems `bass`, `drums`, `vocals` и `other`, создает микс `instrumental`, сохраняет вокал как `human_sound`, транскрибирует текст, оценивает биты и создает сегменты аккордов в стиле Chordify.
 
 | Donate | PayPal | Stripe |
 | --- | --- | --- |
@@ -40,21 +40,21 @@ input song
 
 | Path | Purpose |
 | --- | --- |
-| [`musai/`](../musai/) | Локальный Python-набор для анализа. |
-| [`scripts/bootstrap_musai.sh`](../scripts/bootstrap_musai.sh) | Создает conda-окружение и устанавливает локальный стек. |
+| [`musia/`](../musia/) | Локальный Python-набор для анализа. |
+| [`scripts/bootstrap_musia.sh`](../scripts/bootstrap_musia.sh) | Создает conda-окружение и устанавливает локальный стек. |
 | [`scripts/download_open_songs.py`](../scripts/download_open_songs.py) | Загружает свободные/открытые тестовые песни. |
 | [`scripts/run_pipeline.py`](../scripts/run_pipeline.py) | Запускает разделение, транскрипцию, биты, аккорды и отчет. |
 | [`scripts/install_research_repos.sh`](../scripts/install_research_repos.sh) | Shallow-clone опциональных исследовательских репозиториев в `third_party/`. |
-| [`scripts/musai_lyricfit_openai.py`](../scripts/musai_lyricfit_openai.py) | Опциональный помощник адаптации текста с OpenAI. |
+| [`scripts/musia_lyricfit_openai.py`](../scripts/musia_lyricfit_openai.py) | Опциональный помощник адаптации текста с OpenAI. |
 | [`references/`](../references/) | Архитектура, глубокое исследование и локальные заметки установки. |
 | [`TODO.md`](../TODO.md) | Список задач и следующие инженерные шаги. |
 
 ## Быстрый Старт
 
 ```bash
-bash scripts/bootstrap_musai.sh
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --id danny-boy-1917
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
+bash scripts/bootstrap_musia.sh
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --id danny-boy-1917
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
 ```
 
 Результаты записываются в:
@@ -70,7 +70,7 @@ data/runs/<run-name>/
 Локальный smoke test на открытой записи Wikimedia Commons успешно прошел на машине с NVIDIA RTX 4090 D:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
 ```
 
 Зафиксированный результат:
@@ -86,7 +86,7 @@ PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_s
 
 ## Архитектурное Направление
 
-Musai — это не просто перевод плюс TTS. Целевой полный поток:
+Musia — это не просто перевод плюс TTS. Целевой полный поток:
 
 ```text
 song upload
@@ -106,18 +106,18 @@ song upload
 
 ## Цитирование
 
-Если вы используете Musai в исследовании, цитируйте этот репозиторий. GitHub читает [`CITATION.cff`](../CITATION.cff) и показывает **Cite this repository** на странице репозитория.
+Если вы используете Musia в исследовании, цитируйте этот репозиторий. GitHub читает [`CITATION.cff`](../CITATION.cff) и показывает **Cite this repository** на странице репозитория.
 
 ```bibtex
-@software{chen_musai_2026,
+@software{chen_musia_2026,
   author = {Chen, Lachlan},
-  title = {Musai: Local-first AI song localization and music analysis},
+  title = {Musia: Local-first AI song localization and music analysis},
   year = {2026},
-  url = {https://github.com/lachlanchen/Musai}
+  url = {https://github.com/lachlanchen/Musia}
 }
 ```
 
 ## Статус
 
-Musai — раннее исследовательское ПО. Локальный pipeline работает для тестов и артефактов, но детектор аккордов остается легкой базовой версией, а слой исполнимого re-singing еще не готов к production. Используйте собственные песни, public-domain, лицензированные песни или материалы, загруженные авторами.
+Musia — раннее исследовательское ПО. Локальный pipeline работает для тестов и артефактов, но детектор аккордов остается легкой базовой версией, а слой исполнимого re-singing еще не готов к production. Используйте собственные песни, public-domain, лицензированные песни или материалы, загруженные авторами.
 

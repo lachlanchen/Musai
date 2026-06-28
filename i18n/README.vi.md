@@ -2,7 +2,7 @@
 
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-# Musai
+# Musia
 
 *Bản địa hóa bài hát bằng AI: trích xuất giọng người, stem, lời, nhịp và hợp âm từ một bài hát, rồi chuẩn bị đường đi tới hát lại đa ngôn ngữ có thể hát được.*
 
@@ -11,7 +11,7 @@
 [![CUDA](https://img.shields.io/badge/CUDA-tested-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](../references/local-setup-and-test-report.md)
 [![Sponsor](https://img.shields.io/badge/Sponsor-lachlanchen-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 
-Musai là một nguyên mẫu nghiên cứu local-first cho bản địa hóa âm nhạc bằng AI. MVP hiện tại nhận một bài hát đầu vào, tách thành bốn stem Demucs `bass`, `drums`, `vocals`, `other`, tạo bản trộn `instrumental`, đặt bí danh giọng hát là `human_sound`, chép lời, ước lượng nhịp và tạo các đoạn hợp âm kiểu Chordify.
+Musia là một nguyên mẫu nghiên cứu local-first cho bản địa hóa âm nhạc bằng AI. MVP hiện tại nhận một bài hát đầu vào, tách thành bốn stem Demucs `bass`, `drums`, `vocals`, `other`, tạo bản trộn `instrumental`, đặt bí danh giọng hát là `human_sound`, chép lời, ước lượng nhịp và tạo các đoạn hợp âm kiểu Chordify.
 
 | Donate | PayPal | Stripe |
 | --- | --- | --- |
@@ -40,21 +40,21 @@ input song
 
 | Path | Purpose |
 | --- | --- |
-| [`musai/`](../musai/) | Bộ công cụ phân tích Python chạy cục bộ. |
-| [`scripts/bootstrap_musai.sh`](../scripts/bootstrap_musai.sh) | Tạo môi trường conda và cài stack cục bộ. |
+| [`musia/`](../musia/) | Bộ công cụ phân tích Python chạy cục bộ. |
+| [`scripts/bootstrap_musia.sh`](../scripts/bootstrap_musia.sh) | Tạo môi trường conda và cài stack cục bộ. |
 | [`scripts/download_open_songs.py`](../scripts/download_open_songs.py) | Tải bài hát thử nghiệm miễn phí/mở. |
 | [`scripts/run_pipeline.py`](../scripts/run_pipeline.py) | Chạy tách stem, chép lời, nhịp, hợp âm và báo cáo. |
 | [`scripts/install_research_repos.sh`](../scripts/install_research_repos.sh) | Shallow-clone repo nghiên cứu tùy chọn vào `third_party/`. |
-| [`scripts/musai_lyricfit_openai.py`](../scripts/musai_lyricfit_openai.py) | Trợ lý tùy chọn để thích nghi lời hát bằng OpenAI. |
+| [`scripts/musia_lyricfit_openai.py`](../scripts/musia_lyricfit_openai.py) | Trợ lý tùy chọn để thích nghi lời hát bằng OpenAI. |
 | [`references/`](../references/) | Kiến trúc, nghiên cứu sâu và ghi chú cài đặt cục bộ. |
 | [`TODO.md`](../TODO.md) | Danh sách việc cần làm và bước kỹ thuật tiếp theo. |
 
 ## Bắt Đầu Nhanh
 
 ```bash
-bash scripts/bootstrap_musai.sh
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --id danny-boy-1917
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
+bash scripts/bootstrap_musia.sh
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --id danny-boy-1917
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
 ```
 
 Kết quả được ghi vào:
@@ -70,7 +70,7 @@ data/runs/<run-name>/
 Smoke test cục bộ trên một bản ghi mở từ Wikimedia Commons đã chạy thành công trên máy NVIDIA RTX 4090 D:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
 ```
 
 Kết quả ghi nhận:
@@ -86,7 +86,7 @@ Xem [`references/local-setup-and-test-report.md`](../references/local-setup-and-
 
 ## Hướng Kiến Trúc
 
-Musai không chỉ là dịch cộng TTS. Pipeline đầy đủ dự kiến là:
+Musia không chỉ là dịch cộng TTS. Pipeline đầy đủ dự kiến là:
 
 ```text
 song upload
@@ -106,18 +106,18 @@ Repo này triển khai lớp phân tích cục bộ đầu tiên. Tổng hợp g
 
 ## Trích Dẫn
 
-Nếu dùng Musai trong nghiên cứu, hãy trích dẫn repo này. GitHub đọc [`CITATION.cff`](../CITATION.cff) và hiển thị **Cite this repository** trên trang repo.
+Nếu dùng Musia trong nghiên cứu, hãy trích dẫn repo này. GitHub đọc [`CITATION.cff`](../CITATION.cff) và hiển thị **Cite this repository** trên trang repo.
 
 ```bibtex
-@software{chen_musai_2026,
+@software{chen_musia_2026,
   author = {Chen, Lachlan},
-  title = {Musai: Local-first AI song localization and music analysis},
+  title = {Musia: Local-first AI song localization and music analysis},
   year = {2026},
-  url = {https://github.com/lachlanchen/Musai}
+  url = {https://github.com/lachlanchen/Musia}
 }
 ```
 
 ## Trạng Thái
 
-Musai là phần mềm nghiên cứu giai đoạn đầu. Pipeline cục bộ dùng được cho thử nghiệm và tạo artifact, nhưng bộ nhận diện hợp âm vẫn là baseline nhẹ và lớp hát lại có thể hát được chưa sẵn sàng cho sản xuất. Hãy dùng bài hát bạn sở hữu, bài public-domain, bài có giấy phép hoặc nội dung do creator tải lên.
+Musia là phần mềm nghiên cứu giai đoạn đầu. Pipeline cục bộ dùng được cho thử nghiệm và tạo artifact, nhưng bộ nhận diện hợp âm vẫn là baseline nhẹ và lớp hát lại có thể hát được chưa sẵn sàng cho sản xuất. Hãy dùng bài hát bạn sở hữu, bài public-domain, bài có giấy phép hoặc nội dung do creator tải lên.
 

@@ -1,4 +1,4 @@
-# Musai Beautiful Music TODO
+# Musia Beautiful Music TODO
 
 Goal: produce a convincing Chinese version of a song, with the same musical feeling and a real sung vocal, not speech TTS.
 
@@ -29,7 +29,7 @@ Goal: produce a convincing Chinese version of a song, with the same musical feel
 - [ ] Use official Synthesizer V Studio 2 Pro trial on Windows/macOS if available.
 - [ ] Use official ACE Studio trial/free plan for MIDI + Chinese lyrics if available.
 - [ ] Export Mandarin vocal stems.
-- [ ] Mix exported vocal stems with Musai Demucs stems.
+- [ ] Mix exported vocal stems with Musia Demucs stems.
 
 ## Priority 3: Beautiful Full-Song Alternatives
 

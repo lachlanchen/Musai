@@ -1,4 +1,4 @@
-# Musai TODO
+# Musia TODO
 
 ## Done in this local scaffold
 
@@ -12,7 +12,7 @@
 - [x] Add optional OpenAI lyric adaptation helper.
 - [x] Add research repository downloader.
 - [x] Add git ignore rules for generated audio, weights, and secrets.
-- [x] Create and verify `musai` conda environment.
+- [x] Create and verify `musia` conda environment.
 - [x] Download a Wikimedia Commons test recording.
 - [x] Run a local smoke test that produced stems, beats, chords, and lyrics.
 - [x] Shallow-clone research source repositories into `third_party/`.
@@ -32,7 +32,7 @@
 
 - [ ] Replace the baseline chord detector with a stronger chord-recognition model or plugin.
 - [ ] Add phrase-level lyric segmentation from ASR timestamps.
-- [ ] Add `Musai LyricFit` deterministic scoring for syllable count, rhyme, and tone-melody fit.
+- [ ] Add `Musia LyricFit` deterministic scoring for syllable count, rhyme, and tone-melody fit.
 - [ ] Integrate Basic Pitch or another note extractor for melody skeleton output.
 - [ ] Add YingMusic-Singer-Plus in an isolated GPU worker.
 - [ ] Add SoulX-Singer as a second singing synthesis backend.

@@ -8,11 +8,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from musai.pipeline import run_pipeline
+from musia.pipeline import run_pipeline
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run the Musai local song analysis pipeline.")
+    parser = argparse.ArgumentParser(description="Run the Musia local song analysis pipeline.")
     parser.add_argument("input", type=Path, help="Input audio file.")
     parser.add_argument("--output-root", type=Path, default=Path("data/runs"), help="Directory for run outputs.")
     parser.add_argument("--run-name", default=None, help="Stable run name. Defaults to input name plus timestamp.")

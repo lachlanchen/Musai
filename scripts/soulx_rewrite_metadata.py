@@ -39,7 +39,7 @@ def rewrite_item(item: dict, target_text: str) -> dict:
     rewritten["language"] = "Mandarin"
     rewritten["text"] = " ".join(new_text_tokens)
     rewritten["phoneme"] = " ".join(new_phone_tokens)
-    rewritten["musai_target_text"] = target_text
+    rewritten["musia_target_text"] = target_text
     return rewritten
 
 

@@ -3,7 +3,7 @@
 
 This script captures the website as deterministic PNG frames with Playwright,
 then uses FFmpeg to attach the media file's own audio track. It is intended for
-clean social/demo videos where the audience sees Fun Lazying Art + Musai and
+clean social/demo videos where the audience sees Fun Lazying Art + Musia and
 hears the exact rendered song file.
 """
 
@@ -150,7 +150,7 @@ def main() -> None:
     url = f"{base_url}?{query}#{media_id}"
     frame_count = int(duration * args.fps + 0.999)
 
-    with tempfile.TemporaryDirectory(prefix="musai-fun-capture-") as tmp:
+    with tempfile.TemporaryDirectory(prefix="musia-fun-capture-") as tmp:
         frame_dir = Path(tmp) / "frames"
         frame_dir.mkdir()
         print(f"Capturing {frame_count} frames at {args.width}x{args.height}, {args.fps} fps")

@@ -1,4 +1,4 @@
-# Musai Local Setup and Test Report
+# Musia Local Setup and Test Report
 
 Date: 2026-06-27
 
@@ -8,14 +8,14 @@ Machine summary:
 
 - GPU visible: NVIDIA GeForce RTX 4090 D, 24 GB VRAM
 - Conda available: yes
-- Local env created: `musai`
+- Local env created: `musia`
 - PyTorch CUDA check: passed
 - Generated audio/data location: `data/runs/`
 - Third-party source checkouts: `third_party/`
 
 ## Installed Local Core
 
-The `musai` conda environment was created and verified with:
+The `musia` conda environment was created and verified with:
 
 - Python 3.10
 - FFmpeg
@@ -59,7 +59,7 @@ No account is needed for the current local smoke test.
 
 Needed later:
 
-- `OPENAI_API_KEY`: optional, for `scripts/musai_lyricfit_openai.py` and the future Musai LyricFit engine.
+- `OPENAI_API_KEY`: optional, for `scripts/musia_lyricfit_openai.py` and the future Musia LyricFit engine.
 - Hugging Face token: optional, for gated model weights.
 - RunPod/Modal/AWS/GCP account: optional, for remote GPU workers.
 - S3-compatible storage account: optional, for the future web backend.
@@ -70,7 +70,7 @@ Needed later:
 The test-song downloader is:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --id danny-boy-1917
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --id danny-boy-1917
 ```
 
 The default catalog entry downloads a Wikimedia Commons recording:
@@ -81,7 +81,7 @@ The default catalog entry downloads a Wikimedia Commons recording:
 The downloader also has a second Commons test entry:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --id e-scris-pe-tricolor-vocal
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --id e-scris-pe-tricolor-vocal
 ```
 
 Always verify a source page before public or commercial use.
@@ -91,7 +91,7 @@ Always verify a source page before public or commercial use.
 Command:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
 ```
 
 Result:

@@ -1,6 +1,6 @@
-# Musai Control Levels And SoulX Vocal Workflow
+# Musia Control Levels And SoulX Vocal Workflow
 
-Musai should support several levels of creative control. The goal is not one model for everything; the goal is a router that chooses the right backend for the user’s material.
+Musia should support several levels of creative control. The goal is not one model for everything; the goal is a router that chooses the right backend for the user’s material.
 
 ## Generation Modes
 
@@ -16,7 +16,7 @@ Musai should support several levels of creative control. The goal is not one mod
 
 | Level | Meaning |
 | --- | --- |
-| `free` | Musai may invent lyrics, melody, harmony, arrangement, and vocal direction. |
+| `free` | Musia may invent lyrics, melody, harmony, arrangement, and vocal direction. |
 | `lyrics` | Preserve or lightly polish supplied lyrics; create the music around them. |
 | `lyrics_chords` | Preserve lyric intent and chord/harmony notes. |
 | `melody_sheet` | Preserve supplied melody, 旋律, sheet music, jianpu, MIDI notes, phrase rhythm, or hook contour. |
@@ -60,7 +60,7 @@ Good metadata contains:
 - note types;
 - F0 contour.
 
-For Chinese lyric editing, character count must match sung tokens unless the preprocessing/alignment step is rerun. This is why Musai should save a `SOULX_REQUEST.md` for every controlled project instead of only saving `generated.wav`.
+For Chinese lyric editing, character count must match sung tokens unless the preprocessing/alignment step is rerun. This is why Musia should save a `SOULX_REQUEST.md` for every controlled project instead of only saving `generated.wav`.
 
 ## Routing Policy
 

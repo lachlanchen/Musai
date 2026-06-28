@@ -2,17 +2,17 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-ENV_NAME="${MUSAI_ENV_NAME:-musai}"
-RUN_NAME="${MUSAI_SMOKE_RUN_NAME:-smoke-danny}"
-MAX_DURATION="${MUSAI_SMOKE_MAX_DURATION:-45}"
-ASR_MODEL="${MUSAI_SMOKE_ASR_MODEL:-tiny}"
-DEMUCS_DEVICE="${MUSAI_DEMUCS_DEVICE:-}"
+ENV_NAME="${MUSIA_ENV_NAME:-${MUSAI_ENV_NAME:-musia}}"
+RUN_NAME="${MUSIA_SMOKE_RUN_NAME:-${MUSAI_SMOKE_RUN_NAME:-smoke-danny}}"
+MAX_DURATION="${MUSIA_SMOKE_MAX_DURATION:-${MUSAI_SMOKE_MAX_DURATION:-45}}"
+ASR_MODEL="${MUSIA_SMOKE_ASR_MODEL:-${MUSAI_SMOKE_ASR_MODEL:-tiny}}"
+DEMUCS_DEVICE="${MUSIA_DEMUCS_DEVICE:-${MUSAI_DEMUCS_DEVICE:-}}"
 
 cd "$ROOT_DIR"
 export PYTHONNOUSERSITE=1
 
-echo "==> Bootstrapping Musai core env: $ENV_NAME"
-bash scripts/bootstrap_musai.sh --env "$ENV_NAME"
+echo "==> Bootstrapping Musia core env: $ENV_NAME"
+bash scripts/bootstrap_musia.sh --env "$ENV_NAME"
 
 echo "==> Downloading open test song"
 SONG_PATH="$(conda run -n "$ENV_NAME" python scripts/download_open_songs.py --id danny-boy-1917 | awk 'NF { line = $0 } END { print line }')"

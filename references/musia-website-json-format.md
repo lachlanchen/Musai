@@ -8,7 +8,7 @@ The website uses a static, versioned protocol named:
 fun.lazying.media.v1
 ```
 
-It is designed so Musai, LALACHAN, AgInTiFlow, image-generation tools, and future video tools can all publish media into the same layout without rewriting the player.
+It is designed so Musia, LALACHAN, AgInTiFlow, image-generation tools, and future video tools can all publish media into the same layout without rewriting the player.
 
 Operational website, deployment, cover/poster, and publishing details are documented in:
 
@@ -208,7 +208,7 @@ The site supports URL flags for recording clean videos:
 Use the local recorder to produce MP4 files with the website video and the original media audio track:
 
 ```bash
-musai fun-record --media-id one-sky-three-lights-mixed --skip-intro
+musia fun-record --media-id one-sky-three-lights-mixed --skip-intro
 ```
 
 The generated MP4 goes to:

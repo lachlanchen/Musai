@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-CONDA_ENV="${CONDA_ENV:-musai}"
+CONDA_ENV="${CONDA_ENV:-musia}"
 MAX_DURATION="${MAX_DURATION:-60}"
 ASR_MODEL="${ASR_MODEL:-small}"
 DEMUCS_DEVICE="${DEMUCS_DEVICE:-cuda}"

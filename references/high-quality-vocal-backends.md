@@ -1,6 +1,6 @@
 # High-Quality Vocal Backends
 
-Goal: improve Musai vocal quality beyond the current YingMusic proof-of-concept.
+Goal: improve Musia vocal quality beyond the current YingMusic proof-of-concept.
 
 Checked: 2026-06-27.
 
@@ -20,7 +20,7 @@ Best production tools:
 - Synthesizer V Studio 2 Pro: professional singing synth, Mandarin/Cantonese support, paid/trial.
 - ACE Studio: MIDI + lyrics to studio-quality AI vocals, Windows/macOS desktop app, paid/free entry points.
 
-Strict localization needs MIDI/F0 plus phrase-level Chinese lyrics. Full-song generators can sound better than a bad singing-synthesis attempt, but they usually change arrangement, timing, or melody, so they should not be treated as the main Musai path.
+Strict localization needs MIDI/F0 plus phrase-level Chinese lyrics. Full-song generators can sound better than a bad singing-synthesis attempt, but they usually change arrangement, timing, or melody, so they should not be treated as the main Musia path.
 
 ## Best Open-Source / Local Candidates
 
@@ -75,7 +75,7 @@ All new Hugging Face downloads are directed to `.cache/huggingface` inside this 
 
 ## Local Env Installer
 
-Use isolated environments, not the main `musai` or `lazyedit` env:
+Use isolated environments, not the main `musia` or `lazyedit` env:
 
 ```bash
 bash scripts/install_quality_envs.sh soulx

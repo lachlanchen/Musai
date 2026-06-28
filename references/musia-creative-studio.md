@@ -1,6 +1,6 @@
-# Musai Creative Studio
+# Musia Creative Studio
 
-Musai now has a creation layer in addition to the existing localization and analysis pipeline.
+Musia now has a creation layer in addition to the existing localization and analysis pipeline.
 
 Use it when the input is:
 
@@ -20,7 +20,7 @@ Use it when the input is:
 | Lyrics only | DeepSeek/OpenAI lyric refinement -> ACE-Step 1.5 | Make lyrics more singable before audio generation. |
 | Lyrics + chords | DeepSeek/OpenAI producer brief -> ACE-Step 1.5 | Preserve harmony while creating arrangement and vocal direction. |
 | Lyrics + notation | DeepSeek/OpenAI brief -> ACE-Step 1.5, then optional pro synth | Keep melody/rhythm notes visible in the prompt and handoff. |
-| Reference audio | Musai analysis -> DeepSeek/OpenAI brief -> ACE-Step 1.5 | Extract stems, beats, chords, and lyrics first. |
+| Reference audio | Musia analysis -> DeepSeek/OpenAI brief -> ACE-Step 1.5 | Extract stems, beats, chords, and lyrics first. |
 | Strict same-song localization | Demucs/analysis -> SoulX-Singer/YingMusic | Preserve arrangement; still needs corrected phrase/note metadata for high quality. |
 | Beautiful new song inspired by material | ACE-Step 1.5, then compare SongGen/YuE/DiffRhythm/HeartMuLa | Full-song models are better for new music than exact localization. |
 
@@ -29,13 +29,13 @@ Use it when the input is:
 List model roles:
 
 ```bash
-scripts/musai_create.py models
+scripts/musia_create.py models
 ```
 
 Create a project from idea, lyrics, chords, and notation:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py plan \
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py plan \
   --title "Labmate Memory Demo" \
   --idea "A warm song about a friend who turned rough lyrics into notation and a singable demo." \
   --lyrics-file lyrics.txt \
@@ -53,7 +53,7 @@ PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py plan \
 Create a project from a reference recording and analyze it immediately:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py plan \
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py plan \
   --title "Reference Based Song" \
   --idea "Use the rhythm and chord feeling from my demo, but write a new song." \
   --reference-audio /path/to/demo.wav \
@@ -100,7 +100,7 @@ data/creative_projects/<project-id>/commands.sh qa-ace
 Or check any generated audio directly:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_quality_check.py \
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_quality_check.py \
   path/to/output.wav \
   --language en \
   --expected-lyrics-file data/creative_projects/<project-id>/lyrics_draft.txt \
@@ -109,10 +109,10 @@ PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_quality_check.py \
 
 ## Web App
 
-Start Musai Studio in tmux:
+Start Musia Studio in tmux:
 
 ```bash
-scripts/start_musai_studio_tmux.sh
+scripts/start_musia_studio_tmux.sh
 ```
 
 Default URL, if available:
@@ -127,21 +127,21 @@ The web app can create projects from idea, lyrics, chords, notation, and referen
 
 ### Studio Sessions And Working Folders
 
-Musai Studio uses Codex/AgInTiFlow-style working folders. A session has:
+Musia Studio uses Codex/AgInTiFlow-style working folders. A session has:
 
 ```text
 data/studio/sessions/<session-id>/session.json
 data/studio/sessions/<session-id>/messages.jsonl
-<working-folder>/.musai/sessions/<session-id>/session.json
+<working-folder>/.musia/sessions/<session-id>/session.json
 ```
 
-The file inside the working folder is a lightweight pointer, so the same music folder can have multiple Musai sessions and the same session can be resumed from another folder.
+The file inside the working folder is a lightweight pointer, so the same music folder can have multiple Musia sessions and the same session can be resumed from another folder.
 
-The web app and CLI use the same session/message/job/artifact store. A message sent from the browser appears in `musai messages`; a CLI worker job appears in the browser drawers.
+The web app and CLI use the same session/message/job/artifact store. A message sent from the browser appears in `musia messages`; a CLI worker job appears in the browser drawers.
 
 ### Chat, Worker, And Artifact Canvas
 
-Musai Studio now has a creator-first layout:
+Musia Studio now has a creator-first layout:
 
 ```text
 top bar       = working folder, current session, new/resume controls
@@ -185,14 +185,14 @@ The artifact pipe accepts generated files from safe repo areas such as `data/`, 
 Useful CLI commands:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py setup
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py new-session --title "My song" --cwd ./my-song-folder
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py sessions --cwd ./my-song-folder
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py chat --cwd ./my-song-folder --mode chat "What should I do next for this song?"
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py chat --cwd ./my-song-folder --mode worker "Analyze the files here and register the important artifacts."
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py resume-session <session-id> --cwd ./another-folder
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py jobs --session-id <session-id>
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py artifacts <session-id>
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py setup
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py new-session --title "My song" --cwd ./my-song-folder
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py sessions --cwd ./my-song-folder
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py chat --cwd ./my-song-folder --mode chat "What should I do next for this song?"
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py chat --cwd ./my-song-folder --mode worker "Analyze the files here and register the important artifacts."
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py resume-session <session-id> --cwd ./another-folder
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py jobs --session-id <session-id>
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py artifacts <session-id>
 ```
 
 The same commands are available through the npm wrapper:
@@ -200,26 +200,26 @@ The same commands are available through the npm wrapper:
 ```bash
 npm install
 npm link
-musai doctor
-musai studio --tmux
-musai setup
-musai new-session --title "My song" --cwd ./my-song-folder
-musai chat --cwd ./my-song-folder --mode worker "Create a project from this song idea and register artifacts."
-musai artifacts <session-id>
+musia doctor
+musia studio --tmux
+musia setup
+musia new-session --title "My song" --cwd ./my-song-folder
+musia chat --cwd ./my-song-folder --mode worker "Create a project from this song idea and register artifacts."
+musia artifacts <session-id>
 ```
 
 From the public npm registry:
 
 ```bash
-npm install -g @lazyingart/musai
-musai doctor
+npm install -g @lazyingart/musia
+musia doctor
 ```
 
-The npm package is dependency-free; it delegates to the repo-local Python scripts using `conda run -n musai` unless `MUSAI_PYTHON` or `MUSAI_NO_CONDA=1` is set.
+The npm package is dependency-free; it delegates to the repo-local Python scripts using `conda run -n musia` unless `MUSIA_PYTHON` or `MUSIA_NO_CONDA=1` is set.
 
 ### Control Modes
 
-Musai project creation now accepts explicit control fields:
+Musia project creation now accepts explicit control fields:
 
 ```text
 generation_mode = auto | free_vocal | melody_generation | full_production | controlled_song | localization
@@ -243,14 +243,14 @@ PROMPT_WAV=... PROMPT_METADATA=... TARGET_METADATA=... commands.sh soulx-custom
 commands.sh qa-soulx
 ```
 
-See [`musai-control-and-soulx-workflow.md`](musai-control-and-soulx-workflow.md) for the product model.
+See [`musia-control-and-soulx-workflow.md`](musia-control-and-soulx-workflow.md) for the product model.
 
 ## AgInTiFlow Handoff
 
 Every creative project includes `AGINTI_HANDOFF.md`. It contains a Codex/AgInTiFlow prompt like:
 
 ```bash
-codex -m gpt-5.5 -c model_reasoning_effort="high" -s danger-full-access -a never --cd /home/lachlan/ProjectsLFS/Musai "Inspect PROJECT_DIR, run the Musai commands, improve lyrics/prompt quality, generate or review audio outputs, and update the project report with evidence."
+codex -m gpt-5.5 -c model_reasoning_effort="high" -s danger-full-access -a never --cd /home/lachlan/ProjectsLFS/Musia "Inspect PROJECT_DIR, run the Musia commands, improve lyrics/prompt quality, generate or review audio outputs, and update the project report with evidence."
 ```
 
 Use this when you want AgInTiFlow or a Codex 5.5 high-reasoning session to refine lyrics, run long GPU jobs, or judge output quality.
@@ -271,11 +271,11 @@ For strict localization, do not call a file final unless phrase timing, melody, 
 
 Validated on 2026-06-28:
 
-- `scripts/musai_create.py models` lists local/API model roles.
-- `scripts/musai_create.py plan` created DeepSeek and offline project folders.
-- `scripts/start_musai_studio_tmux.sh` started the web app on `http://127.0.0.1:8766` because `8765` was already occupied.
+- `scripts/musia_create.py models` lists local/API model roles.
+- `scripts/musia_create.py plan` created DeepSeek and offline project folders.
+- `scripts/start_musia_studio_tmux.sh` started the web app on `http://127.0.0.1:8766` because `8765` was already occupied.
 - The web API created a project from a JSON payload.
 - ACE-Step 1.5 generated a 30-second WAV from the web smoke project.
-- `scripts/musai_quality_check.py` measured the ACE output and correctly marked it `review` because ASR did not recover the expected lyrics.
+- `scripts/musia_quality_check.py` measured the ACE output and correctly marked it `review` because ASR did not recover the expected lyrics.
 
 The ACE smoke output proves the backend can generate audio locally, but it is not accepted as a high-quality vocal song. Use the QA gate to reject weak generations and rerun with richer lyrics/prompts/seeds.

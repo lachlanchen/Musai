@@ -10,7 +10,7 @@ https://fun.lazying.art/#one-sky-three-lights-mixed
 
 ## Goal
 
-Create a smooth mixed-language Musai song and use it to validate translation-word highlighting in the Fun Lazying Art player.
+Create a smooth mixed-language Musia song and use it to validate translation-word highlighting in the Fun Lazying Art player.
 
 The intended language design is:
 

@@ -10,7 +10,7 @@
     "zh-Hans": "雨天短歌",
     "ja": "雨の日のヴァース"
   },
-  "artist": "Musai",
+  "artist": "Musia",
   "subtitle": "Three playable short verse renders with per-language ASR-adjusted lyric timing",
   "description": "A compact rain-day localization demo with separate Mandarin, English, and Japanese short renders. The lyric display follows each selected audio language and uses ASR-adjusted timing instead of one shared English timeline.",
   "caption": "Same melody, localized lyrics",
@@ -103,7 +103,7 @@
     "generator": "SoulX-Singer + ACE-Step 1.5",
     "run": "data/soulx_verses/rain-day-trilingual-zh-localized-20260628 and data/creative_projects/rain-day-short-trilingual-20260628",
     "model": "SoulX-Singer",
-    "lyricRefinement": "manual Musai LyricFit pass",
+    "lyricRefinement": "manual Musia LyricFit pass",
     "coverPrompt": "16:9 rainy city window, waveform lines, lyric timing, premium clean music poster, teal, gold, rose, no people, no text.",
     "lyricAdaptation": "Each language uses the same four timed phrase slots but has its own singable lyric rather than a literal translation.",
     "analysis": {
@@ -265,5 +265,5 @@
       "href": "data/songs/rain-day-bilingual-verse/manifest.json"
     }
   ],
-  "createCommand": "musai soulx-verse --title \"Rain Day\" --provider deepseek && musai website add-media"
+  "createCommand": "musia soulx-verse --title \"Rain Day\" --provider deepseek && musia website add-media"
 }

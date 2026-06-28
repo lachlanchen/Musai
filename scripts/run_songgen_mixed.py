@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the local SongGen mixed-pro backend for Musai song experiments.
+"""Run the local SongGen mixed-pro backend for Musia song experiments.
 
 SongGen's released processor tokenizes lyrics as English phonetics, so for
 Mandarin/Japanese experiments use pinyin/romaji in the sung lyric and publish

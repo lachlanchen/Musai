@@ -93,7 +93,7 @@ def chat_json(client: OpenAI | None, model: str, payload: dict[str, Any], fallba
         {
             "role": "system",
             "content": (
-                "You are Musai LyricFit, a music-localization and music-quality checker. "
+                "You are Musia LyricFit, a music-localization and music-quality checker. "
                 "Return strict JSON only. Be honest about fit and production readiness."
             ),
         },
@@ -144,7 +144,7 @@ def rewrite_soulx_metadata(input_path: Path, target_text: str, output_path: Path
     item["language"] = "Mandarin"
     item["text"] = " ".join(text_tokens)
     item["phoneme"] = " ".join(phone_tokens)
-    item["musai_target_text"] = target_text
+    item["musia_target_text"] = target_text
     write_json(output_path, [item])
     return {"path": str(output_path), "sung_token_count": len(sung_positions), "target_char_count": len(chars)}
 
@@ -152,7 +152,7 @@ def rewrite_soulx_metadata(input_path: Path, target_text: str, output_path: Path
 def transcribe_if_exists(path: Path, language: str, enabled: bool) -> dict[str, Any]:
     if not enabled or not path.exists():
         return {"status": "skipped" if not enabled else "missing", "path": str(path)}
-    from musai.asr import transcribe_with_faster_whisper
+    from musia.asr import transcribe_with_faster_whisper
 
     result = transcribe_with_faster_whisper(path, model_size="small", language=language)
     return {"status": result.get("status"), "path": str(path), "text": result.get("text", "").strip()}
@@ -227,7 +227,7 @@ def render_report(data: dict[str, Any]) -> str:
     en_zh = data["localizations"]["en_to_zh"]
     zh_en = data["localizations"]["zh_to_en"]
     lines = [
-        "# Musai Localization Performance Demo",
+        "# Musia Localization Performance Demo",
         "",
         f"- Created: `{data['created_at']}`",
         f"- Lyric provider: `{data['provider']}`",
@@ -296,8 +296,8 @@ def render_report(data: dict[str, Any]) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run a dedicated Musai localization performance demo using DeepSeek/OpenAI-compatible lyric checks.")
-    parser.add_argument("--provider", choices=["deepseek", "openai"], default=os.getenv("MUSAI_LYRIC_PROVIDER", "deepseek"))
+    parser = argparse.ArgumentParser(description="Run a dedicated Musia localization performance demo using DeepSeek/OpenAI-compatible lyric checks.")
+    parser.add_argument("--provider", choices=["deepseek", "openai"], default=os.getenv("MUSIA_LYRIC_PROVIDER", "deepseek"))
     parser.add_argument("--model", default=None, help="Override lyric model. DeepSeek default is deepseek-reasoner; OpenAI default is gpt-5.5.")
     parser.add_argument("--output-dir", type=Path, default=Path("data/runs/localization-performance-20260628"))
     parser.add_argument("--skip-asr-check", action="store_true")
@@ -316,7 +316,7 @@ def main() -> None:
         "music_check": {"source": "fallback"},
     }
     prompt_payload = {
-        "task": "Create and check Musai localization demo lyrics.",
+        "task": "Create and check Musia localization demo lyrics.",
         "return_schema": {
             "en_to_zh": {
                 "joined_version": f"exactly {required_count} Chinese characters, no punctuation",

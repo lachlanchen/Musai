@@ -125,7 +125,7 @@ Each vocal language has its own trilingual lyric set. The translations intention
 
 ## Analysis Runs
 
-Musai analysis runs:
+Musia analysis runs:
 
 ```text
 data/runs/mars-red-sky-en-analysis/
@@ -189,6 +189,6 @@ git diff --check
 Browser smoke screenshots:
 
 ```text
-/tmp/musai-mars-site-final.png
-/tmp/musai-mars-mobile.png
+/tmp/musia-mars-site-final.png
+/tmp/musia-mars-mobile.png
 ```

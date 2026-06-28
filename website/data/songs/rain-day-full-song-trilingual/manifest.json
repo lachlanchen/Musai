@@ -10,7 +10,7 @@
     "zh-Hans": "雨夜完整歌",
     "ja": "雨の日のフルソング"
   },
-  "artist": "Musai",
+  "artist": "Musia",
   "subtitle": "Separate English, Mandarin, and Japanese full-song renders with analysis-tuned lyric timing",
   "description": "A 78-second rainy-day cinematic pop song generated as three separate language versions. The player uses per-language lyric timing from the analysis pass, while the chord row uses the detected musical pulse.",
   "caption": "Analysis-tuned trilingual full-song demo",
@@ -18,7 +18,7 @@
   "canonicalUrl": "https://fun.lazying.art/#rain-day-full-song-trilingual",
   "share": {
     "title": "Rain Day Full Song - Fun Lazying Art",
-    "description": "A full-song Musai demo with English, Mandarin, and Japanese generated versions plus synced trilingual lyrics.",
+    "description": "A full-song Musia demo with English, Mandarin, and Japanese generated versions plus synced trilingual lyrics.",
     "url": "https://fun.lazying.art/#rain-day-full-song-trilingual",
     "image": "assets/covers/rain-day-full-song-16x9.png",
     "siteName": "Fun Lazying Art"
@@ -975,7 +975,7 @@
     "coverSource": "/home/lachlan/.codex/generated_images/019f0842-25ba-7bd2-9d4b-0b1c60d8a951/ig_01763bb4db1aabe8016a40c48306cc819182dd3a18c996ec0c.png",
     "note": "These are separate full-song generated versions, not strict same-stems localization renders. Lyrics use per-vocal ASR-corrected timing; do not assume the three vocal renders sing identical lines.",
     "analysis": {
-      "method": "Musai pipeline: Demucs stems, WhisperX/faster-whisper lyric timing, beat tracking, chord segmentation",
+      "method": "Musia pipeline: Demucs stems, WhisperX/faster-whisper lyric timing, beat tracking, chord segmentation",
       "runs": {
         "en": "data/runs/generated-rain-day-full-en-analysis",
         "zh-Hans": "data/runs/generated-rain-day-full-zh-analysis",

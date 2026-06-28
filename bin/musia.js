@@ -7,7 +7,7 @@ const { spawnSync } = require("child_process");
 
 const ROOT = path.resolve(__dirname, "..");
 const PKG = JSON.parse(fs.readFileSync(path.join(ROOT, "package.json"), "utf8"));
-const DEFAULT_ENV = "musai";
+const DEFAULT_ENV = "musia";
 
 const PY_COMMANDS = new Set([
   "models",
@@ -27,49 +27,49 @@ const PY_COMMANDS = new Set([
 ]);
 
 function usage() {
-  return `Musai ${PKG.version}
+  return `Musia ${PKG.version}
 
 Usage:
-  musai <command> [args]
+  musia <command> [args]
 
 Web app:
-  musai studio [--host 127.0.0.1] [--port 8766]
-  musai studio --tmux
-  musai web [...same as studio]
+  musia studio [--host 127.0.0.1] [--port 8766]
+  musia studio --tmux
+  musia web [...same as studio]
 
 Creative CLI:
-  musai setup
-  musai models
-  musai plan --title "My Song" --idea "..." --provider deepseek
-  musai song init --title "Aya Chan" --vocal-language ja --lyrics-file lyrics.txt
-  musai song review --project-dir data/creative_projects/... --audio song.wav --run-analysis
-  musai song correct --project-dir data/creative_projects/... --issues "vocal too quiet"
-  musai song handoff --project-dir data/creative_projects/... --audio song.wav
-  musai plan --title "Vocal" --generation-mode free_vocal --lyrics "..."
-  musai plan --title "Controlled" --generation-mode controlled_song --control-level melody_sheet --melody "..."
-  musai plan --title "Licensed CN Version" --generation-mode localization --control-level strict_localization --rights-confirmed --target-language zh-CN --reference-audio song.wav
-  musai soulx-verse --title "Rain Day" --idea "A rainy bilingual musical short film verse"
-  musai new-session --title "My album" --cwd ./my-song-folder
-  musai chat --cwd ./my-song-folder --mode chat "What should I do next?"
-  musai chat --cwd ./my-song-folder --mode worker "Analyze this song and register artifacts."
-  musai sessions --cwd ./my-song-folder
-  musai resume-session <session-id> --cwd ./another-folder
-  musai jobs --session-id <id>
-  musai artifacts <session-id>
-  musai fun-record --media-id one-sky-three-lights-mixed --skip-intro
+  musia setup
+  musia models
+  musia plan --title "My Song" --idea "..." --provider deepseek
+  musia song init --title "Aya Chan" --vocal-language ja --lyrics-file lyrics.txt
+  musia song review --project-dir data/creative_projects/... --audio song.wav --run-analysis
+  musia song correct --project-dir data/creative_projects/... --issues "vocal too quiet"
+  musia song handoff --project-dir data/creative_projects/... --audio song.wav
+  musia plan --title "Vocal" --generation-mode free_vocal --lyrics "..."
+  musia plan --title "Controlled" --generation-mode controlled_song --control-level melody_sheet --melody "..."
+  musia plan --title "Licensed CN Version" --generation-mode localization --control-level strict_localization --rights-confirmed --target-language zh-CN --reference-audio song.wav
+  musia soulx-verse --title "Rain Day" --idea "A rainy bilingual musical short film verse"
+  musia new-session --title "My album" --cwd ./my-song-folder
+  musia chat --cwd ./my-song-folder --mode chat "What should I do next?"
+  musia chat --cwd ./my-song-folder --mode worker "Analyze this song and register artifacts."
+  musia sessions --cwd ./my-song-folder
+  musia resume-session <session-id> --cwd ./another-folder
+  musia jobs --session-id <id>
+  musia artifacts <session-id>
+  musia fun-record --media-id one-sky-three-lights-mixed --skip-intro
 
 Analysis pipeline:
-  musai pipeline INPUT_AUDIO --run-name my-run --max-duration 60
-  musai download-open-song --id danny-boy-1917
+  musia pipeline INPUT_AUDIO --run-name my-run --max-duration 60
+  musia download-open-song --id danny-boy-1917
 
 Environment/setup:
-  musai bootstrap
-  musai doctor [--json]
+  musia bootstrap
+  musia doctor [--json]
 
 Runtime selection:
-  MUSAI_CONDA_ENV=musai          conda env name, default "musai"
-  MUSAI_PYTHON=/path/python      use a direct Python interpreter
-  MUSAI_NO_CONDA=1               use python3/python instead of conda
+  MUSIA_CONDA_ENV=musia          conda env name, default "musia"
+  MUSIA_PYTHON=/path/python      use a direct Python interpreter
+  MUSIA_NO_CONDA=1               use python3/python instead of conda
 `;
 }
 
@@ -84,6 +84,10 @@ function hasArg(args, name) {
 
 function stripArgs(args, names) {
   return args.filter((arg) => !names.includes(arg));
+}
+
+function envValue(primary, fallback, defaultValue = "") {
+  return process.env[primary] || process.env[fallback] || defaultValue;
 }
 
 function findExecutable(names) {
@@ -122,21 +126,22 @@ function pythonCommand(scriptRelative, args) {
   if (!fs.existsSync(script)) {
     fail(`Missing script: ${script}`);
   }
-  if (process.env.MUSAI_PYTHON) {
-    return { command: process.env.MUSAI_PYTHON, args: [script, ...args] };
+  const configuredPython = envValue("MUSIA_PYTHON", "MUSAI_PYTHON");
+  if (configuredPython) {
+    return { command: configuredPython, args: [script, ...args] };
   }
-  if (!process.env.MUSAI_NO_CONDA) {
+  if (!envValue("MUSIA_NO_CONDA", "MUSAI_NO_CONDA")) {
     const conda = findExecutable(["conda"]);
     if (conda) {
       return {
         command: conda,
-        args: ["run", "-n", process.env.MUSAI_CONDA_ENV || DEFAULT_ENV, "python", script, ...args]
+        args: ["run", "-n", envValue("MUSIA_CONDA_ENV", "MUSAI_CONDA_ENV", DEFAULT_ENV), "python", script, ...args]
       };
     }
   }
   const python = findExecutable(["python3", "python"]);
   if (!python) {
-    fail("Python was not found. Install Python/conda or set MUSAI_PYTHON.");
+    fail("Python was not found. Install Python/conda or set MUSIA_PYTHON.");
   }
   return { command: python, args: [script, ...args] };
 }
@@ -162,12 +167,12 @@ function runShell(scriptRelative, args) {
 
 function doctor(jsonOutput = false) {
   const conda = findExecutable(["conda"]);
-  const python = process.env.MUSAI_PYTHON || findExecutable(["python3", "python"]);
+  const python = envValue("MUSIA_PYTHON", "MUSAI_PYTHON") || findExecutable(["python3", "python"]);
   const ffmpeg = findExecutable(["ffmpeg"]);
   const tmux = findExecutable(["tmux"]);
   const codex = findExecutable(["codex"]);
   const npm = findExecutable(["npm"]);
-  const setupScript = fs.existsSync(path.join(ROOT, "scripts", "musai_create.py"));
+  const setupScript = fs.existsSync(path.join(ROOT, "scripts", "musia_create.py"));
   const data = {
     package: PKG.name,
     version: PKG.version,
@@ -175,7 +180,7 @@ function doctor(jsonOutput = false) {
     node: process.version,
     npm: npm || "",
     conda: conda || "",
-    conda_env: process.env.MUSAI_CONDA_ENV || DEFAULT_ENV,
+    conda_env: envValue("MUSIA_CONDA_ENV", "MUSAI_CONDA_ENV", DEFAULT_ENV),
     python: python || "",
     ffmpeg: ffmpeg || "",
     tmux: tmux || "",
@@ -197,23 +202,23 @@ function doctor(jsonOutput = false) {
 function npmSmoke() {
   const checks = [
     ["package.json", path.join(ROOT, "package.json")],
-    ["bin/musai.js", path.join(ROOT, "bin", "musai.js")],
-    ["musai/studio.py", path.join(ROOT, "musai", "studio.py")],
-    ["scripts/musai_studio_web.py", path.join(ROOT, "scripts", "musai_studio_web.py")],
-    ["scripts/musai_create.py", path.join(ROOT, "scripts", "musai_create.py")]
+    ["bin/musia.js", path.join(ROOT, "bin", "musia.js")],
+    ["musia/studio.py", path.join(ROOT, "musia", "studio.py")],
+    ["scripts/musia_studio_web.py", path.join(ROOT, "scripts", "musia_studio_web.py")],
+    ["scripts/musia_create.py", path.join(ROOT, "scripts", "musia_create.py")]
   ];
   const missing = checks.filter(([, file]) => !fs.existsSync(file));
   if (missing.length) {
     fail(`Missing package files: ${missing.map(([label]) => label).join(", ")}`);
   }
-  console.log("Musai npm smoke ok.");
+  console.log("Musia npm smoke ok.");
 }
 
 function runStudio(args) {
   if (hasArg(args, "--tmux")) {
-    return runShell("scripts/start_musai_studio_tmux.sh", stripArgs(args, ["--tmux"]));
+    return runShell("scripts/start_musia_studio_tmux.sh", stripArgs(args, ["--tmux"]));
   }
-  return runPython("scripts/musai_studio_web.py", args.length ? args : ["--host", "127.0.0.1", "--port", "8766"]);
+  return runPython("scripts/musia_studio_web.py", args.length ? args : ["--host", "127.0.0.1", "--port", "8766"]);
 }
 
 function main() {
@@ -242,7 +247,7 @@ function main() {
     return;
   }
   if (command === "bootstrap") {
-    runShell("scripts/bootstrap_musai.sh", rest);
+    runShell("scripts/bootstrap_musia.sh", rest);
     return;
   }
   if (command === "pipeline" || command === "run-pipeline") {
@@ -258,11 +263,11 @@ function main() {
     return;
   }
   if (command === "song" || command === "song-workbench") {
-    runPython("scripts/musai_song_workbench.py", rest);
+    runPython("scripts/musia_song_workbench.py", rest);
     return;
   }
   if (PY_COMMANDS.has(command)) {
-    runPython("scripts/musai_create.py", [command, ...rest]);
+    runPython("scripts/musia_create.py", [command, ...rest]);
     return;
   }
   fail(`Unknown command: ${command}\n\n${usage()}`);

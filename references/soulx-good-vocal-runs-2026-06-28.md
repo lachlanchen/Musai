@@ -20,7 +20,7 @@ These outputs should be treated as dry vocal assets, not full songs. The next pr
 
 ## Reproducible Direction
 
-Every new Musai creative project now writes:
+Every new Musia creative project now writes:
 
 ```text
 SOULX_REQUEST.md

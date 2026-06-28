@@ -2,7 +2,7 @@
 
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-# Musai
+# Musia
 
 *AI song localization: extract the human voice, stems, lyrics, beats, and chords from a song, then prepare the path toward singable multilingual re-singing.*
 
@@ -12,9 +12,9 @@
 [![CUDA](https://img.shields.io/badge/CUDA-tested-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](references/local-setup-and-test-report.md)
 [![Sponsor](https://img.shields.io/badge/Sponsor-lachlanchen-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 
-Musai is a local-first research prototype for AI music localization. The current MVP takes an input song, separates it into the four Demucs stems `bass`, `drums`, `vocals`, and `other`, creates an `instrumental` mix, aliases the vocal as `human_sound`, transcribes lyrics, estimates beats, and produces Chordify-style chord segments.
+Musia is a local-first research prototype for AI music localization. The current MVP takes an input song, separates it into the four Demucs stems `bass`, `drums`, `vocals`, and `other`, creates an `instrumental` mix, aliases the vocal as `human_sound`, transcribes lyrics, estimates beats, and produces Chordify-style chord segments.
 
-![Musai Fun player full-song demo](website/assets/images/musai-fun-player-full-song.png)
+![Musia Fun player full-song demo](website/assets/images/musia-fun-player-full-song.png)
 
 | Donate | PayPal | Stripe |
 | --- | --- | --- |
@@ -43,13 +43,13 @@ input song
 
 | Path | Purpose |
 | --- | --- |
-| [`musai/`](musai/) | Local Python analysis toolkit. |
-| [`package.json`](package.json) | npm package metadata for the `musai` CLI/webapp wrapper. |
-| [`bin/musai.js`](bin/musai.js) | npm executable that launches Musai Studio and Python workflows. |
+| [`musia/`](musia/) | Local Python analysis toolkit. |
+| [`package.json`](package.json) | npm package metadata for the `musia` CLI/webapp wrapper. |
+| [`bin/musia.js`](bin/musia.js) | npm executable that launches Musia Studio and Python workflows. |
 | [`website/`](website/) | Static Fun Lazying Art media website with a synced player, covers, lyrics/subtitles, pinyin, furigana, chords, and share metadata. |
 | [`SETUP_AND_TEST.md`](SETUP_AND_TEST.md) | Fresh-clone setup, smoke test, matrix test, and script map. |
 | [`scripts/setup_and_smoke_test.sh`](scripts/setup_and_smoke_test.sh) | One-command core setup plus open-song smoke test. |
-| [`scripts/bootstrap_musai.sh`](scripts/bootstrap_musai.sh) | Creates the conda environment and installs the local stack. |
+| [`scripts/bootstrap_musia.sh`](scripts/bootstrap_musia.sh) | Creates the conda environment and installs the local stack. |
 | [`scripts/download_open_songs.py`](scripts/download_open_songs.py) | Downloads free/open test songs. |
 | [`scripts/run_pipeline.py`](scripts/run_pipeline.py) | Runs separation, transcription, beats, chords, and report generation. |
 | [`scripts/test_open_songs_matrix.sh`](scripts/test_open_songs_matrix.sh) | Runs the EN/ZH/JA open-song analysis matrix. |
@@ -61,14 +61,14 @@ input song
 | [`scripts/soulx_rewrite_metadata.py`](scripts/soulx_rewrite_metadata.py) | Rewrites SoulX metadata with Mandarin target lyrics while preserving note/F0 timing. |
 | [`scripts/mix_vocal_with_instrumental.sh`](scripts/mix_vocal_with_instrumental.sh) | Mixes a generated vocal with an instrumental stem and loudness-normalizes it. |
 | [`scripts/run_localization_performance_pipeline.sh`](scripts/run_localization_performance_pipeline.sh) | Dedicated EN/ZH localization performance demo using DeepSeek or OpenAI for lyric/check packages. |
-| [`scripts/musai_create.py`](scripts/musai_create.py) | Creative CLI for idea, lyrics, chords, notation, reference audio, and localization project planning. |
-| [`scripts/musai_song_workbench.py`](scripts/musai_song_workbench.py) | Reusable song generation, correction, review, and LALACHAN handoff workbench. |
-| [`scripts/musai_studio_web.py`](scripts/musai_studio_web.py) | Local Musai Studio web app. |
-| [`scripts/start_musai_studio_tmux.sh`](scripts/start_musai_studio_tmux.sh) | Starts Musai Studio in tmux. |
-| [`scripts/musai_quality_check.py`](scripts/musai_quality_check.py) | Checks generated audio duration, levels, ASR, and lyric overlap. |
+| [`scripts/musia_create.py`](scripts/musia_create.py) | Creative CLI for idea, lyrics, chords, notation, reference audio, and localization project planning. |
+| [`scripts/musia_song_workbench.py`](scripts/musia_song_workbench.py) | Reusable song generation, correction, review, and LALACHAN handoff workbench. |
+| [`scripts/musia_studio_web.py`](scripts/musia_studio_web.py) | Local Musia Studio web app. |
+| [`scripts/start_musia_studio_tmux.sh`](scripts/start_musia_studio_tmux.sh) | Starts Musia Studio in tmux. |
+| [`scripts/musia_quality_check.py`](scripts/musia_quality_check.py) | Checks generated audio duration, levels, ASR, and lyric overlap. |
 | [`scripts/validate_fun_media_site.py`](scripts/validate_fun_media_site.py) | Validates the `fun.lazying.media.v1` website catalog, manifests, assets, and language tracks. |
 | [`scripts/run_moss_music_env.sh`](scripts/run_moss_music_env.sh) | Runs MOSS-Music with the required FFmpeg, TorchCodec, and CUDA library paths. |
-| [`scripts/musai_lyricfit_openai.py`](scripts/musai_lyricfit_openai.py) | Optional OpenAI-powered lyric adaptation helper. |
+| [`scripts/musia_lyricfit_openai.py`](scripts/musia_lyricfit_openai.py) | Optional OpenAI-powered lyric adaptation helper. |
 | [`references/`](references/) | Architecture, deep research, and local setup notes. |
 | [`TODO.md`](TODO.md) | Build checklist and next engineering steps. |
 
@@ -77,17 +77,17 @@ input song
 Fresh clone, setup, and smoke test:
 
 ```bash
-git clone https://github.com/lachlanchen/Musai.git
-cd Musai
+git clone https://github.com/lachlanchen/Musia.git
+cd Musia
 bash scripts/setup_and_smoke_test.sh
 ```
 
 Manual core commands:
 
 ```bash
-bash scripts/bootstrap_musai.sh
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --id danny-boy-1917
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
+bash scripts/bootstrap_musia.sh
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --id danny-boy-1917
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
 ```
 
 Results are written to:
@@ -123,76 +123,76 @@ Public URL after GitHub Pages deploy:
 https://fun.lazying.art
 ```
 
-The reusable data protocol is documented in [`references/musai-website-json-format.md`](references/musai-website-json-format.md).
-The full song-generation and website-publishing workflow is documented in [`references/musai-song-generation-and-website-runbook.md`](references/musai-song-generation-and-website-runbook.md).
+The reusable data protocol is documented in [`references/musia-website-json-format.md`](references/musia-website-json-format.md).
+The full song-generation and website-publishing workflow is documented in [`references/musia-song-generation-and-website-runbook.md`](references/musia-song-generation-and-website-runbook.md).
 
 ## Song Workbench
 
 For repeatable song generation and review:
 
 ```bash
-musai song init --title "My Song" --vocal-language ja --lyrics-file lyrics.txt
+musia song init --title "My Song" --vocal-language ja --lyrics-file lyrics.txt
 data/creative_projects/<song-id>/commands.sh generate
 data/creative_projects/<song-id>/commands.sh review
-musai song handoff --project-dir data/creative_projects/<song-id> --audio data/creative_projects/<song-id>/final/selected.mp3
+musia song handoff --project-dir data/creative_projects/<song-id> --audio data/creative_projects/<song-id>/final/selected.mp3
 ```
 
-See [`references/musai-song-workbench.md`](references/musai-song-workbench.md) and [`references/lalachan-song-first-video-workflow.md`](references/lalachan-song-first-video-workflow.md).
+See [`references/musia-song-workbench.md`](references/musia-song-workbench.md) and [`references/lalachan-song-first-video-workflow.md`](references/lalachan-song-first-video-workflow.md).
 
 ## npm CLI And Webapp
 
-Musai also ships as an npm package wrapper around the local Python/conda engine.
+Musia also ships as an npm package wrapper around the local Python/conda engine.
 
 From this repo:
 
 ```bash
 npm install
 npm link
-musai doctor
-musai studio --tmux
+musia doctor
+musia studio --tmux
 ```
 
 From npm:
 
 ```bash
-npm install -g @lazyingart/musai
-musai doctor
+npm install -g @lazyingart/musia
+musia doctor
 ```
 
 Or without linking:
 
 ```bash
 npm run check
-node bin/musai.js studio --tmux
+node bin/musia.js studio --tmux
 ```
 
 Useful npm/CLI commands:
 
 ```bash
-musai setup
-musai models
-musai plan --title "My Song" --idea "A cinematic song about..." --provider deepseek
-musai soulx-verse --title "Rain Day" --idea "A rainy bilingual musical short film verse"
-musai new-session --title "My Song" --cwd ./my-song-folder
-musai chat --cwd ./my-song-folder --mode chat "What should I do next?"
-musai chat --cwd ./my-song-folder --mode worker "Analyze this project and register artifacts."
-musai resume-session <session-id> --cwd ./another-folder
-musai pipeline data/open_songs/danny-boy-1917/original.ogg --run-name npm-smoke --max-duration 45
+musia setup
+musia models
+musia plan --title "My Song" --idea "A cinematic song about..." --provider deepseek
+musia soulx-verse --title "Rain Day" --idea "A rainy bilingual musical short film verse"
+musia new-session --title "My Song" --cwd ./my-song-folder
+musia chat --cwd ./my-song-folder --mode chat "What should I do next?"
+musia chat --cwd ./my-song-folder --mode worker "Analyze this project and register artifacts."
+musia resume-session <session-id> --cwd ./another-folder
+musia pipeline data/open_songs/danny-boy-1917/original.ogg --run-name npm-smoke --max-duration 45
 npm run pack:dry-run
 ```
 
-The npm CLI uses `conda run -n musai python ...` by default. Override with:
+The npm CLI uses `conda run -n musia python ...` by default. Override with:
 
 ```bash
-MUSAI_CONDA_ENV=musai
-MUSAI_PYTHON=/path/to/python
-MUSAI_NO_CONDA=1
+MUSIA_CONDA_ENV=musia
+MUSIA_PYTHON=/path/to/python
+MUSIA_NO_CONDA=1
 ```
 
 Run the dedicated localization performance demo after the smoke/matrix artifacts exist:
 
 ```bash
-MUSAI_LYRIC_PROVIDER=deepseek \
+MUSIA_LYRIC_PROVIDER=deepseek \
 DEEPSEEK_MODEL=deepseek-reasoner \
 scripts/run_localization_performance_pipeline.sh
 ```
@@ -206,7 +206,7 @@ scripts/run_localization_performance_pipeline.sh --provider openai --model gpt-5
 Create original music projects from ideas, lyrics, chords, notation, or reference recordings:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py plan \
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_create.py plan \
   --title "My Song" \
   --idea "A hopeful acoustic song about..." \
   --lyrics-file lyrics.txt \
@@ -217,23 +217,23 @@ PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py plan \
 Start the local web app:
 
 ```bash
-scripts/start_musai_studio_tmux.sh
+scripts/start_musia_studio_tmux.sh
 ```
 
-Musai Studio and the CLI share sessions. A working folder gets a `.musai/sessions/<session-id>/session.json` pointer, while messages and jobs stay in `data/studio/`, so you can create or resume music sessions from either web or CLI.
+Musia Studio and the CLI share sessions. A working folder gets a `.musia/sessions/<session-id>/session.json` pointer, while messages and jobs stay in `data/studio/`, so you can create or resume music sessions from either web or CLI.
 
-See [`references/musai-creative-studio.md`](references/musai-creative-studio.md).
+See [`references/musia-creative-studio.md`](references/musia-creative-studio.md).
 
-For the new control-level model and the SoulX vocal-only workflow, see [`references/musai-control-and-soulx-workflow.md`](references/musai-control-and-soulx-workflow.md).
-For original short SoulX verse generation, see [`references/soulx-verse-tool.md`](references/soulx-verse-tool.md) and [`references/lalachan-musai-musical-short-film-handoff.md`](references/lalachan-musai-musical-short-film-handoff.md).
-For the full installed capability map and practical workflows, see [`references/musai-full-capability-guide.md`](references/musai-full-capability-guide.md).
+For the new control-level model and the SoulX vocal-only workflow, see [`references/musia-control-and-soulx-workflow.md`](references/musia-control-and-soulx-workflow.md).
+For original short SoulX verse generation, see [`references/soulx-verse-tool.md`](references/soulx-verse-tool.md) and [`references/lalachan-musia-musical-short-film-handoff.md`](references/lalachan-musia-musical-short-film-handoff.md).
+For the full installed capability map and practical workflows, see [`references/musia-full-capability-guide.md`](references/musia-full-capability-guide.md).
 
 ## Local Validation
 
 The local smoke test on an open Wikimedia Commons recording passed on a machine with an NVIDIA RTX 4090 D:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
 ```
 
 Recorded result:
@@ -266,14 +266,14 @@ The local machine has staged heavier research backends for better vocal quality 
 - Music understanding and QA: MOSS-Music.
 
 See [`references/high-quality-vocal-backends.md`](references/high-quality-vocal-backends.md) and [`references/local-quality-backend-install-status.md`](references/local-quality-backend-install-status.md).
-For the practical control modes, including vocal-only SoulX generation, melody/旋律 generation, full production, controlled material-based generation, and licensed localization, see [`references/musai-control-and-soulx-workflow.md`](references/musai-control-and-soulx-workflow.md).
+For the practical control modes, including vocal-only SoulX generation, melody/旋律 generation, full production, controlled material-based generation, and licensed localization, see [`references/musia-control-and-soulx-workflow.md`](references/musia-control-and-soulx-workflow.md).
 For the local SoulX vocal-only outputs that sounded usable, see [`references/soulx-good-vocal-runs-2026-06-28.md`](references/soulx-good-vocal-runs-2026-06-28.md).
 
 For the broader EN/ZH/JP model map, including Chinese-company repos and Microsoft Muzic, see [`references/en-zh-jp-music-model-repos.md`](references/en-zh-jp-music-model-repos.md).
 
 ## Architecture Direction
 
-Musai is not only translation plus TTS. The intended full pipeline is:
+Musia is not only translation plus TTS. The intended full pipeline is:
 
 ```text
 song upload
@@ -293,17 +293,17 @@ The current repository implements the first local analysis layer. Singing synthe
 
 ## Citation
 
-If you use Musai in research, cite the repository. GitHub reads [CITATION.cff](CITATION.cff) and shows a **Cite this repository** panel on the repo page.
+If you use Musia in research, cite the repository. GitHub reads [CITATION.cff](CITATION.cff) and shows a **Cite this repository** panel on the repo page.
 
 ```bibtex
-@software{chen_musai_2026,
+@software{chen_musia_2026,
   author = {Chen, Lachlan},
-  title = {Musai: Local-first AI song localization and music analysis},
+  title = {Musia: Local-first AI song localization and music analysis},
   year = {2026},
-  url = {https://github.com/lachlanchen/Musai}
+  url = {https://github.com/lachlanchen/Musia}
 }
 ```
 
 ## Status
 
-Musai is early research software. The local pipeline works for testing and artifact generation, but the chord detector is a lightweight baseline and the singable re-singing layer is not production-ready yet. Use songs you own, public-domain songs, licensed songs, or creator-uploaded material.
+Musia is early research software. The local pipeline works for testing and artifact generation, but the chord detector is a lightweight baseline and the singable re-singing layer is not production-ready yet. Use songs you own, public-domain songs, licensed songs, or creator-uploaded material.

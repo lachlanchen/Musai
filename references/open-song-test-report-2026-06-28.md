@@ -1,11 +1,11 @@
 # Open Song Test Report - 2026-06-28
 
-This report records the local Musai test pass on free/open audio fixtures. Large generated audio, downloaded source media, model checkpoints, and third-party repositories are intentionally kept out of git.
+This report records the local Musia test pass on free/open audio fixtures. Large generated audio, downloaded source media, model checkpoints, and third-party repositories are intentionally kept out of git.
 
 ## Machine / Environment
 
-- Repo: `/home/lachlan/ProjectsLFS/Musai`
-- Core env: `musai`
+- Repo: `/home/lachlan/ProjectsLFS/Musia`
+- Core env: `musia`
 - Quality envs present: `.conda/soulxsinger`, `.conda/diffrhythm`, `.conda/heartmula`, `.conda/moss-music`, `.conda/songgen`
 - GPU path used: CUDA
 - Main pipeline: Demucs + faster-whisper + librosa chord/beat baseline
@@ -13,10 +13,10 @@ This report records the local Musai test pass on free/open audio fixtures. Large
 
 ## Reproducible Install Commands
 
-Core Musai env:
+Core Musia env:
 
 ```bash
-bash scripts/bootstrap_musai.sh
+bash scripts/bootstrap_musia.sh
 ```
 
 Optional research/backend code and model assets:
@@ -40,7 +40,7 @@ PYTHONNOUSERSITE=1 .conda/soulxsinger/bin/python -m pip install "lightning>=2.2,
 Run:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --all
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --all
 ```
 
 Downloaded locally:
@@ -160,7 +160,7 @@ SoulX itself passed its own Mandarin demo:
 data/runs/soulx-demo-zh/generated.wav
 ```
 
-The Musai wrapper also passed the same style of demo invocation:
+The Musia wrapper also passed the same style of demo invocation:
 
 ```bash
 CONTROL=score scripts/run_soulx_svs.sh \

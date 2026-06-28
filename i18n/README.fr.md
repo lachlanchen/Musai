@@ -2,7 +2,7 @@
 
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-# Musai
+# Musia
 
 *Localisation musicale par IA : extraire la voix humaine, les pistes, les paroles, les temps et les accords d'une chanson, puis préparer un re-chant multilingue chantable.*
 
@@ -11,7 +11,7 @@
 [![CUDA](https://img.shields.io/badge/CUDA-tested-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](../references/local-setup-and-test-report.md)
 [![Sponsor](https://img.shields.io/badge/Sponsor-lachlanchen-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 
-Musai est un prototype de recherche local-first pour la localisation musicale par IA. Le MVP actuel prend une chanson, la sépare en quatre pistes Demucs `bass`, `drums`, `vocals` et `other`, crée un mix `instrumental`, expose la voix comme `human_sound`, transcrit les paroles, estime les temps et produit des segments d'accords de type Chordify.
+Musia est un prototype de recherche local-first pour la localisation musicale par IA. Le MVP actuel prend une chanson, la sépare en quatre pistes Demucs `bass`, `drums`, `vocals` et `other`, crée un mix `instrumental`, expose la voix comme `human_sound`, transcrit les paroles, estime les temps et produit des segments d'accords de type Chordify.
 
 | Donate | PayPal | Stripe |
 | --- | --- | --- |
@@ -40,21 +40,21 @@ input song
 
 | Path | Purpose |
 | --- | --- |
-| [`musai/`](../musai/) | Boîte à outils locale d'analyse Python. |
-| [`scripts/bootstrap_musai.sh`](../scripts/bootstrap_musai.sh) | Crée l'environnement conda et installe la pile locale. |
+| [`musia/`](../musia/) | Boîte à outils locale d'analyse Python. |
+| [`scripts/bootstrap_musia.sh`](../scripts/bootstrap_musia.sh) | Crée l'environnement conda et installe la pile locale. |
 | [`scripts/download_open_songs.py`](../scripts/download_open_songs.py) | Télécharge des chansons de test libres/ouvertes. |
 | [`scripts/run_pipeline.py`](../scripts/run_pipeline.py) | Lance séparation, transcription, temps, accords et rapport. |
 | [`scripts/install_research_repos.sh`](../scripts/install_research_repos.sh) | Clone les dépôts de recherche optionnels dans `third_party/`. |
-| [`scripts/musai_lyricfit_openai.py`](../scripts/musai_lyricfit_openai.py) | Assistant optionnel d'adaptation de paroles avec OpenAI. |
+| [`scripts/musia_lyricfit_openai.py`](../scripts/musia_lyricfit_openai.py) | Assistant optionnel d'adaptation de paroles avec OpenAI. |
 | [`references/`](../references/) | Architecture, recherche approfondie et notes d'installation locale. |
 | [`TODO.md`](../TODO.md) | Liste de construction et prochaines étapes. |
 
 ## Démarrage Rapide
 
 ```bash
-bash scripts/bootstrap_musai.sh
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --id danny-boy-1917
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
+bash scripts/bootstrap_musia.sh
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --id danny-boy-1917
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
 ```
 
 Les résultats sont écrits dans :
@@ -70,7 +70,7 @@ Les audios générés, chansons téléchargées, poids de modèles et clones tie
 Le test local sur un enregistrement ouvert de Wikimedia Commons a réussi sur une machine NVIDIA RTX 4090 D :
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
 ```
 
 Résultat enregistré :
@@ -86,7 +86,7 @@ Voir [`references/local-setup-and-test-report.md`](../references/local-setup-and
 
 ## Direction Architecturale
 
-Musai n'est pas seulement traduction plus TTS. Le flux complet visé est :
+Musia n'est pas seulement traduction plus TTS. Le flux complet visé est :
 
 ```text
 song upload
@@ -106,18 +106,18 @@ Ce dépôt implémente la première couche d'analyse locale. La synthèse chant�
 
 ## Citation
 
-Si vous utilisez Musai en recherche, citez le dépôt. GitHub lit [`CITATION.cff`](../CITATION.cff) et affiche **Cite this repository** sur la page du dépôt.
+Si vous utilisez Musia en recherche, citez le dépôt. GitHub lit [`CITATION.cff`](../CITATION.cff) et affiche **Cite this repository** sur la page du dépôt.
 
 ```bibtex
-@software{chen_musai_2026,
+@software{chen_musia_2026,
   author = {Chen, Lachlan},
-  title = {Musai: Local-first AI song localization and music analysis},
+  title = {Musia: Local-first AI song localization and music analysis},
   year = {2026},
-  url = {https://github.com/lachlanchen/Musai}
+  url = {https://github.com/lachlanchen/Musia}
 }
 ```
 
 ## Statut
 
-Musai est un logiciel de recherche précoce. La chaîne locale fonctionne pour les tests et les artefacts, mais le détecteur d'accords reste une base légère et la couche de re-chant chantable n'est pas encore prête pour la production. Utilisez des chansons que vous possédez, du domaine public, licenciées ou fournies par leurs créateurs.
+Musia est un logiciel de recherche précoce. La chaîne locale fonctionne pour les tests et les artefacts, mais le détecteur d'accords reste une base légère et la couche de re-chant chantable n'est pas encore prête pour la production. Utilisez des chansons que vous possédez, du domaine public, licenciées ou fournies par leurs créateurs.
 

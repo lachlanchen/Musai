@@ -262,7 +262,7 @@ def build_metadata(lines: list[str]) -> list[dict[str, Any]]:
             f0.extend(note_frames(duration, pitch))
         items.append(
             {
-                "index": f"musai_verse_{line_index + 1}",
+                "index": f"musia_verse_{line_index + 1}",
                 "language": "Mandarin",
                 "time": [cursor_ms, cursor_ms + segment_duration_ms],
                 "duration": " ".join(f"{value:.2f}" for value in durations),
@@ -271,7 +271,7 @@ def build_metadata(lines: list[str]) -> list[dict[str, Any]]:
                 "note_pitch": " ".join(str(value) for value in note_pitch),
                 "note_type": " ".join(str(value) for value in note_type),
                 "f0": " ".join(f"{value:.1f}" for value in f0),
-                "musai_line": line,
+                "musia_line": line,
             }
         )
         cursor_ms += segment_duration_ms
@@ -362,7 +362,7 @@ def refine_lines(request: SoulXVerseRequest) -> tuple[list[str], dict[str, Any]]
     messages = [
         {
             "role": "system",
-            "content": "You are Musai LyricFit. Return strict JSON. Make lyrics singable and legally original.",
+            "content": "You are Musia LyricFit. Return strict JSON. Make lyrics singable and legally original.",
         },
         {"role": "user", "content": json.dumps(prompt, ensure_ascii=False)},
     ]
@@ -414,7 +414,7 @@ def render_lyrics_md(request: SoulXVerseRequest, lines: list[str], model_meta: d
 
 
 def render_handoff(request: SoulXVerseRequest, result_paths: dict[str, Path], model_meta: dict[str, Any]) -> str:
-    return f"""# LALACHAN / Musai Musical Short Film Handoff
+    return f"""# LALACHAN / Musia Musical Short Film Handoff
 
 Use this package when a video or animation tool needs a short original musical-film soundtrack.
 
@@ -450,7 +450,7 @@ Lyric/model refinement status: `{json.dumps(model_meta, ensure_ascii=False)}`
 Future workers may call:
 
 ```bash
-musai soulx-verse --title "{request.title}" --idea "{request.idea}" --provider deepseek
+musia soulx-verse --title "{request.title}" --idea "{request.idea}" --provider deepseek
 ```
 """
 

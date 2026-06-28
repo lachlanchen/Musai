@@ -13,7 +13,7 @@ This note records the `Rain Day Full Song` website demo added to Fun Lazying Art
 - Chinese audio: `website/assets/audio/rain-day-full-song-zh.mp3`
 - Japanese audio: `website/assets/audio/rain-day-full-song-ja.mp3`
 - Cover: `website/assets/covers/rain-day-full-song-16x9.png`
-- README screenshot: `website/assets/images/musai-fun-player-full-song.png`
+- README screenshot: `website/assets/images/musia-fun-player-full-song.png`
 
 The catalog currently hides the short SoulX verse and defaults to:
 
@@ -25,7 +25,7 @@ The full song is selectable through the media library and searchable by title, l
 
 ## Analysis Retiming
 
-After generation, each website MP3 was run back through the Musai analysis pipeline:
+After generation, each website MP3 was run back through the Musia analysis pipeline:
 
 ```text
 data/runs/generated-rain-day-full-en-analysis/
@@ -82,7 +82,7 @@ These are full-song generation candidates, not strict same-stems localization re
 Commands used:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_quality_check.py AUDIO \
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/musia_quality_check.py AUDIO \
   --language LANG \
   --expected-lyrics-file data/creative_projects/rain-day-full-trilingual-20260628/lyrics/LANG.txt \
   --output-dir data/creative_projects/rain-day-full-trilingual-20260628/qa_LANG

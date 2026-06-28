@@ -1,6 +1,6 @@
 # Fun Lazying Art Website
 
-`fun.lazying.art` is the public static media site for work created by Musai, LALACHAN, AgInTiFlow, and related media-generation tools.
+`fun.lazying.art` is the public static media site for work created by Musia, LALACHAN, AgInTiFlow, and related media-generation tools.
 
 Live URL:
 
@@ -59,7 +59,7 @@ Media facts:
 - Playable assets: one mixed-language vocal render
 - Lyric protocol: `mixed-vocal` lyric set with `mul`, `en`, `zh-Hans`, and `ja`
 - Cover/poster: `website/assets/covers/one-sky-three-lights-16x9.png`
-- Source workflow: ACE-Step full-song generation plus Musai analysis and timing correction
+- Source workflow: ACE-Step full-song generation plus Musia analysis and timing correction
 
 Second catalog item:
 
@@ -106,7 +106,7 @@ The UI has four main areas:
 
 The current lyric carousel is KTV-style: it shows only the current two-line pair. The active line alternates between the first and second row, then advances to the next two-line pair after the second line finishes. The active vocal language gets exact word timing when available; translation tracks rough-highlight corresponding tokens inside the same current line.
 
-The vocal language dropdown uses full native-language names such as `English`, `中文`, and `日本語`. The player title area shows the media title and musician, usually `by Musai`.
+The vocal language dropdown uses full native-language names such as `English`, `中文`, and `日本語`. The player title area shows the media title and musician, usually `by Musia`.
 
 For pure audio, the player uses `assets.cover` or `assets.poster` as the stage image behind the waveform. For video/MV/short-film media, `assets.primaryVideo` can replace the waveform stage while the same poster remains available for loading states and share previews. YouTube-uploaded media can use `assets.youtube` or `assets.externalVideos[]`; the site embeds the YouTube player and keeps the same catalog, artifact, and subtitle panels.
 
@@ -139,7 +139,7 @@ website/data/schema/fun-media-text-track-v1.schema.json
 Detailed format reference:
 
 ```text
-references/musai-website-json-format.md
+references/musia-website-json-format.md
 ```
 
 ## Recording Videos
@@ -155,7 +155,7 @@ https://fun.lazying.art/?capture=1&skipIntro=1&media=one-sky-three-lights-mixed#
 Local recording command:
 
 ```bash
-musai fun-record --media-id one-sky-three-lights-mixed --skip-intro
+musia fun-record --media-id one-sky-three-lights-mixed --skip-intro
 ```
 
 Equivalent npm script:
@@ -378,15 +378,15 @@ fun.lazying.art CNAME lachlanchen.github.io
 If the domain needs to be reconfigured:
 
 ```bash
-gh api -X POST repos/lachlanchen/Musai/pages -f build_type=workflow
+gh api -X POST repos/lachlanchen/Musia/pages -f build_type=workflow
 printf '%s' '{"cname":"fun.lazying.art","https_enforced":true,"build_type":"workflow"}' \
-  | gh api -X PUT repos/lachlanchen/Musai/pages --input - --silent
+  | gh api -X PUT repos/lachlanchen/Musia/pages --input - --silent
 ```
 
 Then verify:
 
 ```bash
-gh api repos/lachlanchen/Musai/pages \
+gh api repos/lachlanchen/Musia/pages \
   --jq '{url:.html_url,cname:.cname,https_enforced:.https_enforced,https_certificate:.https_certificate.state}'
 
 curl -I -L https://fun.lazying.art/

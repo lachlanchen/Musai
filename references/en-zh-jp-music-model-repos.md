@@ -2,11 +2,11 @@
 
 Checked: 2026-06-28.
 
-Goal: identify strong GitHub/open-source candidates for Musai's core promise: beautiful music generation and music localization across English, Chinese, and Japanese.
+Goal: identify strong GitHub/open-source candidates for Musia's core promise: beautiful music generation and music localization across English, Chinese, and Japanese.
 
-## Practical Ranking For Musai
+## Practical Ranking For Musia
 
-| Rank | Repo / Tool | Best Musai Use | Notes |
+| Rank | Repo / Tool | Best Musia Use | Notes |
 | --- | --- | --- | --- |
 | 1 | SoulX-Singer | Same-melody singing synthesis, mainly Mandarin/English/Cantonese | Best local strict-localization candidate when MIDI/F0 and lyric metadata are ready. |
 | 2 | YingMusic-Singer-Plus | Lyric manipulation and CN/EN singing edit | Closest open-source direction for changing lyrics while preserving melody guidance. |
@@ -25,7 +25,7 @@ Goal: identify strong GitHub/open-source candidates for Musai's core promise: be
 | --- | --- | --- | --- |
 | `FunAudioLLM/FunMusic` | Alibaba Tongyi / FunAudioLLM | InspireMusic toolkit for music/song/audio generation | Long-form, high-quality text-to-music and continuation; repo says it is built around autoregressive transformer plus flow matching and Qwen2.5-style backbone. |
 | `tencent-ailab/MuQ` | Tencent AI Lab | Music understanding representation | MuQ and MuQ-MuLan are useful for music-text retrieval, tagging, QA, and style/quality scoring; MuQ-MuLan supports English and Chinese text. |
-| `tencent-ailab/MuCodec` | Tencent AI Lab | Music codec | Useful as a research codec reference for high-fidelity reconstruction/tokenization, not a direct Musai product backend. |
+| `tencent-ailab/MuCodec` | Tencent AI Lab | Music codec | Useful as a research codec reference for high-fidelity reconstruction/tokenization, not a direct Musia product backend. |
 | `tencent-ailab/SongGeneration` | Tencent AI Lab | LeVo / SongGeneration | Public page says LeVo 2 supports multilingual lyrics including zh/en/ja, separate vocal/accompaniment generation, and 4m30s songs, but clone/API were unavailable locally. |
 | `open-mmlab/Amphion` | OpenMMLab | Audio/music/speech generation toolkit | Good research framework for SVS, TTS, VC, vocoders, and evaluation. |
 | `ASLP-lab/DiffRhythm` | ASLP Lab | Fast full-song generation | Chinese-named DiffRhythm/谛韵, open diffusion-based song generation. |
@@ -45,7 +45,7 @@ Goal: identify strong GitHub/open-source candidates for Musai's core promise: be
 - SongMASS / TeleMelody / DeepRapper: useful older generation baselines.
 - MusicAgent: useful architecture reference for an agentic music toolchain.
 
-For Musai, Muzic is most useful for **planning and constraint checking**, not final audio rendering.
+For Musia, Muzic is most useful for **planning and constraint checking**, not final audio rendering.
 
 ## Japanese-Focused And JP-Compatible Stack
 
@@ -83,7 +83,7 @@ For "beautiful music", use two tracks:
 1. **Strict localization track:** Demucs stems -> corrected MIDI/F0 -> singable EN/ZH/JP lyrics -> SoulX/YingMusic/pro synth vocal -> mix with `bass + drums + other`.
 2. **Beautiful reinterpretation track:** Adapted lyrics + style prompt -> ACE-Step/YuE/HeartMuLa/FunMusic/SongGeneration -> clearly label as a new/inspired version unless it preserves the original arrangement.
 
-The strict localization track is the Musai differentiator. The full-song models are valuable for quality targets, demos, and alternate creative versions.
+The strict localization track is the Musia differentiator. The full-song models are valuable for quality targets, demos, and alternate creative versions.
 
 ## Official Links
 

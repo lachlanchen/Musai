@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from musai.asr import transcribe_with_faster_whisper
+from musia.asr import transcribe_with_faster_whisper
 
 
 def normalize_tokens(text: str, language: str) -> list[str]:
@@ -44,7 +44,7 @@ def overlap_score(expected: str, actual: str, language: str) -> float | None:
 
 def render_report(data: dict) -> str:
     lines = [
-        "# Musai Quality Check",
+        "# Musia Quality Check",
         "",
         f"- Audio: `{data['audio']}`",
         f"- Language: `{data['language']}`",
@@ -82,7 +82,7 @@ def render_report(data: dict) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Check generated Musai audio for level, duration, ASR text, and lyric overlap.")
+    parser = argparse.ArgumentParser(description="Check generated Musia audio for level, duration, ASR text, and lyric overlap.")
     parser.add_argument("audio", type=Path)
     parser.add_argument("--language", default="en")
     parser.add_argument("--expected-lyrics", default="")

@@ -1,6 +1,6 @@
-# Musai Song Workbench
+# Musia Song Workbench
 
-`scripts/musai_song_workbench.py` is the reusable path for generating, correcting, reviewing, and handing off original songs.
+`scripts/musia_song_workbench.py` is the reusable path for generating, correcting, reviewing, and handing off original songs.
 
 Use it when the goal is:
 
@@ -13,7 +13,7 @@ Use it when the goal is:
 ## Create A Song Project
 
 ```bash
-musai song init \
+musia song init \
   --title "Aya Chan Hikari Ame" \
   --idea "A warm Japanese theme song for Aya Chan." \
   --character "Aya Chan, female red panda figurine" \
@@ -68,7 +68,7 @@ data/creative_projects/<song-id>/commands.sh review
 
 This runs:
 
-- `scripts/musai_quality_check.py` for duration, level, ASR, and lyric overlap;
+- `scripts/musia_quality_check.py` for duration, level, ASR, and lyric overlap;
 - `scripts/run_pipeline.py` for Demucs stems, lyrics, beats, chords, and manifest.
 
 Review output:
@@ -85,7 +85,7 @@ data/runs/<song-id>-<timestamp>-analysis/
 Use correction when the vocal is quiet, lyric recovery is poor, phrase endings are clipped, or the style is wrong.
 
 ```bash
-musai song correct \
+musia song correct \
   --project-dir data/creative_projects/<song-id> \
   --issues "lyrics are unclear and final words are clipped" \
   --caption-extra "Very clear upfront vocal, fewer words per line" \
@@ -113,7 +113,7 @@ cd third_party/ACE-Step-1.5
 ## Handoff To LALACHAN
 
 ```bash
-musai song handoff \
+musia song handoff \
   --project-dir data/creative_projects/<song-id> \
   --audio data/creative_projects/<song-id>/final/song.mp3 \
   --cover data/creative_projects/<song-id>/assets/cover-16x9.png

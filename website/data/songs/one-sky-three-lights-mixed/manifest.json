@@ -11,7 +11,7 @@
     "zh-Hans": "一片天空，三道光",
     "ja": "ひとつの空、三つの光"
   },
-  "artist": "Musai",
+  "artist": "Musia",
   "subtitle": "A mixed English, Mandarin-pinyin, and Japanese-romaji song with trilingual lyric display",
   "description": "An original 64-second mixed-language song generated locally with ACE-Step. The sung track uses English plus phonetic Mandarin pinyin and Japanese romaji for reliable local generation; the Fun player displays native Chinese/Japanese lyrics with pinyin and furigana plus rough translation-word highlighting.",
   "caption": "Three voices becoming one shared sky",
@@ -19,7 +19,7 @@
   "canonicalUrl": "https://fun.lazying.art/#one-sky-three-lights-mixed",
   "share": {
     "title": "One Sky, Three Lights - Fun Lazying Art",
-    "description": "A mixed-language Musai song with synchronized trilingual lyrics and translation highlighting.",
+    "description": "A mixed-language Musia song with synchronized trilingual lyrics and translation highlighting.",
     "url": "https://fun.lazying.art/#one-sky-three-lights-mixed",
     "image": "assets/covers/one-sky-three-lights-16x9.png",
     "siteName": "Fun Lazying Art"

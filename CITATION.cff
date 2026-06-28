@@ -1,15 +1,15 @@
 cff-version: 1.2.0
-message: "If you use Musai, please cite this repository."
+message: "If you use Musia, please cite this repository."
 type: software
-title: "Musai: Local-first AI song localization and music analysis"
+title: "Musia: Local-first AI song localization and music analysis"
 version: 0.1.0
 date-released: 2026-06-27
-abstract: "Musai is a local-first AI song-localization prototype that extracts stems, vocals, lyrics, beats, and chords from songs while preparing a path toward singable multilingual re-singing."
+abstract: "Musia is a local-first AI song-localization prototype that extracts stems, vocals, lyrics, beats, and chords from songs while preparing a path toward singable multilingual re-singing."
 authors:
   - family-names: Chen
     given-names: Lachlan
     alias: lachlanchen
-repository-code: "https://github.com/lachlanchen/Musai"
+repository-code: "https://github.com/lachlanchen/Musia"
 url: "https://lazying.art"
 keywords:
   - ai music

@@ -10,9 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from musai.creative import CreativeMaterials, create_project, list_projects, load_project, MODEL_REGISTRY
-from musai.soulx_verse import SoulXVerseRequest, generate_soulx_verse
-from musai.studio import (
+from musia.creative import CreativeMaterials, create_project, list_projects, load_project, MODEL_REGISTRY
+from musia.soulx_verse import SoulXVerseRequest, generate_soulx_verse
+from musia.studio import (
     artifact_payload,
     create_session,
     list_artifacts,
@@ -198,7 +198,7 @@ def cmd_soulx_verse(args: argparse.Namespace) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Musai creative song CLI: idea/lyrics/chords/reference audio to model-ready song projects.")
+    parser = argparse.ArgumentParser(description="Musia creative song CLI: idea/lyrics/chords/reference audio to model-ready song projects.")
     sub = parser.add_subparsers(dest="command", required=True)
 
     models = sub.add_parser("models", help="List local/API model roles.")
@@ -219,7 +219,7 @@ def build_parser() -> argparse.ArgumentParser:
     sessions.set_defaults(func=cmd_sessions)
 
     new_session = sub.add_parser("new-session", help="Create a Studio chat session.")
-    new_session.add_argument("--title", default="Musai chat")
+    new_session.add_argument("--title", default="Musia chat")
     new_session.add_argument("--cwd", help="Music project working directory for this session.")
     new_session.set_defaults(func=cmd_new_session)
 
@@ -255,7 +255,7 @@ def build_parser() -> argparse.ArgumentParser:
     soulx_verse = sub.add_parser("soulx-verse", help="Generate a bilingual SoulX verse with lyrics, melody, vocal, and mix artifacts.")
     soulx_verse.add_argument("--title", default="Rain Day Bilingual Verse")
     soulx_verse.add_argument("--idea", default="A gentle rainy-day verse in Chinese and English.")
-    soulx_verse.add_argument("--lyrics", help="Optional lyric lines. If omitted, Musai creates a rainy-day bilingual verse.")
+    soulx_verse.add_argument("--lyrics", help="Optional lyric lines. If omitted, Musia creates a rainy-day bilingual verse.")
     soulx_verse.add_argument("--lyrics-file")
     soulx_verse.add_argument("--output-dir", help="Output directory. Default: data/soulx_verses/<timestamp-title>.")
     soulx_verse.add_argument("--provider", choices=["deepseek", "openai", "offline"], default="deepseek")

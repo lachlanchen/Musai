@@ -2,7 +2,7 @@
 
 Checked: 2026-06-27.
 
-This file records the repo-local state for the high-quality Musai backends. Model weights, cloned research repositories, conda environments, and caches are ignored by git.
+This file records the repo-local state for the high-quality Musia backends. Model weights, cloned research repositories, conda environments, and caches are ignored by git.
 
 ## Verified Environments
 

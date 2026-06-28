@@ -1,8 +1,8 @@
-# Musai Product Architecture Reference
+# Musia Product Architecture Reference
 
 ## Name
 
-**Musai**
+**Musia**
 
 Meaning: **Music + AI**
 
@@ -10,19 +10,19 @@ Pronunciation: **mu-sai**
 
 Tagline:
 
-> Musai - sing every song in any language.
+> Musia - sing every song in any language.
 
-Musai is short, global, and AI-native. It keeps the feeling of a music product while avoiding more generic language-learning names such as LinguaTune or SongLingo.
+Musia is short, global, and AI-native. It keeps the feeling of a music product while avoiding more generic language-learning names such as LinguaTune or SongLingo.
 
 Earlier working name:
 
-**SingBabel** - useful as a concept phrase, but Musai is stronger as a one-word product name.
+**SingBabel** - useful as a concept phrase, but Musia is stronger as a one-word product name.
 
 This is not a trademark check. A real naming process should still include trademark, domain, app-store, and social-handle checks.
 
 ## One-Line Product Idea
 
-Musai is a music player and generation studio that re-sings a song in another language with adapted lyrics and professional vocal rendering.
+Musia is a music player and generation studio that re-sings a song in another language with adapted lyrics and professional vocal rendering.
 
 The core product is **AI song localization**, not simple song translation.
 
@@ -183,7 +183,7 @@ Translated songs, lyric adaptations, new arrangements, vocal performances, and m
 
 Preferred positioning:
 
-> Musai - AI song localization.
+> Musia - AI song localization.
 
 Avoid positioning it as only:
 
@@ -237,6 +237,6 @@ Reason:
 - Which singing model is most stable for full-length commercial-style songs today?
 - How much manual lyric editing is acceptable in the first creator workflow?
 - Should voice cloning be included in the MVP or delayed for legal and safety reasons?
-- Should Musai preserve the original singer timbre, or default to licensed synthetic voices?
+- Should Musia preserve the original singer timbre, or default to licensed synthetic voices?
 - Should the first market be creators, localization studios, karaoke users, or language learners?
 

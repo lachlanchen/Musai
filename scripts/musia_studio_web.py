@@ -14,9 +14,9 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from musai.creative import CreativeMaterials, MODEL_REGISTRY, PROJECTS_ROOT, create_project, list_projects
-from musai.soulx_verse import SoulXVerseRequest, generate_soulx_verse
-from musai.studio import (
+from musia.creative import CreativeMaterials, MODEL_REGISTRY, PROJECTS_ROOT, create_project, list_projects
+from musia.soulx_verse import SoulXVerseRequest, generate_soulx_verse
+from musia.studio import (
     artifact_payload,
     create_session,
     get_artifact,
@@ -41,7 +41,7 @@ PAGE = """<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Musai Studio</title>
+  <title>Musia Studio</title>
   <link rel="icon" href="/assets/brand/fun-lazying-art-logo-192.png" type="image/png">
   <style>
     :root {
@@ -237,7 +237,7 @@ PAGE = """<!doctype html>
   <header class="topbar">
     <div class="brand">
       <img class="brand-logo" src="/assets/brand/fun-lazying-art-logo-192.png" alt="" width="46" height="46">
-      <div><strong>Musai Studio</strong></div>
+      <div><strong>Musia Studio</strong></div>
     </div>
     <div class="workspace-line">
       <input id="working-dir" aria-label="Working directory" placeholder="/path/to/music-folder">
@@ -264,7 +264,7 @@ PAGE = """<!doctype html>
       <details class="panel">
         <summary>Create a controlled music project</summary>
         <div class="grid2">
-          <div><label>Title</label><input id="project-title" value="New Musai song"></div>
+          <div><label>Title</label><input id="project-title" value="New Musia song"></div>
           <div><label>Provider</label><select id="project-provider"><option>deepseek</option><option>openai</option><option>offline</option></select></div>
           <div><label>Model</label><input id="project-model" placeholder="deepseek-reasoner or gpt-5.5"></div>
           <div><label>Language</label><input id="project-language" value="en"></div>
@@ -296,7 +296,7 @@ PAGE = """<!doctype html>
           <div><label>Device</label><input id="verse-device" value="cuda"></div>
         </div>
         <label>Idea</label><textarea id="verse-idea">A gentle rainy-day musical short film verse in Chinese and English.</textarea>
-        <label>Lyrics</label><textarea id="verse-lyrics" placeholder="Optional. Leave empty and Musai will create bilingual rainy-day lyrics."></textarea>
+        <label>Lyrics</label><textarea id="verse-lyrics" placeholder="Optional. Leave empty and Musia will create bilingual rainy-day lyrics."></textarea>
         <div class="checks">
           <label><input id="verse-refine" type="checkbox" checked> AI refine</label>
           <label><input id="verse-run-soulx" type="checkbox" checked> Run SoulX</label>
@@ -344,7 +344,7 @@ PAGE = """<!doctype html>
   </main>
 
   <div class="composer">
-    <textarea id="message" placeholder="Tell Musai what to make, analyze, localize, or refine. Relative paths are read from the working folder."></textarea>
+    <textarea id="message" placeholder="Tell Musia what to make, analyze, localize, or refine. Relative paths are read from the working folder."></textarea>
     <div class="composer-actions">
       <button id="send-auto" type="button">Auto route</button>
       <button id="send-chat" class="secondary" type="button">Chat</button>
@@ -355,8 +355,8 @@ PAGE = """<!doctype html>
 
 <script>
 const state = {
-  sessionId: localStorage.getItem("musaiSessionId") || "",
-  workingDir: localStorage.getItem("musaiWorkingDir") || "",
+  sessionId: localStorage.getItem("musiaSessionId") || "",
+  workingDir: localStorage.getItem("musiaWorkingDir") || "",
   selectedArtifactId: "",
   artifactTab: "all",
   artifacts: [],
@@ -386,13 +386,13 @@ function activeWorkingDir() {
 
 function setSession(id) {
   state.sessionId = id || "";
-  if (state.sessionId) localStorage.setItem("musaiSessionId", state.sessionId);
+  if (state.sessionId) localStorage.setItem("musiaSessionId", state.sessionId);
 }
 
 function setWorkingDir(value) {
   state.workingDir = value || "";
   $("working-dir").value = state.workingDir;
-  if (state.workingDir) localStorage.setItem("musaiWorkingDir", state.workingDir);
+  if (state.workingDir) localStorage.setItem("musiaWorkingDir", state.workingDir);
 }
 
 async function loadSetup() {
@@ -440,7 +440,7 @@ async function selectSession(id) {
 }
 
 async function newSession() {
-  const title = $("message").value.trim().slice(0, 70) || "Musai music session";
+  const title = $("message").value.trim().slice(0, 70) || "Musia music session";
   const session = await api("/api/chat/sessions", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
@@ -684,7 +684,7 @@ refreshAll().catch(err => { $("chat").textContent = err.message; });
 
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = "MusaiStudio/0.2"
+    server_version = "MusiaStudio/0.2"
 
     def send_json(self, data: object, status: HTTPStatus = HTTPStatus.OK) -> None:
         body = json.dumps(data, indent=2, ensure_ascii=False).encode("utf-8")
@@ -764,7 +764,7 @@ class Handler(BaseHTTPRequestHandler):
             elif path == "/api/chat/sessions":
                 self.send_json(
                     create_session(
-                        str(payload.get("title") or "Musai chat"),
+                        str(payload.get("title") or "Musia chat"),
                         working_dir=str(payload.get("working_dir") or "") or None,
                     ),
                     HTTPStatus.CREATED,
@@ -925,12 +925,12 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run the local Musai Studio web app.")
+    parser = argparse.ArgumentParser(description="Run the local Musia Studio web app.")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
     args = parser.parse_args()
     server = ThreadingHTTPServer((args.host, args.port), Handler)
-    print(f"Musai Studio: http://{args.host}:{args.port}")
+    print(f"Musia Studio: http://{args.host}:{args.port}")
     server.serve_forever()
 
 

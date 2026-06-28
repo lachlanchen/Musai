@@ -3,7 +3,7 @@
 Preferred flow for musical short films:
 
 ```text
-Musai song package
+Musia song package
 -> generate song audio
 -> review song audio
 -> write LALACHAN handoff
@@ -20,12 +20,12 @@ This is better than generating video first because the song controls:
 - shot pacing;
 - character movement.
 
-## Musai Side
+## Musia Side
 
 Create and render the song:
 
 ```bash
-musai song init --title "My Character Song" --vocal-language ja --lyrics-file lyrics.txt
+musia song init --title "My Character Song" --vocal-language ja --lyrics-file lyrics.txt
 data/creative_projects/<song-id>/commands.sh generate
 data/creative_projects/<song-id>/commands.sh review
 ```
@@ -41,7 +41,7 @@ data/creative_projects/<song-id>/final/
 Refresh the handoff:
 
 ```bash
-musai song handoff \
+musia song handoff \
   --project-dir data/creative_projects/<song-id> \
   --audio data/creative_projects/<song-id>/final/selected.mp3 \
   --cover data/creative_projects/<song-id>/assets/cover-16x9.png
@@ -68,7 +68,7 @@ The Xiaoyunque prompt should:
 
 If the video tool preserves the uploaded song exactly, no merge is needed.
 
-If the video tool changes or compresses the soundtrack, use the generated video as the picture track and merge the reviewed Musai audio back in:
+If the video tool changes or compresses the soundtrack, use the generated video as the picture track and merge the reviewed Musia audio back in:
 
 ```bash
 ffmpeg -y -i video.mp4 -i selected.wav \

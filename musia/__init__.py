@@ -1,4 +1,4 @@
-"""Musai local analysis toolkit."""
+"""Musia local analysis toolkit."""
 
 __all__ = ["__version__"]
 

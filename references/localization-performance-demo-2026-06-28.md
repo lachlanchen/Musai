@@ -1,11 +1,11 @@
 # Localization Performance Demo - 2026-06-28
 
-This note records the local Musai performance-demo run. The generated audio, model outputs, and downloaded fixtures are kept under ignored `data/` paths and are not committed to GitHub.
+This note records the local Musia performance-demo run. The generated audio, model outputs, and downloaded fixtures are kept under ignored `data/` paths and are not committed to GitHub.
 
 ## Dedicated Command
 
 ```bash
-MUSAI_LYRIC_PROVIDER=deepseek \
+MUSIA_LYRIC_PROVIDER=deepseek \
 DEEPSEEK_MODEL=deepseek-reasoner \
 scripts/run_localization_performance_pipeline.sh \
   --output-dir data/runs/localization-performance-20260628-deepseek
@@ -73,7 +73,7 @@ data/runs/danny-boy-zh-localization/localization/zh-CN/soulx_simple30_clean_prom
 The local listening page is:
 
 ```text
-data/runs/musai-listening-showcase-20260628/index.html
+data/runs/musia-listening-showcase-20260628/index.html
 ```
 
 The best current listening pick is:

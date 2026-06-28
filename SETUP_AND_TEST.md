@@ -1,6 +1,6 @@
 # Setup And Test
 
-This file is the fresh-clone path for Musai. It covers the core local pipeline that other people can run from this repository without downloading the large research backends.
+This file is the fresh-clone path for Musia. It covers the core local pipeline that other people can run from this repository without downloading the large research backends.
 
 Large generated files are ignored by git:
 
@@ -25,17 +25,17 @@ No API key is required for the core smoke test. `DEEPSEEK_API_KEY` or `OPENAI_AP
 From a fresh clone:
 
 ```bash
-git clone https://github.com/lachlanchen/Musai.git
-cd Musai
+git clone https://github.com/lachlanchen/Musia.git
+cd Musia
 bash scripts/setup_and_smoke_test.sh
 ```
 
 The script does this:
 
-1. Creates or reuses the `musai` conda environment.
+1. Creates or reuses the `musia` conda environment.
 2. Installs the core Python/audio stack.
 3. Downloads the open Danny Boy fixture.
-4. Runs the Musai pipeline on the first 45 seconds.
+4. Runs the Musia pipeline on the first 45 seconds.
 5. Writes stems, lyrics, beats, chords, manifest, and report under `data/runs/smoke-danny/`.
 
 Expected outputs:
@@ -58,22 +58,22 @@ data/runs/smoke-danny/REPORT.md
 Use CUDA explicitly:
 
 ```bash
-MUSAI_DEMUCS_DEVICE=cuda bash scripts/setup_and_smoke_test.sh
+MUSIA_DEMUCS_DEVICE=cuda bash scripts/setup_and_smoke_test.sh
 ```
 
 Use a different run name:
 
 ```bash
-MUSAI_SMOKE_RUN_NAME=my-smoke bash scripts/setup_and_smoke_test.sh
+MUSIA_SMOKE_RUN_NAME=my-smoke bash scripts/setup_and_smoke_test.sh
 ```
 
 Validated locally on 2026-06-28 with:
 
 ```bash
-MUSAI_DEMUCS_DEVICE=cuda \
-MUSAI_SMOKE_RUN_NAME=smoke-docs-setup \
-MUSAI_SMOKE_MAX_DURATION=30 \
-MUSAI_SMOKE_ASR_MODEL=tiny \
+MUSIA_DEMUCS_DEVICE=cuda \
+MUSIA_SMOKE_RUN_NAME=smoke-docs-setup \
+MUSIA_SMOKE_MAX_DURATION=30 \
+MUSIA_SMOKE_ASR_MODEL=tiny \
 bash scripts/setup_and_smoke_test.sh
 ```
 
@@ -88,9 +88,9 @@ data/runs/smoke-docs-setup/analysis/{beats,chords,lyrics}.*
 ## Manual Core Setup
 
 ```bash
-bash scripts/bootstrap_musai.sh
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --id danny-boy-1917
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py \
+bash scripts/bootstrap_musia.sh
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --id danny-boy-1917
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py \
   data/open_songs/danny-boy-1917/original.ogg \
   --run-name smoke-danny \
   --max-duration 45 \
@@ -152,7 +152,7 @@ CONTROL=score scripts/run_soulx_svs.sh \
 After the open-song matrix and optional SoulX demo artifacts exist, run:
 
 ```bash
-MUSAI_LYRIC_PROVIDER=deepseek \
+MUSIA_LYRIC_PROVIDER=deepseek \
 DEEPSEEK_MODEL=deepseek-reasoner \
 scripts/run_localization_performance_pipeline.sh
 ```
@@ -181,7 +181,7 @@ The script creates lyric packages and checks existing render artifacts. It does 
 | Script | Purpose |
 | --- | --- |
 | `scripts/setup_and_smoke_test.sh` | Fresh-clone setup plus smoke test. |
-| `scripts/bootstrap_musai.sh` | Create/reuse conda env and install core packages. |
+| `scripts/bootstrap_musia.sh` | Create/reuse conda env and install core packages. |
 | `scripts/download_open_songs.py` | Download free/open fixtures and metadata. |
 | `scripts/run_pipeline.py` | Run stems, lyrics, beats, chords, manifest, report. |
 | `scripts/test_local_pipeline.sh` | Minimal local smoke test using the existing env. |
@@ -193,11 +193,11 @@ The script creates lyric packages and checks existing render artifacts. It does 
 | `scripts/mix_vocal_with_instrumental.sh` | Mix generated vocal with instrumental and normalize loudness. |
 | `scripts/run_localization_performance_pipeline.sh` | Dedicated EN/ZH localization performance demo using DeepSeek/OpenAI. |
 | `scripts/run_localization_performance_pipeline.py` | Python implementation for the dedicated localization performance demo. |
-| `scripts/musai_create.py` | Creative CLI for idea/lyrics/chords/notation/reference-audio song projects. |
-| `scripts/musai_studio_web.py` | Local Musai Studio web app. |
-| `scripts/start_musai_studio_tmux.sh` | Starts Musai Studio in tmux. |
-| `scripts/musai_quality_check.py` | Generated-audio QA: duration, levels, ASR, lyric overlap. |
-| `scripts/musai_lyricfit_openai.py` | Optional OpenAI lyric adaptation helper. |
+| `scripts/musia_create.py` | Creative CLI for idea/lyrics/chords/notation/reference-audio song projects. |
+| `scripts/musia_studio_web.py` | Local Musia Studio web app. |
+| `scripts/start_musia_studio_tmux.sh` | Starts Musia Studio in tmux. |
+| `scripts/musia_quality_check.py` | Generated-audio QA: duration, levels, ASR, lyric overlap. |
+| `scripts/musia_lyricfit_openai.py` | Optional OpenAI lyric adaptation helper. |
 
 ## Current Quality Boundary
 

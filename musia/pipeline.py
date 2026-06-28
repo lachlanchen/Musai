@@ -156,7 +156,7 @@ def run_pipeline(
 def _render_report(manifest: dict[str, Any], chord_rows: list[dict[str, str]], lyrics: dict[str, Any]) -> str:
     top_chords = chord_rows[:32]
     lines = [
-        f"# Musai Run: {manifest['run_name']}",
+        f"# Musia Run: {manifest['run_name']}",
         "",
         f"- Input: `{manifest['input']}`",
         f"- Tempo: `{manifest['tempo_bpm']:.2f}` BPM",

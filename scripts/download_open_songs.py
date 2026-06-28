@@ -57,7 +57,7 @@ CATALOG = {
 
 def download(url: str, output: Path) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
-    request = Request(url, headers={"User-Agent": "MusaiLocalTestDownloader/0.1"})
+    request = Request(url, headers={"User-Agent": "MusiaLocalTestDownloader/0.1"})
     with urlopen(request, timeout=60) as response:
         total = response.headers.get("content-length")
         total_int = int(total) if total and total.isdigit() else None
@@ -94,7 +94,7 @@ def download_item(item_id: str, output_root: Path) -> Path:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Download free/open songs for Musai local testing.")
+    parser = argparse.ArgumentParser(description="Download free/open songs for Musia local testing.")
     parser.add_argument("--id", choices=sorted(CATALOG), default="danny-boy-1917")
     parser.add_argument("--all", action="store_true", help="Download every catalog entry.")
     parser.add_argument("--list", action="store_true", help="List available catalog entries.")

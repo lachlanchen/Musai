@@ -1,6 +1,6 @@
-# Musai Song Generation And Website Runbook
+# Musia Song Generation And Website Runbook
 
-This is the practical rulebook for creating beautiful Musai songs and publishing them on `fun.lazying.art`.
+This is the practical rulebook for creating beautiful Musia songs and publishing them on `fun.lazying.art`.
 
 ## Core Principle
 
@@ -16,7 +16,7 @@ Prompt lyrics are an intention. A generated vocal is evidence. If the vocal does
 | Lyrics only | Rewrite for singability first, then generate | full mixed song candidate |
 | Lyrics + chords | Preserve chord intent in the prompt and final analysis notes | song candidate with chord reference |
 | Lyrics + numbered notation / melody sketch | Keep the melody/rhythm constraints visible in prompt and handoff | more controlled song candidate |
-| Reference recording | Run Musai analysis, then write a new-song or localization brief | stems, chords, beats, lyric reference, new song candidate |
+| Reference recording | Run Musia analysis, then write a new-song or localization brief | stems, chords, beats, lyric reference, new song candidate |
 | Strict same-song localization | Analyze source, adapt lyrics phrase by phrase, use singing synthesis or pro vocal workflow | same arrangement, new-language vocal |
 
 ## Production Standard
@@ -97,7 +97,7 @@ no famous singer imitation, no clipped final syllables, vocal slightly above the
 1. Create the project.
 
 ```bash
-musai song init \
+musia song init \
   --title "Song Title" \
   --idea "creative direction" \
   --vocal-language zh-Hans \
@@ -126,7 +126,7 @@ data/creative_projects/<song-id>/commands.sh review
 4. Correct if needed.
 
 ```bash
-musai song correct \
+musia song correct \
   --project-dir data/creative_projects/<song-id> \
   --issues "vocal unclear; ending syllables clipped; lyric too dense" \
   --caption-extra "clearer vocal, fewer words per line, smoother full-song phrasing" \
@@ -137,10 +137,10 @@ musai song correct \
 
 ## Analysis Workflow
 
-Run every selected render through Musai analysis before website publication:
+Run every selected render through Musia analysis before website publication:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py AUDIO \
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py AUDIO \
   --run-name <song-id>-<lang>-analysis \
   --max-duration 120 \
   --asr-model small \
@@ -260,7 +260,7 @@ Browser smoke:
 Recording smoke:
 
 ```bash
-musai fun-record --media-id <media-id> --skip-intro
+musia fun-record --media-id <media-id> --skip-intro
 ```
 
 This captures the Fun player in `capture=1` mode and replaces browser audio with the source media file directly. Use `--skip-intro` for a trimmed video that begins at the first timed vocal line.

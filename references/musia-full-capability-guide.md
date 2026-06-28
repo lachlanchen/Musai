@@ -1,6 +1,6 @@
-# Musai Full Capability Guide
+# Musia Full Capability Guide
 
-Musai is becoming a local-first music writing and music analysis workstation.
+Musia is becoming a local-first music writing and music analysis workstation.
 
 The mental model is:
 
@@ -8,23 +8,23 @@ The mental model is:
 write a song like writing an article or code
 ```
 
-A user can start with an idea, lyrics, melody notes, chords, a rough recording, a full song, or a licensed source track. Musai should turn that input into structured artifacts, use AI to refine weak inputs, run local audio models when possible, and save everything needed to regenerate or edit the result.
+A user can start with an idea, lyrics, melody notes, chords, a rough recording, a full song, or a licensed source track. Musia should turn that input into structured artifacts, use AI to refine weak inputs, run local audio models when possible, and save everything needed to regenerate or edit the result.
 
 ## Current Capability Map
 
-| Need | Current Musai Route | Main Artifacts |
+| Need | Current Musia Route | Main Artifacts |
 | --- | --- | --- |
-| Analyze an audio file | `musai pipeline` / `scripts/run_pipeline.py` | stems, lyrics, beats, chords, report, manifest |
+| Analyze an audio file | `musia pipeline` / `scripts/run_pipeline.py` | stems, lyrics, beats, chords, report, manifest |
 | Extract four stems | Demucs wrapper | `bass.wav`, `drums.wav`, `vocals.wav`, `other.wav`, `instrumental.wav`, `human_sound.wav` |
 | Transcribe lyrics | faster-whisper wrapper | `lyrics.json`, `lyrics.txt` |
 | Estimate beats | librosa beat tracking | `beats.json`, `beats.csv` |
-| Estimate chords | Musai chroma/chord baseline | `chords.json`, `chords.csv` |
-| Create project brief | `musai plan` | `BRIEF.md`, `brief.json`, model configs, commands |
-| Generate short singing verse | `musai soulx-verse` | `lyrics.md`, `melody.wav`, `vocal.wav`, `mix.wav`, SoulX metadata |
+| Estimate chords | Musia chroma/chord baseline | `chords.json`, `chords.csv` |
+| Create project brief | `musia plan` | `BRIEF.md`, `brief.json`, model configs, commands |
+| Generate short singing verse | `musia soulx-verse` | `lyrics.md`, `melody.wav`, `vocal.wav`, `mix.wav`, SoulX metadata |
 | Localize a song | analysis pipeline + lyric adaptation + SoulX/YingMusic prep | source artifacts, target lyrics, vocal render, mix |
 | Full song generation | ACE-Step / YuE / SongGen style research route | full-song candidates, prompts, configs |
 | Music QA / planning | DeepSeek/OpenAI/Codex wrappers | refined lyrics, prompts, quality notes, handoff docs |
-| Web studio | `musai studio --tmux` | chat, worker jobs, canvas artifacts, project creation |
+| Web studio | `musia studio --tmux` | chat, worker jobs, canvas artifacts, project creation |
 
 ## Installed Or Staged Tooling
 
@@ -33,7 +33,7 @@ A user can start with an idea, lyrics, melody notes, chords, a rough recording, 
 Main conda env:
 
 ```text
-musai
+musia
 ```
 
 Core packages include:
@@ -108,20 +108,20 @@ MuCodec
 FunMusic
 ```
 
-Not every staged repo has a production wrapper yet. Musai’s stable local wrappers today are:
+Not every staged repo has a production wrapper yet. Musia’s stable local wrappers today are:
 
-- Demucs/faster-whisper/librosa/chord analysis through `musai pipeline`;
+- Demucs/faster-whisper/librosa/chord analysis through `musia pipeline`;
 - SoulX vocal rendering through `scripts/run_soulx_svs.sh`;
-- short bilingual verse generation through `musai soulx-verse`;
-- project planning through `musai plan`;
-- chat/worker routing through Musai Studio.
+- short bilingual verse generation through `musia soulx-verse`;
+- project planning through `musia plan`;
+- chat/worker routing through Musia Studio.
 
 ## Audio Analysis Workflow
 
 Use this when the input is an audio file and the goal is to understand it.
 
 ```bash
-musai pipeline /path/to/song.wav \
+musia pipeline /path/to/song.wav \
   --run-name my-song-analysis \
   --max-duration 120 \
   --asr-model small \
@@ -132,7 +132,7 @@ musai pipeline /path/to/song.wav \
 Equivalent direct Python route:
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py /path/to/song.wav \
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py /path/to/song.wav \
   --run-name my-song-analysis \
   --max-duration 120 \
   --asr-model small \
@@ -175,7 +175,7 @@ vocals
 other
 ```
 
-Musai also writes:
+Musia also writes:
 
 ```text
 instrumental = bass + drums + other
@@ -184,14 +184,14 @@ human_sound = vocals
 
 ## Music Generation Workflow
 
-Musai supports several levels of control.
+Musia supports several levels of control.
 
 ### Level 1: Idea To Song Brief
 
 Use this when the user has only an idea.
 
 ```bash
-musai plan \
+musia plan \
   --title "Rain Lantern" \
   --idea "A rainy night song about walking home under city lights" \
   --generation-mode full_production \
@@ -217,7 +217,7 @@ commands.sh
 Use this when the user already has lyrics.
 
 ```bash
-musai plan \
+musia plan \
   --title "My Lyric Demo" \
   --lyrics-file lyrics.txt \
   --generation-mode full_production \
@@ -225,14 +225,14 @@ musai plan \
   --provider deepseek
 ```
 
-Musai should preserve the lyric intent and ask the AI layer to polish only where singability requires it.
+Musia should preserve the lyric intent and ask the AI layer to polish only where singability requires it.
 
 ### Level 3: Lyrics Plus Chords
 
 Use this when the user has lyrics and harmonic direction.
 
 ```bash
-musai plan \
+musia plan \
   --title "Chord Demo" \
   --lyrics-file lyrics.txt \
   --chords "Dm | Bb | F | C" \
@@ -248,7 +248,7 @@ Expected artifacts include a production brief, chord notes, lyrics draft, and ba
 Use this when the user has melody, numbered notation, staff notes, a hook rhythm, or a friend’s singing sketch.
 
 ```bash
-musai plan \
+musia plan \
   --title "Melody Controlled Demo" \
   --lyrics-file lyrics.txt \
   --melody "slow rising four-note hook, then a falling answer phrase" \
@@ -273,7 +273,7 @@ sheet / numbered notation / jianpu
 Use this when the user provides an example recording, a rough voice memo, or a friend’s demo.
 
 ```bash
-musai plan \
+musia plan \
   --title "Reference Controlled Demo" \
   --idea "Keep the feeling of this demo but improve it" \
   --reference-audio /path/to/demo.m4a \
@@ -283,14 +283,14 @@ musai plan \
   --provider deepseek
 ```
 
-Musai analyzes the reference first, then uses the result to create a better generation plan.
+Musia analyzes the reference first, then uses the result to create a better generation plan.
 
 ## Short Singing Verse With SoulX
 
 Use this when the target is a short sung vocal, a hook, or music for a short film.
 
 ```bash
-musai soulx-verse \
+musia soulx-verse \
   --title "Rain Day" \
   --idea "A tender rainy-day musical short film verse mixing Mandarin Chinese and simple English words" \
   --provider deepseek
@@ -368,7 +368,7 @@ Current practical route:
 1. Analyze the source:
 
 ```bash
-musai pipeline /path/to/licensed-song.wav \
+musia pipeline /path/to/licensed-song.wav \
   --run-name licensed-song-analysis \
   --language en \
   --demucs-device cuda
@@ -377,7 +377,7 @@ musai pipeline /path/to/licensed-song.wav \
 2. Create a localization project:
 
 ```bash
-musai plan \
+musia plan \
   --title "Licensed Song Chinese Version" \
   --reference-audio /path/to/licensed-song.wav \
   --target-language zh-CN \
@@ -421,7 +421,7 @@ stable-audio-tools
 Practical current route:
 
 ```bash
-musai plan \
+musia plan \
   --title "Original Full Song" \
   --idea "A cinematic rainy day song with a hopeful chorus" \
   --generation-mode full_production \
@@ -438,12 +438,12 @@ BRIEF.md
 
 For production quality, keep every candidate as an artifact and run listening checks before accepting it.
 
-## Musai Studio
+## Musia Studio
 
 Start the web studio:
 
 ```bash
-musai studio --tmux
+musia studio --tmux
 ```
 
 Current URL:
@@ -474,7 +474,7 @@ Use the worker mode when the task needs file edits, artifact registration, or lo
 
 ## Artifact Contract
 
-Every serious Musai run should preserve:
+Every serious Musia run should preserve:
 
 ```text
 manifest.json
@@ -539,7 +539,7 @@ Before accepting an output:
 Core local setup:
 
 ```bash
-scripts/bootstrap_musai.sh
+scripts/bootstrap_musia.sh
 ```
 
 Download or refresh staged model repos:
@@ -569,9 +569,9 @@ scripts/setup_and_smoke_test.sh
 scripts/test_open_songs_matrix.sh
 ```
 
-## What Musai Can Do Now
+## What Musia Can Do Now
 
-Musai can currently:
+Musia can currently:
 
 - analyze songs into stems, lyrics, beats, chords, and reports;
 - create structured song briefs from ideas, lyrics, chords, melody, and reference audio;
@@ -579,11 +579,11 @@ Musai can currently:
 - prepare strict localization projects for licensed source songs;
 - route AI refinement through DeepSeek/OpenAI/Codex;
 - expose this through both CLI and a local web studio;
-- package the CLI/web wrapper through npm as `@lazyingart/musai`.
+- package the CLI/web wrapper through npm as `@lazyingart/musia`.
 
 ## What Still Needs Care
 
-Musai is powerful but not magic. These areas still need careful engineering and listening:
+Musia is powerful but not magic. These areas still need careful engineering and listening:
 
 - long-form SoulX verse/chorus metadata needs better note design and manual correction tools;
 - full-song generation backends need more reliable wrappers and QA;
@@ -591,5 +591,5 @@ Musai is powerful but not magic. These areas still need careful engineering and 
 - strict song localization needs better phrase-level timing and lyric alignment;
 - commercial/public releases need rights, license, and voice-consent checks.
 
-The important direction is correct: Musai turns music work into editable, inspectable artifacts, so creating a song becomes more like iterating on text or code.
+The important direction is correct: Musia turns music work into editable, inspectable artifacts, so creating a song becomes more like iterating on text or code.
 

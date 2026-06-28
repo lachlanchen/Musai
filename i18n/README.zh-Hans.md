@@ -2,7 +2,7 @@
 
 [![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-# Musai
+# Musia
 
 *AI 歌曲本地化：从歌曲中提取人声、分轨、歌词、节拍与和弦，并为可演唱的多语言重唱打基础。*
 
@@ -11,7 +11,7 @@
 [![CUDA](https://img.shields.io/badge/CUDA-tested-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](../references/local-setup-and-test-report.md)
 [![Sponsor](https://img.shields.io/badge/Sponsor-lachlanchen-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 
-Musai 是一个本地优先的 AI 音乐本地化研究原型。当前 MVP 接收一首输入歌曲，分离出 Demucs 的四个分轨 `bass`、`drums`、`vocals`、`other`，生成 `instrumental` 伴奏混音，把人声别名为 `human_sound`，并输出歌词转写、节拍和类似 Chordify 的和弦片段。
+Musia 是一个本地优先的 AI 音乐本地化研究原型。当前 MVP 接收一首输入歌曲，分离出 Demucs 的四个分轨 `bass`、`drums`、`vocals`、`other`，生成 `instrumental` 伴奏混音，把人声别名为 `human_sound`，并输出歌词转写、节拍和类似 Chordify 的和弦片段。
 
 | Donate | PayPal | Stripe |
 | --- | --- | --- |
@@ -40,21 +40,21 @@ input song
 
 | Path | Purpose |
 | --- | --- |
-| [`musai/`](../musai/) | 本地 Python 分析工具包。 |
-| [`scripts/bootstrap_musai.sh`](../scripts/bootstrap_musai.sh) | 创建 conda 环境并安装本地栈。 |
+| [`musia/`](../musia/) | 本地 Python 分析工具包。 |
+| [`scripts/bootstrap_musia.sh`](../scripts/bootstrap_musia.sh) | 创建 conda 环境并安装本地栈。 |
 | [`scripts/download_open_songs.py`](../scripts/download_open_songs.py) | 下载自由/开放测试歌曲。 |
 | [`scripts/run_pipeline.py`](../scripts/run_pipeline.py) | 运行分轨、转写、节拍、和弦与报告生成。 |
 | [`scripts/install_research_repos.sh`](../scripts/install_research_repos.sh) | 将可选研究仓库浅克隆到 `third_party/`。 |
-| [`scripts/musai_lyricfit_openai.py`](../scripts/musai_lyricfit_openai.py) | 可选的 OpenAI 歌词适配辅助脚本。 |
+| [`scripts/musia_lyricfit_openai.py`](../scripts/musia_lyricfit_openai.py) | 可选的 OpenAI 歌词适配辅助脚本。 |
 | [`references/`](../references/) | 架构、深度研究和本地安装记录。 |
 | [`TODO.md`](../TODO.md) | 构建清单与后续工程任务。 |
 
 ## 快速开始
 
 ```bash
-bash scripts/bootstrap_musai.sh
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --id danny-boy-1917
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
+bash scripts/bootstrap_musia.sh
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/download_open_songs.py --id danny-boy-1917
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny --max-duration 45 --asr-model tiny
 ```
 
 结果会写入：
@@ -70,7 +70,7 @@ data/runs/<run-name>/
 在配有 NVIDIA RTX 4090 D 的机器上，使用 Wikimedia Commons 开放录音完成了本地烟雾测试：
 
 ```bash
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/run_pipeline.py data/open_songs/danny-boy-1917/original.ogg --run-name smoke-danny-120-fixed --max-duration 120 --asr-model base.en --language en --demucs-device cuda
 ```
 
 记录结果：
@@ -86,7 +86,7 @@ PYTHONNOUSERSITE=1 conda run -n musai python scripts/run_pipeline.py data/open_s
 
 ## 架构方向
 
-Musai 不只是翻译加 TTS。目标完整流程是：
+Musia 不只是翻译加 TTS。目标完整流程是：
 
 ```text
 song upload
@@ -106,18 +106,18 @@ song upload
 
 ## 引用
 
-如果在研究中使用 Musai，请引用本仓库。GitHub 会读取 [`CITATION.cff`](../CITATION.cff)，并在仓库页面显示 **Cite this repository**。
+如果在研究中使用 Musia，请引用本仓库。GitHub 会读取 [`CITATION.cff`](../CITATION.cff)，并在仓库页面显示 **Cite this repository**。
 
 ```bibtex
-@software{chen_musai_2026,
+@software{chen_musia_2026,
   author = {Chen, Lachlan},
-  title = {Musai: Local-first AI song localization and music analysis},
+  title = {Musia: Local-first AI song localization and music analysis},
   year = {2026},
-  url = {https://github.com/lachlanchen/Musai}
+  url = {https://github.com/lachlanchen/Musia}
 }
 ```
 
 ## 状态
 
-Musai 仍是早期研究软件。本地流水线可以用于测试和生成分析产物，但和弦检测器仍是轻量基线，真正可演唱的重唱层尚未达到生产状态。请使用自有歌曲、公版歌曲、已授权歌曲或创作者上传的材料。
+Musia 仍是早期研究软件。本地流水线可以用于测试和生成分析产物，但和弦检测器仍是轻量基线，真正可演唱的重唱层尚未达到生产状态。请使用自有歌曲、公版歌曲、已授权歌曲或创作者上传的材料。
 

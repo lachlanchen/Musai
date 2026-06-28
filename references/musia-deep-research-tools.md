@@ -1,6 +1,6 @@
-# Deep research: tools for **Musai**
+# Deep research: tools for **Musia**
 
-For **Musai**, the best architecture is **not one model**. It should be a modular AI music-localization pipeline:
+For **Musia**, the best architecture is **not one model**. It should be a modular AI music-localization pipeline:
 
 ```text
 song upload
@@ -48,7 +48,7 @@ original song → vocal stem + accompaniment stem
 
 | Tool                            | Use case                        | Comment                                      |
 | ------------------------------- | ------------------------------- | -------------------------------------------- |
-| **Demucs**                      | Main default                    | Best open-source default for Musai           |
+| **Demucs**                      | Main default                    | Best open-source default for Musia           |
 | **Spleeter**                    | Fast baseline                   | Older, simple, useful for quick tests        |
 | **UVR / MDX / Roformer models** | Better stem quality experiments | Good for comparing separation quality        |
 | **AudioSep**                    | Text-guided separation          | Interesting research direction, not MVP core |
@@ -105,13 +105,13 @@ you need cheaper / faster ASR inference
 
 ### Recommendation
 
-For Musai v1:
+For Musia v1:
 
 ```text
 WhisperX → word-level timing
 ```
 
-For Musai v2:
+For Musia v2:
 
 ```text
 WhisperX → lyric text
@@ -179,7 +179,7 @@ RMVPE tells you **how the singer actually moved**. Basic Pitch gives you a clean
 
 ## 4. Singable lyric adaptation
 
-This is the heart of Musai.
+This is the heart of Musia.
 
 Do **not** do simple translation:
 
@@ -252,12 +252,12 @@ Then score each candidate.
 
 ### Recommendation
 
-Build your own **Lyric Adaptation Engine**. This should be one of Musai’s core inventions.
+Build your own **Lyric Adaptation Engine**. This should be one of Musia’s core inventions.
 
 Name it internally:
 
 ```text
-Musai LyricFit
+Musia LyricFit
 ```
 
 ---
@@ -273,7 +273,7 @@ A. Preserve original melody and generate new singing
 B. Generate a full new song from lyrics
 ```
 
-For Musai, strategy **A** is better.
+For Musia, strategy **A** is better.
 
 ---
 
@@ -329,17 +329,17 @@ DiffSinger is an official PyTorch implementation of a diffusion-based singing vo
 
 ### Recommendation
 
-For Musai v1:
+For Musia v1:
 
 ```text
 YingMusic-Singer-Plus first
 SoulX-Singer second
 ```
 
-For Musai v2:
+For Musia v2:
 
 ```text
-Train / fine-tune your own Musai singer model
+Train / fine-tune your own Musia singer model
 ```
 
 ---
@@ -353,7 +353,7 @@ Singing synthesis = create the new sung performance
 Voice conversion = change the timbre of an existing sung performance
 ```
 
-Voice conversion alone cannot solve Musai. It can make a Chinese sung vocal sound like a target voice, but it does not automatically create good Chinese singing.
+Voice conversion alone cannot solve Musia. It can make a Chinese sung vocal sound like a target voice, but it does not automatically create good Chinese singing.
 
 ### Useful tools
 
@@ -371,7 +371,7 @@ RVC’s repo says it can train a good voice conversion model with relatively sma
 For v1, avoid cloning famous singers. Use:
 
 ```text
-default Musai voices
+default Musia voices
 user-consented creator voice
 licensed voice library
 ```
@@ -422,7 +422,7 @@ Use it as:
 “rewrite as new song mode”
 ```
 
-Your main Musai promise should remain:
+Your main Musia promise should remain:
 
 ```text
 same song feeling → new language performance
@@ -576,7 +576,7 @@ For v1, I would build web first. Audio generation is heavy, and web makes iterat
 
 ## 11. Backend and job system
 
-Musai is a long-running GPU workflow, so you need a job queue.
+Musia is a long-running GPU workflow, so you need a job queue.
 
 ### Recommended backend
 
@@ -595,29 +595,29 @@ FastAPI is a Python API framework built around type hints and high-performance A
 ### Recommended service split
 
 ```text
-musai-api
+musia-api
   FastAPI app
   handles auth, projects, uploads, lyrics, job status
 
-musai-worker-separation
+musia-worker-separation
   Demucs / separation models
 
-musai-worker-asr
+musia-worker-asr
   WhisperX / faster-whisper
 
-musai-worker-melody
+musia-worker-melody
   RMVPE / Basic Pitch
 
-musai-worker-lyrics
+musia-worker-lyrics
   LLM lyric adaptation + constraint scoring
 
-musai-worker-singing
+musia-worker-singing
   YingMusic-Singer-Plus / SoulX-Singer
 
-musai-worker-mixing
+musia-worker-mixing
   FFmpeg / pedalboard / loudness normalization
 
-musai-web
+musia-web
   Next.js player + editor
 ```
 
@@ -701,17 +701,17 @@ human preference score
 | **FAD / fadtk**          | Audio-generation quality metric |
 | **stable-audio-metrics** | Music/audio generation metrics  |
 | **pyloudnorm**           | Loudness measurement            |
-| **custom lyric scorer**  | Musai-specific quality          |
+| **custom lyric scorer**  | Musia-specific quality          |
 | **human A/B testing**    | Essential for final judgment    |
 
 museval is commonly used for evaluating music source separation with datasets such as MUSDB18. ([GitHub][35]) Frechet Audio Distance tools such as fadtk are used to evaluate generated audio distributions. ([GitHub][36])
 
-### Musai-specific score
+### Musia-specific score
 
 Create your own score:
 
 ```text
-MusaiScore =
+MusiaScore =
   0.25 * meaning_preservation
 + 0.20 * singability
 + 0.15 * syllable_fit
@@ -727,7 +727,7 @@ This score will become your internal quality compass.
 
 ## 14. Legal, rights, and safety tools
 
-This is not optional. Musai touches copyright, derivative works, sound recordings, and voice rights.
+This is not optional. Musia touches copyright, derivative works, sound recordings, and voice rights.
 
 A translated lyric or musical arrangement can be treated as a derivative work under U.S. copyright concepts; the U.S. Copyright Office lists translations and musical arrangements as examples of derivative works. ([U.S. Copyright Office][37]) Hong Kong also protects musical works, sound recordings, and performers’ performances. ([HKRRLS][38]) Spotify’s current AI policies also target unauthorized AI voice clones and artist impersonation; its support page says music that impersonates an artist’s voice without permission may be removed. ([Spotify][39])
 
@@ -779,7 +779,7 @@ Use this first:
 | Separation           | **Demucs**                             |
 | ASR                  | **WhisperX + faster-whisper**          |
 | Melody               | **RMVPE + Basic Pitch**                |
-| Lyric adaptation     | **LLM + Musai LyricFit custom scorer** |
+| Lyric adaptation     | **LLM + Musia LyricFit custom scorer** |
 | Chinese processing   | **pypinyin + jieba**                   |
 | Singing              | **YingMusic-Singer-Plus**              |
 | Backup singing model | **SoulX-Singer**                       |
@@ -833,7 +833,7 @@ Avoid these traps:
 
 The strongest positioning is:
 
-## **Musai — AI song localization**
+## **Musia — AI song localization**
 
 Not “song translation.”
 
@@ -858,9 +858,9 @@ And the first serious product should be:
 
 ```text
 creator uploads their own song
-Musai adapts it into Chinese
+Musia adapts it into Chinese
 creator edits lyrics phrase by phrase
-Musai regenerates selected lines
+Musia regenerates selected lines
 creator exports a licensed localized version
 ```
 

@@ -1,6 +1,6 @@
 # Fun Player Redesign - 2026-06-28
 
-This pass simplified `fun.lazying.art` into a bright default media page for songs, localized songs, MVs, short films, and future Musai/LALACHAN media.
+This pass simplified `fun.lazying.art` into a bright default media page for songs, localized songs, MVs, short films, and future Musia/LALACHAN media.
 
 Default visual media should use a 16:9 poster. Square album-cover assets may still be used for thumbnails or music-library compatibility, but the player hero and share image should prefer the 16:9 poster.
 
