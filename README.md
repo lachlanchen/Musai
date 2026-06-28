@@ -41,6 +41,8 @@ input song
 | Path | Purpose |
 | --- | --- |
 | [`musai/`](musai/) | Local Python analysis toolkit. |
+| [`SETUP_AND_TEST.md`](SETUP_AND_TEST.md) | Fresh-clone setup, smoke test, matrix test, and script map. |
+| [`scripts/setup_and_smoke_test.sh`](scripts/setup_and_smoke_test.sh) | One-command core setup plus open-song smoke test. |
 | [`scripts/bootstrap_musai.sh`](scripts/bootstrap_musai.sh) | Creates the conda environment and installs the local stack. |
 | [`scripts/download_open_songs.py`](scripts/download_open_songs.py) | Downloads free/open test songs. |
 | [`scripts/run_pipeline.py`](scripts/run_pipeline.py) | Runs separation, transcription, beats, chords, and report generation. |
@@ -59,6 +61,16 @@ input song
 
 ## Quick Start
 
+Fresh clone, setup, and smoke test:
+
+```bash
+git clone https://github.com/lachlanchen/Musai.git
+cd Musai
+bash scripts/setup_and_smoke_test.sh
+```
+
+Manual core commands:
+
 ```bash
 bash scripts/bootstrap_musai.sh
 PYTHONNOUSERSITE=1 conda run -n musai python scripts/download_open_songs.py --id danny-boy-1917
@@ -72,6 +84,8 @@ data/runs/<run-name>/
 ```
 
 Generated audio, downloaded songs, model weights, and third-party clones are ignored by git.
+
+For the full setup/test guide, see [`SETUP_AND_TEST.md`](SETUP_AND_TEST.md).
 
 ## Local Validation
 
