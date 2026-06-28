@@ -85,12 +85,18 @@ h2 {
   color: var(--ink);
 }
 
+.brand-logo,
 .mark {
   width: 44px;
   height: 44px;
   display: grid;
   place-items: center;
   border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 26px rgba(45,143,131,.14);
+}
+
+.mark {
   background: var(--teal);
   color: white;
   font-weight: 900;
@@ -99,6 +105,12 @@ h2 {
 .brand strong,
 .brand small {
   display: block;
+}
+
+.brand strong {
+  font-size: clamp(24px, 3.6vw, 34px);
+  letter-spacing: 0;
+  line-height: .9;
 }
 
 .brand small,
@@ -152,6 +164,41 @@ h2 {
 }
 
 .header-search input:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 4px rgba(45,143,131,.12);
+}
+
+.vocal-select-wrap {
+  position: relative;
+}
+
+.vocal-select-wrap::after {
+  content: "⌄";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  pointer-events: none;
+  color: var(--muted);
+  transform: translateY(-52%);
+  font-weight: 900;
+}
+
+.vocal-language-select {
+  width: 76px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  appearance: none;
+  background: rgba(255,255,255,.82);
+  color: var(--ink);
+  padding: 0 28px 0 16px;
+  font-size: 13px;
+  font-weight: 900;
+  outline: none;
+  box-shadow: 0 10px 24px rgba(42,38,28,.05);
+}
+
+.vocal-language-select:focus {
   border-color: var(--teal);
   box-shadow: 0 0 0 4px rgba(45,143,131,.12);
 }

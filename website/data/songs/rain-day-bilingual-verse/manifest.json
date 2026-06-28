@@ -3,7 +3,13 @@
   "version": 1,
   "id": "rain-day-bilingual-verse",
   "kind": "song",
-  "title": "Rain Day Trilingual Verse",
+  "title": "Rain Day Verse",
+  "localizedTitles": {
+    "en": "Rain Day Verse",
+    "zh": "雨天短歌",
+    "zh-Hans": "雨天短歌",
+    "ja": "雨の日のヴァース"
+  },
   "artist": "Musai SoulX",
   "subtitle": "Three playable short verse renders with per-language ASR-adjusted lyric timing",
   "description": "A compact rain-day localization demo with separate Mandarin, English, and Japanese short renders. The lyric display follows each selected audio language and uses ASR-adjusted timing instead of one shared English timeline.",
@@ -11,7 +17,7 @@
   "duration": 36.024,
   "canonicalUrl": "https://fun.lazying.art/#rain-day-bilingual-verse",
   "share": {
-    "title": "Rain Day Trilingual Verse - Fun Lazying Art",
+    "title": "Rain Day Verse - Fun Lazying Art",
     "description": "A synced music-localization demo with three singable lyric tracks: English, Japanese with furigana, and Chinese with pinyin.",
     "url": "https://fun.lazying.art/#rain-day-bilingual-verse",
     "image": "assets/covers/rain-day-trilingual-poster-16x9.png",

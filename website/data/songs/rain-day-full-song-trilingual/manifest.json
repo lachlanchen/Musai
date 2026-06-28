@@ -4,6 +4,12 @@
   "id": "rain-day-full-song-trilingual",
   "kind": "song",
   "title": "Rain Day Full Song",
+  "localizedTitles": {
+    "en": "Rain Day Full Song",
+    "zh": "雨夜完整歌",
+    "zh-Hans": "雨夜完整歌",
+    "ja": "雨の日のフルソング"
+  },
   "artist": "Musai ACE-Step",
   "subtitle": "Separate English, Mandarin, and Japanese full-song renders with analysis-tuned lyric timing",
   "description": "A 78-second rainy-day cinematic pop song generated as three separate language versions. The player uses per-language lyric timing from the analysis pass, while the chord row uses the detected musical pulse.",

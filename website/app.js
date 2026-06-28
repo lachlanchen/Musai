@@ -186,8 +186,33 @@ function languageName(trackOrCode) {
 function selectedLyricSummary() {
   const tracks = selectedLyricTracks();
   if (!tracks.length) return "Lyrics";
-  if (tracks.length === state.tracks.length) return "All languages";
+  if (tracks.length === state.tracks.length) return "Lyrics";
   return tracks.map(languageName).join(" · ");
+}
+
+function languageKey(code) {
+  const value = String(code || "").toLowerCase();
+  if (value.startsWith("zh")) return "zh";
+  if (value.startsWith("ja")) return "ja";
+  if (value.startsWith("en")) return "en";
+  return value;
+}
+
+function languageShortLabel(code) {
+  const key = languageKey(code);
+  return { en: "EN", zh: "ZH", ja: "JP" }[key] || String(code || "LANG").slice(0, 3).toUpperCase();
+}
+
+function displayTitleForAsset(asset = activePlayableAsset()) {
+  const titles = state.manifest?.localizedTitles || {};
+  const code = asset?.languageCode || activeTimingTrack()?.language?.code || "";
+  return titles[code] || titles[languageKey(code)] || state.manifest?.title || "Fun Lazying Art";
+}
+
+function updateMediaTitle() {
+  const title = displayTitleForAsset();
+  $("media-title").textContent = title;
+  document.title = `${title} - Fun Lazying Art`;
 }
 
 function lineForTrack(track, lineId) {
@@ -338,6 +363,8 @@ function setMediaSource(asset, keepTime = false) {
     $("play").title = "Use the embedded player controls";
     $("play-symbol").textContent = "▶";
     renderAssetSwitcher();
+    renderVocalLanguageSelect();
+    updateMediaTitle();
     updateSync();
     return;
   }
@@ -353,6 +380,8 @@ function setMediaSource(asset, keepTime = false) {
   if (keepTime) state.mediaElement.currentTime = Math.min(previousTime, (state.manifest.duration || previousTime) - 0.1);
   if (wasPlaying) state.mediaElement.play();
   renderAssetSwitcher();
+  renderVocalLanguageSelect();
+  updateMediaTitle();
   updateSync();
 }
 
@@ -405,6 +434,22 @@ function renderAssetSwitcher() {
       if (asset) setMediaSource(asset, true);
     });
   });
+}
+
+function renderVocalLanguageSelect() {
+  const wrap = $("vocal-language-select")?.closest(".vocal-select-wrap");
+  const select = $("vocal-language-select");
+  if (!wrap || !select) return;
+  const assets = playableAssets(state.manifest).filter((asset) => asset.languageCode);
+  wrap.hidden = assets.length < 2;
+  if (assets.length < 2) {
+    select.innerHTML = "";
+    return;
+  }
+  select.innerHTML = assets.map((asset) => `
+    <option value="${escapeHtml(asset.id)}">${escapeHtml(languageShortLabel(asset.languageCode))}</option>
+  `).join("");
+  select.value = state.activeAssetId || assets[0].id;
 }
 
 function renderLanguageButtons() {
@@ -648,6 +693,11 @@ function bindEvents() {
     setLibraryOpen(true);
     renderLibrary();
   });
+  $("vocal-language-select").addEventListener("change", () => {
+    const assets = playableAssets(state.manifest);
+    const asset = assets.find((item) => item.id === $("vocal-language-select").value);
+    if (asset) setMediaSource(asset, true);
+  });
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       setLibraryOpen(false);
@@ -685,7 +735,7 @@ async function loadMediaItem(item, updateHash = false) {
   const musical = state.manifest.musical || {};
   $("kind-label").textContent = labelKind(state.manifest.kind);
   $("media-title").textContent = state.manifest.title;
-  $("media-subtitle").textContent = state.manifest.subtitle || state.manifest.description || "";
+  $("media-subtitle").textContent = "";
   $("media-caption").textContent = state.manifest.caption || labelKind(state.manifest.kind);
   $("key-label").textContent = musical.key || "No key";
   $("bpm-label").textContent = musical.bpm ? `${musical.bpm} BPM` : "No BPM";

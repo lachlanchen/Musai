@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import mimetypes
 import sys
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -41,6 +42,7 @@ PAGE = """<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Musai Studio</title>
+  <link rel="icon" href="/assets/brand/fun-lazying-art-logo-192.png" type="image/png">
   <style>
     :root {
       color-scheme: light;
@@ -119,8 +121,10 @@ PAGE = """<!doctype html>
       border-bottom: 1px solid rgba(15,23,42,.08);
     }
     .brand { display: flex; gap: 12px; align-items: center; min-width: 220px; }
-    .mark { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 16px; background: linear-gradient(135deg, var(--rose), var(--violet), var(--teal)); color: #fff; font-weight: 950; }
+    .brand-logo, .mark { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 16px; object-fit: cover; box-shadow: 0 12px 30px rgba(21,163,148,.16); }
+    .mark { background: linear-gradient(135deg, var(--rose), var(--violet), var(--teal)); color: #fff; font-weight: 950; }
     .brand strong, .brand span { display: block; }
+    .brand strong { font-size: clamp(22px, 2.6vw, 32px); line-height: .92; letter-spacing: 0; }
     .brand span, .muted, .small { color: var(--muted); }
     .small { font-size: 13px; }
     .workspace-line { display: grid; grid-template-columns: minmax(260px, 1fr) auto auto; gap: 10px; align-items: center; }
@@ -232,8 +236,8 @@ PAGE = """<!doctype html>
 <body>
   <header class="topbar">
     <div class="brand">
-      <div class="mark">M</div>
-      <div><strong>Musai Studio</strong><span>music creation and localization workspace</span></div>
+      <img class="brand-logo" src="/assets/brand/fun-lazying-art-logo-192.png" alt="" width="46" height="46">
+      <div><strong>Musai Studio</strong></div>
     </div>
     <div class="workspace-line">
       <input id="working-dir" aria-label="Working directory" placeholder="/path/to/music-folder">
@@ -718,6 +722,8 @@ class Handler(BaseHTTPRequestHandler):
         try:
             if path == "/":
                 self.send_text(PAGE, "text/html; charset=utf-8")
+            elif path.startswith("/assets/"):
+                self.serve_website_asset(path)
             elif path == "/api/setup":
                 self.send_json(setup_status())
             elif path == "/api/settings":
@@ -895,6 +901,20 @@ class Handler(BaseHTTPRequestHandler):
             return
         content_type = "text/markdown; charset=utf-8" if target.suffix == ".md" else "text/plain; charset=utf-8"
         self.send_text(target.read_text(encoding="utf-8"), content_type)
+
+    def serve_website_asset(self, path: str) -> None:
+        parts = [unquote(part) for part in path.split("/") if part]
+        rel = Path(*parts)
+        base = (ROOT / "website").resolve()
+        target = (base / rel).resolve()
+        if base not in target.parents and target != base:
+            self.send_text("invalid path", status=HTTPStatus.BAD_REQUEST)
+            return
+        if not target.exists() or not target.is_file():
+            self.send_text("not found", status=HTTPStatus.NOT_FOUND)
+            return
+        content_type = mimetypes.guess_type(str(target))[0] or "application/octet-stream"
+        self.send_bytes(target.read_bytes(), content_type)
 
     def serve_artifact_file(self, session_id: str, artifact_id: str) -> None:
         data = get_artifact(session_id, artifact_id)

@@ -11,7 +11,7 @@
     {
       "id": "rain-day-bilingual-verse",
       "kind": "song",
-      "title": "Rain Day Trilingual Verse",
+      "title": "Rain Day Verse",
       "artist": "Musai SoulX / ACE-Step",
       "summary": "A short rain-day verse with separate Chinese, English, and Japanese playable renders plus per-language ASR-adjusted lyric timing.",
       "manifest": "data/songs/rain-day-bilingual-verse/manifest.json",
