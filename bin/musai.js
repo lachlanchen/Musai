@@ -21,7 +21,8 @@ const PY_COMMANDS = new Set([
   "chat",
   "jobs",
   "job",
-  "artifacts"
+  "artifacts",
+  "soulx-verse"
 ]);
 
 function usage() {
@@ -42,6 +43,7 @@ Creative CLI:
   musai plan --title "Vocal" --generation-mode free_vocal --lyrics "..."
   musai plan --title "Controlled" --generation-mode controlled_song --control-level melody_sheet --melody "..."
   musai plan --title "Licensed CN Version" --generation-mode localization --control-level strict_localization --rights-confirmed --target-language zh-CN --reference-audio song.wav
+  musai soulx-verse --title "Rain Day" --idea "A rainy bilingual musical short film verse"
   musai chat --mode chat "What should I do next?"
   musai chat --mode worker "Analyze this song and register artifacts."
   musai sessions

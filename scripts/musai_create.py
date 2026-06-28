@@ -11,6 +11,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from musai.creative import CreativeMaterials, create_project, list_projects, load_project, MODEL_REGISTRY
+from musai.soulx_verse import SoulXVerseRequest, generate_soulx_verse
 from musai.studio import (
     artifact_payload,
     create_session,
@@ -164,6 +165,29 @@ def cmd_artifacts(args: argparse.Namespace) -> None:
         print(f"{selected} {item.get('id')}  {item.get('kind')}  {item.get('tab')}  {item.get('title')}  {item.get('filename')}")
 
 
+def cmd_soulx_verse(args: argparse.Namespace) -> None:
+    lyrics = args.lyrics or read_file_arg(args.lyrics_file)
+    request = SoulXVerseRequest(
+        title=args.title,
+        idea=args.idea or "A bilingual rainy-day verse in Chinese and English.",
+        lyrics=lyrics,
+        output_dir=args.output_dir or "",
+        provider=args.provider,
+        model=args.model or "",
+        refine=not args.no_refine,
+        run_soulx=not args.skip_soulx,
+        prompt_wav=args.prompt_wav or "",
+        prompt_metadata=args.prompt_metadata or "",
+        control=args.control,
+        device=args.device,
+        pitch_shift=args.pitch_shift,
+        bpm=args.bpm,
+        key=args.key,
+    )
+    result = generate_soulx_verse(request)
+    print(json.dumps(result.__dict__, indent=2, ensure_ascii=False))
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Musai creative song CLI: idea/lyrics/chords/reference audio to model-ready song projects.")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -210,6 +234,25 @@ def build_parser() -> argparse.ArgumentParser:
     artifacts.add_argument("session_id")
     artifacts.add_argument("--read", help="Artifact id to read as JSON payload.")
     artifacts.set_defaults(func=cmd_artifacts)
+
+    soulx_verse = sub.add_parser("soulx-verse", help="Generate a bilingual SoulX verse with lyrics, melody, vocal, and mix artifacts.")
+    soulx_verse.add_argument("--title", default="Rain Day Bilingual Verse")
+    soulx_verse.add_argument("--idea", default="A gentle rainy-day verse in Chinese and English.")
+    soulx_verse.add_argument("--lyrics", help="Optional lyric lines. If omitted, Musai creates a rainy-day bilingual verse.")
+    soulx_verse.add_argument("--lyrics-file")
+    soulx_verse.add_argument("--output-dir", help="Output directory. Default: data/soulx_verses/<timestamp-title>.")
+    soulx_verse.add_argument("--provider", choices=["deepseek", "openai", "offline"], default="deepseek")
+    soulx_verse.add_argument("--model")
+    soulx_verse.add_argument("--no-refine", action="store_true", help="Skip AI lyric refinement and use provided/default lyrics.")
+    soulx_verse.add_argument("--skip-soulx", action="store_true", help="Only write lyrics, metadata, melody guide, and handoff.")
+    soulx_verse.add_argument("--prompt-wav", help="SoulX prompt wav/mp3. Default: bundled zh_prompt.mp3.")
+    soulx_verse.add_argument("--prompt-metadata", help="SoulX prompt metadata JSON. Default: bundled zh_prompt.json.")
+    soulx_verse.add_argument("--control", choices=["score", "melody"], default="score")
+    soulx_verse.add_argument("--device", default="cuda")
+    soulx_verse.add_argument("--pitch-shift", type=int, default=0)
+    soulx_verse.add_argument("--bpm", type=int, default=78)
+    soulx_verse.add_argument("--key", default="D minor")
+    soulx_verse.set_defaults(func=cmd_soulx_verse)
 
     plan = sub.add_parser("plan", help="Create a song project brief and backend commands.")
     plan.add_argument("--title", required=True)

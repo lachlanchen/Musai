@@ -1,6 +1,6 @@
 {
   "name": "@lazyingart/musai",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Local-first AI song localization studio: CLI, webapp, stems, lyrics, beats, chords, and creative music workflows.",
   "keywords": [
     "ai-music",

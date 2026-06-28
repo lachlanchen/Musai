@@ -18,6 +18,7 @@ dependencies:
       - requests
       - openai
       - pypinyin
+      - g2p_en
       - jieba
       - phonemizer
       - pedalboard

@@ -14,6 +14,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from musai.creative import CreativeMaterials, MODEL_REGISTRY, PROJECTS_ROOT, create_project, list_projects
+from musai.soulx_verse import SoulXVerseRequest, generate_soulx_verse
 from musai.studio import (
     artifact_payload,
     create_session,
@@ -172,6 +173,24 @@ PAGE = """<!doctype html>
             <label style="margin:0; font-weight:600"><input id="project-voice-consent" type="checkbox" style="width:auto"> Voice consent</label>
             <button id="create-project">Create</button>
             <span id="project-status" class="small muted"></span>
+          </div>
+        </details>
+
+        <details class="project-form">
+          <summary><strong>SoulX Verse</strong></summary>
+          <div class="grid2">
+            <div><label>Title</label><input id="verse-title" value="Rain Day Bilingual Verse"></div>
+            <div><label>Provider</label><select id="verse-provider"><option>deepseek</option><option>openai</option><option>offline</option></select></div>
+            <div><label>Model</label><input id="verse-model" placeholder="deepseek-reasoner or gpt-5.5"></div>
+            <div><label>Device</label><input id="verse-device" value="cuda"></div>
+          </div>
+          <label>Idea</label><textarea id="verse-idea">A gentle rainy-day musical short film verse in Chinese and English.</textarea>
+          <label>Lyrics</label><textarea id="verse-lyrics" placeholder="Optional. Leave empty and Musai will create bilingual rainy-day lyrics."></textarea>
+          <div class="row" style="margin-top:8px">
+            <label style="margin:0; font-weight:600"><input id="verse-refine" type="checkbox" checked style="width:auto"> AI refine</label>
+            <label style="margin:0; font-weight:600"><input id="verse-run-soulx" type="checkbox" checked style="width:auto"> Run SoulX</label>
+            <button id="generate-soulx-verse">Generate Verse</button>
+            <span id="verse-status" class="small muted"></span>
           </div>
         </details>
       </div>
@@ -346,6 +365,36 @@ async function createProject() {
   }
 }
 
+async function createSoulXVerse() {
+  $("verse-status").textContent = "generating...";
+  $("generate-soulx-verse").disabled = true;
+  try {
+    const payload = {
+      session_id: state.sessionId,
+      title: $("verse-title").value,
+      provider: $("verse-provider").value,
+      model: $("verse-model").value,
+      device: $("verse-device").value,
+      idea: $("verse-idea").value,
+      lyrics: $("verse-lyrics").value,
+      refine: $("verse-refine").checked,
+      run_soulx: $("verse-run-soulx").checked
+    };
+    const result = await api("/api/soulx/verse", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(payload)
+    });
+    state.sessionId = result.session_id || state.sessionId;
+    $("verse-status").textContent = `created ${result.output_dir}`;
+    await refreshSession();
+  } catch (err) {
+    $("verse-status").textContent = err.message;
+  } finally {
+    $("generate-soulx-verse").disabled = false;
+  }
+}
+
 async function loadJobs() {
   if (!state.sessionId) return;
   const jobs = await api(`/api/jobs?session_id=${encodeURIComponent(state.sessionId)}`);
@@ -421,6 +470,7 @@ $("send-chat").onclick = () => send("chat");
 $("send-worker").onclick = () => send("worker");
 $("send-auto").onclick = () => send("auto");
 $("create-project").onclick = createProject;
+$("generate-soulx-verse").onclick = createSoulXVerse;
 $("refresh-artifacts").onclick = loadArtifacts;
 document.querySelectorAll(".tabs button").forEach(button => {
   button.onclick = () => {
@@ -543,6 +593,8 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_json(select_artifact(str(payload.get("session_id") or ""), str(payload.get("artifact_id") or "")))
             elif path == "/api/projects":
                 self.handle_create_project(payload)
+            elif path == "/api/soulx/verse":
+                self.handle_soulx_verse(payload)
             else:
                 self.send_text("not found", status=HTTPStatus.NOT_FOUND)
         except Exception as exc:
@@ -581,6 +633,38 @@ class Handler(BaseHTTPRequestHandler):
             analyze_reference=bool(payload.get("analyze_reference")),
         )
         self.send_json(json.loads(Path(project.root, "project.json").read_text(encoding="utf-8")), HTTPStatus.CREATED)
+
+    def handle_soulx_verse(self, payload: dict[str, object]) -> None:
+        request = SoulXVerseRequest(
+            title=str(payload.get("title") or "Rain Day Bilingual Verse"),
+            idea=str(payload.get("idea") or "A gentle rainy-day verse in Chinese and English."),
+            lyrics=str(payload.get("lyrics") or ""),
+            provider=str(payload.get("provider") or "deepseek"),
+            model=str(payload.get("model") or ""),
+            refine=bool(payload.get("refine", True)),
+            run_soulx=bool(payload.get("run_soulx", True)),
+            device=str(payload.get("device") or "cuda"),
+        )
+        result = generate_soulx_verse(request)
+        session_id = str(payload.get("session_id") or "")
+        artifacts: list[dict[str, object]] = []
+        if session_id:
+            artifacts.append(
+                register_artifact(session_id, "SoulX verse mix", path=result.mix_wav, kind="audio", source="soulx-verse", tab="canvas", selected=True)
+            )
+            artifacts.append(
+                register_artifact(session_id, "SoulX verse vocal", path=result.vocal_wav, kind="audio", source="soulx-verse", tab="canvas")
+            )
+            artifacts.append(
+                register_artifact(session_id, "SoulX verse melody", path=result.melody_wav, kind="audio", source="soulx-verse", tab="canvas")
+            )
+            artifacts.append(
+                register_artifact(session_id, "SoulX verse lyrics", path=result.lyrics_md, kind="markdown", source="soulx-verse", tab="editor")
+            )
+            artifacts.append(
+                register_artifact(session_id, "LALACHAN music handoff", path=result.handoff, kind="markdown", source="soulx-verse", tab="editor")
+            )
+        self.send_json({**result.__dict__, "session_id": session_id, "artifacts": artifacts}, HTTPStatus.CREATED)
 
     def serve_project_file(self, path: str) -> None:
         parts = [unquote(part) for part in path.split("/") if part]

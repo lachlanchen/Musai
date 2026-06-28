@@ -127,6 +127,7 @@ Useful npm/CLI commands:
 musai setup
 musai models
 musai plan --title "My Song" --idea "A cinematic song about..." --provider deepseek
+musai soulx-verse --title "Rain Day" --idea "A rainy bilingual musical short film verse"
 musai chat --mode chat "What should I do next?"
 musai chat --mode worker "Analyze this project and register artifacts."
 musai pipeline data/open_songs/danny-boy-1917/original.ogg --run-name npm-smoke --max-duration 45
@@ -175,6 +176,7 @@ scripts/start_musai_studio_tmux.sh
 See [`references/musai-creative-studio.md`](references/musai-creative-studio.md).
 
 For the new control-level model and the SoulX vocal-only workflow, see [`references/musai-control-and-soulx-workflow.md`](references/musai-control-and-soulx-workflow.md).
+For original short SoulX verse generation, see [`references/soulx-verse-tool.md`](references/soulx-verse-tool.md) and [`references/lalachan-musai-musical-short-film-handoff.md`](references/lalachan-musai-musical-short-film-handoff.md).
 
 ## Local Validation
 

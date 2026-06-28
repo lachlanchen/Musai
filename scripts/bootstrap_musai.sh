@@ -60,10 +60,14 @@ conda run -n "$ENV_NAME" python -m pip install \
   requests \
   openai \
   pypinyin \
+  g2p_en \
   jieba \
   phonemizer \
   pedalboard \
   pyloudnorm
+
+echo "Installing NLTK data needed by g2p_en."
+conda run -n "$ENV_NAME" python -m nltk.downloader averaged_perceptron_tagger_eng cmudict
 
 if [[ "$WITH_BASIC_PITCH" == "1" ]]; then
   echo "Installing optional Basic Pitch. This may pull TensorFlow and can be heavy."
@@ -71,7 +75,7 @@ if [[ "$WITH_BASIC_PITCH" == "1" ]]; then
 fi
 
 echo "Checking install."
-conda run -n "$ENV_NAME" python -c "import importlib.util, torch; mods=['torch','torchaudio','librosa','soundfile','demucs','faster_whisper','openai','pypinyin','jieba']; [print(f'{m}: {\"ok\" if importlib.util.find_spec(m) else \"missing\"}') for m in mods]; print('torch_cuda_available:', torch.cuda.is_available())"
+conda run -n "$ENV_NAME" python -c "import importlib.util, torch; mods=['torch','torchaudio','librosa','soundfile','demucs','faster_whisper','openai','pypinyin','g2p_en','jieba']; [print(f'{m}: {\"ok\" if importlib.util.find_spec(m) else \"missing\"}') for m in mods]; print('torch_cuda_available:', torch.cuda.is_available())"
 
 cat <<EOF
 
