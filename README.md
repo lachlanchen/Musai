@@ -154,8 +154,10 @@ musai setup
 musai models
 musai plan --title "My Song" --idea "A cinematic song about..." --provider deepseek
 musai soulx-verse --title "Rain Day" --idea "A rainy bilingual musical short film verse"
-musai chat --mode chat "What should I do next?"
-musai chat --mode worker "Analyze this project and register artifacts."
+musai new-session --title "My Song" --cwd ./my-song-folder
+musai chat --cwd ./my-song-folder --mode chat "What should I do next?"
+musai chat --cwd ./my-song-folder --mode worker "Analyze this project and register artifacts."
+musai resume-session <session-id> --cwd ./another-folder
 musai pipeline data/open_songs/danny-boy-1917/original.ogg --run-name npm-smoke --max-duration 45
 npm run pack:dry-run
 ```
@@ -198,6 +200,8 @@ Start the local web app:
 ```bash
 scripts/start_musai_studio_tmux.sh
 ```
+
+Musai Studio and the CLI share sessions. A working folder gets a `.musai/sessions/<session-id>/session.json` pointer, while messages and jobs stay in `data/studio/`, so you can create or resume music sessions from either web or CLI.
 
 See [`references/musai-creative-studio.md`](references/musai-creative-studio.md).
 

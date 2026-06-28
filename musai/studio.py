@@ -26,6 +26,7 @@ SESSION_ROOT = STUDIO_ROOT / "sessions"
 ARTIFACT_ROOT = STUDIO_ROOT / "artifacts"
 JOB_ROOT = STUDIO_ROOT / "jobs"
 SETTINGS_PATH = STUDIO_ROOT / "settings.json"
+PROJECT_SESSION_DIR = Path(".musai") / "sessions"
 
 TEXT_SUFFIXES = {
     ".txt",
@@ -222,29 +223,85 @@ def messages_path(session_id: str) -> Path:
     return session_dir(session_id) / "messages.jsonl"
 
 
-def create_session(title: str = "Musai chat") -> dict[str, Any]:
+def resolve_working_dir(working_dir: str | Path | None = None) -> Path:
+    if working_dir:
+        path = Path(working_dir).expanduser()
+        if not path.is_absolute():
+            path = Path.cwd() / path
+    else:
+        path = ROOT
+    return ensure_dir(path.resolve())
+
+
+def session_pointer_path(working_dir: Path, session_id: str) -> Path:
+    return working_dir / PROJECT_SESSION_DIR / session_id / "session.json"
+
+
+def write_session_pointer(session: dict[str, Any]) -> None:
+    working_dir_text = session.get("working_dir") or str(ROOT)
+    try:
+        working_dir = resolve_working_dir(working_dir_text)
+        pointer = session_pointer_path(working_dir, str(session["id"]))
+        payload = {
+            "id": session["id"],
+            "title": session.get("title", ""),
+            "working_dir": str(working_dir),
+            "session_dir": str(session_dir(str(session["id"])).resolve()),
+            "messages": str(messages_path(str(session["id"])).resolve()),
+            "created_at": session.get("created_at", ""),
+            "updated_at": session.get("updated_at", ""),
+        }
+        write_json(pointer, payload)
+    except Exception:
+        return
+
+
+def update_session_working_dir(session_id: str, working_dir: str | Path | None = None) -> dict[str, Any] | None:
+    session = load_session(session_id)
+    if not session:
+        return None
+    if working_dir:
+        resolved_working_dir = resolve_working_dir(working_dir)
+        session["working_dir"] = str(resolved_working_dir)
+        session["project_session_pointer"] = str(session_pointer_path(resolved_working_dir, session_id))
+        session["updated_at"] = utc_now()
+        write_json(session_dir(session_id) / "session.json", session)
+    else:
+        resolved_working_dir = resolve_working_dir(session.get("working_dir") or ROOT)
+        session["working_dir"] = str(resolved_working_dir)
+        session["project_session_pointer"] = str(session_pointer_path(resolved_working_dir, session_id))
+        write_json(session_dir(session_id) / "session.json", session)
+    write_session_pointer(session)
+    return session
+
+
+def create_session(title: str = "Musai chat", working_dir: str | Path | None = None) -> dict[str, Any]:
     session_id = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S") + "-" + short_id()
     root = ensure_dir(session_dir(session_id))
+    resolved_working_dir = resolve_working_dir(working_dir)
     data = {
         "id": session_id,
         "title": title or "Musai chat",
+        "working_dir": str(resolved_working_dir),
+        "project_session_pointer": str(session_pointer_path(resolved_working_dir, session_id)),
         "created_at": utc_now(),
         "updated_at": utc_now(),
     }
     write_json(root / "session.json", data)
     messages_path(session_id).touch()
+    write_session_pointer(data)
     return data
 
 
-def ensure_session(session_id: str | None = None, title: str = "Musai chat") -> dict[str, Any]:
+def ensure_session(session_id: str | None = None, title: str = "Musai chat", working_dir: str | Path | None = None) -> dict[str, Any]:
     if session_id:
-        existing = load_session(session_id)
+        existing = update_session_working_dir(session_id, working_dir)
         if existing:
             return existing
-    sessions = list_sessions()
+    sessions = list_sessions(working_dir=working_dir)
     if sessions:
         return sessions[0]
-    return create_session(title)
+    return create_session(title, working_dir=working_dir)
 
 
 def load_session(session_id: str) -> dict[str, Any] | None:
@@ -254,15 +311,20 @@ def load_session(session_id: str) -> dict[str, Any] | None:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def list_sessions() -> list[dict[str, Any]]:
+def list_sessions(working_dir: str | Path | None = None) -> list[dict[str, Any]]:
     if not SESSION_ROOT.exists():
         return []
+    resolved_working_dir = str(resolve_working_dir(working_dir)) if working_dir else ""
     sessions: list[dict[str, Any]] = []
     for path in sorted(SESSION_ROOT.glob("*/session.json"), reverse=True):
         try:
             session = json.loads(path.read_text(encoding="utf-8"))
+            session.setdefault("working_dir", str(ROOT))
+            if resolved_working_dir and str(Path(session["working_dir"]).expanduser().resolve()) != resolved_working_dir:
+                continue
             session["message_count"] = len(load_messages(session["id"]))
             session["artifact_count"] = len(list_artifacts(session["id"])["items"])
+            session["project_session_pointer"] = str(session_pointer_path(Path(session["working_dir"]).expanduser().resolve(), session["id"]))
             sessions.append(session)
         except Exception:
             continue
@@ -287,6 +349,7 @@ def append_message(session_id: str, role: str, content: str, profile: str = "", 
     if role == "user" and content and session.get("title") == "Musai chat":
         session["title"] = content[:60]
     write_json(session_dir(session_id) / "session.json", session)
+    write_session_pointer(session)
     return message
 
 
@@ -346,6 +409,15 @@ def allowed_artifact_path(path: Path) -> bool:
         return False
     settings = load_settings()
     roots = [Path(item).expanduser().resolve() for item in settings["artifact_pipe"]["allowed_roots"]]
+    if SESSION_ROOT.exists():
+        for session_json in SESSION_ROOT.glob("*/session.json"):
+            try:
+                session = json.loads(session_json.read_text(encoding="utf-8"))
+                working_dir = Path(session.get("working_dir") or "").expanduser().resolve()
+                if working_dir.exists():
+                    roots.append(working_dir)
+            except Exception:
+                continue
     resolved = path.expanduser().resolve()
     return any(resolved == root or root in resolved.parents for root in roots)
 
@@ -500,15 +572,23 @@ def format_history(messages: list[dict[str, Any]], limit: int = 12) -> str:
     return "\n\n".join(f"{m.get('role', 'unknown').upper()}:\n{m.get('content', '')}" for m in recent)
 
 
+def session_working_dir(session_id: str) -> Path:
+    session = load_session(session_id) or {}
+    return resolve_working_dir(session.get("working_dir") or ROOT)
+
+
 def build_chat_prompt(session_id: str, message: str) -> str:
     history = format_history(load_messages(session_id))
+    working_dir = session_working_dir(session_id)
     return f"""You are Musai Studio Chat, a concise producer-engineer assistant for AI song creation and localization.
 
 Repository: {ROOT}
+Working directory for this session: {working_dir}
 Default chat wrapper: Codex GPT-5.5 medium.
 Default worker wrapper: Codex GPT-5.5 xhigh.
 
 Answer the user directly. For heavy work, recommend or trigger the worker path instead of pretending it ran.
+Use the working directory as the user's music project folder. Read supplied material from that folder when paths are relative.
 Prefer concrete Musai commands, project paths, and quality gates. Do not claim audio was generated unless a file exists.
 Use Musai control language: free_vocal, melody_generation, full_production, controlled_song, localization; and control levels free, lyrics, lyrics_chords, melody_sheet, reference_audio, strict_localization.
 
@@ -522,6 +602,7 @@ Current user message:
 
 def build_worker_prompt(session_id: str, message: str) -> str:
     history = format_history(load_messages(session_id), limit=20)
+    working_dir = session_working_dir(session_id)
     return f"""You are Musai Studio Worker, running through the high-reasoning Codex wrapper.
 
 Goal:
@@ -530,9 +611,13 @@ Handle the user's requested Musai setup, analysis, project creation, artifact ge
 Repository:
 {ROOT}
 
+Session working directory:
+{working_dir}
+
 Rules:
 - Inspect before changing.
 - Prefer existing Musai scripts and repo patterns.
+- Treat the session working directory as the user's music project folder; relative material paths are relative to that folder.
 - Keep raw/private media out of Git unless explicitly requested.
 - For song localization, produce explicit paths for stems, lyrics, beats, chords, vocals, mixes, and QA notes.
 - Route clean vocal-only / human_sound work to SoulX first; route complete instrumental/vocal production to ACE-Step or full-song backends.
@@ -551,7 +636,7 @@ User task:
 """
 
 
-def run_codex_profile(prompt: str, profile: dict[str, Any], output_dir: Path) -> dict[str, Any]:
+def run_codex_profile(prompt: str, profile: dict[str, Any], output_dir: Path, cwd_override: Path | None = None) -> dict[str, Any]:
     ensure_dir(output_dir)
     codex = shutil.which("codex")
     if not codex:
@@ -564,7 +649,8 @@ def run_codex_profile(prompt: str, profile: dict[str, Any], output_dir: Path) ->
     model = profile.get("model") or "gpt-5.5"
     reasoning = profile.get("reasoning") or "medium"
     sandbox = profile.get("sandbox") or "danger-full-access"
-    cwd = Path(profile.get("cwd") or ROOT).expanduser()
+    cwd = cwd_override or Path(profile.get("cwd") or ROOT).expanduser()
+    cwd = resolve_working_dir(cwd)
     cmd = [
         codex,
         "exec",
@@ -636,11 +722,11 @@ def run_api_profile(prompt: str, profile: dict[str, Any]) -> dict[str, Any]:
         return {"status": "error", "answer": str(exc), "model": model_name}
 
 
-def run_profile(prompt: str, profile_name: str, output_dir: Path) -> dict[str, Any]:
+def run_profile(prompt: str, profile_name: str, output_dir: Path, cwd_override: Path | None = None) -> dict[str, Any]:
     profile = profile_settings(profile_name)
     provider = profile.get("provider") or "codex"
     if provider == "codex":
-        return run_codex_profile(prompt, profile, output_dir)
+        return run_codex_profile(prompt, profile, output_dir, cwd_override=cwd_override)
     if provider in {"openai", "deepseek"}:
         return run_api_profile(prompt, profile)
     return {"status": "fallback", "answer": f"Unsupported provider: {provider}"}
@@ -700,8 +786,8 @@ def register_wrapper_artifacts(session_id: str, result: dict[str, Any], source: 
     return registered
 
 
-def send_chat_message(session_id: str | None, message: str, mode: str = "auto") -> dict[str, Any]:
-    session = ensure_session(session_id)
+def send_chat_message(session_id: str | None, message: str, mode: str = "auto", working_dir: str | Path | None = None) -> dict[str, Any]:
+    session = ensure_session(session_id, working_dir=working_dir)
     sid = session["id"]
     append_message(sid, "user", message)
     resolved_mode = router_mode(message, mode)
@@ -717,7 +803,7 @@ def send_chat_message(session_id: str | None, message: str, mode: str = "auto") 
         return {"mode": "worker", "session_id": sid, "job": job, "messages": load_messages(sid)}
     prompt = build_chat_prompt(sid, message)
     output_dir = session_dir(sid) / "wrapper" / short_id()
-    result = run_profile(prompt, "chat", output_dir)
+    result = run_profile(prompt, "chat", output_dir, cwd_override=session_working_dir(sid))
     artifacts = register_wrapper_artifacts(sid, result, "chat")
     append_message(sid, "assistant", result.get("answer") or "", profile="chat", status=result.get("status") or "ok", metadata={"artifacts": artifacts})
     return {"mode": "chat", "session_id": sid, "result": result, "artifacts": artifacts, "messages": load_messages(sid)}
@@ -761,6 +847,7 @@ def create_worker_job(session_id: str, message: str) -> dict[str, Any]:
         "status": "queued",
         "profile": "worker",
         "message": message,
+        "working_dir": str(session_working_dir(session_id)),
         "created_at": utc_now(),
         "updated_at": utc_now(),
         "root": str((JOB_ROOT / job_id).resolve()),
@@ -783,7 +870,7 @@ def run_worker_job(job_id: str) -> None:
     session_id = job["session_id"]
     prompt = build_worker_prompt(session_id, job["message"])
     output_dir = JOB_ROOT / job_id
-    result = run_profile(prompt, "worker", output_dir)
+    result = run_profile(prompt, "worker", output_dir, cwd_override=session_working_dir(session_id))
     artifacts = register_wrapper_artifacts(session_id, result, "worker")
     job["status"] = "completed" if result.get("status") == "ok" else result.get("status", "error")
     job["result"] = result

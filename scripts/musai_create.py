@@ -22,6 +22,7 @@ from musai.studio import (
     load_messages,
     send_chat_message,
     setup_status,
+    update_session_working_dir,
 )
 
 
@@ -100,8 +101,8 @@ def cmd_setup(_: argparse.Namespace) -> None:
     print(json.dumps(setup_status(), indent=2, ensure_ascii=False))
 
 
-def cmd_sessions(_: argparse.Namespace) -> None:
-    sessions = list_sessions()
+def cmd_sessions(args: argparse.Namespace) -> None:
+    sessions = list_sessions(args.cwd or None)
     if not sessions:
         print("No Studio chat sessions yet.")
         return
@@ -110,12 +111,20 @@ def cmd_sessions(_: argparse.Namespace) -> None:
             f"{session.get('id')}  "
             f"{session.get('message_count', 0)} msg  "
             f"{session.get('artifact_count', 0)} art  "
-            f"{session.get('title', '')}"
+            f"{session.get('title', '')}  "
+            f"[{session.get('working_dir', '')}]"
         )
 
 
 def cmd_new_session(args: argparse.Namespace) -> None:
-    session = create_session(args.title)
+    session = create_session(args.title, working_dir=args.cwd or None)
+    print(json.dumps(session, indent=2, ensure_ascii=False))
+
+
+def cmd_resume_session(args: argparse.Namespace) -> None:
+    session = update_session_working_dir(args.session_id, args.cwd or None)
+    if not session:
+        raise SystemExit(f"Session not found: {args.session_id}")
     print(json.dumps(session, indent=2, ensure_ascii=False))
 
 
@@ -130,7 +139,7 @@ def cmd_chat(args: argparse.Namespace) -> None:
     message = args.message or sys.stdin.read().strip()
     if not message:
         raise SystemExit("Provide a message argument or pipe stdin.")
-    result = send_chat_message(args.session_id, message, args.mode)
+    result = send_chat_message(args.session_id, message, args.mode, working_dir=args.cwd or None)
     print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
@@ -206,11 +215,18 @@ def build_parser() -> argparse.ArgumentParser:
     setup.set_defaults(func=cmd_setup)
 
     sessions = sub.add_parser("sessions", help="List Studio chat sessions.")
+    sessions.add_argument("--cwd", help="Only list sessions attached to this working directory.")
     sessions.set_defaults(func=cmd_sessions)
 
     new_session = sub.add_parser("new-session", help="Create a Studio chat session.")
     new_session.add_argument("--title", default="Musai chat")
+    new_session.add_argument("--cwd", help="Music project working directory for this session.")
     new_session.set_defaults(func=cmd_new_session)
+
+    resume_session = sub.add_parser("resume-session", help="Resume a Studio session, optionally from a new working directory.")
+    resume_session.add_argument("session_id")
+    resume_session.add_argument("--cwd", help="Working directory to attach while resuming.")
+    resume_session.set_defaults(func=cmd_resume_session)
 
     messages = sub.add_parser("messages", help="Show messages in a Studio chat session.")
     messages.add_argument("session_id")
@@ -220,6 +236,7 @@ def build_parser() -> argparse.ArgumentParser:
     chat.add_argument("message", nargs="?")
     chat.add_argument("--session-id")
     chat.add_argument("--mode", choices=["auto", "chat", "worker"], default="auto")
+    chat.add_argument("--cwd", help="Music project working directory for this message.")
     chat.set_defaults(func=cmd_chat)
 
     jobs = sub.add_parser("jobs", help="List Studio worker jobs.")

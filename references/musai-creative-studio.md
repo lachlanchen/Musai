@@ -125,15 +125,32 @@ If that port is busy, the starter picks the next free port and prints the actual
 
 The web app can create projects from idea, lyrics, chords, notation, and reference audio paths. It also lists project briefs and command files.
 
-### Chat, Worker, And Artifact Canvas
+### Studio Sessions And Working Folders
 
-Musai Studio now has a LazyBlog/AgInTiFlow-style chat surface:
+Musai Studio uses Codex/AgInTiFlow-style working folders. A session has:
 
 ```text
-left panel   = setup status, sessions, model profiles, project list
-center panel = chat router, worker launcher, project creation form
-right panel  = worker jobs, artifact pipe, canvas/editor/PDF viewer
+data/studio/sessions/<session-id>/session.json
+data/studio/sessions/<session-id>/messages.jsonl
+<working-folder>/.musai/sessions/<session-id>/session.json
 ```
+
+The file inside the working folder is a lightweight pointer, so the same music folder can have multiple Musai sessions and the same session can be resumed from another folder.
+
+The web app and CLI use the same session/message/job/artifact store. A message sent from the browser appears in `musai messages`; a CLI worker job appears in the browser drawers.
+
+### Chat, Worker, And Artifact Canvas
+
+Musai Studio now has a creator-first layout:
+
+```text
+top bar       = working folder, current session, new/resume controls
+main surface  = music brief, setup status, creation forms, conversation
+bottom        = fixed browser-bottom composer
+drawers       = sessions, jobs, projects, artifacts/canvas
+```
+
+Sessions, projects, jobs, and artifacts are collapsed by default so the page stays clean while writing or producing music.
 
 Default Studio profiles are saved in:
 
@@ -169,9 +186,11 @@ Useful CLI commands:
 
 ```bash
 PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py setup
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py sessions
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py chat --mode chat "What should I do next for this song?"
-PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py chat --mode worker "Analyze VoidAbyssSong/Wang and register the important artifacts."
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py new-session --title "My song" --cwd ./my-song-folder
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py sessions --cwd ./my-song-folder
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py chat --cwd ./my-song-folder --mode chat "What should I do next for this song?"
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py chat --cwd ./my-song-folder --mode worker "Analyze the files here and register the important artifacts."
+PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py resume-session <session-id> --cwd ./another-folder
 PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py jobs --session-id <session-id>
 PYTHONNOUSERSITE=1 conda run -n musai python scripts/musai_create.py artifacts <session-id>
 ```
@@ -184,7 +203,8 @@ npm link
 musai doctor
 musai studio --tmux
 musai setup
-musai chat --mode worker "Create a project from this song idea and register artifacts."
+musai new-session --title "My song" --cwd ./my-song-folder
+musai chat --cwd ./my-song-folder --mode worker "Create a project from this song idea and register artifacts."
 musai artifacts <session-id>
 ```
 

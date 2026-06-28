@@ -26,10 +26,12 @@ from musai.studio import (
     load_messages,
     load_settings,
     register_artifact,
+    resolve_working_dir,
     save_settings,
     select_artifact,
     send_chat_message,
     setup_status,
+    update_session_working_dir,
 )
 
 
@@ -41,188 +43,321 @@ PAGE = """<!doctype html>
   <title>Musai Studio</title>
   <style>
     :root {
-      --ink: #17202a;
-      --muted: #637083;
-      --line: #d9e2ec;
-      --soft: #f6f8fb;
-      --panel: #ffffff;
-      --teal: #0f766e;
-      --teal-dark: #115e59;
-      --amber: #b45309;
-      --rose: #be123c;
-      --slate: #243041;
+      color-scheme: light;
+      --bg: #fff8ea;
+      --paper: rgba(255,255,255,.86);
+      --paper-solid: #ffffff;
+      --ink: #111827;
+      --muted: #64748b;
+      --line: rgba(15,23,42,.12);
+      --teal: #15a394;
+      --blue: #2563eb;
+      --violet: #7c3aed;
+      --rose: #e85d75;
+      --amber: #f59e0b;
+      --green: #16a34a;
+      --shadow: 0 24px 70px rgba(31, 41, 55, .13);
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--soft); }
-    .app { min-height: 100vh; display: grid; grid-template-columns: 300px minmax(420px, 1fr) 360px; }
-    aside, .right { background: var(--panel); border-right: 1px solid var(--line); overflow: auto; }
-    .right { border-right: 0; border-left: 1px solid var(--line); }
-    .main { display: grid; grid-template-rows: auto 1fr auto; min-width: 0; }
-    header { padding: 18px 22px; background: var(--slate); color: white; }
-    h1 { margin: 0; font-size: 24px; letter-spacing: 0; }
-    h2 { margin: 0 0 12px; font-size: 16px; }
-    h3 { margin: 18px 0 8px; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: 0; }
-    section { padding: 16px; border-bottom: 1px solid var(--line); }
-    .muted { color: var(--muted); }
-    .small { font-size: 12px; }
-    button { border: 0; border-radius: 6px; background: var(--teal); color: white; padding: 9px 12px; font-weight: 700; cursor: pointer; }
-    button.secondary { background: #e7edf3; color: var(--ink); }
-    button.worker { background: var(--amber); }
-    button.danger { background: var(--rose); }
-    button:disabled { opacity: 0.55; cursor: wait; }
-    input, textarea, select { width: 100%; border: 1px solid #c9d3df; border-radius: 6px; padding: 8px; font: inherit; background: white; }
-    textarea { min-height: 76px; resize: vertical; }
-    label { display: block; font-size: 12px; font-weight: 700; color: #344052; margin: 10px 0 4px; }
-    code { background: #eef2f6; border-radius: 4px; padding: 2px 5px; }
-    pre { white-space: pre-wrap; overflow: auto; margin: 0; }
-    .row { display: flex; gap: 8px; align-items: center; }
-    .row > * { min-width: 0; }
-    .stack { display: grid; gap: 8px; }
-    .list { display: grid; gap: 8px; }
-    .item { border: 1px solid var(--line); border-radius: 8px; padding: 10px; background: white; cursor: pointer; }
-    .item.active { border-color: var(--teal); box-shadow: 0 0 0 2px rgba(15,118,110,0.12); }
-    .item-title { font-weight: 750; overflow-wrap: anywhere; }
-    .chat { overflow: auto; padding: 18px; display: grid; align-content: start; gap: 12px; }
-    .bubble { max-width: 880px; border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: white; }
-    .bubble.user { margin-left: auto; border-color: #d7c5a4; background: #fffaf2; }
+    html { min-height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 0%, rgba(21,163,148,.23), transparent 32rem),
+        radial-gradient(circle at 78% 4%, rgba(232,93,117,.22), transparent 30rem),
+        linear-gradient(135deg, #fff9e8 0%, #f7fbff 52%, #fff6fb 100%);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    button, input, textarea, select { font: inherit; }
+    button {
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--teal), var(--blue));
+      color: white;
+      padding: 11px 16px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 10px 26px rgba(37, 99, 235, .18);
+    }
+    button.secondary { background: rgba(255,255,255,.72); color: var(--ink); border: 1px solid var(--line); box-shadow: none; }
+    button.worker { background: linear-gradient(135deg, var(--amber), var(--rose)); }
+    button.ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); box-shadow: none; }
+    button:disabled { opacity: .55; cursor: wait; }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 11px 12px;
+      background: rgba(255,255,255,.86);
+      color: var(--ink);
+      outline: none;
+    }
+    input:focus, textarea:focus, select:focus { border-color: rgba(21,163,148,.65); box-shadow: 0 0 0 4px rgba(21,163,148,.13); }
+    textarea { min-height: 92px; resize: vertical; line-height: 1.45; }
+    label { display: block; margin: 12px 0 6px; color: #334155; font-size: 13px; font-weight: 850; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 5px; font-size: clamp(30px, 4vw, 50px); line-height: .98; }
+    h2 { margin-bottom: 8px; font-size: 22px; }
+    h3 { margin-bottom: 8px; font-size: 15px; color: var(--muted); text-transform: uppercase; }
+    pre { margin: 0; white-space: pre-wrap; overflow: auto; }
+    a { color: #1d4ed8; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: auto minmax(260px, 1fr) auto;
+      gap: 18px;
+      align-items: center;
+      padding: 16px clamp(16px, 3vw, 36px);
+      backdrop-filter: blur(20px);
+      background: rgba(255,248,234,.76);
+      border-bottom: 1px solid rgba(15,23,42,.08);
+    }
+    .brand { display: flex; gap: 12px; align-items: center; min-width: 220px; }
+    .mark { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 16px; background: linear-gradient(135deg, var(--rose), var(--violet), var(--teal)); color: #fff; font-weight: 950; }
+    .brand strong, .brand span { display: block; }
+    .brand span, .muted, .small { color: var(--muted); }
+    .small { font-size: 13px; }
+    .workspace-line { display: grid; grid-template-columns: minmax(260px, 1fr) auto auto; gap: 10px; align-items: center; }
+    .session-chip { max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid var(--line); border-radius: 999px; padding: 10px 13px; background: rgba(255,255,255,.78); color: #334155; }
+    .shell {
+      width: min(1420px, 100%);
+      margin: 0 auto;
+      padding: 28px clamp(16px, 3vw, 36px) 190px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+      gap: 20px;
+    }
+    .hero, .panel, .dock-card, .composer {
+      border: 1px solid rgba(15,23,42,.1);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      border-radius: 24px;
+    }
+    .hero { padding: 26px; overflow: hidden; position: relative; }
+    .hero:after {
+      content: "";
+      position: absolute;
+      inset: auto -70px -130px auto;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245,158,11,.28), transparent 66%);
+      pointer-events: none;
+    }
+    .hero p { max-width: 760px; color: #475569; font-size: 18px; line-height: 1.55; }
+    .quick-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+    .quick-card { border: 1px solid var(--line); border-radius: 18px; padding: 14px; background: rgba(255,255,255,.68); }
+    .quick-card strong { display: block; margin-bottom: 6px; }
+    .pill-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+    .pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 6px 10px; background: rgba(255,255,255,.74); border: 1px solid var(--line); color: #475569; font-size: 13px; font-weight: 750; }
+    .panel { margin-top: 18px; padding: 18px; }
+    .panel summary, .dock-card summary { cursor: pointer; font-weight: 900; }
+    .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .checks { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+    .checks label { margin: 0; display: inline-flex; gap: 7px; align-items: center; }
+    .checks input { width: auto; }
+    .conversation {
+      margin-top: 18px;
+      display: grid;
+      gap: 14px;
+      min-height: 320px;
+      scroll-margin-bottom: 180px;
+    }
+    .empty {
+      padding: 26px;
+      border: 1px dashed rgba(21,163,148,.36);
+      border-radius: 22px;
+      background: rgba(255,255,255,.62);
+      color: #475569;
+      font-size: 18px;
+    }
+    .bubble {
+      max-width: 900px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 16px 18px;
+      background: rgba(255,255,255,.82);
+      box-shadow: 0 14px 34px rgba(15,23,42,.07);
+    }
+    .bubble.user { margin-left: auto; background: linear-gradient(135deg, rgba(255,255,255,.9), rgba(255,237,213,.82)); border-color: rgba(245,158,11,.3); }
     .bubble.assistant { margin-right: auto; }
-    .bubble .meta { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
-    .composer { padding: 14px 18px; background: white; border-top: 1px solid var(--line); }
-    .composer textarea { min-height: 84px; }
-    .project-form { padding: 14px 18px; background: #fbfcfe; border-top: 1px solid var(--line); }
-    .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
-    .viewer { border: 1px solid var(--line); border-radius: 8px; background: #fbfcfe; min-height: 260px; padding: 10px; overflow: auto; }
-    .viewer img, .viewer video { max-width: 100%; border-radius: 6px; }
-    .viewer iframe { width: 100%; min-height: 460px; border: 0; background: white; }
+    .meta { margin-bottom: 8px; color: var(--muted); font-size: 13px; font-weight: 800; }
+    .side-dock { display: grid; gap: 12px; align-content: start; position: sticky; top: 88px; }
+    .dock-card { padding: 14px; box-shadow: 0 14px 38px rgba(15,23,42,.08); }
+    .dock-card[open] { background: rgba(255,255,255,.92); }
+    .dock-body { margin-top: 12px; display: grid; gap: 10px; }
+    .item { border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: rgba(255,255,255,.76); cursor: pointer; }
+    .item.active { border-color: rgba(21,163,148,.7); box-shadow: 0 0 0 4px rgba(21,163,148,.12); }
+    .item-title { font-weight: 850; overflow-wrap: anywhere; }
+    .tabs { display: flex; gap: 7px; flex-wrap: wrap; }
+    .tabs button { padding: 8px 10px; }
+    .viewer { min-height: 220px; max-height: 520px; overflow: auto; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: rgba(255,255,255,.72); }
+    .viewer img, .viewer video { max-width: 100%; border-radius: 14px; }
+    .viewer iframe { width: 100%; min-height: 420px; border: 0; background: #fff; }
     .viewer audio { width: 100%; }
-    .tabs { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
-    .tabs button { padding: 7px 9px; background: #e7edf3; color: var(--ink); }
-    .tabs button.active { background: var(--teal); color: white; }
-    .pill { display: inline-flex; align-items: center; border-radius: 999px; padding: 2px 8px; background: #eef2f6; color: #334155; font-size: 12px; }
-    a { color: #075985; }
+    .composer {
+      position: fixed;
+      z-index: 30;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      width: min(980px, calc(100% - 28px));
+      padding: 12px;
+      backdrop-filter: blur(22px);
+      background: rgba(255,255,255,.86);
+    }
+    .composer textarea { min-height: 74px; max-height: 180px; border-radius: 18px; font-size: 17px; }
+    .composer-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+    .composer-actions .status { margin-left: auto; color: var(--muted); font-size: 13px; }
     @media (max-width: 1100px) {
-      .app { grid-template-columns: 1fr; }
-      aside, .right { border: 0; border-bottom: 1px solid var(--line); max-height: none; }
-      .main { min-height: 700px; }
+      .topbar { grid-template-columns: 1fr; }
+      .workspace-line { grid-template-columns: 1fr; }
+      .shell { grid-template-columns: 1fr; }
+      .side-dock { position: static; }
+      .quick-grid, .grid2 { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 680px) {
+      body { font-size: 15px; }
+      .quick-grid, .grid2 { grid-template-columns: 1fr; }
+      .shell { padding-bottom: 220px; }
     }
   </style>
 </head>
 <body>
-  <div class="app">
-    <aside>
-      <section>
-        <h1>Musai Studio</h1>
-        <div class="small muted" id="setup-line">Loading setup...</div>
-      </section>
-      <section>
-        <div class="row">
-          <h2 style="flex:1">Sessions</h2>
-          <button class="secondary" id="new-session">New</button>
-        </div>
-        <div id="sessions" class="list"></div>
-      </section>
-      <section>
-        <h2>Profiles</h2>
-        <pre id="profiles" class="small"></pre>
-      </section>
-      <section>
-        <h2>Projects</h2>
-        <div id="projects" class="list"></div>
-      </section>
-    </aside>
-
-    <div class="main">
-      <header>
-        <h1 id="session-title">Musai Chat Router</h1>
-        <div id="session-subtitle" class="small muted"></div>
-      </header>
-
-      <div id="chat" class="chat"></div>
-
-      <div>
-        <div class="composer">
-          <textarea id="message" placeholder="Ask about the song, setup, localization, stems, lyrics, chords, or generation."></textarea>
-          <div class="row" style="margin-top:8px">
-            <button id="send-chat">Chat</button>
-            <button id="send-worker" class="worker">Worker</button>
-            <button id="send-auto" class="secondary">Auto</button>
-            <span id="chat-status" class="small muted"></span>
-          </div>
-        </div>
-
-        <details class="project-form">
-          <summary><strong>Create Project</strong></summary>
-          <div class="grid2">
-            <div><label>Title</label><input id="project-title" value="New Musai song"></div>
-            <div><label>Provider</label><select id="project-provider"><option>deepseek</option><option>openai</option><option>offline</option></select></div>
-            <div><label>Model</label><input id="project-model" placeholder="deepseek-reasoner or gpt-5.5"></div>
-            <div><label>Language</label><input id="project-language" value="en"></div>
-            <div><label>Generation Mode</label><select id="project-generation-mode"><option>auto</option><option>free_vocal</option><option>melody_generation</option><option>full_production</option><option>controlled_song</option><option>localization</option></select></div>
-            <div><label>Control Level</label><select id="project-control-level"><option>auto</option><option>free</option><option>lyrics</option><option>lyrics_chords</option><option>melody_sheet</option><option>reference_audio</option><option>strict_localization</option></select></div>
-            <div><label>Target Language</label><input id="project-target" placeholder="zh-CN, en, ja"></div>
-            <div><label>Reference Audio Path</label><input id="project-reference" placeholder="/path/to/reference.wav"></div>
-          </div>
-          <label>Idea</label><textarea id="project-idea"></textarea>
-          <label>Lyrics</label><textarea id="project-lyrics"></textarea>
-          <label>Melody / 旋律 / Sheet Notes</label><textarea id="project-melody" placeholder="Melody contour, hook rhythm, jianpu/numbered notation, staff notes, phrase counts, or a friend recording description."></textarea>
-          <label>Style References</label><textarea id="project-style-references" placeholder="Broad style influences only; not a request to impersonate a real voice."></textarea>
-          <label>Voice Notes</label><textarea id="project-voice-notes" placeholder="Vocal range, timbre, language, emotion, pronunciation, or consented voice details."></textarea>
-          <div class="row" style="margin-top:8px">
-            <label style="margin:0; font-weight:600"><input id="project-analyze" type="checkbox" style="width:auto"> Analyze reference</label>
-            <label style="margin:0; font-weight:600"><input id="project-rights" type="checkbox" style="width:auto"> Rights confirmed</label>
-            <label style="margin:0; font-weight:600"><input id="project-voice-consent" type="checkbox" style="width:auto"> Voice consent</label>
-            <button id="create-project">Create</button>
-            <span id="project-status" class="small muted"></span>
-          </div>
-        </details>
-
-        <details class="project-form">
-          <summary><strong>SoulX Verse</strong></summary>
-          <div class="grid2">
-            <div><label>Title</label><input id="verse-title" value="Rain Day Bilingual Verse"></div>
-            <div><label>Provider</label><select id="verse-provider"><option>deepseek</option><option>openai</option><option>offline</option></select></div>
-            <div><label>Model</label><input id="verse-model" placeholder="deepseek-reasoner or gpt-5.5"></div>
-            <div><label>Device</label><input id="verse-device" value="cuda"></div>
-          </div>
-          <label>Idea</label><textarea id="verse-idea">A gentle rainy-day musical short film verse in Chinese and English.</textarea>
-          <label>Lyrics</label><textarea id="verse-lyrics" placeholder="Optional. Leave empty and Musai will create bilingual rainy-day lyrics."></textarea>
-          <div class="row" style="margin-top:8px">
-            <label style="margin:0; font-weight:600"><input id="verse-refine" type="checkbox" checked style="width:auto"> AI refine</label>
-            <label style="margin:0; font-weight:600"><input id="verse-run-soulx" type="checkbox" checked style="width:auto"> Run SoulX</label>
-            <button id="generate-soulx-verse">Generate Verse</button>
-            <span id="verse-status" class="small muted"></span>
-          </div>
-        </details>
-      </div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark">M</div>
+      <div><strong>Musai Studio</strong><span>music creation and localization workspace</span></div>
     </div>
+    <div class="workspace-line">
+      <input id="working-dir" aria-label="Working directory" placeholder="/path/to/music-folder">
+      <button id="apply-workdir" class="secondary" type="button">Use folder</button>
+      <button id="new-session" type="button">New session</button>
+    </div>
+    <div id="current-session" class="session-chip">No session loaded</div>
+  </header>
 
-    <div class="right">
-      <section>
-        <h2>Jobs</h2>
-        <div id="jobs" class="list"></div>
-      </section>
-      <section>
-        <div class="row">
-          <h2 style="flex:1">Artifacts</h2>
-          <button class="secondary" id="refresh-artifacts">Refresh</button>
+  <main class="shell">
+    <section>
+      <div class="hero">
+        <h1 id="session-title">Create music from an idea, lyrics, melody, or a song you own.</h1>
+        <p id="session-subtitle">Choose a folder, drop your materials there, then chat or send a worker task. Web and CLI messages use the same session, working directory, jobs, and artifacts.</p>
+        <div id="setup-line" class="pill-row"></div>
+        <div class="quick-grid">
+          <div class="quick-card"><strong>Idea</strong><span class="small">Expand a concept into lyrics, mood, and production plan.</span></div>
+          <div class="quick-card"><strong>Lyrics</strong><span class="small">Polish lines for rhythm, language, and vocal phrasing.</span></div>
+          <div class="quick-card"><strong>Reference</strong><span class="small">Analyze audio, stems, chords, beats, and human voice.</span></div>
+          <div class="quick-card"><strong>Localization</strong><span class="small">Adapt a rights-cleared song into a new language.</span></div>
         </div>
-        <div class="tabs">
-          <button data-tab="all" class="active">All</button>
-          <button data-tab="canvas">Canvas</button>
-          <button data-tab="editor">Editor</button>
-          <button data-tab="pdf">PDF</button>
+      </div>
+
+      <details class="panel">
+        <summary>Create a controlled music project</summary>
+        <div class="grid2">
+          <div><label>Title</label><input id="project-title" value="New Musai song"></div>
+          <div><label>Provider</label><select id="project-provider"><option>deepseek</option><option>openai</option><option>offline</option></select></div>
+          <div><label>Model</label><input id="project-model" placeholder="deepseek-reasoner or gpt-5.5"></div>
+          <div><label>Language</label><input id="project-language" value="en"></div>
+          <div><label>Generation mode</label><select id="project-generation-mode"><option>auto</option><option>free_vocal</option><option>melody_generation</option><option>full_production</option><option>controlled_song</option><option>localization</option></select></div>
+          <div><label>Control level</label><select id="project-control-level"><option>auto</option><option>free</option><option>lyrics</option><option>lyrics_chords</option><option>melody_sheet</option><option>reference_audio</option><option>strict_localization</option></select></div>
+          <div><label>Target language</label><input id="project-target" placeholder="zh-CN, en, ja"></div>
+          <div><label>Reference audio path</label><input id="project-reference" placeholder="relative/path.wav or /absolute/path.wav"></div>
         </div>
-        <div id="artifacts" class="list"></div>
-      </section>
-      <section>
-        <h2>Canvas</h2>
-        <div id="viewer" class="viewer muted">No artifact selected.</div>
-      </section>
+        <label>Idea</label><textarea id="project-idea" placeholder="What should this song become?"></textarea>
+        <label>Lyrics</label><textarea id="project-lyrics" placeholder="Optional lyrics, fragments, hook, or bilingual draft."></textarea>
+        <label>Melody / 旋律 / sheet notes</label><textarea id="project-melody" placeholder="Melody contour, hook rhythm, jianpu/numbered notation, staff notes, phrase counts, or friend recording description."></textarea>
+        <label>Style references</label><textarea id="project-style-references" placeholder="Broad style influences only; no real voice impersonation unless consented."></textarea>
+        <label>Voice notes</label><textarea id="project-voice-notes" placeholder="Vocal range, timbre, emotion, language, pronunciation, consent details."></textarea>
+        <div class="checks">
+          <label><input id="project-analyze" type="checkbox"> Analyze reference</label>
+          <label><input id="project-rights" type="checkbox"> Rights confirmed</label>
+          <label><input id="project-voice-consent" type="checkbox"> Voice consent</label>
+        </div>
+        <button id="create-project" type="button">Create project</button>
+        <span id="project-status" class="small muted"></span>
+      </details>
+
+      <details class="panel">
+        <summary>Generate a SoulX vocal verse</summary>
+        <div class="grid2">
+          <div><label>Title</label><input id="verse-title" value="Rain Day Bilingual Verse"></div>
+          <div><label>Provider</label><select id="verse-provider"><option>deepseek</option><option>openai</option><option>offline</option></select></div>
+          <div><label>Model</label><input id="verse-model" placeholder="deepseek-reasoner or gpt-5.5"></div>
+          <div><label>Device</label><input id="verse-device" value="cuda"></div>
+        </div>
+        <label>Idea</label><textarea id="verse-idea">A gentle rainy-day musical short film verse in Chinese and English.</textarea>
+        <label>Lyrics</label><textarea id="verse-lyrics" placeholder="Optional. Leave empty and Musai will create bilingual rainy-day lyrics."></textarea>
+        <div class="checks">
+          <label><input id="verse-refine" type="checkbox" checked> AI refine</label>
+          <label><input id="verse-run-soulx" type="checkbox" checked> Run SoulX</label>
+        </div>
+        <button id="generate-soulx-verse" type="button">Generate verse</button>
+        <span id="verse-status" class="small muted"></span>
+      </details>
+
+      <div id="chat" class="conversation"></div>
+    </section>
+
+    <aside class="side-dock">
+      <details class="dock-card">
+        <summary>Sessions</summary>
+        <div class="dock-body">
+          <div class="grid2">
+            <input id="resume-id" placeholder="session id">
+            <button id="resume-session" class="secondary" type="button">Resume</button>
+          </div>
+          <div id="sessions" class="dock-body"></div>
+        </div>
+      </details>
+      <details class="dock-card">
+        <summary>Jobs</summary>
+        <div id="jobs" class="dock-body"></div>
+      </details>
+      <details class="dock-card">
+        <summary>Projects</summary>
+        <div id="projects" class="dock-body"></div>
+      </details>
+      <details class="dock-card">
+        <summary>Artifacts and canvas</summary>
+        <div class="dock-body">
+          <div class="tabs">
+            <button data-tab="all" class="secondary" type="button">All</button>
+            <button data-tab="canvas" class="secondary" type="button">Canvas</button>
+            <button data-tab="editor" class="secondary" type="button">Editor</button>
+            <button data-tab="pdf" class="secondary" type="button">PDF</button>
+          </div>
+          <div id="artifacts" class="dock-body"></div>
+          <div id="viewer" class="viewer muted">No artifact selected.</div>
+        </div>
+      </details>
+    </aside>
+  </main>
+
+  <div class="composer">
+    <textarea id="message" placeholder="Tell Musai what to make, analyze, localize, or refine. Relative paths are read from the working folder."></textarea>
+    <div class="composer-actions">
+      <button id="send-auto" type="button">Auto route</button>
+      <button id="send-chat" class="secondary" type="button">Chat</button>
+      <button id="send-worker" class="worker" type="button">Worker</button>
+      <span id="chat-status" class="status"></span>
     </div>
   </div>
 
 <script>
-const state = { sessionId: "", selectedArtifactId: "", artifactTab: "all", artifacts: [] };
+const state = {
+  sessionId: localStorage.getItem("musaiSessionId") || "",
+  workingDir: localStorage.getItem("musaiWorkingDir") || "",
+  selectedArtifactId: "",
+  artifactTab: "all",
+  artifacts: [],
+  sessions: []
+};
 const $ = (id) => document.getElementById(id);
 
 async function api(url, options = {}) {
@@ -241,58 +376,106 @@ function artifactIcon(kind) {
   return {image:"image", audio:"audio", video:"video", pdf:"pdf", markdown:"md", text:"txt"}[kind] || "file";
 }
 
+function activeWorkingDir() {
+  return $("working-dir").value.trim() || state.workingDir || "";
+}
+
+function setSession(id) {
+  state.sessionId = id || "";
+  if (state.sessionId) localStorage.setItem("musaiSessionId", state.sessionId);
+}
+
+function setWorkingDir(value) {
+  state.workingDir = value || "";
+  $("working-dir").value = state.workingDir;
+  if (state.workingDir) localStorage.setItem("musaiWorkingDir", state.workingDir);
+}
+
 async function loadSetup() {
   const setup = await api("/api/setup");
+  if (!state.workingDir) setWorkingDir(setup.root || "");
   $("setup-line").innerHTML = [
-    setup.codex_cli ? "codex ok" : "codex missing",
+    setup.codex_cli ? "Codex ready" : "Codex missing",
     setup.deepseek_api_key ? "DeepSeek key" : "DeepSeek no key",
-    setup.openai_api_key ? "OpenAI key" : "OpenAI no key"
-  ].map(x => `<span class="pill">${escapeHtml(x)}</span>`).join(" ");
-  $("profiles").textContent = JSON.stringify(setup.profiles, null, 2);
+    setup.openai_api_key ? "OpenAI key" : "OpenAI no key",
+    setup.third_party?.soulx_singer ? "SoulX installed" : "SoulX not installed"
+  ].map(x => `<span class="pill">${escapeHtml(x)}</span>`).join("");
 }
 
 async function loadSessions() {
-  const sessions = await api("/api/chat/sessions");
-  if (!state.sessionId && sessions.length) state.sessionId = sessions[0].id;
-  $("sessions").innerHTML = sessions.length ? sessions.map(s => `
+  const query = activeWorkingDir() ? `?working_dir=${encodeURIComponent(activeWorkingDir())}` : "";
+  state.sessions = await api(`/api/chat/sessions${query}`);
+  if (!state.sessionId && state.sessions.length) setSession(state.sessions[0].id);
+  $("sessions").innerHTML = state.sessions.length ? state.sessions.map(s => `
     <div class="item ${s.id === state.sessionId ? "active" : ""}" data-session="${escapeHtml(s.id)}">
       <div class="item-title">${escapeHtml(s.title || s.id)}</div>
       <div class="small muted">${escapeHtml(s.id)} · ${s.message_count || 0} msg · ${s.artifact_count || 0} art</div>
-    </div>`).join("") : `<div class="muted small">No sessions.</div>`;
+      <div class="small muted">${escapeHtml(s.working_dir || "")}</div>
+    </div>`).join("") : `<div class="muted small">No sessions for this folder yet.</div>`;
   document.querySelectorAll("[data-session]").forEach(el => el.onclick = () => selectSession(el.dataset.session));
+  renderSessionHeader();
+}
+
+function currentSession() {
+  return state.sessions.find(s => s.id === state.sessionId) || {};
+}
+
+function renderSessionHeader() {
+  const session = currentSession();
+  $("session-title").textContent = session.title || "Create music from an idea, lyrics, melody, or a song you own.";
+  $("current-session").textContent = state.sessionId ? `${state.sessionId}` : "No session loaded";
+  $("session-subtitle").textContent = session.working_dir || activeWorkingDir()
+    ? `Working folder: ${session.working_dir || activeWorkingDir()}`
+    : "Choose a working folder to sync web and CLI sessions.";
 }
 
 async function selectSession(id) {
-  state.sessionId = id;
+  setSession(id);
   state.selectedArtifactId = "";
   await refreshSession();
 }
 
 async function newSession() {
+  const title = $("message").value.trim().slice(0, 70) || "Musai music session";
   const session = await api("/api/chat/sessions", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({title: "Musai chat"})
+    body: JSON.stringify({title, working_dir: activeWorkingDir()})
   });
-  state.sessionId = session.id;
+  setSession(session.id);
+  setWorkingDir(session.working_dir || activeWorkingDir());
   await refreshAll();
+}
+
+async function resumeSession() {
+  const id = $("resume-id").value.trim();
+  if (!id) return;
+  const session = await api("/api/chat/resume", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({session_id: id, working_dir: activeWorkingDir()})
+  });
+  setSession(session.id);
+  setWorkingDir(session.working_dir || activeWorkingDir());
+  await refreshSession();
 }
 
 function renderMessages(messages) {
   $("chat").innerHTML = messages.length ? messages.map(m => `
-    <div class="bubble ${m.role === "user" ? "user" : "assistant"}">
-      <div class="meta">${escapeHtml(m.role)} ${m.profile ? "· " + escapeHtml(m.profile) : ""} ${m.status && m.status !== "ok" ? "· " + escapeHtml(m.status) : ""}</div>
+    <article class="bubble ${m.role === "user" ? "user" : "assistant"}">
+      <div class="meta">${escapeHtml(m.role)}${m.profile ? " · " + escapeHtml(m.profile) : ""}${m.status && m.status !== "ok" ? " · " + escapeHtml(m.status) : ""}</div>
       <pre>${escapeHtml(m.content)}</pre>
-    </div>`).join("") : `<div class="muted">No messages yet.</div>`;
-  $("chat").scrollTop = $("chat").scrollHeight;
+    </article>`).join("") : `
+    <div class="empty">
+      Start with a goal like “make a song from these lyrics”, “analyze the files in this folder”, or “localize my licensed song to Chinese”.
+      The fixed composer below can route to chat or a worker.
+    </div>`;
+  window.requestAnimationFrame(() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" }));
 }
 
 async function loadMessages() {
   if (!state.sessionId) return renderMessages([]);
   const messages = await api(`/api/chat/messages?session_id=${encodeURIComponent(state.sessionId)}`);
-  const session = (await api("/api/chat/sessions")).find(s => s.id === state.sessionId) || {};
-  $("session-title").textContent = session.title || "Musai Chat Router";
-  $("session-subtitle").textContent = state.sessionId;
   renderMessages(messages);
 }
 
@@ -305,9 +488,9 @@ async function send(mode) {
     const result = await api("/api/chat/send", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({session_id: state.sessionId, message: text, mode})
+      body: JSON.stringify({session_id: state.sessionId, message: text, mode, working_dir: activeWorkingDir()})
     });
-    state.sessionId = result.session_id;
+    setSession(result.session_id);
     $("message").value = "";
     $("chat-status").textContent = result.mode === "worker" ? `queued ${result.job.id}` : "done";
     await refreshSession();
@@ -325,7 +508,7 @@ async function loadProjects() {
     return `<div class="item">
       <div class="item-title">${escapeHtml(m.title || p.project_id)}</div>
       <div class="small muted">${escapeHtml(p.workflow)} · ${escapeHtml(p.provider)}/${escapeHtml(p.model)}</div>
-      <div class="small"><a href="/project/${encodeURIComponent(p.project_id)}/BRIEF.md" target="_blank">BRIEF</a> · <a href="/project/${encodeURIComponent(p.project_id)}/SOULX_REQUEST.md" target="_blank">SoulX</a> · <a href="/project/${encodeURIComponent(p.project_id)}/commands.sh" target="_blank">commands</a></div>
+      <div class="small"><a href="/project/${encodeURIComponent(p.project_id)}/BRIEF.md" target="_blank">Brief</a> · <a href="/project/${encodeURIComponent(p.project_id)}/SOULX_REQUEST.md" target="_blank">SoulX</a> · <a href="/project/${encodeURIComponent(p.project_id)}/commands.sh" target="_blank">Commands</a></div>
     </div>`;
   }).join("") : `<div class="muted small">No projects.</div>`;
 }
@@ -334,6 +517,7 @@ async function createProject() {
   $("project-status").textContent = "creating...";
   try {
     const payload = {
+      working_dir: activeWorkingDir(),
       title: $("project-title").value,
       provider: $("project-provider").value,
       model: $("project-model").value,
@@ -370,6 +554,7 @@ async function createSoulXVerse() {
   $("generate-soulx-verse").disabled = true;
   try {
     const payload = {
+      working_dir: activeWorkingDir(),
       session_id: state.sessionId,
       title: $("verse-title").value,
       provider: $("verse-provider").value,
@@ -385,7 +570,7 @@ async function createSoulXVerse() {
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(payload)
     });
-    state.sessionId = result.session_id || state.sessionId;
+    setSession(result.session_id || state.sessionId);
     $("verse-status").textContent = `created ${result.output_dir}`;
     await refreshSession();
   } catch (err) {
@@ -396,7 +581,7 @@ async function createSoulXVerse() {
 }
 
 async function loadJobs() {
-  if (!state.sessionId) return;
+  if (!state.sessionId) return $("jobs").innerHTML = `<div class="muted small">No session.</div>`;
   const jobs = await api(`/api/jobs?session_id=${encodeURIComponent(state.sessionId)}`);
   $("jobs").innerHTML = jobs.length ? jobs.slice(0, 8).map(job => `
     <div class="item">
@@ -413,7 +598,7 @@ function filteredArtifacts() {
 async function loadArtifacts() {
   if (!state.sessionId) {
     state.artifacts = [];
-    $("artifacts").innerHTML = "";
+    $("artifacts").innerHTML = `<div class="muted small">No session.</div>`;
     return;
   }
   const data = await api(`/api/artifacts?session_id=${encodeURIComponent(state.sessionId)}`);
@@ -456,6 +641,7 @@ async function renderArtifact(id) {
 
 async function refreshSession() {
   await Promise.all([loadSessions(), loadMessages(), loadJobs(), loadArtifacts(), loadProjects()]);
+  renderSessionHeader();
 }
 
 async function refreshAll() {
@@ -465,13 +651,17 @@ async function refreshAll() {
   await refreshSession();
 }
 
+$("apply-workdir").onclick = async () => { setWorkingDir(activeWorkingDir()); setSession(""); await refreshAll(); };
 $("new-session").onclick = newSession;
+$("resume-session").onclick = resumeSession;
 $("send-chat").onclick = () => send("chat");
 $("send-worker").onclick = () => send("worker");
 $("send-auto").onclick = () => send("auto");
 $("create-project").onclick = createProject;
 $("generate-soulx-verse").onclick = createSoulXVerse;
-$("refresh-artifacts").onclick = loadArtifacts;
+$("message").addEventListener("keydown", (event) => {
+  if ((event.metaKey || event.ctrlKey) && event.key === "Enter") send("auto");
+});
 document.querySelectorAll(".tabs button").forEach(button => {
   button.onclick = () => {
     document.querySelectorAll(".tabs button").forEach(b => b.classList.remove("active"));
@@ -537,7 +727,7 @@ class Handler(BaseHTTPRequestHandler):
             elif path == "/api/projects":
                 self.send_json(list_projects())
             elif path == "/api/chat/sessions":
-                self.send_json(list_sessions())
+                self.send_json(list_sessions(query.get("working_dir", [""])[0] or None))
             elif path == "/api/chat/messages":
                 self.send_json(load_messages(query.get("session_id", [""])[0]))
             elif path == "/api/jobs":
@@ -566,15 +756,28 @@ class Handler(BaseHTTPRequestHandler):
             if path == "/api/settings":
                 self.send_json(save_settings(payload))
             elif path == "/api/chat/sessions":
-                self.send_json(create_session(str(payload.get("title") or "Musai chat")), HTTPStatus.CREATED)
+                self.send_json(
+                    create_session(
+                        str(payload.get("title") or "Musai chat"),
+                        working_dir=str(payload.get("working_dir") or "") or None,
+                    ),
+                    HTTPStatus.CREATED,
+                )
             elif path == "/api/chat/send":
                 self.send_json(
                     send_chat_message(
                         str(payload.get("session_id") or "") or None,
                         str(payload.get("message") or ""),
                         str(payload.get("mode") or "auto"),
+                        working_dir=str(payload.get("working_dir") or "") or None,
                     )
                 )
+            elif path == "/api/chat/resume":
+                session = update_session_working_dir(
+                    str(payload.get("session_id") or ""),
+                    str(payload.get("working_dir") or "") or None,
+                )
+                self.send_json(session or {"error": "not found"}, HTTPStatus.OK if session else HTTPStatus.NOT_FOUND)
             elif path == "/api/artifacts":
                 self.send_json(
                     register_artifact(
@@ -601,6 +804,10 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json({"error": str(exc)}, HTTPStatus.BAD_REQUEST)
 
     def handle_create_project(self, payload: dict[str, object]) -> None:
+        working_dir = resolve_working_dir(str(payload.get("working_dir") or "") or None)
+        reference_audio = str(payload.get("reference_audio") or "")
+        if reference_audio and not Path(reference_audio).expanduser().is_absolute():
+            reference_audio = str((working_dir / reference_audio).resolve())
         materials = CreativeMaterials(
             title=str(payload.get("title") or "Untitled song"),
             idea=str(payload.get("idea") or ""),
@@ -613,7 +820,7 @@ class Handler(BaseHTTPRequestHandler):
             mood=str(payload.get("mood") or ""),
             language=str(payload.get("language") or "en"),
             vocal_language=str(payload.get("vocal_language") or payload.get("language") or "en"),
-            reference_audio=str(payload.get("reference_audio") or ""),
+            reference_audio=reference_audio,
             target_language=str(payload.get("target_language") or ""),
             generation_mode=str(payload.get("generation_mode") or "auto"),
             control_level=str(payload.get("control_level") or "auto"),
@@ -635,18 +842,23 @@ class Handler(BaseHTTPRequestHandler):
         self.send_json(json.loads(Path(project.root, "project.json").read_text(encoding="utf-8")), HTTPStatus.CREATED)
 
     def handle_soulx_verse(self, payload: dict[str, object]) -> None:
+        working_dir = resolve_working_dir(str(payload.get("working_dir") or "") or None)
+        output_dir = str(payload.get("output_dir") or "") or ""
         request = SoulXVerseRequest(
             title=str(payload.get("title") or "Rain Day Bilingual Verse"),
             idea=str(payload.get("idea") or "A gentle rainy-day verse in Chinese and English."),
             lyrics=str(payload.get("lyrics") or ""),
             provider=str(payload.get("provider") or "deepseek"),
             model=str(payload.get("model") or ""),
+            output_dir=output_dir,
             refine=bool(payload.get("refine", True)),
             run_soulx=bool(payload.get("run_soulx", True)),
             device=str(payload.get("device") or "cuda"),
         )
         result = generate_soulx_verse(request)
         session_id = str(payload.get("session_id") or "")
+        if not session_id:
+            session_id = create_session("SoulX verse", working_dir=working_dir)["id"]
         artifacts: list[dict[str, object]] = []
         if session_id:
             artifacts.append(

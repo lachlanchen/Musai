@@ -17,6 +17,7 @@ const PY_COMMANDS = new Set([
   "setup",
   "sessions",
   "new-session",
+  "resume-session",
   "messages",
   "chat",
   "jobs",
@@ -44,9 +45,11 @@ Creative CLI:
   musai plan --title "Controlled" --generation-mode controlled_song --control-level melody_sheet --melody "..."
   musai plan --title "Licensed CN Version" --generation-mode localization --control-level strict_localization --rights-confirmed --target-language zh-CN --reference-audio song.wav
   musai soulx-verse --title "Rain Day" --idea "A rainy bilingual musical short film verse"
-  musai chat --mode chat "What should I do next?"
-  musai chat --mode worker "Analyze this song and register artifacts."
-  musai sessions
+  musai new-session --title "My album" --cwd ./my-song-folder
+  musai chat --cwd ./my-song-folder --mode chat "What should I do next?"
+  musai chat --cwd ./my-song-folder --mode worker "Analyze this song and register artifacts."
+  musai sessions --cwd ./my-song-folder
+  musai resume-session <session-id> --cwd ./another-folder
   musai jobs --session-id <id>
   musai artifacts <session-id>
 
