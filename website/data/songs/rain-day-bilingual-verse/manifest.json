@@ -10,7 +10,7 @@
     "zh-Hans": "雨天短歌",
     "ja": "雨の日のヴァース"
   },
-  "artist": "Musai SoulX",
+  "artist": "Musai",
   "subtitle": "Three playable short verse renders with per-language ASR-adjusted lyric timing",
   "description": "A compact rain-day localization demo with separate Mandarin, English, and Japanese short renders. The lyric display follows each selected audio language and uses ASR-adjusted timing instead of one shared English timeline.",
   "caption": "Same melody, localized lyrics",

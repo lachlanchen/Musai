@@ -19,7 +19,12 @@ const state = {
   analyser: null,
   source: null,
   sourceElement: null,
-  frequencyData: null
+  frequencyData: null,
+  captureMode: false,
+  skipIntroOnLoad: false,
+  didApplySkipIntro: false,
+  renderedChordKey: "",
+  captureTime: null
 };
 
 const $ = (id) => document.getElementById(id);
@@ -209,6 +214,21 @@ function languageShortLabel(code) {
   return { en: "EN", zh: "ZH", ja: "JP" }[key] || String(code || "LANG").slice(0, 3).toUpperCase();
 }
 
+function nativeLanguageName(code, fallback = "") {
+  const key = languageKey(code);
+  return {
+    en: "English",
+    zh: "中文",
+    ja: "日本語",
+    mul: "Multilingual"
+  }[key] || fallback || String(code || "Language");
+}
+
+function vocalLanguageName(asset) {
+  return asset?.languageNativeLabel
+    || nativeLanguageName(asset?.languageCode, asset?.languageLabel || asset?.label);
+}
+
 function displayTitleForAsset(asset = activePlayableAsset()) {
   const titles = state.manifest?.localizedTitles || {};
   const code = asset?.languageCode || activeTimingTrack()?.language?.code || "";
@@ -218,7 +238,25 @@ function displayTitleForAsset(asset = activePlayableAsset()) {
 function updateMediaTitle() {
   const title = displayTitleForAsset();
   $("media-title").textContent = title;
+  $("media-artist").textContent = state.manifest?.artist ? `by ${state.manifest.artist}` : "";
   document.title = `${title} - Fun Lazying Art`;
+}
+
+function firstVocalStart() {
+  const lines = timingLines();
+  const first = lines.find((line) => Number.isFinite(Number(line?.start)));
+  return Number.isFinite(Number(first?.start)) ? Math.max(0, Number(first.start)) : 0;
+}
+
+function applySkipIntro({ force = false } = {}) {
+  const media = state.mediaElement;
+  if (!media) return;
+  const start = firstVocalStart();
+  if (start <= 0.25) return;
+  if (!force && state.didApplySkipIntro) return;
+  media.currentTime = Math.max(0, start - 0.02);
+  state.didApplySkipIntro = true;
+  updateSync();
 }
 
 function updateMusicalLabels() {
@@ -385,6 +423,7 @@ function setMediaSource(asset, keepTime = false) {
   const wasPlaying = previous && !previous.paused;
   if (previous) previous.pause();
   state.activeAssetId = asset.id;
+  state.captureTime = null;
 
   if (asset.type === "external-video") {
     state.mediaElement = null;
@@ -417,6 +456,7 @@ function setMediaSource(asset, keepTime = false) {
   if (keepTime) state.mediaElement.currentTime = Math.min(previousTime, (state.manifest.duration || previousTime) - 0.1);
   if (wasPlaying) state.mediaElement.play();
   applyActiveLyricSet();
+  state.renderedChordKey = "";
   renderAssetSwitcher();
   renderLanguageButtons();
   renderVocalLanguageSelect();
@@ -487,7 +527,7 @@ function renderVocalLanguageSelect() {
     return;
   }
   select.innerHTML = assets.map((asset) => `
-    <option value="${escapeHtml(asset.id)}">${escapeHtml(languageShortLabel(asset.languageCode))}</option>
+    <option value="${escapeHtml(asset.id)}">${escapeHtml(vocalLanguageName(asset))}</option>
   `).join("");
   select.value = state.activeAssetId || assets[0].id;
 }
@@ -522,28 +562,44 @@ function renderLanguageButtons() {
 function renderChords(activeChord = null) {
   const list = chords();
   const row = $("chord-row");
-  const activeIndex = list.indexOf(activeChord);
+  const activeIndex = activeChord ? list.findIndex((chord) =>
+    chord === activeChord
+    || (chord.name === activeChord.name
+      && Number(chord.start) === Number(activeChord.start)
+      && Number(chord.end) === Number(activeChord.end))
+  ) : -1;
   row.hidden = list.length === 0;
-  row.innerHTML = list.map((chord, index) => `
-    <button class="chord-pill ${chord === activeChord ? "active" : ""}" type="button" data-chord-index="${index}">
-      <strong>${escapeHtml(chord.name)}</strong><span>${escapeHtml(chord.degree || "")}</span>
-    </button>
-  `).join("");
-  document.querySelectorAll("[data-chord-index]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const chord = list[Number(button.dataset.chordIndex)];
-      if (!chord || !state.mediaElement) return;
-      state.mediaElement.currentTime = chord.start;
-      state.mediaElement.play();
+  const key = list.map((chord) => `${chord.start}-${chord.end}-${chord.name}`).join("|");
+  if (row.dataset.chordKey !== key) {
+    row.dataset.chordKey = key;
+    row.dataset.activeChordIndex = "";
+    row.innerHTML = list.map((chord, index) => `
+      <button class="chord-pill" type="button" data-chord-index="${index}">
+        <strong>${escapeHtml(chord.name)}</strong><span>${escapeHtml(chord.degree || "")}</span>
+      </button>
+    `).join("");
+    row.querySelectorAll("[data-chord-index]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const chord = list[Number(button.dataset.chordIndex)];
+        if (!chord || !state.mediaElement) return;
+        state.mediaElement.currentTime = chord.start;
+        state.mediaElement.play();
+      });
     });
+  }
+  row.querySelectorAll("[data-chord-index]").forEach((button) => {
+    const active = Number(button.dataset.chordIndex) === activeIndex;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-current", active ? "true" : "false");
   });
   if (activeIndex >= 0 && row.dataset.activeChordIndex !== String(activeIndex)) {
     row.dataset.activeChordIndex = String(activeIndex);
     requestAnimationFrame(() => {
       const activeButton = row.querySelector(".chord-pill.active");
       if (!activeButton) return;
-      const centeredLeft = activeButton.offsetLeft - (row.clientWidth / 2) + (activeButton.clientWidth / 2);
-      row.scrollTo({ left: Math.max(0, centeredLeft), behavior: "smooth" });
+      const rowRelativeLeft = activeButton.offsetLeft - row.offsetLeft;
+      const centeredLeft = rowRelativeLeft - (row.clientWidth / 2) + (activeButton.clientWidth / 2);
+      row.scrollTo({ left: Math.max(0, centeredLeft), behavior: state.captureMode ? "auto" : "smooth" });
     });
   }
 }
@@ -559,7 +615,8 @@ function renderCarousel(activeLine) {
   const time = state.mediaElement?.currentTime || 0;
   const upcomingIndex = lines.findIndex((line) => time < line.end);
   const centerIndex = rawActiveIndex >= 0 ? rawActiveIndex : Math.max(0, upcomingIndex);
-  const items = [centerIndex - 1, centerIndex, centerIndex + 1]
+  const pairStart = Math.max(0, centerIndex - (centerIndex % 2));
+  const items = [pairStart, pairStart + 1]
     .filter((index) => index >= 0 && index < lines.length)
     .map((index) => {
       const active = rawActiveIndex >= 0 && index === rawActiveIndex;
@@ -620,7 +677,7 @@ function updateTokenHighlights(time, activeLine = activeLineAt(time)) {
 function updateSync() {
   if (!state.manifest) return;
   const media = state.mediaElement;
-  const time = media?.currentTime || 0;
+  const time = Number.isFinite(state.captureTime) ? state.captureTime : (media?.currentTime || 0);
   const duration = media?.duration || state.manifest.duration || 1;
   const activeLine = activeLineAt(time);
   const activeChord = activeChordAt(time);
@@ -637,11 +694,31 @@ function updateSync() {
   $("now-degree").textContent = activeChord?.degree || "";
   $("stage-line").textContent = trackLine?.singableText || trackLine?.text || state.manifest.caption || "";
   $("current-lyric-label").textContent = selectedLyricSummary();
+  const introStart = firstVocalStart();
+  $("skip-intro").hidden = !state.mediaElement || introStart <= 0.25;
   renderCarousel(activeLine);
   renderFullLyrics(activeLine);
   renderChords(activeChord);
   updateTokenHighlights(time, activeLine);
 }
+
+window.funPlayerSetTime = function funPlayerSetTime(time) {
+  const media = state.mediaElement || audio || video;
+  const nextTime = Math.max(0, Number(time) || 0);
+  state.captureTime = nextTime;
+  if (media) {
+    try {
+      media.currentTime = nextTime;
+    } catch {
+      // Headless Chrome cannot always seek MP3 files through a local server.
+      // The capture timestamp still drives the rendered UI; FFmpeg muxes audio.
+    }
+  }
+  updateSync();
+  return nextTime;
+};
+
+window.funPlayerUpdateSync = updateSync;
 
 function initAudioGraph() {
   const media = state.mediaElement;
@@ -689,10 +766,14 @@ function mediaListeners(element) {
   element.addEventListener("pause", () => { $("play-symbol").textContent = "▶"; });
   element.addEventListener("timeupdate", updateSync);
   element.addEventListener("loadedmetadata", updateSync);
+  element.addEventListener("loadedmetadata", () => {
+    if (state.skipIntroOnLoad) applySkipIntro();
+  });
 }
 
 function bindEvents() {
   $("play").addEventListener("click", async () => {
+    state.captureTime = null;
     initAudioGraph();
     if (state.audioContext?.state === "suspended") await state.audioContext.resume();
     const media = state.mediaElement;
@@ -703,8 +784,13 @@ function bindEvents() {
   $("seek").addEventListener("input", () => {
     const media = state.mediaElement;
     if (!media) return;
+    state.captureTime = null;
     const duration = media.duration || state.manifest.duration || 1;
     media.currentTime = Number($("seek").value) / 1000 * duration;
+  });
+  $("skip-intro").addEventListener("click", () => {
+    applySkipIntro({ force: true });
+    state.mediaElement?.play();
   });
   mediaListeners(audio);
   mediaListeners(video);
@@ -764,6 +850,8 @@ async function loadMediaItem(item, updateHash = false) {
   state.activeMediaId = item.id;
   state.manifestUrl = resolveSitePath(item.manifest);
   state.manifest = await loadJson(state.manifestUrl);
+  state.didApplySkipIntro = false;
+  state.renderedChordKey = "";
   state.defaultTracks = await loadTextTracks(state.manifest.textTracks || []);
   state.lyricSets = await Promise.all((state.manifest.lyricSets || []).map(async (set) => ({
     ...set,
@@ -776,6 +864,7 @@ async function loadMediaItem(item, updateHash = false) {
   const musical = state.manifest.musical || {};
   $("kind-label").textContent = labelKind(state.manifest.kind);
   $("media-title").textContent = state.manifest.title;
+  $("media-artist").textContent = state.manifest.artist ? `by ${state.manifest.artist}` : "";
   $("media-subtitle").textContent = "";
   $("media-caption").textContent = state.manifest.caption || labelKind(state.manifest.kind);
   $("key-label").textContent = musical.key || "No key";
@@ -796,9 +885,14 @@ async function loadMediaItem(item, updateHash = false) {
 }
 
 async function boot() {
+  const params = new URLSearchParams(window.location.search);
+  state.captureMode = params.get("capture") === "1" || params.get("record") === "1";
+  state.skipIntroOnLoad = params.get("skipIntro") === "1" || params.get("skip") === "vocal";
+  document.body.classList.toggle("capture-mode", state.captureMode);
   bindEvents();
   state.catalog = await loadJson("data/catalog.json");
-  const hashId = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+  const requestedId = params.get("media") || params.get("id") || window.location.hash.replace(/^#/, "");
+  const hashId = decodeURIComponent(requestedId);
   const item = state.catalog.items.find((entry) => entry.id === hashId)
     || state.catalog.items.find((entry) => entry.id === state.catalog.defaultMedia)
     || state.catalog.items[0];

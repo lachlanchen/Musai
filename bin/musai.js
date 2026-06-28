@@ -56,6 +56,7 @@ Creative CLI:
   musai resume-session <session-id> --cwd ./another-folder
   musai jobs --session-id <id>
   musai artifacts <session-id>
+  musai fun-record --media-id one-sky-three-lights-mixed --skip-intro
 
 Analysis pipeline:
   musai pipeline INPUT_AUDIO --run-name my-run --max-duration 60
@@ -143,6 +144,14 @@ function pythonCommand(scriptRelative, args) {
 function runPython(scriptRelative, args) {
   const cmd = pythonCommand(scriptRelative, args);
   return spawn(cmd.command, cmd.args);
+}
+
+function runSystemPython(scriptRelative, args) {
+  const script = path.join(ROOT, scriptRelative);
+  if (!fs.existsSync(script)) fail(`Missing script: ${script}`);
+  const python = findExecutable(["python3", "python"]);
+  if (!python) fail("Python was not found.");
+  return spawn(python, [script, ...args]);
 }
 
 function runShell(scriptRelative, args) {
@@ -242,6 +251,10 @@ function main() {
   }
   if (command === "download-open-song" || command === "download-open-songs") {
     runPython("scripts/download_open_songs.py", rest);
+    return;
+  }
+  if (command === "fun-record" || command === "record-fun-player") {
+    runSystemPython("scripts/record_fun_player.py", rest);
     return;
   }
   if (command === "song" || command === "song-workbench") {

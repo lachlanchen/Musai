@@ -180,6 +180,43 @@ lyrics/mixed-vocal/ja.json
 
 `mul.json` should reflect what the audio actually sings. If the singing model performs Japanese as romaji or Mandarin as pinyin, store that phonetic sung line in `mul.json` and store native-script Japanese/Chinese in their translation tracks. Do not mark a native-script lyric as the sung source if the model did not actually sing it.
 
+## KTV Two-Line Carousel
+
+The right lyric panel intentionally shows only two timed lyric lines at once:
+
+```text
+line 1 active -> line 2 active -> next two-line pair
+```
+
+This keeps the screen clean for public playback and recordings. The full line-by-line trilingual view remains below the player on the normal website, but is hidden in capture mode.
+
+The chord row also uses the same active media clock. The current chord should be visibly highlighted and centered in the single-row chord carousel.
+
+## Capture And Skip-Intro Modes
+
+The site supports URL flags for recording clean videos:
+
+```text
+?capture=1&media=<media-id>#<media-id>
+?capture=1&skipIntro=1&media=<media-id>#<media-id>
+```
+
+`capture=1` hides the bottom full-lyrics section so a video frame contains only the site header and the main left/right player layout.
+
+`skipIntro=1` starts playback near the first timed lyric line. The player also shows a `Start vocal` button when the first timed lyric line begins after the instrumental intro.
+
+Use the local recorder to produce MP4 files with the website video and the original media audio track:
+
+```bash
+musai fun-record --media-id one-sky-three-lights-mixed --skip-intro
+```
+
+The generated MP4 goes to:
+
+```text
+data/video_captures/
+```
+
 ## Cover / Poster Rule
 
 Pure audio must have visual artwork. The default artwork aspect ratio is **16:9** so songs, MVs, short films, and YouTube embeds can share the same player frame. Square album-art assets may still be kept as secondary thumbnails, but the player hero and `share.image` should prefer a 16:9 poster.

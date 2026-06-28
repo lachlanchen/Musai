@@ -38,34 +38,38 @@ The current implementation is intentionally static. This keeps it easy to host o
 Default catalog item:
 
 ```text
-mars-red-sky-trilingual
+one-sky-three-lights-mixed
 ```
 
 Files:
 
 ```text
 website/data/catalog.json
-website/data/songs/mars-red-sky-trilingual/manifest.json
-website/data/songs/mars-red-sky-trilingual/lyrics/en-vocal/
-website/data/songs/mars-red-sky-trilingual/lyrics/zh-vocal/
-website/data/songs/mars-red-sky-trilingual/lyrics/ja-vocal/
-website/assets/audio/mars-red-sky-en.mp3
-website/assets/audio/mars-red-sky-zh.mp3
-website/assets/audio/mars-red-sky-ja.mp3
-website/assets/covers/mars-red-sky-16x9.png
+website/data/songs/one-sky-three-lights-mixed/manifest.json
+website/data/songs/one-sky-three-lights-mixed/lyrics/mixed-vocal/
+website/assets/audio/one-sky-three-lights-mixed.mp3
+website/assets/covers/one-sky-three-lights-16x9.png
 ```
 
 Media facts:
 
 - Kind: `song`
-- Duration: `82` seconds
-- Key: `E minor`
-- Playable assets: English, Mandarin, and Japanese generated full-song renders
-- Lyric protocol: per-vocal `lyricSets` with trilingual display for each render
-- Cover/poster: `website/assets/covers/mars-red-sky-16x9.png`
-- Source workflow: ACE-Step full-song generation plus Musai analysis and ASR-corrected lyric timing
+- Duration: `64` seconds
+- Key: `D major`
+- Playable assets: one mixed-language vocal render
+- Lyric protocol: `mixed-vocal` lyric set with `mul`, `en`, `zh-Hans`, and `ja`
+- Cover/poster: `website/assets/covers/one-sky-three-lights-16x9.png`
+- Source workflow: ACE-Step full-song generation plus Musai analysis and timing correction
 
 Second catalog item:
+
+```text
+mars-red-sky-trilingual
+```
+
+This item contains separate English, Mandarin, and Japanese generated full-song renders with per-vocal trilingual lyric sets, pinyin, furigana, and chord timing.
+
+Third catalog item:
 
 ```text
 rain-day-full-song-trilingual
@@ -100,6 +104,10 @@ The UI has four main areas:
 - current lyric carousel that can show multiple selected languages at once
 - full trilingual lyrics section, line by line
 
+The current lyric carousel is KTV-style: it shows only the current two-line pair. The active line alternates between the first and second row, then advances to the next two-line pair after the second line finishes. The active vocal language gets exact word timing when available; translation tracks rough-highlight corresponding tokens inside the same current line.
+
+The vocal language dropdown uses full native-language names such as `English`, `中文`, and `日本語`. The player title area shows the media title and musician, usually `by Musai`.
+
 For pure audio, the player uses `assets.cover` or `assets.poster` as the stage image behind the waveform. For video/MV/short-film media, `assets.primaryVideo` can replace the waveform stage while the same poster remains available for loading states and share previews. YouTube-uploaded media can use `assets.youtube` or `assets.externalVideos[]`; the site embeds the YouTube player and keeps the same catalog, artifact, and subtitle panels.
 
 ## Data Protocol
@@ -132,6 +140,34 @@ Detailed format reference:
 
 ```text
 references/musai-website-json-format.md
+```
+
+## Recording Videos
+
+Use `capture=1` to hide the bottom full-lyrics section and keep only the header plus the player/lyrics panels. Use `skipIntro=1` to start at the first timed lyric line.
+
+Example preview URL:
+
+```text
+https://fun.lazying.art/?capture=1&skipIntro=1&media=one-sky-three-lights-mixed#one-sky-three-lights-mixed
+```
+
+Local recording command:
+
+```bash
+musai fun-record --media-id one-sky-three-lights-mixed --skip-intro
+```
+
+Equivalent npm script:
+
+```bash
+npm run website:record -- --media-id one-sky-three-lights-mixed --skip-intro
+```
+
+The recorder captures deterministic player frames with Playwright and muxes them with the source media audio using FFmpeg. This avoids browser audio drift and makes the exported MP4 start from the selected song timestamp. Default output:
+
+```text
+data/video_captures/<media-id>-skip-intro.mp4
 ```
 
 LALACHAN and YouTube publishing guide:

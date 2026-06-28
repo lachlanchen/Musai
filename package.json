@@ -47,6 +47,7 @@
     "check": "node --check bin/musai.js && node bin/musai.js --version && node bin/musai.js doctor --json",
     "website:validate": "python3 scripts/validate_fun_media_site.py --root website",
     "website:add-youtube": "python3 scripts/add_fun_media_youtube.py",
+    "website:record": "python3 scripts/record_fun_player.py",
     "smoke": "node bin/musai.js npm-smoke",
     "test": "npm run check && npm run smoke",
     "pack:dry-run": "npm pack --dry-run",

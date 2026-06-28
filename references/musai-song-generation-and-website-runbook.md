@@ -251,8 +251,19 @@ Browser smoke:
 - switch every vocal language;
 - confirm each vocal shows its own trilingual lines;
 - confirm pinyin/furigana do not duplicate;
-- confirm the chord row follows the active render;
+- confirm the KTV lyric panel shows only the current two-line pair;
+- confirm word highlighting alternates between the first and second lyric line;
+- confirm translation tracks rough-highlight the same current line without cross-line jumps;
+- confirm the chord row follows the active render and the current chord is visibly highlighted in the center;
 - confirm the short/hidden demos are not visible unless intentionally in the catalog.
+
+Recording smoke:
+
+```bash
+musai fun-record --media-id <media-id> --skip-intro
+```
+
+This captures the Fun player in `capture=1` mode and replaces browser audio with the source media file directly. Use `--skip-intro` for a trimmed video that begins at the first timed vocal line.
 
 Publish:
 
