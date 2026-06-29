@@ -393,7 +393,9 @@ function setLibraryOpen(open) {
   state.libraryOpen = Boolean(open);
   $("library-panel").hidden = !state.libraryOpen;
   $("library-backdrop").hidden = !state.libraryOpen;
+  $("library-peek").hidden = state.libraryOpen;
   $("library-toggle").setAttribute("aria-expanded", state.libraryOpen ? "true" : "false");
+  $("library-peek").setAttribute("aria-expanded", state.libraryOpen ? "true" : "false");
   if (!state.libraryOpen) {
     state.searchOpen = false;
     $("search-toggle").setAttribute("aria-expanded", "false");
@@ -816,6 +818,7 @@ function bindEvents() {
   mediaListeners(audio);
   mediaListeners(video);
   $("library-toggle").addEventListener("click", () => setLibraryOpen(!state.libraryOpen));
+  $("library-peek").addEventListener("click", () => setLibraryOpen(true));
   $("library-close").addEventListener("click", () => setLibraryOpen(false));
   $("library-backdrop").addEventListener("click", () => setLibraryOpen(false));
   $("search-toggle").addEventListener("click", () => setSearchOpen(true));
