@@ -394,15 +394,21 @@ function setLibraryOpen(open) {
   $("library-panel").hidden = !state.libraryOpen;
   $("library-backdrop").hidden = !state.libraryOpen;
   $("library-toggle").setAttribute("aria-expanded", state.libraryOpen ? "true" : "false");
+  if (!state.libraryOpen) {
+    state.searchOpen = false;
+    $("search-toggle").setAttribute("aria-expanded", "false");
+  }
 }
 
 function setSearchOpen(open) {
   state.searchOpen = Boolean(open);
-  $("header-search").hidden = !state.searchOpen;
   $("search-toggle").setAttribute("aria-expanded", state.searchOpen ? "true" : "false");
   if (state.searchOpen) {
-    $("catalog-search").focus();
     setLibraryOpen(true);
+    requestAnimationFrame(() => {
+      $("catalog-search").focus();
+      $("catalog-search").select();
+    });
   }
 }
 
@@ -812,7 +818,7 @@ function bindEvents() {
   $("library-toggle").addEventListener("click", () => setLibraryOpen(!state.libraryOpen));
   $("library-close").addEventListener("click", () => setLibraryOpen(false));
   $("library-backdrop").addEventListener("click", () => setLibraryOpen(false));
-  $("search-toggle").addEventListener("click", () => setSearchOpen(!state.searchOpen));
+  $("search-toggle").addEventListener("click", () => setSearchOpen(true));
   document.querySelectorAll("[data-kind-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       state.kindFilter = button.dataset.kindFilter;
