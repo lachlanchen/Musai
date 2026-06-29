@@ -5,8 +5,6 @@
   "songId": "rain-day-full-song-trilingual",
   "trackRole": "active-vocal",
   "vocalSetId": "zh-vocal",
-  "timingSource": "asr-corrected-render",
-  "timingNote": "Mandarin render includes an audible repeated tonight phrase, so it is preserved as separate lines.",
   "language": {
     "code": "zh-Hans",
     "label": "Chinese",
@@ -481,7 +479,7 @@
     {
       "id": "line-010",
       "start": 47.96,
-      "end": 50.0,
+      "end": 50,
       "text": "末班车远去",
       "singableText": "末班车远去",
       "role": "localized-lyric",
@@ -520,7 +518,7 @@
     },
     {
       "id": "line-011",
-      "start": 50.0,
+      "start": 50,
       "end": 52.76,
       "text": "街口变宽",
       "singableText": "街口变宽",

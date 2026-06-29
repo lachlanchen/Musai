@@ -230,6 +230,17 @@ function vocalLanguageName(asset) {
     || nativeLanguageName(asset?.languageCode, asset?.languageLabel || asset?.label);
 }
 
+function publicAssetRole(asset) {
+  if (asset?.publicRoleLabel) return asset.publicRoleLabel;
+  if (asset?.roleLabel && !/render|generated|same-score|localized|analysis|review|candidate/i.test(asset.roleLabel)) {
+    return asset.roleLabel;
+  }
+  if (asset?.type === "external-video" || asset?.type === "video") return "Video";
+  if (asset?.languageCode) return "Vocal";
+  if (asset?.type === "audio") return "Audio";
+  return "Media";
+}
+
 function displayTitleForAsset(asset = activePlayableAsset()) {
   const titles = state.manifest?.localizedTitles || {};
   const code = asset?.languageCode || activeTimingTrack()?.language?.code || "";
@@ -508,7 +519,7 @@ function renderAssetSwitcher() {
   const assets = playableAssets(state.manifest);
   $("asset-switcher").innerHTML = assets.map((asset) => `
     <button class="${asset.id === state.activeAssetId ? "active" : ""}" type="button" data-asset-id="${escapeHtml(asset.id)}">
-      <span>${escapeHtml(asset.roleLabel || asset.role || asset.type || "audio")}</span>
+      <span>${escapeHtml(publicAssetRole(asset))}</span>
       <strong>${escapeHtml(asset.languageLabel || asset.label)}</strong>
     </button>
   `).join("");

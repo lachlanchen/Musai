@@ -11,14 +11,14 @@
     "ja": "雨の日のヴァース"
   },
   "artist": "Musia",
-  "subtitle": "Three playable short verse renders with per-language ASR-adjusted lyric timing",
-  "description": "A compact rain-day localization demo with separate Mandarin, English, and Japanese short renders. The lyric display follows each selected audio language and uses ASR-adjusted timing instead of one shared English timeline.",
-  "caption": "Same melody, localized lyrics",
+  "subtitle": "A short rain-day verse in three languages",
+  "description": "A compact rain-day verse with Mandarin, English, and Japanese vocals, each paired with synced lyrics.",
+  "caption": "Rain at the window, light in the heart",
   "duration": 36.024,
   "canonicalUrl": "https://fun.lazying.art/#rain-day-bilingual-verse",
   "share": {
     "title": "Rain Day Verse - Fun Lazying Art",
-    "description": "A synced music-localization demo with three singable lyric tracks: English, Japanese with furigana, and Chinese with pinyin.",
+    "description": "A short Musia rain-day song with English, Japanese, and Chinese lyric display.",
     "url": "https://fun.lazying.art/#rain-day-bilingual-verse",
     "image": "assets/covers/rain-day-trilingual-poster-16x9.png",
     "siteName": "Fun Lazying Art"
@@ -46,46 +46,41 @@
       "id": "short-zh",
       "label": "Chinese short verse",
       "roleLabel": "中文",
-      "role": "short-verse-render",
+      "role": "vocal",
       "languageCode": "zh-Hans",
       "languageLabel": "中文",
-      "src": "assets/audio/rain-day-bilingual-verse.mp3",
-      "mime": "audio/mpeg",
-      "qualityGate": "review"
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/rain-day-bilingual-verse.mp3",
+      "mime": "audio/mpeg"
     },
     "alternateAudio": [
       {
         "id": "short-en",
         "label": "English short verse",
         "roleLabel": "English",
-        "role": "short-verse-render",
+        "role": "vocal",
         "languageCode": "en",
         "languageLabel": "English",
-        "sourceModel": "SoulX-Singer",
-        "qualityGate": "review",
-        "src": "assets/audio/rain-day-short-verse-en.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/rain-day-short-verse-en.mp3",
         "mime": "audio/mpeg"
       },
       {
         "id": "short-ja",
         "label": "Japanese short verse",
         "roleLabel": "日本語",
-        "role": "short-verse-render",
+        "role": "vocal",
         "languageCode": "ja",
         "languageLabel": "日本語",
-        "sourceModel": "acestep-v15-xl-turbo",
-        "qualityGate": "pass",
-        "src": "assets/audio/rain-day-short-verse-ja.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/rain-day-short-verse-ja.mp3",
         "mime": "audio/mpeg"
       },
       {
         "id": "vocal-zh",
         "label": "Chinese vocal",
         "roleLabel": "Vocal",
-        "role": "localized-vocal",
+        "role": "vocal",
         "languageCode": "zh-Hans",
         "languageLabel": "中文",
-        "src": "assets/audio/rain-day-bilingual-verse-vocal.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/rain-day-bilingual-verse-vocal.mp3",
         "mime": "audio/mpeg"
       },
       {
@@ -93,37 +88,10 @@
         "label": "Melody guide",
         "roleLabel": "Guide",
         "role": "melody-guide",
-        "src": "assets/audio/rain-day-trilingual-melody-guide.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/rain-day-trilingual-melody-guide.mp3",
         "mime": "audio/mpeg"
       }
-    ],
-    "stems": {}
-  },
-  "provenance": {
-    "generator": "SoulX-Singer + ACE-Step 1.5",
-    "run": "data/soulx_verses/rain-day-trilingual-zh-localized-20260628 and data/creative_projects/rain-day-short-trilingual-20260628",
-    "model": "SoulX-Singer",
-    "lyricRefinement": "manual Musia LyricFit pass",
-    "coverPrompt": "16:9 rainy city window, waveform lines, lyric timing, premium clean music poster, teal, gold, rose, no people, no text.",
-    "lyricAdaptation": "Each language uses the same four timed phrase slots but has its own singable lyric rather than a literal translation.",
-    "analysis": {
-      "zh-Hans": {
-        "audio": "website/assets/audio/rain-day-bilingual-verse.mp3",
-        "asr": "窗边雨轻轻落尖 / 城里灯穿雨交冲 / 心底雨温柔漫漫 / 陪我停在这片雨",
-        "qualityGate": "review"
-      },
-      "en": {
-        "audio": "website/assets/audio/rain-day-short-verse-en.mp3",
-        "asr": "Say light shimmer under, my heart whispers slow elm / Stay with me in Rio",
-        "qualityGate": "review"
-      },
-      "ja": {
-        "audio": "website/assets/audio/rain-day-short-verse-ja.mp3",
-        "asr": "そっと雨は散れ / 明かりがにしじめ / 胸の子だった",
-        "qualityGate": "pass"
-      },
-      "note": "Text tracks are ASR-adjusted per selected audio. They are not strict same-stem localizations."
-    }
+    ]
   },
   "musical": {
     "key": "D minor",
@@ -131,49 +99,49 @@
     "timeSignature": "4/4",
     "chords": [
       {
-        "start": 0.0,
-        "end": 4.0,
+        "start": 0,
+        "end": 4,
         "name": "Dm9",
         "degree": "i9"
       },
       {
-        "start": 4.0,
-        "end": 8.0,
+        "start": 4,
+        "end": 8,
         "name": "Bbmaj7",
         "degree": "VImaj7"
       },
       {
-        "start": 8.0,
-        "end": 12.0,
+        "start": 8,
+        "end": 12,
         "name": "Fadd9",
         "degree": "IIIadd9"
       },
       {
-        "start": 12.0,
-        "end": 16.0,
+        "start": 12,
+        "end": 16,
         "name": "C",
         "degree": "VII"
       },
       {
-        "start": 16.0,
-        "end": 20.0,
+        "start": 16,
+        "end": 20,
         "name": "Gm7",
         "degree": "iv7"
       },
       {
-        "start": 20.0,
-        "end": 24.0,
+        "start": 20,
+        "end": 24,
         "name": "Dm/A",
         "degree": "i/5"
       },
       {
-        "start": 24.0,
-        "end": 28.0,
+        "start": 24,
+        "end": 28,
         "name": "Bbmaj7",
         "degree": "VImaj7"
       },
       {
-        "start": 28.0,
+        "start": 28,
         "end": 36.024,
         "name": "Cadd9",
         "degree": "VIIadd9"
@@ -192,8 +160,7 @@
         "pinyin",
         "tones"
       ],
-      "path": "lyrics/zh-Hans.json",
-      "lineCoverage": "complete-asr"
+      "path": "lyrics/zh-Hans.json"
     },
     {
       "code": "ja",
@@ -205,8 +172,7 @@
         "translation",
         "furigana"
       ],
-      "path": "lyrics/ja.json",
-      "lineCoverage": "partial-asr"
+      "path": "lyrics/ja.json"
     },
     {
       "code": "en",
@@ -218,8 +184,7 @@
         "translation",
         "wordTiming"
       ],
-      "path": "lyrics/en.json",
-      "lineCoverage": "partial-asr"
+      "path": "lyrics/en.json"
     }
   ],
   "timeline": {
@@ -227,7 +192,7 @@
     "lines": [
       {
         "id": "line-001",
-        "start": 0.0,
+        "start": 0,
         "end": 3.78,
         "sourceText": "Rain by the window"
       },
@@ -245,25 +210,12 @@
       },
       {
         "id": "line-004",
-        "start": 12.0,
+        "start": 12,
         "end": 17.22,
         "sourceText": "Stay inside the rainy glow"
       }
     ]
   },
   "chapters": [],
-  "shots": [],
-  "artifacts": [
-    {
-      "id": "cover-svg",
-      "label": "editable cover SVG",
-      "href": "assets/covers/rain-day-bilingual-verse.svg"
-    },
-    {
-      "id": "manifest",
-      "label": "media manifest JSON",
-      "href": "data/songs/rain-day-bilingual-verse/manifest.json"
-    }
-  ],
-  "createCommand": "musia soulx-verse --title \"Rain Day\" --provider deepseek && musia website add-media"
+  "shots": []
 }

@@ -10,21 +10,6 @@
     "script": "Hans",
     "pronunciation": "pinyin"
   },
-  "notes": "Japanese selected Aya render. Lines are corrected from faster-whisper ASR plus prompt/listening; ASR confirms the repeated “ひとりじゃない” and omits the final “花になる”, so the public lyric stops at the audible small-courage phrase.",
-  "provenance": {
-    "activeVocalLanguage": "ja",
-    "lyricSet": "ja-vocal",
-    "sources": [
-      "faster-whisper ASR on separated vocal stem",
-      "original prompt/reference lyric",
-      "manual correction pass"
-    ],
-    "rule": "audio truth first; prompt/reference used only to correct obvious ASR homophones or missing function words"
-  },
-  "quality": {
-    "timing": "active vocal line timing from Musia run_pipeline ASR segments; token timing evenly distributed by player when exact word timing is not trusted",
-    "translation": "line-by-line translation of the active vocal text"
-  },
   "lines": [
     {
       "id": "ja-001",
@@ -300,12 +285,12 @@
           "text": "铃",
           "pinyin": "ling2",
           "start": 27.485,
-          "end": 28.0
+          "end": 28
         },
         {
           "text": "声",
           "pinyin": "sheng1",
-          "start": 28.0,
+          "start": 28,
           "end": 28.515
         },
         {

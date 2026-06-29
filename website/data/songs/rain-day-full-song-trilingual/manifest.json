@@ -12,14 +12,14 @@
     "yue-Hant": "雨天全曲"
   },
   "artist": "Musia",
-  "subtitle": "Separate English, Mandarin, and Japanese full-song renders with analysis-tuned lyric timing",
-  "description": "A 78-second rainy-day cinematic pop song generated as three separate language versions. The player uses per-language lyric timing from the analysis pass, while the chord row uses the detected musical pulse.",
-  "caption": "Analysis-tuned trilingual full-song demo",
-  "duration": 78.0,
+  "subtitle": "A rainy-day song in English, Mandarin, Japanese, and Cantonese",
+  "description": "A rainy-day cinematic pop song with English, Mandarin, Japanese, and Cantonese vocals plus synced lyrics.",
+  "caption": "Silver rain, warm lights, a song that keeps walking",
+  "duration": 78,
   "canonicalUrl": "https://fun.lazying.art/#rain-day-full-song-trilingual",
   "share": {
     "title": "Rain Day Full Song - Fun Lazying Art",
-    "description": "A full-song Musia demo with English, Mandarin, and Japanese generated versions plus synced trilingual lyrics.",
+    "description": "A full Musia rain-day song with multilingual vocals and synced lyrics.",
     "url": "https://fun.lazying.art/#rain-day-full-song-trilingual",
     "image": "assets/covers/rain-day-full-song-16x9.png",
     "siteName": "Fun Lazying Art"
@@ -47,21 +47,19 @@
       "id": "full-zh",
       "label": "Mandarin full song",
       "roleLabel": "Vocal",
-      "role": "full-song-render",
+      "role": "vocal",
       "languageCode": "zh-Hans",
       "languageLabel": "中文",
-      "sourceModel": "acestep-v15-xl-turbo",
-      "qualityGate": "pass",
-      "src": "assets/audio/rain-day-full-song-zh.mp3",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/rain-day-full-song-zh.mp3",
       "mime": "audio/mpeg",
       "lyricSetId": "zh-vocal",
       "musical": {
         "key": "D minor",
-        "bpm": 76.0,
+        "bpm": 76,
         "timeSignature": "4/4",
         "chords": [
           {
-            "start": 0.0,
+            "start": 0,
             "end": 1.625,
             "name": "Dm",
             "degree": ""
@@ -446,7 +444,7 @@
           },
           {
             "start": 69.126,
-            "end": 78.0,
+            "end": 78,
             "name": "Dm",
             "degree": ""
           }
@@ -458,12 +456,10 @@
         "id": "full-en",
         "label": "English full song",
         "roleLabel": "Vocal",
-        "role": "full-song-render",
+        "role": "vocal",
         "languageCode": "en",
         "languageLabel": "English",
-        "sourceModel": "acestep-v15-turbo",
-        "qualityGate": "pass",
-        "src": "assets/audio/rain-day-full-song-en.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/rain-day-full-song-en.mp3",
         "mime": "audio/mpeg",
         "lyricSetId": "en-vocal",
         "musical": {
@@ -472,7 +468,7 @@
           "timeSignature": "4/4",
           "chords": [
             {
-              "start": 0.0,
+              "start": 0,
               "end": 4.69,
               "name": "Dm",
               "degree": ""
@@ -665,7 +661,7 @@
             },
             {
               "start": 67.756,
-              "end": 78.0,
+              "end": 78,
               "name": "Dm",
               "degree": ""
             }
@@ -676,21 +672,19 @@
         "id": "full-ja",
         "label": "Japanese full song",
         "roleLabel": "Vocal",
-        "role": "full-song-render",
+        "role": "vocal",
         "languageCode": "ja",
         "languageLabel": "日本語",
-        "sourceModel": "acestep-v15-xl-turbo",
-        "qualityGate": "pass",
-        "src": "assets/audio/rain-day-full-song-ja.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/rain-day-full-song-ja.mp3",
         "mime": "audio/mpeg",
         "lyricSetId": "ja-vocal",
         "musical": {
           "key": "D minor",
-          "bpm": 76.0,
+          "bpm": 76,
           "timeSignature": "4/4",
           "chords": [
             {
-              "start": 0.0,
+              "start": 0,
               "end": 4.807,
               "name": "Dm",
               "degree": ""
@@ -949,7 +943,7 @@
             },
             {
               "start": 67.524,
-              "end": 78.0,
+              "end": 78,
               "name": "Dm",
               "degree": ""
             }
@@ -960,57 +954,15 @@
         "id": "full-yue",
         "label": "Cantonese vocal",
         "roleLabel": "Vocal",
-        "role": "same-score-localized-vocal",
+        "role": "vocal",
         "languageCode": "yue-Hant",
         "languageLabel": "廣東話",
         "lyricSetId": "yue-vocal",
-        "sourceModel": "SoulX-Singer",
-        "qualityGate": "review-pass",
-        "src": "assets/audio/rain-day-full-song-yue-Hant.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/rain-day-full-song-yue-Hant.mp3",
         "mime": "audio/mpeg",
         "guide": "Japanese vocal guide"
       }
-    ],
-    "stems": {}
-  },
-  "provenance": {
-    "generator": "ACE-Step 1.5",
-    "run": "data/creative_projects/rain-day-full-trilingual-20260628",
-    "model": "acestep-v15-turbo and acestep-v15-xl-turbo",
-    "selectedRenders": {
-      "en": "data/creative_projects/rain-day-full-trilingual-20260628/ace_outputs/en/d8e99df2-c52f-6336-d874-a3c95cf2c302.wav",
-      "zh-Hans": "data/creative_projects/rain-day-full-trilingual-20260628/ace_outputs/zh_xl/8aeb1dc3-a205-3352-8455-1a23c255c2b8.wav",
-      "ja": "data/creative_projects/rain-day-full-trilingual-20260628/ace_outputs/ja_xl/ac655572-724f-3ab1-cfd1-192d8f6e36a4.wav"
-    },
-    "qa": {
-      "en": "pass",
-      "zh-Hans": "pass",
-      "ja": "pass"
-    },
-    "coverSource": "/home/lachlan/.codex/generated_images/019f0842-25ba-7bd2-9d4b-0b1c60d8a951/ig_01763bb4db1aabe8016a40c48306cc819182dd3a18c996ec0c.png",
-    "note": "These are separate full-song generated versions, not strict same-stems localization renders. Lyrics use per-vocal ASR-corrected timing; do not assume the three vocal renders sing identical lines.",
-    "analysis": {
-      "method": "Musia pipeline: Demucs stems, WhisperX/faster-whisper lyric timing, beat tracking, chord segmentation",
-      "runs": {
-        "en": "data/runs/generated-rain-day-full-en-analysis",
-        "zh-Hans": "data/runs/generated-rain-day-full-zh-analysis",
-        "ja": "data/runs/generated-rain-day-full-ja-analysis"
-      },
-      "tempoBpm": {
-        "en": 78.3026,
-        "zh-Hans": 151.9991,
-        "zh-HansNormalized": 75.9995,
-        "ja": 75.9995
-      },
-      "note": "The three language files are independent full-song renders; the website keeps per-language timing and does not claim strict same-stem localization for this demo."
-    },
-    "lyricProtocol": "per-vocal lyricSets: en-vocal, zh-vocal, ja-vocal. Each set has its own trilingual tracks based on that render ASR and corrected against prompt lyrics.",
-    "cantoneseVocal": {
-      "backend": "SoulX-Singer",
-      "guide": "Japanese vocal guide",
-      "targetLines": "data/creative_projects/cantonese-localizations-20260628/rain-day-full/target_lines_yue-Hant.json",
-      "audio": "assets/audio/rain-day-full-song-yue-Hant.mp3"
-    }
+    ]
   },
   "musical": {
     "key": "D minor",
@@ -1018,7 +970,7 @@
     "timeSignature": "4/4",
     "chords": [
       {
-        "start": 0.0,
+        "start": 0,
         "end": 4.69,
         "name": "Dm",
         "degree": "i"
@@ -1121,7 +1073,7 @@
       },
       {
         "start": 67.76,
-        "end": 78.0,
+        "end": 78,
         "name": "Dm",
         "degree": "i"
       }
@@ -1188,12 +1140,12 @@
       {
         "id": "line-010",
         "start": 47.96,
-        "end": 50.0,
+        "end": 50,
         "sourceText": "末班车远去"
       },
       {
         "id": "line-011",
-        "start": 50.0,
+        "start": 50,
         "end": 52.76,
         "sourceText": "街口变宽"
       },
@@ -1220,7 +1172,7 @@
   "chapters": [
     {
       "id": "intro",
-      "start": 0.0,
+      "start": 0,
       "end": 11.09,
       "label": "Intro"
     },
@@ -1250,21 +1202,11 @@
     }
   ],
   "shots": [],
-  "artifacts": [
-    {
-      "id": "manifest",
-      "label": "media manifest JSON",
-      "href": "data/songs/rain-day-full-song-trilingual/manifest.json"
-    }
-  ],
-  "createCommand": "cd third_party/ACE-Step-1.5 && .venv/bin/python cli.py -c data/creative_projects/rain-day-full-trilingual-20260628/ace_<lang>.toml --backend vllm",
   "lyricSets": [
     {
       "id": "en-vocal",
       "label": "English vocal lyric set",
       "languageCode": "en",
-      "timingSource": "asr-corrected-render",
-      "note": "English render has partial ASR; early prompt-planned lines were not clearly sung, so this set follows the audible render.",
       "tracks": [
         {
           "code": "en",
@@ -1305,8 +1247,6 @@
       "id": "zh-vocal",
       "label": "Mandarin vocal lyric set",
       "languageCode": "zh-Hans",
-      "timingSource": "asr-corrected-render",
-      "note": "Mandarin render includes an audible repeated tonight phrase, so it is preserved as separate lines.",
       "tracks": [
         {
           "code": "zh-Hans",
@@ -1347,8 +1287,6 @@
       "id": "ja-vocal",
       "label": "Japanese vocal lyric set",
       "languageCode": "ja",
-      "timingSource": "asr-corrected-render",
-      "note": "Japanese render is shorter than the prompt-planned lyric; final bridge/refrain lines are not displayed because they are not clearly sung.",
       "tracks": [
         {
           "code": "ja",

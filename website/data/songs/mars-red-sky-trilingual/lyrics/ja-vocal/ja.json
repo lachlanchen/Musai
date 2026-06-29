@@ -15,7 +15,7 @@
     {
       "id": "line-001",
       "start": 8.75,
-      "end": 14.0,
+      "end": 14,
       "text": "赤い砂が足跡を消す",
       "singableText": "赤い砂が足跡を消す",
       "role": "localized-lyric",
@@ -52,13 +52,13 @@
           "text": "消す",
           "reading": "けす",
           "start": 13.125,
-          "end": 14.0
+          "end": 14
         }
       ]
     },
     {
       "id": "line-002",
-      "start": 14.0,
+      "start": 14,
       "end": 20.29,
       "text": "青い夕陽が風に沈む",
       "singableText": "青い夕陽が風に沈む",
@@ -67,7 +67,7 @@
         {
           "text": "青い",
           "reading": "あおい",
-          "start": 14.0,
+          "start": 14,
           "end": 15.048
         },
         {
@@ -432,8 +432,8 @@
     },
     {
       "id": "line-010",
-      "start": 61.0,
-      "end": 67.0,
+      "start": 61,
+      "end": 67,
       "text": "赤い空の下で 明日が呼ぶ",
       "singableText": "赤い空の下で 明日が呼ぶ",
       "role": "localized-lyric",
@@ -441,7 +441,7 @@
         {
           "text": "赤い",
           "reading": "あかい",
-          "start": 61.0,
+          "start": 61,
           "end": 61.75
         },
         {
@@ -459,11 +459,11 @@
           "text": "下",
           "reading": "した",
           "start": 63.25,
-          "end": 64.0
+          "end": 64
         },
         {
           "text": "で",
-          "start": 64.0,
+          "start": 64,
           "end": 64.75
         },
         {
@@ -481,13 +481,13 @@
           "text": "呼ぶ",
           "reading": "よぶ",
           "start": 66.25,
-          "end": 67.0
+          "end": 67
         }
       ]
     },
     {
       "id": "line-011",
-      "start": 67.0,
+      "start": 67,
       "end": 77.29,
       "text": "宇宙が広いほど 勇気は燃える",
       "singableText": "宇宙が広いほど 勇気は燃える",
@@ -496,7 +496,7 @@
         {
           "text": "宇宙",
           "reading": "うちゅう",
-          "start": 67.0,
+          "start": 67,
           "end": 68.715
         },
         {

@@ -12,14 +12,14 @@
     "yue-Hant": "紅天下好渺小"
   },
   "artist": "Musia",
-  "subtitle": "A trilingual Mars desert song about smallness, courage, and the vast universe",
-  "description": "An original 82-second cinematic Mars desert song generated in English, Mandarin, and Japanese with per-vocal trilingual lyric sets, pinyin, furigana, word highlighting, and detected chord timelines.",
+  "subtitle": "A Mars desert song about smallness, courage, and the vast universe",
+  "description": "A cinematic Mars desert song about feeling small under a vast sky while still finding courage to move forward.",
   "caption": "Tiny human, vast Mars, courage under the red sky",
-  "duration": 82.0,
+  "duration": 82,
   "canonicalUrl": "https://fun.lazying.art/#mars-red-sky-trilingual",
   "share": {
     "title": "Small Under the Red Sky - Fun Lazying Art",
-    "description": "A cinematic trilingual Mars desert song: lonely, vast, sad, and encouraging.",
+    "description": "A cinematic Musia Mars desert song: lonely, vast, sad, and encouraging.",
     "url": "https://fun.lazying.art/#mars-red-sky-trilingual",
     "image": "assets/covers/mars-red-sky-16x9.png",
     "siteName": "Fun Lazying Art"
@@ -47,13 +47,11 @@
       "id": "mars-en",
       "label": "English full song",
       "roleLabel": "Vocal",
-      "role": "full-song-render",
+      "role": "vocal",
       "languageCode": "en",
       "languageLabel": "English",
       "lyricSetId": "en-vocal",
-      "sourceModel": "acestep-v15-xl-turbo",
-      "qualityGate": "review-pass",
-      "src": "assets/audio/mars-red-sky-en.mp3",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/mars-red-sky-en.mp3",
       "mime": "audio/mpeg",
       "musical": {
         "key": "E minor",
@@ -61,7 +59,7 @@
         "timeSignature": "4/4",
         "chords": [
           {
-            "start": 0.0,
+            "start": 0,
             "end": 36.014,
             "name": "Em",
             "degree": ""
@@ -164,7 +162,7 @@
           },
           {
             "start": 72.562,
-            "end": 82.0,
+            "end": 82,
             "name": "Em",
             "degree": ""
           }
@@ -176,13 +174,11 @@
         "id": "mars-zh",
         "label": "Mandarin full song",
         "roleLabel": "Vocal",
-        "role": "full-song-render",
+        "role": "vocal",
         "languageCode": "zh-Hans",
         "languageLabel": "中文",
         "lyricSetId": "zh-vocal",
-        "sourceModel": "acestep-v15-xl-turbo",
-        "qualityGate": "review-pass",
-        "src": "assets/audio/mars-red-sky-zh.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/mars-red-sky-zh.mp3",
         "mime": "audio/mpeg",
         "musical": {
           "key": "E minor",
@@ -190,7 +186,7 @@
           "timeSignature": "4/4",
           "chords": [
             {
-              "start": 0.0,
+              "start": 0,
               "end": 26.842,
               "name": "Em",
               "degree": ""
@@ -371,7 +367,7 @@
             },
             {
               "start": 74.095,
-              "end": 82.0,
+              "end": 82,
               "name": "Em",
               "degree": ""
             }
@@ -382,13 +378,11 @@
         "id": "mars-ja",
         "label": "Japanese full song",
         "roleLabel": "Vocal",
-        "role": "full-song-render",
+        "role": "vocal",
         "languageCode": "ja",
         "languageLabel": "日本語",
         "lyricSetId": "ja-vocal",
-        "sourceModel": "acestep-v15-xl-turbo",
-        "qualityGate": "review-pass",
-        "src": "assets/audio/mars-red-sky-ja.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/mars-red-sky-ja.mp3",
         "mime": "audio/mpeg",
         "musical": {
           "key": "E minor",
@@ -396,7 +390,7 @@
           "timeSignature": "4/4",
           "chords": [
             {
-              "start": 0.0,
+              "start": 0,
               "end": 0.65,
               "name": "Cm",
               "degree": ""
@@ -685,7 +679,7 @@
             },
             {
               "start": 71.726,
-              "end": 82.0,
+              "end": 82,
               "name": "Em",
               "degree": ""
             }
@@ -696,13 +690,11 @@
         "id": "mars-yue",
         "label": "Cantonese vocal",
         "roleLabel": "Vocal",
-        "role": "same-score-localized-vocal",
+        "role": "vocal",
         "languageCode": "yue-Hant",
         "languageLabel": "廣東話",
         "lyricSetId": "yue-vocal",
-        "sourceModel": "SoulX-Singer",
-        "qualityGate": "review-pass",
-        "src": "assets/audio/mars-red-sky-yue-Hant.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/mars-red-sky-yue-Hant.mp3",
         "mime": "audio/mpeg",
         "guide": "English vocal guide"
       }
@@ -714,7 +706,7 @@
     "timeSignature": "4/4",
     "chords": [
       {
-        "start": 0.0,
+        "start": 0,
         "end": 36.014,
         "name": "Em",
         "degree": ""
@@ -817,7 +809,7 @@
       },
       {
         "start": 72.562,
-        "end": 82.0,
+        "end": 82,
         "name": "Em",
         "degree": ""
       }
@@ -1061,23 +1053,5 @@
         "end": 72.73
       }
     ]
-  },
-  "provenance": {
-    "researchBrief": "references/mars-desert-song-brief-2026-06-28.md",
-    "generationModel": "ACE-Step 1.5 XL turbo local checkpoint",
-    "note": "Three vocal renders are independent full-song generations with shared prompt direction. Lyrics are intended singable text aligned to ASR-derived timing; generated vocals contain minor imperfections.",
-    "cantoneseVocal": {
-      "backend": "SoulX-Singer",
-      "guide": "English vocal guide",
-      "targetLines": "data/creative_projects/cantonese-localizations-20260628/mars-red-sky/target_lines_yue-Hant.json",
-      "audio": "assets/audio/mars-red-sky-yue-Hant.mp3"
-    }
-  },
-  "artifacts": [
-    {
-      "id": "research-brief",
-      "label": "research and production brief",
-      "href": "https://github.com/lachlanchen/Musia/blob/main/references/mars-desert-song-brief-2026-06-28.md"
-    }
-  ]
+  }
 }

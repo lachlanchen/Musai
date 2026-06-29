@@ -1,0 +1,382 @@
+{
+  "schema": "fun.lazying.media.manifest.v1",
+  "version": 1,
+  "id": "take-care-of-yourself-hope-version",
+  "kind": "song",
+  "title": "Take Care of Yourself - Hope Version",
+  "localizedTitles": {
+    "en": "Take Care of Yourself - Hope Version",
+    "zh-Hans": "照顾好自己 - 希望版",
+    "ja": "自分を大切に - 希望の歌"
+  },
+  "artist": "Musia",
+  "subtitle": "A spacious version in English, Japanese, and Mandarin",
+  "description": "A spacious hopeful song about care, courage, and the quiet light that helps you continue.",
+  "caption": "Leave a little light for tomorrow.",
+  "duration": 76,
+  "canonicalUrl": "https://fun.lazying.art/#take-care-of-yourself-hope-version",
+  "share": {
+    "title": "Take Care of Yourself - Hope Version - Fun Lazying Art",
+    "description": "A spacious Musia song about care, courage, and hope.",
+    "url": "https://fun.lazying.art/#take-care-of-yourself-hope-version",
+    "image": "assets/covers/take-care-of-yourself-16x9.png",
+    "siteName": "Fun Lazying Art"
+  },
+  "assets": {
+    "cover": {
+      "id": "cover",
+      "label": "Take Care of Yourself cover",
+      "role": "cover",
+      "src": "assets/covers/take-care-of-yourself-16x9.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 900
+    },
+    "poster": {
+      "id": "poster",
+      "label": "16:9 Poster",
+      "role": "poster",
+      "src": "assets/covers/take-care-of-yourself-16x9.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 900
+    },
+    "primaryAudio": {
+      "id": "take-care-hope-en",
+      "label": "English",
+      "roleLabel": "Vocal",
+      "role": "vocal",
+      "languageCode": "en",
+      "languageLabel": "English",
+      "lyricSetId": "en-vocal",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/take-care-of-yourself-hope-en.mp3",
+      "mime": "audio/mpeg"
+    },
+    "alternateAudio": [
+      {
+        "id": "take-care-hope-ja",
+        "label": "日本語",
+        "roleLabel": "Vocal",
+        "role": "vocal",
+        "languageCode": "ja",
+        "languageLabel": "日本語",
+        "lyricSetId": "ja-vocal",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/take-care-of-yourself-hope-ja.mp3",
+        "mime": "audio/mpeg"
+      },
+      {
+        "id": "take-care-hope-zh",
+        "label": "中文",
+        "roleLabel": "Vocal",
+        "role": "vocal",
+        "languageCode": "zh-Hans",
+        "languageLabel": "中文",
+        "lyricSetId": "zh-vocal",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/take-care-of-yourself-hope-zh-Hans.mp3",
+        "mime": "audio/mpeg"
+      }
+    ]
+  },
+  "musical": {
+    "key": "E minor",
+    "bpm": 84,
+    "timeSignature": "4/4",
+    "chords": [
+      {
+        "start": 0,
+        "end": 5.846,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 5.846,
+        "end": 11.692,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 11.692,
+        "end": 17.538,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 17.538,
+        "end": 23.385,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 23.385,
+        "end": 29.231,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 29.231,
+        "end": 35.077,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 35.077,
+        "end": 40.923,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 40.923,
+        "end": 46.769,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 46.769,
+        "end": 52.615,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 52.615,
+        "end": 58.462,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 58.462,
+        "end": 64.308,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 64.308,
+        "end": 70.154,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 70.154,
+        "end": 76,
+        "name": "Em",
+        "degree": ""
+      }
+    ]
+  },
+  "lyricSets": [
+    {
+      "id": "en-vocal",
+      "label": "English lyric set",
+      "languageCode": "en",
+      "tracks": [
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "lyrics",
+            "lineTiming"
+          ],
+          "path": "lyrics/en-vocal/en.json"
+        },
+        {
+          "code": "ja",
+          "label": "Japanese",
+          "nativeLabel": "日本語",
+          "script": "Jpan",
+          "features": [
+            "lyrics",
+            "lineTiming",
+            "furigana"
+          ],
+          "path": "lyrics/en-vocal/ja.json"
+        },
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "lyrics",
+            "lineTiming",
+            "pinyin"
+          ],
+          "path": "lyrics/en-vocal/zh-Hans.json"
+        }
+      ]
+    },
+    {
+      "id": "ja-vocal",
+      "label": "Japanese lyric set",
+      "languageCode": "ja",
+      "tracks": [
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "lyrics",
+            "lineTiming"
+          ],
+          "path": "lyrics/ja-vocal/en.json"
+        },
+        {
+          "code": "ja",
+          "label": "Japanese",
+          "nativeLabel": "日本語",
+          "script": "Jpan",
+          "features": [
+            "lyrics",
+            "lineTiming",
+            "furigana"
+          ],
+          "path": "lyrics/ja-vocal/ja.json"
+        },
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "lyrics",
+            "lineTiming",
+            "pinyin"
+          ],
+          "path": "lyrics/ja-vocal/zh-Hans.json"
+        }
+      ]
+    },
+    {
+      "id": "zh-vocal",
+      "label": "Mandarin lyric set",
+      "languageCode": "zh-Hans",
+      "tracks": [
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "lyrics",
+            "lineTiming"
+          ],
+          "path": "lyrics/zh-vocal/en.json"
+        },
+        {
+          "code": "ja",
+          "label": "Japanese",
+          "nativeLabel": "日本語",
+          "script": "Jpan",
+          "features": [
+            "lyrics",
+            "lineTiming",
+            "furigana"
+          ],
+          "path": "lyrics/zh-vocal/ja.json"
+        },
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "lyrics",
+            "lineTiming",
+            "pinyin"
+          ],
+          "path": "lyrics/zh-vocal/zh-Hans.json"
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "unit": "seconds",
+    "lines": [
+      {
+        "id": "l01",
+        "start": 2,
+        "end": 7.5,
+        "sourceText": "Beyond the shining forest"
+      },
+      {
+        "id": "l02",
+        "start": 7.5,
+        "end": 12,
+        "sourceText": "morning opens its eyes"
+      },
+      {
+        "id": "l03",
+        "start": 14,
+        "end": 19.5,
+        "sourceText": "Across the broken sky, a rainbow rises"
+      },
+      {
+        "id": "l04",
+        "start": 19.5,
+        "end": 24.5,
+        "sourceText": "your little heart is trembling"
+      },
+      {
+        "id": "l05",
+        "start": 25.5,
+        "end": 31,
+        "sourceText": "even in the lost night, do not let go"
+      },
+      {
+        "id": "l06",
+        "start": 31,
+        "end": 36,
+        "sourceText": "trust the sound of your voice"
+      },
+      {
+        "id": "l07",
+        "start": 37.5,
+        "end": 41,
+        "sourceText": "Take care of yourself"
+      },
+      {
+        "id": "l08",
+        "start": 41,
+        "end": 46,
+        "sourceText": "even dark roads find the morning"
+      },
+      {
+        "id": "l09",
+        "start": 47,
+        "end": 50.2,
+        "sourceText": "Take care of yourself"
+      },
+      {
+        "id": "l10",
+        "start": 50.2,
+        "end": 56,
+        "sourceText": "the light in your chest will guard you"
+      },
+      {
+        "id": "l11",
+        "start": 58,
+        "end": 62,
+        "sourceText": "Tears will become a map"
+      },
+      {
+        "id": "l12",
+        "start": 62,
+        "end": 66,
+        "sourceText": "one step opens the gate"
+      },
+      {
+        "id": "l13",
+        "start": 67,
+        "end": 70,
+        "sourceText": "Take care of yourself"
+      },
+      {
+        "id": "l14",
+        "start": 70,
+        "end": 74.5,
+        "sourceText": "trust the wind and keep moving on"
+      }
+    ]
+  }
+}

@@ -15,7 +15,7 @@
     {
       "id": "line-001",
       "start": 8.75,
-      "end": 14.0,
+      "end": 14,
       "text": "红沙抹去脚印",
       "singableText": "红沙抹去脚印",
       "role": "translation",
@@ -48,7 +48,7 @@
     },
     {
       "id": "line-002",
-      "start": 14.0,
+      "start": 14,
       "end": 20.29,
       "text": "蓝色夕阳沉入风中",
       "singableText": "蓝色夕阳沉入风中",
@@ -404,8 +404,8 @@
     },
     {
       "id": "line-010",
-      "start": 61.0,
-      "end": 67.0,
+      "start": 61,
+      "end": 67,
       "text": "红色天空下 明天在呼唤",
       "singableText": "红色天空下 明天在呼唤",
       "role": "translation",
@@ -454,7 +454,7 @@
     },
     {
       "id": "line-011",
-      "start": 67.0,
+      "start": 67,
       "end": 77.29,
       "text": "宇宙越辽阔 勇气越燃烧",
       "singableText": "宇宙越辽阔 勇气越燃烧",

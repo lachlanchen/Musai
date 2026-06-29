@@ -17,7 +17,6 @@
       "end": 3.58,
       "text": "そっと雨は街へ",
       "singableText": "そっと雨は街へ",
-      "role": "asr-adjusted-lyric",
       "asrText": "そっと雨は散れ",
       "tokens": [
         {
@@ -55,7 +54,6 @@
       "end": 6.08,
       "text": "あかりがにじむ",
       "singableText": "あかりがにじむ",
-      "role": "asr-adjusted-lyric",
       "asrText": "明かりがにしじめ",
       "tokens": [
         {
@@ -91,7 +89,6 @@
       "end": 9.8,
       "text": "胸の声だった",
       "singableText": "胸の声だった",
-      "role": "asr-adjusted-lyric",
       "asrText": "胸の子だった",
       "tokens": [
         {

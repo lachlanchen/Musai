@@ -9,21 +9,6 @@
     "nativeLabel": "English",
     "script": "Latn"
   },
-  "notes": "Mandarin selected candidate. Faster-whisper ASR used internal zh code; visible website language is zh-Hans. Lines are corrected from ASR plus the reference lyric and shortened where the model compressed phrases.",
-  "provenance": {
-    "activeVocalLanguage": "zh-Hans",
-    "lyricSet": "zh-vocal",
-    "sources": [
-      "faster-whisper ASR on separated vocal stem",
-      "original prompt/reference lyric",
-      "manual correction pass"
-    ],
-    "rule": "audio truth first; prompt/reference used only to correct obvious ASR homophones or missing function words"
-  },
-  "quality": {
-    "timing": "active vocal line timing from Musia run_pipeline ASR segments; token timing evenly distributed by player when exact word timing is not trusted",
-    "translation": "line-by-line translation of the active vocal text"
-  },
   "lines": [
     {
       "id": "zh-001",
@@ -46,11 +31,11 @@
         {
           "text": "by",
           "start": 11.42,
-          "end": 12.0
+          "end": 12
         },
         {
           "text": "the",
-          "start": 12.0,
+          "start": 12,
           "end": 12.58
         },
         {

@@ -14,7 +14,7 @@
     {
       "id": "line-001",
       "start": 8.75,
-      "end": 14.0,
+      "end": 14,
       "text": "Red sand erases the footprints",
       "singableText": "Red sand erases the footprints",
       "role": "translation",
@@ -38,7 +38,7 @@
     },
     {
       "id": "line-002",
-      "start": 14.0,
+      "start": 14,
       "end": 20.29,
       "text": "A blue sunset sinks into the wind",
       "singableText": "A blue sunset sinks into the wind",
@@ -289,8 +289,8 @@
     },
     {
       "id": "line-010",
-      "start": 61.0,
-      "end": 67.0,
+      "start": 61,
+      "end": 67,
       "text": "Under the red sky, tomorrow calls",
       "singableText": "Under the red sky, tomorrow calls",
       "role": "translation",
@@ -320,7 +320,7 @@
     },
     {
       "id": "line-011",
-      "start": 67.0,
+      "start": 67,
       "end": 77.29,
       "text": "The wider the universe, the brighter courage burns",
       "singableText": "The wider the universe, the brighter courage burns",

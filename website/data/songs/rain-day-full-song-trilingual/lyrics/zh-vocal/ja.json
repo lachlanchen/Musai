@@ -5,8 +5,6 @@
   "songId": "rain-day-full-song-trilingual",
   "trackRole": "translation",
   "vocalSetId": "zh-vocal",
-  "timingSource": "asr-corrected-render",
-  "timingNote": "Mandarin render includes an audible repeated tonight phrase, so it is preserved as separate lines.",
   "language": {
     "code": "ja",
     "label": "Japanese",
@@ -388,7 +386,7 @@
     {
       "id": "line-010",
       "start": 47.96,
-      "end": 50.0,
+      "end": 50,
       "text": "終電が遠く消えて",
       "singableText": "終電が遠く消えて",
       "role": "translation",
@@ -421,7 +419,7 @@
     },
     {
       "id": "line-011",
-      "start": 50.0,
+      "start": 50,
       "end": 52.76,
       "text": "街角が広がる",
       "singableText": "街角が広がる",

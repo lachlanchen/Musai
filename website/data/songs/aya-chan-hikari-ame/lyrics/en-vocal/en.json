@@ -2,27 +2,11 @@
   "schema": "fun.lazying.media.text-track.v1",
   "version": 1,
   "mediaId": "aya-chan-hikari-ame",
-  "lineCoverage": "asr-listening-corrected",
   "language": {
     "code": "en",
     "label": "English",
     "nativeLabel": "English",
     "script": "Latn"
-  },
-  "notes": "English selected candidate v1. Compact candidate was rejected because ASR recovered less text. These lines are ASR-corrected from the selected v1 vocal; several planned chorus words were compressed by the model.",
-  "provenance": {
-    "activeVocalLanguage": "en",
-    "lyricSet": "en-vocal",
-    "sources": [
-      "faster-whisper ASR on separated vocal stem",
-      "original prompt/reference lyric",
-      "manual correction pass"
-    ],
-    "rule": "audio truth first; prompt/reference used only to correct obvious ASR homophones or missing function words"
-  },
-  "quality": {
-    "timing": "active vocal line timing from Musia run_pipeline ASR segments; token timing evenly distributed by player when exact word timing is not trusted",
-    "translation": "line-by-line translation of the active vocal text"
   },
   "lines": [
     {

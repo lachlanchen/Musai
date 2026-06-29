@@ -3,7 +3,6 @@
   "version": 1,
   "mediaId": "rain-day-full-song-trilingual",
   "songId": "rain-day-full-song-trilingual",
-  "lineCoverage": "partial-asr",
   "language": {
     "code": "en",
     "label": "English",
@@ -18,7 +17,6 @@
       "text": "So close",
       "singableText": "So close",
       "asrText": "So close",
-      "role": "asr-adjusted-lyric",
       "tokens": [
         {
           "text": "So",
@@ -41,7 +39,6 @@
       "text": "Every small reflection carries news of you",
       "singableText": "Every small reflection carries news of you",
       "asrText": "Every small reflection carries news of you",
-      "role": "asr-adjusted-lyric",
       "tokens": [
         {
           "text": "Every",
@@ -94,7 +91,6 @@
       "text": "If the night feels heavy, let it fall through my head",
       "singableText": "If the night feels heavy, let it fall through my head",
       "asrText": "If the night feels heavy, let it fall through my head",
-      "role": "asr-adjusted-lyric",
       "tokens": [
         {
           "text": "If",
@@ -171,7 +167,6 @@
       "text": "Stay with me under the syllable ring",
       "singableText": "Stay with me under the syllable ring",
       "asrText": "Stay with me under the syllable ring",
-      "role": "asr-adjusted-lyric",
       "tokens": [
         {
           "text": "Stay",
@@ -224,7 +219,6 @@
       "text": "Let every broken light become a flame",
       "singableText": "Let every broken light become a flame",
       "asrText": "Let every broken light become a flame",
-      "role": "asr-adjusted-lyric",
       "tokens": [
         {
           "text": "Let",
@@ -277,7 +271,6 @@
       "text": "We do not need the sun to find your voices home",
       "singableText": "We do not need the sun to find your voices home",
       "asrText": "We do not need the sun to find your voices home",
-      "role": "asr-adjusted-lyric",
       "tokens": [
         {
           "text": "We",
@@ -336,12 +329,12 @@
         {
           "text": "voices",
           "start": 64.4,
-          "end": 65.0,
+          "end": 65,
           "probability": 0.65185546875
         },
         {
           "text": "home",
-          "start": 65.0,
+          "start": 65,
           "end": 65.68,
           "probability": 0.755859375
         }
@@ -354,7 +347,6 @@
       "text": "Your voices home are raining",
       "singableText": "Your voices home are raining",
       "asrText": "Your voices home are raining",
-      "role": "asr-adjusted-lyric",
       "tokens": [
         {
           "text": "Your",

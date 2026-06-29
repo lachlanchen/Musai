@@ -315,7 +315,7 @@
     {
       "id": "line-009",
       "start": 63.33,
-      "end": 70.0,
+      "end": 70,
       "text": "銀の雨の中 そばにいて",
       "singableText": "銀の雨の中 そばにいて",
       "role": "localized-lyric",
@@ -345,8 +345,8 @@
     },
     {
       "id": "line-010",
-      "start": 70.0,
-      "end": 78.0,
+      "start": 70,
+      "end": 78,
       "text": "しずくが君の名を歌う",
       "singableText": "しずくが君の名を歌う",
       "role": "localized-lyric",

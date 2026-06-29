@@ -16,7 +16,6 @@
       "end": 6.57,
       "text": "City lights shimmer under rain",
       "singableText": "City lights shimmer under rain",
-      "role": "asr-adjusted-lyric",
       "asrText": "Say light shimmer under",
       "tokens": [
         {
@@ -42,17 +41,16 @@
         {
           "text": "rain",
           "start": 6.57,
-          "end": 7.0
+          "end": 7
         }
       ]
     },
     {
       "id": "line-003",
       "start": 8.6,
-      "end": 12.0,
+      "end": 12,
       "text": "My heart whispers slow and warm",
       "singableText": "My heart whispers slow and warm",
-      "role": "asr-adjusted-lyric",
       "asrText": "my heart whispers slow elm",
       "tokens": [
         {
@@ -78,22 +76,21 @@
         {
           "text": "warm",
           "start": 10.32,
-          "end": 12.0
+          "end": 12
         }
       ]
     },
     {
       "id": "line-004",
-      "start": 12.0,
+      "start": 12,
       "end": 14.48,
       "text": "Stay with me in rainy glow",
       "singableText": "Stay with me in rainy glow",
-      "role": "asr-adjusted-lyric",
       "asrText": "Stay with me in Rio",
       "tokens": [
         {
           "text": "Stay",
-          "start": 12.0,
+          "start": 12,
           "end": 12.54
         },
         {

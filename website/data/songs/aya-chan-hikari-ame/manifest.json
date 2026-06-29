@@ -11,14 +11,14 @@
     "zh-Hans": "阿芽酱，光之雨"
   },
   "artist": "Musia",
-  "subtitle": "Three independent Aya Chan vocal renders with per-vocal corrected trilingual lyrics",
-  "description": "A warm original Aya Chan character song for LALACHAN. The Japanese render is the selected high-quality reference; English and Mandarin companion renders were generated with the same ACE-Step XL turbo workflow and published with ASR/listening-corrected per-vocal lyric sets.",
+  "subtitle": "Aya Chan song in Japanese, English, and Mandarin",
+  "description": "A warm Aya Chan character song where tiny courage turns rain into light.",
   "caption": "Tiny courage turning rain into light",
-  "duration": 68.0,
+  "duration": 68,
   "canonicalUrl": "https://fun.lazying.art/#aya-chan-hikari-ame",
   "share": {
     "title": "Aya Chan, Rain of Light - Fun Lazying Art",
-    "description": "Musia Aya Chan song with Japanese, English, and Mandarin vocals plus synced trilingual lyrics.",
+    "description": "A Musia Aya Chan song with Japanese, English, and Mandarin vocals plus synced lyrics.",
     "url": "https://fun.lazying.art/#aya-chan-hikari-ame",
     "image": "assets/covers/aya-chan-hikari-ame-16x9.png",
     "siteName": "Fun Lazying Art"
@@ -46,14 +46,12 @@
       "id": "aya-hikari-ame-ja",
       "label": "Japanese vocal",
       "roleLabel": "Vocal",
-      "role": "ace-step-selected-render",
+      "role": "vocal",
       "languageCode": "ja",
       "languageLabel": "日本語",
       "languageNativeLabel": "日本語",
       "lyricSetId": "ja-vocal",
-      "sourceModel": "ACE-Step 1.5 XL turbo",
-      "qualityGate": "selected-reference-asr-corrected",
-      "src": "assets/audio/aya-chan-hikari-ame-ja.mp3",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/aya-chan-hikari-ame-ja.mp3",
       "mime": "audio/mpeg",
       "musical": {
         "key": "G major",
@@ -61,7 +59,7 @@
         "timeSignature": "4/4",
         "chords": [
           {
-            "start": 0.0,
+            "start": 0,
             "end": 1.904,
             "name": "C#",
             "degree": "",
@@ -475,7 +473,7 @@
           },
           {
             "start": 64.412,
-            "end": 68.0,
+            "end": 68,
             "name": "G",
             "degree": "",
             "confidence": 0.675
@@ -488,14 +486,12 @@
         "id": "aya-hikari-ame-en",
         "label": "English vocal",
         "roleLabel": "Vocal",
-        "role": "ace-step-companion-render",
+        "role": "vocal",
         "languageCode": "en",
         "languageLabel": "English",
         "languageNativeLabel": "English",
         "lyricSetId": "en-vocal",
-        "sourceModel": "ACE-Step 1.5 XL turbo",
-        "qualityGate": "review-asr-corrected",
-        "src": "assets/audio/aya-chan-hikari-ame-en.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/aya-chan-hikari-ame-en.mp3",
         "mime": "audio/mpeg",
         "musical": {
           "key": "G major",
@@ -503,7 +499,7 @@
           "timeSignature": "4/4",
           "chords": [
             {
-              "start": 0.0,
+              "start": 0,
               "end": 3.204,
               "name": "G",
               "degree": "",
@@ -889,7 +885,7 @@
             },
             {
               "start": 62.438,
-              "end": 68.0,
+              "end": 68,
               "name": "D",
               "degree": "",
               "confidence": 0.943
@@ -901,14 +897,12 @@
         "id": "aya-hikari-ame-zh-Hans",
         "label": "Mandarin vocal",
         "roleLabel": "Vocal",
-        "role": "ace-step-companion-render",
+        "role": "vocal",
         "languageCode": "zh-Hans",
         "languageLabel": "中文",
         "languageNativeLabel": "中文",
         "lyricSetId": "zh-vocal",
-        "sourceModel": "ACE-Step 1.5 XL turbo",
-        "qualityGate": "pass-asr-corrected",
-        "src": "assets/audio/aya-chan-hikari-ame-zh-Hans.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/aya-chan-hikari-ame-zh-Hans.mp3",
         "mime": "audio/mpeg",
         "musical": {
           "key": "G major",
@@ -916,7 +910,7 @@
           "timeSignature": "4/4",
           "chords": [
             {
-              "start": 0.0,
+              "start": 0,
               "end": 2.113,
               "name": "Gm",
               "degree": "",
@@ -1337,7 +1331,7 @@
             },
             {
               "start": 62.856,
-              "end": 68.0,
+              "end": 68,
               "name": "G",
               "degree": "",
               "confidence": 0.84
@@ -1345,21 +1339,7 @@
           ]
         }
       }
-    ],
-    "stems": {
-      "jaVocals": {
-        "label": "Japanese vocals stem",
-        "localPath": "data/runs/aya-chan-hikari-ame-20260628-20260628-154133-analysis/stems/vocals.wav"
-      },
-      "enVocals": {
-        "label": "English vocals stem",
-        "localPath": "data/runs/aya-chan-hikari-ame-en-20260628-20260628-225631-analysis/stems/vocals.wav"
-      },
-      "zhVocals": {
-        "label": "Mandarin vocals stem",
-        "localPath": "data/runs/aya-chan-hikari-ame-zh-20260628-20260628-225746-analysis/stems/vocals.wav"
-      }
-    }
+    ]
   },
   "lyricSets": [
     {
@@ -1529,37 +1509,5 @@
         "sourceText": "光の雨で踊ろう 朝が来たら小さな勇気"
       }
     ]
-  },
-  "provenance": {
-    "generatedAt": "2026-06-28",
-    "audioModel": "ACE-Step 1.5 XL turbo",
-    "coverSource": "Generated 16:9 Aya Chan rain-of-light cover from local project asset",
-    "lyricCorrection": "Per-vocal ASR/STT plus prompt/reference and manual correction; no shared lyric timing across independent vocals.",
-    "analysisRuns": {
-      "ja": "data/runs/aya-chan-hikari-ame-20260628-20260628-154133-analysis",
-      "en": "data/runs/aya-chan-hikari-ame-en-20260628-20260628-225631-analysis",
-      "zh-Hans": "data/runs/aya-chan-hikari-ame-zh-20260628-20260628-225746-analysis"
-    },
-    "selectionNote": "English compact correction candidate was rejected for weaker ASR recovery; selected English v1 and Mandarin first pass are published with corrected text."
-  },
-  "artifacts": [
-    {
-      "id": "ja-analysis",
-      "label": "Japanese analysis run",
-      "href": "#ja-analysis",
-      "localPath": "data/runs/aya-chan-hikari-ame-20260628-20260628-154133-analysis/REPORT.md"
-    },
-    {
-      "id": "en-analysis",
-      "label": "English analysis run",
-      "href": "#en-analysis",
-      "localPath": "data/runs/aya-chan-hikari-ame-en-20260628-20260628-225631-analysis/REPORT.md"
-    },
-    {
-      "id": "zh-analysis",
-      "label": "Mandarin analysis run",
-      "href": "#zh-analysis",
-      "localPath": "data/runs/aya-chan-hikari-ame-zh-20260628-20260628-225746-analysis/REPORT.md"
-    }
-  ]
+  }
 }

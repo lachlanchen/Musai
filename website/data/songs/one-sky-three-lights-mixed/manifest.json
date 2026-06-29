@@ -13,14 +13,14 @@
     "yue-Hant": "一片天三盞燈"
   },
   "artist": "Musia",
-  "subtitle": "A mixed English, Mandarin-pinyin, and Japanese-romaji song with trilingual lyric display",
-  "description": "An original 64-second mixed-language song generated locally with ACE-Step. The sung track uses English plus phonetic Mandarin pinyin and Japanese romaji for reliable local generation; the Fun player displays native Chinese/Japanese lyrics with pinyin and furigana plus rough translation-word highlighting.",
+  "subtitle": "A multilingual song with trilingual lyric display",
+  "description": "A bright multilingual song about shared light, one sky, and voices meeting across languages.",
   "caption": "Three voices becoming one shared sky",
   "duration": 64.032,
   "canonicalUrl": "https://fun.lazying.art/#one-sky-three-lights-mixed",
   "share": {
     "title": "One Sky, Three Lights - Fun Lazying Art",
-    "description": "A mixed-language Musia song with synchronized trilingual lyrics and translation highlighting.",
+    "description": "A multilingual Musia song with synchronized lyrics, translations, and chord timing.",
     "url": "https://fun.lazying.art/#one-sky-three-lights-mixed",
     "image": "assets/covers/one-sky-three-lights-16x9.png",
     "siteName": "Fun Lazying Art"
@@ -48,13 +48,11 @@
       "id": "one-sky-mixed",
       "label": "Mixed vocal",
       "roleLabel": "Vocal",
-      "role": "mixed-language-render",
+      "role": "vocal",
       "languageCode": "mul",
       "languageLabel": "Mixed",
       "lyricSetId": "mixed-vocal",
-      "sourceModel": "acestep-v15-xl-turbo",
-      "qualityGate": "review-pass",
-      "src": "assets/audio/one-sky-three-lights-mixed.mp3",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/one-sky-three-lights-mixed.mp3",
       "mime": "audio/mpeg",
       "musical": {
         "key": "D major",
@@ -62,7 +60,7 @@
         "timeSignature": "4/4",
         "chords": [
           {
-            "start": 0.0,
+            "start": 0,
             "end": 2.345,
             "name": "D",
             "degree": ""
@@ -297,33 +295,11 @@
           },
           {
             "start": 59.466,
-            "end": 64.0,
+            "end": 64,
             "name": "A",
             "degree": ""
           }
         ]
-      }
-    },
-    "stems": {
-      "vocals": {
-        "label": "Local vocals stem",
-        "localPath": "data/runs/one-sky-three-lights-ace-phonetic-analysis/stems/vocals.wav"
-      },
-      "drums": {
-        "label": "Local drums stem",
-        "localPath": "data/runs/one-sky-three-lights-ace-phonetic-analysis/stems/drums.wav"
-      },
-      "bass": {
-        "label": "Local bass stem",
-        "localPath": "data/runs/one-sky-three-lights-ace-phonetic-analysis/stems/bass.wav"
-      },
-      "other": {
-        "label": "Local other stem",
-        "localPath": "data/runs/one-sky-three-lights-ace-phonetic-analysis/stems/other.wav"
-      },
-      "instrumental": {
-        "label": "Local instrumental stem",
-        "localPath": "data/runs/one-sky-three-lights-ace-phonetic-analysis/stems/instrumental.wav"
       }
     },
     "alternateAudio": [
@@ -331,13 +307,11 @@
         "id": "one-sky-yue",
         "label": "Cantonese vocal",
         "roleLabel": "Vocal",
-        "role": "same-score-localized-vocal",
+        "role": "vocal",
         "languageCode": "yue-Hant",
         "languageLabel": "廣東話",
         "lyricSetId": "yue-vocal",
-        "sourceModel": "SoulX-Singer",
-        "qualityGate": "review-pass",
-        "src": "assets/audio/one-sky-three-lights-yue-Hant.mp3",
+        "src": "https://lazyingart.github.io/MusiaSongs/audio/one-sky-three-lights-yue-Hant.mp3",
         "mime": "audio/mpeg",
         "guide": "Mixed vocal guide"
       }
@@ -537,34 +511,5 @@
         "sourceText": "Three lights, one dream alive"
       }
     ]
-  },
-  "provenance": {
-    "generatedAt": "2026-06-28",
-    "audioModel": "ACE-Step 1.5 XL turbo",
-    "audioConfig": "data/creative_projects/one-sky-three-lights-mixed-20260628/ace_mixed_phonetic.toml",
-    "lyricsSource": "data/creative_projects/one-sky-three-lights-mixed-20260628/lyrics/mul_phonetic_songgen.txt",
-    "analysisRun": "data/runs/one-sky-three-lights-ace-phonetic-analysis",
-    "coverSource": "/home/lachlan/.codex/generated_images/019f0842-25ba-7bd2-9d4b-0b1c60d8a951/ig_09b1d3ca27fa59c0016a40ee5115448191a3cf4d6354f5699f.png",
-    "coverPrompt": "16:9 premium album cover for One Sky, Three Lights; twilight city and calm sea; three elegant streams of light crossing into one sky; no text.",
-    "cantoneseVocal": {
-      "backend": "SoulX-Singer",
-      "guide": "Mixed vocal guide",
-      "targetLines": "data/creative_projects/cantonese-localizations-20260628/one-sky-three-lights/target_lines_yue-Hant.json",
-      "audio": "assets/audio/one-sky-three-lights-yue-Hant.mp3"
-    }
-  },
-  "artifacts": [
-    {
-      "id": "analysis-report",
-      "label": "Local analysis report",
-      "href": "#local-analysis-report",
-      "localPath": "data/runs/one-sky-three-lights-ace-phonetic-analysis/REPORT.md"
-    },
-    {
-      "id": "quality-report",
-      "label": "Quality check",
-      "href": "#local-quality-report",
-      "localPath": "data/creative_projects/one-sky-three-lights-mixed-20260628/reviews/ace_phonetic/QA.md"
-    }
-  ]
+  }
 }

@@ -13,7 +13,7 @@
       "kind": "song",
       "title": "One Sky, Three Lights",
       "artist": "Musia",
-      "summary": "A mixed-language song with a separate same-melody Cantonese vocal alternate, synced multilingual lyrics, and chord timing.",
+      "summary": "A bright multilingual song about shared light, with synced lyrics, translations, and chord timing.",
       "manifest": "data/songs/one-sky-three-lights-mixed/manifest.json",
       "cover": "assets/covers/one-sky-three-lights-16x9.png",
       "languages": [
@@ -25,14 +25,11 @@
       ],
       "tags": [
         "music",
-        "mixed-language",
-        "trilingual",
-        "ACE-Step",
-        "pinyin",
-        "furigana",
-        "translation-highlight",
-        "Cantonese",
-        "SoulX"
+        "multilingual",
+        "shared-sky",
+        "lyrics",
+        "chords",
+        "Cantonese"
       ]
     },
     {
@@ -40,7 +37,7 @@
       "kind": "song",
       "title": "Aya Chan Hikari Ame",
       "artist": "Musia",
-      "summary": "A warm Aya Chan rain-of-light character song with Japanese, English, and Mandarin ACE-Step vocal renders, per-vocal corrected trilingual lyrics, pinyin, furigana, and chord timing.",
+      "summary": "A warm Aya Chan rain-of-light character song with Japanese, English, and Mandarin vocals, synced lyrics, pinyin, furigana, and chord timing.",
       "manifest": "data/songs/aya-chan-hikari-ame/manifest.json",
       "cover": "assets/covers/aya-chan-hikari-ame-16x9.png",
       "languages": [
@@ -52,20 +49,20 @@
         "music",
         "Aya Chan",
         "LALACHAN",
-        "trilingual",
-        "ACE-Step",
+        "multilingual",
+        "rain",
+        "light",
         "pinyin",
-        "furigana",
-        "ASR-corrected"
+        "furigana"
       ]
     },
     {
-      "id": "take-care-of-yourself-same-score",
+      "id": "take-care-of-yourself",
       "kind": "localized-song",
       "title": "Take Care of Yourself",
       "artist": "Musia",
-      "summary": "A same-score English, Mandarin, and Cantonese SoulX localization generated from one Japanese melody/F0 guide and mixed with the same instrumental stem.",
-      "manifest": "data/songs/take-care-of-yourself-same-score/manifest.json",
+      "summary": "A hopeful song about self-care and inner light, with English, Mandarin, and Cantonese vocals and synced lyrics.",
+      "manifest": "data/songs/take-care-of-yourself/manifest.json",
       "cover": "assets/covers/take-care-of-yourself-16x9.png",
       "languages": [
         "en",
@@ -75,19 +72,19 @@
       "tags": [
         "music",
         "localized-song",
-        "same-score",
-        "SoulX",
+        "hope",
+        "self-care",
         "Mandarin",
         "Cantonese"
       ]
     },
     {
-      "id": "take-care-of-yourself-oldmodel-review",
+      "id": "take-care-of-yourself-hope-version",
       "kind": "song",
-      "title": "Take Care of Yourself - ACE Review",
+      "title": "Take Care of Yourself - Hope Version",
       "artist": "Musia",
-      "summary": "Quality-first ACE-Step 1.5 XL turbo review candidates in English, Japanese, and Mandarin; rough planned lyric timing, not final accepted alignment.",
-      "manifest": "data/songs/take-care-of-yourself-oldmodel-review/manifest.json",
+      "summary": "A spacious hopeful version in English, Japanese, and Mandarin, centered on care, courage, and light.",
+      "manifest": "data/songs/take-care-of-yourself-hope-version/manifest.json",
       "cover": "assets/covers/take-care-of-yourself-16x9.png",
       "languages": [
         "en",
@@ -96,14 +93,11 @@
       ],
       "tags": [
         "music",
-        "review-candidate",
-        "ACE-Step",
-        "quality-first",
+        "hope",
+        "self-care",
         "English",
         "Japanese",
-        "Mandarin",
-        "planned-lyrics",
-        "lyric-spacing"
+        "Mandarin"
       ]
     },
     {
@@ -111,7 +105,7 @@
       "kind": "song",
       "title": "Small Under the Red Sky",
       "artist": "Musia",
-      "summary": "An 82-second cinematic Mars desert song with English, Mandarin, Japanese, and Cantonese vocal versions, per-vocal synced lyrics, pinyin, furigana, and chord timing.",
+      "summary": "A cinematic Mars desert song with English, Mandarin, Japanese, and Cantonese vocals, synced lyrics, and chord timing.",
       "manifest": "data/songs/mars-red-sky-trilingual/manifest.json",
       "cover": "assets/covers/mars-red-sky-16x9.png",
       "languages": [
@@ -122,14 +116,13 @@
       ],
       "tags": [
         "music",
-        "full-song",
-        "trilingual",
-        "ACE-Step",
         "mars",
-        "pinyin",
-        "furigana",
-        "Cantonese",
-        "SoulX"
+        "desert",
+        "vast",
+        "hope",
+        "Mandarin",
+        "Japanese",
+        "Cantonese"
       ]
     },
     {
@@ -137,7 +130,7 @@
       "kind": "song",
       "title": "Rain Day Full Song",
       "artist": "Musia",
-      "summary": "A full rain-day song with English, Mandarin, Japanese, and Cantonese vocal versions, plus per-vocal synced lyrics.",
+      "summary": "A rainy-day cinematic pop song with English, Mandarin, Japanese, and Cantonese vocals plus synced lyrics.",
       "manifest": "data/songs/rain-day-full-song-trilingual/manifest.json",
       "cover": "assets/covers/rain-day-full-song-16x9.png",
       "languages": [
@@ -148,12 +141,11 @@
       ],
       "tags": [
         "music",
-        "full-song",
-        "trilingual",
-        "ACE-Step",
         "rain",
-        "Cantonese",
-        "SoulX"
+        "hope",
+        "Mandarin",
+        "Japanese",
+        "Cantonese"
       ]
     }
   ]

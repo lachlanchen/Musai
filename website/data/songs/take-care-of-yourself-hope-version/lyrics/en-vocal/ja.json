@@ -1,0 +1,589 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "take-care-of-yourself-hope-version",
+  "language": {
+    "code": "ja",
+    "label": "Japanese",
+    "nativeLabel": "日本語",
+    "script": "Jpan"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "start": 2,
+      "end": 7.5,
+      "text": "きらめく森のむこう",
+      "singableText": "きらめく森のむこう",
+      "tokens": [
+        {
+          "text": "きらめく",
+          "start": 2,
+          "end": 3.375,
+          "reading": "きらめく"
+        },
+        {
+          "text": "森",
+          "start": 3.375,
+          "end": 4.75,
+          "reading": "もり"
+        },
+        {
+          "text": "の",
+          "start": 4.75,
+          "end": 6.125,
+          "reading": "の"
+        },
+        {
+          "text": "むこう",
+          "start": 6.125,
+          "end": 7.5,
+          "reading": "むこう"
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 7.5,
+      "end": 12,
+      "text": "朝がいま目をさます",
+      "singableText": "朝がいま目をさます",
+      "tokens": [
+        {
+          "text": "朝",
+          "start": 7.5,
+          "end": 8.25,
+          "reading": "あさ"
+        },
+        {
+          "text": "が",
+          "start": 8.25,
+          "end": 9,
+          "reading": "が"
+        },
+        {
+          "text": "いま",
+          "start": 9,
+          "end": 9.75,
+          "reading": "いま"
+        },
+        {
+          "text": "目",
+          "start": 9.75,
+          "end": 10.5,
+          "reading": "め"
+        },
+        {
+          "text": "を",
+          "start": 10.5,
+          "end": 11.25,
+          "reading": "を"
+        },
+        {
+          "text": "さます",
+          "start": 11.25,
+          "end": 12,
+          "reading": "さます"
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 14,
+      "end": 19.5,
+      "text": "こわれた空に虹がかかる",
+      "singableText": "こわれた空に虹がかかる",
+      "tokens": [
+        {
+          "text": "こわれた",
+          "start": 14,
+          "end": 14.917,
+          "reading": "こわれた"
+        },
+        {
+          "text": "空",
+          "start": 14.917,
+          "end": 15.833,
+          "reading": "そら"
+        },
+        {
+          "text": "に",
+          "start": 15.833,
+          "end": 16.75,
+          "reading": "に"
+        },
+        {
+          "text": "虹",
+          "start": 16.75,
+          "end": 17.667,
+          "reading": "にじ"
+        },
+        {
+          "text": "が",
+          "start": 17.667,
+          "end": 18.583,
+          "reading": "が"
+        },
+        {
+          "text": "かかる",
+          "start": 18.583,
+          "end": 19.5,
+          "reading": "かかる"
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 19.5,
+      "end": 24.5,
+      "text": "小さな胸はふるえてる",
+      "singableText": "小さな胸はふるえてる",
+      "tokens": [
+        {
+          "text": "小さな",
+          "start": 19.5,
+          "end": 20.75,
+          "reading": "ちいさな"
+        },
+        {
+          "text": "胸",
+          "start": 20.75,
+          "end": 22,
+          "reading": "むね"
+        },
+        {
+          "text": "は",
+          "start": 22,
+          "end": 23.25,
+          "reading": "は"
+        },
+        {
+          "text": "ふるえてる",
+          "start": 23.25,
+          "end": 24.5,
+          "reading": "ふるえてる"
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 25.5,
+      "end": 31,
+      "text": "迷う夜でも手をはなさず",
+      "singableText": "迷う夜でも手をはなさず",
+      "tokens": [
+        {
+          "text": "迷う",
+          "start": 25.5,
+          "end": 26.417,
+          "reading": "まよう"
+        },
+        {
+          "text": "夜",
+          "start": 26.417,
+          "end": 27.333,
+          "reading": "よる"
+        },
+        {
+          "text": "でも",
+          "start": 27.333,
+          "end": 28.25,
+          "reading": "でも"
+        },
+        {
+          "text": "手",
+          "start": 28.25,
+          "end": 29.167,
+          "reading": "て"
+        },
+        {
+          "text": "を",
+          "start": 29.167,
+          "end": 30.083,
+          "reading": "を"
+        },
+        {
+          "text": "はなさず",
+          "start": 30.083,
+          "end": 31,
+          "reading": "はなさず"
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 31,
+      "end": 36,
+      "text": "君の声だけ信じて",
+      "singableText": "君の声だけ信じて",
+      "tokens": [
+        {
+          "text": "君",
+          "start": 31,
+          "end": 32,
+          "reading": "きみ"
+        },
+        {
+          "text": "の",
+          "start": 32,
+          "end": 33,
+          "reading": "の"
+        },
+        {
+          "text": "声",
+          "start": 33,
+          "end": 34,
+          "reading": "こえ"
+        },
+        {
+          "text": "だけ",
+          "start": 34,
+          "end": 35,
+          "reading": "だけ"
+        },
+        {
+          "text": "信じて",
+          "start": 35,
+          "end": 36,
+          "reading": "しんじて"
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 37.5,
+      "end": 41,
+      "text": "自分を大切に",
+      "singableText": "自分を大切に",
+      "tokens": [
+        {
+          "text": "自",
+          "reading": "じ",
+          "start": 37.5,
+          "end": 38.083
+        },
+        {
+          "text": "分",
+          "reading": "ぶん",
+          "start": 38.083,
+          "end": 38.667
+        },
+        {
+          "text": "を",
+          "start": 38.667,
+          "end": 39.25
+        },
+        {
+          "text": "大",
+          "reading": "たい",
+          "start": 39.25,
+          "end": 39.833
+        },
+        {
+          "text": "切",
+          "reading": "せつ",
+          "start": 39.833,
+          "end": 40.417
+        },
+        {
+          "text": "に",
+          "start": 40.417,
+          "end": 41
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 41,
+      "end": 46,
+      "text": "暗い道にも朝はくる",
+      "singableText": "暗い道にも朝はくる",
+      "tokens": [
+        {
+          "text": "暗い",
+          "start": 41,
+          "end": 41.833,
+          "reading": "くらい"
+        },
+        {
+          "text": "道",
+          "start": 41.833,
+          "end": 42.667,
+          "reading": "みち"
+        },
+        {
+          "text": "にも",
+          "start": 42.667,
+          "end": 43.5,
+          "reading": "にも"
+        },
+        {
+          "text": "朝",
+          "start": 43.5,
+          "end": 44.333,
+          "reading": "あさ"
+        },
+        {
+          "text": "は",
+          "start": 44.333,
+          "end": 45.167,
+          "reading": "は"
+        },
+        {
+          "text": "くる",
+          "start": 45.167,
+          "end": 46,
+          "reading": "くる"
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 47,
+      "end": 50.2,
+      "text": "自分を大切に",
+      "singableText": "自分を大切に",
+      "tokens": [
+        {
+          "text": "自",
+          "reading": "じ",
+          "start": 47,
+          "end": 47.533
+        },
+        {
+          "text": "分",
+          "reading": "ぶん",
+          "start": 47.533,
+          "end": 48.067
+        },
+        {
+          "text": "を",
+          "start": 48.067,
+          "end": 48.6
+        },
+        {
+          "text": "大",
+          "reading": "たい",
+          "start": 48.6,
+          "end": 49.133
+        },
+        {
+          "text": "切",
+          "reading": "せつ",
+          "start": 49.133,
+          "end": 49.667
+        },
+        {
+          "text": "に",
+          "start": 49.667,
+          "end": 50.2
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 50.2,
+      "end": 56,
+      "text": "胸のひかりが君を守る",
+      "singableText": "胸のひかりが君を守る",
+      "tokens": [
+        {
+          "text": "胸",
+          "start": 50.2,
+          "end": 51.029,
+          "reading": "むね"
+        },
+        {
+          "text": "の",
+          "start": 51.029,
+          "end": 51.857,
+          "reading": "の"
+        },
+        {
+          "text": "ひかり",
+          "start": 51.857,
+          "end": 52.686,
+          "reading": "ひかり"
+        },
+        {
+          "text": "が",
+          "start": 52.686,
+          "end": 53.514,
+          "reading": "が"
+        },
+        {
+          "text": "君",
+          "start": 53.514,
+          "end": 54.343,
+          "reading": "きみ"
+        },
+        {
+          "text": "を",
+          "start": 54.343,
+          "end": 55.171,
+          "reading": "を"
+        },
+        {
+          "text": "守る",
+          "start": 55.171,
+          "end": 56,
+          "reading": "まもる"
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 58,
+      "end": 62,
+      "text": "涙は地図になり",
+      "singableText": "涙は地図になり",
+      "tokens": [
+        {
+          "text": "涙",
+          "start": 58,
+          "end": 59,
+          "reading": "なみだ"
+        },
+        {
+          "text": "は",
+          "start": 59,
+          "end": 60,
+          "reading": "は"
+        },
+        {
+          "text": "地図",
+          "start": 60,
+          "end": 61,
+          "reading": "ちず"
+        },
+        {
+          "text": "になり",
+          "start": 61,
+          "end": 62,
+          "reading": "になり"
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 62,
+      "end": 66,
+      "text": "一歩が扉を開く",
+      "singableText": "一歩が扉を開く",
+      "tokens": [
+        {
+          "text": "一歩",
+          "start": 62,
+          "end": 62.8,
+          "reading": "いっぽ"
+        },
+        {
+          "text": "が",
+          "start": 62.8,
+          "end": 63.6,
+          "reading": "が"
+        },
+        {
+          "text": "扉",
+          "start": 63.6,
+          "end": 64.4,
+          "reading": "とびら"
+        },
+        {
+          "text": "を",
+          "start": 64.4,
+          "end": 65.2,
+          "reading": "を"
+        },
+        {
+          "text": "開く",
+          "start": 65.2,
+          "end": 66,
+          "reading": "ひらく"
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 67,
+      "end": 70,
+      "text": "自分を大切に",
+      "singableText": "自分を大切に",
+      "tokens": [
+        {
+          "text": "自",
+          "reading": "じ",
+          "start": 67,
+          "end": 67.5
+        },
+        {
+          "text": "分",
+          "reading": "ぶん",
+          "start": 67.5,
+          "end": 68
+        },
+        {
+          "text": "を",
+          "start": 68,
+          "end": 68.5
+        },
+        {
+          "text": "大",
+          "reading": "たい",
+          "start": 68.5,
+          "end": 69
+        },
+        {
+          "text": "切",
+          "reading": "せつ",
+          "start": 69,
+          "end": 69.5
+        },
+        {
+          "text": "に",
+          "start": 69.5,
+          "end": 70
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 70,
+      "end": 74.5,
+      "text": "風を信じて進めるよ",
+      "singableText": "風を信じて進めるよ",
+      "tokens": [
+        {
+          "text": "風",
+          "start": 70,
+          "end": 70.9,
+          "reading": "かぜ"
+        },
+        {
+          "text": "を",
+          "start": 70.9,
+          "end": 71.8,
+          "reading": "を"
+        },
+        {
+          "text": "信じて",
+          "start": 71.8,
+          "end": 72.7,
+          "reading": "しんじて"
+        },
+        {
+          "text": "進める",
+          "start": 72.7,
+          "end": 73.6,
+          "reading": "すすめる"
+        },
+        {
+          "text": "よ",
+          "start": 73.6,
+          "end": 74.5,
+          "reading": "よ"
+        }
+      ]
+    }
+  ]
+}

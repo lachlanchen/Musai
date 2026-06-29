@@ -13,11 +13,10 @@
   "lines": [
     {
       "id": "line-001",
-      "start": 0.0,
+      "start": 0,
       "end": 3.78,
       "text": "窗边雨，轻轻落肩",
       "singableText": "窗边雨，轻轻落肩",
-      "role": "asr-adjusted-lyric",
       "asrText": "窗边雨轻轻落尖",
       "tokens": [
         {
@@ -25,7 +24,7 @@
           "pinyin": "chuang1",
           "display": "chuang",
           "tone": 1,
-          "start": 0.0,
+          "start": 0,
           "end": 0.64
         },
         {
@@ -53,14 +52,14 @@
           "display": "qing",
           "tone": 1,
           "start": 1.52,
-          "end": 2.0
+          "end": 2
         },
         {
           "text": "轻",
           "pinyin": "qing1",
           "display": "qing",
           "tone": 1,
-          "start": 2.0,
+          "start": 2,
           "end": 2.48
         },
         {
@@ -87,7 +86,6 @@
       "end": 8.22,
       "text": "城里灯，穿雨交冲",
       "singableText": "城里灯，穿雨交冲",
-      "role": "asr-adjusted-lyric",
       "asrText": "城里灯穿雨交冲",
       "tokens": [
         {
@@ -153,11 +151,10 @@
     },
     {
       "id": "line-003",
-      "start": 9.0,
+      "start": 9,
       "end": 13.08,
       "text": "心底雨，温柔漫漫",
       "singableText": "心底雨，温柔漫漫",
-      "role": "asr-adjusted-lyric",
       "asrText": "心底雨温柔漫漫",
       "tokens": [
         {
@@ -165,7 +162,7 @@
           "pinyin": "xin1",
           "display": "xin",
           "tone": 1,
-          "start": 9.0,
+          "start": 9,
           "end": 9.78
         },
         {
@@ -227,7 +224,6 @@
       "end": 17.22,
       "text": "陪我停，在这片雨",
       "singableText": "陪我停，在这片雨",
-      "role": "asr-adjusted-lyric",
       "asrText": "陪我停在这片雨",
       "tokens": [
         {

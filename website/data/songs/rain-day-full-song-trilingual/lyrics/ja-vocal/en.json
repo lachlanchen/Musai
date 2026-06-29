@@ -5,8 +5,6 @@
   "songId": "rain-day-full-song-trilingual",
   "trackRole": "translation",
   "vocalSetId": "ja-vocal",
-  "timingSource": "asr-corrected-render",
-  "timingNote": "Japanese render is shorter than the prompt-planned lyric; final bridge/refrain lines are not displayed because they are not clearly sung.",
   "language": {
     "code": "en",
     "label": "English",

@@ -78,6 +78,10 @@ h2 {
   gap: 12px;
 }
 
+.header-actions {
+  min-height: 46px;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -130,6 +134,13 @@ h2 {
   font-size: 20px;
   font-weight: 850;
   line-height: 1;
+}
+
+#search-toggle {
+  width: 48px;
+  height: 44px;
+  font-size: 34px;
+  line-height: .8;
 }
 
 .icon-button:hover,
@@ -185,7 +196,7 @@ h2 {
 
 .vocal-language-select {
   width: min(178px, 28vw);
-  height: 42px;
+  height: 44px;
   border: 1px solid var(--line);
   border-radius: 999px;
   appearance: none;
@@ -372,10 +383,11 @@ h2 {
 }
 
 .media-artist {
-  margin: 0;
+  margin: 2px 0 0;
   color: var(--teal);
-  font-size: 15px;
-  font-weight: 850;
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1;
+  font-weight: 950;
 }
 
 .stage {
@@ -803,7 +815,7 @@ body.capture-mode.capture-full-lyrics .full-lyrics-section {
 
 body.capture-mode .hero-grid {
   min-height: calc(100vh - 96px);
-  grid-template-columns: minmax(0, 1.08fr) minmax(520px, .88fr);
+  grid-template-columns: minmax(0, 1fr) minmax(620px, .96fr);
   gap: 20px;
 }
 
@@ -814,6 +826,26 @@ body.capture-mode .lyrics-card {
 
 body.capture-mode .stage-line {
   max-width: min(980px, 94%);
+}
+
+body.capture-mode:not(.capture-portrait) .lyrics-card {
+  grid-template-rows: auto auto minmax(0, 1fr);
+}
+
+body.capture-mode:not(.capture-portrait) .lyric-carousel {
+  min-height: 0;
+  align-content: center;
+}
+
+body.capture-mode:not(.capture-portrait) .carousel-line {
+  padding: 16px 6px;
+}
+
+body.capture-mode:not(.capture-portrait) .carousel-track .plain-line,
+body.capture-mode:not(.capture-portrait) .carousel-track .token-line,
+body.capture-mode:not(.capture-portrait) .carousel-track .ruby-line {
+  font-size: clamp(28px, 2.05vw, 42px);
+  line-height: 1.16;
 }
 
 body.capture-mode.capture-portrait .page-shell {
@@ -883,7 +915,8 @@ body.capture-mode.capture-portrait .carousel-line {
 body.capture-mode.capture-portrait .carousel-track .plain-line,
 body.capture-mode.capture-portrait .carousel-track .token-line,
 body.capture-mode.capture-portrait .carousel-track .ruby-line {
-  font-size: 28px;
+  font-size: 34px;
+  line-height: 1.15;
 }
 
 @media (max-width: 980px) {
