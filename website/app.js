@@ -27,7 +27,8 @@ const state = {
   renderedChordKey: "",
   captureTime: null,
   libraryPreviewIndex: 0,
-  libraryPreviewTimer: null
+  libraryPreviewTimer: null,
+  requestedAssetId: ""
 };
 
 const $ = (id) => document.getElementById(id);
@@ -939,9 +940,10 @@ async function loadMediaItem(item, updateHash = false) {
   coverThumb.alt = coverArt.alt;
 
   renderLibrary();
-  const firstAsset = playableAssets(state.manifest)[0];
-  if (!firstAsset) throw new Error("No playable media asset in manifest.");
-  setMediaSource(firstAsset);
+  const assets = playableAssets(state.manifest);
+  const selectedAsset = assets.find((asset) => asset.id === state.requestedAssetId) || assets[0];
+  if (!selectedAsset) throw new Error("No playable media asset in manifest.");
+  setMediaSource(selectedAsset);
   updateSync();
   if (updateHash) history.replaceState(null, "", `#${encodeURIComponent(item.id)}`);
 }
@@ -950,6 +952,7 @@ async function boot() {
   const params = new URLSearchParams(window.location.search);
   state.captureMode = params.get("capture") === "1" || params.get("record") === "1";
   state.skipIntroOnLoad = params.get("skipIntro") === "1" || params.get("skip") === "vocal";
+  state.requestedAssetId = params.get("asset") || "";
   document.body.classList.toggle("capture-mode", state.captureMode);
   document.body.classList.toggle("capture-full-lyrics", state.captureMode && params.get("fullLyrics") === "1");
   document.body.classList.toggle("capture-portrait", state.captureMode && params.get("portrait") === "1");

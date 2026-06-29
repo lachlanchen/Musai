@@ -172,6 +172,7 @@ def main() -> None:
         server, base_url = start_server(WEBSITE)
 
     query = urlencode({
+        "asset": args.asset_id,
         "capture": "1",
         "fullLyrics": "1" if args.include_full_lyrics else "0",
         "media": media_id,
