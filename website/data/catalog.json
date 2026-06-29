@@ -82,6 +82,33 @@
       ]
     },
     {
+      "id": "aya-chan-hikari-ame-full-mv",
+      "kind": "mv",
+      "title": "Aya Chan Hikari Ame Full MV",
+      "artist": "Musia",
+      "summary": "A hopeful LALACHAN music video for Aya Chan Hikari Ame with synced Japanese lyrics, English and Chinese translations, furigana, pinyin, and chord timing.",
+      "manifest": "data/songs/aya-chan-hikari-ame-full-mv/manifest.json",
+      "cover": "assets/covers/aya-chan-hikari-ame-16x9.png",
+      "languages": [
+        "ja",
+        "en",
+        "zh-Hans"
+      ],
+      "tags": [
+        "MV",
+        "Musia",
+        "LALACHAN",
+        "LalaMV",
+        "Aya Chan",
+        "Hikari Ame",
+        "Japanese",
+        "music video",
+        "furigana",
+        "pinyin",
+        "chords"
+      ]
+    },
+    {
       "id": "take-care-of-yourself",
       "kind": "localized-song",
       "title": "Take Care of Yourself",

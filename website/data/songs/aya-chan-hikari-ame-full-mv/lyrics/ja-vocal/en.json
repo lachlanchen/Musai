@@ -1,0 +1,460 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "aya-chan-hikari-ame-full-mv",
+  "lineCoverage": "translation-of-active-vocal",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "lines": [
+    {
+      "id": "ja-001",
+      "start": 0.11,
+      "end": 9.69,
+      "text": "Little Aya by the window turns raindrops into stars",
+      "singableText": "Little Aya by the window turns raindrops into stars",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Little",
+          "start": 0.11,
+          "end": 1.174
+        },
+        {
+          "text": "Aya",
+          "start": 1.174,
+          "end": 2.239
+        },
+        {
+          "text": "by",
+          "start": 2.239,
+          "end": 3.303
+        },
+        {
+          "text": "the",
+          "start": 3.303,
+          "end": 4.368
+        },
+        {
+          "text": "window",
+          "start": 4.368,
+          "end": 5.432
+        },
+        {
+          "text": "turns",
+          "start": 5.432,
+          "end": 6.497
+        },
+        {
+          "text": "raindrops",
+          "start": 6.497,
+          "end": 7.561
+        },
+        {
+          "text": "into",
+          "start": 7.561,
+          "end": 8.626
+        },
+        {
+          "text": "stars",
+          "start": 8.626,
+          "end": 9.69
+        }
+      ]
+    },
+    {
+      "id": "ja-002",
+      "start": 11.2,
+      "end": 21.82,
+      "text": "Her red tail sways softly; she sends a song to the sleeping town",
+      "singableText": "Her red tail sways softly; she sends a song to the sleeping town",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Her",
+          "start": 11.2,
+          "end": 11.959
+        },
+        {
+          "text": "red",
+          "start": 11.959,
+          "end": 12.717
+        },
+        {
+          "text": "tail",
+          "start": 12.717,
+          "end": 13.476
+        },
+        {
+          "text": "sways",
+          "start": 13.476,
+          "end": 14.234
+        },
+        {
+          "text": "softly",
+          "start": 14.234,
+          "end": 14.993
+        },
+        {
+          "text": ";",
+          "start": 14.993,
+          "end": 15.751
+        },
+        {
+          "text": "she",
+          "start": 15.751,
+          "end": 16.51
+        },
+        {
+          "text": "sends",
+          "start": 16.51,
+          "end": 17.269
+        },
+        {
+          "text": "a",
+          "start": 17.269,
+          "end": 18.027
+        },
+        {
+          "text": "song",
+          "start": 18.027,
+          "end": 18.786
+        },
+        {
+          "text": "to",
+          "start": 18.786,
+          "end": 19.544
+        },
+        {
+          "text": "the",
+          "start": 19.544,
+          "end": 20.303
+        },
+        {
+          "text": "sleeping",
+          "start": 20.303,
+          "end": 21.061
+        },
+        {
+          "text": "town",
+          "start": 21.061,
+          "end": 21.82
+        }
+      ]
+    },
+    {
+      "id": "ja-003",
+      "start": 21.82,
+      "end": 30.06,
+      "text": "Do not be afraid, I am here; her bell lights the night",
+      "singableText": "Do not be afraid, I am here; her bell lights the night",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Do",
+          "start": 21.82,
+          "end": 22.409
+        },
+        {
+          "text": "not",
+          "start": 22.409,
+          "end": 22.997
+        },
+        {
+          "text": "be",
+          "start": 22.997,
+          "end": 23.586
+        },
+        {
+          "text": "afraid",
+          "start": 23.586,
+          "end": 24.174
+        },
+        {
+          "text": ",",
+          "start": 24.174,
+          "end": 24.763
+        },
+        {
+          "text": "I",
+          "start": 24.763,
+          "end": 25.351
+        },
+        {
+          "text": "am",
+          "start": 25.351,
+          "end": 25.94
+        },
+        {
+          "text": "here",
+          "start": 25.94,
+          "end": 26.529
+        },
+        {
+          "text": ";",
+          "start": 26.529,
+          "end": 27.117
+        },
+        {
+          "text": "her",
+          "start": 27.117,
+          "end": 27.706
+        },
+        {
+          "text": "bell",
+          "start": 27.706,
+          "end": 28.294
+        },
+        {
+          "text": "lights",
+          "start": 28.294,
+          "end": 28.883
+        },
+        {
+          "text": "the",
+          "start": 28.883,
+          "end": 29.471
+        },
+        {
+          "text": "night",
+          "start": 29.471,
+          "end": 30.06
+        }
+      ]
+    },
+    {
+      "id": "ja-004",
+      "start": 33.22,
+      "end": 38.66,
+      "text": "Shimmer, shimmer, Aya Chan runs through a break in the clouds",
+      "singableText": "Shimmer, shimmer, Aya Chan runs through a break in the clouds",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Shimmer",
+          "start": 33.22,
+          "end": 33.638
+        },
+        {
+          "text": ",",
+          "start": 33.638,
+          "end": 34.057
+        },
+        {
+          "text": "shimmer",
+          "start": 34.057,
+          "end": 34.475
+        },
+        {
+          "text": ",",
+          "start": 34.475,
+          "end": 34.894
+        },
+        {
+          "text": "Aya",
+          "start": 34.894,
+          "end": 35.312
+        },
+        {
+          "text": "Chan",
+          "start": 35.312,
+          "end": 35.731
+        },
+        {
+          "text": "runs",
+          "start": 35.731,
+          "end": 36.149
+        },
+        {
+          "text": "through",
+          "start": 36.149,
+          "end": 36.568
+        },
+        {
+          "text": "a",
+          "start": 36.568,
+          "end": 36.986
+        },
+        {
+          "text": "break",
+          "start": 36.986,
+          "end": 37.405
+        },
+        {
+          "text": "in",
+          "start": 37.405,
+          "end": 37.823
+        },
+        {
+          "text": "the",
+          "start": 37.823,
+          "end": 38.242
+        },
+        {
+          "text": "clouds",
+          "start": 38.242,
+          "end": 38.66
+        }
+      ]
+    },
+    {
+      "id": "ja-005",
+      "start": 38.66,
+      "end": 47.8,
+      "text": "You are not alone, not alone; dreams will not fade",
+      "singableText": "You are not alone, not alone; dreams will not fade",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "You",
+          "start": 38.66,
+          "end": 39.422
+        },
+        {
+          "text": "are",
+          "start": 39.422,
+          "end": 40.183
+        },
+        {
+          "text": "not",
+          "start": 40.183,
+          "end": 40.945
+        },
+        {
+          "text": "alone",
+          "start": 40.945,
+          "end": 41.707
+        },
+        {
+          "text": ",",
+          "start": 41.707,
+          "end": 42.468
+        },
+        {
+          "text": "not",
+          "start": 42.468,
+          "end": 43.23
+        },
+        {
+          "text": "alone",
+          "start": 43.23,
+          "end": 43.992
+        },
+        {
+          "text": ";",
+          "start": 43.992,
+          "end": 44.753
+        },
+        {
+          "text": "dreams",
+          "start": 44.753,
+          "end": 45.515
+        },
+        {
+          "text": "will",
+          "start": 45.515,
+          "end": 46.277
+        },
+        {
+          "text": "not",
+          "start": 46.277,
+          "end": 47.038
+        },
+        {
+          "text": "fade",
+          "start": 47.038,
+          "end": 47.8
+        }
+      ]
+    },
+    {
+      "id": "ja-006",
+      "start": 47.8,
+      "end": 59.26,
+      "text": "Dance in the rain of light; when morning comes, small courage wakes",
+      "singableText": "Dance in the rain of light; when morning comes, small courage wakes",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Dance",
+          "start": 47.8,
+          "end": 48.619
+        },
+        {
+          "text": "in",
+          "start": 48.619,
+          "end": 49.437
+        },
+        {
+          "text": "the",
+          "start": 49.437,
+          "end": 50.256
+        },
+        {
+          "text": "rain",
+          "start": 50.256,
+          "end": 51.074
+        },
+        {
+          "text": "of",
+          "start": 51.074,
+          "end": 51.893
+        },
+        {
+          "text": "light",
+          "start": 51.893,
+          "end": 52.711
+        },
+        {
+          "text": ";",
+          "start": 52.711,
+          "end": 53.53
+        },
+        {
+          "text": "when",
+          "start": 53.53,
+          "end": 54.349
+        },
+        {
+          "text": "morning",
+          "start": 54.349,
+          "end": 55.167
+        },
+        {
+          "text": "comes",
+          "start": 55.167,
+          "end": 55.986
+        },
+        {
+          "text": ",",
+          "start": 55.986,
+          "end": 56.804
+        },
+        {
+          "text": "small",
+          "start": 56.804,
+          "end": 57.623
+        },
+        {
+          "text": "courage",
+          "start": 57.623,
+          "end": 58.441
+        },
+        {
+          "text": "wakes",
+          "start": 58.441,
+          "end": 59.26
+        }
+      ]
+    }
+  ],
+  "notes": "Copied from the reviewed Aya Chan Hikari Ame pure song ja-vocal lyric set for the song-locked MV; timing and tokens follow the selected audio and were preserved for website playback.",
+  "provenance": {
+    "sourceMediaId": "aya-chan-hikari-ame",
+    "sourcePath": "website/data/songs/aya-chan-hikari-ame/lyrics/ja-vocal/en.json",
+    "correctionPolicy": "Reuse existing pure song lyric timing/readings that were prepared under the Musia listening and ASR/STT correction workflow."
+  }
+}

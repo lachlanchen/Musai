@@ -1,0 +1,690 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "aya-chan-hikari-ame-full-mv",
+  "language": {
+    "code": "ja",
+    "label": "Japanese",
+    "nativeLabel": "日本語",
+    "script": "Jpan",
+    "pronunciation": "furigana"
+  },
+  "lines": [
+    {
+      "id": "ja-001",
+      "start": 0.11,
+      "end": 9.69,
+      "text": "窓辺で小さなアヤちゃん 雨粒を星に変える",
+      "singableText": "窓辺で小さなアヤちゃん 雨粒を星に変える",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "窓",
+          "reading": "まど",
+          "start": 0.11,
+          "end": 0.614
+        },
+        {
+          "text": "辺",
+          "reading": "べ",
+          "start": 0.614,
+          "end": 1.118
+        },
+        {
+          "text": "で",
+          "start": 1.118,
+          "end": 1.623
+        },
+        {
+          "text": "小",
+          "reading": "ちい",
+          "start": 1.623,
+          "end": 2.127
+        },
+        {
+          "text": "さ",
+          "start": 2.127,
+          "end": 2.631
+        },
+        {
+          "text": "な",
+          "start": 2.631,
+          "end": 3.135
+        },
+        {
+          "text": "ア",
+          "start": 3.135,
+          "end": 3.639
+        },
+        {
+          "text": "ヤ",
+          "start": 3.639,
+          "end": 4.144
+        },
+        {
+          "text": "ち",
+          "start": 4.144,
+          "end": 4.648
+        },
+        {
+          "text": "ゃ",
+          "start": 4.648,
+          "end": 5.152
+        },
+        {
+          "text": "ん",
+          "start": 5.152,
+          "end": 5.656
+        },
+        {
+          "text": "雨",
+          "reading": "あめ",
+          "start": 5.656,
+          "end": 6.161
+        },
+        {
+          "text": "粒",
+          "reading": "つぶ",
+          "start": 6.161,
+          "end": 6.665
+        },
+        {
+          "text": "を",
+          "start": 6.665,
+          "end": 7.169
+        },
+        {
+          "text": "星",
+          "reading": "ほし",
+          "start": 7.169,
+          "end": 7.673
+        },
+        {
+          "text": "に",
+          "start": 7.673,
+          "end": 8.177
+        },
+        {
+          "text": "変",
+          "reading": "か",
+          "start": 8.177,
+          "end": 8.682
+        },
+        {
+          "text": "え",
+          "start": 8.682,
+          "end": 9.186
+        },
+        {
+          "text": "る",
+          "start": 9.186,
+          "end": 9.69
+        }
+      ]
+    },
+    {
+      "id": "ja-002",
+      "start": 11.2,
+      "end": 21.82,
+      "text": "赤いしっぽそっと揺れて 眠る街へ歌を投げた",
+      "singableText": "赤いしっぽそっと揺れて 眠る街へ歌を投げた",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "赤",
+          "reading": "あか",
+          "start": 11.2,
+          "end": 11.731
+        },
+        {
+          "text": "い",
+          "start": 11.731,
+          "end": 12.262
+        },
+        {
+          "text": "し",
+          "start": 12.262,
+          "end": 12.793
+        },
+        {
+          "text": "っ",
+          "start": 12.793,
+          "end": 13.324
+        },
+        {
+          "text": "ぽ",
+          "start": 13.324,
+          "end": 13.855
+        },
+        {
+          "text": "そ",
+          "start": 13.855,
+          "end": 14.386
+        },
+        {
+          "text": "っ",
+          "start": 14.386,
+          "end": 14.917
+        },
+        {
+          "text": "と",
+          "start": 14.917,
+          "end": 15.448
+        },
+        {
+          "text": "揺",
+          "reading": "ゆ",
+          "start": 15.448,
+          "end": 15.979
+        },
+        {
+          "text": "れ",
+          "start": 15.979,
+          "end": 16.51
+        },
+        {
+          "text": "て",
+          "start": 16.51,
+          "end": 17.041
+        },
+        {
+          "text": "眠",
+          "reading": "ねむ",
+          "start": 17.041,
+          "end": 17.572
+        },
+        {
+          "text": "る",
+          "start": 17.572,
+          "end": 18.103
+        },
+        {
+          "text": "街",
+          "reading": "まち",
+          "start": 18.103,
+          "end": 18.634
+        },
+        {
+          "text": "へ",
+          "start": 18.634,
+          "end": 19.165
+        },
+        {
+          "text": "歌",
+          "reading": "うた",
+          "start": 19.165,
+          "end": 19.696
+        },
+        {
+          "text": "を",
+          "start": 19.696,
+          "end": 20.227
+        },
+        {
+          "text": "投",
+          "reading": "な",
+          "start": 20.227,
+          "end": 20.758
+        },
+        {
+          "text": "げ",
+          "start": 20.758,
+          "end": 21.289
+        },
+        {
+          "text": "た",
+          "start": 21.289,
+          "end": 21.82
+        }
+      ]
+    },
+    {
+      "id": "ja-003",
+      "start": 21.82,
+      "end": 30.06,
+      "text": "怖くないよ ここにいるよ 胸の鈴が夜を照らす",
+      "singableText": "怖くないよ ここにいるよ 胸の鈴が夜を照らす",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "怖",
+          "reading": "こわ",
+          "start": 21.82,
+          "end": 22.232
+        },
+        {
+          "text": "く",
+          "start": 22.232,
+          "end": 22.644
+        },
+        {
+          "text": "な",
+          "start": 22.644,
+          "end": 23.056
+        },
+        {
+          "text": "い",
+          "start": 23.056,
+          "end": 23.468
+        },
+        {
+          "text": "よ",
+          "start": 23.468,
+          "end": 23.88
+        },
+        {
+          "text": "こ",
+          "start": 23.88,
+          "end": 24.292
+        },
+        {
+          "text": "こ",
+          "start": 24.292,
+          "end": 24.704
+        },
+        {
+          "text": "に",
+          "start": 24.704,
+          "end": 25.116
+        },
+        {
+          "text": "い",
+          "start": 25.116,
+          "end": 25.528
+        },
+        {
+          "text": "る",
+          "start": 25.528,
+          "end": 25.94
+        },
+        {
+          "text": "よ",
+          "start": 25.94,
+          "end": 26.352
+        },
+        {
+          "text": "胸",
+          "reading": "むね",
+          "start": 26.352,
+          "end": 26.764
+        },
+        {
+          "text": "の",
+          "start": 26.764,
+          "end": 27.176
+        },
+        {
+          "text": "鈴",
+          "reading": "すず",
+          "start": 27.176,
+          "end": 27.588
+        },
+        {
+          "text": "が",
+          "start": 27.588,
+          "end": 28
+        },
+        {
+          "text": "夜",
+          "reading": "よる",
+          "start": 28,
+          "end": 28.412
+        },
+        {
+          "text": "を",
+          "start": 28.412,
+          "end": 28.824
+        },
+        {
+          "text": "照",
+          "reading": "て",
+          "start": 28.824,
+          "end": 29.236
+        },
+        {
+          "text": "ら",
+          "start": 29.236,
+          "end": 29.648
+        },
+        {
+          "text": "す",
+          "start": 29.648,
+          "end": 30.06
+        }
+      ]
+    },
+    {
+      "id": "ja-004",
+      "start": 33.22,
+      "end": 38.66,
+      "text": "きらり きらり アヤちゃん 雲のすきまを走って",
+      "singableText": "きらり きらり アヤちゃん 雲のすきまを走って",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "き",
+          "start": 33.22,
+          "end": 33.492
+        },
+        {
+          "text": "ら",
+          "start": 33.492,
+          "end": 33.764
+        },
+        {
+          "text": "り",
+          "start": 33.764,
+          "end": 34.036
+        },
+        {
+          "text": "き",
+          "start": 34.036,
+          "end": 34.308
+        },
+        {
+          "text": "ら",
+          "start": 34.308,
+          "end": 34.58
+        },
+        {
+          "text": "り",
+          "start": 34.58,
+          "end": 34.852
+        },
+        {
+          "text": "ア",
+          "start": 34.852,
+          "end": 35.124
+        },
+        {
+          "text": "ヤ",
+          "start": 35.124,
+          "end": 35.396
+        },
+        {
+          "text": "ち",
+          "start": 35.396,
+          "end": 35.668
+        },
+        {
+          "text": "ゃ",
+          "start": 35.668,
+          "end": 35.94
+        },
+        {
+          "text": "ん",
+          "start": 35.94,
+          "end": 36.212
+        },
+        {
+          "text": "雲",
+          "reading": "くも",
+          "start": 36.212,
+          "end": 36.484
+        },
+        {
+          "text": "の",
+          "start": 36.484,
+          "end": 36.756
+        },
+        {
+          "text": "す",
+          "start": 36.756,
+          "end": 37.028
+        },
+        {
+          "text": "き",
+          "start": 37.028,
+          "end": 37.3
+        },
+        {
+          "text": "ま",
+          "start": 37.3,
+          "end": 37.572
+        },
+        {
+          "text": "を",
+          "start": 37.572,
+          "end": 37.844
+        },
+        {
+          "text": "走",
+          "reading": "はし",
+          "start": 37.844,
+          "end": 38.116
+        },
+        {
+          "text": "っ",
+          "start": 38.116,
+          "end": 38.388
+        },
+        {
+          "text": "て",
+          "start": 38.388,
+          "end": 38.66
+        }
+      ]
+    },
+    {
+      "id": "ja-005",
+      "start": 38.66,
+      "end": 47.8,
+      "text": "ひとりじゃない ひとりじゃない 夢は消えない",
+      "singableText": "ひとりじゃない ひとりじゃない 夢は消えない",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "ひ",
+          "start": 38.66,
+          "end": 39.117
+        },
+        {
+          "text": "と",
+          "start": 39.117,
+          "end": 39.574
+        },
+        {
+          "text": "り",
+          "start": 39.574,
+          "end": 40.031
+        },
+        {
+          "text": "じ",
+          "start": 40.031,
+          "end": 40.488
+        },
+        {
+          "text": "ゃ",
+          "start": 40.488,
+          "end": 40.945
+        },
+        {
+          "text": "な",
+          "start": 40.945,
+          "end": 41.402
+        },
+        {
+          "text": "い",
+          "start": 41.402,
+          "end": 41.859
+        },
+        {
+          "text": "ひ",
+          "start": 41.859,
+          "end": 42.316
+        },
+        {
+          "text": "と",
+          "start": 42.316,
+          "end": 42.773
+        },
+        {
+          "text": "り",
+          "start": 42.773,
+          "end": 43.23
+        },
+        {
+          "text": "じ",
+          "start": 43.23,
+          "end": 43.687
+        },
+        {
+          "text": "ゃ",
+          "start": 43.687,
+          "end": 44.144
+        },
+        {
+          "text": "な",
+          "start": 44.144,
+          "end": 44.601
+        },
+        {
+          "text": "い",
+          "start": 44.601,
+          "end": 45.058
+        },
+        {
+          "text": "夢",
+          "reading": "ゆめ",
+          "start": 45.058,
+          "end": 45.515
+        },
+        {
+          "text": "は",
+          "start": 45.515,
+          "end": 45.972
+        },
+        {
+          "text": "消",
+          "reading": "き",
+          "start": 45.972,
+          "end": 46.429
+        },
+        {
+          "text": "え",
+          "start": 46.429,
+          "end": 46.886
+        },
+        {
+          "text": "な",
+          "start": 46.886,
+          "end": 47.343
+        },
+        {
+          "text": "い",
+          "start": 47.343,
+          "end": 47.8
+        }
+      ]
+    },
+    {
+      "id": "ja-006",
+      "start": 47.8,
+      "end": 59.26,
+      "text": "光の雨で踊ろう 朝が来たら小さな勇気",
+      "singableText": "光の雨で踊ろう 朝が来たら小さな勇気",
+      "role": "active-vocal-lyric",
+      "tokens": [
+        {
+          "text": "光",
+          "reading": "ひかり",
+          "start": 47.8,
+          "end": 48.474
+        },
+        {
+          "text": "の",
+          "start": 48.474,
+          "end": 49.148
+        },
+        {
+          "text": "雨",
+          "reading": "あめ",
+          "start": 49.148,
+          "end": 49.822
+        },
+        {
+          "text": "で",
+          "start": 49.822,
+          "end": 50.496
+        },
+        {
+          "text": "踊",
+          "reading": "おど",
+          "start": 50.496,
+          "end": 51.171
+        },
+        {
+          "text": "ろ",
+          "start": 51.171,
+          "end": 51.845
+        },
+        {
+          "text": "う",
+          "start": 51.845,
+          "end": 52.519
+        },
+        {
+          "text": "朝",
+          "reading": "あさ",
+          "start": 52.519,
+          "end": 53.193
+        },
+        {
+          "text": "が",
+          "start": 53.193,
+          "end": 53.867
+        },
+        {
+          "text": "来",
+          "reading": "き",
+          "start": 53.867,
+          "end": 54.541
+        },
+        {
+          "text": "た",
+          "start": 54.541,
+          "end": 55.215
+        },
+        {
+          "text": "ら",
+          "start": 55.215,
+          "end": 55.889
+        },
+        {
+          "text": "小",
+          "reading": "ちい",
+          "start": 55.889,
+          "end": 56.564
+        },
+        {
+          "text": "さ",
+          "start": 56.564,
+          "end": 57.238
+        },
+        {
+          "text": "な",
+          "start": 57.238,
+          "end": 57.912
+        },
+        {
+          "text": "勇",
+          "reading": "ゆう",
+          "start": 57.912,
+          "end": 58.586
+        },
+        {
+          "text": "気",
+          "reading": "き",
+          "start": 58.586,
+          "end": 59.26
+        }
+      ]
+    }
+  ],
+  "notes": "Copied from the reviewed Aya Chan Hikari Ame pure song ja-vocal lyric set for the song-locked MV; timing and tokens follow the selected audio and were preserved for website playback.",
+  "provenance": {
+    "sourceMediaId": "aya-chan-hikari-ame",
+    "sourcePath": "website/data/songs/aya-chan-hikari-ame/lyrics/ja-vocal/ja.json",
+    "correctionPolicy": "Reuse existing pure song lyric timing/readings that were prepared under the Musia listening and ASR/STT correction workflow."
+  }
+}

@@ -478,7 +478,11 @@ function setMediaSource(asset, keepTime = false) {
   video.hidden = asset.type !== "video";
   $("play").disabled = false;
   $("play").title = "";
-  state.mediaElement.crossOrigin = "anonymous";
+  if (asset.crossOrigin === false) {
+    state.mediaElement.removeAttribute("crossorigin");
+  } else {
+    state.mediaElement.crossOrigin = asset.crossOrigin || "anonymous";
+  }
   state.mediaElement.src = resolveSitePath(asset.src);
   if (keepTime) state.mediaElement.currentTime = Math.min(previousTime, (state.manifest.duration || previousTime) - 0.1);
   if (wasPlaying) state.mediaElement.play();
