@@ -1,7 +1,7 @@
 {
   "schema": "fun.lazying.media.text-track.v1",
   "version": 1,
-  "mediaId": "yun-hai-zhi-lian",
+  "mediaId": "yun-hai-zhi-lian-legacy",
   "language": {
     "code": "en",
     "label": "English",

@@ -37,7 +37,7 @@
       "kind": "song",
       "title": "云海之恋",
       "artist": "Musia",
-      "summary": "A spacious cloud-sea love ballad with Mandarin, English, and Japanese vocals, corrected multilingual lyrics, pinyin, furigana, and chord timing.",
+      "summary": "A spacious Mandarin cloud-sea love ballad with corrected trilingual lyrics, pinyin, furigana, and chord timing.",
       "manifest": "data/songs/yun-hai-zhi-lian/manifest.json",
       "cover": "assets/covers/yun-hai-zhi-lian-16x9.png",
       "languages": [
@@ -50,10 +50,29 @@
         "love",
         "cloud-sea",
         "Mandarin",
-        "English",
-        "Japanese",
         "pinyin",
-        "furigana"
+        "furigana",
+        "DiffRhythm"
+      ]
+    },
+    {
+      "id": "yun-hai-zhi-lian-legacy",
+      "kind": "song",
+      "title": "云海之恋 - Legacy",
+      "artist": "Musia",
+      "summary": "Earlier generated cloud-sea love ballad candidate preserved for comparison.",
+      "manifest": "data/songs/yun-hai-zhi-lian-legacy/manifest.json",
+      "cover": "assets/covers/yun-hai-zhi-lian-16x9.png",
+      "languages": [
+        "zh-Hans",
+        "en",
+        "ja"
+      ],
+      "tags": [
+        "music",
+        "love",
+        "cloud-sea",
+        "legacy"
       ]
     },
     {
