@@ -3,6 +3,21 @@
 Use this for Li Bai, Tang poetry, Song lyrics, or any classical text that may be
 too dense for ACE/YuE to sing literally.
 
+Detailed method reference:
+
+```text
+references/ace-poem-song-beauty-and-lyric-alignment-method-2026-07-01.md
+```
+
+Short version:
+
+```text
+beautiful song first
+clear vocal second
+truthful corrected lyrics third
+literal poem coverage only when the user explicitly asks for it
+```
+
 ## Default: Adapted Normal Song
 
 Use this when the user wants a beautiful song.
@@ -28,6 +43,10 @@ Rules:
 - after generation, correct lyrics with large ASR plus listening before website
   or LazyEdit publication.
 
+This is the route that worked best for the normal-song versions of `侠客行`,
+`将进酒`, and `梦游天姥`. It should stay the default route unless the user says
+they want original-text-only lyrics.
+
 Good catalog naming:
 
 - standard adapted ACE version: plain title, such as `将进酒`;
@@ -48,10 +67,16 @@ Rules:
 
 - keep the original poem text as the prompt lyric;
 - expect ACE may skip, merge, repeat, or garble dense classical lines;
-- label the public item clearly, such as `ACE Poetry Demo`;
+- generate multiple candidates and reject beautiful but unintelligible ones;
+- label the public item clearly, such as `Original Poem Demo` or
+  `ACE Poetry Demo`;
 - do not call it the main version when a normal song exists;
 - never use prompt-only lyrics for publication; correct the website JSON from
   the actual audio.
+
+This route produced the usable `侠客行 · 原诗版`, but it still has small
+inconsistencies. Treat exact-poem output as an audited experiment unless it
+passes the same listening and ASR standard as a normal adapted song.
 
 Good catalog naming:
 
