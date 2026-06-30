@@ -11,877 +11,1037 @@
   "lines": [
     {
       "id": "l01",
-      "start": 17.76,
-      "end": 19.96,
+      "start": 14.68,
+      "end": 16.2,
+      "text": "The sky is blue.",
+      "singableText": "The sky is blue.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 14.68,
+          "end": 14.984
+        },
+        {
+          "text": "sky",
+          "start": 14.984,
+          "end": 15.288
+        },
+        {
+          "text": "is",
+          "start": 15.288,
+          "end": 15.592
+        },
+        {
+          "text": "blue",
+          "start": 15.592,
+          "end": 15.896
+        },
+        {
+          "text": ".",
+          "start": 15.896,
+          "end": 16.2
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 16.2,
+      "end": 17.78,
+      "text": "The sea is blue.",
+      "singableText": "The sea is blue.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 16.2,
+          "end": 16.516
+        },
+        {
+          "text": "sea",
+          "start": 16.516,
+          "end": 16.832
+        },
+        {
+          "text": "is",
+          "start": 16.832,
+          "end": 17.148
+        },
+        {
+          "text": "blue",
+          "start": 17.148,
+          "end": 17.464
+        },
+        {
+          "text": ".",
+          "start": 17.464,
+          "end": 17.78
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 17.78,
+      "end": 20.82,
       "text": "Clouds rest between heaven and earth.",
       "singableText": "Clouds rest between heaven and earth.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Clouds",
-          "start": 17.76,
-          "end": 18.074
+          "start": 17.78,
+          "end": 18.214
         },
         {
           "text": "rest",
-          "start": 18.074,
-          "end": 18.389
+          "start": 18.214,
+          "end": 18.649
         },
         {
           "text": "between",
-          "start": 18.389,
-          "end": 18.703
+          "start": 18.649,
+          "end": 19.083
         },
         {
           "text": "heaven",
-          "start": 18.703,
-          "end": 19.017
+          "start": 19.083,
+          "end": 19.517
         },
         {
           "text": "and",
-          "start": 19.017,
-          "end": 19.331
+          "start": 19.517,
+          "end": 19.951
         },
         {
           "text": "earth",
-          "start": 19.331,
-          "end": 19.646
+          "start": 19.951,
+          "end": 20.386
         },
         {
           "text": ".",
-          "start": 19.646,
-          "end": 19.96
+          "start": 20.386,
+          "end": 20.82
         }
       ]
     },
     {
-      "id": "l02",
-      "start": 19.96,
-      "end": 23.86,
+      "id": "l04",
+      "start": 20.82,
+      "end": 24.12,
       "text": "Longing moves like wind, drawing close beside you.",
       "singableText": "Longing moves like wind, drawing close beside you.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Longing",
-          "start": 19.96,
-          "end": 20.35
+          "start": 20.82,
+          "end": 21.15
         },
         {
           "text": "moves",
-          "start": 20.35,
-          "end": 20.74
+          "start": 21.15,
+          "end": 21.48
         },
         {
           "text": "like",
-          "start": 20.74,
-          "end": 21.13
+          "start": 21.48,
+          "end": 21.81
         },
         {
           "text": "wind",
-          "start": 21.13,
-          "end": 21.52
+          "start": 21.81,
+          "end": 22.14
         },
         {
           "text": ",",
-          "start": 21.52,
-          "end": 21.91
+          "start": 22.14,
+          "end": 22.47
         },
         {
           "text": "drawing",
-          "start": 21.91,
-          "end": 22.3
+          "start": 22.47,
+          "end": 22.8
         },
         {
           "text": "close",
-          "start": 22.3,
-          "end": 22.69
+          "start": 22.8,
+          "end": 23.13
         },
         {
           "text": "beside",
-          "start": 22.69,
-          "end": 23.08
+          "start": 23.13,
+          "end": 23.46
         },
         {
           "text": "you",
-          "start": 23.08,
-          "end": 23.47
+          "start": 23.46,
+          "end": 23.79
         },
         {
           "text": ".",
-          "start": 23.47,
-          "end": 23.86
+          "start": 23.79,
+          "end": 24.12
         }
       ]
     },
     {
-      "id": "l03",
-      "start": 23.86,
-      "end": 25.58,
+      "id": "l05",
+      "start": 24.12,
+      "end": 25.96,
       "text": "I gaze toward the far distance.",
       "singableText": "I gaze toward the far distance.",
       "role": "lyric",
       "tokens": [
         {
           "text": "I",
-          "start": 23.86,
-          "end": 24.106
+          "start": 24.12,
+          "end": 24.383
         },
         {
           "text": "gaze",
-          "start": 24.106,
-          "end": 24.351
+          "start": 24.383,
+          "end": 24.646
         },
         {
           "text": "toward",
-          "start": 24.351,
-          "end": 24.597
+          "start": 24.646,
+          "end": 24.909
         },
         {
           "text": "the",
-          "start": 24.597,
-          "end": 24.843
+          "start": 24.909,
+          "end": 25.171
         },
         {
           "text": "far",
-          "start": 24.843,
-          "end": 25.089
+          "start": 25.171,
+          "end": 25.434
         },
         {
           "text": "distance",
-          "start": 25.089,
-          "end": 25.334
+          "start": 25.434,
+          "end": 25.697
         },
         {
           "text": ".",
-          "start": 25.334,
-          "end": 25.58
+          "start": 25.697,
+          "end": 25.96
         }
       ]
     },
     {
-      "id": "l04",
-      "start": 25.58,
-      "end": 27.94,
+      "id": "l06",
+      "start": 25.96,
+      "end": 28.98,
       "text": "Yet it feels right before my eyes.",
       "singableText": "Yet it feels right before my eyes.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Yet",
-          "start": 25.58,
-          "end": 25.875
+          "start": 25.96,
+          "end": 26.338
         },
         {
           "text": "it",
-          "start": 25.875,
-          "end": 26.17
+          "start": 26.338,
+          "end": 26.715
         },
         {
           "text": "feels",
-          "start": 26.17,
-          "end": 26.465
+          "start": 26.715,
+          "end": 27.093
         },
         {
           "text": "right",
-          "start": 26.465,
-          "end": 26.76
+          "start": 27.093,
+          "end": 27.47
         },
         {
           "text": "before",
-          "start": 26.76,
-          "end": 27.055
+          "start": 27.47,
+          "end": 27.848
         },
         {
           "text": "my",
-          "start": 27.055,
-          "end": 27.35
+          "start": 27.848,
+          "end": 28.225
         },
         {
           "text": "eyes",
-          "start": 27.35,
-          "end": 27.645
+          "start": 28.225,
+          "end": 28.602
         },
         {
           "text": ".",
-          "start": 27.645,
-          "end": 27.94
+          "start": 28.602,
+          "end": 28.98
         }
       ]
     },
     {
-      "id": "l05",
-      "start": 27.94,
-      "end": 33.16,
+      "id": "l07",
+      "start": 30.36,
+      "end": 33.5,
       "text": "Slowly drawing near, little by little.",
       "singableText": "Slowly drawing near, little by little.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Slowly",
-          "start": 27.94,
-          "end": 28.593
+          "start": 30.36,
+          "end": 30.752
         },
         {
           "text": "drawing",
-          "start": 28.593,
-          "end": 29.245
+          "start": 30.752,
+          "end": 31.145
         },
         {
           "text": "near",
-          "start": 29.245,
-          "end": 29.898
+          "start": 31.145,
+          "end": 31.538
         },
         {
           "text": ",",
-          "start": 29.898,
-          "end": 30.55
+          "start": 31.538,
+          "end": 31.93
         },
         {
           "text": "little",
-          "start": 30.55,
-          "end": 31.202
+          "start": 31.93,
+          "end": 32.322
         },
         {
           "text": "by",
-          "start": 31.202,
-          "end": 31.855
+          "start": 32.322,
+          "end": 32.715
         },
         {
           "text": "little",
-          "start": 31.855,
-          "end": 32.507
+          "start": 32.715,
+          "end": 33.108
         },
         {
           "text": ".",
-          "start": 32.507,
-          "end": 33.16
+          "start": 33.108,
+          "end": 33.5
         }
       ]
     },
     {
-      "id": "l06",
-      "start": 33.16,
-      "end": 34.9,
+      "id": "l08",
+      "start": 33.5,
+      "end": 36.2,
       "text": "Crossing the sea of clouds.",
       "singableText": "Crossing the sea of clouds.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Crossing",
-          "start": 33.16,
-          "end": 33.45
+          "start": 33.5,
+          "end": 33.95
         },
         {
           "text": "the",
-          "start": 33.45,
-          "end": 33.74
+          "start": 33.95,
+          "end": 34.4
         },
         {
           "text": "sea",
-          "start": 33.74,
-          "end": 34.03
+          "start": 34.4,
+          "end": 34.85
         },
         {
           "text": "of",
-          "start": 34.03,
-          "end": 34.32
+          "start": 34.85,
+          "end": 35.3
         },
         {
           "text": "clouds",
-          "start": 34.32,
-          "end": 34.61
+          "start": 35.3,
+          "end": 35.75
         },
         {
           "text": ".",
-          "start": 34.61,
-          "end": 34.9
+          "start": 35.75,
+          "end": 36.2
         }
       ]
     },
     {
-      "id": "l07",
-      "start": 35.46,
-      "end": 37.38,
+      "id": "l09",
+      "start": 36.2,
+      "end": 38.94,
       "text": "Falling into the heart.",
       "singableText": "Falling into the heart.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Falling",
-          "start": 35.46,
-          "end": 35.844
+          "start": 36.2,
+          "end": 36.748
         },
         {
           "text": "into",
-          "start": 35.844,
-          "end": 36.228
+          "start": 36.748,
+          "end": 37.296
         },
         {
           "text": "the",
-          "start": 36.228,
-          "end": 36.612
+          "start": 37.296,
+          "end": 37.844
         },
         {
           "text": "heart",
-          "start": 36.612,
-          "end": 36.996
+          "start": 37.844,
+          "end": 38.392
         },
         {
           "text": ".",
-          "start": 36.996,
-          "end": 37.38
+          "start": 38.392,
+          "end": 38.94
         }
       ]
     },
     {
-      "id": "l08",
-      "start": 39.07,
-      "end": 40.97,
-      "text": "I have longed for five years.",
-      "singableText": "I have longed for five years.",
+      "id": "l10",
+      "start": 38.94,
+      "end": 40.76,
+      "text": "I move with the passing years.",
+      "singableText": "I move with the passing years.",
       "role": "lyric",
       "tokens": [
         {
           "text": "I",
-          "start": 39.07,
-          "end": 39.341
+          "start": 38.94,
+          "end": 39.2
         },
         {
-          "text": "have",
-          "start": 39.341,
-          "end": 39.613
+          "text": "move",
+          "start": 39.2,
+          "end": 39.46
         },
         {
-          "text": "longed",
-          "start": 39.613,
-          "end": 39.884
+          "text": "with",
+          "start": 39.46,
+          "end": 39.72
         },
         {
-          "text": "for",
-          "start": 39.884,
-          "end": 40.156
+          "text": "the",
+          "start": 39.72,
+          "end": 39.98
         },
         {
-          "text": "five",
-          "start": 40.156,
-          "end": 40.427
+          "text": "passing",
+          "start": 39.98,
+          "end": 40.24
         },
         {
           "text": "years",
-          "start": 40.427,
-          "end": 40.699
+          "start": 40.24,
+          "end": 40.5
         },
         {
           "text": ".",
-          "start": 40.699,
-          "end": 40.97
+          "start": 40.5,
+          "end": 40.76
         }
       ]
     },
     {
-      "id": "l09",
-      "start": 40.97,
-      "end": 42.97,
+      "id": "l11",
+      "start": 40.76,
+      "end": 43.06,
       "text": "To come beside you.",
       "singableText": "To come beside you.",
       "role": "lyric",
       "tokens": [
         {
           "text": "To",
-          "start": 40.97,
-          "end": 41.37
+          "start": 40.76,
+          "end": 41.22
         },
         {
           "text": "come",
-          "start": 41.37,
-          "end": 41.77
+          "start": 41.22,
+          "end": 41.68
         },
         {
           "text": "beside",
-          "start": 41.77,
-          "end": 42.17
+          "start": 41.68,
+          "end": 42.14
         },
         {
           "text": "you",
-          "start": 42.17,
-          "end": 42.57
+          "start": 42.14,
+          "end": 42.6
         },
         {
           "text": ".",
-          "start": 42.57,
-          "end": 42.97
+          "start": 42.6,
+          "end": 43.06
         }
       ]
     },
     {
-      "id": "l10",
-      "start": 42.97,
-      "end": 45.21,
+      "id": "l12",
+      "start": 43.06,
+      "end": 46.16,
       "text": "To see your face clearly.",
       "singableText": "To see your face clearly.",
       "role": "lyric",
       "tokens": [
         {
           "text": "To",
-          "start": 42.97,
-          "end": 43.343
+          "start": 43.06,
+          "end": 43.577
         },
         {
           "text": "see",
-          "start": 43.343,
-          "end": 43.717
+          "start": 43.577,
+          "end": 44.093
         },
         {
           "text": "your",
-          "start": 43.717,
-          "end": 44.09
+          "start": 44.093,
+          "end": 44.61
         },
         {
           "text": "face",
-          "start": 44.09,
-          "end": 44.463
+          "start": 44.61,
+          "end": 45.127
         },
         {
           "text": "clearly",
-          "start": 44.463,
-          "end": 44.837
+          "start": 45.127,
+          "end": 45.643
         },
         {
           "text": ".",
-          "start": 44.837,
-          "end": 45.21
+          "start": 45.643,
+          "end": 46.16
         }
       ]
     },
     {
-      "id": "l11",
-      "start": 45.21,
-      "end": 48.05,
+      "id": "l13",
+      "start": 46.16,
+      "end": 48.88,
       "text": "Though mountains and seas divide us.",
       "singableText": "Though mountains and seas divide us.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Though",
-          "start": 45.21,
-          "end": 45.616
+          "start": 46.16,
+          "end": 46.549
         },
         {
           "text": "mountains",
-          "start": 45.616,
-          "end": 46.021
+          "start": 46.549,
+          "end": 46.937
         },
         {
           "text": "and",
-          "start": 46.021,
-          "end": 46.427
+          "start": 46.937,
+          "end": 47.326
         },
         {
           "text": "seas",
-          "start": 46.427,
-          "end": 46.833
+          "start": 47.326,
+          "end": 47.714
         },
         {
           "text": "divide",
-          "start": 46.833,
-          "end": 47.239
+          "start": 47.714,
+          "end": 48.103
         },
         {
           "text": "us",
-          "start": 47.239,
-          "end": 47.644
+          "start": 48.103,
+          "end": 48.491
         },
         {
           "text": ".",
-          "start": 47.644,
-          "end": 48.05
+          "start": 48.491,
+          "end": 48.88
         }
       ]
     },
     {
-      "id": "l12",
-      "start": 48.05,
-      "end": 50.51,
+      "id": "l14",
+      "start": 48.88,
+      "end": 51.6,
       "text": "I still want to meet you.",
       "singableText": "I still want to meet you.",
       "role": "lyric",
       "tokens": [
         {
           "text": "I",
-          "start": 48.05,
-          "end": 48.401
+          "start": 48.88,
+          "end": 49.269
         },
         {
           "text": "still",
-          "start": 48.401,
-          "end": 48.753
+          "start": 49.269,
+          "end": 49.657
         },
         {
           "text": "want",
-          "start": 48.753,
-          "end": 49.104
+          "start": 49.657,
+          "end": 50.046
         },
         {
           "text": "to",
-          "start": 49.104,
-          "end": 49.456
+          "start": 50.046,
+          "end": 50.434
         },
         {
           "text": "meet",
-          "start": 49.456,
-          "end": 49.807
+          "start": 50.434,
+          "end": 50.823
         },
         {
           "text": "you",
-          "start": 49.807,
-          "end": 50.159
+          "start": 50.823,
+          "end": 51.211
         },
         {
           "text": ".",
-          "start": 50.159,
-          "end": 50.51
+          "start": 51.211,
+          "end": 51.6
         }
       ]
     },
     {
-      "id": "l13",
-      "start": 51.05,
-      "end": 52.75,
+      "id": "l15",
+      "start": 51.6,
+      "end": 54.4,
       "text": "Years flow like water.",
       "singableText": "Years flow like water.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Years",
-          "start": 51.05,
-          "end": 51.39
+          "start": 51.6,
+          "end": 52.16
         },
         {
           "text": "flow",
-          "start": 51.39,
-          "end": 51.73
+          "start": 52.16,
+          "end": 52.72
         },
         {
           "text": "like",
-          "start": 51.73,
-          "end": 52.07
+          "start": 52.72,
+          "end": 53.28
         },
         {
           "text": "water",
-          "start": 52.07,
-          "end": 52.41
+          "start": 53.28,
+          "end": 53.84
         },
         {
           "text": ".",
-          "start": 52.41,
-          "end": 52.75
+          "start": 53.84,
+          "end": 54.4
         }
       ]
     },
     {
-      "id": "l14",
-      "start": 54.29,
-      "end": 57.63,
-      "text": "Time turns slowly.",
-      "singableText": "Time turns slowly.",
+      "id": "l16",
+      "start": 54.4,
+      "end": 58.38,
+      "text": "Time turns slowly in this one gaze.",
+      "singableText": "Time turns slowly in this one gaze.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Time",
-          "start": 54.29,
-          "end": 55.125
+          "start": 54.4,
+          "end": 54.898
         },
         {
           "text": "turns",
-          "start": 55.125,
-          "end": 55.96
+          "start": 54.898,
+          "end": 55.395
         },
         {
           "text": "slowly",
-          "start": 55.96,
-          "end": 56.795
+          "start": 55.395,
+          "end": 55.892
+        },
+        {
+          "text": "in",
+          "start": 55.892,
+          "end": 56.39
+        },
+        {
+          "text": "this",
+          "start": 56.39,
+          "end": 56.888
+        },
+        {
+          "text": "one",
+          "start": 56.888,
+          "end": 57.385
+        },
+        {
+          "text": "gaze",
+          "start": 57.385,
+          "end": 57.883
         },
         {
           "text": ".",
-          "start": 56.795,
-          "end": 57.63
+          "start": 57.883,
+          "end": 58.38
         }
       ]
     },
     {
-      "id": "l15",
-      "start": 57.63,
-      "end": 60.75,
+      "id": "l17",
+      "start": 58.38,
+      "end": 61.0,
       "text": "Unchanged beyond a thousand years.",
       "singableText": "Unchanged beyond a thousand years.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Unchanged",
-          "start": 57.63,
-          "end": 58.15
+          "start": 58.38,
+          "end": 58.817
         },
         {
           "text": "beyond",
-          "start": 58.15,
-          "end": 58.67
+          "start": 58.817,
+          "end": 59.253
         },
         {
           "text": "a",
-          "start": 58.67,
-          "end": 59.19
+          "start": 59.253,
+          "end": 59.69
         },
         {
           "text": "thousand",
-          "start": 59.19,
-          "end": 59.71
+          "start": 59.69,
+          "end": 60.127
         },
         {
           "text": "years",
-          "start": 59.71,
-          "end": 60.23
+          "start": 60.127,
+          "end": 60.563
         },
         {
           "text": ".",
-          "start": 60.23,
-          "end": 60.75
+          "start": 60.563,
+          "end": 61.0
         }
       ]
     },
     {
-      "id": "l16",
-      "start": 60.75,
-      "end": 62.23,
+      "id": "l18",
+      "start": 61.0,
+      "end": 62.65,
       "text": "Between clouds and sea.",
       "singableText": "Between clouds and sea.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Between",
-          "start": 60.75,
-          "end": 61.046
+          "start": 61.0,
+          "end": 61.33
         },
         {
           "text": "clouds",
-          "start": 61.046,
-          "end": 61.342
+          "start": 61.33,
+          "end": 61.66
         },
         {
           "text": "and",
-          "start": 61.342,
-          "end": 61.638
+          "start": 61.66,
+          "end": 61.99
         },
         {
           "text": "sea",
-          "start": 61.638,
-          "end": 61.934
+          "start": 61.99,
+          "end": 62.32
         },
         {
           "text": ".",
-          "start": 61.934,
-          "end": 62.23
+          "start": 62.32,
+          "end": 62.65
         }
       ]
     },
     {
-      "id": "l17",
-      "start": 62.23,
-      "end": 64.27,
+      "id": "l19",
+      "start": 62.65,
+      "end": 64.66,
       "text": "Even dreams linger tenderly.",
       "singableText": "Even dreams linger tenderly.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Even",
-          "start": 62.23,
-          "end": 62.638
+          "start": 62.65,
+          "end": 63.052
         },
         {
           "text": "dreams",
-          "start": 62.638,
-          "end": 63.046
-        },
-        {
-          "text": "linger",
-          "start": 63.046,
+          "start": 63.052,
           "end": 63.454
         },
         {
-          "text": "tenderly",
+          "text": "linger",
           "start": 63.454,
-          "end": 63.862
+          "end": 63.856
+        },
+        {
+          "text": "tenderly",
+          "start": 63.856,
+          "end": 64.258
         },
         {
           "text": ".",
-          "start": 63.862,
-          "end": 64.27
+          "start": 64.258,
+          "end": 64.66
         }
       ]
     },
     {
-      "id": "l18",
-      "start": 64.27,
-      "end": 67.69,
+      "id": "l20",
+      "start": 64.66,
+      "end": 68.05,
       "text": "I write love into one line.",
       "singableText": "I write love into one line.",
       "role": "lyric",
       "tokens": [
         {
           "text": "I",
-          "start": 64.27,
-          "end": 64.759
+          "start": 64.66,
+          "end": 65.144
         },
         {
           "text": "write",
-          "start": 64.759,
-          "end": 65.247
+          "start": 65.144,
+          "end": 65.629
         },
         {
           "text": "love",
-          "start": 65.247,
-          "end": 65.736
+          "start": 65.629,
+          "end": 66.113
         },
         {
           "text": "into",
-          "start": 65.736,
-          "end": 66.224
+          "start": 66.113,
+          "end": 66.597
         },
         {
           "text": "one",
-          "start": 66.224,
-          "end": 66.713
+          "start": 66.597,
+          "end": 67.081
         },
         {
           "text": "line",
-          "start": 66.713,
-          "end": 67.201
+          "start": 67.081,
+          "end": 67.566
         },
         {
           "text": ".",
-          "start": 67.201,
-          "end": 67.69
+          "start": 67.566,
+          "end": 68.05
         }
       ]
     },
     {
-      "id": "l19",
-      "start": 67.69,
-      "end": 70.61,
+      "id": "l21",
+      "start": 68.05,
+      "end": 71.6,
       "text": "Pulling toward your horizon.",
       "singableText": "Pulling toward your horizon.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Pulling",
-          "start": 67.69,
-          "end": 68.274
+          "start": 68.05,
+          "end": 68.76
         },
         {
           "text": "toward",
-          "start": 68.274,
-          "end": 68.858
+          "start": 68.76,
+          "end": 69.47
         },
         {
           "text": "your",
-          "start": 68.858,
-          "end": 69.442
+          "start": 69.47,
+          "end": 70.18
         },
         {
           "text": "horizon",
-          "start": 69.442,
-          "end": 70.026
+          "start": 70.18,
+          "end": 70.89
         },
         {
           "text": ".",
-          "start": 70.026,
-          "end": 70.61
+          "start": 70.89,
+          "end": 71.6
         }
       ]
     },
     {
-      "id": "l20",
-      "start": 70.61,
-      "end": 78.36,
+      "id": "l22",
+      "start": 72.64,
+      "end": 74.2,
+      "text": "The sky is blue.",
+      "singableText": "The sky is blue.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 72.64,
+          "end": 72.952
+        },
+        {
+          "text": "sky",
+          "start": 72.952,
+          "end": 73.264
+        },
+        {
+          "text": "is",
+          "start": 73.264,
+          "end": 73.576
+        },
+        {
+          "text": "blue",
+          "start": 73.576,
+          "end": 73.888
+        },
+        {
+          "text": ".",
+          "start": 73.888,
+          "end": 74.2
+        }
+      ]
+    },
+    {
+      "id": "l23",
+      "start": 74.2,
+      "end": 75.76,
+      "text": "The sea is blue.",
+      "singableText": "The sea is blue.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 74.2,
+          "end": 74.512
+        },
+        {
+          "text": "sea",
+          "start": 74.512,
+          "end": 74.824
+        },
+        {
+          "text": "is",
+          "start": 74.824,
+          "end": 75.136
+        },
+        {
+          "text": "blue",
+          "start": 75.136,
+          "end": 75.448
+        },
+        {
+          "text": ".",
+          "start": 75.448,
+          "end": 75.76
+        }
+      ]
+    },
+    {
+      "id": "l24",
+      "start": 76.44,
+      "end": 80.22,
       "text": "I am far away.",
       "singableText": "I am far away.",
       "role": "lyric",
       "tokens": [
         {
           "text": "I",
-          "start": 70.61,
-          "end": 72.16
+          "start": 76.44,
+          "end": 77.196
         },
         {
           "text": "am",
-          "start": 72.16,
-          "end": 73.71
+          "start": 77.196,
+          "end": 77.952
         },
         {
           "text": "far",
-          "start": 73.71,
-          "end": 75.26
+          "start": 77.952,
+          "end": 78.708
         },
         {
           "text": "away",
-          "start": 75.26,
-          "end": 76.81
+          "start": 78.708,
+          "end": 79.464
         },
         {
           "text": ".",
-          "start": 76.81,
-          "end": 78.36
+          "start": 79.464,
+          "end": 80.22
         }
       ]
     },
     {
-      "id": "l21",
-      "start": 79.77,
-      "end": 82.47,
+      "id": "l25",
+      "start": 80.22,
+      "end": 83.46,
       "text": "Still wanting to return beside you.",
       "singableText": "Still wanting to return beside you.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Still",
-          "start": 79.77,
-          "end": 80.156
+          "start": 80.22,
+          "end": 80.683
         },
         {
           "text": "wanting",
-          "start": 80.156,
-          "end": 80.541
+          "start": 80.683,
+          "end": 81.146
         },
         {
           "text": "to",
-          "start": 80.541,
-          "end": 80.927
+          "start": 81.146,
+          "end": 81.609
         },
         {
           "text": "return",
-          "start": 80.927,
-          "end": 81.313
+          "start": 81.609,
+          "end": 82.071
         },
         {
           "text": "beside",
-          "start": 81.313,
-          "end": 81.699
+          "start": 82.071,
+          "end": 82.534
         },
         {
           "text": "you",
-          "start": 81.699,
-          "end": 82.084
+          "start": 82.534,
+          "end": 82.997
         },
         {
           "text": ".",
-          "start": 82.084,
-          "end": 82.47
+          "start": 82.997,
+          "end": 83.46
         }
       ]
     }
   ],
   "provenance": {
     "vocalSet": "zh-vocal",
-    "correction": "Active Mandarin lyrics corrected from seed 731531 ASR/STT, medium-ASR cross-check, and the user reference lyric. Skipped bridge/final-chorus draft lines are not published."
+    "correction": "Active Mandarin lyrics corrected from selected-audio small ASR, vocal-stem medium ASR, no-VAD base/small/medium ASR, user listening feedback, and the reference lyric. Opening and outro 天蓝蓝/海蓝蓝 lines were restored because no-VAD ASR recovered them as sound-close variants and the user confirmed the audio contains them. Skipped bridge draft lines remain unpublished."
   }
 }

@@ -65,10 +65,50 @@ Important correction choices:
 
 - `想念像风，靠近你身边` was kept from the prompt because the ASR variants were
   sound-close and less grammatical.
-- `我想了五年` was used where ASR heard `我睡了五年`; this is treated as a
-  contextual correction because the raw ASR phrase was musically awkward.
+- The first published pass used `我想了五年`, but the later deeper correction
+  replaced it with `我随流年` because multiple ASR passes heard a
+  `水/睡/流年`-like phrase.
 - Draft bridge/final-chorus lines are omitted from the public lyric JSON because
   they were not supported by the selected vocal.
+
+### 2026-06-30 Deep Correction Update
+
+After user listening feedback, the short-song lyric track was checked again
+against:
+
+```text
+data/runs/yun-hai-zhi-lian-haifeng-duange-20260630-analysis/analysis/lyrics.json
+data/creative_projects/yun-hai-zhi-lian-haifeng-duange-20260630/reviews/selected-medium-asr-20260630/QA.md
+data/creative_projects/yun-hai-zhi-lian-haifeng-duange-20260630/reviews/vocal-stem-medium-asr-20260630/QA.md
+```
+
+The earlier public track missed sung material that ASR swallowed or garbled:
+
+- opening `天蓝蓝 / 海蓝蓝`;
+- outro repeat `天蓝蓝 / 海蓝蓝`;
+- a `水/睡/流年`-like phrase before `来到你身边`.
+
+No-VAD ASR recovered the opening and outro as sound-close variants such as
+`天来了 / 海来了` and `天烂烂 / 海烂烂`. Because these are close to the reference
+lyric and confirmed by listening feedback, the website now publishes them as:
+
+```text
+14.68-16.20 天蓝蓝
+16.20-17.78 海蓝蓝
+72.64-74.20 天蓝蓝
+74.20-75.76 海蓝蓝
+```
+
+The middle phrase previously published as `我想了五年` is now corrected to
+`我随流年`, because the selected-audio and vocal-stem ASR repeatedly heard
+`水/睡/流年` rather than the original prompt line. This keeps the lyric closer
+to the actual rendered sound while still reading naturally.
+
+The updated active Mandarin website track now has 25 timed lines:
+
+```text
+website/data/songs/yun-hai-zhi-lian-haifeng-duange/lyrics/zh-vocal/zh-Hans.json
+```
 
 Website media item:
 

@@ -131,8 +131,11 @@ def track(code: str, lines: list[dict[str, Any]]) -> dict[str, Any]:
         "provenance": {
             "vocalSet": "zh-vocal",
             "correction": (
-                "Active Mandarin lyrics corrected from seed 731531 ASR/STT, medium-ASR cross-check, "
-                "and the user reference lyric. Skipped bridge/final-chorus draft lines are not published."
+                "Active Mandarin lyrics corrected from selected-audio small ASR, vocal-stem medium ASR, "
+                "no-VAD base/small/medium ASR, user listening feedback, and the reference lyric. "
+                "Opening and outro 天蓝蓝/海蓝蓝 lines were restored because no-VAD ASR recovered them "
+                "as sound-close variants and the user confirmed the audio contains them. Skipped bridge "
+                "draft lines remain unpublished."
             ),
         },
     }
@@ -140,27 +143,31 @@ def track(code: str, lines: list[dict[str, Any]]) -> dict[str, Any]:
 
 def corrected_rows() -> list[tuple[str, float, float, str, str, str]]:
     return [
-        ("l01", 17.76, 19.96, "云在天地间", "Clouds rest between heaven and earth.", "雲は天地の間に"),
-        ("l02", 19.96, 23.86, "想念像风，靠近你身边", "Longing moves like wind, drawing close beside you.", "想いは風のように、君のそばへ"),
-        ("l03", 23.86, 25.58, "望着那么远", "I gaze toward the far distance.", "遠くを見つめて"),
-        ("l04", 25.58, 27.94, "却像在眼前", "Yet it feels right before my eyes.", "それでも目の前みたい"),
-        ("l05", 27.94, 33.16, "慢慢地靠近，一点一点", "Slowly drawing near, little by little.", "ゆっくり近づく、一歩ずつ"),
-        ("l06", 33.16, 34.90, "穿过云海", "Crossing the sea of clouds.", "雲海を越えて"),
-        ("l07", 35.46, 37.38, "落进心里面", "Falling into the heart.", "心の奥へ落ちていく"),
-        ("l08", 39.07, 40.97, "我想了五年", "I have longed for five years.", "五年も想って"),
-        ("l09", 40.97, 42.97, "来到你身边", "To come beside you.", "君のそばへ行きたい"),
-        ("l10", 42.97, 45.21, "看清你的容颜", "To see your face clearly.", "その顔を見つめたい"),
-        ("l11", 45.21, 48.05, "隔着山海万千", "Though mountains and seas divide us.", "山も海も隔てても"),
-        ("l12", 48.05, 50.51, "也想和你相见", "I still want to meet you.", "それでも君に会いたい"),
-        ("l13", 51.05, 52.75, "似水流年", "Years flow like water.", "流れる歳月"),
-        ("l14", 54.29, 57.63, "时光慢慢转", "Time turns slowly.", "時はゆっくり巡る"),
-        ("l15", 57.63, 60.75, "越过千年不变", "Unchanged beyond a thousand years.", "千年を越えても変わらない"),
-        ("l16", 60.75, 62.23, "云海之间", "Between clouds and sea.", "雲海の間で"),
-        ("l17", 62.23, 64.27, "梦也缱绻", "Even dreams linger tenderly.", "夢さえも名残惜しい"),
-        ("l18", 64.27, 67.69, "我把爱写成一条线", "I write love into one line.", "愛を一本の糸にして"),
-        ("l19", 67.69, 70.61, "牵向你的天边", "Pulling toward your horizon.", "君の空の果てへつなぐ"),
-        ("l20", 70.61, 78.36, "我在远方", "I am far away.", "僕は遠い場所にいて"),
-        ("l21", 79.77, 82.47, "仍想回到你身边", "Still wanting to return beside you.", "それでも君のそばへ帰りたい"),
+        ("l01", 14.68, 16.20, "天蓝蓝", "The sky is blue.", "空は青く"),
+        ("l02", 16.20, 17.78, "海蓝蓝", "The sea is blue.", "海は青く"),
+        ("l03", 17.78, 20.82, "云在天地间", "Clouds rest between heaven and earth.", "雲は天地の間に"),
+        ("l04", 20.82, 24.12, "想念像风，靠近你身边", "Longing moves like wind, drawing close beside you.", "想いは風のように、君のそばへ"),
+        ("l05", 24.12, 25.96, "望着那么远", "I gaze toward the far distance.", "遠くを見つめて"),
+        ("l06", 25.96, 28.98, "却像在眼前", "Yet it feels right before my eyes.", "それでも目の前みたい"),
+        ("l07", 30.36, 33.50, "慢慢地靠近，一点一点", "Slowly drawing near, little by little.", "ゆっくり近づく、一歩ずつ"),
+        ("l08", 33.50, 36.20, "穿过云海", "Crossing the sea of clouds.", "雲海を越えて"),
+        ("l09", 36.20, 38.94, "落进心里面", "Falling into the heart.", "心の奥へ落ちていく"),
+        ("l10", 38.94, 40.76, "我随流年", "I move with the passing years.", "流れる歳月とともに"),
+        ("l11", 40.76, 43.06, "来到你身边", "To come beside you.", "君のそばへ行きたい"),
+        ("l12", 43.06, 46.16, "看清你的容颜", "To see your face clearly.", "その顔を見つめたい"),
+        ("l13", 46.16, 48.88, "隔着山海万千", "Though mountains and seas divide us.", "山も海も隔てても"),
+        ("l14", 48.88, 51.60, "也想和你相见", "I still want to meet you.", "それでも君に会いたい"),
+        ("l15", 51.60, 54.40, "似水流年", "Years flow like water.", "流れる歳月"),
+        ("l16", 54.40, 58.38, "时光慢慢转，这一眼", "Time turns slowly in this one gaze.", "この一目に、時はゆっくり巡る"),
+        ("l17", 58.38, 61.00, "越过千年不变", "Unchanged beyond a thousand years.", "千年を越えても変わらない"),
+        ("l18", 61.00, 62.65, "云海之间", "Between clouds and sea.", "雲海の間で"),
+        ("l19", 62.65, 64.66, "梦也缱绻", "Even dreams linger tenderly.", "夢さえも名残惜しい"),
+        ("l20", 64.66, 68.05, "我把爱写成一条线", "I write love into one line.", "愛を一本の糸にして"),
+        ("l21", 68.05, 71.60, "牵向你的天边", "Pulling toward your horizon.", "君の空の果てへつなぐ"),
+        ("l22", 72.64, 74.20, "天蓝蓝", "The sky is blue.", "空は青く"),
+        ("l23", 74.20, 75.76, "海蓝蓝", "The sea is blue.", "海は青く"),
+        ("l24", 76.44, 80.22, "我在远方", "I am far away.", "僕は遠い場所にいて"),
+        ("l25", 80.22, 83.46, "仍想回到你身边", "Still wanting to return beside you.", "それでも君のそばへ帰りたい"),
     ]
 
 
@@ -280,7 +287,7 @@ def write_media_item() -> None:
             "audioSource": "ACE-Step 1.5 XL Turbo seed 731531 selected from three tested seeds.",
             "analysisRun": str(ANALYSIS.relative_to(ROOT)),
             "quality": {"asrOverlap": 0.5235602094240838, "gate": "pass"},
-            "lyricCorrection": "Corrected from same-vocal ASR plus medium ASR cross-check and reference lyric. Draft bridge/final chorus were skipped/compressed by the render and are intentionally omitted from public lyrics.",
+            "lyricCorrection": "Corrected from same-vocal small ASR, vocal-stem medium ASR, no-VAD base/small/medium ASR, user listening feedback, and reference lyric. Opening/outro 天蓝蓝 and 海蓝蓝 were restored; ASR variants such as 天来了/海来了/天烂烂 are treated as sound-close recognition of the intended color lines. Draft bridge/final chorus were skipped/compressed by the render and are intentionally omitted from public lyrics.",
             "coverSource": cover,
             "publicAudio": "yun-hai-zhi-lian-haifeng-duange-zh-Hans-ace-20260630.mp3",
         },
@@ -324,7 +331,6 @@ def update_catalog() -> None:
     long_index = next((index for index, item in enumerate(items) if item.get("id") == LONG_ID), 0)
     items.insert(long_index + 1, new_item)
     catalog["items"] = items
-    catalog["defaultMedia"] = MEDIA_ID
     write_json(path, catalog)
 
 
