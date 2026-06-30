@@ -6,7 +6,7 @@
     "url": "https://fun.lazying.art",
     "protocol": "fun.lazying.media.v1"
   },
-  "defaultMedia": "yun-hai-zhi-lian-haifeng-duange",
+  "defaultMedia": "yun-hai-zhi-lian",
   "items": [
     {
       "id": "one-sky-three-lights-mixed",
@@ -37,7 +37,7 @@
       "kind": "song",
       "title": "云海之恋 · 云海长歌",
       "artist": "Musia",
-      "summary": "A longer spacious Mandarin cloud-sea love ballad with corrected trilingual lyrics, pinyin, furigana, and chord timing.",
+      "summary": "A full-length DiffRhythm Mandarin cloud-sea love ballad with corrected trilingual lyrics, pinyin, furigana, and chord timing.",
       "manifest": "data/songs/yun-hai-zhi-lian/manifest.json",
       "cover": "assets/covers/yun-hai-zhi-lian-16x9.png",
       "languages": [
@@ -52,7 +52,8 @@
         "Mandarin",
         "pinyin",
         "furigana",
-        "DiffRhythm"
+        "DiffRhythm",
+        "full-song"
       ]
     },
     {

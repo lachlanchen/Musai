@@ -10,13 +10,13 @@
     "ja": "雲海の恋・雲海長歌"
   },
   "artist": "Musia",
-  "description": "A spacious Mandarin cloud-and-sea love ballad generated with timed lyric conditioning and corrected against ASR evidence.",
+  "description": "A full-length DiffRhythm Mandarin cloud-sea love ballad with LRC-conditioned lyrics corrected against ASR evidence.",
   "caption": "Between sky and sea, longing becomes one line through time.",
-  "duration": 160.026,
+  "duration": 284.955,
   "canonicalUrl": "https://fun.lazying.art/#yun-hai-zhi-lian",
   "share": {
     "title": "云海之恋 · 云海长歌 - Fun Lazying Art",
-    "description": "A Musia Mandarin cloud-sea love ballad with corrected trilingual lyrics.",
+    "description": "A full-length Musia DiffRhythm Mandarin cloud-sea love ballad with corrected trilingual lyrics.",
     "url": "https://fun.lazying.art/#yun-hai-zhi-lian",
     "image": "assets/covers/yun-hai-zhi-lian-16x9.png",
     "siteName": "Fun Lazying Art"
@@ -48,836 +48,878 @@
       "languageCode": "zh-Hans",
       "languageLabel": "中文",
       "lyricSetId": "zh-vocal",
-      "src": "https://lazyingart.github.io/MusiaSongs/audio/yun-hai-zhi-lian-main-zh-Hans-20260630.mp3",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/yun-hai-zhi-lian-yunhai-changge-diffrhythm-full-285-20260630.mp3",
       "mime": "audio/mpeg"
     },
     "alternateAudio": []
   },
   "musical": {
-    "key": "detected Eb/Bb center",
-    "bpm": 117.454,
+    "key": "detected C/F center",
+    "bpm": 60.09265988372093,
     "timeSignature": "4/4",
     "chords": [
       {
         "start": 0.0,
-        "end": 2.926,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 2.926,
-        "end": 9.056,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 9.056,
-        "end": 10.124,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 10.124,
-        "end": 12.771,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 12.771,
-        "end": 14.234,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 14.234,
-        "end": 14.721,
-        "name": "C#",
-        "degree": ""
-      },
-      {
-        "start": 14.721,
-        "end": 16.231,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 16.231,
-        "end": 16.742,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 16.742,
-        "end": 17.183,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 17.183,
-        "end": 17.694,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 17.694,
-        "end": 18.204,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 18.204,
-        "end": 19.667,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 19.667,
-        "end": 20.666,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 20.666,
-        "end": 21.153,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 21.153,
-        "end": 22.105,
-        "name": "Gm",
-        "degree": ""
-      },
-      {
-        "start": 22.105,
-        "end": 22.616,
+        "end": 41.053,
         "name": "C",
         "degree": ""
       },
       {
-        "start": 22.616,
-        "end": 25.101,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 25.101,
-        "end": 25.658,
-        "name": "Cm",
-        "degree": ""
-      },
-      {
-        "start": 25.658,
-        "end": 26.169,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 26.169,
-        "end": 26.657,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 26.657,
-        "end": 29.187,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 29.187,
-        "end": 30.14,
-        "name": "Abm",
-        "degree": ""
-      },
-      {
-        "start": 30.14,
-        "end": 30.604,
-        "name": "Cm",
-        "degree": ""
-      },
-      {
-        "start": 30.604,
-        "end": 31.068,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 31.068,
-        "end": 33.088,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 33.088,
-        "end": 33.576,
-        "name": "Cm",
-        "degree": ""
-      },
-      {
-        "start": 33.576,
-        "end": 34.133,
-        "name": "C",
-        "degree": ""
-      },
-      {
-        "start": 34.133,
-        "end": 35.109,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 35.109,
-        "end": 41.819,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 41.819,
-        "end": 42.33,
-        "name": "Abm",
-        "degree": ""
-      },
-      {
-        "start": 42.33,
-        "end": 42.841,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 42.841,
-        "end": 43.839,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 43.839,
-        "end": 45.836,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 45.836,
-        "end": 46.347,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 46.347,
-        "end": 47.345,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 47.345,
-        "end": 47.856,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 47.856,
-        "end": 49.412,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 49.412,
-        "end": 50.898,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 50.898,
-        "end": 51.432,
-        "name": "Gm",
-        "degree": ""
-      },
-      {
-        "start": 51.432,
-        "end": 54.404,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 54.404,
-        "end": 55.844,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 55.844,
-        "end": 56.355,
+        "start": 41.053,
+        "end": 45.047,
         "name": "F",
         "degree": ""
       },
       {
-        "start": 56.355,
-        "end": 57.446,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 57.446,
-        "end": 59.49,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 59.49,
-        "end": 59.954,
-        "name": "Cm",
-        "degree": ""
-      },
-      {
-        "start": 59.954,
-        "end": 60.558,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 60.558,
-        "end": 61.068,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 61.068,
-        "end": 62.601,
-        "name": "Cm",
-        "degree": ""
-      },
-      {
-        "start": 62.601,
-        "end": 63.112,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 63.112,
-        "end": 65.155,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 65.155,
-        "end": 65.643,
-        "name": "Gm",
-        "degree": ""
-      },
-      {
-        "start": 65.643,
-        "end": 66.177,
-        "name": "F",
-        "degree": ""
-      },
-      {
-        "start": 66.177,
-        "end": 67.222,
-        "name": "Gm",
-        "degree": ""
-      },
-      {
-        "start": 67.222,
-        "end": 67.709,
-        "name": "Abm",
-        "degree": ""
-      },
-      {
-        "start": 67.709,
-        "end": 69.195,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 69.195,
-        "end": 70.217,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 70.217,
-        "end": 70.705,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 70.705,
-        "end": 71.192,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 71.192,
-        "end": 72.214,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 72.214,
-        "end": 73.213,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 73.213,
-        "end": 75.093,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 75.093,
-        "end": 75.604,
-        "name": "Abm",
-        "degree": ""
-      },
-      {
-        "start": 75.604,
-        "end": 76.185,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 76.185,
-        "end": 76.696,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 76.696,
-        "end": 77.206,
-        "name": "Ebm",
-        "degree": ""
-      },
-      {
-        "start": 77.206,
-        "end": 79.18,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 79.18,
-        "end": 80.202,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 80.202,
-        "end": 80.713,
-        "name": "Ebm",
-        "degree": ""
-      },
-      {
-        "start": 80.713,
-        "end": 83.661,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 83.661,
-        "end": 86.541,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 86.541,
-        "end": 87.052,
-        "name": "Abm",
-        "degree": ""
-      },
-      {
-        "start": 87.052,
-        "end": 87.562,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 87.562,
-        "end": 88.073,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 88.073,
-        "end": 93.112,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 93.112,
-        "end": 94.157,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 94.157,
-        "end": 95.597,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 95.597,
-        "end": 96.084,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 96.084,
-        "end": 96.595,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 96.595,
-        "end": 97.129,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 97.129,
-        "end": 97.686,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 97.686,
-        "end": 98.22,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 98.22,
-        "end": 100.194,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 100.194,
-        "end": 102.795,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 102.795,
-        "end": 103.282,
-        "name": "Abm",
-        "degree": ""
-      },
-      {
-        "start": 103.282,
-        "end": 103.793,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 103.793,
-        "end": 104.327,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 104.327,
-        "end": 106.347,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 106.347,
-        "end": 107.369,
-        "name": "B",
-        "degree": ""
-      },
-      {
-        "start": 107.369,
-        "end": 108.321,
-        "name": "C#",
-        "degree": ""
-      },
-      {
-        "start": 108.321,
-        "end": 112.408,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 112.408,
-        "end": 113.476,
-        "name": "Gm",
-        "degree": ""
-      },
-      {
-        "start": 113.476,
-        "end": 113.987,
+        "start": 45.047,
+        "end": 49.041,
         "name": "G",
         "degree": ""
       },
       {
-        "start": 113.987,
-        "end": 114.474,
+        "start": 49.041,
+        "end": 52.059,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 52.059,
+        "end": 53.058,
         "name": "Gm",
         "degree": ""
       },
       {
-        "start": 114.474,
-        "end": 117.075,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 117.075,
-        "end": 118.12,
-        "name": "C#m",
-        "degree": ""
-      },
-      {
-        "start": 118.12,
-        "end": 119.095,
-        "name": "C#",
-        "degree": ""
-      },
-      {
-        "start": 119.095,
-        "end": 120.094,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 120.094,
-        "end": 120.604,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 120.604,
-        "end": 121.696,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 121.696,
-        "end": 122.717,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 122.717,
-        "end": 123.205,
-        "name": "Cm",
-        "degree": ""
-      },
-      {
-        "start": 123.205,
-        "end": 125.132,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 125.132,
-        "end": 125.643,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 125.643,
-        "end": 126.131,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 126.131,
-        "end": 126.642,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 126.642,
-        "end": 129.753,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 129.753,
-        "end": 130.798,
-        "name": "Gm",
-        "degree": ""
-      },
-      {
-        "start": 130.798,
-        "end": 131.309,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 131.309,
-        "end": 132.865,
-        "name": "Cm",
-        "degree": ""
-      },
-      {
-        "start": 132.865,
-        "end": 135.814,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 135.814,
-        "end": 137.88,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 137.88,
-        "end": 140.527,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 140.527,
-        "end": 141.038,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 141.038,
-        "end": 141.572,
-        "name": "Abm",
-        "degree": ""
-      },
-      {
-        "start": 141.572,
-        "end": 142.083,
-        "name": "Ebm",
-        "degree": ""
-      },
-      {
-        "start": 142.083,
-        "end": 143.105,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 143.105,
-        "end": 143.639,
+        "start": 53.058,
+        "end": 54.056,
         "name": "Dm",
         "degree": ""
       },
       {
-        "start": 143.639,
-        "end": 144.66,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 144.66,
-        "end": 145.171,
-        "name": "C#m",
-        "degree": ""
-      },
-      {
-        "start": 145.171,
-        "end": 146.193,
-        "name": "C#",
-        "degree": ""
-      },
-      {
-        "start": 146.193,
-        "end": 146.634,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 146.634,
-        "end": 147.098,
-        "name": "Bbm",
-        "degree": ""
-      },
-      {
-        "start": 147.098,
-        "end": 147.563,
-        "name": "Cm",
-        "degree": ""
-      },
-      {
-        "start": 147.563,
-        "end": 148.004,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 148.004,
-        "end": 148.538,
+        "start": 54.056,
+        "end": 55.055,
         "name": "F",
         "degree": ""
       },
       {
-        "start": 148.538,
-        "end": 149.049,
-        "name": "Bbm",
+        "start": 55.055,
+        "end": 57.051,
+        "name": "Dm",
         "degree": ""
       },
       {
-        "start": 149.049,
-        "end": 150.071,
-        "name": "Bb",
-        "degree": ""
-      },
-      {
-        "start": 150.071,
-        "end": 150.581,
-        "name": "F",
-        "degree": ""
-      },
-      {
-        "start": 150.581,
-        "end": 151.092,
-        "name": "Eb",
-        "degree": ""
-      },
-      {
-        "start": 151.092,
-        "end": 152.114,
-        "name": "Gm",
-        "degree": ""
-      },
-      {
-        "start": 152.114,
-        "end": 153.136,
-        "name": "Cm",
-        "degree": ""
-      },
-      {
-        "start": 153.136,
-        "end": 153.646,
+        "start": 57.051,
+        "end": 58.05,
         "name": "C",
         "degree": ""
       },
       {
-        "start": 153.646,
-        "end": 154.134,
-        "name": "Ab",
-        "degree": ""
-      },
-      {
-        "start": 154.134,
-        "end": 155.063,
-        "name": "Fm",
-        "degree": ""
-      },
-      {
-        "start": 155.063,
-        "end": 155.504,
-        "name": "Ebm",
-        "degree": ""
-      },
-      {
-        "start": 155.504,
-        "end": 155.945,
+        "start": 58.05,
+        "end": 59.048,
         "name": "Bb",
         "degree": ""
       },
       {
-        "start": 155.945,
-        "end": 159.985,
+        "start": 59.048,
+        "end": 61.045,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 61.045,
+        "end": 63.042,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 63.042,
+        "end": 65.062,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 65.062,
+        "end": 66.061,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 66.061,
+        "end": 70.055,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 70.055,
+        "end": 71.053,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 71.053,
+        "end": 75.047,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 75.047,
+        "end": 76.045,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 76.045,
+        "end": 78.065,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 78.065,
+        "end": 79.041,
         "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 79.041,
+        "end": 80.062,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 80.062,
+        "end": 82.059,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 82.059,
+        "end": 84.056,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 84.056,
+        "end": 87.052,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 87.052,
+        "end": 88.05,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 88.05,
+        "end": 90.047,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 90.047,
+        "end": 91.045,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 91.045,
+        "end": 92.044,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 92.044,
+        "end": 94.041,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 94.041,
+        "end": 95.039,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 95.039,
+        "end": 96.061,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 96.061,
+        "end": 99.056,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 99.056,
+        "end": 100.055,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 100.055,
+        "end": 102.052,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 102.052,
+        "end": 103.05,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 103.05,
+        "end": 104.049,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 104.049,
+        "end": 105.047,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 105.047,
+        "end": 106.046,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 106.046,
+        "end": 107.044,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 107.044,
+        "end": 109.064,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 109.064,
+        "end": 110.063,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 110.063,
+        "end": 111.061,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 111.061,
+        "end": 112.06,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 112.06,
+        "end": 114.056,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 114.056,
+        "end": 115.055,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 115.055,
+        "end": 118.05,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 118.05,
+        "end": 122.044,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 122.044,
+        "end": 123.043,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 123.043,
+        "end": 124.041,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 124.041,
+        "end": 125.039,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 125.039,
+        "end": 126.061,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 126.061,
+        "end": 128.058,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 128.058,
+        "end": 131.053,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 131.053,
+        "end": 132.052,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 132.052,
+        "end": 133.05,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 133.05,
+        "end": 135.07,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 135.07,
+        "end": 136.046,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 136.046,
+        "end": 137.044,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 137.044,
+        "end": 138.043,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 138.043,
+        "end": 140.04,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 140.04,
+        "end": 141.061,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 141.061,
+        "end": 142.06,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 142.06,
+        "end": 143.058,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 143.058,
+        "end": 144.057,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 144.057,
+        "end": 146.054,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 146.054,
+        "end": 148.05,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 148.05,
+        "end": 149.072,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 149.072,
+        "end": 150.047,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 150.047,
+        "end": 151.046,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 151.046,
+        "end": 152.044,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 152.044,
+        "end": 154.041,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 154.041,
+        "end": 156.038,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 156.038,
+        "end": 158.058,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 158.058,
+        "end": 159.057,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 159.057,
+        "end": 163.051,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 163.051,
+        "end": 164.049,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 164.049,
+        "end": 166.046,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 166.046,
+        "end": 167.044,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 167.044,
+        "end": 168.043,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 168.043,
+        "end": 170.063,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 170.063,
+        "end": 171.061,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 171.061,
+        "end": 172.06,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 172.06,
+        "end": 174.057,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 174.057,
+        "end": 176.054,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 176.054,
+        "end": 177.052,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 177.052,
+        "end": 180.048,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 180.048,
+        "end": 182.044,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 182.044,
+        "end": 183.043,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 183.043,
+        "end": 184.041,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 184.041,
+        "end": 186.061,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 186.061,
+        "end": 187.06,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 187.06,
+        "end": 188.058,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 188.058,
+        "end": 193.074,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 193.074,
+        "end": 194.072,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 194.072,
+        "end": 197.045,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 197.045,
+        "end": 198.066,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 198.066,
+        "end": 199.065,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 199.065,
+        "end": 200.063,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 200.063,
+        "end": 202.06,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 202.06,
+        "end": 203.059,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 203.059,
+        "end": 204.08,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 204.08,
+        "end": 206.054,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 206.054,
+        "end": 207.052,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 207.052,
+        "end": 208.051,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 208.051,
+        "end": 211.046,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 211.046,
+        "end": 212.068,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 212.068,
+        "end": 216.062,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 216.062,
+        "end": 217.06,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 217.06,
+        "end": 220.056,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 220.056,
+        "end": 222.052,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 222.052,
+        "end": 224.049,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 224.049,
+        "end": 225.071,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 225.071,
+        "end": 226.046,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 226.046,
+        "end": 227.045,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 227.045,
+        "end": 229.042,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 229.042,
+        "end": 231.062,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 231.062,
+        "end": 232.06,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 232.06,
+        "end": 235.056,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 235.056,
+        "end": 236.054,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 236.054,
+        "end": 238.051,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 238.051,
+        "end": 239.049,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 239.049,
+        "end": 240.048,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 240.048,
+        "end": 241.046,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 241.046,
+        "end": 242.045,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 242.045,
+        "end": 244.042,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 244.042,
+        "end": 245.04,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 245.04,
+        "end": 248.059,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 248.059,
+        "end": 249.057,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 249.057,
+        "end": 250.056,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 250.056,
+        "end": 251.054,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 251.054,
+        "end": 252.053,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 252.053,
+        "end": 254.05,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 254.05,
+        "end": 256.046,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 256.046,
+        "end": 257.045,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 257.045,
+        "end": 258.043,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 258.043,
+        "end": 261.062,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 261.062,
+        "end": 262.084,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 262.084,
+        "end": 265.079,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 265.079,
+        "end": 269.978,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 269.978,
+        "end": 272.068,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 272.068,
+        "end": 273.067,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 273.067,
+        "end": 276.062,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 276.062,
+        "end": 277.06,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 277.06,
+        "end": 284.955,
+        "name": "F",
         "degree": ""
       }
     ]
@@ -929,197 +971,411 @@
     "lines": [
       {
         "id": "l01",
-        "start": 7.7,
-        "end": 18.62,
-        "text": "天蓝蓝，海蓝蓝，云在天地间"
+        "start": 8.0,
+        "end": 11.53,
+        "text": "天蓝蓝"
       },
       {
         "id": "l02",
-        "start": 19.78,
-        "end": 23.1,
-        "text": "想念像风一样"
+        "start": 11.65,
+        "end": 15.18,
+        "text": "海蓝蓝"
       },
       {
         "id": "l03",
-        "start": 23.78,
-        "end": 27.9,
-        "text": "依偎在你身边"
+        "start": 15.3,
+        "end": 18.83,
+        "text": "云在天地间"
       },
       {
         "id": "l04",
-        "start": 28.74,
-        "end": 31.72,
-        "text": "望着那么远"
+        "start": 18.95,
+        "end": 23.58,
+        "text": "想念像风一样"
       },
       {
         "id": "l05",
-        "start": 32.78,
-        "end": 36.14,
-        "text": "却像在眼前"
+        "start": 23.7,
+        "end": 28.33,
+        "text": "依偎在你身边"
       },
       {
         "id": "l06",
-        "start": 36.78,
-        "end": 47.8,
-        "text": "慢慢，慢慢，一点，一点，穿过云海"
+        "start": 28.45,
+        "end": 31.98,
+        "text": "望着那么远"
       },
       {
         "id": "l07",
-        "start": 47.8,
-        "end": 52.26,
-        "text": "落进心里面"
+        "start": 32.1,
+        "end": 35.63,
+        "text": "却像在眼前"
       },
       {
         "id": "l08",
-        "start": 53.77,
-        "end": 58.34,
-        "text": "我好想来到你身边"
+        "start": 35.75,
+        "end": 39.28,
+        "text": "慢慢，慢慢"
       },
       {
         "id": "l09",
-        "start": 59.18,
-        "end": 62.92,
-        "text": "看清你的容颜"
+        "start": 39.4,
+        "end": 42.93,
+        "text": "一点，一点"
       },
       {
         "id": "l10",
-        "start": 63.87,
-        "end": 67.42,
-        "text": "哪怕隔着山海万千"
+        "start": 43.05,
+        "end": 46.58,
+        "text": "穿过云海"
       },
       {
         "id": "l11",
-        "start": 68.78,
-        "end": 73.06,
-        "text": "也想与你相见"
+        "start": 46.7,
+        "end": 51.23,
+        "text": "落进心里面"
       },
       {
         "id": "l12",
-        "start": 74.3,
-        "end": 76.98,
-        "text": "似水流年"
+        "start": 51.35,
+        "end": 55.98,
+        "text": "我好想来到你身边"
       },
       {
         "id": "l13",
-        "start": 78.34,
-        "end": 80.96,
-        "text": "时光轮转"
+        "start": 56.1,
+        "end": 59.63,
+        "text": "看清你的容颜"
       },
       {
         "id": "l14",
-        "start": 82.3,
-        "end": 88.92,
-        "text": "这一眼，越过千年不变"
+        "start": 59.75,
+        "end": 64.38,
+        "text": "哪怕隔着山海万千"
       },
       {
         "id": "l15",
-        "start": 88.92,
-        "end": 92.52,
-        "text": "云海之间"
-      },
-      {
-        "id": "l15b",
-        "start": 92.52,
-        "end": 97.61,
-        "text": "梦也缱绻"
+        "start": 64.5,
+        "end": 70.03,
+        "text": "也想与你相见"
       },
       {
         "id": "l16",
-        "start": 97.61,
-        "end": 101.19,
-        "text": "我把爱写成一线"
+        "start": 70.15,
+        "end": 73.68,
+        "text": "似水流年"
       },
       {
         "id": "l17",
-        "start": 101.19,
-        "end": 104.61,
-        "text": "牵向你的天边"
+        "start": 73.8,
+        "end": 77.33,
+        "text": "时光轮转"
       },
       {
         "id": "l18",
-        "start": 107.35,
-        "end": 110.99,
-        "text": "你在云的那边"
+        "start": 77.45,
+        "end": 82.08,
+        "text": "这一眼，越过千年不变"
       },
       {
         "id": "l19",
-        "start": 110.99,
-        "end": 115.51,
-        "text": "我在海的这边"
+        "start": 82.2,
+        "end": 85.73,
+        "text": "云海之间"
       },
       {
         "id": "l20",
-        "start": 116.11,
-        "end": 119.29,
-        "text": "一念成渊，一望无边"
+        "start": 85.85,
+        "end": 89.38,
+        "text": "梦也缱绻"
       },
       {
         "id": "l21",
-        "start": 121.24,
-        "end": 123.88,
-        "text": "越是想靠近"
+        "start": 89.5,
+        "end": 94.13,
+        "text": "我把爱写成一线"
       },
       {
         "id": "l22",
-        "start": 123.88,
-        "end": 127.7,
-        "text": "越怕渐行渐远"
+        "start": 94.25,
+        "end": 100.88,
+        "text": "牵向你的天边"
       },
       {
         "id": "l23",
-        "start": 129.56,
-        "end": 131.56,
-        "text": "一生只够遥遥一眼"
+        "start": 101.0,
+        "end": 104.53,
+        "text": "你在那么远"
       },
       {
         "id": "l24",
-        "start": 133.54,
-        "end": 138.02,
-        "text": "我也愿把思念留在云海之间"
+        "start": 104.65,
+        "end": 108.18,
+        "text": "远过了人间"
       },
       {
         "id": "l25",
-        "start": 138.02,
-        "end": 148.44,
-        "text": "天蓝蓝，海蓝蓝，云在天地间"
+        "start": 108.3,
+        "end": 112.93,
+        "text": "像星光沉入海面"
       },
       {
         "id": "l26",
-        "start": 149.75,
-        "end": 152.81,
-        "text": "我在无尽远方"
+        "start": 113.05,
+        "end": 116.58,
+        "text": "明灭之间"
       },
       {
         "id": "l27",
-        "start": 153.73,
-        "end": 156.57,
+        "start": 116.7,
+        "end": 121.33,
+        "text": "我在云的这边"
+      },
+      {
+        "id": "l28",
+        "start": 121.45,
+        "end": 126.08,
+        "text": "你在海的那边"
+      },
+      {
+        "id": "l29",
+        "start": 126.2,
+        "end": 129.73,
+        "text": "一念成渊"
+      },
+      {
+        "id": "l30",
+        "start": 129.85,
+        "end": 133.38,
+        "text": "一望无边"
+      },
+      {
+        "id": "l31",
+        "start": 133.5,
+        "end": 137.03,
+        "text": "越是想靠近"
+      },
+      {
+        "id": "l32",
+        "start": 137.15,
+        "end": 142.78,
+        "text": "越怕渐行渐远"
+      },
+      {
+        "id": "l33",
+        "start": 142.9,
+        "end": 147.53,
+        "text": "我好想来到你身边"
+      },
+      {
+        "id": "l34",
+        "start": 147.65,
+        "end": 151.18,
+        "text": "听清你的心愿"
+      },
+      {
+        "id": "l35",
+        "start": 151.3,
+        "end": 155.93,
+        "text": "哪怕风把岁月吹散"
+      },
+      {
+        "id": "l36",
+        "start": 156.05,
+        "end": 161.58,
+        "text": "也记得初见"
+      },
+      {
+        "id": "l37",
+        "start": 161.7,
+        "end": 165.23,
+        "text": "似水流年"
+      },
+      {
+        "id": "l38",
+        "start": 165.35,
+        "end": 168.88,
+        "text": "时光轮转"
+      },
+      {
+        "id": "l39",
+        "start": 169.0,
+        "end": 173.63,
+        "text": "这一眼，越过千年不变"
+      },
+      {
+        "id": "l40",
+        "start": 173.75,
+        "end": 177.28,
+        "text": "云海之间"
+      },
+      {
+        "id": "l41",
+        "start": 177.4,
+        "end": 180.93,
+        "text": "爱也深浅"
+      },
+      {
+        "id": "l42",
+        "start": 181.05,
+        "end": 185.68,
+        "text": "我把心化作一线"
+      },
+      {
+        "id": "l43",
+        "start": 185.8,
+        "end": 192.43,
+        "text": "追向你的天边"
+      },
+      {
+        "id": "l44",
+        "start": 192.55,
+        "end": 196.08,
+        "text": "若有一天"
+      },
+      {
+        "id": "l45",
+        "start": 196.2,
+        "end": 200.83,
+        "text": "云散海也安眠"
+      },
+      {
+        "id": "l46",
+        "start": 200.95,
+        "end": 205.58,
+        "text": "愿我仍能在风里"
+      },
+      {
+        "id": "l47",
+        "start": 205.7,
+        "end": 210.33,
+        "text": "听见你的誓言"
+      },
+      {
+        "id": "l48",
+        "start": 210.45,
+        "end": 213.98,
+        "text": "若这一生"
+      },
+      {
+        "id": "l49",
+        "start": 214.1,
+        "end": 218.73,
+        "text": "只够遥遥一眼"
+      },
+      {
+        "id": "l50",
+        "start": 218.85,
+        "end": 223.48,
+        "text": "我也愿把所有思念"
+      },
+      {
+        "id": "l51",
+        "start": 223.6,
+        "end": 230.23,
+        "text": "留在云海之间"
+      },
+      {
+        "id": "l52",
+        "start": 230.35,
+        "end": 233.88,
+        "text": "似水流年"
+      },
+      {
+        "id": "l53",
+        "start": 234.0,
+        "end": 237.53,
+        "text": "时光轮转"
+      },
+      {
+        "id": "l54",
+        "start": 237.65,
+        "end": 242.28,
+        "text": "这一念，越过千年不变"
+      },
+      {
+        "id": "l55",
+        "start": 242.4,
+        "end": 245.93,
+        "text": "云海之间"
+      },
+      {
+        "id": "l56",
+        "start": 246.05,
+        "end": 249.58,
+        "text": "山河悠远"
+      },
+      {
+        "id": "l57",
+        "start": 249.7,
+        "end": 254.33,
+        "text": "你是我望不尽的天"
+      },
+      {
+        "id": "l58",
+        "start": 254.45,
+        "end": 261.08,
+        "text": "也是我回不去的岸"
+      },
+      {
+        "id": "l59",
+        "start": 261.2,
+        "end": 264.73,
+        "text": "天蓝蓝"
+      },
+      {
+        "id": "l60",
+        "start": 264.85,
+        "end": 268.38,
+        "text": "海蓝蓝"
+      },
+      {
+        "id": "l61",
+        "start": 268.5,
+        "end": 272.03,
+        "text": "云在天地间"
+      },
+      {
+        "id": "l62",
+        "start": 272.15,
+        "end": 276.78,
+        "text": "我在无尽远方"
+      },
+      {
+        "id": "l63",
+        "start": 276.9,
+        "end": 282.4,
         "text": "仍想回到你身边"
       }
     ]
   },
   "provenance": {
     "createdBy": "Musia",
-    "generationProject": "data/creative_projects/yun-hai-zhi-lian-main-20260630",
-    "audioSource": "DiffRhythm full timed Mandarin render, output.wav, transcoded to MusiaSongs audio.",
-    "analysisRun": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis",
+    "generationProject": "data/creative_projects/yun-hai-zhi-lian-diffrhythm-full-20260630",
+    "audioSource": "DiffRhythm 1.2 full, 285-second LRC-conditioned clean prompt render.",
+    "analysisRun": "data/runs/yun-hai-zhi-lian-diffrhythm-full-285-clean-analysis",
     "quality": {
-      "asrOverlap": 0.6192893401015228,
+      "asrOverlap": 0.6332378223495702,
       "gate": "review"
     },
-    "lyricCorrection": "Corrected per active Mandarin vocal from ASR/STT plus user reference. Phrases that were skipped or heavily compressed are omitted or shortened in timing rather than forced.",
+    "lyricCorrection": "Published active Mandarin lyrics use the full user lyric with LRC timing, cross-validated with same-vocal ASR. ASR garbling is corrected back to intended phrases when sound-close.",
+    "rejectedCandidate": "full_285_prompt had a credit-like ASR tail `词曲 李宗盛`; clean prompt render was selected instead.",
     "coverPrompt": "Existing Musia cloud-sea 16:9 cover: bright blue sky, ocean, soft clouds, one white line of longing, title 云海之恋.",
-    "coverSource": "website/assets/covers/yun-hai-zhi-lian-16x9.png, preserved from the existing Fun Lazying Art item.",
-    "publicAudio": "Cache-busted main Mandarin audio filename: yun-hai-zhi-lian-main-zh-Hans-20260630.mp3",
-    "lyricCorrection20260630b": "After user listening review, added likely missed sung phrases 一点，一点 and 梦也缱绻 to the corrected website lyric set."
+    "coverSource": "website/assets/covers/yun-hai-zhi-lian-16x9.png",
+    "publicAudio": "yun-hai-zhi-lian-yunhai-changge-diffrhythm-full-285-20260630.mp3"
   },
   "artifacts": [
     {
-      "label": "Review report",
-      "path": "data/creative_projects/yun-hai-zhi-lian-main-20260630/reviews/diffrhythm-full-160/QA.md"
+      "id": "qa-clean",
+      "label": "DiffRhythm full 285 QA",
+      "kind": "markdown",
+      "path": "data/creative_projects/yun-hai-zhi-lian-diffrhythm-full-20260630/reviews/full-285-clean/QA.md"
     },
     {
-      "label": "Analysis report",
-      "path": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis/REPORT.md"
+      "id": "analysis-report",
+      "label": "Musia full analysis report",
+      "kind": "markdown",
+      "path": "data/runs/yun-hai-zhi-lian-diffrhythm-full-285-clean-analysis/REPORT.md"
     }
   ]
 }
