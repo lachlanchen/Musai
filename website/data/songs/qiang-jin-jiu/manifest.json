@@ -1133,182 +1133,194 @@
     "lines": [
       {
         "id": "l01",
-        "start": 28.98,
-        "end": 34.62,
+        "start": 28.28,
+        "end": 33.82,
         "text": "君不见黄河之水天上来"
       },
       {
         "id": "l02",
-        "start": 36.82,
-        "end": 42.44,
+        "start": 36.56,
+        "end": 41.98,
         "text": "奔流到海不复回"
       },
       {
         "id": "l03",
-        "start": 42.44,
-        "end": 49.18,
-        "text": "君不见高堂明镜悲白发"
+        "start": 43.18,
+        "end": 46.8,
+        "text": "君不见高堂"
       },
       {
         "id": "l04",
-        "start": 49.78,
-        "end": 53.28,
-        "text": "朝如青丝暮成雪"
+        "start": 46.8,
+        "end": 50.08,
+        "text": "明镜悲白发"
       },
       {
         "id": "l05",
-        "start": 54.38,
-        "end": 57.32,
-        "text": "人生得意须尽欢"
+        "start": 50.08,
+        "end": 54.46,
+        "text": "朝如青丝暮成雪"
       },
       {
         "id": "l06",
-        "start": 57.92,
-        "end": 60.92,
-        "text": "莫使金樽空对月"
+        "start": 54.46,
+        "end": 58.1,
+        "text": "人生得意须尽欢"
       },
       {
         "id": "l07",
-        "start": 61.52,
-        "end": 64.4,
-        "text": "天生我材必有用"
+        "start": 58.1,
+        "end": 61.82,
+        "text": "莫使金樽空对月"
       },
       {
         "id": "l08",
-        "start": 64.4,
-        "end": 68.18,
-        "text": "千金散尽还复来"
+        "start": 61.82,
+        "end": 64.82,
+        "text": "天生我材必有用"
       },
       {
         "id": "l09",
-        "start": 69.68,
-        "end": 77.55,
-        "text": "烹羊宰牛且为乐，会须一饮三百杯"
+        "start": 64.82,
+        "end": 70.16,
+        "text": "千金散尽还复来"
       },
       {
         "id": "l10",
-        "start": 77.55,
-        "end": 80.43,
-        "text": "岑夫子，丹丘生"
+        "start": 70.16,
+        "end": 73.94,
+        "text": "烹羊宰牛且为乐"
       },
       {
         "id": "l11",
-        "start": 80.43,
-        "end": 83.99,
-        "text": "将进酒，杯莫停"
+        "start": 73.94,
+        "end": 77.66,
+        "text": "会须一饮三百杯"
       },
       {
         "id": "l12",
-        "start": 84.59,
-        "end": 87.89,
-        "text": "与君歌一曲"
+        "start": 77.66,
+        "end": 80.9,
+        "text": "岑夫子，丹丘生"
       },
       {
         "id": "l13",
-        "start": 87.89,
-        "end": 90.99,
-        "text": "请君为我倾耳听"
+        "start": 80.9,
+        "end": 84.68,
+        "text": "将进酒，杯莫停"
       },
       {
         "id": "l14",
-        "start": 91.67,
-        "end": 94.53,
-        "text": "钟鼓馔玉不足贵"
+        "start": 84.24,
+        "end": 87.46,
+        "text": "与君歌一曲"
       },
       {
         "id": "l15",
-        "start": 94.53,
-        "end": 96.91,
-        "text": "但愿长醉不愿醒"
+        "start": 87.46,
+        "end": 90.92,
+        "text": "请君为我倾耳听"
       },
       {
         "id": "l16",
-        "start": 101.16,
-        "end": 104.44,
+        "start": 90.92,
+        "end": 94.28,
         "text": "钟鼓馔玉不足贵"
       },
       {
         "id": "l17",
-        "start": 105.28,
-        "end": 108.42,
+        "start": 94.28,
+        "end": 97.76,
         "text": "但愿长醉不愿醒"
       },
       {
         "id": "l18",
-        "start": 108.42,
-        "end": 115.59,
-        "text": "古来圣贤皆寂寞"
+        "start": 100.7,
+        "end": 104.34,
+        "text": "钟鼓馔玉不足贵"
       },
       {
         "id": "l19",
-        "start": 116.43,
-        "end": 119.43,
-        "text": "惟有饮者留其名"
+        "start": 105.18,
+        "end": 108.32,
+        "text": "但愿长醉不愿醒"
       },
       {
         "id": "l20",
-        "start": 119.43,
-        "end": 122.93,
-        "text": "陈王昔时宴平乐"
-      },
-      {
-        "id": "l21",
-        "start": 123.79,
-        "end": 127.37,
-        "text": "斗酒十千恣欢谑"
-      },
-      {
-        "id": "l22",
-        "start": 127.37,
-        "end": 130.43,
+        "start": 112.96,
+        "end": 115.44,
         "text": "古来圣贤皆寂寞"
       },
       {
-        "id": "l23",
-        "start": 131.15,
-        "end": 134.01,
+        "id": "l21",
+        "start": 115.44,
+        "end": 119.24,
         "text": "惟有饮者留其名"
       },
       {
-        "id": "l24",
-        "start": 134.71,
-        "end": 137.47,
+        "id": "l22",
+        "start": 119.24,
+        "end": 122.72,
         "text": "陈王昔时宴平乐"
       },
       {
-        "id": "l25",
-        "start": 137.47,
-        "end": 141.17,
+        "id": "l23",
+        "start": 122.72,
+        "end": 126.84,
         "text": "斗酒十千恣欢谑"
       },
       {
+        "id": "l24",
+        "start": 126.84,
+        "end": 130.28,
+        "text": "古来圣贤皆寂寞"
+      },
+      {
+        "id": "l25",
+        "start": 130.28,
+        "end": 133.82,
+        "text": "惟有饮者留其名"
+      },
+      {
         "id": "l26",
-        "start": 141.17,
-        "end": 144.83,
-        "text": "主人何为言少钱"
+        "start": 134.58,
+        "end": 137.58,
+        "text": "陈王昔时宴平乐"
       },
       {
         "id": "l27",
-        "start": 145.79,
-        "end": 148.11,
-        "text": "径须沽取对君酌"
+        "start": 138.1,
+        "end": 141.58,
+        "text": "斗酒十千恣欢谑"
       },
       {
         "id": "l28",
-        "start": 149.11,
-        "end": 153.19,
-        "text": "五花马，千金裘"
+        "start": 141.58,
+        "end": 145.9,
+        "text": "主人何为言少钱"
       },
       {
         "id": "l29",
-        "start": 153.19,
-        "end": 157.47,
-        "text": "呼儿将出换美酒"
+        "start": 145.9,
+        "end": 149.48,
+        "text": "径须沽取对君酌"
       },
       {
         "id": "l30",
-        "start": 158.97,
-        "end": 162.69,
+        "start": 149.48,
+        "end": 153.9,
+        "text": "五花马，千金裘"
+      },
+      {
+        "id": "l31",
+        "start": 153.9,
+        "end": 159.06,
+        "text": "呼儿将出换美酒"
+      },
+      {
+        "id": "l32",
+        "start": 159.06,
+        "end": 164.34,
         "text": "与尔同销万古愁"
       }
     ]
@@ -1322,7 +1334,11 @@
       "asrOverlap": 0.3522727272727273,
       "gate": "pass"
     },
-    "lyricCorrection": "The selected render is a poetry-song using the original poem as prompt text. Because ACE does not perfectly recite every classical line, the website displays sound-close original text with actual line timing and repeats.",
+    "lyricCorrection": "Deep-corrected 2026-07-01 using large-v3 vocal-stem ASR plus medium/small cross-ASR. The selected render is a poetry-song using the original poem as prompt text. Because ACE does not perfectly recite every classical line, the website displays sound-close original text with actual line timing and repeats.",
+    "lyricCorrectionEvidence": [
+      "data/creative_projects/qiang-jin-jiu-20260630/corrections/deep-large-20260701/CORRECTION_PACKET.md",
+      "data/creative_projects/qiang-jin-jiu-20260630/corrections/deep-20260701/CORRECTION_PACKET.md"
+    ],
     "pronunciationGuide": "data/creative_projects/qiang-jin-jiu-20260630/source/pronunciation-guide.md",
     "coverSource": "assets/covers/qiang-jin-jiu-16x9.png",
     "publicAudio": "qiang-jin-jiu-zh-Hans-ace-20260701.mp3"

@@ -77,6 +77,38 @@ Reproducible website-prep script:
 
 - `scripts/prepare_qiang_jin_jiu_fun_item.py`
 
+## Deep Lyric Correction 2026-07-01
+
+The public lyric data was corrected again after publication because the first
+website pass was too optimistic about line timing. The correction used:
+
+- large-v3 ASR on the selected mix and separated vocal stem;
+- medium/small ASR as cross-checks;
+- the original poem as the intended lyric reference;
+- the Musia evidence rule: real sung structure first, then sound-close intended
+  classical text, then ASR guesses.
+
+Evidence packets:
+
+- `data/creative_projects/qiang-jin-jiu-20260630/corrections/deep-large-20260701/CORRECTION_PACKET.md`
+- `data/creative_projects/qiang-jin-jiu-20260630/corrections/deep-20260701/CORRECTION_PACKET.md`
+
+Main correction decisions:
+
+- split `君不见高堂 / 明镜悲白发` instead of showing one long merged line;
+- split `烹羊宰牛且为乐 / 会须一饮三百杯`;
+- split `与君歌一曲 / 请君为我倾耳听`;
+- retimed the repeated `钟鼓馔玉不足贵 / 但愿长醉不愿醒` section from
+  the large-v3 vocal-stem pass;
+- retimed the repeated `古来圣贤皆寂寞 / 惟有饮者留其名 / 陈王昔时宴平乐 /
+  斗酒十千恣欢谑` section;
+- fixed Mandarin pinyin for polyphonic or context-sensitive words:
+  `将进酒 = qiang1 jin4 jiu3`, `朝 = zhao1`, `白发 = bai2 fa4`,
+  `且为乐 = qie3 wei2 le4`, `请君为我 = qing3 jun1 wei4 wo3`,
+  `斗酒 = dou3 jiu3`, and `平乐 = ping2 le4`.
+
+The active Chinese track now has 32 timed lyric lines.
+
 ## Website Item
 
 Fun media id:

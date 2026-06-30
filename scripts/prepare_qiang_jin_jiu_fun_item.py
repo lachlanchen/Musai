@@ -74,6 +74,24 @@ def zh_pinyin_for(line_text: str, index: int, char: str) -> str:
         return ""
     if line_text.startswith("将进酒") and char == "将" and index == 0:
         return "qiang1"
+    if line_text.startswith("朝如") and char == "朝" and index == 0:
+        return "zhao1"
+    if index > 0 and line_text[index - 1 : index + 1] == "白发" and char == "发":
+        return "fa4"
+    if line_text.startswith("烹羊宰牛且为乐") and char == "为":
+        return "wei2"
+    if line_text.startswith("烹羊宰牛且为乐") and char == "乐":
+        return "le4"
+    if line_text.startswith("请君为我") and char == "为":
+        return "wei4"
+    if line_text.startswith("千金散尽还复来") and char == "还":
+        return "huan2"
+    if line_text.startswith("陈王昔时宴平乐") and char == "乐":
+        return "le4"
+    if line_text.startswith("主人何为言少钱") and char == "为":
+        return "wei2"
+    if line_text.startswith("斗酒") and char == "斗":
+        return "dou3"
     values = pinyin(char, style=Style.TONE3, strict=False, neutral_tone_with_five=True)
     return values[0][0] if values and values[0] else ""
 
@@ -138,36 +156,38 @@ def make_line(line_id: str, start: float, end: float, text: str, code: str) -> d
 
 def corrected_rows() -> list[tuple[str, float, float, str, str, str]]:
     return [
-        ("l01", 28.98, 34.62, "君不见黄河之水天上来", "Do you not see the Yellow River's waters descending from the sky?", "見よ、黄河の水が天より来る"),
-        ("l02", 36.82, 42.44, "奔流到海不复回", "Rushing to the sea, never to return.", "奔流して海へ至り、二度と帰らない"),
-        ("l03", 42.44, 49.18, "君不见高堂明镜悲白发", "Do you not see bright mirrors in high halls grieving white hair?", "高堂の明鏡に白髪を悲しむのを見よ"),
-        ("l04", 49.78, 53.28, "朝如青丝暮成雪", "Morning like black silk, by evening turned to snow.", "朝は青き糸、暮れには雪となる"),
-        ("l05", 54.38, 57.32, "人生得意须尽欢", "When life is proud, drink joy to the full.", "人生得意の時は歓びを尽くせ"),
-        ("l06", 57.92, 60.92, "莫使金樽空对月", "Do not let the golden cup face the moon empty.", "金の盃を空しく月に向けるな"),
-        ("l07", 61.52, 64.40, "天生我材必有用", "Heaven made my talent; it must have its use.", "天が我が才を生んだ、必ず用いられる"),
-        ("l08", 64.40, 68.18, "千金散尽还复来", "A thousand gold pieces spent will return again.", "千金は散じ尽くしてもまた戻る"),
-        ("l09", 69.68, 77.55, "烹羊宰牛且为乐，会须一饮三百杯", "Cook lamb, slaughter oxen, and take delight; we must drink three hundred cups.", "羊を煮、牛を屠って楽しもう、必ず三百杯を飲もう"),
-        ("l10", 77.55, 80.43, "岑夫子，丹丘生", "Master Cen, Danqiu my friend.", "岑夫子よ、丹丘生よ"),
-        ("l11", 80.43, 83.99, "将进酒，杯莫停", "Please drink; let the cup not stop.", "将に酒を進めん、杯を止めるな"),
-        ("l12", 84.59, 87.89, "与君歌一曲", "I sing one song for you.", "君のために一曲歌おう"),
-        ("l13", 87.89, 90.99, "请君为我倾耳听", "Please lean your ear and listen to me.", "どうか耳を傾けて聞いてほしい"),
-        ("l14", 91.67, 94.53, "钟鼓馔玉不足贵", "Bells, drums, and jade banquets are not worth prizing.", "鐘鼓と馔玉は貴ぶに足りない"),
-        ("l15", 94.53, 96.91, "但愿长醉不愿醒", "I only wish to stay long drunk, never wishing to wake.", "ただ長く酔い、醒めたくない"),
-        ("l16", 101.16, 104.44, "钟鼓馔玉不足贵", "Bells, drums, and jade banquets are not worth prizing.", "鐘鼓と馔玉は貴ぶに足りない"),
-        ("l17", 105.28, 108.42, "但愿长醉不愿醒", "I only wish to stay long drunk, never wishing to wake.", "ただ長く酔い、醒めたくない"),
-        ("l18", 108.42, 115.59, "古来圣贤皆寂寞", "Since ancient times, sages and worthies have all been lonely.", "古来、聖賢は皆寂寞としている"),
-        ("l19", 116.43, 119.43, "惟有饮者留其名", "Only drinkers leave their names behind.", "ただ飲む者だけが名を残す"),
-        ("l20", 119.43, 122.93, "陈王昔时宴平乐", "Long ago Prince Chen feasted at Pingle.", "陳王は昔、平楽で宴を開いた"),
-        ("l21", 123.79, 127.37, "斗酒十千恣欢谑", "Wine by the peck, ten thousand coins, freely laughing and jesting.", "斗酒十千、歓謔をほしいままにした"),
-        ("l22", 127.37, 130.43, "古来圣贤皆寂寞", "Since ancient times, sages and worthies have all been lonely.", "古来、聖賢は皆寂寞としている"),
-        ("l23", 131.15, 134.01, "惟有饮者留其名", "Only drinkers leave their names behind.", "ただ飲む者だけが名を残す"),
-        ("l24", 134.71, 137.47, "陈王昔时宴平乐", "Long ago Prince Chen feasted at Pingle.", "陳王は昔、平楽で宴を開いた"),
-        ("l25", 137.47, 141.17, "斗酒十千恣欢谑", "Wine by the peck, ten thousand coins, freely laughing and jesting.", "斗酒十千、歓謔をほしいままにした"),
-        ("l26", 141.17, 144.83, "主人何为言少钱", "Host, why speak of having too little money?", "主人よ、なぜ金が少ないと言うのか"),
-        ("l27", 145.79, 148.11, "径须沽取对君酌", "Just buy wine at once, and pour it for you.", "ただちに買い求め、君と酌もう"),
-        ("l28", 149.11, 153.19, "五花马，千金裘", "The dappled horse, the thousand-gold fur robe.", "五花の馬、千金の裘"),
-        ("l29", 153.19, 157.47, "呼儿将出换美酒", "Call the boy to bring them out and trade them for fine wine.", "童を呼び、持ち出して美酒に替えよう"),
-        ("l30", 158.97, 162.69, "与尔同销万古愁", "Together with you, I will dissolve ten thousand ages of sorrow.", "君とともに万古の愁いを消そう"),
+        ("l01", 28.28, 33.82, "君不见黄河之水天上来", "Do you not see the Yellow River's waters descending from the sky?", "見よ、黄河の水が天より来る"),
+        ("l02", 36.56, 41.98, "奔流到海不复回", "Rushing to the sea, never to return.", "奔流して海へ至り、二度と帰らない"),
+        ("l03", 43.18, 46.80, "君不见高堂", "Do you not see the high hall?", "高堂を見るがよい"),
+        ("l04", 46.80, 50.08, "明镜悲白发", "The bright mirror grieves over white hair.", "明鏡は白髪を悲しむ"),
+        ("l05", 50.08, 54.46, "朝如青丝暮成雪", "Morning like black silk, by evening turned to snow.", "朝は青き糸、暮れには雪となる"),
+        ("l06", 54.46, 58.10, "人生得意须尽欢", "When life is proud, take joy to the full.", "人生得意の時は歓びを尽くせ"),
+        ("l07", 58.10, 61.82, "莫使金樽空对月", "Do not let the golden cup face the moon empty.", "金の盃を空しく月に向けるな"),
+        ("l08", 61.82, 64.82, "天生我材必有用", "Heaven made my talent; it must have its use.", "天が我が才を生んだ、必ず用いられる"),
+        ("l09", 64.82, 70.16, "千金散尽还复来", "A thousand gold pieces spent will return again.", "千金は散じ尽くしてもまた戻る"),
+        ("l10", 70.16, 73.94, "烹羊宰牛且为乐", "Cook lamb, slaughter oxen, and take delight.", "羊を煮、牛を屠って楽しもう"),
+        ("l11", 73.94, 77.66, "会须一饮三百杯", "We must drink three hundred cups.", "必ず三百杯を飲もう"),
+        ("l12", 77.66, 80.90, "岑夫子，丹丘生", "Master Cen, Danqiu my friend.", "岑夫子よ、丹丘生よ"),
+        ("l13", 80.90, 84.68, "将进酒，杯莫停", "Please drink; let the cup not stop.", "酒を勧めよう、杯を止めるな"),
+        ("l14", 84.24, 87.46, "与君歌一曲", "I sing one song for you.", "君のために一曲歌おう"),
+        ("l15", 87.46, 90.92, "请君为我倾耳听", "Please lean your ear and listen to me.", "どうか耳を傾けて聞いてほしい"),
+        ("l16", 90.92, 94.28, "钟鼓馔玉不足贵", "Bells, drums, and jade banquets are not worth prizing.", "鐘鼓と饌玉は貴ぶに足りない"),
+        ("l17", 94.28, 97.76, "但愿长醉不愿醒", "I only wish to stay long drunk, never wishing to wake.", "ただ長く酔い、醒めたくない"),
+        ("l18", 100.70, 104.34, "钟鼓馔玉不足贵", "Bells, drums, and jade banquets are not worth prizing.", "鐘鼓と饌玉は貴ぶに足りない"),
+        ("l19", 105.18, 108.32, "但愿长醉不愿醒", "I only wish to stay long drunk, never wishing to wake.", "ただ長く酔い、醒めたくない"),
+        ("l20", 112.96, 115.44, "古来圣贤皆寂寞", "Since ancient times, sages and worthies have all been lonely.", "古来、聖賢は皆寂寞としている"),
+        ("l21", 115.44, 119.24, "惟有饮者留其名", "Only drinkers leave their names behind.", "ただ飲む者だけが名を残す"),
+        ("l22", 119.24, 122.72, "陈王昔时宴平乐", "Long ago Prince Chen feasted at Pingle.", "陳王は昔、平楽で宴を開いた"),
+        ("l23", 122.72, 126.84, "斗酒十千恣欢谑", "Wine by the peck, ten thousand coins, freely laughing and jesting.", "斗酒十千、歓謔をほしいままにした"),
+        ("l24", 126.84, 130.28, "古来圣贤皆寂寞", "Since ancient times, sages and worthies have all been lonely.", "古来、聖賢は皆寂寞としている"),
+        ("l25", 130.28, 133.82, "惟有饮者留其名", "Only drinkers leave their names behind.", "ただ飲む者だけが名を残す"),
+        ("l26", 134.58, 137.58, "陈王昔时宴平乐", "Long ago Prince Chen feasted at Pingle.", "陳王は昔、平楽で宴を開いた"),
+        ("l27", 138.10, 141.58, "斗酒十千恣欢谑", "Wine by the peck, ten thousand coins, freely laughing and jesting.", "斗酒十千、歓謔をほしいままにした"),
+        ("l28", 141.58, 145.90, "主人何为言少钱", "Host, why speak of having too little money?", "主人よ、なぜ金が少ないと言うのか"),
+        ("l29", 145.90, 149.48, "径须沽取对君酌", "Just buy wine at once, and pour it for you.", "ただちに買い求め、君と酌もう"),
+        ("l30", 149.48, 153.90, "五花马，千金裘", "The dappled horse, the thousand-gold fur robe.", "五花の馬、千金の裘"),
+        ("l31", 153.90, 159.06, "呼儿将出换美酒", "Call the boy to bring them out and trade them for fine wine.", "童を呼び、持ち出して美酒に替えよう"),
+        ("l32", 159.06, 164.34, "与尔同销万古愁", "Together with you, I will dissolve ten thousand ages of sorrow.", "君とともに万古の愁いを消そう"),
     ]
 
 
@@ -181,7 +201,8 @@ def track(code: str, lines: list[dict[str, Any]]) -> dict[str, Any]:
         "provenance": {
             "vocalSet": "zh-vocal",
             "correction": (
-                "Active Mandarin lyrics corrected from same-vocal ASR and the original poem. "
+                "Active Mandarin lyrics corrected from same-vocal ASR, large-v3 vocal-stem ASR, "
+                "medium/small cross-ASR, and the original poem. "
                 "The lyric display preserves the user's requested original text where ASR is sound-close, "
                 "including 将进酒 as qiang jin jiu. The ACE render repeats 钟鼓馔玉/但愿长醉 and "
                 "古来圣贤/陈王 sections; the website reflects those repeats."
@@ -298,7 +319,11 @@ def write_media_item() -> None:
             "audioSource": "ACE-Step 1.5 XL Turbo seed 732002, selected from three original-text candidates.",
             "analysisRun": str(ANALYSIS.relative_to(ROOT)),
             "quality": {"asrOverlap": 0.3522727272727273, "gate": "pass"},
-            "lyricCorrection": "The selected render is a poetry-song using the original poem as prompt text. Because ACE does not perfectly recite every classical line, the website displays sound-close original text with actual line timing and repeats.",
+            "lyricCorrection": "Deep-corrected 2026-07-01 using large-v3 vocal-stem ASR plus medium/small cross-ASR. The selected render is a poetry-song using the original poem as prompt text. Because ACE does not perfectly recite every classical line, the website displays sound-close original text with actual line timing and repeats.",
+            "lyricCorrectionEvidence": [
+                "data/creative_projects/qiang-jin-jiu-20260630/corrections/deep-large-20260701/CORRECTION_PACKET.md",
+                "data/creative_projects/qiang-jin-jiu-20260630/corrections/deep-20260701/CORRECTION_PACKET.md",
+            ],
             "pronunciationGuide": str((PROJECT / "source/pronunciation-guide.md").relative_to(ROOT)),
             "coverSource": cover,
             "publicAudio": PUBLIC_AUDIO_NAME,
