@@ -83,6 +83,14 @@ The generated vocal keeps the main cloud/sea/longing arc but compresses or drops
 some phrases such as `一点，一点` and likely `梦也缱绻`; the website lyric set
 reflects the audible structure rather than the full prompt lyric.
 
+Follow-up listening correction:
+
+- `一点，一点` is audible inside the long `慢慢，慢慢...穿过云海` phrase and was
+  added back to the active Mandarin lyric line.
+- `梦也缱绻` is likely audible in the timing gap between `云海之间` and
+  `我把爱写成一线`, so it was added as its own timed line from `92.52` to
+  `97.61` seconds.
+
 ## Analysis Artifacts
 
 Full Musia analysis:

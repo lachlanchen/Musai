@@ -253,58 +253,78 @@
       "id": "l06",
       "start": 36.78,
       "end": 47.8,
-      "text": "Slowly, slowly, crossing the sea of clouds.",
-      "singableText": "Slowly, slowly, crossing the sea of clouds.",
+      "text": "Slowly, slowly, little by little, crossing the sea of clouds.",
+      "singableText": "Slowly, slowly, little by little, crossing the sea of clouds.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Slowly",
           "start": 36.78,
-          "end": 37.882
+          "end": 37.567
         },
         {
           "text": ",",
-          "start": 37.882,
-          "end": 38.984
+          "start": 37.567,
+          "end": 38.354
         },
         {
           "text": "slowly",
-          "start": 38.984,
-          "end": 40.086
+          "start": 38.354,
+          "end": 39.141
         },
         {
           "text": ",",
-          "start": 40.086,
-          "end": 41.188
+          "start": 39.141,
+          "end": 39.929
         },
         {
-          "text": "crossing",
-          "start": 41.188,
+          "text": "little",
+          "start": 39.929,
+          "end": 40.716
+        },
+        {
+          "text": "by",
+          "start": 40.716,
+          "end": 41.503
+        },
+        {
+          "text": "little",
+          "start": 41.503,
           "end": 42.29
         },
         {
-          "text": "the",
+          "text": ",",
           "start": 42.29,
-          "end": 43.392
+          "end": 43.077
+        },
+        {
+          "text": "crossing",
+          "start": 43.077,
+          "end": 43.864
+        },
+        {
+          "text": "the",
+          "start": 43.864,
+          "end": 44.651
         },
         {
           "text": "sea",
-          "start": 43.392,
-          "end": 44.494
+          "start": 44.651,
+          "end": 45.439
         },
         {
           "text": "of",
-          "start": 44.494,
-          "end": 45.596
+          "start": 45.439,
+          "end": 46.226
         },
         {
           "text": "clouds",
-          "start": 45.596,
-          "end": 46.698
+          "start": 46.226,
+          "end": 47.013
         },
         {
           "text": ".",
-          "start": 46.698,
+          "start": 47.013,
           "end": 47.8
         }
       ]
@@ -681,6 +701,46 @@
           "text": ".",
           "start": 91.8,
           "end": 92.52
+        }
+      ]
+    },
+    {
+      "id": "l15b",
+      "start": 92.52,
+      "end": 97.61,
+      "text": "Even dreams are tenderly entwined.",
+      "singableText": "Even dreams are tenderly entwined.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Even",
+          "start": 92.52,
+          "end": 93.368
+        },
+        {
+          "text": "dreams",
+          "start": 93.368,
+          "end": 94.217
+        },
+        {
+          "text": "are",
+          "start": 94.217,
+          "end": 95.065
+        },
+        {
+          "text": "tenderly",
+          "start": 95.065,
+          "end": 95.913
+        },
+        {
+          "text": "entwined",
+          "start": 95.913,
+          "end": 96.762
+        },
+        {
+          "text": ".",
+          "start": 96.762,
+          "end": 97.61
         }
       ]
     },
@@ -1328,6 +1388,7 @@
   "provenance": {
     "vocalSet": "zh-vocal",
     "correction": "Active Mandarin lyric corrected from DiffRhythm render using faster-whisper small ASR plus the user reference lyric. Sound-close ASR substitutions were corrected back to the intended lyric; omitted/compressed phrases were not forced into timing.",
-    "asrRun": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis/analysis/lyrics.json"
+    "asrRun": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis/analysis/lyrics.json",
+    "manualCorrection20260630": "Added two sound-supported phrases after user listening review: 一点，一点 and 梦也缱绻. Timings preserve the active Mandarin vocal structure."
   }
 }

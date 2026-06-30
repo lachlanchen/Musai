@@ -391,96 +391,122 @@
       "id": "l06",
       "start": 36.78,
       "end": 47.8,
-      "text": "ゆっくり、ゆっくり、雲海を越えて。",
-      "singableText": "ゆっくり、ゆっくり、雲海を越えて。",
+      "text": "ゆっくり、ゆっくり、少しずつ、雲海を越えて。",
+      "singableText": "ゆっくり、ゆっくり、少しずつ、雲海を越えて。",
       "role": "lyric",
       "tokens": [
         {
           "text": "ゆ",
           "start": 36.78,
-          "end": 37.428
+          "end": 37.281
         },
         {
           "text": "っ",
-          "start": 37.428,
-          "end": 38.076
+          "start": 37.281,
+          "end": 37.782
         },
         {
           "text": "く",
-          "start": 38.076,
-          "end": 38.725
+          "start": 37.782,
+          "end": 38.283
         },
         {
           "text": "り",
-          "start": 38.725,
-          "end": 39.373
+          "start": 38.283,
+          "end": 38.784
         },
         {
           "text": "、",
-          "start": 39.373,
-          "end": 40.021
+          "start": 38.784,
+          "end": 39.285
         },
         {
           "text": "ゆ",
-          "start": 40.021,
-          "end": 40.669
+          "start": 39.285,
+          "end": 39.785
         },
         {
           "text": "っ",
-          "start": 40.669,
-          "end": 41.318
+          "start": 39.785,
+          "end": 40.286
         },
         {
           "text": "く",
-          "start": 41.318,
-          "end": 41.966
+          "start": 40.286,
+          "end": 40.787
         },
         {
           "text": "り",
-          "start": 41.966,
-          "end": 42.614
+          "start": 40.787,
+          "end": 41.288
         },
         {
           "text": "、",
-          "start": 42.614,
-          "end": 43.262
+          "start": 41.288,
+          "end": 41.789
+        },
+        {
+          "text": "少",
+          "start": 41.789,
+          "end": 42.29,
+          "reading": "しょう"
+        },
+        {
+          "text": "し",
+          "start": 42.29,
+          "end": 42.791
+        },
+        {
+          "text": "ず",
+          "start": 42.791,
+          "end": 43.292
+        },
+        {
+          "text": "つ",
+          "start": 43.292,
+          "end": 43.793
+        },
+        {
+          "text": "、",
+          "start": 43.793,
+          "end": 44.294
         },
         {
           "text": "雲",
-          "start": 43.262,
-          "end": 43.911,
+          "start": 44.294,
+          "end": 44.795,
           "reading": "くも"
         },
         {
           "text": "海",
-          "start": 43.911,
-          "end": 44.559,
+          "start": 44.795,
+          "end": 45.295,
           "reading": "うみ"
         },
         {
           "text": "を",
-          "start": 44.559,
-          "end": 45.207
+          "start": 45.295,
+          "end": 45.796
         },
         {
           "text": "越",
-          "start": 45.207,
-          "end": 45.855,
+          "start": 45.796,
+          "end": 46.297,
           "reading": "えつ"
         },
         {
           "text": "え",
-          "start": 45.855,
-          "end": 46.504
+          "start": 46.297,
+          "end": 46.798
         },
         {
           "text": "て",
-          "start": 46.504,
-          "end": 47.152
+          "start": 46.798,
+          "end": 47.299
         },
         {
           "text": "。",
-          "start": 47.152,
+          "start": 47.299,
           "end": 47.8
         }
       ]
@@ -1090,6 +1116,84 @@
           "text": "。",
           "start": 92.07,
           "end": 92.52
+        }
+      ]
+    },
+    {
+      "id": "l15b",
+      "start": 92.52,
+      "end": 97.61,
+      "text": "夢さえもやさしく絡み合う。",
+      "singableText": "夢さえもやさしく絡み合う。",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "夢",
+          "start": 92.52,
+          "end": 92.912,
+          "reading": "ゆめ"
+        },
+        {
+          "text": "さ",
+          "start": 92.912,
+          "end": 93.303
+        },
+        {
+          "text": "え",
+          "start": 93.303,
+          "end": 93.695
+        },
+        {
+          "text": "も",
+          "start": 93.695,
+          "end": 94.086
+        },
+        {
+          "text": "や",
+          "start": 94.086,
+          "end": 94.478
+        },
+        {
+          "text": "さ",
+          "start": 94.478,
+          "end": 94.869
+        },
+        {
+          "text": "し",
+          "start": 94.869,
+          "end": 95.261
+        },
+        {
+          "text": "く",
+          "start": 95.261,
+          "end": 95.652
+        },
+        {
+          "text": "絡",
+          "start": 95.652,
+          "end": 96.044,
+          "reading": "らく"
+        },
+        {
+          "text": "み",
+          "start": 96.044,
+          "end": 96.435
+        },
+        {
+          "text": "合",
+          "start": 96.435,
+          "end": 96.827,
+          "reading": "ごう"
+        },
+        {
+          "text": "う",
+          "start": 96.827,
+          "end": 97.218
+        },
+        {
+          "text": "。",
+          "start": 97.218,
+          "end": 97.61
         }
       ]
     },
@@ -2037,6 +2141,7 @@
   "provenance": {
     "vocalSet": "zh-vocal",
     "correction": "Active Mandarin lyric corrected from DiffRhythm render using faster-whisper small ASR plus the user reference lyric. Sound-close ASR substitutions were corrected back to the intended lyric; omitted/compressed phrases were not forced into timing.",
-    "asrRun": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis/analysis/lyrics.json"
+    "asrRun": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis/analysis/lyrics.json",
+    "manualCorrection20260630": "Added two sound-supported phrases after user listening review: 一点，一点 and 梦也缱绻. Timings preserve the active Mandarin vocal structure."
   }
 }

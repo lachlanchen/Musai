@@ -961,7 +961,7 @@
         "id": "l06",
         "start": 36.78,
         "end": 47.8,
-        "text": "慢慢，慢慢，穿过云海"
+        "text": "慢慢，慢慢，一点，一点，穿过云海"
       },
       {
         "id": "l07",
@@ -1016,6 +1016,12 @@
         "start": 88.92,
         "end": 92.52,
         "text": "云海之间"
+      },
+      {
+        "id": "l15b",
+        "start": 92.52,
+        "end": 97.61,
+        "text": "梦也缱绻"
       },
       {
         "id": "l16",
@@ -1103,7 +1109,8 @@
     "lyricCorrection": "Corrected per active Mandarin vocal from ASR/STT plus user reference. Phrases that were skipped or heavily compressed are omitted or shortened in timing rather than forced.",
     "coverPrompt": "Existing Musia cloud-sea 16:9 cover: bright blue sky, ocean, soft clouds, one white line of longing, title 云海之恋.",
     "coverSource": "website/assets/covers/yun-hai-zhi-lian-16x9.png, preserved from the existing Fun Lazying Art item.",
-    "publicAudio": "Cache-busted main Mandarin audio filename: yun-hai-zhi-lian-main-zh-Hans-20260630.mp3"
+    "publicAudio": "Cache-busted main Mandarin audio filename: yun-hai-zhi-lian-main-zh-Hans-20260630.mp3",
+    "lyricCorrection20260630b": "After user listening review, added likely missed sung phrases 一点，一点 and 梦也缱绻 to the corrected website lyric set."
   },
   "artifacts": [
     {

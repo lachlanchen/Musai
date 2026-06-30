@@ -272,65 +272,99 @@
       "id": "l06",
       "start": 36.78,
       "end": 47.8,
-      "text": "慢慢，慢慢，穿过云海",
-      "singableText": "慢慢，慢慢，穿过云海",
+      "text": "慢慢，慢慢，一点，一点，穿过云海",
+      "singableText": "慢慢，慢慢，一点，一点，穿过云海",
       "role": "lyric",
       "tokens": [
         {
           "text": "慢",
           "start": 36.78,
-          "end": 37.882,
+          "end": 37.469,
           "pinyin": "man4"
         },
         {
           "text": "慢",
-          "start": 37.882,
-          "end": 38.984,
+          "start": 37.469,
+          "end": 38.157,
           "pinyin": "man4"
         },
         {
           "text": "，",
-          "start": 38.984,
-          "end": 40.086
+          "start": 38.157,
+          "end": 38.846
         },
         {
           "text": "慢",
-          "start": 40.086,
-          "end": 41.188,
+          "start": 38.846,
+          "end": 39.535,
           "pinyin": "man4"
         },
         {
           "text": "慢",
-          "start": 41.188,
+          "start": 39.535,
+          "end": 40.224,
+          "pinyin": "man4"
+        },
+        {
+          "text": "，",
+          "start": 40.224,
+          "end": 40.913
+        },
+        {
+          "text": "一",
+          "start": 40.913,
+          "end": 41.601,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "点",
+          "start": 41.601,
           "end": 42.29,
-          "pinyin": "man4"
+          "pinyin": "dian3"
         },
         {
           "text": "，",
           "start": 42.29,
-          "end": 43.392
+          "end": 42.979
+        },
+        {
+          "text": "一",
+          "start": 42.979,
+          "end": 43.667,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "点",
+          "start": 43.667,
+          "end": 44.356,
+          "pinyin": "dian3"
+        },
+        {
+          "text": "，",
+          "start": 44.356,
+          "end": 45.045
         },
         {
           "text": "穿",
-          "start": 43.392,
-          "end": 44.494,
+          "start": 45.045,
+          "end": 45.734,
           "pinyin": "chuan1"
         },
         {
           "text": "过",
-          "start": 44.494,
-          "end": 45.596,
+          "start": 45.734,
+          "end": 46.422,
           "pinyin": "guo4"
         },
         {
           "text": "云",
-          "start": 45.596,
-          "end": 46.698,
+          "start": 46.422,
+          "end": 47.111,
           "pinyin": "yun2"
         },
         {
           "text": "海",
-          "start": 46.698,
+          "start": 47.111,
           "end": 47.8,
           "pinyin": "hai3"
         }
@@ -752,6 +786,40 @@
           "start": 91.62,
           "end": 92.52,
           "pinyin": "jian1"
+        }
+      ]
+    },
+    {
+      "id": "l15b",
+      "start": 92.52,
+      "end": 97.61,
+      "text": "梦也缱绻",
+      "singableText": "梦也缱绻",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "梦",
+          "start": 92.52,
+          "end": 93.792,
+          "pinyin": "meng4"
+        },
+        {
+          "text": "也",
+          "start": 93.792,
+          "end": 95.065,
+          "pinyin": "ye3"
+        },
+        {
+          "text": "缱",
+          "start": 95.065,
+          "end": 96.338,
+          "pinyin": "qian3"
+        },
+        {
+          "text": "绻",
+          "start": 96.338,
+          "end": 97.61,
+          "pinyin": "quan3"
         }
       ]
     },
@@ -1422,6 +1490,7 @@
   "provenance": {
     "vocalSet": "zh-vocal",
     "correction": "Active Mandarin lyric corrected from DiffRhythm render using faster-whisper small ASR plus the user reference lyric. Sound-close ASR substitutions were corrected back to the intended lyric; omitted/compressed phrases were not forced into timing.",
-    "asrRun": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis/analysis/lyrics.json"
+    "asrRun": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis/analysis/lyrics.json",
+    "manualCorrection20260630": "Added two sound-supported phrases after user listening review: 一点，一点 and 梦也缱绻. Timings preserve the active Mandarin vocal structure."
   }
 }
