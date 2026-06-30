@@ -1,0 +1,454 @@
+{
+  "schema": "fun.lazying.media.manifest.v1",
+  "version": 1,
+  "id": "yun-hai-zhi-lian-haifeng-duange",
+  "kind": "song",
+  "title": "云海之恋 · 海风短歌",
+  "localizedTitles": {
+    "zh-Hans": "云海之恋 · 海风短歌",
+    "en": "Cloud Sea Love · Sea-Breeze Song",
+    "ja": "雲海の恋・海風短歌"
+  },
+  "artist": "Musia",
+  "description": "A concise ACE-Step Mandarin cloud-sea love ballad, corrected against its selected vocal render.",
+  "caption": "A short sea-breeze version of the cloud-and-sea love song.",
+  "duration": 90.0,
+  "canonicalUrl": "https://fun.lazying.art/#yun-hai-zhi-lian-haifeng-duange",
+  "share": {
+    "title": "云海之恋 · 海风短歌 - Fun Lazying Art",
+    "description": "A Musia ACE-Step Mandarin cloud-sea love ballad with corrected trilingual lyrics.",
+    "url": "https://fun.lazying.art/#yun-hai-zhi-lian-haifeng-duange",
+    "image": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
+    "siteName": "Fun Lazying Art"
+  },
+  "assets": {
+    "cover": {
+      "id": "cover",
+      "label": "云海之恋 · 海风短歌 cover",
+      "role": "cover",
+      "src": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 900
+    },
+    "poster": {
+      "id": "poster",
+      "label": "16:9 Poster",
+      "role": "poster",
+      "src": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 900
+    },
+    "primaryAudio": {
+      "id": "haifeng-duange-zh",
+      "label": "中文",
+      "roleLabel": "Vocal",
+      "role": "vocal",
+      "languageCode": "zh-Hans",
+      "languageLabel": "中文",
+      "lyricSetId": "zh-vocal",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/yun-hai-zhi-lian-haifeng-duange-zh-Hans-ace-20260630.mp3",
+      "mime": "audio/mpeg"
+    },
+    "alternateAudio": []
+  },
+  "musical": {
+    "key": "D major / detected A-centered cadence",
+    "bpm": 75.99954044117646,
+    "timeSignature": "4/4",
+    "chords": [
+      {
+        "start": 0.0,
+        "end": 15.139,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 15.139,
+        "end": 18.297,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 18.297,
+        "end": 21.455,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 21.455,
+        "end": 23.057,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 23.057,
+        "end": 24.636,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 24.636,
+        "end": 26.982,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 26.982,
+        "end": 27.771,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 27.771,
+        "end": 30.14,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 30.14,
+        "end": 30.929,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 30.929,
+        "end": 34.087,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 34.087,
+        "end": 35.666,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 35.666,
+        "end": 37.245,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 37.245,
+        "end": 39.613,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 39.613,
+        "end": 43.561,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 43.561,
+        "end": 46.719,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 46.719,
+        "end": 48.298,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 48.298,
+        "end": 49.876,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 49.876,
+        "end": 52.268,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 52.268,
+        "end": 53.034,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 53.034,
+        "end": 56.192,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 56.192,
+        "end": 59.35,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 59.35,
+        "end": 60.929,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 60.929,
+        "end": 62.508,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 62.508,
+        "end": 65.666,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 65.666,
+        "end": 67.245,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 67.245,
+        "end": 68.824,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 68.824,
+        "end": 69.613,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 69.613,
+        "end": 70.403,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 70.403,
+        "end": 74.35,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 74.35,
+        "end": 75.14,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 75.14,
+        "end": 77.508,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 77.508,
+        "end": 78.298,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 78.298,
+        "end": 81.456,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 81.456,
+        "end": 90.0,
+        "name": "A",
+        "degree": ""
+      }
+    ]
+  },
+  "textTracks": [],
+  "lyricSets": [
+    {
+      "id": "zh-vocal",
+      "label": "中文 vocal",
+      "languageCode": "zh-Hans",
+      "tracks": [
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "pinyin",
+            "active-vocal"
+          ],
+          "path": "lyrics/zh-vocal/zh-Hans.json"
+        },
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/en.json"
+        },
+        {
+          "code": "ja",
+          "label": "Japanese",
+          "nativeLabel": "日本語",
+          "script": "Jpan",
+          "features": [
+            "furigana",
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/ja.json"
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "unit": "seconds",
+    "lines": [
+      {
+        "id": "l01",
+        "start": 17.76,
+        "end": 19.96,
+        "text": "云在天地间"
+      },
+      {
+        "id": "l02",
+        "start": 19.96,
+        "end": 23.86,
+        "text": "想念像风，靠近你身边"
+      },
+      {
+        "id": "l03",
+        "start": 23.86,
+        "end": 25.58,
+        "text": "望着那么远"
+      },
+      {
+        "id": "l04",
+        "start": 25.58,
+        "end": 27.94,
+        "text": "却像在眼前"
+      },
+      {
+        "id": "l05",
+        "start": 27.94,
+        "end": 33.16,
+        "text": "慢慢地靠近，一点一点"
+      },
+      {
+        "id": "l06",
+        "start": 33.16,
+        "end": 34.9,
+        "text": "穿过云海"
+      },
+      {
+        "id": "l07",
+        "start": 35.46,
+        "end": 37.38,
+        "text": "落进心里面"
+      },
+      {
+        "id": "l08",
+        "start": 39.07,
+        "end": 40.97,
+        "text": "我想了五年"
+      },
+      {
+        "id": "l09",
+        "start": 40.97,
+        "end": 42.97,
+        "text": "来到你身边"
+      },
+      {
+        "id": "l10",
+        "start": 42.97,
+        "end": 45.21,
+        "text": "看清你的容颜"
+      },
+      {
+        "id": "l11",
+        "start": 45.21,
+        "end": 48.05,
+        "text": "隔着山海万千"
+      },
+      {
+        "id": "l12",
+        "start": 48.05,
+        "end": 50.51,
+        "text": "也想和你相见"
+      },
+      {
+        "id": "l13",
+        "start": 51.05,
+        "end": 52.75,
+        "text": "似水流年"
+      },
+      {
+        "id": "l14",
+        "start": 54.29,
+        "end": 57.63,
+        "text": "时光慢慢转"
+      },
+      {
+        "id": "l15",
+        "start": 57.63,
+        "end": 60.75,
+        "text": "越过千年不变"
+      },
+      {
+        "id": "l16",
+        "start": 60.75,
+        "end": 62.23,
+        "text": "云海之间"
+      },
+      {
+        "id": "l17",
+        "start": 62.23,
+        "end": 64.27,
+        "text": "梦也缱绻"
+      },
+      {
+        "id": "l18",
+        "start": 64.27,
+        "end": 67.69,
+        "text": "我把爱写成一条线"
+      },
+      {
+        "id": "l19",
+        "start": 67.69,
+        "end": 70.61,
+        "text": "牵向你的天边"
+      },
+      {
+        "id": "l20",
+        "start": 70.61,
+        "end": 78.36,
+        "text": "我在远方"
+      },
+      {
+        "id": "l21",
+        "start": 79.77,
+        "end": 82.47,
+        "text": "仍想回到你身边"
+      }
+    ]
+  },
+  "provenance": {
+    "createdBy": "Musia",
+    "generationProject": "data/creative_projects/yun-hai-zhi-lian-haifeng-duange-20260630",
+    "audioSource": "ACE-Step 1.5 XL Turbo seed 731531 selected from three tested seeds.",
+    "analysisRun": "data/runs/yun-hai-zhi-lian-haifeng-duange-20260630-analysis",
+    "quality": {
+      "asrOverlap": 0.5235602094240838,
+      "gate": "pass"
+    },
+    "lyricCorrection": "Corrected from same-vocal ASR plus medium ASR cross-check and reference lyric. Draft bridge/final chorus were skipped/compressed by the render and are intentionally omitted from public lyrics.",
+    "coverSource": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
+    "publicAudio": "yun-hai-zhi-lian-haifeng-duange-zh-Hans-ace-20260630.mp3"
+  },
+  "artifacts": []
+}

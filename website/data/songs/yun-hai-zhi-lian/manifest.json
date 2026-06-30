@@ -3,11 +3,11 @@
   "version": 1,
   "id": "yun-hai-zhi-lian",
   "kind": "song",
-  "title": "云海之恋",
+  "title": "云海之恋 · 云海长歌",
   "localizedTitles": {
-    "zh-Hans": "云海之恋",
-    "en": "Cloud Sea Love",
-    "ja": "雲海の恋"
+    "zh-Hans": "云海之恋 · 云海长歌",
+    "en": "Cloud Sea Love · Long Cloud-Sea Song",
+    "ja": "雲海の恋・雲海長歌"
   },
   "artist": "Musia",
   "description": "A spacious Mandarin cloud-and-sea love ballad generated with timed lyric conditioning and corrected against ASR evidence.",
@@ -15,7 +15,7 @@
   "duration": 160.026,
   "canonicalUrl": "https://fun.lazying.art/#yun-hai-zhi-lian",
   "share": {
-    "title": "云海之恋 - Fun Lazying Art",
+    "title": "云海之恋 · 云海长歌 - Fun Lazying Art",
     "description": "A Musia Mandarin cloud-sea love ballad with corrected trilingual lyrics.",
     "url": "https://fun.lazying.art/#yun-hai-zhi-lian",
     "image": "assets/covers/yun-hai-zhi-lian-16x9.png",

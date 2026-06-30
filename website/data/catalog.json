@@ -6,7 +6,7 @@
     "url": "https://fun.lazying.art",
     "protocol": "fun.lazying.media.v1"
   },
-  "defaultMedia": "yun-hai-zhi-lian",
+  "defaultMedia": "yun-hai-zhi-lian-haifeng-duange",
   "items": [
     {
       "id": "one-sky-three-lights-mixed",
@@ -35,9 +35,9 @@
     {
       "id": "yun-hai-zhi-lian",
       "kind": "song",
-      "title": "云海之恋",
+      "title": "云海之恋 · 云海长歌",
       "artist": "Musia",
-      "summary": "A spacious Mandarin cloud-sea love ballad with corrected trilingual lyrics, pinyin, furigana, and chord timing.",
+      "summary": "A longer spacious Mandarin cloud-sea love ballad with corrected trilingual lyrics, pinyin, furigana, and chord timing.",
       "manifest": "data/songs/yun-hai-zhi-lian/manifest.json",
       "cover": "assets/covers/yun-hai-zhi-lian-16x9.png",
       "languages": [
@@ -53,6 +53,30 @@
         "pinyin",
         "furigana",
         "DiffRhythm"
+      ]
+    },
+    {
+      "id": "yun-hai-zhi-lian-haifeng-duange",
+      "kind": "song",
+      "title": "云海之恋 · 海风短歌",
+      "artist": "Musia",
+      "summary": "A concise ACE-Step Mandarin cloud-sea love ballad with ASR-corrected trilingual lyrics, pinyin, furigana, and chord timing.",
+      "manifest": "data/songs/yun-hai-zhi-lian-haifeng-duange/manifest.json",
+      "cover": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
+      "languages": [
+        "zh-Hans",
+        "en",
+        "ja"
+      ],
+      "tags": [
+        "music",
+        "love",
+        "cloud-sea",
+        "Mandarin",
+        "ACE-Step",
+        "short-song",
+        "pinyin",
+        "furigana"
       ]
     },
     {
