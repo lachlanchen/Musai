@@ -1,0 +1,1768 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "xia-ke-xing-original-poem",
+  "language": {
+    "code": "ja",
+    "label": "Japanese",
+    "nativeLabel": "日本語",
+    "script": "Jpan",
+    "pronunciation": "furigana"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "start": 20.08,
+      "end": 23.6,
+      "text": "趙の侠客は胡の粗い冠紐をまとう",
+      "singableText": "趙の侠客は胡の粗い冠紐をまとう",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "趙",
+          "start": 20.08,
+          "end": 20.315,
+          "reading": "ちょう"
+        },
+        {
+          "text": "の",
+          "start": 20.315,
+          "end": 20.549
+        },
+        {
+          "text": "侠",
+          "start": 20.549,
+          "end": 20.784,
+          "reading": "きょう"
+        },
+        {
+          "text": "客",
+          "start": 20.784,
+          "end": 21.019,
+          "reading": "きゃく"
+        },
+        {
+          "text": "は",
+          "start": 21.019,
+          "end": 21.253
+        },
+        {
+          "text": "胡",
+          "start": 21.253,
+          "end": 21.488,
+          "reading": "こ"
+        },
+        {
+          "text": "の",
+          "start": 21.488,
+          "end": 21.723
+        },
+        {
+          "text": "粗",
+          "start": 21.723,
+          "end": 21.957,
+          "reading": "そ"
+        },
+        {
+          "text": "い",
+          "start": 21.957,
+          "end": 22.192
+        },
+        {
+          "text": "冠",
+          "start": 22.192,
+          "end": 22.427,
+          "reading": "かん"
+        },
+        {
+          "text": "紐",
+          "start": 22.427,
+          "end": 22.661,
+          "reading": "ひも"
+        },
+        {
+          "text": "を",
+          "start": 22.661,
+          "end": 22.896
+        },
+        {
+          "text": "ま",
+          "start": 22.896,
+          "end": 23.131
+        },
+        {
+          "text": "と",
+          "start": 23.131,
+          "end": 23.365
+        },
+        {
+          "text": "う",
+          "start": 23.365,
+          "end": 23.6
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 23.6,
+      "end": 28.42,
+      "text": "呉鉤は霜雪のように明るい",
+      "singableText": "呉鉤は霜雪のように明るい",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "呉",
+          "start": 23.6,
+          "end": 24.002,
+          "reading": "くれ"
+        },
+        {
+          "text": "鉤",
+          "start": 24.002,
+          "end": 24.403,
+          "reading": "こう"
+        },
+        {
+          "text": "は",
+          "start": 24.403,
+          "end": 24.805
+        },
+        {
+          "text": "霜",
+          "start": 24.805,
+          "end": 25.207,
+          "reading": "しも"
+        },
+        {
+          "text": "雪",
+          "start": 25.207,
+          "end": 25.608,
+          "reading": "ゆき"
+        },
+        {
+          "text": "の",
+          "start": 25.608,
+          "end": 26.01
+        },
+        {
+          "text": "よ",
+          "start": 26.01,
+          "end": 26.412
+        },
+        {
+          "text": "う",
+          "start": 26.412,
+          "end": 26.813
+        },
+        {
+          "text": "に",
+          "start": 26.813,
+          "end": 27.215
+        },
+        {
+          "text": "明",
+          "start": 27.215,
+          "end": 27.617,
+          "reading": "めい"
+        },
+        {
+          "text": "る",
+          "start": 27.617,
+          "end": 28.018
+        },
+        {
+          "text": "い",
+          "start": 28.018,
+          "end": 28.42
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 28.42,
+      "end": 30.8,
+      "text": "銀の鞍が白馬を照らす",
+      "singableText": "銀の鞍が白馬を照らす",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "銀",
+          "start": 28.42,
+          "end": 28.658,
+          "reading": "ぎん"
+        },
+        {
+          "text": "の",
+          "start": 28.658,
+          "end": 28.896
+        },
+        {
+          "text": "鞍",
+          "start": 28.896,
+          "end": 29.134,
+          "reading": "くら"
+        },
+        {
+          "text": "が",
+          "start": 29.134,
+          "end": 29.372
+        },
+        {
+          "text": "白",
+          "start": 29.372,
+          "end": 29.61,
+          "reading": "しろ"
+        },
+        {
+          "text": "馬",
+          "start": 29.61,
+          "end": 29.848,
+          "reading": "うま"
+        },
+        {
+          "text": "を",
+          "start": 29.848,
+          "end": 30.086
+        },
+        {
+          "text": "照",
+          "start": 30.086,
+          "end": 30.324,
+          "reading": "しょう"
+        },
+        {
+          "text": "ら",
+          "start": 30.324,
+          "end": 30.562
+        },
+        {
+          "text": "す",
+          "start": 30.562,
+          "end": 30.8
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 30.8,
+      "end": 33.54,
+      "text": "颯沓として流星のように駆ける",
+      "singableText": "颯沓として流星のように駆ける",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "颯",
+          "start": 30.8,
+          "end": 30.996,
+          "reading": "さつ"
+        },
+        {
+          "text": "沓",
+          "start": 30.996,
+          "end": 31.191,
+          "reading": "くつ"
+        },
+        {
+          "text": "と",
+          "start": 31.191,
+          "end": 31.387
+        },
+        {
+          "text": "し",
+          "start": 31.387,
+          "end": 31.583
+        },
+        {
+          "text": "て",
+          "start": 31.583,
+          "end": 31.779
+        },
+        {
+          "text": "流",
+          "start": 31.779,
+          "end": 31.974,
+          "reading": "りゅう"
+        },
+        {
+          "text": "星",
+          "start": 31.974,
+          "end": 32.17,
+          "reading": "ほし"
+        },
+        {
+          "text": "の",
+          "start": 32.17,
+          "end": 32.366
+        },
+        {
+          "text": "よ",
+          "start": 32.366,
+          "end": 32.561
+        },
+        {
+          "text": "う",
+          "start": 32.561,
+          "end": 32.757
+        },
+        {
+          "text": "に",
+          "start": 32.757,
+          "end": 32.953
+        },
+        {
+          "text": "駆",
+          "start": 32.953,
+          "end": 33.149,
+          "reading": "く"
+        },
+        {
+          "text": "け",
+          "start": 33.149,
+          "end": 33.344
+        },
+        {
+          "text": "る",
+          "start": 33.344,
+          "end": 33.54
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 33.54,
+      "end": 35.2,
+      "text": "十歩に一人を斬る",
+      "singableText": "十歩に一人を斬る",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "十",
+          "start": 33.54,
+          "end": 33.748,
+          "reading": "じゅう"
+        },
+        {
+          "text": "歩",
+          "start": 33.748,
+          "end": 33.955,
+          "reading": "ほ"
+        },
+        {
+          "text": "に",
+          "start": 33.955,
+          "end": 34.163
+        },
+        {
+          "text": "一",
+          "start": 34.163,
+          "end": 34.37,
+          "reading": "いち"
+        },
+        {
+          "text": "人",
+          "start": 34.37,
+          "end": 34.578,
+          "reading": "にん"
+        },
+        {
+          "text": "を",
+          "start": 34.578,
+          "end": 34.785
+        },
+        {
+          "text": "斬",
+          "start": 34.785,
+          "end": 34.992,
+          "reading": "ざん"
+        },
+        {
+          "text": "る",
+          "start": 34.992,
+          "end": 35.2
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 35.2,
+      "end": 36.55,
+      "text": "千里を行き跡を留めない",
+      "singableText": "千里を行き跡を留めない",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "千",
+          "start": 35.2,
+          "end": 35.323,
+          "reading": "せん"
+        },
+        {
+          "text": "里",
+          "start": 35.323,
+          "end": 35.445,
+          "reading": "さと"
+        },
+        {
+          "text": "を",
+          "start": 35.445,
+          "end": 35.568
+        },
+        {
+          "text": "行",
+          "start": 35.568,
+          "end": 35.691,
+          "reading": "ぎょう"
+        },
+        {
+          "text": "き",
+          "start": 35.691,
+          "end": 35.814
+        },
+        {
+          "text": "跡",
+          "start": 35.814,
+          "end": 35.936,
+          "reading": "あと"
+        },
+        {
+          "text": "を",
+          "start": 35.936,
+          "end": 36.059
+        },
+        {
+          "text": "留",
+          "start": 36.059,
+          "end": 36.182,
+          "reading": "りゅう"
+        },
+        {
+          "text": "め",
+          "start": 36.182,
+          "end": 36.305
+        },
+        {
+          "text": "な",
+          "start": 36.305,
+          "end": 36.427
+        },
+        {
+          "text": "い",
+          "start": 36.427,
+          "end": 36.55
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 36.55,
+      "end": 37.9,
+      "text": "事が終われば衣を払って去る",
+      "singableText": "事が終われば衣を払って去る",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "事",
+          "start": 36.55,
+          "end": 36.654,
+          "reading": "こと"
+        },
+        {
+          "text": "が",
+          "start": 36.654,
+          "end": 36.758
+        },
+        {
+          "text": "終",
+          "start": 36.758,
+          "end": 36.862,
+          "reading": "おわり"
+        },
+        {
+          "text": "わ",
+          "start": 36.862,
+          "end": 36.965
+        },
+        {
+          "text": "れ",
+          "start": 36.965,
+          "end": 37.069
+        },
+        {
+          "text": "ば",
+          "start": 37.069,
+          "end": 37.173
+        },
+        {
+          "text": "衣",
+          "start": 37.173,
+          "end": 37.277,
+          "reading": "ころも"
+        },
+        {
+          "text": "を",
+          "start": 37.277,
+          "end": 37.381
+        },
+        {
+          "text": "払",
+          "start": 37.381,
+          "end": 37.485,
+          "reading": "ふつ"
+        },
+        {
+          "text": "っ",
+          "start": 37.485,
+          "end": 37.588
+        },
+        {
+          "text": "て",
+          "start": 37.588,
+          "end": 37.692
+        },
+        {
+          "text": "去",
+          "start": 37.692,
+          "end": 37.796,
+          "reading": "きょ"
+        },
+        {
+          "text": "る",
+          "start": 37.796,
+          "end": 37.9
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 37.9,
+      "end": 43.42,
+      "text": "身も名も深く隠す",
+      "singableText": "身も名も深く隠す",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "身",
+          "start": 37.9,
+          "end": 38.59,
+          "reading": "み"
+        },
+        {
+          "text": "も",
+          "start": 38.59,
+          "end": 39.28
+        },
+        {
+          "text": "名",
+          "start": 39.28,
+          "end": 39.97,
+          "reading": "めい"
+        },
+        {
+          "text": "も",
+          "start": 39.97,
+          "end": 40.66
+        },
+        {
+          "text": "深",
+          "start": 40.66,
+          "end": 41.35,
+          "reading": "しん"
+        },
+        {
+          "text": "く",
+          "start": 41.35,
+          "end": 42.04
+        },
+        {
+          "text": "隠",
+          "start": 42.04,
+          "end": 42.73,
+          "reading": "いん"
+        },
+        {
+          "text": "す",
+          "start": 42.73,
+          "end": 43.42
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 44.12,
+      "end": 46.7,
+      "text": "閑かに信陵に過り酒を飲む",
+      "singableText": "閑かに信陵に過り酒を飲む",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "閑",
+          "start": 44.12,
+          "end": 44.335,
+          "reading": "ひま"
+        },
+        {
+          "text": "か",
+          "start": 44.335,
+          "end": 44.55
+        },
+        {
+          "text": "に",
+          "start": 44.55,
+          "end": 44.765
+        },
+        {
+          "text": "信",
+          "start": 44.765,
+          "end": 44.98,
+          "reading": "しん"
+        },
+        {
+          "text": "陵",
+          "start": 44.98,
+          "end": 45.195,
+          "reading": "りょう"
+        },
+        {
+          "text": "に",
+          "start": 45.195,
+          "end": 45.41
+        },
+        {
+          "text": "過",
+          "start": 45.41,
+          "end": 45.625,
+          "reading": "か"
+        },
+        {
+          "text": "り",
+          "start": 45.625,
+          "end": 45.84
+        },
+        {
+          "text": "酒",
+          "start": 45.84,
+          "end": 46.055,
+          "reading": "さけ"
+        },
+        {
+          "text": "を",
+          "start": 46.055,
+          "end": 46.27
+        },
+        {
+          "text": "飲",
+          "start": 46.27,
+          "end": 46.485,
+          "reading": "いん"
+        },
+        {
+          "text": "む",
+          "start": 46.485,
+          "end": 46.7
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 46.7,
+      "end": 49.22,
+      "text": "剣を脱ぎ膝前に横たえる",
+      "singableText": "剣を脱ぎ膝前に横たえる",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "剣",
+          "start": 46.7,
+          "end": 46.929,
+          "reading": "つるぎ"
+        },
+        {
+          "text": "を",
+          "start": 46.929,
+          "end": 47.158
+        },
+        {
+          "text": "脱",
+          "start": 47.158,
+          "end": 47.387,
+          "reading": "だつ"
+        },
+        {
+          "text": "ぎ",
+          "start": 47.387,
+          "end": 47.616
+        },
+        {
+          "text": "膝",
+          "start": 47.616,
+          "end": 47.845,
+          "reading": "ひざ"
+        },
+        {
+          "text": "前",
+          "start": 47.845,
+          "end": 48.075,
+          "reading": "まえ"
+        },
+        {
+          "text": "に",
+          "start": 48.075,
+          "end": 48.304
+        },
+        {
+          "text": "横",
+          "start": 48.304,
+          "end": 48.533,
+          "reading": "よこ"
+        },
+        {
+          "text": "た",
+          "start": 48.533,
+          "end": 48.762
+        },
+        {
+          "text": "え",
+          "start": 48.762,
+          "end": 48.991
+        },
+        {
+          "text": "る",
+          "start": 48.991,
+          "end": 49.22
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 49.22,
+      "end": 51.7,
+      "text": "炙り肉を朱亥にすすめる",
+      "singableText": "炙り肉を朱亥にすすめる",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "炙",
+          "start": 49.22,
+          "end": 49.445,
+          "reading": "しゃ"
+        },
+        {
+          "text": "り",
+          "start": 49.445,
+          "end": 49.671
+        },
+        {
+          "text": "肉",
+          "start": 49.671,
+          "end": 49.896,
+          "reading": "にく"
+        },
+        {
+          "text": "を",
+          "start": 49.896,
+          "end": 50.122
+        },
+        {
+          "text": "朱",
+          "start": 50.122,
+          "end": 50.347,
+          "reading": "しゅ"
+        },
+        {
+          "text": "亥",
+          "start": 50.347,
+          "end": 50.573,
+          "reading": "い"
+        },
+        {
+          "text": "に",
+          "start": 50.573,
+          "end": 50.798
+        },
+        {
+          "text": "す",
+          "start": 50.798,
+          "end": 51.024
+        },
+        {
+          "text": "す",
+          "start": 51.024,
+          "end": 51.249
+        },
+        {
+          "text": "め",
+          "start": 51.249,
+          "end": 51.475
+        },
+        {
+          "text": "る",
+          "start": 51.475,
+          "end": 51.7
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 51.7,
+      "end": 54.18,
+      "text": "杯を持って侯嬴に勧める",
+      "singableText": "杯を持って侯嬴に勧める",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "杯",
+          "start": 51.7,
+          "end": 51.925,
+          "reading": "はい"
+        },
+        {
+          "text": "を",
+          "start": 51.925,
+          "end": 52.151
+        },
+        {
+          "text": "持",
+          "start": 52.151,
+          "end": 52.376,
+          "reading": "じ"
+        },
+        {
+          "text": "っ",
+          "start": 52.376,
+          "end": 52.602
+        },
+        {
+          "text": "て",
+          "start": 52.602,
+          "end": 52.827
+        },
+        {
+          "text": "侯",
+          "start": 52.827,
+          "end": 53.053,
+          "reading": "こう"
+        },
+        {
+          "text": "嬴",
+          "start": 53.053,
+          "end": 53.278,
+          "reading": "えい"
+        },
+        {
+          "text": "に",
+          "start": 53.278,
+          "end": 53.504
+        },
+        {
+          "text": "勧",
+          "start": 53.504,
+          "end": 53.729,
+          "reading": "かん"
+        },
+        {
+          "text": "め",
+          "start": 53.729,
+          "end": 53.955
+        },
+        {
+          "text": "る",
+          "start": 53.955,
+          "end": 54.18
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 56.54,
+      "end": 59.3,
+      "text": "三杯の後、約束を口にする",
+      "singableText": "三杯の後、約束を口にする",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "三",
+          "start": 56.54,
+          "end": 56.77,
+          "reading": "さん"
+        },
+        {
+          "text": "杯",
+          "start": 56.77,
+          "end": 57.0,
+          "reading": "はい"
+        },
+        {
+          "text": "の",
+          "start": 57.0,
+          "end": 57.23
+        },
+        {
+          "text": "後",
+          "start": 57.23,
+          "end": 57.46,
+          "reading": "のち"
+        },
+        {
+          "text": "、",
+          "start": 57.46,
+          "end": 57.69
+        },
+        {
+          "text": "約",
+          "start": 57.69,
+          "end": 57.92,
+          "reading": "やく"
+        },
+        {
+          "text": "束",
+          "start": 57.92,
+          "end": 58.15,
+          "reading": "そく"
+        },
+        {
+          "text": "を",
+          "start": 58.15,
+          "end": 58.38
+        },
+        {
+          "text": "口",
+          "start": 58.38,
+          "end": 58.61,
+          "reading": "くち"
+        },
+        {
+          "text": "に",
+          "start": 58.61,
+          "end": 58.84
+        },
+        {
+          "text": "す",
+          "start": 58.84,
+          "end": 59.07
+        },
+        {
+          "text": "る",
+          "start": 59.07,
+          "end": 59.3
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 59.3,
+      "end": 64.02,
+      "text": "五岳も倒れて軽しとなる",
+      "singableText": "五岳も倒れて軽しとなる",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "五",
+          "start": 59.3,
+          "end": 59.729,
+          "reading": "ご"
+        },
+        {
+          "text": "岳",
+          "start": 59.729,
+          "end": 60.158,
+          "reading": "がく"
+        },
+        {
+          "text": "も",
+          "start": 60.158,
+          "end": 60.587
+        },
+        {
+          "text": "倒",
+          "start": 60.587,
+          "end": 61.016,
+          "reading": "とう"
+        },
+        {
+          "text": "れ",
+          "start": 61.016,
+          "end": 61.445
+        },
+        {
+          "text": "て",
+          "start": 61.445,
+          "end": 61.875
+        },
+        {
+          "text": "軽",
+          "start": 61.875,
+          "end": 62.304,
+          "reading": "けい"
+        },
+        {
+          "text": "し",
+          "start": 62.304,
+          "end": 62.733
+        },
+        {
+          "text": "と",
+          "start": 62.733,
+          "end": 63.162
+        },
+        {
+          "text": "な",
+          "start": 63.162,
+          "end": 63.591
+        },
+        {
+          "text": "る",
+          "start": 63.591,
+          "end": 64.02
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "start": 64.02,
+      "end": 66.7,
+      "text": "目はくらみ耳は熱した後",
+      "singableText": "目はくらみ耳は熱した後",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "目",
+          "start": 64.02,
+          "end": 64.264,
+          "reading": "め"
+        },
+        {
+          "text": "は",
+          "start": 64.264,
+          "end": 64.507
+        },
+        {
+          "text": "く",
+          "start": 64.507,
+          "end": 64.751
+        },
+        {
+          "text": "ら",
+          "start": 64.751,
+          "end": 64.995
+        },
+        {
+          "text": "み",
+          "start": 64.995,
+          "end": 65.238
+        },
+        {
+          "text": "耳",
+          "start": 65.238,
+          "end": 65.482,
+          "reading": "みみ"
+        },
+        {
+          "text": "は",
+          "start": 65.482,
+          "end": 65.725
+        },
+        {
+          "text": "熱",
+          "start": 65.725,
+          "end": 65.969,
+          "reading": "ねつ"
+        },
+        {
+          "text": "し",
+          "start": 65.969,
+          "end": 66.213
+        },
+        {
+          "text": "た",
+          "start": 66.213,
+          "end": 66.456
+        },
+        {
+          "text": "後",
+          "start": 66.456,
+          "end": 66.7,
+          "reading": "のち"
+        }
+      ]
+    },
+    {
+      "id": "l16",
+      "start": 66.7,
+      "end": 69.68,
+      "text": "意気は白い虹となって生じる",
+      "singableText": "意気は白い虹となって生じる",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "意",
+          "start": 66.7,
+          "end": 66.929,
+          "reading": "い"
+        },
+        {
+          "text": "気",
+          "start": 66.929,
+          "end": 67.158,
+          "reading": "き"
+        },
+        {
+          "text": "は",
+          "start": 67.158,
+          "end": 67.388
+        },
+        {
+          "text": "白",
+          "start": 67.388,
+          "end": 67.617,
+          "reading": "しろ"
+        },
+        {
+          "text": "い",
+          "start": 67.617,
+          "end": 67.846
+        },
+        {
+          "text": "虹",
+          "start": 67.846,
+          "end": 68.075,
+          "reading": "にじ"
+        },
+        {
+          "text": "と",
+          "start": 68.075,
+          "end": 68.305
+        },
+        {
+          "text": "な",
+          "start": 68.305,
+          "end": 68.534
+        },
+        {
+          "text": "っ",
+          "start": 68.534,
+          "end": 68.763
+        },
+        {
+          "text": "て",
+          "start": 68.763,
+          "end": 68.992
+        },
+        {
+          "text": "生",
+          "start": 68.992,
+          "end": 69.222,
+          "reading": "なま"
+        },
+        {
+          "text": "じ",
+          "start": 69.222,
+          "end": 69.451
+        },
+        {
+          "text": "る",
+          "start": 69.451,
+          "end": 69.68
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "start": 69.68,
+      "end": 72.5,
+      "text": "趙を救わんと金槌を振るう",
+      "singableText": "趙を救わんと金槌を振るう",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "趙",
+          "start": 69.68,
+          "end": 69.915,
+          "reading": "ちょう"
+        },
+        {
+          "text": "を",
+          "start": 69.915,
+          "end": 70.15
+        },
+        {
+          "text": "救",
+          "start": 70.15,
+          "end": 70.385,
+          "reading": "きゅう"
+        },
+        {
+          "text": "わ",
+          "start": 70.385,
+          "end": 70.62
+        },
+        {
+          "text": "ん",
+          "start": 70.62,
+          "end": 70.855
+        },
+        {
+          "text": "と",
+          "start": 70.855,
+          "end": 71.09
+        },
+        {
+          "text": "金",
+          "start": 71.09,
+          "end": 71.325,
+          "reading": "きん"
+        },
+        {
+          "text": "槌",
+          "start": 71.325,
+          "end": 71.56,
+          "reading": "つち"
+        },
+        {
+          "text": "を",
+          "start": 71.56,
+          "end": 71.795
+        },
+        {
+          "text": "振",
+          "start": 71.795,
+          "end": 72.03,
+          "reading": "しん"
+        },
+        {
+          "text": "る",
+          "start": 72.03,
+          "end": 72.265
+        },
+        {
+          "text": "う",
+          "start": 72.265,
+          "end": 72.5
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "start": 72.5,
+      "end": 76.68,
+      "text": "邯鄲はまず震え驚く",
+      "singableText": "邯鄲はまず震え驚く",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "邯",
+          "start": 72.5,
+          "end": 72.964,
+          "reading": "かん"
+        },
+        {
+          "text": "鄲",
+          "start": 72.964,
+          "end": 73.429,
+          "reading": "たん"
+        },
+        {
+          "text": "は",
+          "start": 73.429,
+          "end": 73.893
+        },
+        {
+          "text": "ま",
+          "start": 73.893,
+          "end": 74.358
+        },
+        {
+          "text": "ず",
+          "start": 74.358,
+          "end": 74.822
+        },
+        {
+          "text": "震",
+          "start": 74.822,
+          "end": 75.287,
+          "reading": "しん"
+        },
+        {
+          "text": "え",
+          "start": 75.287,
+          "end": 75.751
+        },
+        {
+          "text": "驚",
+          "start": 75.751,
+          "end": 76.216,
+          "reading": "きょう"
+        },
+        {
+          "text": "く",
+          "start": 76.216,
+          "end": 76.68
+        }
+      ]
+    },
+    {
+      "id": "l19",
+      "start": 76.68,
+      "end": 78.9,
+      "text": "千秋に二人の壮士あり",
+      "singableText": "千秋に二人の壮士あり",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "千",
+          "start": 76.68,
+          "end": 76.902,
+          "reading": "せん"
+        },
+        {
+          "text": "秋",
+          "start": 76.902,
+          "end": 77.124,
+          "reading": "あき"
+        },
+        {
+          "text": "に",
+          "start": 77.124,
+          "end": 77.346
+        },
+        {
+          "text": "二",
+          "start": 77.346,
+          "end": 77.568,
+          "reading": "に"
+        },
+        {
+          "text": "人",
+          "start": 77.568,
+          "end": 77.79,
+          "reading": "にん"
+        },
+        {
+          "text": "の",
+          "start": 77.79,
+          "end": 78.012
+        },
+        {
+          "text": "壮",
+          "start": 78.012,
+          "end": 78.234,
+          "reading": "そう"
+        },
+        {
+          "text": "士",
+          "start": 78.234,
+          "end": 78.456,
+          "reading": "さむらい"
+        },
+        {
+          "text": "あ",
+          "start": 78.456,
+          "end": 78.678
+        },
+        {
+          "text": "り",
+          "start": 78.678,
+          "end": 78.9
+        }
+      ]
+    },
+    {
+      "id": "l20",
+      "start": 78.9,
+      "end": 81.0,
+      "text": "大梁の城に赫々と名をあげる",
+      "singableText": "大梁の城に赫々と名をあげる",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "大",
+          "start": 78.9,
+          "end": 79.062,
+          "reading": "だい"
+        },
+        {
+          "text": "梁",
+          "start": 79.062,
+          "end": 79.223,
+          "reading": "はり"
+        },
+        {
+          "text": "の",
+          "start": 79.223,
+          "end": 79.385
+        },
+        {
+          "text": "城",
+          "start": 79.385,
+          "end": 79.546,
+          "reading": "しろ"
+        },
+        {
+          "text": "に",
+          "start": 79.546,
+          "end": 79.708
+        },
+        {
+          "text": "赫",
+          "start": 79.708,
+          "end": 79.869,
+          "reading": "せき"
+        },
+        {
+          "text": "々",
+          "start": 79.869,
+          "end": 80.031
+        },
+        {
+          "text": "と",
+          "start": 80.031,
+          "end": 80.192
+        },
+        {
+          "text": "名",
+          "start": 80.192,
+          "end": 80.354,
+          "reading": "めい"
+        },
+        {
+          "text": "を",
+          "start": 80.354,
+          "end": 80.515
+        },
+        {
+          "text": "あ",
+          "start": 80.515,
+          "end": 80.677
+        },
+        {
+          "text": "げ",
+          "start": 80.677,
+          "end": 80.838
+        },
+        {
+          "text": "る",
+          "start": 80.838,
+          "end": 81.0
+        }
+      ]
+    },
+    {
+      "id": "l21",
+      "start": 81.0,
+      "end": 83.36,
+      "text": "たとえ死しても侠骨は香る",
+      "singableText": "たとえ死しても侠骨は香る",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "た",
+          "start": 81.0,
+          "end": 81.197
+        },
+        {
+          "text": "と",
+          "start": 81.197,
+          "end": 81.393
+        },
+        {
+          "text": "え",
+          "start": 81.393,
+          "end": 81.59
+        },
+        {
+          "text": "死",
+          "start": 81.59,
+          "end": 81.787,
+          "reading": "し"
+        },
+        {
+          "text": "し",
+          "start": 81.787,
+          "end": 81.983
+        },
+        {
+          "text": "て",
+          "start": 81.983,
+          "end": 82.18
+        },
+        {
+          "text": "も",
+          "start": 82.18,
+          "end": 82.377
+        },
+        {
+          "text": "侠",
+          "start": 82.377,
+          "end": 82.573,
+          "reading": "きょう"
+        },
+        {
+          "text": "骨",
+          "start": 82.573,
+          "end": 82.77,
+          "reading": "ほね"
+        },
+        {
+          "text": "は",
+          "start": 82.77,
+          "end": 82.967
+        },
+        {
+          "text": "香",
+          "start": 82.967,
+          "end": 83.163,
+          "reading": "かおり"
+        },
+        {
+          "text": "る",
+          "start": 83.163,
+          "end": 83.36
+        }
+      ]
+    },
+    {
+      "id": "l22",
+      "start": 83.36,
+      "end": 86.2,
+      "text": "世の英傑に恥じることはない",
+      "singableText": "世の英傑に恥じることはない",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "世",
+          "start": 83.36,
+          "end": 83.578,
+          "reading": "よ"
+        },
+        {
+          "text": "の",
+          "start": 83.578,
+          "end": 83.797
+        },
+        {
+          "text": "英",
+          "start": 83.797,
+          "end": 84.015,
+          "reading": "えい"
+        },
+        {
+          "text": "傑",
+          "start": 84.015,
+          "end": 84.234,
+          "reading": "けつ"
+        },
+        {
+          "text": "に",
+          "start": 84.234,
+          "end": 84.452
+        },
+        {
+          "text": "恥",
+          "start": 84.452,
+          "end": 84.671,
+          "reading": "はじ"
+        },
+        {
+          "text": "じ",
+          "start": 84.671,
+          "end": 84.889
+        },
+        {
+          "text": "る",
+          "start": 84.889,
+          "end": 85.108
+        },
+        {
+          "text": "こ",
+          "start": 85.108,
+          "end": 85.326
+        },
+        {
+          "text": "と",
+          "start": 85.326,
+          "end": 85.545
+        },
+        {
+          "text": "は",
+          "start": 85.545,
+          "end": 85.763
+        },
+        {
+          "text": "な",
+          "start": 85.763,
+          "end": 85.982
+        },
+        {
+          "text": "い",
+          "start": 85.982,
+          "end": 86.2
+        }
+      ]
+    },
+    {
+      "id": "l23",
+      "start": 88.8,
+      "end": 91.14,
+      "text": "誰が書閣の下で記せよう",
+      "singableText": "誰が書閣の下で記せよう",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "誰",
+          "start": 88.8,
+          "end": 89.013,
+          "reading": "だれ"
+        },
+        {
+          "text": "が",
+          "start": 89.013,
+          "end": 89.225
+        },
+        {
+          "text": "書",
+          "start": 89.225,
+          "end": 89.438,
+          "reading": "かき"
+        },
+        {
+          "text": "閣",
+          "start": 89.438,
+          "end": 89.651,
+          "reading": "かく"
+        },
+        {
+          "text": "の",
+          "start": 89.651,
+          "end": 89.864
+        },
+        {
+          "text": "下",
+          "start": 89.864,
+          "end": 90.076,
+          "reading": "した"
+        },
+        {
+          "text": "で",
+          "start": 90.076,
+          "end": 90.289
+        },
+        {
+          "text": "記",
+          "start": 90.289,
+          "end": 90.502,
+          "reading": "き"
+        },
+        {
+          "text": "せ",
+          "start": 90.502,
+          "end": 90.715
+        },
+        {
+          "text": "よ",
+          "start": 90.715,
+          "end": 90.927
+        },
+        {
+          "text": "う",
+          "start": 90.927,
+          "end": 91.14
+        }
+      ]
+    },
+    {
+      "id": "l24",
+      "start": 91.14,
+      "end": 93.96,
+      "text": "白髪で太玄経を読むばかりの者に",
+      "singableText": "白髪で太玄経を読むばかりの者に",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "白",
+          "start": 91.14,
+          "end": 91.328,
+          "reading": "しろ"
+        },
+        {
+          "text": "髪",
+          "start": 91.328,
+          "end": 91.516,
+          "reading": "かみ"
+        },
+        {
+          "text": "で",
+          "start": 91.516,
+          "end": 91.704
+        },
+        {
+          "text": "太",
+          "start": 91.704,
+          "end": 91.892,
+          "reading": "た"
+        },
+        {
+          "text": "玄",
+          "start": 91.892,
+          "end": 92.08,
+          "reading": "げん"
+        },
+        {
+          "text": "経",
+          "start": 92.08,
+          "end": 92.268,
+          "reading": "けい"
+        },
+        {
+          "text": "を",
+          "start": 92.268,
+          "end": 92.456
+        },
+        {
+          "text": "読",
+          "start": 92.456,
+          "end": 92.644,
+          "reading": "どく"
+        },
+        {
+          "text": "む",
+          "start": 92.644,
+          "end": 92.832
+        },
+        {
+          "text": "ば",
+          "start": 92.832,
+          "end": 93.02
+        },
+        {
+          "text": "か",
+          "start": 93.02,
+          "end": 93.208
+        },
+        {
+          "text": "り",
+          "start": 93.208,
+          "end": 93.396
+        },
+        {
+          "text": "の",
+          "start": 93.396,
+          "end": 93.584
+        },
+        {
+          "text": "者",
+          "start": 93.584,
+          "end": 93.772,
+          "reading": "もの"
+        },
+        {
+          "text": "に",
+          "start": 93.772,
+          "end": 93.96
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "vocalSet": "zh-vocal",
+    "correction": "Original-poem ACE experiment. Candidate 3 selected from four exact-poem renders. Timings use vocal-stem medium/large no-VAD ASR. The active Mandarin text preserves Li Bai's original poem where the rendered syllables are sound-close, but the production note documents that classical diction is imperfect and some lines are weakly recovered."
+  }
+}

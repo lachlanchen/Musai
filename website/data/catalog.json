@@ -33,6 +33,27 @@
       ]
     },
     {
+      "id": "xia-ke-xing-original-poem",
+      "kind": "song",
+      "title": "侠客行 · 原诗版",
+      "artist": "Musia",
+      "manifest": "data/songs/xia-ke-xing-original-poem/manifest.json",
+      "cover": "assets/covers/xia-ke-xing-original-poem-16x9.png",
+      "tags": [
+        "song",
+        "li-bai",
+        "tang-poetry",
+        "wuxia",
+        "ace",
+        "original-poem"
+      ],
+      "languages": [
+        "zh-Hans",
+        "en",
+        "ja"
+      ]
+    },
+    {
       "id": "yun-hai-zhi-lian-haifeng-duange",
       "kind": "song",
       "title": "云海之恋",
