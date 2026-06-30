@@ -227,26 +227,26 @@ def write_media_item() -> None:
         "version": 1,
         "id": MEDIA_ID,
         "kind": "song",
-        "title": "云海之恋 · 海风短歌",
+        "title": "云海之恋",
         "localizedTitles": {
-            "zh-Hans": "云海之恋 · 海风短歌",
-            "en": "Cloud Sea Love · Sea-Breeze Song",
-            "ja": "雲海の恋・海風短歌",
+            "zh-Hans": "云海之恋",
+            "en": "Cloud Sea Love",
+            "ja": "雲海の恋",
         },
         "artist": "Musia",
-        "description": "A concise ACE-Step Mandarin cloud-sea love ballad, corrected against its selected vocal render.",
-        "caption": "A short sea-breeze version of the cloud-and-sea love song.",
+        "description": "The standard ACE-Step Mandarin cloud-sea love ballad, corrected against its selected vocal render.",
+        "caption": "A cloud-and-sea love song carried by distance, time, and longing.",
         "duration": round(duration(SELECTED_AUDIO), 3),
         "canonicalUrl": f"https://fun.lazying.art/#{MEDIA_ID}",
         "share": {
-            "title": "云海之恋 · 海风短歌 - Fun Lazying Art",
+            "title": "云海之恋 - Fun Lazying Art",
             "description": "A Musia ACE-Step Mandarin cloud-sea love ballad with corrected trilingual lyrics.",
             "url": f"https://fun.lazying.art/#{MEDIA_ID}",
             "image": cover,
             "siteName": "Fun Lazying Art",
         },
         "assets": {
-            "cover": {"id": "cover", "label": "云海之恋 · 海风短歌 cover", "role": "cover", "src": cover, "mime": "image/png", "width": 1600, "height": 900},
+            "cover": {"id": "cover", "label": "云海之恋 cover", "role": "cover", "src": cover, "mime": "image/png", "width": 1600, "height": 900},
             "poster": {"id": "poster", "label": "16:9 Poster", "role": "poster", "src": cover, "mime": "image/png", "width": 1600, "height": 900},
             "primaryAudio": {
                 "id": "haifeng-duange-zh",
@@ -281,6 +281,7 @@ def write_media_item() -> None:
             }
         ],
         "timeline": {"unit": "seconds", "lines": timeline},
+        "playback": {"defaultMode": "single", "reason": "Standard ACE-selected version should loop by default for listening and recording."},
         "provenance": {
             "createdBy": "Musia",
             "generationProject": str(PROJECT.relative_to(ROOT)),
@@ -299,35 +300,36 @@ def write_media_item() -> None:
 def rename_long_version() -> None:
     path = ROOT / "website/data/songs/yun-hai-zhi-lian/manifest.json"
     manifest = read_json(path)
-    manifest["title"] = "云海之恋 · 云海长歌"
+    manifest["title"] = "云海之恋 · DR Full Lyrics"
     manifest["localizedTitles"] = {
-        "zh-Hans": "云海之恋 · 云海长歌",
-        "en": "Cloud Sea Love · Long Cloud-Sea Song",
-        "ja": "雲海の恋・雲海長歌",
+        "zh-Hans": "云海之恋 · DR 完整歌词版",
+        "en": "Cloud Sea Love · DR Full Lyrics",
+        "ja": "雲海の恋・DR完全歌詞版",
     }
-    manifest["share"]["title"] = "云海之恋 · 云海长歌 - Fun Lazying Art"
+    manifest["share"]["title"] = "云海之恋 · DR Full Lyrics - Fun Lazying Art"
     write_json(path, manifest)
 
 
 def update_catalog() -> None:
     path = ROOT / "website/data/catalog.json"
     catalog = read_json(path)
+    catalog["defaultMedia"] = MEDIA_ID
     new_item = {
         "id": MEDIA_ID,
         "kind": "song",
-        "title": "云海之恋 · 海风短歌",
+        "title": "云海之恋",
         "artist": "Musia",
-        "summary": "A concise ACE-Step Mandarin cloud-sea love ballad with ASR-corrected trilingual lyrics, pinyin, furigana, and chord timing.",
+        "summary": "The standard ACE-Step Mandarin cloud-sea love ballad with ASR-corrected trilingual lyrics, pinyin, furigana, and chord timing.",
         "manifest": f"data/songs/{MEDIA_ID}/manifest.json",
         "cover": f"assets/covers/{MEDIA_ID}-16x9.png",
         "languages": ["zh-Hans", "en", "ja"],
-        "tags": ["music", "love", "cloud-sea", "Mandarin", "ACE-Step", "short-song", "pinyin", "furigana"],
+        "tags": ["music", "love", "cloud-sea", "Mandarin", "ACE-Step", "standard", "pinyin", "furigana"],
     }
     items = [item for item in catalog["items"] if item.get("id") != MEDIA_ID]
     for item in items:
         if item.get("id") == LONG_ID:
-            item["title"] = "云海之恋 · 云海长歌"
-            item["summary"] = "A longer spacious Mandarin cloud-sea love ballad with corrected trilingual lyrics, pinyin, furigana, and chord timing."
+            item["title"] = "云海之恋 · DR Full Lyrics"
+            item["summary"] = "A full-length DiffRhythm Mandarin cloud-sea route with corrected trilingual lyrics, pinyin, furigana, and chord timing."
     long_index = next((index for index, item in enumerate(items) if item.get("id") == LONG_ID), 0)
     items.insert(long_index + 1, new_item)
     catalog["items"] = items

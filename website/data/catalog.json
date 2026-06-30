@@ -6,7 +6,7 @@
     "url": "https://fun.lazying.art",
     "protocol": "fun.lazying.media.v1"
   },
-  "defaultMedia": "yun-hai-zhi-lian",
+  "defaultMedia": "yun-hai-zhi-lian-haifeng-duange",
   "items": [
     {
       "id": "one-sky-three-lights-mixed",
@@ -33,11 +33,60 @@
       ]
     },
     {
+      "id": "yun-hai-zhi-lian-haifeng-duange",
+      "kind": "song",
+      "title": "云海之恋",
+      "artist": "Musia",
+      "summary": "The standard ACE-Step Mandarin cloud-sea love ballad with ASR-corrected trilingual lyrics, pinyin, furigana, and chord timing.",
+      "manifest": "data/songs/yun-hai-zhi-lian-haifeng-duange/manifest.json",
+      "cover": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
+      "languages": [
+        "zh-Hans",
+        "en",
+        "ja"
+      ],
+      "tags": [
+        "music",
+        "love",
+        "cloud-sea",
+        "Mandarin",
+        "ACE-Step",
+        "standard",
+        "pinyin",
+        "furigana"
+      ]
+    },
+    {
+      "id": "yun-hai-zhi-lian-dr-short",
+      "kind": "song",
+      "title": "云海之恋 · DR Short",
+      "artist": "Musia",
+      "summary": "A compact DiffRhythm Mandarin cloud-sea route with ASR-corrected trilingual lyrics and chord timing.",
+      "manifest": "data/songs/yun-hai-zhi-lian-dr-short/manifest.json",
+      "cover": "assets/covers/yun-hai-zhi-lian-16x9.png",
+      "languages": [
+        "zh-Hans",
+        "en",
+        "ja"
+      ],
+      "tags": [
+        "music",
+        "love",
+        "cloud-sea",
+        "Mandarin",
+        "DiffRhythm",
+        "DR",
+        "short",
+        "pinyin",
+        "furigana"
+      ]
+    },
+    {
       "id": "yun-hai-zhi-lian",
       "kind": "song",
-      "title": "云海之恋 · 云海长歌",
+      "title": "云海之恋 · DR Full Lyrics",
       "artist": "Musia",
-      "summary": "A full-length DiffRhythm Mandarin cloud-sea love ballad with corrected trilingual lyrics, pinyin, furigana, and chord timing.",
+      "summary": "A full-length DiffRhythm Mandarin cloud-sea route with corrected trilingual lyrics, pinyin, furigana, and chord timing.",
       "manifest": "data/songs/yun-hai-zhi-lian/manifest.json",
       "cover": "assets/covers/yun-hai-zhi-lian-16x9.png",
       "languages": [
@@ -53,39 +102,16 @@
         "pinyin",
         "furigana",
         "DiffRhythm",
-        "full-song"
-      ]
-    },
-    {
-      "id": "yun-hai-zhi-lian-haifeng-duange",
-      "kind": "song",
-      "title": "云海之恋 · 海风短歌",
-      "artist": "Musia",
-      "summary": "A concise ACE-Step Mandarin cloud-sea love ballad with ASR-corrected trilingual lyrics, pinyin, furigana, and chord timing.",
-      "manifest": "data/songs/yun-hai-zhi-lian-haifeng-duange/manifest.json",
-      "cover": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
-      "languages": [
-        "zh-Hans",
-        "en",
-        "ja"
-      ],
-      "tags": [
-        "music",
-        "love",
-        "cloud-sea",
-        "Mandarin",
-        "ACE-Step",
-        "short-song",
-        "pinyin",
-        "furigana"
+        "DR",
+        "full-lyrics"
       ]
     },
     {
       "id": "yun-hai-zhi-lian-legacy",
       "kind": "song",
-      "title": "云海之恋 - Legacy",
+      "title": "云海之恋 · ACE Legacy",
       "artist": "Musia",
-      "summary": "Earlier generated cloud-sea love ballad candidate preserved for comparison.",
+      "summary": "An earlier ACE-Step cloud-sea love ballad candidate preserved for comparison.",
       "manifest": "data/songs/yun-hai-zhi-lian-legacy/manifest.json",
       "cover": "assets/covers/yun-hai-zhi-lian-16x9.png",
       "languages": [
@@ -97,6 +123,8 @@
         "music",
         "love",
         "cloud-sea",
+        "ACE-Step",
+        "ACE Legacy",
         "legacy"
       ]
     },
@@ -179,9 +207,9 @@
     {
       "id": "take-care-of-yourself",
       "kind": "localized-song",
-      "title": "Take Care of Yourself",
+      "title": "Take Care of Yourself · SoulX Localization",
       "artist": "Musia",
-      "summary": "A hopeful song about self-care and inner light, with English, Mandarin, and Cantonese vocals and synced lyrics.",
+      "summary": "The earlier SoulX/localization-route self-care song with English, Mandarin, and Cantonese vocals.",
       "manifest": "data/songs/take-care-of-yourself/manifest.json",
       "cover": "assets/covers/take-care-of-yourself-16x9.png",
       "languages": [
@@ -192,6 +220,8 @@
       "tags": [
         "music",
         "localized-song",
+        "SoulX",
+        "method-suffix",
         "hope",
         "self-care",
         "Mandarin",
@@ -201,9 +231,9 @@
     {
       "id": "take-care-of-yourself-hope-version",
       "kind": "song",
-      "title": "Take Care of Yourself - Hope Version",
+      "title": "Take Care of Yourself",
       "artist": "Musia",
-      "summary": "A spacious hopeful version in English, Japanese, and Mandarin, centered on care, courage, and light.",
+      "summary": "The standard spacious hope song in English, Japanese, and Mandarin, centered on care, courage, and light.",
       "manifest": "data/songs/take-care-of-yourself-hope-version/manifest.json",
       "cover": "assets/covers/take-care-of-yourself-16x9.png",
       "languages": [
@@ -215,6 +245,8 @@
         "music",
         "hope",
         "self-care",
+        "ACE-Step",
+        "standard",
         "English",
         "Japanese",
         "Mandarin"

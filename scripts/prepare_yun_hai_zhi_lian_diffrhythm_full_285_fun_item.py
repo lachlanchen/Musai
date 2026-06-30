@@ -399,16 +399,16 @@ def update_manifest() -> None:
     for code, lines in tracks.items():
         write_json(media_dir / "lyrics/zh-vocal" / f"{code}.json", track(code, lines))
 
-    manifest["title"] = "云海之恋 · 云海长歌"
+    manifest["title"] = "云海之恋 · DR Full Lyrics"
     manifest["localizedTitles"] = {
-        "zh-Hans": "云海之恋 · 云海长歌",
-        "en": "Cloud Sea Love · Long Cloud-Sea Song",
-        "ja": "雲海の恋・雲海長歌",
+        "zh-Hans": "云海之恋 · DR 完整歌词版",
+        "en": "Cloud Sea Love · DR Full Lyrics",
+        "ja": "雲海の恋・DR完全歌詞版",
     }
     manifest["description"] = "A full-length DiffRhythm Mandarin cloud-sea love ballad with LRC-conditioned lyrics corrected against ASR evidence."
     manifest["caption"] = "Between sky and sea, longing becomes one line through time."
     manifest["duration"] = round(song_duration, 3)
-    manifest["share"]["title"] = "云海之恋 · 云海长歌 - Fun Lazying Art"
+    manifest["share"]["title"] = "云海之恋 · DR Full Lyrics - Fun Lazying Art"
     manifest["share"]["description"] = "A full-length Musia DiffRhythm Mandarin cloud-sea love ballad with corrected trilingual lyrics."
     manifest["assets"]["primaryAudio"]["src"] = PUBLIC_AUDIO
     manifest["assets"]["primaryAudio"]["label"] = "中文"
@@ -458,12 +458,12 @@ def update_manifest() -> None:
 def update_catalog() -> None:
     path = ROOT / "website/data/catalog.json"
     catalog = read_json(path)
-    catalog["defaultMedia"] = MEDIA_ID
+    catalog["defaultMedia"] = "yun-hai-zhi-lian-haifeng-duange"
     for item in catalog["items"]:
         if item.get("id") == MEDIA_ID:
-            item["title"] = "云海之恋 · 云海长歌"
-            item["summary"] = "A full-length DiffRhythm Mandarin cloud-sea love ballad with corrected trilingual lyrics, pinyin, furigana, and chord timing."
-            item["tags"] = ["music", "love", "cloud-sea", "Mandarin", "pinyin", "furigana", "DiffRhythm", "full-song"]
+            item["title"] = "云海之恋 · DR Full Lyrics"
+            item["summary"] = "A full-length DiffRhythm Mandarin cloud-sea route with corrected trilingual lyrics, pinyin, furigana, and chord timing."
+            item["tags"] = ["music", "love", "cloud-sea", "Mandarin", "pinyin", "furigana", "DiffRhythm", "DR", "full-lyrics"]
     write_json(path, catalog)
 
 

@@ -1,0 +1,1123 @@
+{
+  "schema": "fun.lazying.media.manifest.v1",
+  "version": 1,
+  "id": "yun-hai-zhi-lian-dr-short",
+  "kind": "song",
+  "title": "云海之恋 · DR Short",
+  "localizedTitles": {
+    "zh-Hans": "云海之恋 · DR 短版",
+    "en": "Cloud Sea Love · DR Short",
+    "ja": "雲海の恋・DR短編"
+  },
+  "artist": "Musia",
+  "description": "A DiffRhythm short Mandarin cloud-sea love ballad, corrected against its selected vocal render.",
+  "caption": "A compact DiffRhythm route kept for comparison with the ACE standard version.",
+  "duration": 159.985,
+  "canonicalUrl": "https://fun.lazying.art/#yun-hai-zhi-lian-dr-short",
+  "share": {
+    "title": "云海之恋 · DR Short - Fun Lazying Art",
+    "description": "A Musia DiffRhythm short cloud-sea love ballad with corrected trilingual lyrics.",
+    "url": "https://fun.lazying.art/#yun-hai-zhi-lian-dr-short",
+    "image": "assets/covers/yun-hai-zhi-lian-16x9.png",
+    "siteName": "Fun Lazying Art"
+  },
+  "assets": {
+    "cover": {
+      "id": "cover",
+      "label": "云海之恋 · DR Short cover",
+      "role": "cover",
+      "src": "assets/covers/yun-hai-zhi-lian-16x9.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 900
+    },
+    "poster": {
+      "id": "poster",
+      "label": "16:9 Poster",
+      "role": "poster",
+      "src": "assets/covers/yun-hai-zhi-lian-16x9.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 900
+    },
+    "primaryAudio": {
+      "id": "yun-hai-dr-short-zh",
+      "label": "中文",
+      "roleLabel": "Vocal",
+      "role": "vocal",
+      "languageCode": "zh-Hans",
+      "languageLabel": "中文",
+      "lyricSetId": "zh-vocal",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/yun-hai-zhi-lian-main-zh-Hans-20260630.mp3",
+      "mime": "audio/mpeg"
+    },
+    "alternateAudio": []
+  },
+  "musical": {
+    "key": "detected Eb/Bb center",
+    "bpm": 117.45,
+    "timeSignature": "4/4",
+    "chords": [
+      {
+        "start": 0.0,
+        "end": 2.926,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 2.926,
+        "end": 9.056,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 9.056,
+        "end": 10.124,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 10.124,
+        "end": 12.771,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 12.771,
+        "end": 14.234,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 14.234,
+        "end": 14.721,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 14.721,
+        "end": 16.231,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 16.231,
+        "end": 16.742,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 16.742,
+        "end": 17.183,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 17.183,
+        "end": 17.694,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 17.694,
+        "end": 18.204,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 18.204,
+        "end": 19.667,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 19.667,
+        "end": 20.666,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 20.666,
+        "end": 21.153,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 21.153,
+        "end": 22.105,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 22.105,
+        "end": 22.616,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 22.616,
+        "end": 25.101,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 25.101,
+        "end": 25.658,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 25.658,
+        "end": 26.169,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 26.169,
+        "end": 26.657,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 26.657,
+        "end": 29.187,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 29.187,
+        "end": 30.14,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 30.14,
+        "end": 30.604,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 30.604,
+        "end": 31.068,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 31.068,
+        "end": 33.088,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 33.088,
+        "end": 33.576,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 33.576,
+        "end": 34.133,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 34.133,
+        "end": 35.109,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 35.109,
+        "end": 41.819,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 41.819,
+        "end": 42.33,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 42.33,
+        "end": 42.841,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 42.841,
+        "end": 43.839,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 43.839,
+        "end": 45.836,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 45.836,
+        "end": 46.347,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 46.347,
+        "end": 47.345,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 47.345,
+        "end": 47.856,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 47.856,
+        "end": 49.412,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 49.412,
+        "end": 50.898,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 50.898,
+        "end": 51.432,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 51.432,
+        "end": 54.404,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 54.404,
+        "end": 55.844,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 55.844,
+        "end": 56.355,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 56.355,
+        "end": 57.446,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 57.446,
+        "end": 59.49,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 59.49,
+        "end": 59.954,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 59.954,
+        "end": 60.558,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 60.558,
+        "end": 61.068,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 61.068,
+        "end": 62.601,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 62.601,
+        "end": 63.112,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 63.112,
+        "end": 65.155,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 65.155,
+        "end": 65.643,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 65.643,
+        "end": 66.177,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 66.177,
+        "end": 67.222,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 67.222,
+        "end": 67.709,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 67.709,
+        "end": 69.195,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 69.195,
+        "end": 70.217,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 70.217,
+        "end": 70.705,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 70.705,
+        "end": 71.192,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 71.192,
+        "end": 72.214,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 72.214,
+        "end": 73.213,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 73.213,
+        "end": 75.093,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 75.093,
+        "end": 75.604,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 75.604,
+        "end": 76.185,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 76.185,
+        "end": 76.696,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 76.696,
+        "end": 77.206,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 77.206,
+        "end": 79.18,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 79.18,
+        "end": 80.202,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 80.202,
+        "end": 80.713,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 80.713,
+        "end": 83.661,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 83.661,
+        "end": 86.541,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 86.541,
+        "end": 87.052,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 87.052,
+        "end": 87.562,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 87.562,
+        "end": 88.073,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 88.073,
+        "end": 93.112,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 93.112,
+        "end": 94.157,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 94.157,
+        "end": 95.597,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 95.597,
+        "end": 96.084,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 96.084,
+        "end": 96.595,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 96.595,
+        "end": 97.129,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 97.129,
+        "end": 97.686,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 97.686,
+        "end": 98.22,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 98.22,
+        "end": 100.194,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 100.194,
+        "end": 102.795,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 102.795,
+        "end": 103.282,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 103.282,
+        "end": 103.793,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 103.793,
+        "end": 104.327,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 104.327,
+        "end": 106.347,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 106.347,
+        "end": 107.369,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 107.369,
+        "end": 108.321,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 108.321,
+        "end": 112.408,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 112.408,
+        "end": 113.476,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 113.476,
+        "end": 113.987,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 113.987,
+        "end": 114.474,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 114.474,
+        "end": 117.075,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 117.075,
+        "end": 118.12,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 118.12,
+        "end": 119.095,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 119.095,
+        "end": 120.094,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 120.094,
+        "end": 120.604,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 120.604,
+        "end": 121.696,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 121.696,
+        "end": 122.717,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 122.717,
+        "end": 123.205,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 123.205,
+        "end": 125.132,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 125.132,
+        "end": 125.643,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 125.643,
+        "end": 126.131,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 126.131,
+        "end": 126.642,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 126.642,
+        "end": 129.753,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 129.753,
+        "end": 130.798,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 130.798,
+        "end": 131.309,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 131.309,
+        "end": 132.865,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 132.865,
+        "end": 135.814,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 135.814,
+        "end": 137.88,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 137.88,
+        "end": 140.527,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 140.527,
+        "end": 141.038,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 141.038,
+        "end": 141.572,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 141.572,
+        "end": 142.083,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 142.083,
+        "end": 143.105,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 143.105,
+        "end": 143.639,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 143.639,
+        "end": 144.66,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 144.66,
+        "end": 145.171,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 145.171,
+        "end": 146.193,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 146.193,
+        "end": 146.634,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 146.634,
+        "end": 147.098,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 147.098,
+        "end": 147.563,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 147.563,
+        "end": 148.004,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 148.004,
+        "end": 148.538,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 148.538,
+        "end": 149.049,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 149.049,
+        "end": 150.071,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 150.071,
+        "end": 150.581,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 150.581,
+        "end": 151.092,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 151.092,
+        "end": 152.114,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 152.114,
+        "end": 153.136,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 153.136,
+        "end": 153.646,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 153.646,
+        "end": 154.134,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 154.134,
+        "end": 155.063,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 155.063,
+        "end": 155.504,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 155.504,
+        "end": 155.945,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 155.945,
+        "end": 159.985,
+        "name": "Eb",
+        "degree": ""
+      }
+    ]
+  },
+  "textTracks": [],
+  "lyricSets": [
+    {
+      "id": "zh-vocal",
+      "label": "中文 vocal",
+      "languageCode": "zh-Hans",
+      "tracks": [
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "pinyin",
+            "active-vocal"
+          ],
+          "path": "lyrics/zh-vocal/zh-Hans.json"
+        },
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/en.json"
+        },
+        {
+          "code": "ja",
+          "label": "Japanese",
+          "nativeLabel": "日本語",
+          "script": "Jpan",
+          "features": [
+            "furigana",
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/ja.json"
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "unit": "seconds",
+    "lines": [
+      {
+        "id": "l01",
+        "start": 7.7,
+        "end": 11.15,
+        "text": "天蓝蓝"
+      },
+      {
+        "id": "l02",
+        "start": 11.15,
+        "end": 18.62,
+        "text": "云在天地间"
+      },
+      {
+        "id": "l03",
+        "start": 19.78,
+        "end": 23.1,
+        "text": "想念像风一样"
+      },
+      {
+        "id": "l04",
+        "start": 23.78,
+        "end": 27.9,
+        "text": "依偎在你身边"
+      },
+      {
+        "id": "l05",
+        "start": 28.74,
+        "end": 31.72,
+        "text": "望着那么远"
+      },
+      {
+        "id": "l06",
+        "start": 32.78,
+        "end": 36.14,
+        "text": "却像在眼前"
+      },
+      {
+        "id": "l07",
+        "start": 36.78,
+        "end": 47.8,
+        "text": "慢慢慢慢，穿过云海"
+      },
+      {
+        "id": "l08",
+        "start": 47.8,
+        "end": 52.26,
+        "text": "落进心里面"
+      },
+      {
+        "id": "l09",
+        "start": 53.77,
+        "end": 58.34,
+        "text": "我好想来到你身边"
+      },
+      {
+        "id": "l10",
+        "start": 59.18,
+        "end": 62.92,
+        "text": "看清你的容颜"
+      },
+      {
+        "id": "l11",
+        "start": 63.87,
+        "end": 67.42,
+        "text": "哪怕隔着山海万千"
+      },
+      {
+        "id": "l12",
+        "start": 68.78,
+        "end": 73.06,
+        "text": "也想与你相见"
+      },
+      {
+        "id": "l13",
+        "start": 74.3,
+        "end": 76.98,
+        "text": "似水流年"
+      },
+      {
+        "id": "l14",
+        "start": 78.34,
+        "end": 80.96,
+        "text": "时光轮转"
+      },
+      {
+        "id": "l15",
+        "start": 82.3,
+        "end": 84.9,
+        "text": "这一眼"
+      },
+      {
+        "id": "l16",
+        "start": 84.9,
+        "end": 88.92,
+        "text": "越过千年不变"
+      },
+      {
+        "id": "l17",
+        "start": 88.92,
+        "end": 92.52,
+        "text": "云海之间"
+      },
+      {
+        "id": "l18",
+        "start": 97.61,
+        "end": 101.19,
+        "text": "我把爱写成一线"
+      },
+      {
+        "id": "l19",
+        "start": 101.19,
+        "end": 104.61,
+        "text": "牵向你的天边"
+      },
+      {
+        "id": "l20",
+        "start": 107.35,
+        "end": 110.99,
+        "text": "你在云的那边"
+      },
+      {
+        "id": "l21",
+        "start": 110.99,
+        "end": 115.51,
+        "text": "我在海的这边"
+      },
+      {
+        "id": "l22",
+        "start": 116.11,
+        "end": 119.29,
+        "text": "一念成愿，一望无边"
+      },
+      {
+        "id": "l23",
+        "start": 121.24,
+        "end": 123.88,
+        "text": "越是想靠近"
+      },
+      {
+        "id": "l24",
+        "start": 123.88,
+        "end": 127.7,
+        "text": "也怕渐行渐远"
+      },
+      {
+        "id": "l25",
+        "start": 129.56,
+        "end": 131.56,
+        "text": "一生只够遥远"
+      },
+      {
+        "id": "l26",
+        "start": 133.54,
+        "end": 138.02,
+        "text": "我也愿把思念留在云海之间"
+      },
+      {
+        "id": "l27",
+        "start": 138.02,
+        "end": 148.44,
+        "text": "云在天地间"
+      },
+      {
+        "id": "l28",
+        "start": 149.75,
+        "end": 152.81,
+        "text": "我在无尽远方"
+      },
+      {
+        "id": "l29",
+        "start": 153.73,
+        "end": 156.57,
+        "text": "仍想回到你身边"
+      }
+    ]
+  },
+  "provenance": {
+    "createdBy": "Musia",
+    "generationProject": "data/creative_projects/yun-hai-zhi-lian-main-20260630",
+    "audioSource": "DiffRhythm 1.2 160-second full-lyrics route.",
+    "analysisRun": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis",
+    "lyricCorrection": "DiffRhythm 160-second short route. Published timing follows ASR phrase windows from the selected render; sound-close substitutions such as 像年/想念, 这一夜/这一眼, 我白/我把爱, and 海之间/云海之间 are corrected back to the intended lyric. Lines not clearly present in the render are not inserted.",
+    "coverSource": "website/assets/covers/yun-hai-zhi-lian-16x9.png",
+    "publicAudio": "yun-hai-zhi-lian-main-zh-Hans-20260630.mp3"
+  },
+  "artifacts": [
+    {
+      "id": "analysis-report",
+      "label": "Musia DR Short analysis report",
+      "kind": "markdown",
+      "path": "data/runs/yun-hai-zhi-lian-main-diffrhythm-full-160-analysis/REPORT.md"
+    }
+  ]
+}

@@ -3,19 +3,19 @@
   "version": 1,
   "id": "yun-hai-zhi-lian-haifeng-duange",
   "kind": "song",
-  "title": "云海之恋 · 海风短歌",
+  "title": "云海之恋",
   "localizedTitles": {
-    "zh-Hans": "云海之恋 · 海风短歌",
-    "en": "Cloud Sea Love · Sea-Breeze Song",
-    "ja": "雲海の恋・海風短歌"
+    "zh-Hans": "云海之恋",
+    "en": "Cloud Sea Love",
+    "ja": "雲海の恋"
   },
   "artist": "Musia",
-  "description": "A concise ACE-Step Mandarin cloud-sea love ballad, corrected against its selected vocal render.",
-  "caption": "A short sea-breeze version of the cloud-and-sea love song.",
+  "description": "The standard ACE-Step Mandarin cloud-sea love ballad, corrected against its selected vocal render.",
+  "caption": "A cloud-and-sea love song carried by distance, time, and longing.",
   "duration": 90.0,
   "canonicalUrl": "https://fun.lazying.art/#yun-hai-zhi-lian-haifeng-duange",
   "share": {
-    "title": "云海之恋 · 海风短歌 - Fun Lazying Art",
+    "title": "云海之恋 - Fun Lazying Art",
     "description": "A Musia ACE-Step Mandarin cloud-sea love ballad with corrected trilingual lyrics.",
     "url": "https://fun.lazying.art/#yun-hai-zhi-lian-haifeng-duange",
     "image": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
@@ -24,7 +24,7 @@
   "assets": {
     "cover": {
       "id": "cover",
-      "label": "云海之恋 · 海风短歌 cover",
+      "label": "云海之恋 cover",
       "role": "cover",
       "src": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
       "mime": "image/png",
@@ -474,5 +474,9 @@
     "coverSource": "assets/covers/yun-hai-zhi-lian-haifeng-duange-16x9.png",
     "publicAudio": "yun-hai-zhi-lian-haifeng-duange-zh-Hans-ace-20260630.mp3"
   },
-  "artifacts": []
+  "artifacts": [],
+  "playback": {
+    "defaultMode": "single",
+    "reason": "Standard ACE-selected version should loop by default for listening and recording."
+  }
 }

@@ -3,20 +3,20 @@
   "version": 1,
   "id": "take-care-of-yourself-hope-version",
   "kind": "song",
-  "title": "Take Care of Yourself - Hope Version",
+  "title": "Take Care of Yourself",
   "localizedTitles": {
-    "en": "Take Care of Yourself - Hope Version",
-    "zh-Hans": "照顾好自己 - 希望版",
-    "ja": "自分を大切に - 希望の歌"
+    "en": "Take Care of Yourself",
+    "zh-Hans": "照顾好自己",
+    "ja": "自分を大切に"
   },
   "artist": "Musia",
   "subtitle": "A spacious version in English, Japanese, and Mandarin",
-  "description": "A spacious hopeful song about care, courage, and the quiet light that helps you continue.",
+  "description": "The standard spacious hope song about care, courage, and the quiet light that helps you continue.",
   "caption": "Leave a little light for tomorrow.",
-  "duration": 76,
+  "duration": 76.032,
   "canonicalUrl": "https://fun.lazying.art/#take-care-of-yourself-hope-version",
   "share": {
-    "title": "Take Care of Yourself - Hope Version - Fun Lazying Art",
+    "title": "Take Care of Yourself - Fun Lazying Art",
     "description": "A spacious Musia song about care, courage, and hope.",
     "url": "https://fun.lazying.art/#take-care-of-yourself-hope-version",
     "image": "assets/covers/take-care-of-yourself-16x9.png",
@@ -295,88 +295,110 @@
     "lines": [
       {
         "id": "l01",
-        "start": 2,
-        "end": 7.5,
+        "start": 0.24,
+        "end": 4.2,
         "sourceText": "Beyond the shining forest"
       },
       {
         "id": "l02",
-        "start": 7.5,
-        "end": 12,
+        "start": 6.13,
+        "end": 9.81,
         "sourceText": "morning opens its eyes"
       },
       {
         "id": "l03",
-        "start": 14,
-        "end": 19.5,
+        "start": 9.81,
+        "end": 18.43,
         "sourceText": "Across the broken sky, a rainbow rises"
       },
       {
         "id": "l04",
-        "start": 19.5,
-        "end": 24.5,
+        "start": 19.13,
+        "end": 22.09,
         "sourceText": "your little heart is trembling"
       },
       {
         "id": "l05",
-        "start": 25.5,
-        "end": 31,
+        "start": 22.09,
+        "end": 26.43,
         "sourceText": "even in the lost night, do not let go"
       },
       {
         "id": "l06",
-        "start": 31,
-        "end": 36,
+        "start": 28.03,
+        "end": 31.33,
         "sourceText": "trust the sound of your voice"
       },
       {
         "id": "l07",
-        "start": 37.5,
-        "end": 41,
+        "start": 33.19,
+        "end": 35.33,
         "sourceText": "Take care of yourself"
       },
       {
         "id": "l08",
-        "start": 41,
-        "end": 46,
-        "sourceText": "even dark roads find the morning"
-      },
-      {
-        "id": "l09",
-        "start": 47,
-        "end": 50.2,
+        "start": 35.33,
+        "end": 38.43,
         "sourceText": "Take care of yourself"
       },
       {
+        "id": "l09",
+        "start": 38.43,
+        "end": 46.2,
+        "sourceText": "even dark roads find the morning"
+      },
+      {
         "id": "l10",
-        "start": 50.2,
-        "end": 56,
-        "sourceText": "the light in your chest will guard you"
+        "start": 47.26,
+        "end": 49.3,
+        "sourceText": "Take care of yourself"
       },
       {
         "id": "l11",
-        "start": 58,
-        "end": 62,
-        "sourceText": "Tears will become a map"
+        "start": 50.0,
+        "end": 55.8,
+        "sourceText": "the light in your chest will guard you"
       },
       {
         "id": "l12",
-        "start": 62,
-        "end": 66,
-        "sourceText": "one step opens the gate"
+        "start": 57.17,
+        "end": 63.7,
+        "sourceText": "Tears will become the gate"
       },
       {
         "id": "l13",
-        "start": 67,
-        "end": 70,
+        "start": 64.22,
+        "end": 66.9,
         "sourceText": "Take care of yourself"
       },
       {
         "id": "l14",
-        "start": 70,
-        "end": 74.5,
-        "sourceText": "trust the wind and keep moving on"
+        "start": 67.74,
+        "end": 71.86,
+        "sourceText": "trust the wind, moving on"
       }
     ]
+  },
+  "provenance": {
+    "lyricCorrection": {
+      "date": "2026-06-30",
+      "policy": "Post-corrected per-vocal lyric sets using Demucs-separated vocal ASR, medium/small Whisper cross-validation, input lyric intent, and vocal-energy timing. Chinese and Japanese renders contain audible English Take care hooks; active lyric tracks reflect that mixed-language singing instead of prompt-only translations.",
+      "runs": [
+        "data/runs/take-care-hope-en-separated-asr-20260630",
+        "data/runs/take-care-hope-zh-separated-asr-20260630",
+        "data/runs/take-care-hope-ja-separated-asr-20260630",
+        "data/runs/take-care-hope-postcorrection-20260630"
+      ],
+      "notes": [
+        "English timing was shifted earlier and repeated Take care hook lines were added from ASR/vocal energy.",
+        "Mandarin timing now starts main Chinese lyric around 26.29s; early vocalization is marked as 呜.",
+        "Japanese timing uses vocal-energy phrase windows because ASR is coarse; audible English Take care hooks are kept as sung."
+      ]
+    },
+    "cover": "Cover asset inherited from previous Take Care of Yourself website item; local file website/assets/covers/take-care-of-yourself-16x9.png."
+  },
+  "playback": {
+    "defaultMode": "single",
+    "reason": "Standard ACE-selected version should loop by default for listening and recording."
   }
 }

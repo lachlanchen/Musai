@@ -3,19 +3,19 @@
   "version": 1,
   "id": "yun-hai-zhi-lian-legacy",
   "kind": "song",
-  "title": "云海之恋 - Legacy",
+  "title": "云海之恋 · ACE Legacy",
   "localizedTitles": {
-    "zh-Hans": "云海之恋 - Legacy",
-    "en": "Cloud Sea Love - Legacy",
-    "ja": "雲海の恋 - Legacy"
+    "zh-Hans": "云海之恋 · ACE Legacy",
+    "en": "Cloud Sea Love · ACE Legacy",
+    "ja": "雲海の恋・ACE Legacy"
   },
   "artist": "Musia",
-  "description": "A spacious ocean-and-sky love ballad with Mandarin, English, and Japanese candidate vocals.",
+  "description": "An earlier ACE-Step ocean-and-sky love ballad candidate with Mandarin, English, and Japanese vocals.",
   "caption": "Earlier generated candidate kept for comparison.",
   "duration": 64.0,
   "canonicalUrl": "https://fun.lazying.art/#yun-hai-zhi-lian-legacy",
   "share": {
-    "title": "云海之恋 - Legacy - Fun Lazying Art",
+    "title": "云海之恋 · ACE Legacy - Fun Lazying Art",
     "description": "A Musia ocean-and-sky love ballad with corrected multilingual lyric sets.",
     "url": "https://fun.lazying.art/#yun-hai-zhi-lian-legacy",
     "image": "assets/covers/yun-hai-zhi-lian-16x9.png",
@@ -24,7 +24,7 @@
   "assets": {
     "cover": {
       "id": "cover",
-      "label": "云海之恋 cover",
+      "label": "云海之恋 · ACE Legacy cover",
       "role": "cover",
       "src": "assets/covers/yun-hai-zhi-lian-16x9.png",
       "mime": "image/png",

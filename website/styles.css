@@ -621,6 +621,37 @@ h2 {
   margin-top: 12px;
 }
 
+.playback-mode {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.playback-mode button {
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  color: var(--muted);
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 900;
+  box-shadow: 0 8px 20px rgba(42,38,28,.04);
+}
+
+.playback-mode button:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.playback-mode button.active {
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--teal), var(--gold));
+  color: #fff;
+}
+
 .asset-switcher button {
   display: inline-grid;
   gap: 1px;
@@ -903,6 +934,10 @@ body.capture-mode.capture-full-lyrics .full-lyrics-section {
 }
 
 body.capture-mode .library-peek {
+  display: none;
+}
+
+body.capture-mode .playback-mode {
   display: none;
 }
 

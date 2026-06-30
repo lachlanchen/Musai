@@ -28,7 +28,10 @@ const state = {
   captureTime: null,
   libraryPreviewIndex: 0,
   libraryPreviewTimer: null,
-  requestedAssetId: ""
+  requestedAssetId: "",
+  playbackMode: "off",
+  userPlaybackMode: false,
+  advancingPlayback: false
 };
 
 const $ = (id) => document.getElementById(id);
@@ -39,6 +42,13 @@ const coverArt = $("cover-art");
 const coverThumb = $("cover-thumb");
 const canvas = $("visualizer");
 const ctx = canvas.getContext("2d");
+
+const PLAYBACK_MODES = [
+  { id: "off", label: "Stop", title: "Stop after the current song" },
+  { id: "cycle", label: "Cycle", title: "Play the next song when this one ends" },
+  { id: "shuffle", label: "Shuffle", title: "Play a random song when this one ends" },
+  { id: "single", label: "Loop 1", title: "Loop the current song" }
+];
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, (char) => ({
@@ -365,6 +375,80 @@ function playableAssets(manifest) {
 
 function activePlayableAsset() {
   return playableAssets(state.manifest || {}).find((asset) => asset.id === state.activeAssetId) || null;
+}
+
+function playbackQueueItems() {
+  return (state.catalog?.items || []).filter((item) =>
+    (item.kind === "song" || item.kind === "localized-song") && item.manifest
+  );
+}
+
+function defaultPlaybackModeForManifest(manifest) {
+  const mode = manifest?.playback?.defaultMode;
+  return PLAYBACK_MODES.some((item) => item.id === mode) ? mode : "off";
+}
+
+function renderPlaybackMode() {
+  const root = $("playback-mode");
+  if (!root) return;
+  root.innerHTML = PLAYBACK_MODES.map((mode) => {
+    const active = mode.id === state.playbackMode;
+    return `
+      <button class="${active ? "active" : ""}" type="button" data-playback-mode="${escapeHtml(mode.id)}" aria-pressed="${active ? "true" : "false"}" title="${escapeHtml(mode.title)}">
+        ${escapeHtml(mode.label)}
+      </button>
+    `;
+  }).join("");
+}
+
+function setPlaybackMode(mode, { user = false } = {}) {
+  state.playbackMode = PLAYBACK_MODES.some((item) => item.id === mode) ? mode : "off";
+  if (user) state.userPlaybackMode = true;
+  renderPlaybackMode();
+}
+
+function nextPlaybackItem({ shuffle = false } = {}) {
+  const items = playbackQueueItems();
+  if (!items.length) return null;
+  if (shuffle && items.length > 1) {
+    const candidates = items.filter((item) => item.id !== state.activeMediaId);
+    return candidates[Math.floor(Math.random() * candidates.length)] || items[0];
+  }
+  const index = Math.max(0, items.findIndex((item) => item.id === state.activeMediaId));
+  return items[(index + 1) % items.length];
+}
+
+async function playLoadedMediaFromStart() {
+  const media = state.mediaElement;
+  if (!media) return;
+  state.captureTime = null;
+  initAudioGraph();
+  if (state.audioContext?.state === "suspended") await state.audioContext.resume();
+  try {
+    media.currentTime = 0;
+    await media.play();
+  } catch (error) {
+    console.warn("Autoplay after track end was blocked.", error);
+  }
+}
+
+async function handleMediaEnded() {
+  if (state.captureMode || state.advancingPlayback) return;
+  const mode = state.playbackMode;
+  if (mode === "off") return;
+  if (mode === "single") {
+    await playLoadedMediaFromStart();
+    return;
+  }
+  const nextItem = nextPlaybackItem({ shuffle: mode === "shuffle" });
+  if (!nextItem) return;
+  state.advancingPlayback = true;
+  try {
+    await loadMediaItem(nextItem, true);
+    await playLoadedMediaFromStart();
+  } finally {
+    state.advancingPlayback = false;
+  }
 }
 
 function activeLyricSetForAsset(asset = activePlayableAsset()) {
@@ -834,6 +918,7 @@ function mediaListeners(element) {
   element.addEventListener("loadedmetadata", () => {
     if (state.skipIntroOnLoad) applySkipIntro();
   });
+  element.addEventListener("ended", handleMediaEnded);
 }
 
 function bindEvents() {
@@ -856,6 +941,12 @@ function bindEvents() {
   $("skip-intro").addEventListener("click", () => {
     applySkipIntro({ force: true });
     state.mediaElement?.play();
+  });
+  $("playback-mode").addEventListener("click", (event) => {
+    const target = event.target instanceof Element ? event.target : null;
+    const button = target?.closest("[data-playback-mode]");
+    if (!button) return;
+    setPlaybackMode(button.dataset.playbackMode, { user: true });
   });
   mediaListeners(audio);
   mediaListeners(video);
@@ -918,6 +1009,8 @@ async function loadMediaItem(item, updateHash = false) {
   state.manifest = await loadJson(state.manifestUrl);
   state.didApplySkipIntro = false;
   state.renderedChordKey = "";
+  if (!state.userPlaybackMode) setPlaybackMode(defaultPlaybackModeForManifest(state.manifest));
+  else renderPlaybackMode();
   state.defaultTracks = await loadTextTracks(state.manifest.textTracks || []);
   state.lyricSets = await Promise.all((state.manifest.lyricSets || []).map(async (set) => ({
     ...set,

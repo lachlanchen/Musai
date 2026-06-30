@@ -3,20 +3,20 @@
   "version": 1,
   "id": "take-care-of-yourself",
   "kind": "localized-song",
-  "title": "Take Care of Yourself",
+  "title": "Take Care of Yourself · SoulX Localization",
   "localizedTitles": {
-    "en": "Take Care of Yourself",
-    "zh-Hans": "照顾好自己",
-    "yue-Hant": "照顧好自己"
+    "en": "Take Care of Yourself · SoulX Localization",
+    "zh-Hans": "照顾好自己 · SoulX 本地化",
+    "yue-Hant": "照顧好自己 · SoulX 本地化"
   },
   "artist": "Musia",
   "subtitle": "English, Mandarin, and Cantonese vocals about care and inner light",
-  "description": "A hopeful song about taking care of yourself, keeping a small light alive, and walking forward.",
+  "description": "The earlier SoulX/localization-route self-care song with English, Mandarin, and Cantonese vocals.",
   "caption": "Take care of yourself; the light inside you keeps watch.",
   "duration": 58,
   "canonicalUrl": "https://fun.lazying.art/#take-care-of-yourself",
   "share": {
-    "title": "Take Care of Yourself - Fun Lazying Art",
+    "title": "Take Care of Yourself · SoulX Localization - Fun Lazying Art",
     "description": "A hopeful Musia song with English, Mandarin, and Cantonese vocals.",
     "url": "https://fun.lazying.art/#take-care-of-yourself",
     "image": "assets/covers/take-care-of-yourself-16x9.png",
@@ -25,7 +25,7 @@
   "assets": {
     "cover": {
       "id": "cover",
-      "label": "Take Care of Yourself cover",
+      "label": "Take Care of Yourself · SoulX Localization cover",
       "role": "cover",
       "src": "assets/covers/take-care-of-yourself-16x9.png",
       "mime": "image/png",

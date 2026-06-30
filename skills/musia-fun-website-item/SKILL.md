@@ -84,6 +84,25 @@ Do not duplicate ruby by also putting pronunciation into the visible native text
 - set `assets.cover`, `assets.poster`, and `share.image`;
 - record the cover prompt/source in `manifest.provenance` or the song production note.
 
+Apply the public version naming rule before publishing:
+
+- standard selected ACE/ACE-Step version: pure song name, no suffix;
+- older ACE/ACE-Step candidate: `ACE Legacy`;
+- DiffRhythm variants: visible `DR` suffix, such as `DR Short` or
+  `DR Full Lyrics`;
+- lower-quality localization, SVC, or model-transfer routes: visible method
+  suffix, such as `SoulX Localization`;
+- only the standard selected ACE version should carry
+  `manifest.playback.defaultMode: "single"` when the user wants default
+  looping. Other variants should omit the playback hint unless intentionally
+  requested.
+
+For the current Fun catalog naming pass, rerun:
+
+```bash
+PYTHONNOUSERSITE=1 conda run -n musia python scripts/apply_fun_version_naming.py
+```
+
 7. Validate and audit:
 
 ```bash
