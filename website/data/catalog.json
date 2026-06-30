@@ -81,6 +81,30 @@
       ]
     },
     {
+      "id": "qiang-jin-jiu",
+      "kind": "song",
+      "title": "将进酒 · ACE Poetry Demo",
+      "artist": "Musia",
+      "summary": "A female Mandarin ACE-Step poetry-song from Li Bai's original 将进酒, with pinyin, furigana, translations, and chord timing.",
+      "manifest": "data/songs/qiang-jin-jiu/manifest.json",
+      "cover": "assets/covers/qiang-jin-jiu-16x9.png",
+      "languages": [
+        "zh-Hans",
+        "en",
+        "ja"
+      ],
+      "tags": [
+        "music",
+        "Li Bai",
+        "Tang poetry",
+        "Mandarin",
+        "ACE-Step",
+        "poetry-demo",
+        "pinyin",
+        "furigana"
+      ]
+    },
+    {
       "id": "yun-hai-zhi-lian-dr-short",
       "kind": "song",
       "title": "云海之恋 · DR Short",

@@ -1,0 +1,1331 @@
+{
+  "schema": "fun.lazying.media.manifest.v1",
+  "version": 1,
+  "id": "qiang-jin-jiu",
+  "kind": "song",
+  "title": "将进酒 · ACE Poetry Demo",
+  "localizedTitles": {
+    "zh-Hans": "将进酒 · ACE 诗歌版",
+    "en": "Bring In the Wine · ACE Poetry Demo",
+    "ja": "将進酒・ACE詩歌版"
+  },
+  "artist": "Musia",
+  "description": "An ACE-Step female Mandarin poetry-song using Li Bai's original 将进酒 text, with pronunciation notes and ASR-corrected trilingual lyric timing.",
+  "caption": "Heroic and tender Li Bai poetry-song, vast as the Yellow River and intimate as a wine cup under the moon.",
+  "duration": 180.0,
+  "canonicalUrl": "https://fun.lazying.art/#qiang-jin-jiu",
+  "share": {
+    "title": "将进酒 · ACE Poetry Demo - Fun Lazying Art",
+    "description": "A Musia ACE-Step female Mandarin poetry-song from Li Bai's 将进酒.",
+    "url": "https://fun.lazying.art/#qiang-jin-jiu",
+    "image": "assets/covers/qiang-jin-jiu-16x9.png",
+    "siteName": "Fun Lazying Art"
+  },
+  "assets": {
+    "cover": {
+      "id": "cover",
+      "label": "将进酒 cover",
+      "role": "cover",
+      "src": "assets/covers/qiang-jin-jiu-16x9.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 900
+    },
+    "poster": {
+      "id": "poster",
+      "label": "16:9 Poster",
+      "role": "poster",
+      "src": "assets/covers/qiang-jin-jiu-16x9.png",
+      "mime": "image/png",
+      "width": 1600,
+      "height": 900
+    },
+    "primaryAudio": {
+      "id": "qiang-jin-jiu-zh",
+      "label": "中文",
+      "roleLabel": "Vocal",
+      "role": "vocal",
+      "languageCode": "zh-Hans",
+      "languageLabel": "中文",
+      "lyricSetId": "zh-vocal",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/qiang-jin-jiu-zh-Hans-ace-20260701.mp3",
+      "mime": "audio/mpeg"
+    },
+    "alternateAudio": []
+  },
+  "musical": {
+    "key": "D minor requested / detected Abm-C#m-F# centered progression",
+    "bpm": 143.5546875,
+    "timeSignature": "4/4",
+    "chords": [
+      {
+        "start": 0.0,
+        "end": 0.58,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 0.58,
+        "end": 1.765,
+        "name": "Cm",
+        "degree": ""
+      },
+      {
+        "start": 1.765,
+        "end": 2.159,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 2.159,
+        "end": 2.972,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 2.972,
+        "end": 3.39,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 3.39,
+        "end": 4.226,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 4.226,
+        "end": 5.433,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 5.433,
+        "end": 6.223,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 6.223,
+        "end": 7.012,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 7.012,
+        "end": 7.43,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 7.43,
+        "end": 9.985,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 9.985,
+        "end": 10.844,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 10.844,
+        "end": 14.141,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 14.141,
+        "end": 16.231,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 16.231,
+        "end": 17.485,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 17.485,
+        "end": 21.432,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 21.432,
+        "end": 23.499,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 23.499,
+        "end": 24.358,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 24.358,
+        "end": 24.776,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 24.776,
+        "end": 30.766,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 30.766,
+        "end": 31.184,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 31.184,
+        "end": 31.602,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 31.602,
+        "end": 32.02,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 32.02,
+        "end": 32.438,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 32.438,
+        "end": 32.879,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 32.879,
+        "end": 33.321,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 33.321,
+        "end": 33.739,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 33.739,
+        "end": 34.157,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 34.157,
+        "end": 34.992,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 34.992,
+        "end": 35.828,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 35.828,
+        "end": 36.223,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 36.223,
+        "end": 36.664,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 36.664,
+        "end": 37.082,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 37.082,
+        "end": 37.5,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 37.5,
+        "end": 37.918,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 37.918,
+        "end": 38.336,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 38.336,
+        "end": 38.754,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 38.754,
+        "end": 39.172,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 39.172,
+        "end": 39.59,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 39.59,
+        "end": 41.262,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 41.262,
+        "end": 41.68,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 41.68,
+        "end": 43.003,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 43.003,
+        "end": 44.257,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 44.257,
+        "end": 45.558,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 45.558,
+        "end": 47.996,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 47.996,
+        "end": 48.414,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 48.414,
+        "end": 48.832,
+        "name": "D",
+        "degree": ""
+      },
+      {
+        "start": 48.832,
+        "end": 49.226,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 49.226,
+        "end": 50.062,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 50.062,
+        "end": 50.457,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 50.457,
+        "end": 50.852,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 50.852,
+        "end": 51.711,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 51.711,
+        "end": 52.524,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 52.524,
+        "end": 52.941,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 52.941,
+        "end": 53.754,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 53.754,
+        "end": 54.59,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 54.59,
+        "end": 55.008,
+        "name": "C#",
+        "degree": ""
+      },
+      {
+        "start": 55.008,
+        "end": 55.38,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 55.38,
+        "end": 55.798,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 55.798,
+        "end": 57.028,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 57.028,
+        "end": 59.002,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 59.002,
+        "end": 60.627,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 60.627,
+        "end": 62.415,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 62.415,
+        "end": 62.856,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 62.856,
+        "end": 64.203,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 64.203,
+        "end": 65.945,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 65.945,
+        "end": 67.756,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 67.756,
+        "end": 68.197,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 68.197,
+        "end": 70.867,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 70.867,
+        "end": 71.285,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 71.285,
+        "end": 73.096,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 73.096,
+        "end": 74.861,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 74.861,
+        "end": 75.279,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 75.279,
+        "end": 76.626,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 76.626,
+        "end": 77.508,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 77.508,
+        "end": 77.973,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 77.973,
+        "end": 78.391,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 78.391,
+        "end": 78.832,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 78.832,
+        "end": 80.132,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 80.132,
+        "end": 81.897,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 81.897,
+        "end": 82.315,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 82.315,
+        "end": 83.151,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 83.151,
+        "end": 83.569,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 83.569,
+        "end": 84.73,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 84.73,
+        "end": 85.101,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 85.101,
+        "end": 85.519,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 85.519,
+        "end": 86.355,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 86.355,
+        "end": 87.191,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 87.191,
+        "end": 88.932,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 88.932,
+        "end": 89.374,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 89.374,
+        "end": 89.815,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 89.815,
+        "end": 90.651,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 90.651,
+        "end": 92.415,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 92.415,
+        "end": 94.041,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 94.041,
+        "end": 94.436,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 94.436,
+        "end": 95.271,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 95.271,
+        "end": 95.666,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 95.666,
+        "end": 96.549,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 96.549,
+        "end": 97.408,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 97.408,
+        "end": 98.197,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 98.197,
+        "end": 98.592,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 98.592,
+        "end": 101.982,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 101.982,
+        "end": 102.423,
+        "name": "Bbm",
+        "degree": ""
+      },
+      {
+        "start": 102.423,
+        "end": 102.864,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 102.864,
+        "end": 103.816,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 103.816,
+        "end": 104.258,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 104.258,
+        "end": 106.069,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 106.069,
+        "end": 108.344,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 108.344,
+        "end": 109.273,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 109.273,
+        "end": 110.62,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 110.62,
+        "end": 113.685,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 113.685,
+        "end": 115.287,
+        "name": "A",
+        "degree": ""
+      },
+      {
+        "start": 115.287,
+        "end": 115.705,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 115.705,
+        "end": 117.354,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 117.354,
+        "end": 117.772,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 117.772,
+        "end": 118.19,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 118.19,
+        "end": 118.561,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 118.561,
+        "end": 118.956,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 118.956,
+        "end": 122.532,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 122.532,
+        "end": 124.621,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 124.621,
+        "end": 125.039,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 125.039,
+        "end": 125.434,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 125.434,
+        "end": 126.665,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 126.665,
+        "end": 127.106,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 127.106,
+        "end": 127.547,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 127.547,
+        "end": 128.43,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 128.43,
+        "end": 128.871,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 128.871,
+        "end": 129.335,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 129.335,
+        "end": 131.587,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 131.587,
+        "end": 132.005,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 132.005,
+        "end": 132.423,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 132.423,
+        "end": 133.306,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 133.306,
+        "end": 134.629,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 134.629,
+        "end": 135.535,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 135.535,
+        "end": 137.323,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 137.323,
+        "end": 139.088,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 139.088,
+        "end": 139.529,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 139.529,
+        "end": 140.434,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 140.434,
+        "end": 142.176,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 142.176,
+        "end": 142.617,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 142.617,
+        "end": 143.081,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 143.081,
+        "end": 143.523,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 143.523,
+        "end": 143.964,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 143.964,
+        "end": 144.405,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 144.405,
+        "end": 146.17,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 146.17,
+        "end": 146.564,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 146.564,
+        "end": 147.725,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 147.725,
+        "end": 149.722,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 149.722,
+        "end": 150.163,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 150.163,
+        "end": 151.487,
+        "name": "C#m",
+        "degree": ""
+      },
+      {
+        "start": 151.487,
+        "end": 151.928,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 151.928,
+        "end": 153.252,
+        "name": "F#m",
+        "degree": ""
+      },
+      {
+        "start": 153.252,
+        "end": 153.693,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 153.693,
+        "end": 154.552,
+        "name": "F#",
+        "degree": ""
+      },
+      {
+        "start": 154.552,
+        "end": 155.434,
+        "name": "B",
+        "degree": ""
+      },
+      {
+        "start": 155.434,
+        "end": 156.595,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 156.595,
+        "end": 158.128,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 158.128,
+        "end": 158.546,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 158.546,
+        "end": 159.8,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 159.8,
+        "end": 160.218,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 160.218,
+        "end": 160.612,
+        "name": "Eb",
+        "degree": ""
+      },
+      {
+        "start": 160.612,
+        "end": 161.03,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 161.03,
+        "end": 161.425,
+        "name": "Gm",
+        "degree": ""
+      },
+      {
+        "start": 161.425,
+        "end": 161.843,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 161.843,
+        "end": 162.261,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 162.261,
+        "end": 163.445,
+        "name": "Bb",
+        "degree": ""
+      },
+      {
+        "start": 163.445,
+        "end": 163.84,
+        "name": "Ebm",
+        "degree": ""
+      },
+      {
+        "start": 163.84,
+        "end": 164.629,
+        "name": "Ab",
+        "degree": ""
+      },
+      {
+        "start": 164.629,
+        "end": 165.86,
+        "name": "Fm",
+        "degree": ""
+      },
+      {
+        "start": 165.86,
+        "end": 168.461,
+        "name": "Abm",
+        "degree": ""
+      },
+      {
+        "start": 168.461,
+        "end": 180.0,
+        "name": "Ab",
+        "degree": ""
+      }
+    ]
+  },
+  "textTracks": [],
+  "lyricSets": [
+    {
+      "id": "zh-vocal",
+      "label": "中文 vocal",
+      "languageCode": "zh-Hans",
+      "tracks": [
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "pinyin",
+            "active-vocal"
+          ],
+          "path": "lyrics/zh-vocal/zh-Hans.json"
+        },
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/en.json"
+        },
+        {
+          "code": "ja",
+          "label": "Japanese",
+          "nativeLabel": "日本語",
+          "script": "Jpan",
+          "features": [
+            "furigana",
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/ja.json"
+        }
+      ]
+    }
+  ],
+  "timeline": {
+    "unit": "seconds",
+    "lines": [
+      {
+        "id": "l01",
+        "start": 28.98,
+        "end": 34.62,
+        "text": "君不见黄河之水天上来"
+      },
+      {
+        "id": "l02",
+        "start": 36.82,
+        "end": 42.44,
+        "text": "奔流到海不复回"
+      },
+      {
+        "id": "l03",
+        "start": 42.44,
+        "end": 49.18,
+        "text": "君不见高堂明镜悲白发"
+      },
+      {
+        "id": "l04",
+        "start": 49.78,
+        "end": 53.28,
+        "text": "朝如青丝暮成雪"
+      },
+      {
+        "id": "l05",
+        "start": 54.38,
+        "end": 57.32,
+        "text": "人生得意须尽欢"
+      },
+      {
+        "id": "l06",
+        "start": 57.92,
+        "end": 60.92,
+        "text": "莫使金樽空对月"
+      },
+      {
+        "id": "l07",
+        "start": 61.52,
+        "end": 64.4,
+        "text": "天生我材必有用"
+      },
+      {
+        "id": "l08",
+        "start": 64.4,
+        "end": 68.18,
+        "text": "千金散尽还复来"
+      },
+      {
+        "id": "l09",
+        "start": 69.68,
+        "end": 77.55,
+        "text": "烹羊宰牛且为乐，会须一饮三百杯"
+      },
+      {
+        "id": "l10",
+        "start": 77.55,
+        "end": 80.43,
+        "text": "岑夫子，丹丘生"
+      },
+      {
+        "id": "l11",
+        "start": 80.43,
+        "end": 83.99,
+        "text": "将进酒，杯莫停"
+      },
+      {
+        "id": "l12",
+        "start": 84.59,
+        "end": 87.89,
+        "text": "与君歌一曲"
+      },
+      {
+        "id": "l13",
+        "start": 87.89,
+        "end": 90.99,
+        "text": "请君为我倾耳听"
+      },
+      {
+        "id": "l14",
+        "start": 91.67,
+        "end": 94.53,
+        "text": "钟鼓馔玉不足贵"
+      },
+      {
+        "id": "l15",
+        "start": 94.53,
+        "end": 96.91,
+        "text": "但愿长醉不愿醒"
+      },
+      {
+        "id": "l16",
+        "start": 101.16,
+        "end": 104.44,
+        "text": "钟鼓馔玉不足贵"
+      },
+      {
+        "id": "l17",
+        "start": 105.28,
+        "end": 108.42,
+        "text": "但愿长醉不愿醒"
+      },
+      {
+        "id": "l18",
+        "start": 108.42,
+        "end": 115.59,
+        "text": "古来圣贤皆寂寞"
+      },
+      {
+        "id": "l19",
+        "start": 116.43,
+        "end": 119.43,
+        "text": "惟有饮者留其名"
+      },
+      {
+        "id": "l20",
+        "start": 119.43,
+        "end": 122.93,
+        "text": "陈王昔时宴平乐"
+      },
+      {
+        "id": "l21",
+        "start": 123.79,
+        "end": 127.37,
+        "text": "斗酒十千恣欢谑"
+      },
+      {
+        "id": "l22",
+        "start": 127.37,
+        "end": 130.43,
+        "text": "古来圣贤皆寂寞"
+      },
+      {
+        "id": "l23",
+        "start": 131.15,
+        "end": 134.01,
+        "text": "惟有饮者留其名"
+      },
+      {
+        "id": "l24",
+        "start": 134.71,
+        "end": 137.47,
+        "text": "陈王昔时宴平乐"
+      },
+      {
+        "id": "l25",
+        "start": 137.47,
+        "end": 141.17,
+        "text": "斗酒十千恣欢谑"
+      },
+      {
+        "id": "l26",
+        "start": 141.17,
+        "end": 144.83,
+        "text": "主人何为言少钱"
+      },
+      {
+        "id": "l27",
+        "start": 145.79,
+        "end": 148.11,
+        "text": "径须沽取对君酌"
+      },
+      {
+        "id": "l28",
+        "start": 149.11,
+        "end": 153.19,
+        "text": "五花马，千金裘"
+      },
+      {
+        "id": "l29",
+        "start": 153.19,
+        "end": 157.47,
+        "text": "呼儿将出换美酒"
+      },
+      {
+        "id": "l30",
+        "start": 158.97,
+        "end": 162.69,
+        "text": "与尔同销万古愁"
+      }
+    ]
+  },
+  "provenance": {
+    "createdBy": "Musia",
+    "generationProject": "data/creative_projects/qiang-jin-jiu-20260630",
+    "audioSource": "ACE-Step 1.5 XL Turbo seed 732002, selected from three original-text candidates.",
+    "analysisRun": "data/runs/qiang-jin-jiu-20260630-20260701-000551-analysis",
+    "quality": {
+      "asrOverlap": 0.3522727272727273,
+      "gate": "pass"
+    },
+    "lyricCorrection": "The selected render is a poetry-song using the original poem as prompt text. Because ACE does not perfectly recite every classical line, the website displays sound-close original text with actual line timing and repeats.",
+    "pronunciationGuide": "data/creative_projects/qiang-jin-jiu-20260630/source/pronunciation-guide.md",
+    "coverSource": "assets/covers/qiang-jin-jiu-16x9.png",
+    "publicAudio": "qiang-jin-jiu-zh-Hans-ace-20260701.mp3"
+  },
+  "artifacts": []
+}

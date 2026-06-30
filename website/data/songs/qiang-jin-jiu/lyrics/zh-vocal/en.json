@@ -1,0 +1,1952 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "qiang-jin-jiu",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "start": 28.98,
+      "end": 34.62,
+      "text": "Do you not see the Yellow River's waters descending from the sky?",
+      "singableText": "Do you not see the Yellow River's waters descending from the sky?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Do",
+          "start": 28.98,
+          "end": 29.414
+        },
+        {
+          "text": "you",
+          "start": 29.414,
+          "end": 29.848
+        },
+        {
+          "text": "not",
+          "start": 29.848,
+          "end": 30.282
+        },
+        {
+          "text": "see",
+          "start": 30.282,
+          "end": 30.715
+        },
+        {
+          "text": "the",
+          "start": 30.715,
+          "end": 31.149
+        },
+        {
+          "text": "Yellow",
+          "start": 31.149,
+          "end": 31.583
+        },
+        {
+          "text": "River's",
+          "start": 31.583,
+          "end": 32.017
+        },
+        {
+          "text": "waters",
+          "start": 32.017,
+          "end": 32.451
+        },
+        {
+          "text": "descending",
+          "start": 32.451,
+          "end": 32.885
+        },
+        {
+          "text": "from",
+          "start": 32.885,
+          "end": 33.318
+        },
+        {
+          "text": "the",
+          "start": 33.318,
+          "end": 33.752
+        },
+        {
+          "text": "sky",
+          "start": 33.752,
+          "end": 34.186
+        },
+        {
+          "text": "?",
+          "start": 34.186,
+          "end": 34.62
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 36.82,
+      "end": 42.44,
+      "text": "Rushing to the sea, never to return.",
+      "singableText": "Rushing to the sea, never to return.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Rushing",
+          "start": 36.82,
+          "end": 37.444
+        },
+        {
+          "text": "to",
+          "start": 37.444,
+          "end": 38.069
+        },
+        {
+          "text": "the",
+          "start": 38.069,
+          "end": 38.693
+        },
+        {
+          "text": "sea",
+          "start": 38.693,
+          "end": 39.318
+        },
+        {
+          "text": ",",
+          "start": 39.318,
+          "end": 39.942
+        },
+        {
+          "text": "never",
+          "start": 39.942,
+          "end": 40.567
+        },
+        {
+          "text": "to",
+          "start": 40.567,
+          "end": 41.191
+        },
+        {
+          "text": "return",
+          "start": 41.191,
+          "end": 41.816
+        },
+        {
+          "text": ".",
+          "start": 41.816,
+          "end": 42.44
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 42.44,
+      "end": 49.18,
+      "text": "Do you not see bright mirrors in high halls grieving white hair?",
+      "singableText": "Do you not see bright mirrors in high halls grieving white hair?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Do",
+          "start": 42.44,
+          "end": 42.958
+        },
+        {
+          "text": "you",
+          "start": 42.958,
+          "end": 43.477
+        },
+        {
+          "text": "not",
+          "start": 43.477,
+          "end": 43.995
+        },
+        {
+          "text": "see",
+          "start": 43.995,
+          "end": 44.514
+        },
+        {
+          "text": "bright",
+          "start": 44.514,
+          "end": 45.032
+        },
+        {
+          "text": "mirrors",
+          "start": 45.032,
+          "end": 45.551
+        },
+        {
+          "text": "in",
+          "start": 45.551,
+          "end": 46.069
+        },
+        {
+          "text": "high",
+          "start": 46.069,
+          "end": 46.588
+        },
+        {
+          "text": "halls",
+          "start": 46.588,
+          "end": 47.106
+        },
+        {
+          "text": "grieving",
+          "start": 47.106,
+          "end": 47.625
+        },
+        {
+          "text": "white",
+          "start": 47.625,
+          "end": 48.143
+        },
+        {
+          "text": "hair",
+          "start": 48.143,
+          "end": 48.662
+        },
+        {
+          "text": "?",
+          "start": 48.662,
+          "end": 49.18
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 49.78,
+      "end": 53.28,
+      "text": "Morning like black silk, by evening turned to snow.",
+      "singableText": "Morning like black silk, by evening turned to snow.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Morning",
+          "start": 49.78,
+          "end": 50.098
+        },
+        {
+          "text": "like",
+          "start": 50.098,
+          "end": 50.416
+        },
+        {
+          "text": "black",
+          "start": 50.416,
+          "end": 50.735
+        },
+        {
+          "text": "silk",
+          "start": 50.735,
+          "end": 51.053
+        },
+        {
+          "text": ",",
+          "start": 51.053,
+          "end": 51.371
+        },
+        {
+          "text": "by",
+          "start": 51.371,
+          "end": 51.689
+        },
+        {
+          "text": "evening",
+          "start": 51.689,
+          "end": 52.007
+        },
+        {
+          "text": "turned",
+          "start": 52.007,
+          "end": 52.325
+        },
+        {
+          "text": "to",
+          "start": 52.325,
+          "end": 52.644
+        },
+        {
+          "text": "snow",
+          "start": 52.644,
+          "end": 52.962
+        },
+        {
+          "text": ".",
+          "start": 52.962,
+          "end": 53.28
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 54.38,
+      "end": 57.32,
+      "text": "When life is proud, drink joy to the full.",
+      "singableText": "When life is proud, drink joy to the full.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "When",
+          "start": 54.38,
+          "end": 54.647
+        },
+        {
+          "text": "life",
+          "start": 54.647,
+          "end": 54.915
+        },
+        {
+          "text": "is",
+          "start": 54.915,
+          "end": 55.182
+        },
+        {
+          "text": "proud",
+          "start": 55.182,
+          "end": 55.449
+        },
+        {
+          "text": ",",
+          "start": 55.449,
+          "end": 55.716
+        },
+        {
+          "text": "drink",
+          "start": 55.716,
+          "end": 55.984
+        },
+        {
+          "text": "joy",
+          "start": 55.984,
+          "end": 56.251
+        },
+        {
+          "text": "to",
+          "start": 56.251,
+          "end": 56.518
+        },
+        {
+          "text": "the",
+          "start": 56.518,
+          "end": 56.785
+        },
+        {
+          "text": "full",
+          "start": 56.785,
+          "end": 57.053
+        },
+        {
+          "text": ".",
+          "start": 57.053,
+          "end": 57.32
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 57.92,
+      "end": 60.92,
+      "text": "Do not let the golden cup face the moon empty.",
+      "singableText": "Do not let the golden cup face the moon empty.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Do",
+          "start": 57.92,
+          "end": 58.193
+        },
+        {
+          "text": "not",
+          "start": 58.193,
+          "end": 58.465
+        },
+        {
+          "text": "let",
+          "start": 58.465,
+          "end": 58.738
+        },
+        {
+          "text": "the",
+          "start": 58.738,
+          "end": 59.011
+        },
+        {
+          "text": "golden",
+          "start": 59.011,
+          "end": 59.284
+        },
+        {
+          "text": "cup",
+          "start": 59.284,
+          "end": 59.556
+        },
+        {
+          "text": "face",
+          "start": 59.556,
+          "end": 59.829
+        },
+        {
+          "text": "the",
+          "start": 59.829,
+          "end": 60.102
+        },
+        {
+          "text": "moon",
+          "start": 60.102,
+          "end": 60.375
+        },
+        {
+          "text": "empty",
+          "start": 60.375,
+          "end": 60.647
+        },
+        {
+          "text": ".",
+          "start": 60.647,
+          "end": 60.92
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 61.52,
+      "end": 64.4,
+      "text": "Heaven made my talent; it must have its use.",
+      "singableText": "Heaven made my talent; it must have its use.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Heaven",
+          "start": 61.52,
+          "end": 61.782
+        },
+        {
+          "text": "made",
+          "start": 61.782,
+          "end": 62.044
+        },
+        {
+          "text": "my",
+          "start": 62.044,
+          "end": 62.305
+        },
+        {
+          "text": "talent",
+          "start": 62.305,
+          "end": 62.567
+        },
+        {
+          "text": ";",
+          "start": 62.567,
+          "end": 62.829
+        },
+        {
+          "text": "it",
+          "start": 62.829,
+          "end": 63.091
+        },
+        {
+          "text": "must",
+          "start": 63.091,
+          "end": 63.353
+        },
+        {
+          "text": "have",
+          "start": 63.353,
+          "end": 63.615
+        },
+        {
+          "text": "its",
+          "start": 63.615,
+          "end": 63.876
+        },
+        {
+          "text": "use",
+          "start": 63.876,
+          "end": 64.138
+        },
+        {
+          "text": ".",
+          "start": 64.138,
+          "end": 64.4
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 64.4,
+      "end": 68.18,
+      "text": "A thousand gold pieces spent will return again.",
+      "singableText": "A thousand gold pieces spent will return again.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "A",
+          "start": 64.4,
+          "end": 64.82
+        },
+        {
+          "text": "thousand",
+          "start": 64.82,
+          "end": 65.24
+        },
+        {
+          "text": "gold",
+          "start": 65.24,
+          "end": 65.66
+        },
+        {
+          "text": "pieces",
+          "start": 65.66,
+          "end": 66.08
+        },
+        {
+          "text": "spent",
+          "start": 66.08,
+          "end": 66.5
+        },
+        {
+          "text": "will",
+          "start": 66.5,
+          "end": 66.92
+        },
+        {
+          "text": "return",
+          "start": 66.92,
+          "end": 67.34
+        },
+        {
+          "text": "again",
+          "start": 67.34,
+          "end": 67.76
+        },
+        {
+          "text": ".",
+          "start": 67.76,
+          "end": 68.18
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 69.68,
+      "end": 77.55,
+      "text": "Cook lamb, slaughter oxen, and take delight; we must drink three hundred cups.",
+      "singableText": "Cook lamb, slaughter oxen, and take delight; we must drink three hundred cups.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Cook",
+          "start": 69.68,
+          "end": 70.143
+        },
+        {
+          "text": "lamb",
+          "start": 70.143,
+          "end": 70.606
+        },
+        {
+          "text": ",",
+          "start": 70.606,
+          "end": 71.069
+        },
+        {
+          "text": "slaughter",
+          "start": 71.069,
+          "end": 71.532
+        },
+        {
+          "text": "oxen",
+          "start": 71.532,
+          "end": 71.995
+        },
+        {
+          "text": ",",
+          "start": 71.995,
+          "end": 72.458
+        },
+        {
+          "text": "and",
+          "start": 72.458,
+          "end": 72.921
+        },
+        {
+          "text": "take",
+          "start": 72.921,
+          "end": 73.384
+        },
+        {
+          "text": "delight",
+          "start": 73.384,
+          "end": 73.846
+        },
+        {
+          "text": ";",
+          "start": 73.846,
+          "end": 74.309
+        },
+        {
+          "text": "we",
+          "start": 74.309,
+          "end": 74.772
+        },
+        {
+          "text": "must",
+          "start": 74.772,
+          "end": 75.235
+        },
+        {
+          "text": "drink",
+          "start": 75.235,
+          "end": 75.698
+        },
+        {
+          "text": "three",
+          "start": 75.698,
+          "end": 76.161
+        },
+        {
+          "text": "hundred",
+          "start": 76.161,
+          "end": 76.624
+        },
+        {
+          "text": "cups",
+          "start": 76.624,
+          "end": 77.087
+        },
+        {
+          "text": ".",
+          "start": 77.087,
+          "end": 77.55
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 77.55,
+      "end": 80.43,
+      "text": "Master Cen, Danqiu my friend.",
+      "singableText": "Master Cen, Danqiu my friend.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Master",
+          "start": 77.55,
+          "end": 77.961
+        },
+        {
+          "text": "Cen",
+          "start": 77.961,
+          "end": 78.373
+        },
+        {
+          "text": ",",
+          "start": 78.373,
+          "end": 78.784
+        },
+        {
+          "text": "Danqiu",
+          "start": 78.784,
+          "end": 79.196
+        },
+        {
+          "text": "my",
+          "start": 79.196,
+          "end": 79.607
+        },
+        {
+          "text": "friend",
+          "start": 79.607,
+          "end": 80.019
+        },
+        {
+          "text": ".",
+          "start": 80.019,
+          "end": 80.43
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 80.43,
+      "end": 83.99,
+      "text": "Please drink; let the cup not stop.",
+      "singableText": "Please drink; let the cup not stop.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Please",
+          "start": 80.43,
+          "end": 80.826
+        },
+        {
+          "text": "drink",
+          "start": 80.826,
+          "end": 81.221
+        },
+        {
+          "text": ";",
+          "start": 81.221,
+          "end": 81.617
+        },
+        {
+          "text": "let",
+          "start": 81.617,
+          "end": 82.012
+        },
+        {
+          "text": "the",
+          "start": 82.012,
+          "end": 82.408
+        },
+        {
+          "text": "cup",
+          "start": 82.408,
+          "end": 82.803
+        },
+        {
+          "text": "not",
+          "start": 82.803,
+          "end": 83.199
+        },
+        {
+          "text": "stop",
+          "start": 83.199,
+          "end": 83.594
+        },
+        {
+          "text": ".",
+          "start": 83.594,
+          "end": 83.99
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 84.59,
+      "end": 87.89,
+      "text": "I sing one song for you.",
+      "singableText": "I sing one song for you.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 84.59,
+          "end": 85.061
+        },
+        {
+          "text": "sing",
+          "start": 85.061,
+          "end": 85.533
+        },
+        {
+          "text": "one",
+          "start": 85.533,
+          "end": 86.004
+        },
+        {
+          "text": "song",
+          "start": 86.004,
+          "end": 86.476
+        },
+        {
+          "text": "for",
+          "start": 86.476,
+          "end": 86.947
+        },
+        {
+          "text": "you",
+          "start": 86.947,
+          "end": 87.419
+        },
+        {
+          "text": ".",
+          "start": 87.419,
+          "end": 87.89
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 87.89,
+      "end": 90.99,
+      "text": "Please lean your ear and listen to me.",
+      "singableText": "Please lean your ear and listen to me.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Please",
+          "start": 87.89,
+          "end": 88.234
+        },
+        {
+          "text": "lean",
+          "start": 88.234,
+          "end": 88.579
+        },
+        {
+          "text": "your",
+          "start": 88.579,
+          "end": 88.923
+        },
+        {
+          "text": "ear",
+          "start": 88.923,
+          "end": 89.268
+        },
+        {
+          "text": "and",
+          "start": 89.268,
+          "end": 89.612
+        },
+        {
+          "text": "listen",
+          "start": 89.612,
+          "end": 89.957
+        },
+        {
+          "text": "to",
+          "start": 89.957,
+          "end": 90.301
+        },
+        {
+          "text": "me",
+          "start": 90.301,
+          "end": 90.646
+        },
+        {
+          "text": ".",
+          "start": 90.646,
+          "end": 90.99
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 91.67,
+      "end": 94.53,
+      "text": "Bells, drums, and jade banquets are not worth prizing.",
+      "singableText": "Bells, drums, and jade banquets are not worth prizing.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Bells",
+          "start": 91.67,
+          "end": 91.908
+        },
+        {
+          "text": ",",
+          "start": 91.908,
+          "end": 92.147
+        },
+        {
+          "text": "drums",
+          "start": 92.147,
+          "end": 92.385
+        },
+        {
+          "text": ",",
+          "start": 92.385,
+          "end": 92.623
+        },
+        {
+          "text": "and",
+          "start": 92.623,
+          "end": 92.862
+        },
+        {
+          "text": "jade",
+          "start": 92.862,
+          "end": 93.1
+        },
+        {
+          "text": "banquets",
+          "start": 93.1,
+          "end": 93.338
+        },
+        {
+          "text": "are",
+          "start": 93.338,
+          "end": 93.577
+        },
+        {
+          "text": "not",
+          "start": 93.577,
+          "end": 93.815
+        },
+        {
+          "text": "worth",
+          "start": 93.815,
+          "end": 94.053
+        },
+        {
+          "text": "prizing",
+          "start": 94.053,
+          "end": 94.292
+        },
+        {
+          "text": ".",
+          "start": 94.292,
+          "end": 94.53
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "start": 94.53,
+      "end": 96.91,
+      "text": "I only wish to stay long drunk, never wishing to wake.",
+      "singableText": "I only wish to stay long drunk, never wishing to wake.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 94.53,
+          "end": 94.713
+        },
+        {
+          "text": "only",
+          "start": 94.713,
+          "end": 94.896
+        },
+        {
+          "text": "wish",
+          "start": 94.896,
+          "end": 95.079
+        },
+        {
+          "text": "to",
+          "start": 95.079,
+          "end": 95.262
+        },
+        {
+          "text": "stay",
+          "start": 95.262,
+          "end": 95.445
+        },
+        {
+          "text": "long",
+          "start": 95.445,
+          "end": 95.628
+        },
+        {
+          "text": "drunk",
+          "start": 95.628,
+          "end": 95.812
+        },
+        {
+          "text": ",",
+          "start": 95.812,
+          "end": 95.995
+        },
+        {
+          "text": "never",
+          "start": 95.995,
+          "end": 96.178
+        },
+        {
+          "text": "wishing",
+          "start": 96.178,
+          "end": 96.361
+        },
+        {
+          "text": "to",
+          "start": 96.361,
+          "end": 96.544
+        },
+        {
+          "text": "wake",
+          "start": 96.544,
+          "end": 96.727
+        },
+        {
+          "text": ".",
+          "start": 96.727,
+          "end": 96.91
+        }
+      ]
+    },
+    {
+      "id": "l16",
+      "start": 101.16,
+      "end": 104.44,
+      "text": "Bells, drums, and jade banquets are not worth prizing.",
+      "singableText": "Bells, drums, and jade banquets are not worth prizing.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Bells",
+          "start": 101.16,
+          "end": 101.433
+        },
+        {
+          "text": ",",
+          "start": 101.433,
+          "end": 101.707
+        },
+        {
+          "text": "drums",
+          "start": 101.707,
+          "end": 101.98
+        },
+        {
+          "text": ",",
+          "start": 101.98,
+          "end": 102.253
+        },
+        {
+          "text": "and",
+          "start": 102.253,
+          "end": 102.527
+        },
+        {
+          "text": "jade",
+          "start": 102.527,
+          "end": 102.8
+        },
+        {
+          "text": "banquets",
+          "start": 102.8,
+          "end": 103.073
+        },
+        {
+          "text": "are",
+          "start": 103.073,
+          "end": 103.347
+        },
+        {
+          "text": "not",
+          "start": 103.347,
+          "end": 103.62
+        },
+        {
+          "text": "worth",
+          "start": 103.62,
+          "end": 103.893
+        },
+        {
+          "text": "prizing",
+          "start": 103.893,
+          "end": 104.167
+        },
+        {
+          "text": ".",
+          "start": 104.167,
+          "end": 104.44
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "start": 105.28,
+      "end": 108.42,
+      "text": "I only wish to stay long drunk, never wishing to wake.",
+      "singableText": "I only wish to stay long drunk, never wishing to wake.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 105.28,
+          "end": 105.522
+        },
+        {
+          "text": "only",
+          "start": 105.522,
+          "end": 105.763
+        },
+        {
+          "text": "wish",
+          "start": 105.763,
+          "end": 106.005
+        },
+        {
+          "text": "to",
+          "start": 106.005,
+          "end": 106.246
+        },
+        {
+          "text": "stay",
+          "start": 106.246,
+          "end": 106.488
+        },
+        {
+          "text": "long",
+          "start": 106.488,
+          "end": 106.729
+        },
+        {
+          "text": "drunk",
+          "start": 106.729,
+          "end": 106.971
+        },
+        {
+          "text": ",",
+          "start": 106.971,
+          "end": 107.212
+        },
+        {
+          "text": "never",
+          "start": 107.212,
+          "end": 107.454
+        },
+        {
+          "text": "wishing",
+          "start": 107.454,
+          "end": 107.695
+        },
+        {
+          "text": "to",
+          "start": 107.695,
+          "end": 107.937
+        },
+        {
+          "text": "wake",
+          "start": 107.937,
+          "end": 108.178
+        },
+        {
+          "text": ".",
+          "start": 108.178,
+          "end": 108.42
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "start": 108.42,
+      "end": 115.59,
+      "text": "Since ancient times, sages and worthies have all been lonely.",
+      "singableText": "Since ancient times, sages and worthies have all been lonely.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Since",
+          "start": 108.42,
+          "end": 109.017
+        },
+        {
+          "text": "ancient",
+          "start": 109.017,
+          "end": 109.615
+        },
+        {
+          "text": "times",
+          "start": 109.615,
+          "end": 110.213
+        },
+        {
+          "text": ",",
+          "start": 110.213,
+          "end": 110.81
+        },
+        {
+          "text": "sages",
+          "start": 110.81,
+          "end": 111.407
+        },
+        {
+          "text": "and",
+          "start": 111.407,
+          "end": 112.005
+        },
+        {
+          "text": "worthies",
+          "start": 112.005,
+          "end": 112.603
+        },
+        {
+          "text": "have",
+          "start": 112.603,
+          "end": 113.2
+        },
+        {
+          "text": "all",
+          "start": 113.2,
+          "end": 113.797
+        },
+        {
+          "text": "been",
+          "start": 113.797,
+          "end": 114.395
+        },
+        {
+          "text": "lonely",
+          "start": 114.395,
+          "end": 114.993
+        },
+        {
+          "text": ".",
+          "start": 114.993,
+          "end": 115.59
+        }
+      ]
+    },
+    {
+      "id": "l19",
+      "start": 116.43,
+      "end": 119.43,
+      "text": "Only drinkers leave their names behind.",
+      "singableText": "Only drinkers leave their names behind.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Only",
+          "start": 116.43,
+          "end": 116.859
+        },
+        {
+          "text": "drinkers",
+          "start": 116.859,
+          "end": 117.287
+        },
+        {
+          "text": "leave",
+          "start": 117.287,
+          "end": 117.716
+        },
+        {
+          "text": "their",
+          "start": 117.716,
+          "end": 118.144
+        },
+        {
+          "text": "names",
+          "start": 118.144,
+          "end": 118.573
+        },
+        {
+          "text": "behind",
+          "start": 118.573,
+          "end": 119.001
+        },
+        {
+          "text": ".",
+          "start": 119.001,
+          "end": 119.43
+        }
+      ]
+    },
+    {
+      "id": "l20",
+      "start": 119.43,
+      "end": 122.93,
+      "text": "Long ago Prince Chen feasted at Pingle.",
+      "singableText": "Long ago Prince Chen feasted at Pingle.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Long",
+          "start": 119.43,
+          "end": 119.868
+        },
+        {
+          "text": "ago",
+          "start": 119.868,
+          "end": 120.305
+        },
+        {
+          "text": "Prince",
+          "start": 120.305,
+          "end": 120.743
+        },
+        {
+          "text": "Chen",
+          "start": 120.743,
+          "end": 121.18
+        },
+        {
+          "text": "feasted",
+          "start": 121.18,
+          "end": 121.618
+        },
+        {
+          "text": "at",
+          "start": 121.618,
+          "end": 122.055
+        },
+        {
+          "text": "Pingle",
+          "start": 122.055,
+          "end": 122.493
+        },
+        {
+          "text": ".",
+          "start": 122.493,
+          "end": 122.93
+        }
+      ]
+    },
+    {
+      "id": "l21",
+      "start": 123.79,
+      "end": 127.37,
+      "text": "Wine by the peck, ten thousand coins, freely laughing and jesting.",
+      "singableText": "Wine by the peck, ten thousand coins, freely laughing and jesting.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Wine",
+          "start": 123.79,
+          "end": 124.046
+        },
+        {
+          "text": "by",
+          "start": 124.046,
+          "end": 124.301
+        },
+        {
+          "text": "the",
+          "start": 124.301,
+          "end": 124.557
+        },
+        {
+          "text": "peck",
+          "start": 124.557,
+          "end": 124.813
+        },
+        {
+          "text": ",",
+          "start": 124.813,
+          "end": 125.069
+        },
+        {
+          "text": "ten",
+          "start": 125.069,
+          "end": 125.324
+        },
+        {
+          "text": "thousand",
+          "start": 125.324,
+          "end": 125.58
+        },
+        {
+          "text": "coins",
+          "start": 125.58,
+          "end": 125.836
+        },
+        {
+          "text": ",",
+          "start": 125.836,
+          "end": 126.091
+        },
+        {
+          "text": "freely",
+          "start": 126.091,
+          "end": 126.347
+        },
+        {
+          "text": "laughing",
+          "start": 126.347,
+          "end": 126.603
+        },
+        {
+          "text": "and",
+          "start": 126.603,
+          "end": 126.859
+        },
+        {
+          "text": "jesting",
+          "start": 126.859,
+          "end": 127.114
+        },
+        {
+          "text": ".",
+          "start": 127.114,
+          "end": 127.37
+        }
+      ]
+    },
+    {
+      "id": "l22",
+      "start": 127.37,
+      "end": 130.43,
+      "text": "Since ancient times, sages and worthies have all been lonely.",
+      "singableText": "Since ancient times, sages and worthies have all been lonely.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Since",
+          "start": 127.37,
+          "end": 127.625
+        },
+        {
+          "text": "ancient",
+          "start": 127.625,
+          "end": 127.88
+        },
+        {
+          "text": "times",
+          "start": 127.88,
+          "end": 128.135
+        },
+        {
+          "text": ",",
+          "start": 128.135,
+          "end": 128.39
+        },
+        {
+          "text": "sages",
+          "start": 128.39,
+          "end": 128.645
+        },
+        {
+          "text": "and",
+          "start": 128.645,
+          "end": 128.9
+        },
+        {
+          "text": "worthies",
+          "start": 128.9,
+          "end": 129.155
+        },
+        {
+          "text": "have",
+          "start": 129.155,
+          "end": 129.41
+        },
+        {
+          "text": "all",
+          "start": 129.41,
+          "end": 129.665
+        },
+        {
+          "text": "been",
+          "start": 129.665,
+          "end": 129.92
+        },
+        {
+          "text": "lonely",
+          "start": 129.92,
+          "end": 130.175
+        },
+        {
+          "text": ".",
+          "start": 130.175,
+          "end": 130.43
+        }
+      ]
+    },
+    {
+      "id": "l23",
+      "start": 131.15,
+      "end": 134.01,
+      "text": "Only drinkers leave their names behind.",
+      "singableText": "Only drinkers leave their names behind.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Only",
+          "start": 131.15,
+          "end": 131.559
+        },
+        {
+          "text": "drinkers",
+          "start": 131.559,
+          "end": 131.967
+        },
+        {
+          "text": "leave",
+          "start": 131.967,
+          "end": 132.376
+        },
+        {
+          "text": "their",
+          "start": 132.376,
+          "end": 132.784
+        },
+        {
+          "text": "names",
+          "start": 132.784,
+          "end": 133.193
+        },
+        {
+          "text": "behind",
+          "start": 133.193,
+          "end": 133.601
+        },
+        {
+          "text": ".",
+          "start": 133.601,
+          "end": 134.01
+        }
+      ]
+    },
+    {
+      "id": "l24",
+      "start": 134.71,
+      "end": 137.47,
+      "text": "Long ago Prince Chen feasted at Pingle.",
+      "singableText": "Long ago Prince Chen feasted at Pingle.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Long",
+          "start": 134.71,
+          "end": 135.055
+        },
+        {
+          "text": "ago",
+          "start": 135.055,
+          "end": 135.4
+        },
+        {
+          "text": "Prince",
+          "start": 135.4,
+          "end": 135.745
+        },
+        {
+          "text": "Chen",
+          "start": 135.745,
+          "end": 136.09
+        },
+        {
+          "text": "feasted",
+          "start": 136.09,
+          "end": 136.435
+        },
+        {
+          "text": "at",
+          "start": 136.435,
+          "end": 136.78
+        },
+        {
+          "text": "Pingle",
+          "start": 136.78,
+          "end": 137.125
+        },
+        {
+          "text": ".",
+          "start": 137.125,
+          "end": 137.47
+        }
+      ]
+    },
+    {
+      "id": "l25",
+      "start": 137.47,
+      "end": 141.17,
+      "text": "Wine by the peck, ten thousand coins, freely laughing and jesting.",
+      "singableText": "Wine by the peck, ten thousand coins, freely laughing and jesting.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Wine",
+          "start": 137.47,
+          "end": 137.734
+        },
+        {
+          "text": "by",
+          "start": 137.734,
+          "end": 137.999
+        },
+        {
+          "text": "the",
+          "start": 137.999,
+          "end": 138.263
+        },
+        {
+          "text": "peck",
+          "start": 138.263,
+          "end": 138.527
+        },
+        {
+          "text": ",",
+          "start": 138.527,
+          "end": 138.791
+        },
+        {
+          "text": "ten",
+          "start": 138.791,
+          "end": 139.056
+        },
+        {
+          "text": "thousand",
+          "start": 139.056,
+          "end": 139.32
+        },
+        {
+          "text": "coins",
+          "start": 139.32,
+          "end": 139.584
+        },
+        {
+          "text": ",",
+          "start": 139.584,
+          "end": 139.849
+        },
+        {
+          "text": "freely",
+          "start": 139.849,
+          "end": 140.113
+        },
+        {
+          "text": "laughing",
+          "start": 140.113,
+          "end": 140.377
+        },
+        {
+          "text": "and",
+          "start": 140.377,
+          "end": 140.641
+        },
+        {
+          "text": "jesting",
+          "start": 140.641,
+          "end": 140.906
+        },
+        {
+          "text": ".",
+          "start": 140.906,
+          "end": 141.17
+        }
+      ]
+    },
+    {
+      "id": "l26",
+      "start": 141.17,
+      "end": 144.83,
+      "text": "Host, why speak of having too little money?",
+      "singableText": "Host, why speak of having too little money?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Host",
+          "start": 141.17,
+          "end": 141.536
+        },
+        {
+          "text": ",",
+          "start": 141.536,
+          "end": 141.902
+        },
+        {
+          "text": "why",
+          "start": 141.902,
+          "end": 142.268
+        },
+        {
+          "text": "speak",
+          "start": 142.268,
+          "end": 142.634
+        },
+        {
+          "text": "of",
+          "start": 142.634,
+          "end": 143.0
+        },
+        {
+          "text": "having",
+          "start": 143.0,
+          "end": 143.366
+        },
+        {
+          "text": "too",
+          "start": 143.366,
+          "end": 143.732
+        },
+        {
+          "text": "little",
+          "start": 143.732,
+          "end": 144.098
+        },
+        {
+          "text": "money",
+          "start": 144.098,
+          "end": 144.464
+        },
+        {
+          "text": "?",
+          "start": 144.464,
+          "end": 144.83
+        }
+      ]
+    },
+    {
+      "id": "l27",
+      "start": 145.79,
+      "end": 148.11,
+      "text": "Just buy wine at once, and pour it for you.",
+      "singableText": "Just buy wine at once, and pour it for you.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Just",
+          "start": 145.79,
+          "end": 145.983
+        },
+        {
+          "text": "buy",
+          "start": 145.983,
+          "end": 146.177
+        },
+        {
+          "text": "wine",
+          "start": 146.177,
+          "end": 146.37
+        },
+        {
+          "text": "at",
+          "start": 146.37,
+          "end": 146.563
+        },
+        {
+          "text": "once",
+          "start": 146.563,
+          "end": 146.757
+        },
+        {
+          "text": ",",
+          "start": 146.757,
+          "end": 146.95
+        },
+        {
+          "text": "and",
+          "start": 146.95,
+          "end": 147.143
+        },
+        {
+          "text": "pour",
+          "start": 147.143,
+          "end": 147.337
+        },
+        {
+          "text": "it",
+          "start": 147.337,
+          "end": 147.53
+        },
+        {
+          "text": "for",
+          "start": 147.53,
+          "end": 147.723
+        },
+        {
+          "text": "you",
+          "start": 147.723,
+          "end": 147.917
+        },
+        {
+          "text": ".",
+          "start": 147.917,
+          "end": 148.11
+        }
+      ]
+    },
+    {
+      "id": "l28",
+      "start": 149.11,
+      "end": 153.19,
+      "text": "The dappled horse, the thousand-gold fur robe.",
+      "singableText": "The dappled horse, the thousand-gold fur robe.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 149.11,
+          "end": 149.563
+        },
+        {
+          "text": "dappled",
+          "start": 149.563,
+          "end": 150.017
+        },
+        {
+          "text": "horse",
+          "start": 150.017,
+          "end": 150.47
+        },
+        {
+          "text": ",",
+          "start": 150.47,
+          "end": 150.923
+        },
+        {
+          "text": "the",
+          "start": 150.923,
+          "end": 151.377
+        },
+        {
+          "text": "thousand-gold",
+          "start": 151.377,
+          "end": 151.83
+        },
+        {
+          "text": "fur",
+          "start": 151.83,
+          "end": 152.283
+        },
+        {
+          "text": "robe",
+          "start": 152.283,
+          "end": 152.737
+        },
+        {
+          "text": ".",
+          "start": 152.737,
+          "end": 153.19
+        }
+      ]
+    },
+    {
+      "id": "l29",
+      "start": 153.19,
+      "end": 157.47,
+      "text": "Call the boy to bring them out and trade them for fine wine.",
+      "singableText": "Call the boy to bring them out and trade them for fine wine.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Call",
+          "start": 153.19,
+          "end": 153.496
+        },
+        {
+          "text": "the",
+          "start": 153.496,
+          "end": 153.801
+        },
+        {
+          "text": "boy",
+          "start": 153.801,
+          "end": 154.107
+        },
+        {
+          "text": "to",
+          "start": 154.107,
+          "end": 154.413
+        },
+        {
+          "text": "bring",
+          "start": 154.413,
+          "end": 154.719
+        },
+        {
+          "text": "them",
+          "start": 154.719,
+          "end": 155.024
+        },
+        {
+          "text": "out",
+          "start": 155.024,
+          "end": 155.33
+        },
+        {
+          "text": "and",
+          "start": 155.33,
+          "end": 155.636
+        },
+        {
+          "text": "trade",
+          "start": 155.636,
+          "end": 155.941
+        },
+        {
+          "text": "them",
+          "start": 155.941,
+          "end": 156.247
+        },
+        {
+          "text": "for",
+          "start": 156.247,
+          "end": 156.553
+        },
+        {
+          "text": "fine",
+          "start": 156.553,
+          "end": 156.859
+        },
+        {
+          "text": "wine",
+          "start": 156.859,
+          "end": 157.164
+        },
+        {
+          "text": ".",
+          "start": 157.164,
+          "end": 157.47
+        }
+      ]
+    },
+    {
+      "id": "l30",
+      "start": 158.97,
+      "end": 162.69,
+      "text": "Together with you, I will dissolve ten thousand ages of sorrow.",
+      "singableText": "Together with you, I will dissolve ten thousand ages of sorrow.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Together",
+          "start": 158.97,
+          "end": 159.256
+        },
+        {
+          "text": "with",
+          "start": 159.256,
+          "end": 159.542
+        },
+        {
+          "text": "you",
+          "start": 159.542,
+          "end": 159.828
+        },
+        {
+          "text": ",",
+          "start": 159.828,
+          "end": 160.115
+        },
+        {
+          "text": "I",
+          "start": 160.115,
+          "end": 160.401
+        },
+        {
+          "text": "will",
+          "start": 160.401,
+          "end": 160.687
+        },
+        {
+          "text": "dissolve",
+          "start": 160.687,
+          "end": 160.973
+        },
+        {
+          "text": "ten",
+          "start": 160.973,
+          "end": 161.259
+        },
+        {
+          "text": "thousand",
+          "start": 161.259,
+          "end": 161.545
+        },
+        {
+          "text": "ages",
+          "start": 161.545,
+          "end": 161.832
+        },
+        {
+          "text": "of",
+          "start": 161.832,
+          "end": 162.118
+        },
+        {
+          "text": "sorrow",
+          "start": 162.118,
+          "end": 162.404
+        },
+        {
+          "text": ".",
+          "start": 162.404,
+          "end": 162.69
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "vocalSet": "zh-vocal",
+    "correction": "Active Mandarin lyrics corrected from same-vocal ASR and the original poem. The lyric display preserves the user's requested original text where ASR is sound-close, including 将进酒 as qiang jin jiu. The ACE render repeats 钟鼓馔玉/但愿长醉 and 古来圣贤/陈王 sections; the website reflects those repeats."
+  }
+}
