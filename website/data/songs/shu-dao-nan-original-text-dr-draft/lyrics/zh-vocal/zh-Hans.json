@@ -615,7 +615,7 @@
     {
       "id": "l15",
       "start": 71.7,
-      "end": 76.8,
+      "end": 75.1,
       "text": "砯崖转石万壑雷",
       "singableText": "砯崖转石万壑雷",
       "role": "lyric",
@@ -623,118 +623,191 @@
         {
           "text": "砯",
           "start": 71.7,
-          "end": 72.429,
+          "end": 72.186,
           "pinyin": "ping1"
         },
         {
           "text": "崖",
-          "start": 72.429,
-          "end": 73.157,
+          "start": 72.186,
+          "end": 72.671,
           "pinyin": "ya2"
         },
         {
           "text": "转",
-          "start": 73.157,
-          "end": 73.886,
+          "start": 72.671,
+          "end": 73.157,
           "pinyin": "zhuan3"
         },
         {
           "text": "石",
-          "start": 73.886,
-          "end": 74.614,
+          "start": 73.157,
+          "end": 73.643,
           "pinyin": "shi2"
         },
         {
           "text": "万",
-          "start": 74.614,
-          "end": 75.343,
+          "start": 73.643,
+          "end": 74.129,
           "pinyin": "wan4"
         },
         {
           "text": "壑",
-          "start": 75.343,
-          "end": 76.071,
+          "start": 74.129,
+          "end": 74.614,
           "pinyin": "he4"
         },
         {
           "text": "雷",
-          "start": 76.071,
-          "end": 76.8,
+          "start": 74.614,
+          "end": 75.1,
           "pinyin": "lei2"
         }
       ]
     },
     {
       "id": "l16",
-      "start": 76.8,
-      "end": 87.0,
-      "text": "锦城虽云乐，不如早还家",
-      "singableText": "锦城虽云乐，不如早还家",
+      "start": 75.1,
+      "end": 79.86,
+      "text": "一夫当关",
+      "singableText": "一夫当关",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "一",
+          "start": 75.1,
+          "end": 76.29,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "夫",
+          "start": 76.29,
+          "end": 77.48,
+          "pinyin": "fu1"
+        },
+        {
+          "text": "当",
+          "start": 77.48,
+          "end": 78.67,
+          "pinyin": "dang1"
+        },
+        {
+          "text": "关",
+          "start": 78.67,
+          "end": 79.86,
+          "pinyin": "guan1"
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "start": 79.86,
+      "end": 84.2,
+      "text": "万夫莫开",
+      "singableText": "万夫莫开",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "万",
+          "start": 79.86,
+          "end": 80.945,
+          "pinyin": "wan4"
+        },
+        {
+          "text": "夫",
+          "start": 80.945,
+          "end": 82.03,
+          "pinyin": "fu1"
+        },
+        {
+          "text": "莫",
+          "start": 82.03,
+          "end": 83.115,
+          "pinyin": "mo4"
+        },
+        {
+          "text": "开",
+          "start": 83.115,
+          "end": 84.2,
+          "pinyin": "kai1"
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "start": 84.2,
+      "end": 88.22,
+      "text": "锦城虽云乐",
+      "singableText": "锦城虽云乐",
       "role": "lyric",
       "tokens": [
         {
           "text": "锦",
-          "start": 76.8,
-          "end": 77.727,
+          "start": 84.2,
+          "end": 85.004,
           "pinyin": "jin3"
         },
         {
           "text": "城",
-          "start": 77.727,
-          "end": 78.655,
+          "start": 85.004,
+          "end": 85.808,
           "pinyin": "cheng2"
         },
         {
           "text": "虽",
-          "start": 78.655,
-          "end": 79.582,
+          "start": 85.808,
+          "end": 86.612,
           "pinyin": "sui1"
         },
         {
           "text": "云",
-          "start": 79.582,
-          "end": 80.509,
+          "start": 86.612,
+          "end": 87.416,
           "pinyin": "yun2"
         },
         {
           "text": "乐",
-          "start": 80.509,
-          "end": 81.436,
+          "start": 87.416,
+          "end": 88.22,
           "pinyin": "le4"
-        },
-        {
-          "text": "，",
-          "start": 81.436,
-          "end": 82.364
-        },
+        }
+      ]
+    },
+    {
+      "id": "l19",
+      "start": 88.22,
+      "end": 91.86,
+      "text": "不如早还家",
+      "singableText": "不如早还家",
+      "role": "lyric",
+      "tokens": [
         {
           "text": "不",
-          "start": 82.364,
-          "end": 83.291,
+          "start": 88.22,
+          "end": 88.948,
           "pinyin": "bu4"
         },
         {
           "text": "如",
-          "start": 83.291,
-          "end": 84.218,
+          "start": 88.948,
+          "end": 89.676,
           "pinyin": "ru2"
         },
         {
           "text": "早",
-          "start": 84.218,
-          "end": 85.145,
+          "start": 89.676,
+          "end": 90.404,
           "pinyin": "zao3"
         },
         {
           "text": "还",
-          "start": 85.145,
-          "end": 86.073,
-          "pinyin": "hai2"
+          "start": 90.404,
+          "end": 91.132,
+          "pinyin": "huan2"
         },
         {
           "text": "家",
-          "start": 86.073,
-          "end": 87.0,
+          "start": 91.132,
+          "end": 91.86,
           "pinyin": "jia1"
         }
       ]

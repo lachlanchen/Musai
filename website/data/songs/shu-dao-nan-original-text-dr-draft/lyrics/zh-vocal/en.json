@@ -707,7 +707,7 @@
     {
       "id": "l15",
       "start": 71.7,
-      "end": 76.8,
+      "end": 75.1,
       "text": "Stones crash from cliffs like thunder through ten thousand ravines.",
       "singableText": "Stones crash from cliffs like thunder through ten thousand ravines.",
       "role": "translation",
@@ -715,132 +715,232 @@
         {
           "text": "Stones",
           "start": 71.7,
-          "end": 72.164
+          "end": 72.009
         },
         {
           "text": "crash",
-          "start": 72.164,
-          "end": 72.627
+          "start": 72.009,
+          "end": 72.318
         },
         {
           "text": "from",
-          "start": 72.627,
-          "end": 73.091
+          "start": 72.318,
+          "end": 72.627
         },
         {
           "text": "cliffs",
-          "start": 73.091,
-          "end": 73.555
+          "start": 72.627,
+          "end": 72.936
         },
         {
           "text": "like",
-          "start": 73.555,
-          "end": 74.018
+          "start": 72.936,
+          "end": 73.245
         },
         {
           "text": "thunder",
-          "start": 74.018,
-          "end": 74.482
+          "start": 73.245,
+          "end": 73.555
         },
         {
           "text": "through",
-          "start": 74.482,
-          "end": 74.945
+          "start": 73.555,
+          "end": 73.864
         },
         {
           "text": "ten",
-          "start": 74.945,
-          "end": 75.409
+          "start": 73.864,
+          "end": 74.173
         },
         {
           "text": "thousand",
-          "start": 75.409,
-          "end": 75.873
+          "start": 74.173,
+          "end": 74.482
         },
         {
           "text": "ravines",
-          "start": 75.873,
-          "end": 76.336
+          "start": 74.482,
+          "end": 74.791
         },
         {
           "text": ".",
-          "start": 76.336,
-          "end": 76.8
+          "start": 74.791,
+          "end": 75.1
         }
       ]
     },
     {
       "id": "l16",
-      "start": 76.8,
-      "end": 87.0,
-      "text": "Though Brocade City is called joyful, better to return home soon.",
-      "singableText": "Though Brocade City is called joyful, better to return home soon.",
+      "start": 75.1,
+      "end": 79.86,
+      "text": "One man holds the pass.",
+      "singableText": "One man holds the pass.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "One",
+          "start": 75.1,
+          "end": 75.893
+        },
+        {
+          "text": "man",
+          "start": 75.893,
+          "end": 76.687
+        },
+        {
+          "text": "holds",
+          "start": 76.687,
+          "end": 77.48
+        },
+        {
+          "text": "the",
+          "start": 77.48,
+          "end": 78.273
+        },
+        {
+          "text": "pass",
+          "start": 78.273,
+          "end": 79.067
+        },
+        {
+          "text": ".",
+          "start": 79.067,
+          "end": 79.86
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "start": 79.86,
+      "end": 84.2,
+      "text": "Ten thousand men cannot force it open.",
+      "singableText": "Ten thousand men cannot force it open.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Ten",
+          "start": 79.86,
+          "end": 80.403
+        },
+        {
+          "text": "thousand",
+          "start": 80.403,
+          "end": 80.945
+        },
+        {
+          "text": "men",
+          "start": 80.945,
+          "end": 81.487
+        },
+        {
+          "text": "cannot",
+          "start": 81.487,
+          "end": 82.03
+        },
+        {
+          "text": "force",
+          "start": 82.03,
+          "end": 82.573
+        },
+        {
+          "text": "it",
+          "start": 82.573,
+          "end": 83.115
+        },
+        {
+          "text": "open",
+          "start": 83.115,
+          "end": 83.657
+        },
+        {
+          "text": ".",
+          "start": 83.657,
+          "end": 84.2
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "start": 84.2,
+      "end": 88.22,
+      "text": "Though Brocade City is called joyful.",
+      "singableText": "Though Brocade City is called joyful.",
       "role": "translation",
       "tokens": [
         {
           "text": "Though",
-          "start": 76.8,
-          "end": 77.585
+          "start": 84.2,
+          "end": 84.774
         },
         {
           "text": "Brocade",
-          "start": 77.585,
-          "end": 78.369
+          "start": 84.774,
+          "end": 85.349
         },
         {
           "text": "City",
-          "start": 78.369,
-          "end": 79.154
+          "start": 85.349,
+          "end": 85.923
         },
         {
           "text": "is",
-          "start": 79.154,
-          "end": 79.938
+          "start": 85.923,
+          "end": 86.497
         },
         {
           "text": "called",
-          "start": 79.938,
-          "end": 80.723
+          "start": 86.497,
+          "end": 87.071
         },
         {
           "text": "joyful",
-          "start": 80.723,
-          "end": 81.508
-        },
-        {
-          "text": ",",
-          "start": 81.508,
-          "end": 82.292
-        },
-        {
-          "text": "better",
-          "start": 82.292,
-          "end": 83.077
-        },
-        {
-          "text": "to",
-          "start": 83.077,
-          "end": 83.862
-        },
-        {
-          "text": "return",
-          "start": 83.862,
-          "end": 84.646
-        },
-        {
-          "text": "home",
-          "start": 84.646,
-          "end": 85.431
-        },
-        {
-          "text": "soon",
-          "start": 85.431,
-          "end": 86.215
+          "start": 87.071,
+          "end": 87.646
         },
         {
           "text": ".",
-          "start": 86.215,
-          "end": 87.0
+          "start": 87.646,
+          "end": 88.22
+        }
+      ]
+    },
+    {
+      "id": "l19",
+      "start": 88.22,
+      "end": 91.86,
+      "text": "Better to return home soon.",
+      "singableText": "Better to return home soon.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Better",
+          "start": 88.22,
+          "end": 88.827
+        },
+        {
+          "text": "to",
+          "start": 88.827,
+          "end": 89.433
+        },
+        {
+          "text": "return",
+          "start": 89.433,
+          "end": 90.04
+        },
+        {
+          "text": "home",
+          "start": 90.04,
+          "end": 90.647
+        },
+        {
+          "text": "soon",
+          "start": 90.647,
+          "end": 91.253
+        },
+        {
+          "text": ".",
+          "start": 91.253,
+          "end": 91.86
         }
       ]
     }

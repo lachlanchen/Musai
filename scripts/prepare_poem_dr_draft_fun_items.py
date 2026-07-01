@@ -75,8 +75,11 @@ SHU_LINES = [
     Line("l12", 56.80, 61.20, "连峰去天不盈尺", "Linked peaks fall less than a foot from heaven.", "連なる峰は天まで一尺もない。"),
     Line("l13", 61.20, 66.20, "枯松倒挂倚绝壁", "Withered pines hang upside down from sheer cliffs.", "枯松は絶壁に逆さに掛かる。"),
     Line("l14", 66.20, 71.70, "飞湍瀑流争喧豗", "Flying rapids and waterfalls roar against each other.", "飛ぶ急流と滝が轟き競う。"),
-    Line("l15", 71.70, 76.80, "砯崖转石万壑雷", "Stones crash from cliffs like thunder through ten thousand ravines.", "崖を打つ石は万谷の雷となる。"),
-    Line("l16", 76.80, 87.00, "锦城虽云乐，不如早还家", "Though Brocade City is called joyful, better to return home soon.", "錦城は楽しいと言えども、早く帰るに及ばない。"),
+    Line("l15", 71.70, 75.10, "砯崖转石万壑雷", "Stones crash from cliffs like thunder through ten thousand ravines.", "崖を打つ石は万谷の雷となる。"),
+    Line("l16", 75.10, 79.86, "一夫当关", "One man holds the pass.", "一人が関を守る。"),
+    Line("l17", 79.86, 84.20, "万夫莫开", "Ten thousand men cannot force it open.", "万人でも開くことはできない。"),
+    Line("l18", 84.20, 88.22, "锦城虽云乐", "Though Brocade City is called joyful.", "錦城は楽しいと言えども。"),
+    Line("l19", 88.22, 91.86, "不如早还家", "Better to return home soon.", "早く家に帰るほうがよい。"),
 ]
 
 XING_LINES = [
@@ -220,6 +223,8 @@ def timed_tokens(text: str, start: float, end: float, code: str) -> list[dict]:
                 token["pinyin"] = "chang2"
             if unit == "行" and index > 0 and units[index - 1] == "太":
                 token["pinyin"] = "hang2"
+            if unit == "还" and "还家" in text:
+                token["pinyin"] = "huan2"
         elif code == "ja" and pykakasi and "\u4e00" <= unit <= "\u9fff":
             reading = pykakasi.kakasi().convert(unit)
             if reading:

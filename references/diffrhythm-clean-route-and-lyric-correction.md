@@ -215,3 +215,35 @@ website/data/songs/<media-id>/lyrics/<vocal-set>/<translation-lang>.json
 For Musia songs, all public publishing paths should reuse those corrected JSON
 files. Do not publish the raw generated prompt lyrics as subtitles or music
 platform lyrics.
+
+## 2026-07-01 DR Quality Warning
+
+The `蜀道难 · 原文重组 DR Draft` and `行路难 · 原文重组 DR Draft` checks changed the
+route policy:
+
+- DiffRhythm clean LRC can be useful for lyric-alignment experiments.
+- It is not a preferred final-quality music route for Musia because melody and
+  singing quality can be terrible or only so-so even when the lyrics align.
+- For beautiful song generation, use ACE/ACE-Step as the default and final
+  route unless the user explicitly asks for an experimental comparison.
+- Keep DiffRhythm outputs visibly labeled `DR Draft`, `DR Short`, or
+  `DR Full Lyrics`; do not record or publish them as final-quality songs.
+
+Tail correction evidence for `蜀道难 · 原文重组 DR Draft`:
+
+```text
+Tail clip: 72s-95s
+small no-VAD:  暗示萬河雷 / 已負擔 / 萬富臥鎧 / 京城遂雲了 / 不如早還假
+medium no-VAD: 三十万盒泪 已负担 / 万夫我开 京城碎云了 / 不如早还家
+```
+
+Together with listening feedback and the source lyric, the published tail should
+restore the source-close lines:
+
+```text
+砯崖转石万壑雷
+一夫当关
+万夫莫开
+锦城虽云乐
+不如早还家
+```
