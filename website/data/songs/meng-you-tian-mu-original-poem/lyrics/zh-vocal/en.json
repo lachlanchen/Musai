@@ -1,0 +1,2682 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "meng-you-tian-mu-original-poem",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "lines": [
+    {
+      "id": "l00",
+      "start": 0.0,
+      "end": 1.38,
+      "text": "Ah.",
+      "singableText": "Ah.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Ah",
+          "start": 0.0,
+          "end": 0.69
+        },
+        {
+          "text": ".",
+          "start": 0.69,
+          "end": 1.38
+        }
+      ]
+    },
+    {
+      "id": "l01",
+      "start": 31.72,
+      "end": 35.1,
+      "text": "Sea travelers speak of Yingzhou.",
+      "singableText": "Sea travelers speak of Yingzhou.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Sea",
+          "start": 31.72,
+          "end": 32.283
+        },
+        {
+          "text": "travelers",
+          "start": 32.283,
+          "end": 32.847
+        },
+        {
+          "text": "speak",
+          "start": 32.847,
+          "end": 33.41
+        },
+        {
+          "text": "of",
+          "start": 33.41,
+          "end": 33.973
+        },
+        {
+          "text": "Yingzhou",
+          "start": 33.973,
+          "end": 34.537
+        },
+        {
+          "text": ".",
+          "start": 34.537,
+          "end": 35.1
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 37.82,
+      "end": 41.24,
+      "text": "Mist and waves are dim, truly hard to seek.",
+      "singableText": "Mist and waves are dim, truly hard to seek.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Mist",
+          "start": 37.82,
+          "end": 38.131
+        },
+        {
+          "text": "and",
+          "start": 38.131,
+          "end": 38.442
+        },
+        {
+          "text": "waves",
+          "start": 38.442,
+          "end": 38.753
+        },
+        {
+          "text": "are",
+          "start": 38.753,
+          "end": 39.064
+        },
+        {
+          "text": "dim",
+          "start": 39.064,
+          "end": 39.375
+        },
+        {
+          "text": ",",
+          "start": 39.375,
+          "end": 39.685
+        },
+        {
+          "text": "truly",
+          "start": 39.685,
+          "end": 39.996
+        },
+        {
+          "text": "hard",
+          "start": 39.996,
+          "end": 40.307
+        },
+        {
+          "text": "to",
+          "start": 40.307,
+          "end": 40.618
+        },
+        {
+          "text": "seek",
+          "start": 40.618,
+          "end": 40.929
+        },
+        {
+          "text": ".",
+          "start": 40.929,
+          "end": 41.24
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 41.24,
+      "end": 47.34,
+      "text": "Clouds and rosy light flicker, perhaps visible.",
+      "singableText": "Clouds and rosy light flicker, perhaps visible.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Clouds",
+          "start": 41.24,
+          "end": 41.918
+        },
+        {
+          "text": "and",
+          "start": 41.918,
+          "end": 42.596
+        },
+        {
+          "text": "rosy",
+          "start": 42.596,
+          "end": 43.273
+        },
+        {
+          "text": "light",
+          "start": 43.273,
+          "end": 43.951
+        },
+        {
+          "text": "flicker",
+          "start": 43.951,
+          "end": 44.629
+        },
+        {
+          "text": ",",
+          "start": 44.629,
+          "end": 45.307
+        },
+        {
+          "text": "perhaps",
+          "start": 45.307,
+          "end": 45.984
+        },
+        {
+          "text": "visible",
+          "start": 45.984,
+          "end": 46.662
+        },
+        {
+          "text": ".",
+          "start": 46.662,
+          "end": 47.34
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 49.48,
+      "end": 53.88,
+      "text": "Tianmu joins the sky and stretches across heaven.",
+      "singableText": "Tianmu joins the sky and stretches across heaven.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Tianmu",
+          "start": 49.48,
+          "end": 49.969
+        },
+        {
+          "text": "joins",
+          "start": 49.969,
+          "end": 50.458
+        },
+        {
+          "text": "the",
+          "start": 50.458,
+          "end": 50.947
+        },
+        {
+          "text": "sky",
+          "start": 50.947,
+          "end": 51.436
+        },
+        {
+          "text": "and",
+          "start": 51.436,
+          "end": 51.924
+        },
+        {
+          "text": "stretches",
+          "start": 51.924,
+          "end": 52.413
+        },
+        {
+          "text": "across",
+          "start": 52.413,
+          "end": 52.902
+        },
+        {
+          "text": "heaven",
+          "start": 52.902,
+          "end": 53.391
+        },
+        {
+          "text": ".",
+          "start": 53.391,
+          "end": 53.88
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 54.88,
+      "end": 59.46,
+      "text": "Tiantai rises forty-eight thousand zhang.",
+      "singableText": "Tiantai rises forty-eight thousand zhang.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Tiantai",
+          "start": 54.88,
+          "end": 55.643
+        },
+        {
+          "text": "rises",
+          "start": 55.643,
+          "end": 56.407
+        },
+        {
+          "text": "forty-eight",
+          "start": 56.407,
+          "end": 57.17
+        },
+        {
+          "text": "thousand",
+          "start": 57.17,
+          "end": 57.933
+        },
+        {
+          "text": "zhang",
+          "start": 57.933,
+          "end": 58.697
+        },
+        {
+          "text": ".",
+          "start": 58.697,
+          "end": 59.46
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 60.6,
+      "end": 65.16,
+      "text": "Before it, one would lean and fall southeast.",
+      "singableText": "Before it, one would lean and fall southeast.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Before",
+          "start": 60.6,
+          "end": 61.056
+        },
+        {
+          "text": "it",
+          "start": 61.056,
+          "end": 61.512
+        },
+        {
+          "text": ",",
+          "start": 61.512,
+          "end": 61.968
+        },
+        {
+          "text": "one",
+          "start": 61.968,
+          "end": 62.424
+        },
+        {
+          "text": "would",
+          "start": 62.424,
+          "end": 62.88
+        },
+        {
+          "text": "lean",
+          "start": 62.88,
+          "end": 63.336
+        },
+        {
+          "text": "and",
+          "start": 63.336,
+          "end": 63.792
+        },
+        {
+          "text": "fall",
+          "start": 63.792,
+          "end": 64.248
+        },
+        {
+          "text": "southeast",
+          "start": 64.248,
+          "end": 64.704
+        },
+        {
+          "text": ".",
+          "start": 64.704,
+          "end": 65.16
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 66.78,
+      "end": 69.02,
+      "text": "The lake moon shines on my shadow.",
+      "singableText": "The lake moon shines on my shadow.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 66.78,
+          "end": 67.06
+        },
+        {
+          "text": "lake",
+          "start": 67.06,
+          "end": 67.34
+        },
+        {
+          "text": "moon",
+          "start": 67.34,
+          "end": 67.62
+        },
+        {
+          "text": "shines",
+          "start": 67.62,
+          "end": 67.9
+        },
+        {
+          "text": "on",
+          "start": 67.9,
+          "end": 68.18
+        },
+        {
+          "text": "my",
+          "start": 68.18,
+          "end": 68.46
+        },
+        {
+          "text": "shadow",
+          "start": 68.46,
+          "end": 68.74
+        },
+        {
+          "text": ".",
+          "start": 68.74,
+          "end": 69.02
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 69.02,
+      "end": 71.22,
+      "text": "It sends me to Shanxi stream.",
+      "singableText": "It sends me to Shanxi stream.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "It",
+          "start": 69.02,
+          "end": 69.334
+        },
+        {
+          "text": "sends",
+          "start": 69.334,
+          "end": 69.649
+        },
+        {
+          "text": "me",
+          "start": 69.649,
+          "end": 69.963
+        },
+        {
+          "text": "to",
+          "start": 69.963,
+          "end": 70.277
+        },
+        {
+          "text": "Shanxi",
+          "start": 70.277,
+          "end": 70.591
+        },
+        {
+          "text": "stream",
+          "start": 70.591,
+          "end": 70.906
+        },
+        {
+          "text": ".",
+          "start": 70.906,
+          "end": 71.22
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 72.1,
+      "end": 74.0,
+      "text": "Where Lord Xie once stayed.",
+      "singableText": "Where Lord Xie once stayed.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Where",
+          "start": 72.1,
+          "end": 72.417
+        },
+        {
+          "text": "Lord",
+          "start": 72.417,
+          "end": 72.733
+        },
+        {
+          "text": "Xie",
+          "start": 72.733,
+          "end": 73.05
+        },
+        {
+          "text": "once",
+          "start": 73.05,
+          "end": 73.367
+        },
+        {
+          "text": "stayed",
+          "start": 73.367,
+          "end": 73.683
+        },
+        {
+          "text": ".",
+          "start": 73.683,
+          "end": 74.0
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 74.0,
+      "end": 77.1,
+      "text": "Green waters ripple; clear gibbons cry.",
+      "singableText": "Green waters ripple; clear gibbons cry.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Green",
+          "start": 74.0,
+          "end": 74.388
+        },
+        {
+          "text": "waters",
+          "start": 74.388,
+          "end": 74.775
+        },
+        {
+          "text": "ripple",
+          "start": 74.775,
+          "end": 75.162
+        },
+        {
+          "text": ";",
+          "start": 75.162,
+          "end": 75.55
+        },
+        {
+          "text": "clear",
+          "start": 75.55,
+          "end": 75.938
+        },
+        {
+          "text": "gibbons",
+          "start": 75.938,
+          "end": 76.325
+        },
+        {
+          "text": "cry",
+          "start": 76.325,
+          "end": 76.712
+        },
+        {
+          "text": ".",
+          "start": 76.712,
+          "end": 77.1
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 77.1,
+      "end": 79.66,
+      "text": "My feet wear Xie Gong's clogs.",
+      "singableText": "My feet wear Xie Gong's clogs.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "My",
+          "start": 77.1,
+          "end": 77.466
+        },
+        {
+          "text": "feet",
+          "start": 77.466,
+          "end": 77.831
+        },
+        {
+          "text": "wear",
+          "start": 77.831,
+          "end": 78.197
+        },
+        {
+          "text": "Xie",
+          "start": 78.197,
+          "end": 78.563
+        },
+        {
+          "text": "Gong's",
+          "start": 78.563,
+          "end": 78.929
+        },
+        {
+          "text": "clogs",
+          "start": 78.929,
+          "end": 79.294
+        },
+        {
+          "text": ".",
+          "start": 79.294,
+          "end": 79.66
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 79.66,
+      "end": 82.48,
+      "text": "My body climbs the ladder of blue clouds.",
+      "singableText": "My body climbs the ladder of blue clouds.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "My",
+          "start": 79.66,
+          "end": 79.973
+        },
+        {
+          "text": "body",
+          "start": 79.973,
+          "end": 80.287
+        },
+        {
+          "text": "climbs",
+          "start": 80.287,
+          "end": 80.6
+        },
+        {
+          "text": "the",
+          "start": 80.6,
+          "end": 80.913
+        },
+        {
+          "text": "ladder",
+          "start": 80.913,
+          "end": 81.227
+        },
+        {
+          "text": "of",
+          "start": 81.227,
+          "end": 81.54
+        },
+        {
+          "text": "blue",
+          "start": 81.54,
+          "end": 81.853
+        },
+        {
+          "text": "clouds",
+          "start": 81.853,
+          "end": 82.167
+        },
+        {
+          "text": ".",
+          "start": 82.167,
+          "end": 82.48
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 83.74,
+      "end": 87.42,
+      "text": "Lost among flowers and leaning on stone, dusk suddenly falls.",
+      "singableText": "Lost among flowers and leaning on stone, dusk suddenly falls.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Lost",
+          "start": 83.74,
+          "end": 84.047
+        },
+        {
+          "text": "among",
+          "start": 84.047,
+          "end": 84.353
+        },
+        {
+          "text": "flowers",
+          "start": 84.353,
+          "end": 84.66
+        },
+        {
+          "text": "and",
+          "start": 84.66,
+          "end": 84.967
+        },
+        {
+          "text": "leaning",
+          "start": 84.967,
+          "end": 85.273
+        },
+        {
+          "text": "on",
+          "start": 85.273,
+          "end": 85.58
+        },
+        {
+          "text": "stone",
+          "start": 85.58,
+          "end": 85.887
+        },
+        {
+          "text": ",",
+          "start": 85.887,
+          "end": 86.193
+        },
+        {
+          "text": "dusk",
+          "start": 86.193,
+          "end": 86.5
+        },
+        {
+          "text": "suddenly",
+          "start": 86.5,
+          "end": 86.807
+        },
+        {
+          "text": "falls",
+          "start": 86.807,
+          "end": 87.113
+        },
+        {
+          "text": ".",
+          "start": 87.113,
+          "end": 87.42
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 88.66,
+      "end": 92.7,
+      "text": "On the cliffside I see the sea sun; in the air I hear the heavenly rooster.",
+      "singableText": "On the cliffside I see the sea sun; in the air I hear the heavenly rooster.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "On",
+          "start": 88.66,
+          "end": 88.884
+        },
+        {
+          "text": "the",
+          "start": 88.884,
+          "end": 89.109
+        },
+        {
+          "text": "cliffside",
+          "start": 89.109,
+          "end": 89.333
+        },
+        {
+          "text": "I",
+          "start": 89.333,
+          "end": 89.558
+        },
+        {
+          "text": "see",
+          "start": 89.558,
+          "end": 89.782
+        },
+        {
+          "text": "the",
+          "start": 89.782,
+          "end": 90.007
+        },
+        {
+          "text": "sea",
+          "start": 90.007,
+          "end": 90.231
+        },
+        {
+          "text": "sun",
+          "start": 90.231,
+          "end": 90.456
+        },
+        {
+          "text": ";",
+          "start": 90.456,
+          "end": 90.68
+        },
+        {
+          "text": "in",
+          "start": 90.68,
+          "end": 90.904
+        },
+        {
+          "text": "the",
+          "start": 90.904,
+          "end": 91.129
+        },
+        {
+          "text": "air",
+          "start": 91.129,
+          "end": 91.353
+        },
+        {
+          "text": "I",
+          "start": 91.353,
+          "end": 91.578
+        },
+        {
+          "text": "hear",
+          "start": 91.578,
+          "end": 91.802
+        },
+        {
+          "text": "the",
+          "start": 91.802,
+          "end": 92.027
+        },
+        {
+          "text": "heavenly",
+          "start": 92.027,
+          "end": 92.251
+        },
+        {
+          "text": "rooster",
+          "start": 92.251,
+          "end": 92.476
+        },
+        {
+          "text": ".",
+          "start": 92.476,
+          "end": 92.7
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "start": 94.24,
+      "end": 99.82,
+      "text": "A thousand cliffs twist; the road is uncertain; among flowers and stone, dusk arrives.",
+      "singableText": "A thousand cliffs twist; the road is uncertain; among flowers and stone, dusk arrives.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "A",
+          "start": 94.24,
+          "end": 94.55
+        },
+        {
+          "text": "thousand",
+          "start": 94.55,
+          "end": 94.86
+        },
+        {
+          "text": "cliffs",
+          "start": 94.86,
+          "end": 95.17
+        },
+        {
+          "text": "twist",
+          "start": 95.17,
+          "end": 95.48
+        },
+        {
+          "text": ";",
+          "start": 95.48,
+          "end": 95.79
+        },
+        {
+          "text": "the",
+          "start": 95.79,
+          "end": 96.1
+        },
+        {
+          "text": "road",
+          "start": 96.1,
+          "end": 96.41
+        },
+        {
+          "text": "is",
+          "start": 96.41,
+          "end": 96.72
+        },
+        {
+          "text": "uncertain",
+          "start": 96.72,
+          "end": 97.03
+        },
+        {
+          "text": ";",
+          "start": 97.03,
+          "end": 97.34
+        },
+        {
+          "text": "among",
+          "start": 97.34,
+          "end": 97.65
+        },
+        {
+          "text": "flowers",
+          "start": 97.65,
+          "end": 97.96
+        },
+        {
+          "text": "and",
+          "start": 97.96,
+          "end": 98.27
+        },
+        {
+          "text": "stone",
+          "start": 98.27,
+          "end": 98.58
+        },
+        {
+          "text": ",",
+          "start": 98.58,
+          "end": 98.89
+        },
+        {
+          "text": "dusk",
+          "start": 98.89,
+          "end": 99.2
+        },
+        {
+          "text": "arrives",
+          "start": 99.2,
+          "end": 99.51
+        },
+        {
+          "text": ".",
+          "start": 99.51,
+          "end": 99.82
+        }
+      ]
+    },
+    {
+      "id": "l16",
+      "start": 99.82,
+      "end": 106.7,
+      "text": "Bears roar, dragons chant, the rock springs rumble; deep woods tremble, peaks are startled.",
+      "singableText": "Bears roar, dragons chant, the rock springs rumble; deep woods tremble, peaks are startled.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Bears",
+          "start": 99.82,
+          "end": 100.182
+        },
+        {
+          "text": "roar",
+          "start": 100.182,
+          "end": 100.544
+        },
+        {
+          "text": ",",
+          "start": 100.544,
+          "end": 100.906
+        },
+        {
+          "text": "dragons",
+          "start": 100.906,
+          "end": 101.268
+        },
+        {
+          "text": "chant",
+          "start": 101.268,
+          "end": 101.631
+        },
+        {
+          "text": ",",
+          "start": 101.631,
+          "end": 101.993
+        },
+        {
+          "text": "the",
+          "start": 101.993,
+          "end": 102.355
+        },
+        {
+          "text": "rock",
+          "start": 102.355,
+          "end": 102.717
+        },
+        {
+          "text": "springs",
+          "start": 102.717,
+          "end": 103.079
+        },
+        {
+          "text": "rumble",
+          "start": 103.079,
+          "end": 103.441
+        },
+        {
+          "text": ";",
+          "start": 103.441,
+          "end": 103.803
+        },
+        {
+          "text": "deep",
+          "start": 103.803,
+          "end": 104.165
+        },
+        {
+          "text": "woods",
+          "start": 104.165,
+          "end": 104.527
+        },
+        {
+          "text": "tremble",
+          "start": 104.527,
+          "end": 104.889
+        },
+        {
+          "text": ",",
+          "start": 104.889,
+          "end": 105.252
+        },
+        {
+          "text": "peaks",
+          "start": 105.252,
+          "end": 105.614
+        },
+        {
+          "text": "are",
+          "start": 105.614,
+          "end": 105.976
+        },
+        {
+          "text": "startled",
+          "start": 105.976,
+          "end": 106.338
+        },
+        {
+          "text": ".",
+          "start": 106.338,
+          "end": 106.7
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "start": 106.7,
+      "end": 112.5,
+      "text": "The waters shimmer and give birth to mist.",
+      "singableText": "The waters shimmer and give birth to mist.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 106.7,
+          "end": 107.344
+        },
+        {
+          "text": "waters",
+          "start": 107.344,
+          "end": 107.989
+        },
+        {
+          "text": "shimmer",
+          "start": 107.989,
+          "end": 108.633
+        },
+        {
+          "text": "and",
+          "start": 108.633,
+          "end": 109.278
+        },
+        {
+          "text": "give",
+          "start": 109.278,
+          "end": 109.922
+        },
+        {
+          "text": "birth",
+          "start": 109.922,
+          "end": 110.567
+        },
+        {
+          "text": "to",
+          "start": 110.567,
+          "end": 111.211
+        },
+        {
+          "text": "mist",
+          "start": 111.211,
+          "end": 111.856
+        },
+        {
+          "text": ".",
+          "start": 111.856,
+          "end": 112.5
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "start": 116.4,
+      "end": 117.92,
+      "text": "Lightning splits and thunder crashes.",
+      "singableText": "Lightning splits and thunder crashes.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Lightning",
+          "start": 116.4,
+          "end": 116.653
+        },
+        {
+          "text": "splits",
+          "start": 116.653,
+          "end": 116.907
+        },
+        {
+          "text": "and",
+          "start": 116.907,
+          "end": 117.16
+        },
+        {
+          "text": "thunder",
+          "start": 117.16,
+          "end": 117.413
+        },
+        {
+          "text": "crashes",
+          "start": 117.413,
+          "end": 117.667
+        },
+        {
+          "text": ".",
+          "start": 117.667,
+          "end": 117.92
+        }
+      ]
+    },
+    {
+      "id": "l19",
+      "start": 120.88,
+      "end": 122.58,
+      "text": "Hills and ridges collapse and break.",
+      "singableText": "Hills and ridges collapse and break.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Hills",
+          "start": 120.88,
+          "end": 121.123
+        },
+        {
+          "text": "and",
+          "start": 121.123,
+          "end": 121.366
+        },
+        {
+          "text": "ridges",
+          "start": 121.366,
+          "end": 121.609
+        },
+        {
+          "text": "collapse",
+          "start": 121.609,
+          "end": 121.851
+        },
+        {
+          "text": "and",
+          "start": 121.851,
+          "end": 122.094
+        },
+        {
+          "text": "break",
+          "start": 122.094,
+          "end": 122.337
+        },
+        {
+          "text": ".",
+          "start": 122.337,
+          "end": 122.58
+        }
+      ]
+    },
+    {
+      "id": "l20",
+      "start": 124.08,
+      "end": 125.74,
+      "text": "The stone doors of the cave heaven.",
+      "singableText": "The stone doors of the cave heaven.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 124.08,
+          "end": 124.287
+        },
+        {
+          "text": "stone",
+          "start": 124.287,
+          "end": 124.495
+        },
+        {
+          "text": "doors",
+          "start": 124.495,
+          "end": 124.703
+        },
+        {
+          "text": "of",
+          "start": 124.703,
+          "end": 124.91
+        },
+        {
+          "text": "the",
+          "start": 124.91,
+          "end": 125.117
+        },
+        {
+          "text": "cave",
+          "start": 125.117,
+          "end": 125.325
+        },
+        {
+          "text": "heaven",
+          "start": 125.325,
+          "end": 125.532
+        },
+        {
+          "text": ".",
+          "start": 125.532,
+          "end": 125.74
+        }
+      ]
+    },
+    {
+      "id": "l21",
+      "start": 127.3,
+      "end": 130.08,
+      "text": "Open in a thunderous crash.",
+      "singableText": "Open in a thunderous crash.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Open",
+          "start": 127.3,
+          "end": 127.763
+        },
+        {
+          "text": "in",
+          "start": 127.763,
+          "end": 128.227
+        },
+        {
+          "text": "a",
+          "start": 128.227,
+          "end": 128.69
+        },
+        {
+          "text": "thunderous",
+          "start": 128.69,
+          "end": 129.153
+        },
+        {
+          "text": "crash",
+          "start": 129.153,
+          "end": 129.617
+        },
+        {
+          "text": ".",
+          "start": 129.617,
+          "end": 130.08
+        }
+      ]
+    },
+    {
+      "id": "l22",
+      "start": 132.1,
+      "end": 137.96,
+      "text": "The blue vastness has no bottom; sun and moon shine on gold and silver towers.",
+      "singableText": "The blue vastness has no bottom; sun and moon shine on gold and silver towers.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 132.1,
+          "end": 132.445
+        },
+        {
+          "text": "blue",
+          "start": 132.445,
+          "end": 132.789
+        },
+        {
+          "text": "vastness",
+          "start": 132.789,
+          "end": 133.134
+        },
+        {
+          "text": "has",
+          "start": 133.134,
+          "end": 133.479
+        },
+        {
+          "text": "no",
+          "start": 133.479,
+          "end": 133.824
+        },
+        {
+          "text": "bottom",
+          "start": 133.824,
+          "end": 134.168
+        },
+        {
+          "text": ";",
+          "start": 134.168,
+          "end": 134.513
+        },
+        {
+          "text": "sun",
+          "start": 134.513,
+          "end": 134.858
+        },
+        {
+          "text": "and",
+          "start": 134.858,
+          "end": 135.202
+        },
+        {
+          "text": "moon",
+          "start": 135.202,
+          "end": 135.547
+        },
+        {
+          "text": "shine",
+          "start": 135.547,
+          "end": 135.892
+        },
+        {
+          "text": "on",
+          "start": 135.892,
+          "end": 136.236
+        },
+        {
+          "text": "gold",
+          "start": 136.236,
+          "end": 136.581
+        },
+        {
+          "text": "and",
+          "start": 136.581,
+          "end": 136.926
+        },
+        {
+          "text": "silver",
+          "start": 136.926,
+          "end": 137.271
+        },
+        {
+          "text": "towers",
+          "start": 137.271,
+          "end": 137.615
+        },
+        {
+          "text": ".",
+          "start": 137.615,
+          "end": 137.96
+        }
+      ]
+    },
+    {
+      "id": "l23",
+      "start": 137.96,
+      "end": 141.4,
+      "text": "Rainbow is their robe, wind is their horse.",
+      "singableText": "Rainbow is their robe, wind is their horse.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Rainbow",
+          "start": 137.96,
+          "end": 138.304
+        },
+        {
+          "text": "is",
+          "start": 138.304,
+          "end": 138.648
+        },
+        {
+          "text": "their",
+          "start": 138.648,
+          "end": 138.992
+        },
+        {
+          "text": "robe",
+          "start": 138.992,
+          "end": 139.336
+        },
+        {
+          "text": ",",
+          "start": 139.336,
+          "end": 139.68
+        },
+        {
+          "text": "wind",
+          "start": 139.68,
+          "end": 140.024
+        },
+        {
+          "text": "is",
+          "start": 140.024,
+          "end": 140.368
+        },
+        {
+          "text": "their",
+          "start": 140.368,
+          "end": 140.712
+        },
+        {
+          "text": "horse",
+          "start": 140.712,
+          "end": 141.056
+        },
+        {
+          "text": ".",
+          "start": 141.056,
+          "end": 141.4
+        }
+      ]
+    },
+    {
+      "id": "l24",
+      "start": 141.4,
+      "end": 146.6,
+      "text": "Lords of the clouds descend in profusion.",
+      "singableText": "Lords of the clouds descend in profusion.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Lords",
+          "start": 141.4,
+          "end": 142.05
+        },
+        {
+          "text": "of",
+          "start": 142.05,
+          "end": 142.7
+        },
+        {
+          "text": "the",
+          "start": 142.7,
+          "end": 143.35
+        },
+        {
+          "text": "clouds",
+          "start": 143.35,
+          "end": 144.0
+        },
+        {
+          "text": "descend",
+          "start": 144.0,
+          "end": 144.65
+        },
+        {
+          "text": "in",
+          "start": 144.65,
+          "end": 145.3
+        },
+        {
+          "text": "profusion",
+          "start": 145.3,
+          "end": 145.95
+        },
+        {
+          "text": ".",
+          "start": 145.95,
+          "end": 146.6
+        }
+      ]
+    },
+    {
+      "id": "l25",
+      "start": 150.04,
+      "end": 152.02,
+      "text": "Tigers beat the zithers.",
+      "singableText": "Tigers beat the zithers.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Tigers",
+          "start": 150.04,
+          "end": 150.436
+        },
+        {
+          "text": "beat",
+          "start": 150.436,
+          "end": 150.832
+        },
+        {
+          "text": "the",
+          "start": 150.832,
+          "end": 151.228
+        },
+        {
+          "text": "zithers",
+          "start": 151.228,
+          "end": 151.624
+        },
+        {
+          "text": ".",
+          "start": 151.624,
+          "end": 152.02
+        }
+      ]
+    },
+    {
+      "id": "l26",
+      "start": 152.02,
+      "end": 156.98,
+      "text": "Phoenixes wheel the carriages; immortals stand thick as hemp.",
+      "singableText": "Phoenixes wheel the carriages; immortals stand thick as hemp.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Phoenixes",
+          "start": 152.02,
+          "end": 152.471
+        },
+        {
+          "text": "wheel",
+          "start": 152.471,
+          "end": 152.922
+        },
+        {
+          "text": "the",
+          "start": 152.922,
+          "end": 153.373
+        },
+        {
+          "text": "carriages",
+          "start": 153.373,
+          "end": 153.824
+        },
+        {
+          "text": ";",
+          "start": 153.824,
+          "end": 154.275
+        },
+        {
+          "text": "immortals",
+          "start": 154.275,
+          "end": 154.725
+        },
+        {
+          "text": "stand",
+          "start": 154.725,
+          "end": 155.176
+        },
+        {
+          "text": "thick",
+          "start": 155.176,
+          "end": 155.627
+        },
+        {
+          "text": "as",
+          "start": 155.627,
+          "end": 156.078
+        },
+        {
+          "text": "hemp",
+          "start": 156.078,
+          "end": 156.529
+        },
+        {
+          "text": ".",
+          "start": 156.529,
+          "end": 156.98
+        }
+      ]
+    },
+    {
+      "id": "l27",
+      "start": 156.98,
+      "end": 164.4,
+      "text": "Suddenly my soul trembles; startled awake, I sigh long.",
+      "singableText": "Suddenly my soul trembles; startled awake, I sigh long.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Suddenly",
+          "start": 156.98,
+          "end": 157.598
+        },
+        {
+          "text": "my",
+          "start": 157.598,
+          "end": 158.217
+        },
+        {
+          "text": "soul",
+          "start": 158.217,
+          "end": 158.835
+        },
+        {
+          "text": "trembles",
+          "start": 158.835,
+          "end": 159.453
+        },
+        {
+          "text": ";",
+          "start": 159.453,
+          "end": 160.072
+        },
+        {
+          "text": "startled",
+          "start": 160.072,
+          "end": 160.69
+        },
+        {
+          "text": "awake",
+          "start": 160.69,
+          "end": 161.308
+        },
+        {
+          "text": ",",
+          "start": 161.308,
+          "end": 161.927
+        },
+        {
+          "text": "I",
+          "start": 161.927,
+          "end": 162.545
+        },
+        {
+          "text": "sigh",
+          "start": 162.545,
+          "end": 163.163
+        },
+        {
+          "text": "long",
+          "start": 163.163,
+          "end": 163.782
+        },
+        {
+          "text": ".",
+          "start": 163.782,
+          "end": 164.4
+        }
+      ]
+    },
+    {
+      "id": "l28",
+      "start": 164.4,
+      "end": 168.16,
+      "text": "I find only the pillow and mat when awake.",
+      "singableText": "I find only the pillow and mat when awake.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 164.4,
+          "end": 164.776
+        },
+        {
+          "text": "find",
+          "start": 164.776,
+          "end": 165.152
+        },
+        {
+          "text": "only",
+          "start": 165.152,
+          "end": 165.528
+        },
+        {
+          "text": "the",
+          "start": 165.528,
+          "end": 165.904
+        },
+        {
+          "text": "pillow",
+          "start": 165.904,
+          "end": 166.28
+        },
+        {
+          "text": "and",
+          "start": 166.28,
+          "end": 166.656
+        },
+        {
+          "text": "mat",
+          "start": 166.656,
+          "end": 167.032
+        },
+        {
+          "text": "when",
+          "start": 167.032,
+          "end": 167.408
+        },
+        {
+          "text": "awake",
+          "start": 167.408,
+          "end": 167.784
+        },
+        {
+          "text": ".",
+          "start": 167.784,
+          "end": 168.16
+        }
+      ]
+    },
+    {
+      "id": "l29",
+      "start": 168.16,
+      "end": 172.36,
+      "text": "The pleasures of the world are like this.",
+      "singableText": "The pleasures of the world are like this.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 168.16,
+          "end": 168.627
+        },
+        {
+          "text": "pleasures",
+          "start": 168.627,
+          "end": 169.093
+        },
+        {
+          "text": "of",
+          "start": 169.093,
+          "end": 169.56
+        },
+        {
+          "text": "the",
+          "start": 169.56,
+          "end": 170.027
+        },
+        {
+          "text": "world",
+          "start": 170.027,
+          "end": 170.493
+        },
+        {
+          "text": "are",
+          "start": 170.493,
+          "end": 170.96
+        },
+        {
+          "text": "like",
+          "start": 170.96,
+          "end": 171.427
+        },
+        {
+          "text": "this",
+          "start": 171.427,
+          "end": 171.893
+        },
+        {
+          "text": ".",
+          "start": 171.893,
+          "end": 172.36
+        }
+      ]
+    },
+    {
+      "id": "l30",
+      "start": 175.86,
+      "end": 179.58,
+      "text": "Since ancient times, all things flow east like water.",
+      "singableText": "Since ancient times, all things flow east like water.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Since",
+          "start": 175.86,
+          "end": 176.198
+        },
+        {
+          "text": "ancient",
+          "start": 176.198,
+          "end": 176.536
+        },
+        {
+          "text": "times",
+          "start": 176.536,
+          "end": 176.875
+        },
+        {
+          "text": ",",
+          "start": 176.875,
+          "end": 177.213
+        },
+        {
+          "text": "all",
+          "start": 177.213,
+          "end": 177.551
+        },
+        {
+          "text": "things",
+          "start": 177.551,
+          "end": 177.889
+        },
+        {
+          "text": "flow",
+          "start": 177.889,
+          "end": 178.227
+        },
+        {
+          "text": "east",
+          "start": 178.227,
+          "end": 178.565
+        },
+        {
+          "text": "like",
+          "start": 178.565,
+          "end": 178.904
+        },
+        {
+          "text": "water",
+          "start": 178.904,
+          "end": 179.242
+        },
+        {
+          "text": ".",
+          "start": 179.242,
+          "end": 179.58
+        }
+      ]
+    },
+    {
+      "id": "l31",
+      "start": 204.94,
+      "end": 209.62,
+      "text": "Lightning and thunder; hills and ridges collapse.",
+      "singableText": "Lightning and thunder; hills and ridges collapse.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Lightning",
+          "start": 204.94,
+          "end": 205.46
+        },
+        {
+          "text": "and",
+          "start": 205.46,
+          "end": 205.98
+        },
+        {
+          "text": "thunder",
+          "start": 205.98,
+          "end": 206.5
+        },
+        {
+          "text": ";",
+          "start": 206.5,
+          "end": 207.02
+        },
+        {
+          "text": "hills",
+          "start": 207.02,
+          "end": 207.54
+        },
+        {
+          "text": "and",
+          "start": 207.54,
+          "end": 208.06
+        },
+        {
+          "text": "ridges",
+          "start": 208.06,
+          "end": 208.58
+        },
+        {
+          "text": "collapse",
+          "start": 208.58,
+          "end": 209.1
+        },
+        {
+          "text": ".",
+          "start": 209.1,
+          "end": 209.62
+        }
+      ]
+    },
+    {
+      "id": "l32",
+      "start": 210.8,
+      "end": 215.64,
+      "text": "The stone doors of cave heaven open with a crash.",
+      "singableText": "The stone doors of cave heaven open with a crash.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 210.8,
+          "end": 211.24
+        },
+        {
+          "text": "stone",
+          "start": 211.24,
+          "end": 211.68
+        },
+        {
+          "text": "doors",
+          "start": 211.68,
+          "end": 212.12
+        },
+        {
+          "text": "of",
+          "start": 212.12,
+          "end": 212.56
+        },
+        {
+          "text": "cave",
+          "start": 212.56,
+          "end": 213.0
+        },
+        {
+          "text": "heaven",
+          "start": 213.0,
+          "end": 213.44
+        },
+        {
+          "text": "open",
+          "start": 213.44,
+          "end": 213.88
+        },
+        {
+          "text": "with",
+          "start": 213.88,
+          "end": 214.32
+        },
+        {
+          "text": "a",
+          "start": 214.32,
+          "end": 214.76
+        },
+        {
+          "text": "crash",
+          "start": 214.76,
+          "end": 215.2
+        },
+        {
+          "text": ".",
+          "start": 215.2,
+          "end": 215.64
+        }
+      ]
+    },
+    {
+      "id": "l33",
+      "start": 218.72,
+      "end": 223.32,
+      "text": "Lords of the clouds descend in profusion.",
+      "singableText": "Lords of the clouds descend in profusion.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Lords",
+          "start": 218.72,
+          "end": 219.295
+        },
+        {
+          "text": "of",
+          "start": 219.295,
+          "end": 219.87
+        },
+        {
+          "text": "the",
+          "start": 219.87,
+          "end": 220.445
+        },
+        {
+          "text": "clouds",
+          "start": 220.445,
+          "end": 221.02
+        },
+        {
+          "text": "descend",
+          "start": 221.02,
+          "end": 221.595
+        },
+        {
+          "text": "in",
+          "start": 221.595,
+          "end": 222.17
+        },
+        {
+          "text": "profusion",
+          "start": 222.17,
+          "end": 222.745
+        },
+        {
+          "text": ".",
+          "start": 222.745,
+          "end": 223.32
+        }
+      ]
+    },
+    {
+      "id": "l34",
+      "start": 225.42,
+      "end": 228.2,
+      "text": "Tigers beat the zithers; phoenixes wheel the carriages.",
+      "singableText": "Tigers beat the zithers; phoenixes wheel the carriages.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Tigers",
+          "start": 225.42,
+          "end": 225.698
+        },
+        {
+          "text": "beat",
+          "start": 225.698,
+          "end": 225.976
+        },
+        {
+          "text": "the",
+          "start": 225.976,
+          "end": 226.254
+        },
+        {
+          "text": "zithers",
+          "start": 226.254,
+          "end": 226.532
+        },
+        {
+          "text": ";",
+          "start": 226.532,
+          "end": 226.81
+        },
+        {
+          "text": "phoenixes",
+          "start": 226.81,
+          "end": 227.088
+        },
+        {
+          "text": "wheel",
+          "start": 227.088,
+          "end": 227.366
+        },
+        {
+          "text": "the",
+          "start": 227.366,
+          "end": 227.644
+        },
+        {
+          "text": "carriages",
+          "start": 227.644,
+          "end": 227.922
+        },
+        {
+          "text": ".",
+          "start": 227.922,
+          "end": 228.2
+        }
+      ]
+    },
+    {
+      "id": "l35",
+      "start": 228.2,
+      "end": 231.02,
+      "text": "Immortals stand in rows like hemp.",
+      "singableText": "Immortals stand in rows like hemp.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Immortals",
+          "start": 228.2,
+          "end": 228.603
+        },
+        {
+          "text": "stand",
+          "start": 228.603,
+          "end": 229.006
+        },
+        {
+          "text": "in",
+          "start": 229.006,
+          "end": 229.409
+        },
+        {
+          "text": "rows",
+          "start": 229.409,
+          "end": 229.811
+        },
+        {
+          "text": "like",
+          "start": 229.811,
+          "end": 230.214
+        },
+        {
+          "text": "hemp",
+          "start": 230.214,
+          "end": 230.617
+        },
+        {
+          "text": ".",
+          "start": 230.617,
+          "end": 231.02
+        }
+      ]
+    },
+    {
+      "id": "l36",
+      "start": 231.02,
+      "end": 236.52,
+      "text": "My soul trembles; startled awake, I sigh long.",
+      "singableText": "My soul trembles; startled awake, I sigh long.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "My",
+          "start": 231.02,
+          "end": 231.52
+        },
+        {
+          "text": "soul",
+          "start": 231.52,
+          "end": 232.02
+        },
+        {
+          "text": "trembles",
+          "start": 232.02,
+          "end": 232.52
+        },
+        {
+          "text": ";",
+          "start": 232.52,
+          "end": 233.02
+        },
+        {
+          "text": "startled",
+          "start": 233.02,
+          "end": 233.52
+        },
+        {
+          "text": "awake",
+          "start": 233.52,
+          "end": 234.02
+        },
+        {
+          "text": ",",
+          "start": 234.02,
+          "end": 234.52
+        },
+        {
+          "text": "I",
+          "start": 234.52,
+          "end": 235.02
+        },
+        {
+          "text": "sigh",
+          "start": 235.02,
+          "end": 235.52
+        },
+        {
+          "text": "long",
+          "start": 235.52,
+          "end": 236.02
+        },
+        {
+          "text": ".",
+          "start": 236.02,
+          "end": 236.52
+        }
+      ]
+    },
+    {
+      "id": "l37",
+      "start": 238.24,
+      "end": 241.16,
+      "text": "I find only the pillow and mat when awake.",
+      "singableText": "I find only the pillow and mat when awake.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 238.24,
+          "end": 238.532
+        },
+        {
+          "text": "find",
+          "start": 238.532,
+          "end": 238.824
+        },
+        {
+          "text": "only",
+          "start": 238.824,
+          "end": 239.116
+        },
+        {
+          "text": "the",
+          "start": 239.116,
+          "end": 239.408
+        },
+        {
+          "text": "pillow",
+          "start": 239.408,
+          "end": 239.7
+        },
+        {
+          "text": "and",
+          "start": 239.7,
+          "end": 239.992
+        },
+        {
+          "text": "mat",
+          "start": 239.992,
+          "end": 240.284
+        },
+        {
+          "text": "when",
+          "start": 240.284,
+          "end": 240.576
+        },
+        {
+          "text": "awake",
+          "start": 240.576,
+          "end": 240.868
+        },
+        {
+          "text": ".",
+          "start": 240.868,
+          "end": 241.16
+        }
+      ]
+    },
+    {
+      "id": "l38",
+      "start": 243.2,
+      "end": 245.88,
+      "text": "The mists and cloudlight just seen are lost.",
+      "singableText": "The mists and cloudlight just seen are lost.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 243.2,
+          "end": 243.498
+        },
+        {
+          "text": "mists",
+          "start": 243.498,
+          "end": 243.796
+        },
+        {
+          "text": "and",
+          "start": 243.796,
+          "end": 244.093
+        },
+        {
+          "text": "cloudlight",
+          "start": 244.093,
+          "end": 244.391
+        },
+        {
+          "text": "just",
+          "start": 244.391,
+          "end": 244.689
+        },
+        {
+          "text": "seen",
+          "start": 244.689,
+          "end": 244.987
+        },
+        {
+          "text": "are",
+          "start": 244.987,
+          "end": 245.284
+        },
+        {
+          "text": "lost",
+          "start": 245.284,
+          "end": 245.582
+        },
+        {
+          "text": ".",
+          "start": 245.582,
+          "end": 245.88
+        }
+      ]
+    },
+    {
+      "id": "l39",
+      "start": 247.08,
+      "end": 251.14,
+      "text": "The pleasures of the world are like this.",
+      "singableText": "The pleasures of the world are like this.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 247.08,
+          "end": 247.531
+        },
+        {
+          "text": "pleasures",
+          "start": 247.531,
+          "end": 247.982
+        },
+        {
+          "text": "of",
+          "start": 247.982,
+          "end": 248.433
+        },
+        {
+          "text": "the",
+          "start": 248.433,
+          "end": 248.884
+        },
+        {
+          "text": "world",
+          "start": 248.884,
+          "end": 249.336
+        },
+        {
+          "text": "are",
+          "start": 249.336,
+          "end": 249.787
+        },
+        {
+          "text": "like",
+          "start": 249.787,
+          "end": 250.238
+        },
+        {
+          "text": "this",
+          "start": 250.238,
+          "end": 250.689
+        },
+        {
+          "text": ".",
+          "start": 250.689,
+          "end": 251.14
+        }
+      ]
+    },
+    {
+      "id": "l40",
+      "start": 251.14,
+      "end": 253.34,
+      "text": "Since ancient times, all things flow east like water.",
+      "singableText": "Since ancient times, all things flow east like water.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Since",
+          "start": 251.14,
+          "end": 251.34
+        },
+        {
+          "text": "ancient",
+          "start": 251.34,
+          "end": 251.54
+        },
+        {
+          "text": "times",
+          "start": 251.54,
+          "end": 251.74
+        },
+        {
+          "text": ",",
+          "start": 251.74,
+          "end": 251.94
+        },
+        {
+          "text": "all",
+          "start": 251.94,
+          "end": 252.14
+        },
+        {
+          "text": "things",
+          "start": 252.14,
+          "end": 252.34
+        },
+        {
+          "text": "flow",
+          "start": 252.34,
+          "end": 252.54
+        },
+        {
+          "text": "east",
+          "start": 252.54,
+          "end": 252.74
+        },
+        {
+          "text": "like",
+          "start": 252.74,
+          "end": 252.94
+        },
+        {
+          "text": "water",
+          "start": 252.94,
+          "end": 253.14
+        },
+        {
+          "text": ".",
+          "start": 253.14,
+          "end": 253.34
+        }
+      ]
+    },
+    {
+      "id": "l41",
+      "start": 254.9,
+      "end": 260.08,
+      "text": "I leave you; when shall I return?",
+      "singableText": "I leave you; when shall I return?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 254.9,
+          "end": 255.476
+        },
+        {
+          "text": "leave",
+          "start": 255.476,
+          "end": 256.051
+        },
+        {
+          "text": "you",
+          "start": 256.051,
+          "end": 256.627
+        },
+        {
+          "text": ";",
+          "start": 256.627,
+          "end": 257.202
+        },
+        {
+          "text": "when",
+          "start": 257.202,
+          "end": 257.778
+        },
+        {
+          "text": "shall",
+          "start": 257.778,
+          "end": 258.353
+        },
+        {
+          "text": "I",
+          "start": 258.353,
+          "end": 258.929
+        },
+        {
+          "text": "return",
+          "start": 258.929,
+          "end": 259.504
+        },
+        {
+          "text": "?",
+          "start": 259.504,
+          "end": 260.08
+        }
+      ]
+    },
+    {
+      "id": "l42",
+      "start": 260.08,
+      "end": 264.48,
+      "text": "When I must go, I ride to visit famous mountains.",
+      "singableText": "When I must go, I ride to visit famous mountains.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "When",
+          "start": 260.08,
+          "end": 260.447
+        },
+        {
+          "text": "I",
+          "start": 260.447,
+          "end": 260.813
+        },
+        {
+          "text": "must",
+          "start": 260.813,
+          "end": 261.18
+        },
+        {
+          "text": "go",
+          "start": 261.18,
+          "end": 261.547
+        },
+        {
+          "text": ",",
+          "start": 261.547,
+          "end": 261.913
+        },
+        {
+          "text": "I",
+          "start": 261.913,
+          "end": 262.28
+        },
+        {
+          "text": "ride",
+          "start": 262.28,
+          "end": 262.647
+        },
+        {
+          "text": "to",
+          "start": 262.647,
+          "end": 263.013
+        },
+        {
+          "text": "visit",
+          "start": 263.013,
+          "end": 263.38
+        },
+        {
+          "text": "famous",
+          "start": 263.38,
+          "end": 263.747
+        },
+        {
+          "text": "mountains",
+          "start": 263.747,
+          "end": 264.113
+        },
+        {
+          "text": ".",
+          "start": 264.113,
+          "end": 264.48
+        }
+      ]
+    },
+    {
+      "id": "l43",
+      "start": 264.48,
+      "end": 271.54,
+      "text": "How could I bow my brows and bend my waist to serve the powerful?",
+      "singableText": "How could I bow my brows and bend my waist to serve the powerful?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "How",
+          "start": 264.48,
+          "end": 264.951
+        },
+        {
+          "text": "could",
+          "start": 264.951,
+          "end": 265.421
+        },
+        {
+          "text": "I",
+          "start": 265.421,
+          "end": 265.892
+        },
+        {
+          "text": "bow",
+          "start": 265.892,
+          "end": 266.363
+        },
+        {
+          "text": "my",
+          "start": 266.363,
+          "end": 266.833
+        },
+        {
+          "text": "brows",
+          "start": 266.833,
+          "end": 267.304
+        },
+        {
+          "text": "and",
+          "start": 267.304,
+          "end": 267.775
+        },
+        {
+          "text": "bend",
+          "start": 267.775,
+          "end": 268.245
+        },
+        {
+          "text": "my",
+          "start": 268.245,
+          "end": 268.716
+        },
+        {
+          "text": "waist",
+          "start": 268.716,
+          "end": 269.187
+        },
+        {
+          "text": "to",
+          "start": 269.187,
+          "end": 269.657
+        },
+        {
+          "text": "serve",
+          "start": 269.657,
+          "end": 270.128
+        },
+        {
+          "text": "the",
+          "start": 270.128,
+          "end": 270.599
+        },
+        {
+          "text": "powerful",
+          "start": 270.599,
+          "end": 271.069
+        },
+        {
+          "text": "?",
+          "start": 271.069,
+          "end": 271.54
+        }
+      ]
+    },
+    {
+      "id": "l44",
+      "start": 271.54,
+      "end": 276.72,
+      "text": "And lose my free and happy face?",
+      "singableText": "And lose my free and happy face?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "And",
+          "start": 271.54,
+          "end": 272.188
+        },
+        {
+          "text": "lose",
+          "start": 272.188,
+          "end": 272.835
+        },
+        {
+          "text": "my",
+          "start": 272.835,
+          "end": 273.483
+        },
+        {
+          "text": "free",
+          "start": 273.483,
+          "end": 274.13
+        },
+        {
+          "text": "and",
+          "start": 274.13,
+          "end": 274.778
+        },
+        {
+          "text": "happy",
+          "start": 274.778,
+          "end": 275.425
+        },
+        {
+          "text": "face",
+          "start": 275.425,
+          "end": 276.073
+        },
+        {
+          "text": "?",
+          "start": 276.073,
+          "end": 276.72
+        }
+      ]
+    },
+    {
+      "id": "l45",
+      "start": 286.7,
+      "end": 293.88,
+      "text": "And lose my free and happy face?",
+      "singableText": "And lose my free and happy face?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "And",
+          "start": 286.7,
+          "end": 287.597
+        },
+        {
+          "text": "lose",
+          "start": 287.597,
+          "end": 288.495
+        },
+        {
+          "text": "my",
+          "start": 288.495,
+          "end": 289.392
+        },
+        {
+          "text": "free",
+          "start": 289.392,
+          "end": 290.29
+        },
+        {
+          "text": "and",
+          "start": 290.29,
+          "end": 291.188
+        },
+        {
+          "text": "happy",
+          "start": 291.188,
+          "end": 292.085
+        },
+        {
+          "text": "face",
+          "start": 292.085,
+          "end": 292.983
+        },
+        {
+          "text": "?",
+          "start": 292.983,
+          "end": 293.88
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "vocalSet": "zh-vocal",
+    "correction": "Original-poem ACE route selected from seven candidates. Public audio is the trimmed seed 733105 render. Large-v3 ASR on the trimmed mix and vocal stem was used for timing. The active Mandarin track keeps Li Bai's original wording where the audio is sound-close, reflects repeated gate/immortal sections, and omits prompt lines that were skipped or too garbled to publish truthfully."
+  }
+}
