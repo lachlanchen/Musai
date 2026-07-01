@@ -247,6 +247,54 @@
       ]
     },
     {
+      "id": "shu-dao-nan-original-text-dr-draft",
+      "kind": "song",
+      "title": "蜀道难 · 原文重组 DR Draft",
+      "artist": "Musia",
+      "summary": "An experimental DiffRhythm draft that reorganizes Li Bai source lines. The lyric track is source-close and ASR-audited, but this is not a final polished ACE render.",
+      "manifest": "data/songs/shu-dao-nan-original-text-dr-draft/manifest.json",
+      "cover": "assets/covers/shu-dao-nan-original-text-dr-draft-16x9.png",
+      "languages": [
+        "zh-Hans",
+        "en",
+        "ja"
+      ],
+      "tags": [
+        "music",
+        "Li Bai",
+        "Tang poetry",
+        "Mandarin",
+        "DiffRhythm",
+        "DR",
+        "draft",
+        "original-text"
+      ]
+    },
+    {
+      "id": "xing-lu-nan-original-poem-draft",
+      "kind": "song",
+      "title": "行路难 · 原文重组 DR Draft",
+      "artist": "Musia",
+      "summary": "An experimental DiffRhythm draft that starts from Li Bai's hope-first original-poem ordering. The lyric track follows the source text where the sound is close and stays marked as draft.",
+      "manifest": "data/songs/xing-lu-nan-original-poem-draft/manifest.json",
+      "cover": "assets/covers/xing-lu-nan-original-poem-draft-16x9.png",
+      "languages": [
+        "zh-Hans",
+        "en",
+        "ja"
+      ],
+      "tags": [
+        "music",
+        "Li Bai",
+        "Tang poetry",
+        "Mandarin",
+        "DiffRhythm",
+        "DR",
+        "draft",
+        "original-poem"
+      ]
+    },
+    {
       "id": "qiang-jin-jiu-normal-song",
       "kind": "song",
       "title": "将进酒",

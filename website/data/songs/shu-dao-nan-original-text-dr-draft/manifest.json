@@ -1,0 +1,1019 @@
+{
+  "schema": "fun.lazying.media.manifest.v1",
+  "version": 1,
+  "id": "shu-dao-nan-original-text-dr-draft",
+  "kind": "song",
+  "title": "蜀道难 · 原文重组 DR Draft",
+  "localizedTitles": {
+    "zh-Hans": "蜀道难 · 原文重组 DR Draft",
+    "en": "Hard Road to Shu - Original Text DR Draft",
+    "ja": "蜀道難・原文再構成 DR Draft"
+  },
+  "artist": "Musia",
+  "description": "An experimental DiffRhythm draft that reorganizes Li Bai source lines. The lyric track is source-close and ASR-audited, but this is not a final polished ACE render.",
+  "caption": "Experimental DR draft: original-text fragments, source-close lyrics, and extracted chords.",
+  "duration": 95.109,
+  "canonicalUrl": "https://fun.lazying.art/#shu-dao-nan-original-text-dr-draft",
+  "status": "experimental-draft",
+  "share": {
+    "title": "蜀道难 · 原文重组 DR Draft - Fun Lazying Art",
+    "description": "An experimental DiffRhythm draft that reorganizes Li Bai source lines. The lyric track is source-close and ASR-audited, but this is not a final polished ACE render.",
+    "url": "https://fun.lazying.art/#shu-dao-nan-original-text-dr-draft",
+    "image": "assets/covers/shu-dao-nan-original-text-dr-draft-16x9.png",
+    "siteName": "Fun Lazying Art"
+  },
+  "assets": {
+    "cover": {
+      "id": "cover",
+      "label": "蜀道难 · 原文重组 DR Draft cover",
+      "role": "cover",
+      "src": "assets/covers/shu-dao-nan-original-text-dr-draft-16x9.png",
+      "mime": "image/png",
+      "width": 1672,
+      "height": 941
+    },
+    "poster": {
+      "id": "poster",
+      "label": "16:9 Poster",
+      "role": "poster",
+      "src": "assets/covers/shu-dao-nan-original-text-dr-draft-16x9.png",
+      "mime": "image/png",
+      "width": 1672,
+      "height": 941
+    },
+    "primaryAudio": {
+      "id": "zh-dr-draft",
+      "label": "中文",
+      "roleLabel": "Vocal",
+      "role": "vocal",
+      "languageCode": "zh-Hans",
+      "languageLabel": "中文",
+      "lyricSetId": "zh-vocal",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/shu-dao-nan-original-text-dr-draft-zh-Hans-dr-20260701.mp3",
+      "mime": "audio/mpeg"
+    },
+    "alternateAudio": []
+  },
+  "musical": {
+    "key": "detected from draft audio",
+    "bpm": "detected 198.77 BPM; experimental DiffRhythm draft",
+    "timeSignature": "4/4",
+    "chords": [
+      {
+        "start": 0.0,
+        "end": 3.669,
+        "name": "F",
+        "confidence": 0.651
+      },
+      {
+        "start": 3.669,
+        "end": 4.319,
+        "name": "Ab",
+        "confidence": 0.734
+      },
+      {
+        "start": 4.319,
+        "end": 4.644,
+        "name": "Abm",
+        "confidence": 0.68
+      },
+      {
+        "start": 4.644,
+        "end": 4.969,
+        "name": "Ab",
+        "confidence": 0.727
+      },
+      {
+        "start": 4.969,
+        "end": 5.619,
+        "name": "Fm",
+        "confidence": 0.718
+      },
+      {
+        "start": 5.619,
+        "end": 7.732,
+        "name": "Ab",
+        "confidence": 0.856
+      },
+      {
+        "start": 7.732,
+        "end": 8.034,
+        "name": "Gm",
+        "confidence": 0.565
+      },
+      {
+        "start": 8.034,
+        "end": 8.382,
+        "name": "F#m",
+        "confidence": 0.579
+      },
+      {
+        "start": 8.382,
+        "end": 9.009,
+        "name": "C#",
+        "confidence": 0.818
+      },
+      {
+        "start": 9.009,
+        "end": 9.311,
+        "name": "Ab",
+        "confidence": 0.733
+      },
+      {
+        "start": 9.311,
+        "end": 9.915,
+        "name": "C#",
+        "confidence": 0.69
+      },
+      {
+        "start": 9.915,
+        "end": 12.028,
+        "name": "Fm",
+        "confidence": 0.938
+      },
+      {
+        "start": 12.028,
+        "end": 12.33,
+        "name": "Ab",
+        "confidence": 0.605
+      },
+      {
+        "start": 12.33,
+        "end": 12.632,
+        "name": "Ebm",
+        "confidence": 0.621
+      },
+      {
+        "start": 12.632,
+        "end": 12.934,
+        "name": "C#m",
+        "confidence": 0.555
+      },
+      {
+        "start": 12.934,
+        "end": 13.259,
+        "name": "C#",
+        "confidence": 0.668
+      },
+      {
+        "start": 13.259,
+        "end": 13.909,
+        "name": "Eb",
+        "confidence": 0.735
+      },
+      {
+        "start": 13.909,
+        "end": 14.814,
+        "name": "Gm",
+        "confidence": 0.712
+      },
+      {
+        "start": 14.814,
+        "end": 15.418,
+        "name": "Bbm",
+        "confidence": 0.826
+      },
+      {
+        "start": 15.418,
+        "end": 15.72,
+        "name": "Bb",
+        "confidence": 0.848
+      },
+      {
+        "start": 15.72,
+        "end": 16.625,
+        "name": "Bbm",
+        "confidence": 0.848
+      },
+      {
+        "start": 16.625,
+        "end": 16.927,
+        "name": "Eb",
+        "confidence": 0.645
+      },
+      {
+        "start": 16.927,
+        "end": 17.229,
+        "name": "Ebm",
+        "confidence": 0.614
+      },
+      {
+        "start": 17.229,
+        "end": 17.531,
+        "name": "C#",
+        "confidence": 0.735
+      },
+      {
+        "start": 17.531,
+        "end": 18.437,
+        "name": "Bbm",
+        "confidence": 0.736
+      },
+      {
+        "start": 18.437,
+        "end": 21.548,
+        "name": "C#",
+        "confidence": 0.918
+      },
+      {
+        "start": 21.548,
+        "end": 21.85,
+        "name": "Abm",
+        "confidence": 0.589
+      },
+      {
+        "start": 21.85,
+        "end": 22.152,
+        "name": "F#m",
+        "confidence": 0.629
+      },
+      {
+        "start": 22.152,
+        "end": 22.454,
+        "name": "Fm",
+        "confidence": 0.63
+      },
+      {
+        "start": 22.454,
+        "end": 22.756,
+        "name": "Ab",
+        "confidence": 0.774
+      },
+      {
+        "start": 22.756,
+        "end": 23.057,
+        "name": "Gm",
+        "confidence": 0.634
+      },
+      {
+        "start": 23.057,
+        "end": 23.359,
+        "name": "Fm",
+        "confidence": 0.753
+      },
+      {
+        "start": 23.359,
+        "end": 23.661,
+        "name": "Ab",
+        "confidence": 0.716
+      },
+      {
+        "start": 23.661,
+        "end": 23.963,
+        "name": "Fm",
+        "confidence": 0.602
+      },
+      {
+        "start": 23.963,
+        "end": 24.265,
+        "name": "Bbm",
+        "confidence": 0.638
+      },
+      {
+        "start": 24.265,
+        "end": 25.774,
+        "name": "Ab",
+        "confidence": 0.878
+      },
+      {
+        "start": 25.774,
+        "end": 26.076,
+        "name": "C",
+        "confidence": 0.622
+      },
+      {
+        "start": 26.076,
+        "end": 26.378,
+        "name": "Gm",
+        "confidence": 0.598
+      },
+      {
+        "start": 26.378,
+        "end": 27.632,
+        "name": "Fm",
+        "confidence": 0.849
+      },
+      {
+        "start": 27.632,
+        "end": 27.957,
+        "name": "C",
+        "confidence": 0.673
+      },
+      {
+        "start": 27.957,
+        "end": 28.259,
+        "name": "E",
+        "confidence": 0.742
+      },
+      {
+        "start": 28.259,
+        "end": 28.561,
+        "name": "F",
+        "confidence": 0.611
+      },
+      {
+        "start": 28.561,
+        "end": 28.862,
+        "name": "B",
+        "confidence": 0.606
+      },
+      {
+        "start": 28.862,
+        "end": 29.164,
+        "name": "Am",
+        "confidence": 0.719
+      },
+      {
+        "start": 29.164,
+        "end": 29.466,
+        "name": "Ab",
+        "confidence": 0.753
+      },
+      {
+        "start": 29.466,
+        "end": 30.07,
+        "name": "C",
+        "confidence": 0.727
+      },
+      {
+        "start": 30.07,
+        "end": 30.372,
+        "name": "C#",
+        "confidence": 0.562
+      },
+      {
+        "start": 30.372,
+        "end": 30.674,
+        "name": "Ab",
+        "confidence": 0.709
+      },
+      {
+        "start": 30.674,
+        "end": 30.975,
+        "name": "C#",
+        "confidence": 0.624
+      },
+      {
+        "start": 30.975,
+        "end": 32.485,
+        "name": "Ab",
+        "confidence": 0.839
+      },
+      {
+        "start": 32.485,
+        "end": 33.088,
+        "name": "Fm",
+        "confidence": 0.819
+      },
+      {
+        "start": 33.088,
+        "end": 33.692,
+        "name": "Ab",
+        "confidence": 0.876
+      },
+      {
+        "start": 33.692,
+        "end": 33.994,
+        "name": "Fm",
+        "confidence": 0.878
+      },
+      {
+        "start": 33.994,
+        "end": 34.598,
+        "name": "Cm",
+        "confidence": 0.803
+      },
+      {
+        "start": 34.598,
+        "end": 34.9,
+        "name": "Bb",
+        "confidence": 0.792
+      },
+      {
+        "start": 34.9,
+        "end": 35.201,
+        "name": "Bbm",
+        "confidence": 0.661
+      },
+      {
+        "start": 35.201,
+        "end": 35.805,
+        "name": "F",
+        "confidence": 0.75
+      },
+      {
+        "start": 35.805,
+        "end": 36.084,
+        "name": "Ab",
+        "confidence": 0.659
+      },
+      {
+        "start": 36.084,
+        "end": 36.362,
+        "name": "C#",
+        "confidence": 0.616
+      },
+      {
+        "start": 36.362,
+        "end": 40.542,
+        "name": "Bbm",
+        "confidence": 0.851
+      },
+      {
+        "start": 40.542,
+        "end": 40.844,
+        "name": "Fm",
+        "confidence": 0.792
+      },
+      {
+        "start": 40.844,
+        "end": 41.146,
+        "name": "Ab",
+        "confidence": 0.747
+      },
+      {
+        "start": 41.146,
+        "end": 42.957,
+        "name": "Fm",
+        "confidence": 0.879
+      },
+      {
+        "start": 42.957,
+        "end": 43.259,
+        "name": "F",
+        "confidence": 0.676
+      },
+      {
+        "start": 43.259,
+        "end": 43.561,
+        "name": "Fm",
+        "confidence": 0.701
+      },
+      {
+        "start": 43.561,
+        "end": 44.164,
+        "name": "C#",
+        "confidence": 0.603
+      },
+      {
+        "start": 44.164,
+        "end": 45.697,
+        "name": "Fm",
+        "confidence": 0.799
+      },
+      {
+        "start": 45.697,
+        "end": 45.999,
+        "name": "Ab",
+        "confidence": 0.813
+      },
+      {
+        "start": 45.999,
+        "end": 47.206,
+        "name": "Fm",
+        "confidence": 0.946
+      },
+      {
+        "start": 47.206,
+        "end": 47.508,
+        "name": "Ab",
+        "confidence": 0.792
+      },
+      {
+        "start": 47.508,
+        "end": 47.81,
+        "name": "Fm",
+        "confidence": 0.719
+      },
+      {
+        "start": 47.81,
+        "end": 52.036,
+        "name": "C#",
+        "confidence": 0.94
+      },
+      {
+        "start": 52.036,
+        "end": 52.941,
+        "name": "Bbm",
+        "confidence": 0.832
+      },
+      {
+        "start": 52.941,
+        "end": 53.243,
+        "name": "C#",
+        "confidence": 0.721
+      },
+      {
+        "start": 53.243,
+        "end": 54.149,
+        "name": "Ab",
+        "confidence": 0.762
+      },
+      {
+        "start": 54.149,
+        "end": 55.055,
+        "name": "Fm",
+        "confidence": 0.74
+      },
+      {
+        "start": 55.055,
+        "end": 55.658,
+        "name": "Bb",
+        "confidence": 0.747
+      },
+      {
+        "start": 55.658,
+        "end": 55.937,
+        "name": "Bbm",
+        "confidence": 0.774
+      },
+      {
+        "start": 55.937,
+        "end": 56.216,
+        "name": "Eb",
+        "confidence": 0.684
+      },
+      {
+        "start": 56.216,
+        "end": 56.773,
+        "name": "Ebm",
+        "confidence": 0.685
+      },
+      {
+        "start": 56.773,
+        "end": 57.051,
+        "name": "Eb",
+        "confidence": 0.699
+      },
+      {
+        "start": 57.051,
+        "end": 57.353,
+        "name": "Bbm",
+        "confidence": 0.593
+      },
+      {
+        "start": 57.353,
+        "end": 57.655,
+        "name": "Abm",
+        "confidence": 0.611
+      },
+      {
+        "start": 57.655,
+        "end": 57.957,
+        "name": "Fm",
+        "confidence": 0.679
+      },
+      {
+        "start": 57.957,
+        "end": 58.863,
+        "name": "C#",
+        "confidence": 0.623
+      },
+      {
+        "start": 58.863,
+        "end": 59.164,
+        "name": "Bb",
+        "confidence": 0.611
+      },
+      {
+        "start": 59.164,
+        "end": 59.745,
+        "name": "Ebm",
+        "confidence": 0.726
+      },
+      {
+        "start": 59.745,
+        "end": 60.349,
+        "name": "Ab",
+        "confidence": 0.721
+      },
+      {
+        "start": 60.349,
+        "end": 60.651,
+        "name": "Fm",
+        "confidence": 0.825
+      },
+      {
+        "start": 60.651,
+        "end": 60.952,
+        "name": "Ab",
+        "confidence": 0.823
+      },
+      {
+        "start": 60.952,
+        "end": 62.113,
+        "name": "Fm",
+        "confidence": 0.928
+      },
+      {
+        "start": 62.113,
+        "end": 62.415,
+        "name": "Cm",
+        "confidence": 0.658
+      },
+      {
+        "start": 62.415,
+        "end": 64.226,
+        "name": "Fm",
+        "confidence": 0.769
+      },
+      {
+        "start": 64.226,
+        "end": 65.434,
+        "name": "Ab",
+        "confidence": 0.802
+      },
+      {
+        "start": 65.434,
+        "end": 66.038,
+        "name": "Fm",
+        "confidence": 0.806
+      },
+      {
+        "start": 66.038,
+        "end": 66.339,
+        "name": "Ebm",
+        "confidence": 0.686
+      },
+      {
+        "start": 66.339,
+        "end": 66.943,
+        "name": "Eb",
+        "confidence": 0.716
+      },
+      {
+        "start": 66.943,
+        "end": 67.245,
+        "name": "Abm",
+        "confidence": 0.574
+      },
+      {
+        "start": 67.245,
+        "end": 67.547,
+        "name": "Fm",
+        "confidence": 0.657
+      },
+      {
+        "start": 67.547,
+        "end": 68.151,
+        "name": "C#",
+        "confidence": 0.62
+      },
+      {
+        "start": 68.151,
+        "end": 68.452,
+        "name": "Fm",
+        "confidence": 0.597
+      },
+      {
+        "start": 68.452,
+        "end": 69.056,
+        "name": "Ebm",
+        "confidence": 0.703
+      },
+      {
+        "start": 69.056,
+        "end": 69.358,
+        "name": "Eb",
+        "confidence": 0.684
+      },
+      {
+        "start": 69.358,
+        "end": 71.448,
+        "name": "Fm",
+        "confidence": 0.933
+      },
+      {
+        "start": 71.448,
+        "end": 71.75,
+        "name": "Cm",
+        "confidence": 0.621
+      },
+      {
+        "start": 71.75,
+        "end": 72.052,
+        "name": "F",
+        "confidence": 0.642
+      },
+      {
+        "start": 72.052,
+        "end": 75.326,
+        "name": "Fm",
+        "confidence": 0.823
+      },
+      {
+        "start": 75.326,
+        "end": 75.627,
+        "name": "Ab",
+        "confidence": 0.648
+      },
+      {
+        "start": 75.627,
+        "end": 75.929,
+        "name": "Cm",
+        "confidence": 0.642
+      },
+      {
+        "start": 75.929,
+        "end": 76.208,
+        "name": "Ebm",
+        "confidence": 0.614
+      },
+      {
+        "start": 76.208,
+        "end": 76.51,
+        "name": "Bbm",
+        "confidence": 0.555
+      },
+      {
+        "start": 76.51,
+        "end": 77.973,
+        "name": "C#",
+        "confidence": 0.743
+      },
+      {
+        "start": 77.973,
+        "end": 78.576,
+        "name": "Bbm",
+        "confidence": 0.644
+      },
+      {
+        "start": 78.576,
+        "end": 79.157,
+        "name": "Ebm",
+        "confidence": 0.685
+      },
+      {
+        "start": 79.157,
+        "end": 80.945,
+        "name": "Eb",
+        "confidence": 0.757
+      },
+      {
+        "start": 80.945,
+        "end": 81.548,
+        "name": "Cm",
+        "confidence": 0.704
+      },
+      {
+        "start": 81.548,
+        "end": 83.011,
+        "name": "C#",
+        "confidence": 0.777
+      },
+      {
+        "start": 83.011,
+        "end": 83.313,
+        "name": "Fm",
+        "confidence": 0.771
+      },
+      {
+        "start": 83.313,
+        "end": 83.615,
+        "name": "C#",
+        "confidence": 0.635
+      },
+      {
+        "start": 83.615,
+        "end": 83.917,
+        "name": "Fm",
+        "confidence": 0.584
+      },
+      {
+        "start": 83.917,
+        "end": 84.822,
+        "name": "C#",
+        "confidence": 0.749
+      },
+      {
+        "start": 84.822,
+        "end": 85.705,
+        "name": "Fm",
+        "confidence": 0.707
+      },
+      {
+        "start": 85.705,
+        "end": 86.309,
+        "name": "Ab",
+        "confidence": 0.646
+      },
+      {
+        "start": 86.309,
+        "end": 88.375,
+        "name": "C#",
+        "confidence": 0.824
+      },
+      {
+        "start": 88.375,
+        "end": 90.186,
+        "name": "Eb",
+        "confidence": 0.733
+      },
+      {
+        "start": 90.186,
+        "end": 90.767,
+        "name": "Cm",
+        "confidence": 0.69
+      },
+      {
+        "start": 90.767,
+        "end": 91.371,
+        "name": "Bbm",
+        "confidence": 0.738
+      },
+      {
+        "start": 91.371,
+        "end": 91.672,
+        "name": "Bb",
+        "confidence": 0.769
+      },
+      {
+        "start": 91.672,
+        "end": 91.974,
+        "name": "Bbm",
+        "confidence": 0.748
+      },
+      {
+        "start": 91.974,
+        "end": 93.46,
+        "name": "Bb",
+        "confidence": 0.731
+      },
+      {
+        "start": 93.46,
+        "end": 93.762,
+        "name": "Bbm",
+        "confidence": 0.659
+      },
+      {
+        "start": 93.762,
+        "end": 94.598,
+        "name": "Bb",
+        "confidence": 0.778
+      },
+      {
+        "start": 94.598,
+        "end": 94.854,
+        "name": "Bbm",
+        "confidence": 0.738
+      },
+      {
+        "start": 94.854,
+        "end": 95.109,
+        "name": "Cm",
+        "confidence": 0.588
+      }
+    ]
+  },
+  "lyricSets": [
+    {
+      "id": "zh-vocal",
+      "label": "中文 vocal",
+      "languageCode": "zh-Hans",
+      "tracks": [
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "pinyin",
+            "active-vocal",
+            "draft-correction"
+          ],
+          "path": "lyrics/zh-vocal/zh-Hans.json"
+        },
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/en.json"
+        },
+        {
+          "code": "ja",
+          "label": "Japanese",
+          "nativeLabel": "日本語",
+          "script": "Jpan",
+          "features": [
+            "furigana",
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/ja.json"
+        }
+      ]
+    }
+  ],
+  "textTracks": [],
+  "timeline": {
+    "unit": "seconds",
+    "lines": [
+      {
+        "id": "l01",
+        "start": 2.26,
+        "end": 4.7,
+        "text": "蜀道之难"
+      },
+      {
+        "id": "l02",
+        "start": 7.08,
+        "end": 9.66,
+        "text": "难于上青天"
+      },
+      {
+        "id": "l03",
+        "start": 11.28,
+        "end": 14.1,
+        "text": "噫吁嚱"
+      },
+      {
+        "id": "l04",
+        "start": 14.1,
+        "end": 19.42,
+        "text": "危乎高哉"
+      },
+      {
+        "id": "l05",
+        "start": 20.42,
+        "end": 24.25,
+        "text": "蜀道之难"
+      },
+      {
+        "id": "l06",
+        "start": 24.25,
+        "end": 29.26,
+        "text": "难于上青天"
+      },
+      {
+        "id": "l07",
+        "start": 30.3,
+        "end": 36.2,
+        "text": "上有六龙回日之高标"
+      },
+      {
+        "id": "l08",
+        "start": 36.2,
+        "end": 42.95,
+        "text": "下有冲波逆折之回川"
+      },
+      {
+        "id": "l09",
+        "start": 42.95,
+        "end": 47.8,
+        "text": "又闻子规啼夜月"
+      },
+      {
+        "id": "l10",
+        "start": 47.8,
+        "end": 52.04,
+        "text": "愁空山"
+      },
+      {
+        "id": "l11",
+        "start": 52.04,
+        "end": 56.8,
+        "text": "愁空山"
+      },
+      {
+        "id": "l12",
+        "start": 56.8,
+        "end": 61.2,
+        "text": "连峰去天不盈尺"
+      },
+      {
+        "id": "l13",
+        "start": 61.2,
+        "end": 66.2,
+        "text": "枯松倒挂倚绝壁"
+      },
+      {
+        "id": "l14",
+        "start": 66.2,
+        "end": 71.7,
+        "text": "飞湍瀑流争喧豗"
+      },
+      {
+        "id": "l15",
+        "start": 71.7,
+        "end": 76.8,
+        "text": "砯崖转石万壑雷"
+      },
+      {
+        "id": "l16",
+        "start": 76.8,
+        "end": 87.0,
+        "text": "锦城虽云乐，不如早还家"
+      }
+    ]
+  },
+  "provenance": {
+    "modelRoute": "DiffRhythm draft",
+    "sourceAudio": "data/creative_projects/shu-dao-nan-original-text-dr-20260701/selected/shu-dao-nan-original-text-dr-hook-95-b-draft.mp3",
+    "analysisRun": "data/runs/shu-dao-nan-original-text-dr-hook-95-b-analysis",
+    "coverSource": "assets/covers/shu-dao-nan-16x9.png",
+    "lyricsPolicy": "source-close correction against ASR/listening; draft items must stay labeled DR Draft"
+  }
+}

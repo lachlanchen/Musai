@@ -1,0 +1,853 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "shu-dao-nan-original-text-dr-draft",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "start": 2.26,
+      "end": 4.7,
+      "text": "The road to Shu is hard.",
+      "singableText": "The road to Shu is hard.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 2.26,
+          "end": 2.609
+        },
+        {
+          "text": "road",
+          "start": 2.609,
+          "end": 2.957
+        },
+        {
+          "text": "to",
+          "start": 2.957,
+          "end": 3.306
+        },
+        {
+          "text": "Shu",
+          "start": 3.306,
+          "end": 3.654
+        },
+        {
+          "text": "is",
+          "start": 3.654,
+          "end": 4.003
+        },
+        {
+          "text": "hard",
+          "start": 4.003,
+          "end": 4.351
+        },
+        {
+          "text": ".",
+          "start": 4.351,
+          "end": 4.7
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 7.08,
+      "end": 9.66,
+      "text": "Harder than climbing the blue sky.",
+      "singableText": "Harder than climbing the blue sky.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Harder",
+          "start": 7.08,
+          "end": 7.449
+        },
+        {
+          "text": "than",
+          "start": 7.449,
+          "end": 7.817
+        },
+        {
+          "text": "climbing",
+          "start": 7.817,
+          "end": 8.186
+        },
+        {
+          "text": "the",
+          "start": 8.186,
+          "end": 8.554
+        },
+        {
+          "text": "blue",
+          "start": 8.554,
+          "end": 8.923
+        },
+        {
+          "text": "sky",
+          "start": 8.923,
+          "end": 9.291
+        },
+        {
+          "text": ".",
+          "start": 9.291,
+          "end": 9.66
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 11.28,
+      "end": 14.1,
+      "text": "Ah, a cry of awe.",
+      "singableText": "Ah, a cry of awe.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Ah",
+          "start": 11.28,
+          "end": 11.683
+        },
+        {
+          "text": ",",
+          "start": 11.683,
+          "end": 12.086
+        },
+        {
+          "text": "a",
+          "start": 12.086,
+          "end": 12.489
+        },
+        {
+          "text": "cry",
+          "start": 12.489,
+          "end": 12.891
+        },
+        {
+          "text": "of",
+          "start": 12.891,
+          "end": 13.294
+        },
+        {
+          "text": "awe",
+          "start": 13.294,
+          "end": 13.697
+        },
+        {
+          "text": ".",
+          "start": 13.697,
+          "end": 14.1
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 14.1,
+      "end": 19.42,
+      "text": "How perilous, how high.",
+      "singableText": "How perilous, how high.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "How",
+          "start": 14.1,
+          "end": 14.987
+        },
+        {
+          "text": "perilous",
+          "start": 14.987,
+          "end": 15.873
+        },
+        {
+          "text": ",",
+          "start": 15.873,
+          "end": 16.76
+        },
+        {
+          "text": "how",
+          "start": 16.76,
+          "end": 17.647
+        },
+        {
+          "text": "high",
+          "start": 17.647,
+          "end": 18.533
+        },
+        {
+          "text": ".",
+          "start": 18.533,
+          "end": 19.42
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 20.42,
+      "end": 24.25,
+      "text": "The road to Shu is hard.",
+      "singableText": "The road to Shu is hard.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 20.42,
+          "end": 20.967
+        },
+        {
+          "text": "road",
+          "start": 20.967,
+          "end": 21.514
+        },
+        {
+          "text": "to",
+          "start": 21.514,
+          "end": 22.061
+        },
+        {
+          "text": "Shu",
+          "start": 22.061,
+          "end": 22.609
+        },
+        {
+          "text": "is",
+          "start": 22.609,
+          "end": 23.156
+        },
+        {
+          "text": "hard",
+          "start": 23.156,
+          "end": 23.703
+        },
+        {
+          "text": ".",
+          "start": 23.703,
+          "end": 24.25
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 24.25,
+      "end": 29.26,
+      "text": "Harder than climbing the blue sky.",
+      "singableText": "Harder than climbing the blue sky.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Harder",
+          "start": 24.25,
+          "end": 24.966
+        },
+        {
+          "text": "than",
+          "start": 24.966,
+          "end": 25.681
+        },
+        {
+          "text": "climbing",
+          "start": 25.681,
+          "end": 26.397
+        },
+        {
+          "text": "the",
+          "start": 26.397,
+          "end": 27.113
+        },
+        {
+          "text": "blue",
+          "start": 27.113,
+          "end": 27.829
+        },
+        {
+          "text": "sky",
+          "start": 27.829,
+          "end": 28.544
+        },
+        {
+          "text": ".",
+          "start": 28.544,
+          "end": 29.26
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 30.3,
+      "end": 36.2,
+      "text": "Above, high peaks turn back the sun's six dragons.",
+      "singableText": "Above, high peaks turn back the sun's six dragons.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Above",
+          "start": 30.3,
+          "end": 30.836
+        },
+        {
+          "text": ",",
+          "start": 30.836,
+          "end": 31.373
+        },
+        {
+          "text": "high",
+          "start": 31.373,
+          "end": 31.909
+        },
+        {
+          "text": "peaks",
+          "start": 31.909,
+          "end": 32.445
+        },
+        {
+          "text": "turn",
+          "start": 32.445,
+          "end": 32.982
+        },
+        {
+          "text": "back",
+          "start": 32.982,
+          "end": 33.518
+        },
+        {
+          "text": "the",
+          "start": 33.518,
+          "end": 34.055
+        },
+        {
+          "text": "sun's",
+          "start": 34.055,
+          "end": 34.591
+        },
+        {
+          "text": "six",
+          "start": 34.591,
+          "end": 35.127
+        },
+        {
+          "text": "dragons",
+          "start": 35.127,
+          "end": 35.664
+        },
+        {
+          "text": ".",
+          "start": 35.664,
+          "end": 36.2
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 36.2,
+      "end": 42.95,
+      "text": "Below, broken torrents twist backward through the gorge.",
+      "singableText": "Below, broken torrents twist backward through the gorge.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Below",
+          "start": 36.2,
+          "end": 36.875
+        },
+        {
+          "text": ",",
+          "start": 36.875,
+          "end": 37.55
+        },
+        {
+          "text": "broken",
+          "start": 37.55,
+          "end": 38.225
+        },
+        {
+          "text": "torrents",
+          "start": 38.225,
+          "end": 38.9
+        },
+        {
+          "text": "twist",
+          "start": 38.9,
+          "end": 39.575
+        },
+        {
+          "text": "backward",
+          "start": 39.575,
+          "end": 40.25
+        },
+        {
+          "text": "through",
+          "start": 40.25,
+          "end": 40.925
+        },
+        {
+          "text": "the",
+          "start": 40.925,
+          "end": 41.6
+        },
+        {
+          "text": "gorge",
+          "start": 41.6,
+          "end": 42.275
+        },
+        {
+          "text": ".",
+          "start": 42.275,
+          "end": 42.95
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 42.95,
+      "end": 47.8,
+      "text": "Again the cuckoo cries beneath the night moon.",
+      "singableText": "Again the cuckoo cries beneath the night moon.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Again",
+          "start": 42.95,
+          "end": 43.489
+        },
+        {
+          "text": "the",
+          "start": 43.489,
+          "end": 44.028
+        },
+        {
+          "text": "cuckoo",
+          "start": 44.028,
+          "end": 44.567
+        },
+        {
+          "text": "cries",
+          "start": 44.567,
+          "end": 45.106
+        },
+        {
+          "text": "beneath",
+          "start": 45.106,
+          "end": 45.644
+        },
+        {
+          "text": "the",
+          "start": 45.644,
+          "end": 46.183
+        },
+        {
+          "text": "night",
+          "start": 46.183,
+          "end": 46.722
+        },
+        {
+          "text": "moon",
+          "start": 46.722,
+          "end": 47.261
+        },
+        {
+          "text": ".",
+          "start": 47.261,
+          "end": 47.8
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 47.8,
+      "end": 52.04,
+      "text": "Grief fills the empty mountains.",
+      "singableText": "Grief fills the empty mountains.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Grief",
+          "start": 47.8,
+          "end": 48.507
+        },
+        {
+          "text": "fills",
+          "start": 48.507,
+          "end": 49.213
+        },
+        {
+          "text": "the",
+          "start": 49.213,
+          "end": 49.92
+        },
+        {
+          "text": "empty",
+          "start": 49.92,
+          "end": 50.627
+        },
+        {
+          "text": "mountains",
+          "start": 50.627,
+          "end": 51.333
+        },
+        {
+          "text": ".",
+          "start": 51.333,
+          "end": 52.04
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 52.04,
+      "end": 56.8,
+      "text": "Grief fills the empty mountains.",
+      "singableText": "Grief fills the empty mountains.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Grief",
+          "start": 52.04,
+          "end": 52.833
+        },
+        {
+          "text": "fills",
+          "start": 52.833,
+          "end": 53.627
+        },
+        {
+          "text": "the",
+          "start": 53.627,
+          "end": 54.42
+        },
+        {
+          "text": "empty",
+          "start": 54.42,
+          "end": 55.213
+        },
+        {
+          "text": "mountains",
+          "start": 55.213,
+          "end": 56.007
+        },
+        {
+          "text": ".",
+          "start": 56.007,
+          "end": 56.8
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 56.8,
+      "end": 61.2,
+      "text": "Linked peaks fall less than a foot from heaven.",
+      "singableText": "Linked peaks fall less than a foot from heaven.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Linked",
+          "start": 56.8,
+          "end": 57.24
+        },
+        {
+          "text": "peaks",
+          "start": 57.24,
+          "end": 57.68
+        },
+        {
+          "text": "fall",
+          "start": 57.68,
+          "end": 58.12
+        },
+        {
+          "text": "less",
+          "start": 58.12,
+          "end": 58.56
+        },
+        {
+          "text": "than",
+          "start": 58.56,
+          "end": 59.0
+        },
+        {
+          "text": "a",
+          "start": 59.0,
+          "end": 59.44
+        },
+        {
+          "text": "foot",
+          "start": 59.44,
+          "end": 59.88
+        },
+        {
+          "text": "from",
+          "start": 59.88,
+          "end": 60.32
+        },
+        {
+          "text": "heaven",
+          "start": 60.32,
+          "end": 60.76
+        },
+        {
+          "text": ".",
+          "start": 60.76,
+          "end": 61.2
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 61.2,
+      "end": 66.2,
+      "text": "Withered pines hang upside down from sheer cliffs.",
+      "singableText": "Withered pines hang upside down from sheer cliffs.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Withered",
+          "start": 61.2,
+          "end": 61.756
+        },
+        {
+          "text": "pines",
+          "start": 61.756,
+          "end": 62.311
+        },
+        {
+          "text": "hang",
+          "start": 62.311,
+          "end": 62.867
+        },
+        {
+          "text": "upside",
+          "start": 62.867,
+          "end": 63.422
+        },
+        {
+          "text": "down",
+          "start": 63.422,
+          "end": 63.978
+        },
+        {
+          "text": "from",
+          "start": 63.978,
+          "end": 64.533
+        },
+        {
+          "text": "sheer",
+          "start": 64.533,
+          "end": 65.089
+        },
+        {
+          "text": "cliffs",
+          "start": 65.089,
+          "end": 65.644
+        },
+        {
+          "text": ".",
+          "start": 65.644,
+          "end": 66.2
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 66.2,
+      "end": 71.7,
+      "text": "Flying rapids and waterfalls roar against each other.",
+      "singableText": "Flying rapids and waterfalls roar against each other.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Flying",
+          "start": 66.2,
+          "end": 66.811
+        },
+        {
+          "text": "rapids",
+          "start": 66.811,
+          "end": 67.422
+        },
+        {
+          "text": "and",
+          "start": 67.422,
+          "end": 68.033
+        },
+        {
+          "text": "waterfalls",
+          "start": 68.033,
+          "end": 68.644
+        },
+        {
+          "text": "roar",
+          "start": 68.644,
+          "end": 69.256
+        },
+        {
+          "text": "against",
+          "start": 69.256,
+          "end": 69.867
+        },
+        {
+          "text": "each",
+          "start": 69.867,
+          "end": 70.478
+        },
+        {
+          "text": "other",
+          "start": 70.478,
+          "end": 71.089
+        },
+        {
+          "text": ".",
+          "start": 71.089,
+          "end": 71.7
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "start": 71.7,
+      "end": 76.8,
+      "text": "Stones crash from cliffs like thunder through ten thousand ravines.",
+      "singableText": "Stones crash from cliffs like thunder through ten thousand ravines.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Stones",
+          "start": 71.7,
+          "end": 72.164
+        },
+        {
+          "text": "crash",
+          "start": 72.164,
+          "end": 72.627
+        },
+        {
+          "text": "from",
+          "start": 72.627,
+          "end": 73.091
+        },
+        {
+          "text": "cliffs",
+          "start": 73.091,
+          "end": 73.555
+        },
+        {
+          "text": "like",
+          "start": 73.555,
+          "end": 74.018
+        },
+        {
+          "text": "thunder",
+          "start": 74.018,
+          "end": 74.482
+        },
+        {
+          "text": "through",
+          "start": 74.482,
+          "end": 74.945
+        },
+        {
+          "text": "ten",
+          "start": 74.945,
+          "end": 75.409
+        },
+        {
+          "text": "thousand",
+          "start": 75.409,
+          "end": 75.873
+        },
+        {
+          "text": "ravines",
+          "start": 75.873,
+          "end": 76.336
+        },
+        {
+          "text": ".",
+          "start": 76.336,
+          "end": 76.8
+        }
+      ]
+    },
+    {
+      "id": "l16",
+      "start": 76.8,
+      "end": 87.0,
+      "text": "Though Brocade City is called joyful, better to return home soon.",
+      "singableText": "Though Brocade City is called joyful, better to return home soon.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Though",
+          "start": 76.8,
+          "end": 77.585
+        },
+        {
+          "text": "Brocade",
+          "start": 77.585,
+          "end": 78.369
+        },
+        {
+          "text": "City",
+          "start": 78.369,
+          "end": 79.154
+        },
+        {
+          "text": "is",
+          "start": 79.154,
+          "end": 79.938
+        },
+        {
+          "text": "called",
+          "start": 79.938,
+          "end": 80.723
+        },
+        {
+          "text": "joyful",
+          "start": 80.723,
+          "end": 81.508
+        },
+        {
+          "text": ",",
+          "start": 81.508,
+          "end": 82.292
+        },
+        {
+          "text": "better",
+          "start": 82.292,
+          "end": 83.077
+        },
+        {
+          "text": "to",
+          "start": 83.077,
+          "end": 83.862
+        },
+        {
+          "text": "return",
+          "start": 83.862,
+          "end": 84.646
+        },
+        {
+          "text": "home",
+          "start": 84.646,
+          "end": 85.431
+        },
+        {
+          "text": "soon",
+          "start": 85.431,
+          "end": 86.215
+        },
+        {
+          "text": ".",
+          "start": 86.215,
+          "end": 87.0
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "status": "draft",
+    "method": "source-close ASR/listening correction",
+    "note": "The active Mandarin line keeps source text when the generated sound is close; this item is not final polish."
+  }
+}

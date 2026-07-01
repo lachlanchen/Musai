@@ -1,0 +1,1243 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "shu-dao-nan-original-text-dr-draft",
+  "language": {
+    "code": "ja",
+    "label": "Japanese",
+    "nativeLabel": "日本語",
+    "script": "Jpan",
+    "pronunciation": "furigana"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "start": 2.26,
+      "end": 4.7,
+      "text": "蜀への道は険しい。",
+      "singableText": "蜀への道は険しい。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "蜀",
+          "start": 2.26,
+          "end": 2.531,
+          "reading": "しょく"
+        },
+        {
+          "text": "へ",
+          "start": 2.531,
+          "end": 2.802
+        },
+        {
+          "text": "の",
+          "start": 2.802,
+          "end": 3.073
+        },
+        {
+          "text": "道",
+          "start": 3.073,
+          "end": 3.344,
+          "reading": "みち"
+        },
+        {
+          "text": "は",
+          "start": 3.344,
+          "end": 3.616
+        },
+        {
+          "text": "険",
+          "start": 3.616,
+          "end": 3.887,
+          "reading": "けん"
+        },
+        {
+          "text": "し",
+          "start": 3.887,
+          "end": 4.158
+        },
+        {
+          "text": "い",
+          "start": 4.158,
+          "end": 4.429
+        },
+        {
+          "text": "。",
+          "start": 4.429,
+          "end": 4.7
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 7.08,
+      "end": 9.66,
+      "text": "青天へ登るより難しい。",
+      "singableText": "青天へ登るより難しい。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "青",
+          "start": 7.08,
+          "end": 7.315,
+          "reading": "あお"
+        },
+        {
+          "text": "天",
+          "start": 7.315,
+          "end": 7.549,
+          "reading": "てん"
+        },
+        {
+          "text": "へ",
+          "start": 7.549,
+          "end": 7.784
+        },
+        {
+          "text": "登",
+          "start": 7.784,
+          "end": 8.018,
+          "reading": "とう"
+        },
+        {
+          "text": "る",
+          "start": 8.018,
+          "end": 8.253
+        },
+        {
+          "text": "よ",
+          "start": 8.253,
+          "end": 8.487
+        },
+        {
+          "text": "り",
+          "start": 8.487,
+          "end": 8.722
+        },
+        {
+          "text": "難",
+          "start": 8.722,
+          "end": 8.956,
+          "reading": "なん"
+        },
+        {
+          "text": "し",
+          "start": 8.956,
+          "end": 9.191
+        },
+        {
+          "text": "い",
+          "start": 9.191,
+          "end": 9.425
+        },
+        {
+          "text": "。",
+          "start": 9.425,
+          "end": 9.66
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 11.28,
+      "end": 14.1,
+      "text": "ああ、驚きの嘆き。",
+      "singableText": "ああ、驚きの嘆き。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "あ",
+          "start": 11.28,
+          "end": 11.593
+        },
+        {
+          "text": "あ",
+          "start": 11.593,
+          "end": 11.907
+        },
+        {
+          "text": "、",
+          "start": 11.907,
+          "end": 12.22
+        },
+        {
+          "text": "驚",
+          "start": 12.22,
+          "end": 12.533,
+          "reading": "きょう"
+        },
+        {
+          "text": "き",
+          "start": 12.533,
+          "end": 12.847
+        },
+        {
+          "text": "の",
+          "start": 12.847,
+          "end": 13.16
+        },
+        {
+          "text": "嘆",
+          "start": 13.16,
+          "end": 13.473,
+          "reading": "たん"
+        },
+        {
+          "text": "き",
+          "start": 13.473,
+          "end": 13.787
+        },
+        {
+          "text": "。",
+          "start": 13.787,
+          "end": 14.1
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 14.1,
+      "end": 19.42,
+      "text": "なんと危うく高いことか。",
+      "singableText": "なんと危うく高いことか。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "な",
+          "start": 14.1,
+          "end": 14.543
+        },
+        {
+          "text": "ん",
+          "start": 14.543,
+          "end": 14.987
+        },
+        {
+          "text": "と",
+          "start": 14.987,
+          "end": 15.43
+        },
+        {
+          "text": "危",
+          "start": 15.43,
+          "end": 15.873,
+          "reading": "き"
+        },
+        {
+          "text": "う",
+          "start": 15.873,
+          "end": 16.317
+        },
+        {
+          "text": "く",
+          "start": 16.317,
+          "end": 16.76
+        },
+        {
+          "text": "高",
+          "start": 16.76,
+          "end": 17.203,
+          "reading": "たか"
+        },
+        {
+          "text": "い",
+          "start": 17.203,
+          "end": 17.647
+        },
+        {
+          "text": "こ",
+          "start": 17.647,
+          "end": 18.09
+        },
+        {
+          "text": "と",
+          "start": 18.09,
+          "end": 18.533
+        },
+        {
+          "text": "か",
+          "start": 18.533,
+          "end": 18.977
+        },
+        {
+          "text": "。",
+          "start": 18.977,
+          "end": 19.42
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 20.42,
+      "end": 24.25,
+      "text": "蜀への道は険しい。",
+      "singableText": "蜀への道は険しい。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "蜀",
+          "start": 20.42,
+          "end": 20.846,
+          "reading": "しょく"
+        },
+        {
+          "text": "へ",
+          "start": 20.846,
+          "end": 21.271
+        },
+        {
+          "text": "の",
+          "start": 21.271,
+          "end": 21.697
+        },
+        {
+          "text": "道",
+          "start": 21.697,
+          "end": 22.122,
+          "reading": "みち"
+        },
+        {
+          "text": "は",
+          "start": 22.122,
+          "end": 22.548
+        },
+        {
+          "text": "険",
+          "start": 22.548,
+          "end": 22.973,
+          "reading": "けん"
+        },
+        {
+          "text": "し",
+          "start": 22.973,
+          "end": 23.399
+        },
+        {
+          "text": "い",
+          "start": 23.399,
+          "end": 23.824
+        },
+        {
+          "text": "。",
+          "start": 23.824,
+          "end": 24.25
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 24.25,
+      "end": 29.26,
+      "text": "青天へ登るより難しい。",
+      "singableText": "青天へ登るより難しい。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "青",
+          "start": 24.25,
+          "end": 24.705,
+          "reading": "あお"
+        },
+        {
+          "text": "天",
+          "start": 24.705,
+          "end": 25.161,
+          "reading": "てん"
+        },
+        {
+          "text": "へ",
+          "start": 25.161,
+          "end": 25.616
+        },
+        {
+          "text": "登",
+          "start": 25.616,
+          "end": 26.072,
+          "reading": "とう"
+        },
+        {
+          "text": "る",
+          "start": 26.072,
+          "end": 26.527
+        },
+        {
+          "text": "よ",
+          "start": 26.527,
+          "end": 26.983
+        },
+        {
+          "text": "り",
+          "start": 26.983,
+          "end": 27.438
+        },
+        {
+          "text": "難",
+          "start": 27.438,
+          "end": 27.894,
+          "reading": "なん"
+        },
+        {
+          "text": "し",
+          "start": 27.894,
+          "end": 28.349
+        },
+        {
+          "text": "い",
+          "start": 28.349,
+          "end": 28.805
+        },
+        {
+          "text": "。",
+          "start": 28.805,
+          "end": 29.26
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 30.3,
+      "end": 36.2,
+      "text": "上には太陽の六龍を返す高峰。",
+      "singableText": "上には太陽の六龍を返す高峰。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "上",
+          "start": 30.3,
+          "end": 30.721,
+          "reading": "うえ"
+        },
+        {
+          "text": "に",
+          "start": 30.721,
+          "end": 31.143
+        },
+        {
+          "text": "は",
+          "start": 31.143,
+          "end": 31.564
+        },
+        {
+          "text": "太",
+          "start": 31.564,
+          "end": 31.986,
+          "reading": "た"
+        },
+        {
+          "text": "陽",
+          "start": 31.986,
+          "end": 32.407,
+          "reading": "よう"
+        },
+        {
+          "text": "の",
+          "start": 32.407,
+          "end": 32.829
+        },
+        {
+          "text": "六",
+          "start": 32.829,
+          "end": 33.25,
+          "reading": "ろく"
+        },
+        {
+          "text": "龍",
+          "start": 33.25,
+          "end": 33.671,
+          "reading": "りゅう"
+        },
+        {
+          "text": "を",
+          "start": 33.671,
+          "end": 34.093
+        },
+        {
+          "text": "返",
+          "start": 34.093,
+          "end": 34.514,
+          "reading": "へん"
+        },
+        {
+          "text": "す",
+          "start": 34.514,
+          "end": 34.936
+        },
+        {
+          "text": "高",
+          "start": 34.936,
+          "end": 35.357,
+          "reading": "たか"
+        },
+        {
+          "text": "峰",
+          "start": 35.357,
+          "end": 35.779,
+          "reading": "みね"
+        },
+        {
+          "text": "。",
+          "start": 35.779,
+          "end": 36.2
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 36.2,
+      "end": 42.95,
+      "text": "下には逆巻く波と折れ返る川。",
+      "singableText": "下には逆巻く波と折れ返る川。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "下",
+          "start": 36.2,
+          "end": 36.682,
+          "reading": "した"
+        },
+        {
+          "text": "に",
+          "start": 36.682,
+          "end": 37.164
+        },
+        {
+          "text": "は",
+          "start": 37.164,
+          "end": 37.646
+        },
+        {
+          "text": "逆",
+          "start": 37.646,
+          "end": 38.129,
+          "reading": "ぎゃく"
+        },
+        {
+          "text": "巻",
+          "start": 38.129,
+          "end": 38.611,
+          "reading": "かん"
+        },
+        {
+          "text": "く",
+          "start": 38.611,
+          "end": 39.093
+        },
+        {
+          "text": "波",
+          "start": 39.093,
+          "end": 39.575,
+          "reading": "なみ"
+        },
+        {
+          "text": "と",
+          "start": 39.575,
+          "end": 40.057
+        },
+        {
+          "text": "折",
+          "start": 40.057,
+          "end": 40.539,
+          "reading": "おり"
+        },
+        {
+          "text": "れ",
+          "start": 40.539,
+          "end": 41.021
+        },
+        {
+          "text": "返",
+          "start": 41.021,
+          "end": 41.504,
+          "reading": "へん"
+        },
+        {
+          "text": "る",
+          "start": 41.504,
+          "end": 41.986
+        },
+        {
+          "text": "川",
+          "start": 41.986,
+          "end": 42.468,
+          "reading": "かわ"
+        },
+        {
+          "text": "。",
+          "start": 42.468,
+          "end": 42.95
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 42.95,
+      "end": 47.8,
+      "text": "また夜月にほととぎすが啼く。",
+      "singableText": "また夜月にほととぎすが啼く。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "ま",
+          "start": 42.95,
+          "end": 43.296
+        },
+        {
+          "text": "た",
+          "start": 43.296,
+          "end": 43.643
+        },
+        {
+          "text": "夜",
+          "start": 43.643,
+          "end": 43.989,
+          "reading": "よる"
+        },
+        {
+          "text": "月",
+          "start": 43.989,
+          "end": 44.336,
+          "reading": "がつ"
+        },
+        {
+          "text": "に",
+          "start": 44.336,
+          "end": 44.682
+        },
+        {
+          "text": "ほ",
+          "start": 44.682,
+          "end": 45.029
+        },
+        {
+          "text": "と",
+          "start": 45.029,
+          "end": 45.375
+        },
+        {
+          "text": "と",
+          "start": 45.375,
+          "end": 45.721
+        },
+        {
+          "text": "ぎ",
+          "start": 45.721,
+          "end": 46.068
+        },
+        {
+          "text": "す",
+          "start": 46.068,
+          "end": 46.414
+        },
+        {
+          "text": "が",
+          "start": 46.414,
+          "end": 46.761
+        },
+        {
+          "text": "啼",
+          "start": 46.761,
+          "end": 47.107,
+          "reading": "てい"
+        },
+        {
+          "text": "く",
+          "start": 47.107,
+          "end": 47.454
+        },
+        {
+          "text": "。",
+          "start": 47.454,
+          "end": 47.8
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 47.8,
+      "end": 52.04,
+      "text": "愁いが空山に満ちる。",
+      "singableText": "愁いが空山に満ちる。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "愁",
+          "start": 47.8,
+          "end": 48.224,
+          "reading": "しゅう"
+        },
+        {
+          "text": "い",
+          "start": 48.224,
+          "end": 48.648
+        },
+        {
+          "text": "が",
+          "start": 48.648,
+          "end": 49.072
+        },
+        {
+          "text": "空",
+          "start": 49.072,
+          "end": 49.496,
+          "reading": "そら"
+        },
+        {
+          "text": "山",
+          "start": 49.496,
+          "end": 49.92,
+          "reading": "やま"
+        },
+        {
+          "text": "に",
+          "start": 49.92,
+          "end": 50.344
+        },
+        {
+          "text": "満",
+          "start": 50.344,
+          "end": 50.768,
+          "reading": "まん"
+        },
+        {
+          "text": "ち",
+          "start": 50.768,
+          "end": 51.192
+        },
+        {
+          "text": "る",
+          "start": 51.192,
+          "end": 51.616
+        },
+        {
+          "text": "。",
+          "start": 51.616,
+          "end": 52.04
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 52.04,
+      "end": 56.8,
+      "text": "愁いが空山に満ちる。",
+      "singableText": "愁いが空山に満ちる。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "愁",
+          "start": 52.04,
+          "end": 52.516,
+          "reading": "しゅう"
+        },
+        {
+          "text": "い",
+          "start": 52.516,
+          "end": 52.992
+        },
+        {
+          "text": "が",
+          "start": 52.992,
+          "end": 53.468
+        },
+        {
+          "text": "空",
+          "start": 53.468,
+          "end": 53.944,
+          "reading": "そら"
+        },
+        {
+          "text": "山",
+          "start": 53.944,
+          "end": 54.42,
+          "reading": "やま"
+        },
+        {
+          "text": "に",
+          "start": 54.42,
+          "end": 54.896
+        },
+        {
+          "text": "満",
+          "start": 54.896,
+          "end": 55.372,
+          "reading": "まん"
+        },
+        {
+          "text": "ち",
+          "start": 55.372,
+          "end": 55.848
+        },
+        {
+          "text": "る",
+          "start": 55.848,
+          "end": 56.324
+        },
+        {
+          "text": "。",
+          "start": 56.324,
+          "end": 56.8
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 56.8,
+      "end": 61.2,
+      "text": "連なる峰は天まで一尺もない。",
+      "singableText": "連なる峰は天まで一尺もない。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "連",
+          "start": 56.8,
+          "end": 57.114,
+          "reading": "れん"
+        },
+        {
+          "text": "な",
+          "start": 57.114,
+          "end": 57.429
+        },
+        {
+          "text": "る",
+          "start": 57.429,
+          "end": 57.743
+        },
+        {
+          "text": "峰",
+          "start": 57.743,
+          "end": 58.057,
+          "reading": "みね"
+        },
+        {
+          "text": "は",
+          "start": 58.057,
+          "end": 58.371
+        },
+        {
+          "text": "天",
+          "start": 58.371,
+          "end": 58.686,
+          "reading": "てん"
+        },
+        {
+          "text": "ま",
+          "start": 58.686,
+          "end": 59.0
+        },
+        {
+          "text": "で",
+          "start": 59.0,
+          "end": 59.314
+        },
+        {
+          "text": "一",
+          "start": 59.314,
+          "end": 59.629,
+          "reading": "いち"
+        },
+        {
+          "text": "尺",
+          "start": 59.629,
+          "end": 59.943,
+          "reading": "しゃく"
+        },
+        {
+          "text": "も",
+          "start": 59.943,
+          "end": 60.257
+        },
+        {
+          "text": "な",
+          "start": 60.257,
+          "end": 60.571
+        },
+        {
+          "text": "い",
+          "start": 60.571,
+          "end": 60.886
+        },
+        {
+          "text": "。",
+          "start": 60.886,
+          "end": 61.2
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 61.2,
+      "end": 66.2,
+      "text": "枯松は絶壁に逆さに掛かる。",
+      "singableText": "枯松は絶壁に逆さに掛かる。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "枯",
+          "start": 61.2,
+          "end": 61.585,
+          "reading": "こ"
+        },
+        {
+          "text": "松",
+          "start": 61.585,
+          "end": 61.969,
+          "reading": "まつ"
+        },
+        {
+          "text": "は",
+          "start": 61.969,
+          "end": 62.354
+        },
+        {
+          "text": "絶",
+          "start": 62.354,
+          "end": 62.738,
+          "reading": "ぜつ"
+        },
+        {
+          "text": "壁",
+          "start": 62.738,
+          "end": 63.123,
+          "reading": "かべ"
+        },
+        {
+          "text": "に",
+          "start": 63.123,
+          "end": 63.508
+        },
+        {
+          "text": "逆",
+          "start": 63.508,
+          "end": 63.892,
+          "reading": "ぎゃく"
+        },
+        {
+          "text": "さ",
+          "start": 63.892,
+          "end": 64.277
+        },
+        {
+          "text": "に",
+          "start": 64.277,
+          "end": 64.662
+        },
+        {
+          "text": "掛",
+          "start": 64.662,
+          "end": 65.046,
+          "reading": "かかり"
+        },
+        {
+          "text": "か",
+          "start": 65.046,
+          "end": 65.431
+        },
+        {
+          "text": "る",
+          "start": 65.431,
+          "end": 65.815
+        },
+        {
+          "text": "。",
+          "start": 65.815,
+          "end": 66.2
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 66.2,
+      "end": 71.7,
+      "text": "飛ぶ急流と滝が轟き競う。",
+      "singableText": "飛ぶ急流と滝が轟き競う。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "飛",
+          "start": 66.2,
+          "end": 66.658,
+          "reading": "ひ"
+        },
+        {
+          "text": "ぶ",
+          "start": 66.658,
+          "end": 67.117
+        },
+        {
+          "text": "急",
+          "start": 67.117,
+          "end": 67.575,
+          "reading": "きゅう"
+        },
+        {
+          "text": "流",
+          "start": 67.575,
+          "end": 68.033,
+          "reading": "りゅう"
+        },
+        {
+          "text": "と",
+          "start": 68.033,
+          "end": 68.492
+        },
+        {
+          "text": "滝",
+          "start": 68.492,
+          "end": 68.95,
+          "reading": "たき"
+        },
+        {
+          "text": "が",
+          "start": 68.95,
+          "end": 69.408
+        },
+        {
+          "text": "轟",
+          "start": 69.408,
+          "end": 69.867,
+          "reading": "とどろき"
+        },
+        {
+          "text": "き",
+          "start": 69.867,
+          "end": 70.325
+        },
+        {
+          "text": "競",
+          "start": 70.325,
+          "end": 70.783,
+          "reading": "きょう"
+        },
+        {
+          "text": "う",
+          "start": 70.783,
+          "end": 71.242
+        },
+        {
+          "text": "。",
+          "start": 71.242,
+          "end": 71.7
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "start": 71.7,
+      "end": 76.8,
+      "text": "崖を打つ石は万谷の雷となる。",
+      "singableText": "崖を打つ石は万谷の雷となる。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "崖",
+          "start": 71.7,
+          "end": 72.064,
+          "reading": "がけ"
+        },
+        {
+          "text": "を",
+          "start": 72.064,
+          "end": 72.429
+        },
+        {
+          "text": "打",
+          "start": 72.429,
+          "end": 72.793,
+          "reading": "だ"
+        },
+        {
+          "text": "つ",
+          "start": 72.793,
+          "end": 73.157
+        },
+        {
+          "text": "石",
+          "start": 73.157,
+          "end": 73.521,
+          "reading": "いし"
+        },
+        {
+          "text": "は",
+          "start": 73.521,
+          "end": 73.886
+        },
+        {
+          "text": "万",
+          "start": 73.886,
+          "end": 74.25,
+          "reading": "まん"
+        },
+        {
+          "text": "谷",
+          "start": 74.25,
+          "end": 74.614,
+          "reading": "たに"
+        },
+        {
+          "text": "の",
+          "start": 74.614,
+          "end": 74.979
+        },
+        {
+          "text": "雷",
+          "start": 74.979,
+          "end": 75.343,
+          "reading": "かみなり"
+        },
+        {
+          "text": "と",
+          "start": 75.343,
+          "end": 75.707
+        },
+        {
+          "text": "な",
+          "start": 75.707,
+          "end": 76.071
+        },
+        {
+          "text": "る",
+          "start": 76.071,
+          "end": 76.436
+        },
+        {
+          "text": "。",
+          "start": 76.436,
+          "end": 76.8
+        }
+      ]
+    },
+    {
+      "id": "l16",
+      "start": 76.8,
+      "end": 87.0,
+      "text": "錦城は楽しいと言えども、早く帰るに及ばない。",
+      "singableText": "錦城は楽しいと言えども、早く帰るに及ばない。",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "錦",
+          "start": 76.8,
+          "end": 77.264,
+          "reading": "にしき"
+        },
+        {
+          "text": "城",
+          "start": 77.264,
+          "end": 77.727,
+          "reading": "しろ"
+        },
+        {
+          "text": "は",
+          "start": 77.727,
+          "end": 78.191
+        },
+        {
+          "text": "楽",
+          "start": 78.191,
+          "end": 78.655,
+          "reading": "らく"
+        },
+        {
+          "text": "し",
+          "start": 78.655,
+          "end": 79.118
+        },
+        {
+          "text": "い",
+          "start": 79.118,
+          "end": 79.582
+        },
+        {
+          "text": "と",
+          "start": 79.582,
+          "end": 80.045
+        },
+        {
+          "text": "言",
+          "start": 80.045,
+          "end": 80.509,
+          "reading": "げん"
+        },
+        {
+          "text": "え",
+          "start": 80.509,
+          "end": 80.973
+        },
+        {
+          "text": "ど",
+          "start": 80.973,
+          "end": 81.436
+        },
+        {
+          "text": "も",
+          "start": 81.436,
+          "end": 81.9
+        },
+        {
+          "text": "、",
+          "start": 81.9,
+          "end": 82.364
+        },
+        {
+          "text": "早",
+          "start": 82.364,
+          "end": 82.827,
+          "reading": "そう"
+        },
+        {
+          "text": "く",
+          "start": 82.827,
+          "end": 83.291
+        },
+        {
+          "text": "帰",
+          "start": 83.291,
+          "end": 83.755,
+          "reading": "き"
+        },
+        {
+          "text": "る",
+          "start": 83.755,
+          "end": 84.218
+        },
+        {
+          "text": "に",
+          "start": 84.218,
+          "end": 84.682
+        },
+        {
+          "text": "及",
+          "start": 84.682,
+          "end": 85.145,
+          "reading": "きゅう"
+        },
+        {
+          "text": "ば",
+          "start": 85.145,
+          "end": 85.609
+        },
+        {
+          "text": "な",
+          "start": 85.609,
+          "end": 86.073
+        },
+        {
+          "text": "い",
+          "start": 86.073,
+          "end": 86.536
+        },
+        {
+          "text": "。",
+          "start": 86.536,
+          "end": 87.0
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "status": "draft",
+    "method": "source-close ASR/listening correction",
+    "note": "The active Mandarin line keeps source text when the generated sound is close; this item is not final polish."
+  }
+}

@@ -1,0 +1,958 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "xing-lu-nan-original-poem-draft",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "start": 2.74,
+      "end": 7.4,
+      "text": "Someday the long wind will break the waves.",
+      "singableText": "Someday the long wind will break the waves.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Someday",
+          "start": 2.74,
+          "end": 3.258
+        },
+        {
+          "text": "the",
+          "start": 3.258,
+          "end": 3.776
+        },
+        {
+          "text": "long",
+          "start": 3.776,
+          "end": 4.293
+        },
+        {
+          "text": "wind",
+          "start": 4.293,
+          "end": 4.811
+        },
+        {
+          "text": "will",
+          "start": 4.811,
+          "end": 5.329
+        },
+        {
+          "text": "break",
+          "start": 5.329,
+          "end": 5.847
+        },
+        {
+          "text": "the",
+          "start": 5.847,
+          "end": 6.364
+        },
+        {
+          "text": "waves",
+          "start": 6.364,
+          "end": 6.882
+        },
+        {
+          "text": ".",
+          "start": 6.882,
+          "end": 7.4
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 8.66,
+      "end": 13.46,
+      "text": "I will raise cloudlike sails and cross the vast sea.",
+      "singableText": "I will raise cloudlike sails and cross the vast sea.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 8.66,
+          "end": 9.096
+        },
+        {
+          "text": "will",
+          "start": 9.096,
+          "end": 9.533
+        },
+        {
+          "text": "raise",
+          "start": 9.533,
+          "end": 9.969
+        },
+        {
+          "text": "cloudlike",
+          "start": 9.969,
+          "end": 10.405
+        },
+        {
+          "text": "sails",
+          "start": 10.405,
+          "end": 10.842
+        },
+        {
+          "text": "and",
+          "start": 10.842,
+          "end": 11.278
+        },
+        {
+          "text": "cross",
+          "start": 11.278,
+          "end": 11.715
+        },
+        {
+          "text": "the",
+          "start": 11.715,
+          "end": 12.151
+        },
+        {
+          "text": "vast",
+          "start": 12.151,
+          "end": 12.587
+        },
+        {
+          "text": "sea",
+          "start": 12.587,
+          "end": 13.024
+        },
+        {
+          "text": ".",
+          "start": 13.024,
+          "end": 13.46
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 14.4,
+      "end": 17.6,
+      "text": "The road is hard.",
+      "singableText": "The road is hard.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 14.4,
+          "end": 15.04
+        },
+        {
+          "text": "road",
+          "start": 15.04,
+          "end": 15.68
+        },
+        {
+          "text": "is",
+          "start": 15.68,
+          "end": 16.32
+        },
+        {
+          "text": "hard",
+          "start": 16.32,
+          "end": 16.96
+        },
+        {
+          "text": ".",
+          "start": 16.96,
+          "end": 17.6
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 17.6,
+      "end": 20.8,
+      "text": "The road is hard.",
+      "singableText": "The road is hard.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 17.6,
+          "end": 18.24
+        },
+        {
+          "text": "road",
+          "start": 18.24,
+          "end": 18.88
+        },
+        {
+          "text": "is",
+          "start": 18.88,
+          "end": 19.52
+        },
+        {
+          "text": "hard",
+          "start": 19.52,
+          "end": 20.16
+        },
+        {
+          "text": ".",
+          "start": 20.16,
+          "end": 20.8
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 20.8,
+      "end": 24.3,
+      "text": "So many branching paths.",
+      "singableText": "So many branching paths.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "So",
+          "start": 20.8,
+          "end": 21.5
+        },
+        {
+          "text": "many",
+          "start": 21.5,
+          "end": 22.2
+        },
+        {
+          "text": "branching",
+          "start": 22.2,
+          "end": 22.9
+        },
+        {
+          "text": "paths",
+          "start": 22.9,
+          "end": 23.6
+        },
+        {
+          "text": ".",
+          "start": 23.6,
+          "end": 24.3
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 24.3,
+      "end": 28.6,
+      "text": "Where is the way now?",
+      "singableText": "Where is the way now?",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Where",
+          "start": 24.3,
+          "end": 25.017
+        },
+        {
+          "text": "is",
+          "start": 25.017,
+          "end": 25.733
+        },
+        {
+          "text": "the",
+          "start": 25.733,
+          "end": 26.45
+        },
+        {
+          "text": "way",
+          "start": 26.45,
+          "end": 27.167
+        },
+        {
+          "text": "now",
+          "start": 27.167,
+          "end": 27.883
+        },
+        {
+          "text": "?",
+          "start": 27.883,
+          "end": 28.6
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 31.0,
+      "end": 36.4,
+      "text": "Fine wine in golden cups costs ten thousand a measure.",
+      "singableText": "Fine wine in golden cups costs ten thousand a measure.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Fine",
+          "start": 31.0,
+          "end": 31.491
+        },
+        {
+          "text": "wine",
+          "start": 31.491,
+          "end": 31.982
+        },
+        {
+          "text": "in",
+          "start": 31.982,
+          "end": 32.473
+        },
+        {
+          "text": "golden",
+          "start": 32.473,
+          "end": 32.964
+        },
+        {
+          "text": "cups",
+          "start": 32.964,
+          "end": 33.455
+        },
+        {
+          "text": "costs",
+          "start": 33.455,
+          "end": 33.945
+        },
+        {
+          "text": "ten",
+          "start": 33.945,
+          "end": 34.436
+        },
+        {
+          "text": "thousand",
+          "start": 34.436,
+          "end": 34.927
+        },
+        {
+          "text": "a",
+          "start": 34.927,
+          "end": 35.418
+        },
+        {
+          "text": "measure",
+          "start": 35.418,
+          "end": 35.909
+        },
+        {
+          "text": ".",
+          "start": 35.909,
+          "end": 36.4
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 36.4,
+      "end": 42.7,
+      "text": "Rare dishes on jade plates are worth ten thousand coins.",
+      "singableText": "Rare dishes on jade plates are worth ten thousand coins.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Rare",
+          "start": 36.4,
+          "end": 36.973
+        },
+        {
+          "text": "dishes",
+          "start": 36.973,
+          "end": 37.545
+        },
+        {
+          "text": "on",
+          "start": 37.545,
+          "end": 38.118
+        },
+        {
+          "text": "jade",
+          "start": 38.118,
+          "end": 38.691
+        },
+        {
+          "text": "plates",
+          "start": 38.691,
+          "end": 39.264
+        },
+        {
+          "text": "are",
+          "start": 39.264,
+          "end": 39.836
+        },
+        {
+          "text": "worth",
+          "start": 39.836,
+          "end": 40.409
+        },
+        {
+          "text": "ten",
+          "start": 40.409,
+          "end": 40.982
+        },
+        {
+          "text": "thousand",
+          "start": 40.982,
+          "end": 41.555
+        },
+        {
+          "text": "coins",
+          "start": 41.555,
+          "end": 42.127
+        },
+        {
+          "text": ".",
+          "start": 42.127,
+          "end": 42.7
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 42.7,
+      "end": 48.1,
+      "text": "I stop my cup, throw down chopsticks, and cannot eat.",
+      "singableText": "I stop my cup, throw down chopsticks, and cannot eat.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 42.7,
+          "end": 43.115
+        },
+        {
+          "text": "stop",
+          "start": 43.115,
+          "end": 43.531
+        },
+        {
+          "text": "my",
+          "start": 43.531,
+          "end": 43.946
+        },
+        {
+          "text": "cup",
+          "start": 43.946,
+          "end": 44.362
+        },
+        {
+          "text": ",",
+          "start": 44.362,
+          "end": 44.777
+        },
+        {
+          "text": "throw",
+          "start": 44.777,
+          "end": 45.192
+        },
+        {
+          "text": "down",
+          "start": 45.192,
+          "end": 45.608
+        },
+        {
+          "text": "chopsticks",
+          "start": 45.608,
+          "end": 46.023
+        },
+        {
+          "text": ",",
+          "start": 46.023,
+          "end": 46.438
+        },
+        {
+          "text": "and",
+          "start": 46.438,
+          "end": 46.854
+        },
+        {
+          "text": "cannot",
+          "start": 46.854,
+          "end": 47.269
+        },
+        {
+          "text": "eat",
+          "start": 47.269,
+          "end": 47.685
+        },
+        {
+          "text": ".",
+          "start": 47.685,
+          "end": 48.1
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 48.1,
+      "end": 53.8,
+      "text": "I draw my sword and look around, my heart bewildered.",
+      "singableText": "I draw my sword and look around, my heart bewildered.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 48.1,
+          "end": 48.575
+        },
+        {
+          "text": "draw",
+          "start": 48.575,
+          "end": 49.05
+        },
+        {
+          "text": "my",
+          "start": 49.05,
+          "end": 49.525
+        },
+        {
+          "text": "sword",
+          "start": 49.525,
+          "end": 50.0
+        },
+        {
+          "text": "and",
+          "start": 50.0,
+          "end": 50.475
+        },
+        {
+          "text": "look",
+          "start": 50.475,
+          "end": 50.95
+        },
+        {
+          "text": "around",
+          "start": 50.95,
+          "end": 51.425
+        },
+        {
+          "text": ",",
+          "start": 51.425,
+          "end": 51.9
+        },
+        {
+          "text": "my",
+          "start": 51.9,
+          "end": 52.375
+        },
+        {
+          "text": "heart",
+          "start": 52.375,
+          "end": 52.85
+        },
+        {
+          "text": "bewildered",
+          "start": 52.85,
+          "end": 53.325
+        },
+        {
+          "text": ".",
+          "start": 53.325,
+          "end": 53.8
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 53.8,
+      "end": 59.0,
+      "text": "I would cross the Yellow River, but ice blocks the stream.",
+      "singableText": "I would cross the Yellow River, but ice blocks the stream.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 53.8,
+          "end": 54.2
+        },
+        {
+          "text": "would",
+          "start": 54.2,
+          "end": 54.6
+        },
+        {
+          "text": "cross",
+          "start": 54.6,
+          "end": 55.0
+        },
+        {
+          "text": "the",
+          "start": 55.0,
+          "end": 55.4
+        },
+        {
+          "text": "Yellow",
+          "start": 55.4,
+          "end": 55.8
+        },
+        {
+          "text": "River",
+          "start": 55.8,
+          "end": 56.2
+        },
+        {
+          "text": ",",
+          "start": 56.2,
+          "end": 56.6
+        },
+        {
+          "text": "but",
+          "start": 56.6,
+          "end": 57.0
+        },
+        {
+          "text": "ice",
+          "start": 57.0,
+          "end": 57.4
+        },
+        {
+          "text": "blocks",
+          "start": 57.4,
+          "end": 57.8
+        },
+        {
+          "text": "the",
+          "start": 57.8,
+          "end": 58.2
+        },
+        {
+          "text": "stream",
+          "start": 58.2,
+          "end": 58.6
+        },
+        {
+          "text": ".",
+          "start": 58.6,
+          "end": 59.0
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 59.0,
+      "end": 65.0,
+      "text": "I would climb Taihang, but snow covers the mountains.",
+      "singableText": "I would climb Taihang, but snow covers the mountains.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 59.0,
+          "end": 59.545
+        },
+        {
+          "text": "would",
+          "start": 59.545,
+          "end": 60.091
+        },
+        {
+          "text": "climb",
+          "start": 60.091,
+          "end": 60.636
+        },
+        {
+          "text": "Taihang",
+          "start": 60.636,
+          "end": 61.182
+        },
+        {
+          "text": ",",
+          "start": 61.182,
+          "end": 61.727
+        },
+        {
+          "text": "but",
+          "start": 61.727,
+          "end": 62.273
+        },
+        {
+          "text": "snow",
+          "start": 62.273,
+          "end": 62.818
+        },
+        {
+          "text": "covers",
+          "start": 62.818,
+          "end": 63.364
+        },
+        {
+          "text": "the",
+          "start": 63.364,
+          "end": 63.909
+        },
+        {
+          "text": "mountains",
+          "start": 63.909,
+          "end": 64.455
+        },
+        {
+          "text": ".",
+          "start": 64.455,
+          "end": 65.0
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 65.0,
+      "end": 70.2,
+      "text": "At ease I fish beside the blue stream.",
+      "singableText": "At ease I fish beside the blue stream.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "At",
+          "start": 65.0,
+          "end": 65.578
+        },
+        {
+          "text": "ease",
+          "start": 65.578,
+          "end": 66.156
+        },
+        {
+          "text": "I",
+          "start": 66.156,
+          "end": 66.733
+        },
+        {
+          "text": "fish",
+          "start": 66.733,
+          "end": 67.311
+        },
+        {
+          "text": "beside",
+          "start": 67.311,
+          "end": 67.889
+        },
+        {
+          "text": "the",
+          "start": 67.889,
+          "end": 68.467
+        },
+        {
+          "text": "blue",
+          "start": 68.467,
+          "end": 69.044
+        },
+        {
+          "text": "stream",
+          "start": 69.044,
+          "end": 69.622
+        },
+        {
+          "text": ".",
+          "start": 69.622,
+          "end": 70.2
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 70.2,
+      "end": 76.0,
+      "text": "Then again I dream of sailing by the sun.",
+      "singableText": "Then again I dream of sailing by the sun.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Then",
+          "start": 70.2,
+          "end": 70.78
+        },
+        {
+          "text": "again",
+          "start": 70.78,
+          "end": 71.36
+        },
+        {
+          "text": "I",
+          "start": 71.36,
+          "end": 71.94
+        },
+        {
+          "text": "dream",
+          "start": 71.94,
+          "end": 72.52
+        },
+        {
+          "text": "of",
+          "start": 72.52,
+          "end": 73.1
+        },
+        {
+          "text": "sailing",
+          "start": 73.1,
+          "end": 73.68
+        },
+        {
+          "text": "by",
+          "start": 73.68,
+          "end": 74.26
+        },
+        {
+          "text": "the",
+          "start": 74.26,
+          "end": 74.84
+        },
+        {
+          "text": "sun",
+          "start": 74.84,
+          "end": 75.42
+        },
+        {
+          "text": ".",
+          "start": 75.42,
+          "end": 76.0
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "start": 76.0,
+      "end": 79.4,
+      "text": "The road is hard.",
+      "singableText": "The road is hard.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 76.0,
+          "end": 76.68
+        },
+        {
+          "text": "road",
+          "start": 76.68,
+          "end": 77.36
+        },
+        {
+          "text": "is",
+          "start": 77.36,
+          "end": 78.04
+        },
+        {
+          "text": "hard",
+          "start": 78.04,
+          "end": 78.72
+        },
+        {
+          "text": ".",
+          "start": 78.72,
+          "end": 79.4
+        }
+      ]
+    },
+    {
+      "id": "l16",
+      "start": 79.4,
+      "end": 82.8,
+      "text": "The road is hard.",
+      "singableText": "The road is hard.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 79.4,
+          "end": 80.08
+        },
+        {
+          "text": "road",
+          "start": 80.08,
+          "end": 80.76
+        },
+        {
+          "text": "is",
+          "start": 80.76,
+          "end": 81.44
+        },
+        {
+          "text": "hard",
+          "start": 81.44,
+          "end": 82.12
+        },
+        {
+          "text": ".",
+          "start": 82.12,
+          "end": 82.8
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "start": 82.8,
+      "end": 86.8,
+      "text": "So many branching paths.",
+      "singableText": "So many branching paths.",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "So",
+          "start": 82.8,
+          "end": 83.6
+        },
+        {
+          "text": "many",
+          "start": 83.6,
+          "end": 84.4
+        },
+        {
+          "text": "branching",
+          "start": 84.4,
+          "end": 85.2
+        },
+        {
+          "text": "paths",
+          "start": 85.2,
+          "end": 86.0
+        },
+        {
+          "text": ".",
+          "start": 86.0,
+          "end": 86.8
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "start": 86.8,
+      "end": 92.0,
+      "text": "Where is the way now?",
+      "singableText": "Where is the way now?",
+      "role": "translation",
+      "tokens": [
+        {
+          "text": "Where",
+          "start": 86.8,
+          "end": 87.667
+        },
+        {
+          "text": "is",
+          "start": 87.667,
+          "end": 88.533
+        },
+        {
+          "text": "the",
+          "start": 88.533,
+          "end": 89.4
+        },
+        {
+          "text": "way",
+          "start": 89.4,
+          "end": 90.267
+        },
+        {
+          "text": "now",
+          "start": 90.267,
+          "end": 91.133
+        },
+        {
+          "text": "?",
+          "start": 91.133,
+          "end": 92.0
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "status": "draft",
+    "method": "source-close ASR/listening correction",
+    "note": "The active Mandarin line keeps source text when the generated sound is close; this item is not final polish."
+  }
+}
