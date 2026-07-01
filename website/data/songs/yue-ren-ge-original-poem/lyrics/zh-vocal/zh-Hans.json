@@ -1,0 +1,876 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "yue-ren-ge-original-poem",
+  "language": {
+    "code": "zh-Hans",
+    "label": "Mandarin Chinese",
+    "nativeLabel": "中文",
+    "script": "Hans",
+    "pronunciation": "pinyin"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "start": 15.98,
+      "end": 18.38,
+      "text": "今夕何夕兮",
+      "singableText": "今夕何夕兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "今",
+          "start": 15.98,
+          "end": 16.46,
+          "pinyin": "jin1"
+        },
+        {
+          "text": "夕",
+          "start": 16.46,
+          "end": 16.94,
+          "pinyin": "xi1"
+        },
+        {
+          "text": "何",
+          "start": 16.94,
+          "end": 17.42,
+          "pinyin": "he2"
+        },
+        {
+          "text": "夕",
+          "start": 17.42,
+          "end": 17.9,
+          "pinyin": "xi1"
+        },
+        {
+          "text": "兮",
+          "start": 17.9,
+          "end": 18.38,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 19.18,
+      "end": 21.64,
+      "text": "搴舟中流",
+      "singableText": "搴舟中流",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "搴",
+          "start": 19.18,
+          "end": 19.795,
+          "pinyin": "qian1"
+        },
+        {
+          "text": "舟",
+          "start": 19.795,
+          "end": 20.41,
+          "pinyin": "zhou1"
+        },
+        {
+          "text": "中",
+          "start": 20.41,
+          "end": 21.025,
+          "pinyin": "zhong1"
+        },
+        {
+          "text": "流",
+          "start": 21.025,
+          "end": 21.64,
+          "pinyin": "liu2"
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 21.64,
+      "end": 25.18,
+      "text": "今日何日兮",
+      "singableText": "今日何日兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "今",
+          "start": 21.64,
+          "end": 22.348,
+          "pinyin": "jin1"
+        },
+        {
+          "text": "日",
+          "start": 22.348,
+          "end": 23.056,
+          "pinyin": "ri4"
+        },
+        {
+          "text": "何",
+          "start": 23.056,
+          "end": 23.764,
+          "pinyin": "he2"
+        },
+        {
+          "text": "日",
+          "start": 23.764,
+          "end": 24.472,
+          "pinyin": "ri4"
+        },
+        {
+          "text": "兮",
+          "start": 24.472,
+          "end": 25.18,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 25.18,
+      "end": 28.42,
+      "text": "得与王子同舟",
+      "singableText": "得与王子同舟",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "得",
+          "start": 25.18,
+          "end": 25.72,
+          "pinyin": "de2"
+        },
+        {
+          "text": "与",
+          "start": 25.72,
+          "end": 26.26,
+          "pinyin": "yu3"
+        },
+        {
+          "text": "王",
+          "start": 26.26,
+          "end": 26.8,
+          "pinyin": "wang2"
+        },
+        {
+          "text": "子",
+          "start": 26.8,
+          "end": 27.34,
+          "pinyin": "zi5"
+        },
+        {
+          "text": "同",
+          "start": 27.34,
+          "end": 27.88,
+          "pinyin": "tong2"
+        },
+        {
+          "text": "舟",
+          "start": 27.88,
+          "end": 28.42,
+          "pinyin": "zhou1"
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 32.07,
+      "end": 33.51,
+      "text": "山有木兮",
+      "singableText": "山有木兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "山",
+          "start": 32.07,
+          "end": 32.43,
+          "pinyin": "shan1"
+        },
+        {
+          "text": "有",
+          "start": 32.43,
+          "end": 32.79,
+          "pinyin": "you3"
+        },
+        {
+          "text": "木",
+          "start": 32.79,
+          "end": 33.15,
+          "pinyin": "mu4"
+        },
+        {
+          "text": "兮",
+          "start": 33.15,
+          "end": 33.51,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 33.51,
+      "end": 35.39,
+      "text": "木有枝",
+      "singableText": "木有枝",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "木",
+          "start": 33.51,
+          "end": 34.137,
+          "pinyin": "mu4"
+        },
+        {
+          "text": "有",
+          "start": 34.137,
+          "end": 34.763,
+          "pinyin": "you3"
+        },
+        {
+          "text": "枝",
+          "start": 34.763,
+          "end": 35.39,
+          "pinyin": "zhi1"
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 35.39,
+      "end": 37.87,
+      "text": "心悦君兮",
+      "singableText": "心悦君兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 35.39,
+          "end": 36.01,
+          "pinyin": "xin1"
+        },
+        {
+          "text": "悦",
+          "start": 36.01,
+          "end": 36.63,
+          "pinyin": "yue4"
+        },
+        {
+          "text": "君",
+          "start": 36.63,
+          "end": 37.25,
+          "pinyin": "jun1"
+        },
+        {
+          "text": "兮",
+          "start": 37.25,
+          "end": 37.87,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 37.87,
+      "end": 40.53,
+      "text": "君不知",
+      "singableText": "君不知",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "君",
+          "start": 37.87,
+          "end": 38.757,
+          "pinyin": "jun1"
+        },
+        {
+          "text": "不",
+          "start": 38.757,
+          "end": 39.643,
+          "pinyin": "bu4"
+        },
+        {
+          "text": "知",
+          "start": 39.643,
+          "end": 40.53,
+          "pinyin": "zhi1"
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 40.53,
+      "end": 44.56,
+      "text": "心悦君兮",
+      "singableText": "心悦君兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 40.53,
+          "end": 41.538,
+          "pinyin": "xin1"
+        },
+        {
+          "text": "悦",
+          "start": 41.538,
+          "end": 42.545,
+          "pinyin": "yue4"
+        },
+        {
+          "text": "君",
+          "start": 42.545,
+          "end": 43.553,
+          "pinyin": "jun1"
+        },
+        {
+          "text": "兮",
+          "start": 43.553,
+          "end": 44.56,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 44.56,
+      "end": 51.08,
+      "text": "今夕何夕兮",
+      "singableText": "今夕何夕兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "今",
+          "start": 44.56,
+          "end": 45.864,
+          "pinyin": "jin1"
+        },
+        {
+          "text": "夕",
+          "start": 45.864,
+          "end": 47.168,
+          "pinyin": "xi1"
+        },
+        {
+          "text": "何",
+          "start": 47.168,
+          "end": 48.472,
+          "pinyin": "he2"
+        },
+        {
+          "text": "夕",
+          "start": 48.472,
+          "end": 49.776,
+          "pinyin": "xi1"
+        },
+        {
+          "text": "兮",
+          "start": 49.776,
+          "end": 51.08,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 51.08,
+      "end": 54.48,
+      "text": "搴舟中流",
+      "singableText": "搴舟中流",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "搴",
+          "start": 51.08,
+          "end": 51.93,
+          "pinyin": "qian1"
+        },
+        {
+          "text": "舟",
+          "start": 51.93,
+          "end": 52.78,
+          "pinyin": "zhou1"
+        },
+        {
+          "text": "中",
+          "start": 52.78,
+          "end": 53.63,
+          "pinyin": "zhong1"
+        },
+        {
+          "text": "流",
+          "start": 53.63,
+          "end": 54.48,
+          "pinyin": "liu2"
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 54.48,
+      "end": 57.96,
+      "text": "今日何日兮",
+      "singableText": "今日何日兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "今",
+          "start": 54.48,
+          "end": 55.176,
+          "pinyin": "jin1"
+        },
+        {
+          "text": "日",
+          "start": 55.176,
+          "end": 55.872,
+          "pinyin": "ri4"
+        },
+        {
+          "text": "何",
+          "start": 55.872,
+          "end": 56.568,
+          "pinyin": "he2"
+        },
+        {
+          "text": "日",
+          "start": 56.568,
+          "end": 57.264,
+          "pinyin": "ri4"
+        },
+        {
+          "text": "兮",
+          "start": 57.264,
+          "end": 57.96,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 57.96,
+      "end": 61.32,
+      "text": "得与王子同舟",
+      "singableText": "得与王子同舟",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "得",
+          "start": 57.96,
+          "end": 58.52,
+          "pinyin": "de2"
+        },
+        {
+          "text": "与",
+          "start": 58.52,
+          "end": 59.08,
+          "pinyin": "yu3"
+        },
+        {
+          "text": "王",
+          "start": 59.08,
+          "end": 59.64,
+          "pinyin": "wang2"
+        },
+        {
+          "text": "子",
+          "start": 59.64,
+          "end": 60.2,
+          "pinyin": "zi5"
+        },
+        {
+          "text": "同",
+          "start": 60.2,
+          "end": 60.76,
+          "pinyin": "tong2"
+        },
+        {
+          "text": "舟",
+          "start": 60.76,
+          "end": 61.32,
+          "pinyin": "zhou1"
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 61.32,
+      "end": 66.47,
+      "text": "蒙羞被好兮",
+      "singableText": "蒙羞被好兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "蒙",
+          "start": 61.32,
+          "end": 62.35,
+          "pinyin": "meng2"
+        },
+        {
+          "text": "羞",
+          "start": 62.35,
+          "end": 63.38,
+          "pinyin": "xiu1"
+        },
+        {
+          "text": "被",
+          "start": 63.38,
+          "end": 64.41,
+          "pinyin": "pi1"
+        },
+        {
+          "text": "好",
+          "start": 64.41,
+          "end": 65.44,
+          "pinyin": "hao3"
+        },
+        {
+          "text": "兮",
+          "start": 65.44,
+          "end": 66.47,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "start": 66.47,
+      "end": 68.45,
+      "text": "不訾诟耻",
+      "singableText": "不訾诟耻",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "不",
+          "start": 66.47,
+          "end": 66.965,
+          "pinyin": "bu4"
+        },
+        {
+          "text": "訾",
+          "start": 66.965,
+          "end": 67.46,
+          "pinyin": "zi3"
+        },
+        {
+          "text": "诟",
+          "start": 67.46,
+          "end": 67.955,
+          "pinyin": "gou4"
+        },
+        {
+          "text": "耻",
+          "start": 67.955,
+          "end": 68.45,
+          "pinyin": "chi3"
+        }
+      ]
+    },
+    {
+      "id": "l16",
+      "start": 69.76,
+      "end": 73.24,
+      "text": "心几烦而不绝兮",
+      "singableText": "心几烦而不绝兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 69.76,
+          "end": 70.257,
+          "pinyin": "xin1"
+        },
+        {
+          "text": "几",
+          "start": 70.257,
+          "end": 70.754,
+          "pinyin": "ji1"
+        },
+        {
+          "text": "烦",
+          "start": 70.754,
+          "end": 71.251,
+          "pinyin": "fan2"
+        },
+        {
+          "text": "而",
+          "start": 71.251,
+          "end": 71.749,
+          "pinyin": "er2"
+        },
+        {
+          "text": "不",
+          "start": 71.749,
+          "end": 72.246,
+          "pinyin": "bu4"
+        },
+        {
+          "text": "绝",
+          "start": 72.246,
+          "end": 72.743,
+          "pinyin": "jue2"
+        },
+        {
+          "text": "兮",
+          "start": 72.743,
+          "end": 73.24,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "start": 73.24,
+      "end": 75.18,
+      "text": "得知王子",
+      "singableText": "得知王子",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "得",
+          "start": 73.24,
+          "end": 73.725,
+          "pinyin": "de2"
+        },
+        {
+          "text": "知",
+          "start": 73.725,
+          "end": 74.21,
+          "pinyin": "zhi1"
+        },
+        {
+          "text": "王",
+          "start": 74.21,
+          "end": 74.695,
+          "pinyin": "wang2"
+        },
+        {
+          "text": "子",
+          "start": 74.695,
+          "end": 75.18,
+          "pinyin": "zi5"
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "start": 76.5,
+      "end": 78.44,
+      "text": "山有木兮",
+      "singableText": "山有木兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "山",
+          "start": 76.5,
+          "end": 76.985,
+          "pinyin": "shan1"
+        },
+        {
+          "text": "有",
+          "start": 76.985,
+          "end": 77.47,
+          "pinyin": "you3"
+        },
+        {
+          "text": "木",
+          "start": 77.47,
+          "end": 77.955,
+          "pinyin": "mu4"
+        },
+        {
+          "text": "兮",
+          "start": 77.955,
+          "end": 78.44,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l19",
+      "start": 78.44,
+      "end": 80.14,
+      "text": "木有枝",
+      "singableText": "木有枝",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "木",
+          "start": 78.44,
+          "end": 79.007,
+          "pinyin": "mu4"
+        },
+        {
+          "text": "有",
+          "start": 79.007,
+          "end": 79.573,
+          "pinyin": "you3"
+        },
+        {
+          "text": "枝",
+          "start": 79.573,
+          "end": 80.14,
+          "pinyin": "zhi1"
+        }
+      ]
+    },
+    {
+      "id": "l20",
+      "start": 80.14,
+      "end": 81.74,
+      "text": "心悦君兮",
+      "singableText": "心悦君兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 80.14,
+          "end": 80.54,
+          "pinyin": "xin1"
+        },
+        {
+          "text": "悦",
+          "start": 80.54,
+          "end": 80.94,
+          "pinyin": "yue4"
+        },
+        {
+          "text": "君",
+          "start": 80.94,
+          "end": 81.34,
+          "pinyin": "jun1"
+        },
+        {
+          "text": "兮",
+          "start": 81.34,
+          "end": 81.74,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l21",
+      "start": 81.74,
+      "end": 83.32,
+      "text": "君不知",
+      "singableText": "君不知",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "君",
+          "start": 81.74,
+          "end": 82.267,
+          "pinyin": "jun1"
+        },
+        {
+          "text": "不",
+          "start": 82.267,
+          "end": 82.793,
+          "pinyin": "bu4"
+        },
+        {
+          "text": "知",
+          "start": 82.793,
+          "end": 83.32,
+          "pinyin": "zhi1"
+        }
+      ]
+    },
+    {
+      "id": "l22",
+      "start": 83.32,
+      "end": 84.32,
+      "text": "山有木兮",
+      "singableText": "山有木兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "山",
+          "start": 83.32,
+          "end": 83.57,
+          "pinyin": "shan1"
+        },
+        {
+          "text": "有",
+          "start": 83.57,
+          "end": 83.82,
+          "pinyin": "you3"
+        },
+        {
+          "text": "木",
+          "start": 83.82,
+          "end": 84.07,
+          "pinyin": "mu4"
+        },
+        {
+          "text": "兮",
+          "start": 84.07,
+          "end": 84.32,
+          "pinyin": "xi1"
+        }
+      ]
+    },
+    {
+      "id": "l23",
+      "start": 84.32,
+      "end": 87.0,
+      "text": "木有枝",
+      "singableText": "木有枝",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "木",
+          "start": 84.32,
+          "end": 85.213,
+          "pinyin": "mu4"
+        },
+        {
+          "text": "有",
+          "start": 85.213,
+          "end": 86.107,
+          "pinyin": "you3"
+        },
+        {
+          "text": "枝",
+          "start": 86.107,
+          "end": 87.0,
+          "pinyin": "zhi1"
+        }
+      ]
+    },
+    {
+      "id": "l24",
+      "start": 87.44,
+      "end": 88.68,
+      "text": "心悦君兮",
+      "singableText": "心悦君兮",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 87.44,
+          "end": 87.75,
+          "pinyin": "xin1"
+        },
+        {
+          "text": "悦",
+          "start": 87.75,
+          "end": 88.06,
+          "pinyin": "yue4"
+        },
+        {
+          "text": "君",
+          "start": 88.06,
+          "end": 88.37,
+          "pinyin": "jun1"
+        },
+        {
+          "text": "兮",
+          "start": 88.37,
+          "end": 88.68,
+          "pinyin": "xi1"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "vocalSet": "zh-vocal",
+    "correction": "ACE original-poem hook render selected from XL SFT, XL Turbo single-pass, sectioned, repeated, and hook candidates. Active Mandarin timing is based on large-v3 ASR from the selected full mix. Public text preserves 越人歌's original wording where sound-close: 心爱君兮 is restored to 心悦君兮, and phonetic-control 牵舟/披好/不子 is restored to 搴舟/被好/不訾. The render still diverges from a perfect recitation: 君不知 is sometimes heard by ASR as 追不着, and the final 君不知 tail is not recovered."
+  }
+}

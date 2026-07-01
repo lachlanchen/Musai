@@ -1,0 +1,423 @@
+{
+  "schema": "fun.lazying.media.manifest.v1",
+  "version": 1,
+  "id": "yue-ren-ge-original-poem",
+  "kind": "song",
+  "title": "越人歌 · 原诗版",
+  "localizedTitles": {
+    "zh-Hans": "越人歌 · 原诗版",
+    "en": "Song of the Yue Boatman · Original Poem",
+    "ja": "越人歌・原詩版"
+  },
+  "artist": "Musia",
+  "description": "A Musia ACE-Step Mandarin original-poem setting of 越人歌, using repeated original poem lines and ASR-corrected trilingual website lyrics.",
+  "caption": "A moonlit boat, hidden longing, and the ancient confession 山有木兮，心悦君兮.",
+  "duration": 100.0,
+  "canonicalUrl": "https://fun.lazying.art/#yue-ren-ge-original-poem",
+  "share": {
+    "title": "越人歌 · 原诗版 - Fun Lazying Art",
+    "description": "Musia original-poem song version of 越人歌.",
+    "url": "https://fun.lazying.art/#yue-ren-ge-original-poem",
+    "image": "assets/covers/yue-ren-ge-original-poem-16x9.png",
+    "siteName": "Fun Lazying Art"
+  },
+  "assets": {
+    "cover": {
+      "id": "cover",
+      "label": "越人歌 原诗版 cover",
+      "role": "cover",
+      "src": "assets/covers/yue-ren-ge-original-poem-16x9.png",
+      "mime": "image/png",
+      "width": 1672,
+      "height": 941
+    },
+    "poster": {
+      "id": "poster",
+      "label": "16:9 Poster",
+      "role": "poster",
+      "src": "assets/covers/yue-ren-ge-original-poem-16x9.png",
+      "mime": "image/png",
+      "width": 1672,
+      "height": 941
+    },
+    "primaryAudio": {
+      "id": "yue-ren-ge-original-poem-zh",
+      "label": "中文",
+      "roleLabel": "Vocal",
+      "role": "vocal",
+      "languageCode": "zh-Hans",
+      "languageLabel": "中文",
+      "lyricSetId": "zh-vocal",
+      "src": "https://lazyingart.github.io/MusiaSongs/audio/yue-ren-ge-original-poem-zh-Hans-ace-20260701.mp3",
+      "mime": "audio/mpeg"
+    },
+    "alternateAudio": []
+  },
+  "playback": {
+    "defaultMode": "single"
+  },
+  "musical": {
+    "key": "A minor requested / detected Am-centered progression",
+    "bpm": 69.837,
+    "timeSignature": "4/4",
+    "chords": [
+      {
+        "start": 0.0,
+        "end": 50.921,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 50.921,
+        "end": 51.78,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 51.78,
+        "end": 52.64,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 52.64,
+        "end": 54.358,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 54.358,
+        "end": 55.194,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 55.194,
+        "end": 57.794,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 57.794,
+        "end": 59.49,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 59.49,
+        "end": 61.208,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 61.208,
+        "end": 63.785,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 63.785,
+        "end": 64.644,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 64.644,
+        "end": 65.48,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 65.48,
+        "end": 66.363,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 66.363,
+        "end": 68.058,
+        "name": "C",
+        "degree": ""
+      },
+      {
+        "start": 68.058,
+        "end": 71.494,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 71.494,
+        "end": 72.353,
+        "name": "Dm",
+        "degree": ""
+      },
+      {
+        "start": 72.353,
+        "end": 73.213,
+        "name": "Bm",
+        "degree": ""
+      },
+      {
+        "start": 73.213,
+        "end": 74.931,
+        "name": "E",
+        "degree": ""
+      },
+      {
+        "start": 74.931,
+        "end": 80.062,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 80.062,
+        "end": 81.781,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 81.781,
+        "end": 83.499,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 83.499,
+        "end": 86.936,
+        "name": "Am",
+        "degree": ""
+      },
+      {
+        "start": 86.936,
+        "end": 88.631,
+        "name": "F",
+        "degree": ""
+      },
+      {
+        "start": 88.631,
+        "end": 89.49,
+        "name": "G",
+        "degree": ""
+      },
+      {
+        "start": 89.49,
+        "end": 90.349,
+        "name": "Em",
+        "degree": ""
+      },
+      {
+        "start": 90.349,
+        "end": 100.0,
+        "name": "A",
+        "degree": ""
+      }
+    ]
+  },
+  "lyricSets": [
+    {
+      "id": "zh-vocal",
+      "label": "中文 vocal",
+      "languageCode": "zh-Hans",
+      "tracks": [
+        {
+          "code": "zh-Hans",
+          "label": "Mandarin Chinese",
+          "nativeLabel": "中文",
+          "script": "Hans",
+          "features": [
+            "pinyin",
+            "active-vocal"
+          ],
+          "path": "lyrics/zh-vocal/zh-Hans.json"
+        },
+        {
+          "code": "en",
+          "label": "English",
+          "nativeLabel": "English",
+          "script": "Latn",
+          "features": [
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/en.json"
+        },
+        {
+          "code": "ja",
+          "label": "Japanese",
+          "nativeLabel": "日本語",
+          "script": "Jpan",
+          "features": [
+            "furigana",
+            "translation"
+          ],
+          "path": "lyrics/zh-vocal/ja.json"
+        }
+      ]
+    }
+  ],
+  "textTracks": [],
+  "timeline": {
+    "unit": "seconds",
+    "lines": [
+      {
+        "id": "l01",
+        "start": 15.98,
+        "end": 18.38,
+        "text": "今夕何夕兮"
+      },
+      {
+        "id": "l02",
+        "start": 19.18,
+        "end": 21.64,
+        "text": "搴舟中流"
+      },
+      {
+        "id": "l03",
+        "start": 21.64,
+        "end": 25.18,
+        "text": "今日何日兮"
+      },
+      {
+        "id": "l04",
+        "start": 25.18,
+        "end": 28.42,
+        "text": "得与王子同舟"
+      },
+      {
+        "id": "l05",
+        "start": 32.07,
+        "end": 33.51,
+        "text": "山有木兮"
+      },
+      {
+        "id": "l06",
+        "start": 33.51,
+        "end": 35.39,
+        "text": "木有枝"
+      },
+      {
+        "id": "l07",
+        "start": 35.39,
+        "end": 37.87,
+        "text": "心悦君兮"
+      },
+      {
+        "id": "l08",
+        "start": 37.87,
+        "end": 40.53,
+        "text": "君不知"
+      },
+      {
+        "id": "l09",
+        "start": 40.53,
+        "end": 44.56,
+        "text": "心悦君兮"
+      },
+      {
+        "id": "l10",
+        "start": 44.56,
+        "end": 51.08,
+        "text": "今夕何夕兮"
+      },
+      {
+        "id": "l11",
+        "start": 51.08,
+        "end": 54.48,
+        "text": "搴舟中流"
+      },
+      {
+        "id": "l12",
+        "start": 54.48,
+        "end": 57.96,
+        "text": "今日何日兮"
+      },
+      {
+        "id": "l13",
+        "start": 57.96,
+        "end": 61.32,
+        "text": "得与王子同舟"
+      },
+      {
+        "id": "l14",
+        "start": 61.32,
+        "end": 66.47,
+        "text": "蒙羞被好兮"
+      },
+      {
+        "id": "l15",
+        "start": 66.47,
+        "end": 68.45,
+        "text": "不訾诟耻"
+      },
+      {
+        "id": "l16",
+        "start": 69.76,
+        "end": 73.24,
+        "text": "心几烦而不绝兮"
+      },
+      {
+        "id": "l17",
+        "start": 73.24,
+        "end": 75.18,
+        "text": "得知王子"
+      },
+      {
+        "id": "l18",
+        "start": 76.5,
+        "end": 78.44,
+        "text": "山有木兮"
+      },
+      {
+        "id": "l19",
+        "start": 78.44,
+        "end": 80.14,
+        "text": "木有枝"
+      },
+      {
+        "id": "l20",
+        "start": 80.14,
+        "end": 81.74,
+        "text": "心悦君兮"
+      },
+      {
+        "id": "l21",
+        "start": 81.74,
+        "end": 83.32,
+        "text": "君不知"
+      },
+      {
+        "id": "l22",
+        "start": 83.32,
+        "end": 84.32,
+        "text": "山有木兮"
+      },
+      {
+        "id": "l23",
+        "start": 84.32,
+        "end": 87.0,
+        "text": "木有枝"
+      },
+      {
+        "id": "l24",
+        "start": 87.44,
+        "end": 88.68,
+        "text": "心悦君兮"
+      }
+    ]
+  },
+  "artifacts": [],
+  "provenance": {
+    "createdBy": "Musia",
+    "generationProject": "data/creative_projects/yue-ren-ge-original-poem-20260701",
+    "audioSource": "ACE-Step 1.5 XL Turbo hook seed 736361, selected after XL SFT and XL Turbo comparisons.",
+    "analysisRun": "data/runs/yue-ren-ge-original-poem-20260701-hook-analysis",
+    "quality": {
+      "xlSftInstalled": true,
+      "selectedAudioLargeV3Overlap": 0.46296296296296297,
+      "selectionReason": "Best practical balance of poem recovery and final-couplet hook clarity.",
+      "gate": "selected-with-documented-classical-poem-imperfections"
+    },
+    "lyricCorrection": "Corrected from selected full-mix large-v3 ASR and the poem-only hook prompt. The public lyric keeps original 越人歌 wording where sound-close, while the production note documents that the render is not a perfect classical recitation.",
+    "coverSource": "/home/lachlan/.codex/generated_images/019f0842-25ba-7bd2-9d4b-0b1c60d8a951/ig_0b88aca6cc8e98f5016a4475905be88191ab258691b27b0dea.png",
+    "publicAudio": "yue-ren-ge-original-poem-zh-Hans-ace-20260701.mp3"
+  }
+}

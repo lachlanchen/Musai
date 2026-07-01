@@ -1,0 +1,1334 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "yue-ren-ge-original-poem",
+  "language": {
+    "code": "ja",
+    "label": "Japanese",
+    "nativeLabel": "日本語",
+    "script": "Jpan",
+    "pronunciation": "furigana"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "start": 15.98,
+      "end": 18.38,
+      "text": "今宵は何という夜か",
+      "singableText": "今宵は何という夜か",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "今",
+          "start": 15.98,
+          "end": 16.247,
+          "reading": "いま"
+        },
+        {
+          "text": "宵",
+          "start": 16.247,
+          "end": 16.513,
+          "reading": "しょう"
+        },
+        {
+          "text": "は",
+          "start": 16.513,
+          "end": 16.78
+        },
+        {
+          "text": "何",
+          "start": 16.78,
+          "end": 17.047,
+          "reading": "なに"
+        },
+        {
+          "text": "と",
+          "start": 17.047,
+          "end": 17.313
+        },
+        {
+          "text": "い",
+          "start": 17.313,
+          "end": 17.58
+        },
+        {
+          "text": "う",
+          "start": 17.58,
+          "end": 17.847
+        },
+        {
+          "text": "夜",
+          "start": 17.847,
+          "end": 18.113,
+          "reading": "よる"
+        },
+        {
+          "text": "か",
+          "start": 18.113,
+          "end": 18.38
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 19.18,
+      "end": 21.64,
+      "text": "舟を流れの中へ進める",
+      "singableText": "舟を流れの中へ進める",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "舟",
+          "start": 19.18,
+          "end": 19.426,
+          "reading": "ふね"
+        },
+        {
+          "text": "を",
+          "start": 19.426,
+          "end": 19.672
+        },
+        {
+          "text": "流",
+          "start": 19.672,
+          "end": 19.918,
+          "reading": "りゅう"
+        },
+        {
+          "text": "れ",
+          "start": 19.918,
+          "end": 20.164
+        },
+        {
+          "text": "の",
+          "start": 20.164,
+          "end": 20.41
+        },
+        {
+          "text": "中",
+          "start": 20.41,
+          "end": 20.656,
+          "reading": "なか"
+        },
+        {
+          "text": "へ",
+          "start": 20.656,
+          "end": 20.902
+        },
+        {
+          "text": "進",
+          "start": 20.902,
+          "end": 21.148,
+          "reading": "すすむ"
+        },
+        {
+          "text": "め",
+          "start": 21.148,
+          "end": 21.394
+        },
+        {
+          "text": "る",
+          "start": 21.394,
+          "end": 21.64
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 21.64,
+      "end": 25.18,
+      "text": "今日は何という日か",
+      "singableText": "今日は何という日か",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "今",
+          "start": 21.64,
+          "end": 22.033,
+          "reading": "いま"
+        },
+        {
+          "text": "日",
+          "start": 22.033,
+          "end": 22.427,
+          "reading": "にち"
+        },
+        {
+          "text": "は",
+          "start": 22.427,
+          "end": 22.82
+        },
+        {
+          "text": "何",
+          "start": 22.82,
+          "end": 23.213,
+          "reading": "なに"
+        },
+        {
+          "text": "と",
+          "start": 23.213,
+          "end": 23.607
+        },
+        {
+          "text": "い",
+          "start": 23.607,
+          "end": 24.0
+        },
+        {
+          "text": "う",
+          "start": 24.0,
+          "end": 24.393
+        },
+        {
+          "text": "日",
+          "start": 24.393,
+          "end": 24.787,
+          "reading": "にち"
+        },
+        {
+          "text": "か",
+          "start": 24.787,
+          "end": 25.18
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 25.18,
+      "end": 28.42,
+      "text": "王子と同じ舟にいる",
+      "singableText": "王子と同じ舟にいる",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "王",
+          "start": 25.18,
+          "end": 25.54,
+          "reading": "おう"
+        },
+        {
+          "text": "子",
+          "start": 25.54,
+          "end": 25.9,
+          "reading": "こ"
+        },
+        {
+          "text": "と",
+          "start": 25.9,
+          "end": 26.26
+        },
+        {
+          "text": "同",
+          "start": 26.26,
+          "end": 26.62,
+          "reading": "どう"
+        },
+        {
+          "text": "じ",
+          "start": 26.62,
+          "end": 26.98
+        },
+        {
+          "text": "舟",
+          "start": 26.98,
+          "end": 27.34,
+          "reading": "ふね"
+        },
+        {
+          "text": "に",
+          "start": 27.34,
+          "end": 27.7
+        },
+        {
+          "text": "い",
+          "start": 27.7,
+          "end": 28.06
+        },
+        {
+          "text": "る",
+          "start": 28.06,
+          "end": 28.42
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 32.07,
+      "end": 33.51,
+      "text": "山には木があり",
+      "singableText": "山には木があり",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "山",
+          "start": 32.07,
+          "end": 32.276,
+          "reading": "やま"
+        },
+        {
+          "text": "に",
+          "start": 32.276,
+          "end": 32.481
+        },
+        {
+          "text": "は",
+          "start": 32.481,
+          "end": 32.687
+        },
+        {
+          "text": "木",
+          "start": 32.687,
+          "end": 32.893,
+          "reading": "き"
+        },
+        {
+          "text": "が",
+          "start": 32.893,
+          "end": 33.099
+        },
+        {
+          "text": "あ",
+          "start": 33.099,
+          "end": 33.304
+        },
+        {
+          "text": "り",
+          "start": 33.304,
+          "end": 33.51
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 33.51,
+      "end": 35.39,
+      "text": "木には枝がある",
+      "singableText": "木には枝がある",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "木",
+          "start": 33.51,
+          "end": 33.779,
+          "reading": "き"
+        },
+        {
+          "text": "に",
+          "start": 33.779,
+          "end": 34.047
+        },
+        {
+          "text": "は",
+          "start": 34.047,
+          "end": 34.316
+        },
+        {
+          "text": "枝",
+          "start": 34.316,
+          "end": 34.584,
+          "reading": "えだ"
+        },
+        {
+          "text": "が",
+          "start": 34.584,
+          "end": 34.853
+        },
+        {
+          "text": "あ",
+          "start": 34.853,
+          "end": 35.121
+        },
+        {
+          "text": "る",
+          "start": 35.121,
+          "end": 35.39
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 35.39,
+      "end": 37.87,
+      "text": "心は君を悦ぶのに",
+      "singableText": "心は君を悦ぶのに",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 35.39,
+          "end": 35.7,
+          "reading": "こころ"
+        },
+        {
+          "text": "は",
+          "start": 35.7,
+          "end": 36.01
+        },
+        {
+          "text": "君",
+          "start": 36.01,
+          "end": 36.32,
+          "reading": "くん"
+        },
+        {
+          "text": "を",
+          "start": 36.32,
+          "end": 36.63
+        },
+        {
+          "text": "悦",
+          "start": 36.63,
+          "end": 36.94,
+          "reading": "えつ"
+        },
+        {
+          "text": "ぶ",
+          "start": 36.94,
+          "end": 37.25
+        },
+        {
+          "text": "の",
+          "start": 37.25,
+          "end": 37.56
+        },
+        {
+          "text": "に",
+          "start": 37.56,
+          "end": 37.87
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 37.87,
+      "end": 40.53,
+      "text": "君は知らない",
+      "singableText": "君は知らない",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "君",
+          "start": 37.87,
+          "end": 38.313,
+          "reading": "くん"
+        },
+        {
+          "text": "は",
+          "start": 38.313,
+          "end": 38.757
+        },
+        {
+          "text": "知",
+          "start": 38.757,
+          "end": 39.2,
+          "reading": "ち"
+        },
+        {
+          "text": "ら",
+          "start": 39.2,
+          "end": 39.643
+        },
+        {
+          "text": "な",
+          "start": 39.643,
+          "end": 40.087
+        },
+        {
+          "text": "い",
+          "start": 40.087,
+          "end": 40.53
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 40.53,
+      "end": 44.56,
+      "text": "心は君を悦ぶのに",
+      "singableText": "心は君を悦ぶのに",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 40.53,
+          "end": 41.034,
+          "reading": "こころ"
+        },
+        {
+          "text": "は",
+          "start": 41.034,
+          "end": 41.538
+        },
+        {
+          "text": "君",
+          "start": 41.538,
+          "end": 42.041,
+          "reading": "くん"
+        },
+        {
+          "text": "を",
+          "start": 42.041,
+          "end": 42.545
+        },
+        {
+          "text": "悦",
+          "start": 42.545,
+          "end": 43.049,
+          "reading": "えつ"
+        },
+        {
+          "text": "ぶ",
+          "start": 43.049,
+          "end": 43.553
+        },
+        {
+          "text": "の",
+          "start": 43.553,
+          "end": 44.056
+        },
+        {
+          "text": "に",
+          "start": 44.056,
+          "end": 44.56
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 44.56,
+      "end": 51.08,
+      "text": "今宵は何という夜か",
+      "singableText": "今宵は何という夜か",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "今",
+          "start": 44.56,
+          "end": 45.284,
+          "reading": "いま"
+        },
+        {
+          "text": "宵",
+          "start": 45.284,
+          "end": 46.009,
+          "reading": "しょう"
+        },
+        {
+          "text": "は",
+          "start": 46.009,
+          "end": 46.733
+        },
+        {
+          "text": "何",
+          "start": 46.733,
+          "end": 47.458,
+          "reading": "なに"
+        },
+        {
+          "text": "と",
+          "start": 47.458,
+          "end": 48.182
+        },
+        {
+          "text": "い",
+          "start": 48.182,
+          "end": 48.907
+        },
+        {
+          "text": "う",
+          "start": 48.907,
+          "end": 49.631
+        },
+        {
+          "text": "夜",
+          "start": 49.631,
+          "end": 50.356,
+          "reading": "よる"
+        },
+        {
+          "text": "か",
+          "start": 50.356,
+          "end": 51.08
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 51.08,
+      "end": 54.48,
+      "text": "舟を流れの中へ進める",
+      "singableText": "舟を流れの中へ進める",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "舟",
+          "start": 51.08,
+          "end": 51.42,
+          "reading": "ふね"
+        },
+        {
+          "text": "を",
+          "start": 51.42,
+          "end": 51.76
+        },
+        {
+          "text": "流",
+          "start": 51.76,
+          "end": 52.1,
+          "reading": "りゅう"
+        },
+        {
+          "text": "れ",
+          "start": 52.1,
+          "end": 52.44
+        },
+        {
+          "text": "の",
+          "start": 52.44,
+          "end": 52.78
+        },
+        {
+          "text": "中",
+          "start": 52.78,
+          "end": 53.12,
+          "reading": "なか"
+        },
+        {
+          "text": "へ",
+          "start": 53.12,
+          "end": 53.46
+        },
+        {
+          "text": "進",
+          "start": 53.46,
+          "end": 53.8,
+          "reading": "すすむ"
+        },
+        {
+          "text": "め",
+          "start": 53.8,
+          "end": 54.14
+        },
+        {
+          "text": "る",
+          "start": 54.14,
+          "end": 54.48
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 54.48,
+      "end": 57.96,
+      "text": "今日は何という日か",
+      "singableText": "今日は何という日か",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "今",
+          "start": 54.48,
+          "end": 54.867,
+          "reading": "いま"
+        },
+        {
+          "text": "日",
+          "start": 54.867,
+          "end": 55.253,
+          "reading": "にち"
+        },
+        {
+          "text": "は",
+          "start": 55.253,
+          "end": 55.64
+        },
+        {
+          "text": "何",
+          "start": 55.64,
+          "end": 56.027,
+          "reading": "なに"
+        },
+        {
+          "text": "と",
+          "start": 56.027,
+          "end": 56.413
+        },
+        {
+          "text": "い",
+          "start": 56.413,
+          "end": 56.8
+        },
+        {
+          "text": "う",
+          "start": 56.8,
+          "end": 57.187
+        },
+        {
+          "text": "日",
+          "start": 57.187,
+          "end": 57.573,
+          "reading": "にち"
+        },
+        {
+          "text": "か",
+          "start": 57.573,
+          "end": 57.96
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 57.96,
+      "end": 61.32,
+      "text": "王子と同じ舟にいる",
+      "singableText": "王子と同じ舟にいる",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "王",
+          "start": 57.96,
+          "end": 58.333,
+          "reading": "おう"
+        },
+        {
+          "text": "子",
+          "start": 58.333,
+          "end": 58.707,
+          "reading": "こ"
+        },
+        {
+          "text": "と",
+          "start": 58.707,
+          "end": 59.08
+        },
+        {
+          "text": "同",
+          "start": 59.08,
+          "end": 59.453,
+          "reading": "どう"
+        },
+        {
+          "text": "じ",
+          "start": 59.453,
+          "end": 59.827
+        },
+        {
+          "text": "舟",
+          "start": 59.827,
+          "end": 60.2,
+          "reading": "ふね"
+        },
+        {
+          "text": "に",
+          "start": 60.2,
+          "end": 60.573
+        },
+        {
+          "text": "い",
+          "start": 60.573,
+          "end": 60.947
+        },
+        {
+          "text": "る",
+          "start": 60.947,
+          "end": 61.32
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 61.32,
+      "end": 66.47,
+      "text": "恥じながらも寵を受け",
+      "singableText": "恥じながらも寵を受け",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "恥",
+          "start": 61.32,
+          "end": 61.835,
+          "reading": "はじ"
+        },
+        {
+          "text": "じ",
+          "start": 61.835,
+          "end": 62.35
+        },
+        {
+          "text": "な",
+          "start": 62.35,
+          "end": 62.865
+        },
+        {
+          "text": "が",
+          "start": 62.865,
+          "end": 63.38
+        },
+        {
+          "text": "ら",
+          "start": 63.38,
+          "end": 63.895
+        },
+        {
+          "text": "も",
+          "start": 63.895,
+          "end": 64.41
+        },
+        {
+          "text": "寵",
+          "start": 64.41,
+          "end": 64.925,
+          "reading": "ちょう"
+        },
+        {
+          "text": "を",
+          "start": 64.925,
+          "end": 65.44
+        },
+        {
+          "text": "受",
+          "start": 65.44,
+          "end": 65.955,
+          "reading": "じゅ"
+        },
+        {
+          "text": "け",
+          "start": 65.955,
+          "end": 66.47
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "start": 66.47,
+      "end": 68.45,
+      "text": "そしりも恥も数えない",
+      "singableText": "そしりも恥も数えない",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "そ",
+          "start": 66.47,
+          "end": 66.668
+        },
+        {
+          "text": "し",
+          "start": 66.668,
+          "end": 66.866
+        },
+        {
+          "text": "り",
+          "start": 66.866,
+          "end": 67.064
+        },
+        {
+          "text": "も",
+          "start": 67.064,
+          "end": 67.262
+        },
+        {
+          "text": "恥",
+          "start": 67.262,
+          "end": 67.46,
+          "reading": "はじ"
+        },
+        {
+          "text": "も",
+          "start": 67.46,
+          "end": 67.658
+        },
+        {
+          "text": "数",
+          "start": 67.658,
+          "end": 67.856,
+          "reading": "かず"
+        },
+        {
+          "text": "え",
+          "start": 67.856,
+          "end": 68.054
+        },
+        {
+          "text": "な",
+          "start": 68.054,
+          "end": 68.252
+        },
+        {
+          "text": "い",
+          "start": 68.252,
+          "end": 68.45
+        }
+      ]
+    },
+    {
+      "id": "l16",
+      "start": 69.76,
+      "end": 73.24,
+      "text": "心は乱れて絶えず",
+      "singableText": "心は乱れて絶えず",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 69.76,
+          "end": 70.195,
+          "reading": "こころ"
+        },
+        {
+          "text": "は",
+          "start": 70.195,
+          "end": 70.63
+        },
+        {
+          "text": "乱",
+          "start": 70.63,
+          "end": 71.065,
+          "reading": "らん"
+        },
+        {
+          "text": "れ",
+          "start": 71.065,
+          "end": 71.5
+        },
+        {
+          "text": "て",
+          "start": 71.5,
+          "end": 71.935
+        },
+        {
+          "text": "絶",
+          "start": 71.935,
+          "end": 72.37,
+          "reading": "ぜつ"
+        },
+        {
+          "text": "え",
+          "start": 72.37,
+          "end": 72.805
+        },
+        {
+          "text": "ず",
+          "start": 72.805,
+          "end": 73.24
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "start": 73.24,
+      "end": 75.18,
+      "text": "王子を知ることができたから",
+      "singableText": "王子を知ることができたから",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "王",
+          "start": 73.24,
+          "end": 73.389,
+          "reading": "おう"
+        },
+        {
+          "text": "子",
+          "start": 73.389,
+          "end": 73.538,
+          "reading": "こ"
+        },
+        {
+          "text": "を",
+          "start": 73.538,
+          "end": 73.688
+        },
+        {
+          "text": "知",
+          "start": 73.688,
+          "end": 73.837,
+          "reading": "ち"
+        },
+        {
+          "text": "る",
+          "start": 73.837,
+          "end": 73.986
+        },
+        {
+          "text": "こ",
+          "start": 73.986,
+          "end": 74.135
+        },
+        {
+          "text": "と",
+          "start": 74.135,
+          "end": 74.285
+        },
+        {
+          "text": "が",
+          "start": 74.285,
+          "end": 74.434
+        },
+        {
+          "text": "で",
+          "start": 74.434,
+          "end": 74.583
+        },
+        {
+          "text": "き",
+          "start": 74.583,
+          "end": 74.732
+        },
+        {
+          "text": "た",
+          "start": 74.732,
+          "end": 74.882
+        },
+        {
+          "text": "か",
+          "start": 74.882,
+          "end": 75.031
+        },
+        {
+          "text": "ら",
+          "start": 75.031,
+          "end": 75.18
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "start": 76.5,
+      "end": 78.44,
+      "text": "山には木があり",
+      "singableText": "山には木があり",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "山",
+          "start": 76.5,
+          "end": 76.777,
+          "reading": "やま"
+        },
+        {
+          "text": "に",
+          "start": 76.777,
+          "end": 77.054
+        },
+        {
+          "text": "は",
+          "start": 77.054,
+          "end": 77.331
+        },
+        {
+          "text": "木",
+          "start": 77.331,
+          "end": 77.609,
+          "reading": "き"
+        },
+        {
+          "text": "が",
+          "start": 77.609,
+          "end": 77.886
+        },
+        {
+          "text": "あ",
+          "start": 77.886,
+          "end": 78.163
+        },
+        {
+          "text": "り",
+          "start": 78.163,
+          "end": 78.44
+        }
+      ]
+    },
+    {
+      "id": "l19",
+      "start": 78.44,
+      "end": 80.14,
+      "text": "木には枝がある",
+      "singableText": "木には枝がある",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "木",
+          "start": 78.44,
+          "end": 78.683,
+          "reading": "き"
+        },
+        {
+          "text": "に",
+          "start": 78.683,
+          "end": 78.926
+        },
+        {
+          "text": "は",
+          "start": 78.926,
+          "end": 79.169
+        },
+        {
+          "text": "枝",
+          "start": 79.169,
+          "end": 79.411,
+          "reading": "えだ"
+        },
+        {
+          "text": "が",
+          "start": 79.411,
+          "end": 79.654
+        },
+        {
+          "text": "あ",
+          "start": 79.654,
+          "end": 79.897
+        },
+        {
+          "text": "る",
+          "start": 79.897,
+          "end": 80.14
+        }
+      ]
+    },
+    {
+      "id": "l20",
+      "start": 80.14,
+      "end": 81.74,
+      "text": "心は君を悦ぶのに",
+      "singableText": "心は君を悦ぶのに",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 80.14,
+          "end": 80.34,
+          "reading": "こころ"
+        },
+        {
+          "text": "は",
+          "start": 80.34,
+          "end": 80.54
+        },
+        {
+          "text": "君",
+          "start": 80.54,
+          "end": 80.74,
+          "reading": "くん"
+        },
+        {
+          "text": "を",
+          "start": 80.74,
+          "end": 80.94
+        },
+        {
+          "text": "悦",
+          "start": 80.94,
+          "end": 81.14,
+          "reading": "えつ"
+        },
+        {
+          "text": "ぶ",
+          "start": 81.14,
+          "end": 81.34
+        },
+        {
+          "text": "の",
+          "start": 81.34,
+          "end": 81.54
+        },
+        {
+          "text": "に",
+          "start": 81.54,
+          "end": 81.74
+        }
+      ]
+    },
+    {
+      "id": "l21",
+      "start": 81.74,
+      "end": 83.32,
+      "text": "君は知らない",
+      "singableText": "君は知らない",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "君",
+          "start": 81.74,
+          "end": 82.003,
+          "reading": "くん"
+        },
+        {
+          "text": "は",
+          "start": 82.003,
+          "end": 82.267
+        },
+        {
+          "text": "知",
+          "start": 82.267,
+          "end": 82.53,
+          "reading": "ち"
+        },
+        {
+          "text": "ら",
+          "start": 82.53,
+          "end": 82.793
+        },
+        {
+          "text": "な",
+          "start": 82.793,
+          "end": 83.057
+        },
+        {
+          "text": "い",
+          "start": 83.057,
+          "end": 83.32
+        }
+      ]
+    },
+    {
+      "id": "l22",
+      "start": 83.32,
+      "end": 84.32,
+      "text": "山には木があり",
+      "singableText": "山には木があり",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "山",
+          "start": 83.32,
+          "end": 83.463,
+          "reading": "やま"
+        },
+        {
+          "text": "に",
+          "start": 83.463,
+          "end": 83.606
+        },
+        {
+          "text": "は",
+          "start": 83.606,
+          "end": 83.749
+        },
+        {
+          "text": "木",
+          "start": 83.749,
+          "end": 83.891,
+          "reading": "き"
+        },
+        {
+          "text": "が",
+          "start": 83.891,
+          "end": 84.034
+        },
+        {
+          "text": "あ",
+          "start": 84.034,
+          "end": 84.177
+        },
+        {
+          "text": "り",
+          "start": 84.177,
+          "end": 84.32
+        }
+      ]
+    },
+    {
+      "id": "l23",
+      "start": 84.32,
+      "end": 87.0,
+      "text": "木には枝がある",
+      "singableText": "木には枝がある",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "木",
+          "start": 84.32,
+          "end": 84.703,
+          "reading": "き"
+        },
+        {
+          "text": "に",
+          "start": 84.703,
+          "end": 85.086
+        },
+        {
+          "text": "は",
+          "start": 85.086,
+          "end": 85.469
+        },
+        {
+          "text": "枝",
+          "start": 85.469,
+          "end": 85.851,
+          "reading": "えだ"
+        },
+        {
+          "text": "が",
+          "start": 85.851,
+          "end": 86.234
+        },
+        {
+          "text": "あ",
+          "start": 86.234,
+          "end": 86.617
+        },
+        {
+          "text": "る",
+          "start": 86.617,
+          "end": 87.0
+        }
+      ]
+    },
+    {
+      "id": "l24",
+      "start": 87.44,
+      "end": 88.68,
+      "text": "心は君を悦ぶのに",
+      "singableText": "心は君を悦ぶのに",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "心",
+          "start": 87.44,
+          "end": 87.595,
+          "reading": "こころ"
+        },
+        {
+          "text": "は",
+          "start": 87.595,
+          "end": 87.75
+        },
+        {
+          "text": "君",
+          "start": 87.75,
+          "end": 87.905,
+          "reading": "くん"
+        },
+        {
+          "text": "を",
+          "start": 87.905,
+          "end": 88.06
+        },
+        {
+          "text": "悦",
+          "start": 88.06,
+          "end": 88.215,
+          "reading": "えつ"
+        },
+        {
+          "text": "ぶ",
+          "start": 88.215,
+          "end": 88.37
+        },
+        {
+          "text": "の",
+          "start": 88.37,
+          "end": 88.525
+        },
+        {
+          "text": "に",
+          "start": 88.525,
+          "end": 88.68
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "vocalSet": "zh-vocal",
+    "correction": "ACE original-poem hook render selected from XL SFT, XL Turbo single-pass, sectioned, repeated, and hook candidates. Active Mandarin timing is based on large-v3 ASR from the selected full mix. Public text preserves 越人歌's original wording where sound-close: 心爱君兮 is restored to 心悦君兮, and phonetic-control 牵舟/披好/不子 is restored to 搴舟/被好/不訾. The render still diverges from a perfect recitation: 君不知 is sometimes heard by ASR as 追不着, and the final 君不知 tail is not recovered."
+  }
+}

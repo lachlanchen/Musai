@@ -33,6 +33,29 @@
       ]
     },
     {
+      "id": "yue-ren-ge-original-poem",
+      "kind": "song",
+      "title": "越人歌 · 原诗版",
+      "artist": "Musia",
+      "manifest": "data/songs/yue-ren-ge-original-poem/manifest.json",
+      "cover": "assets/covers/yue-ren-ge-original-poem-16x9.png",
+      "tags": [
+        "song",
+        "pre-qin",
+        "classical-poetry",
+        "ace",
+        "original-poem",
+        "mandarin",
+        "river",
+        "love-song"
+      ],
+      "languages": [
+        "zh-Hans",
+        "en",
+        "ja"
+      ]
+    },
+    {
       "id": "xia-ke-xing-original-poem",
       "kind": "song",
       "title": "侠客行 · 原诗版",

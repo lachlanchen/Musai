@@ -178,6 +178,19 @@ For adapted normal songs:
 
 For exact poem experiments:
 
+- very short poems may be too sparse for ACE as a one-pass lyric; if a
+  single-pass render produces no ASR recovery or credit/subtitle hallucinations,
+  repeat only original poem lines into verse/chorus form instead of adding
+  modern text;
+- avoid putting forbidden-word lists in short-poem captions because the model
+  can sing those warning words; use positive style/vocal instructions and keep
+  pronunciation hints compact;
+- the largest model is not always the selected model. Install and test the best
+  available route, but choose by actual lyric recovery, hook clarity, and
+  listening evidence. For `越人歌`, XL SFT was installed and tested, but XL
+  Turbo repeated-hook seed `736361` was selected because it recovered more of
+  the poem and the `心悦君兮` hook.
+
 - generate at least three candidates with different density/layout settings;
 - include one simpler arrangement with the vocal very exposed;
 - reject beautiful-but-unintelligible candidates;

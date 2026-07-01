@@ -1,0 +1,997 @@
+{
+  "schema": "fun.lazying.media.text-track.v1",
+  "version": 1,
+  "mediaId": "yue-ren-ge-original-poem",
+  "language": {
+    "code": "en",
+    "label": "English",
+    "nativeLabel": "English",
+    "script": "Latn"
+  },
+  "lines": [
+    {
+      "id": "l01",
+      "start": 15.98,
+      "end": 18.38,
+      "text": "What night is this?",
+      "singableText": "What night is this?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "What",
+          "start": 15.98,
+          "end": 16.46
+        },
+        {
+          "text": "night",
+          "start": 16.46,
+          "end": 16.94
+        },
+        {
+          "text": "is",
+          "start": 16.94,
+          "end": 17.42
+        },
+        {
+          "text": "this",
+          "start": 17.42,
+          "end": 17.9
+        },
+        {
+          "text": "?",
+          "start": 17.9,
+          "end": 18.38
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "start": 19.18,
+      "end": 21.64,
+      "text": "I draw the boat into midstream.",
+      "singableText": "I draw the boat into midstream.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 19.18,
+          "end": 19.531
+        },
+        {
+          "text": "draw",
+          "start": 19.531,
+          "end": 19.883
+        },
+        {
+          "text": "the",
+          "start": 19.883,
+          "end": 20.234
+        },
+        {
+          "text": "boat",
+          "start": 20.234,
+          "end": 20.586
+        },
+        {
+          "text": "into",
+          "start": 20.586,
+          "end": 20.937
+        },
+        {
+          "text": "midstream",
+          "start": 20.937,
+          "end": 21.289
+        },
+        {
+          "text": ".",
+          "start": 21.289,
+          "end": 21.64
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "start": 21.64,
+      "end": 25.18,
+      "text": "What day is this?",
+      "singableText": "What day is this?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "What",
+          "start": 21.64,
+          "end": 22.348
+        },
+        {
+          "text": "day",
+          "start": 22.348,
+          "end": 23.056
+        },
+        {
+          "text": "is",
+          "start": 23.056,
+          "end": 23.764
+        },
+        {
+          "text": "this",
+          "start": 23.764,
+          "end": 24.472
+        },
+        {
+          "text": "?",
+          "start": 24.472,
+          "end": 25.18
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "start": 25.18,
+      "end": 28.42,
+      "text": "To share a boat with the prince.",
+      "singableText": "To share a boat with the prince.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "To",
+          "start": 25.18,
+          "end": 25.585
+        },
+        {
+          "text": "share",
+          "start": 25.585,
+          "end": 25.99
+        },
+        {
+          "text": "a",
+          "start": 25.99,
+          "end": 26.395
+        },
+        {
+          "text": "boat",
+          "start": 26.395,
+          "end": 26.8
+        },
+        {
+          "text": "with",
+          "start": 26.8,
+          "end": 27.205
+        },
+        {
+          "text": "the",
+          "start": 27.205,
+          "end": 27.61
+        },
+        {
+          "text": "prince",
+          "start": 27.61,
+          "end": 28.015
+        },
+        {
+          "text": ".",
+          "start": 28.015,
+          "end": 28.42
+        }
+      ]
+    },
+    {
+      "id": "l05",
+      "start": 32.07,
+      "end": 33.51,
+      "text": "The mountain has trees.",
+      "singableText": "The mountain has trees.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 32.07,
+          "end": 32.358
+        },
+        {
+          "text": "mountain",
+          "start": 32.358,
+          "end": 32.646
+        },
+        {
+          "text": "has",
+          "start": 32.646,
+          "end": 32.934
+        },
+        {
+          "text": "trees",
+          "start": 32.934,
+          "end": 33.222
+        },
+        {
+          "text": ".",
+          "start": 33.222,
+          "end": 33.51
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "start": 33.51,
+      "end": 35.39,
+      "text": "The trees have branches.",
+      "singableText": "The trees have branches.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 33.51,
+          "end": 33.886
+        },
+        {
+          "text": "trees",
+          "start": 33.886,
+          "end": 34.262
+        },
+        {
+          "text": "have",
+          "start": 34.262,
+          "end": 34.638
+        },
+        {
+          "text": "branches",
+          "start": 34.638,
+          "end": 35.014
+        },
+        {
+          "text": ".",
+          "start": 35.014,
+          "end": 35.39
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "start": 35.39,
+      "end": 37.87,
+      "text": "My heart delights in you.",
+      "singableText": "My heart delights in you.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "My",
+          "start": 35.39,
+          "end": 35.803
+        },
+        {
+          "text": "heart",
+          "start": 35.803,
+          "end": 36.217
+        },
+        {
+          "text": "delights",
+          "start": 36.217,
+          "end": 36.63
+        },
+        {
+          "text": "in",
+          "start": 36.63,
+          "end": 37.043
+        },
+        {
+          "text": "you",
+          "start": 37.043,
+          "end": 37.457
+        },
+        {
+          "text": ".",
+          "start": 37.457,
+          "end": 37.87
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "start": 37.87,
+      "end": 40.53,
+      "text": "Yet you do not know.",
+      "singableText": "Yet you do not know.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Yet",
+          "start": 37.87,
+          "end": 38.313
+        },
+        {
+          "text": "you",
+          "start": 38.313,
+          "end": 38.757
+        },
+        {
+          "text": "do",
+          "start": 38.757,
+          "end": 39.2
+        },
+        {
+          "text": "not",
+          "start": 39.2,
+          "end": 39.643
+        },
+        {
+          "text": "know",
+          "start": 39.643,
+          "end": 40.087
+        },
+        {
+          "text": ".",
+          "start": 40.087,
+          "end": 40.53
+        }
+      ]
+    },
+    {
+      "id": "l09",
+      "start": 40.53,
+      "end": 44.56,
+      "text": "My heart delights in you.",
+      "singableText": "My heart delights in you.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "My",
+          "start": 40.53,
+          "end": 41.202
+        },
+        {
+          "text": "heart",
+          "start": 41.202,
+          "end": 41.873
+        },
+        {
+          "text": "delights",
+          "start": 41.873,
+          "end": 42.545
+        },
+        {
+          "text": "in",
+          "start": 42.545,
+          "end": 43.217
+        },
+        {
+          "text": "you",
+          "start": 43.217,
+          "end": 43.888
+        },
+        {
+          "text": ".",
+          "start": 43.888,
+          "end": 44.56
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "start": 44.56,
+      "end": 51.08,
+      "text": "What night is this?",
+      "singableText": "What night is this?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "What",
+          "start": 44.56,
+          "end": 45.864
+        },
+        {
+          "text": "night",
+          "start": 45.864,
+          "end": 47.168
+        },
+        {
+          "text": "is",
+          "start": 47.168,
+          "end": 48.472
+        },
+        {
+          "text": "this",
+          "start": 48.472,
+          "end": 49.776
+        },
+        {
+          "text": "?",
+          "start": 49.776,
+          "end": 51.08
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "start": 51.08,
+      "end": 54.48,
+      "text": "I draw the boat into midstream.",
+      "singableText": "I draw the boat into midstream.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 51.08,
+          "end": 51.566
+        },
+        {
+          "text": "draw",
+          "start": 51.566,
+          "end": 52.051
+        },
+        {
+          "text": "the",
+          "start": 52.051,
+          "end": 52.537
+        },
+        {
+          "text": "boat",
+          "start": 52.537,
+          "end": 53.023
+        },
+        {
+          "text": "into",
+          "start": 53.023,
+          "end": 53.509
+        },
+        {
+          "text": "midstream",
+          "start": 53.509,
+          "end": 53.994
+        },
+        {
+          "text": ".",
+          "start": 53.994,
+          "end": 54.48
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "start": 54.48,
+      "end": 57.96,
+      "text": "What day is this?",
+      "singableText": "What day is this?",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "What",
+          "start": 54.48,
+          "end": 55.176
+        },
+        {
+          "text": "day",
+          "start": 55.176,
+          "end": 55.872
+        },
+        {
+          "text": "is",
+          "start": 55.872,
+          "end": 56.568
+        },
+        {
+          "text": "this",
+          "start": 56.568,
+          "end": 57.264
+        },
+        {
+          "text": "?",
+          "start": 57.264,
+          "end": 57.96
+        }
+      ]
+    },
+    {
+      "id": "l13",
+      "start": 57.96,
+      "end": 61.32,
+      "text": "To share a boat with the prince.",
+      "singableText": "To share a boat with the prince.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "To",
+          "start": 57.96,
+          "end": 58.38
+        },
+        {
+          "text": "share",
+          "start": 58.38,
+          "end": 58.8
+        },
+        {
+          "text": "a",
+          "start": 58.8,
+          "end": 59.22
+        },
+        {
+          "text": "boat",
+          "start": 59.22,
+          "end": 59.64
+        },
+        {
+          "text": "with",
+          "start": 59.64,
+          "end": 60.06
+        },
+        {
+          "text": "the",
+          "start": 60.06,
+          "end": 60.48
+        },
+        {
+          "text": "prince",
+          "start": 60.48,
+          "end": 60.9
+        },
+        {
+          "text": ".",
+          "start": 60.9,
+          "end": 61.32
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 61.32,
+      "end": 66.47,
+      "text": "Ashamed, yet graced by favor.",
+      "singableText": "Ashamed, yet graced by favor.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Ashamed",
+          "start": 61.32,
+          "end": 62.056
+        },
+        {
+          "text": ",",
+          "start": 62.056,
+          "end": 62.791
+        },
+        {
+          "text": "yet",
+          "start": 62.791,
+          "end": 63.527
+        },
+        {
+          "text": "graced",
+          "start": 63.527,
+          "end": 64.263
+        },
+        {
+          "text": "by",
+          "start": 64.263,
+          "end": 64.999
+        },
+        {
+          "text": "favor",
+          "start": 64.999,
+          "end": 65.734
+        },
+        {
+          "text": ".",
+          "start": 65.734,
+          "end": 66.47
+        }
+      ]
+    },
+    {
+      "id": "l15",
+      "start": 66.47,
+      "end": 68.45,
+      "text": "I do not count slander and shame.",
+      "singableText": "I do not count slander and shame.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "I",
+          "start": 66.47,
+          "end": 66.718
+        },
+        {
+          "text": "do",
+          "start": 66.718,
+          "end": 66.965
+        },
+        {
+          "text": "not",
+          "start": 66.965,
+          "end": 67.213
+        },
+        {
+          "text": "count",
+          "start": 67.213,
+          "end": 67.46
+        },
+        {
+          "text": "slander",
+          "start": 67.46,
+          "end": 67.707
+        },
+        {
+          "text": "and",
+          "start": 67.707,
+          "end": 67.955
+        },
+        {
+          "text": "shame",
+          "start": 67.955,
+          "end": 68.203
+        },
+        {
+          "text": ".",
+          "start": 68.203,
+          "end": 68.45
+        }
+      ]
+    },
+    {
+      "id": "l16",
+      "start": 69.76,
+      "end": 73.24,
+      "text": "My heart is troubled and cannot cease.",
+      "singableText": "My heart is troubled and cannot cease.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "My",
+          "start": 69.76,
+          "end": 70.195
+        },
+        {
+          "text": "heart",
+          "start": 70.195,
+          "end": 70.63
+        },
+        {
+          "text": "is",
+          "start": 70.63,
+          "end": 71.065
+        },
+        {
+          "text": "troubled",
+          "start": 71.065,
+          "end": 71.5
+        },
+        {
+          "text": "and",
+          "start": 71.5,
+          "end": 71.935
+        },
+        {
+          "text": "cannot",
+          "start": 71.935,
+          "end": 72.37
+        },
+        {
+          "text": "cease",
+          "start": 72.37,
+          "end": 72.805
+        },
+        {
+          "text": ".",
+          "start": 72.805,
+          "end": 73.24
+        }
+      ]
+    },
+    {
+      "id": "l17",
+      "start": 73.24,
+      "end": 75.18,
+      "text": "Because I have come to know the prince.",
+      "singableText": "Because I have come to know the prince.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Because",
+          "start": 73.24,
+          "end": 73.456
+        },
+        {
+          "text": "I",
+          "start": 73.456,
+          "end": 73.671
+        },
+        {
+          "text": "have",
+          "start": 73.671,
+          "end": 73.887
+        },
+        {
+          "text": "come",
+          "start": 73.887,
+          "end": 74.102
+        },
+        {
+          "text": "to",
+          "start": 74.102,
+          "end": 74.318
+        },
+        {
+          "text": "know",
+          "start": 74.318,
+          "end": 74.533
+        },
+        {
+          "text": "the",
+          "start": 74.533,
+          "end": 74.749
+        },
+        {
+          "text": "prince",
+          "start": 74.749,
+          "end": 74.964
+        },
+        {
+          "text": ".",
+          "start": 74.964,
+          "end": 75.18
+        }
+      ]
+    },
+    {
+      "id": "l18",
+      "start": 76.5,
+      "end": 78.44,
+      "text": "The mountain has trees.",
+      "singableText": "The mountain has trees.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 76.5,
+          "end": 76.888
+        },
+        {
+          "text": "mountain",
+          "start": 76.888,
+          "end": 77.276
+        },
+        {
+          "text": "has",
+          "start": 77.276,
+          "end": 77.664
+        },
+        {
+          "text": "trees",
+          "start": 77.664,
+          "end": 78.052
+        },
+        {
+          "text": ".",
+          "start": 78.052,
+          "end": 78.44
+        }
+      ]
+    },
+    {
+      "id": "l19",
+      "start": 78.44,
+      "end": 80.14,
+      "text": "The trees have branches.",
+      "singableText": "The trees have branches.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 78.44,
+          "end": 78.78
+        },
+        {
+          "text": "trees",
+          "start": 78.78,
+          "end": 79.12
+        },
+        {
+          "text": "have",
+          "start": 79.12,
+          "end": 79.46
+        },
+        {
+          "text": "branches",
+          "start": 79.46,
+          "end": 79.8
+        },
+        {
+          "text": ".",
+          "start": 79.8,
+          "end": 80.14
+        }
+      ]
+    },
+    {
+      "id": "l20",
+      "start": 80.14,
+      "end": 81.74,
+      "text": "My heart delights in you.",
+      "singableText": "My heart delights in you.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "My",
+          "start": 80.14,
+          "end": 80.407
+        },
+        {
+          "text": "heart",
+          "start": 80.407,
+          "end": 80.673
+        },
+        {
+          "text": "delights",
+          "start": 80.673,
+          "end": 80.94
+        },
+        {
+          "text": "in",
+          "start": 80.94,
+          "end": 81.207
+        },
+        {
+          "text": "you",
+          "start": 81.207,
+          "end": 81.473
+        },
+        {
+          "text": ".",
+          "start": 81.473,
+          "end": 81.74
+        }
+      ]
+    },
+    {
+      "id": "l21",
+      "start": 81.74,
+      "end": 83.32,
+      "text": "Yet you do not know.",
+      "singableText": "Yet you do not know.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Yet",
+          "start": 81.74,
+          "end": 82.003
+        },
+        {
+          "text": "you",
+          "start": 82.003,
+          "end": 82.267
+        },
+        {
+          "text": "do",
+          "start": 82.267,
+          "end": 82.53
+        },
+        {
+          "text": "not",
+          "start": 82.53,
+          "end": 82.793
+        },
+        {
+          "text": "know",
+          "start": 82.793,
+          "end": 83.057
+        },
+        {
+          "text": ".",
+          "start": 83.057,
+          "end": 83.32
+        }
+      ]
+    },
+    {
+      "id": "l22",
+      "start": 83.32,
+      "end": 84.32,
+      "text": "The mountain has trees.",
+      "singableText": "The mountain has trees.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 83.32,
+          "end": 83.52
+        },
+        {
+          "text": "mountain",
+          "start": 83.52,
+          "end": 83.72
+        },
+        {
+          "text": "has",
+          "start": 83.72,
+          "end": 83.92
+        },
+        {
+          "text": "trees",
+          "start": 83.92,
+          "end": 84.12
+        },
+        {
+          "text": ".",
+          "start": 84.12,
+          "end": 84.32
+        }
+      ]
+    },
+    {
+      "id": "l23",
+      "start": 84.32,
+      "end": 87.0,
+      "text": "The trees have branches.",
+      "singableText": "The trees have branches.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "The",
+          "start": 84.32,
+          "end": 84.856
+        },
+        {
+          "text": "trees",
+          "start": 84.856,
+          "end": 85.392
+        },
+        {
+          "text": "have",
+          "start": 85.392,
+          "end": 85.928
+        },
+        {
+          "text": "branches",
+          "start": 85.928,
+          "end": 86.464
+        },
+        {
+          "text": ".",
+          "start": 86.464,
+          "end": 87.0
+        }
+      ]
+    },
+    {
+      "id": "l24",
+      "start": 87.44,
+      "end": 88.68,
+      "text": "My heart delights in you.",
+      "singableText": "My heart delights in you.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "My",
+          "start": 87.44,
+          "end": 87.647
+        },
+        {
+          "text": "heart",
+          "start": 87.647,
+          "end": 87.853
+        },
+        {
+          "text": "delights",
+          "start": 87.853,
+          "end": 88.06
+        },
+        {
+          "text": "in",
+          "start": 88.06,
+          "end": 88.267
+        },
+        {
+          "text": "you",
+          "start": 88.267,
+          "end": 88.473
+        },
+        {
+          "text": ".",
+          "start": 88.473,
+          "end": 88.68
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "vocalSet": "zh-vocal",
+    "correction": "ACE original-poem hook render selected from XL SFT, XL Turbo single-pass, sectioned, repeated, and hook candidates. Active Mandarin timing is based on large-v3 ASR from the selected full mix. Public text preserves 越人歌's original wording where sound-close: 心爱君兮 is restored to 心悦君兮, and phonetic-control 牵舟/披好/不子 is restored to 搴舟/被好/不訾. The render still diverges from a perfect recitation: 君不知 is sometimes heard by ASR as 追不着, and the final 君不知 tail is not recovered."
+  }
+}
