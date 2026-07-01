@@ -91,24 +91,28 @@ ASR is also not absolute truth. The final correction uses this hierarchy:
 
 ```text
 actual audible structure
-> sound-close poetic compromise
 > close intended original poem text
+> sound-close poetic compromise
 > ASR guess
 > draft translation
 ```
 
-The first publication restored more original text where the sound was close.
-After user listening feedback, the active lyric was revised to a stronger
-sound-close compromise where the render clearly sang a different but meaningful
-phrase. For example, `心悦君兮` is now displayed as `心爱君兮`, and repeated
-`君不知` positions are displayed as `追不着`. This makes the player feel closer
-to the actual song while preserving the poem's emotional frame.
+The user-reviewed correction is deliberately conservative. When word count or
+syllable count is the same and the sound is close, preserve the original poem
+because it is usually more beautiful than an ASR guess. For `越人歌`,
+`心爱君兮` was restored back to `心悦君兮`, `追不着` was restored back to
+`君不知`, and `牵愁中流` was restored back to `搴舟中流`. The website keeps
+sound-close compromises only where the rendered phrase changes structure more
+clearly, such as the `望之` lines. A final soft `不知` tail was added from user
+listening because ASR swallowed it.
 
 Rule:
 
 ```text
 restore source when the sung phrase is close enough
-compromise poetically when the model clearly sang another useful phrase
+same length + close sound + better source text means source wins
+compromise poetically only when the model clearly sang another useful structure
+add soft final tails when listening catches them and ASR omits them
 document every compromise
 ```
 
@@ -408,9 +412,11 @@ uses:
 
 - actual line timings from ASR/listening;
 - pinyin per character;
-- original poem text restored where sound-close;
-- sound-close compromise wording where the rendered vocal consistently differs
-  and the compromise is clearer, beautiful, and emotionally coherent;
+- original poem text restored where phrase length and sound are close;
+- a soft final `不知` tail added because listening caught it and ASR omitted it;
+- sound-close compromise wording only where the rendered vocal consistently
+  differs in structure and the compromise is clearer, beautiful, and
+  emotionally coherent;
 - translations aligned to the corrected active lyric lines.
 
 ### Pass 8: Document the imperfections

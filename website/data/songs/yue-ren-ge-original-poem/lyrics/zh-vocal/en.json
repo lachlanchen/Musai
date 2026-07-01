@@ -48,38 +48,43 @@
       "id": "l02",
       "start": 19.18,
       "end": 21.64,
-      "text": "Longing is drawn through midstream.",
-      "singableText": "Longing is drawn through midstream.",
+      "text": "I draw the boat into midstream.",
+      "singableText": "I draw the boat into midstream.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "Longing",
+          "text": "I",
           "start": 19.18,
-          "end": 19.59
+          "end": 19.531
         },
         {
-          "text": "is",
-          "start": 19.59,
-          "end": 20.0
+          "text": "draw",
+          "start": 19.531,
+          "end": 19.883
         },
         {
-          "text": "drawn",
-          "start": 20.0,
-          "end": 20.41
+          "text": "the",
+          "start": 19.883,
+          "end": 20.234
         },
         {
-          "text": "through",
-          "start": 20.41,
-          "end": 20.82
+          "text": "boat",
+          "start": 20.234,
+          "end": 20.586
+        },
+        {
+          "text": "into",
+          "start": 20.586,
+          "end": 20.937
         },
         {
           "text": "midstream",
-          "start": 20.82,
-          "end": 21.23
+          "start": 20.937,
+          "end": 21.289
         },
         {
           "text": ".",
-          "start": 21.23,
+          "start": 21.289,
           "end": 21.64
         }
       ]
@@ -248,33 +253,38 @@
       "id": "l07",
       "start": 35.39,
       "end": 37.87,
-      "text": "My heart loves you.",
-      "singableText": "My heart loves you.",
+      "text": "My heart delights in you.",
+      "singableText": "My heart delights in you.",
       "role": "lyric",
       "tokens": [
         {
           "text": "My",
           "start": 35.39,
-          "end": 35.886
+          "end": 35.803
         },
         {
           "text": "heart",
-          "start": 35.886,
-          "end": 36.382
+          "start": 35.803,
+          "end": 36.217
         },
         {
-          "text": "loves",
-          "start": 36.382,
-          "end": 36.878
+          "text": "delights",
+          "start": 36.217,
+          "end": 36.63
+        },
+        {
+          "text": "in",
+          "start": 36.63,
+          "end": 37.043
         },
         {
           "text": "you",
-          "start": 36.878,
-          "end": 37.374
+          "start": 37.043,
+          "end": 37.457
         },
         {
           "text": ".",
-          "start": 37.374,
+          "start": 37.457,
           "end": 37.87
         }
       ]
@@ -283,8 +293,8 @@
       "id": "l08",
       "start": 37.87,
       "end": 40.53,
-      "text": "Yet I cannot reach you.",
-      "singableText": "Yet I cannot reach you.",
+      "text": "Yet you do not know.",
+      "singableText": "Yet you do not know.",
       "role": "lyric",
       "tokens": [
         {
@@ -293,22 +303,22 @@
           "end": 38.313
         },
         {
-          "text": "I",
+          "text": "you",
           "start": 38.313,
           "end": 38.757
         },
         {
-          "text": "cannot",
+          "text": "do",
           "start": 38.757,
           "end": 39.2
         },
         {
-          "text": "reach",
+          "text": "not",
           "start": 39.2,
           "end": 39.643
         },
         {
-          "text": "you",
+          "text": "know",
           "start": 39.643,
           "end": 40.087
         },
@@ -323,33 +333,38 @@
       "id": "l09",
       "start": 40.53,
       "end": 44.56,
-      "text": "My heart loves you.",
-      "singableText": "My heart loves you.",
+      "text": "My heart delights in you.",
+      "singableText": "My heart delights in you.",
       "role": "lyric",
       "tokens": [
         {
           "text": "My",
           "start": 40.53,
-          "end": 41.336
+          "end": 41.202
         },
         {
           "text": "heart",
-          "start": 41.336,
-          "end": 42.142
+          "start": 41.202,
+          "end": 41.873
         },
         {
-          "text": "loves",
-          "start": 42.142,
-          "end": 42.948
+          "text": "delights",
+          "start": 41.873,
+          "end": 42.545
+        },
+        {
+          "text": "in",
+          "start": 42.545,
+          "end": 43.217
         },
         {
           "text": "you",
-          "start": 42.948,
-          "end": 43.754
+          "start": 43.217,
+          "end": 43.888
         },
         {
           "text": ".",
-          "start": 43.754,
+          "start": 43.888,
           "end": 44.56
         }
       ]
@@ -393,38 +408,43 @@
       "id": "l11",
       "start": 51.08,
       "end": 54.48,
-      "text": "Longing is drawn through midstream.",
-      "singableText": "Longing is drawn through midstream.",
+      "text": "I draw the boat into midstream.",
+      "singableText": "I draw the boat into midstream.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "Longing",
+          "text": "I",
           "start": 51.08,
-          "end": 51.647
+          "end": 51.566
         },
         {
-          "text": "is",
-          "start": 51.647,
-          "end": 52.213
+          "text": "draw",
+          "start": 51.566,
+          "end": 52.051
         },
         {
-          "text": "drawn",
-          "start": 52.213,
-          "end": 52.78
+          "text": "the",
+          "start": 52.051,
+          "end": 52.537
         },
         {
-          "text": "through",
-          "start": 52.78,
-          "end": 53.347
+          "text": "boat",
+          "start": 52.537,
+          "end": 53.023
+        },
+        {
+          "text": "into",
+          "start": 53.023,
+          "end": 53.509
         },
         {
           "text": "midstream",
-          "start": 53.347,
-          "end": 53.913
+          "start": 53.509,
+          "end": 53.994
         },
         {
           "text": ".",
-          "start": 53.913,
+          "start": 53.994,
           "end": 54.48
         }
       ]
@@ -798,33 +818,38 @@
       "id": "l20",
       "start": 80.14,
       "end": 81.74,
-      "text": "My heart loves you.",
-      "singableText": "My heart loves you.",
+      "text": "My heart delights in you.",
+      "singableText": "My heart delights in you.",
       "role": "lyric",
       "tokens": [
         {
           "text": "My",
           "start": 80.14,
-          "end": 80.46
+          "end": 80.407
         },
         {
           "text": "heart",
-          "start": 80.46,
-          "end": 80.78
+          "start": 80.407,
+          "end": 80.673
         },
         {
-          "text": "loves",
-          "start": 80.78,
-          "end": 81.1
+          "text": "delights",
+          "start": 80.673,
+          "end": 80.94
+        },
+        {
+          "text": "in",
+          "start": 80.94,
+          "end": 81.207
         },
         {
           "text": "you",
-          "start": 81.1,
-          "end": 81.42
+          "start": 81.207,
+          "end": 81.473
         },
         {
           "text": ".",
-          "start": 81.42,
+          "start": 81.473,
           "end": 81.74
         }
       ]
@@ -833,8 +858,8 @@
       "id": "l21",
       "start": 81.74,
       "end": 83.32,
-      "text": "Yet I cannot reach you.",
-      "singableText": "Yet I cannot reach you.",
+      "text": "Yet you do not know.",
+      "singableText": "Yet you do not know.",
       "role": "lyric",
       "tokens": [
         {
@@ -843,22 +868,22 @@
           "end": 82.003
         },
         {
-          "text": "I",
+          "text": "you",
           "start": 82.003,
           "end": 82.267
         },
         {
-          "text": "cannot",
+          "text": "do",
           "start": 82.267,
           "end": 82.53
         },
         {
-          "text": "reach",
+          "text": "not",
           "start": 82.53,
           "end": 82.793
         },
         {
-          "text": "you",
+          "text": "know",
           "start": 82.793,
           "end": 83.057
         },
@@ -943,40 +968,70 @@
       "id": "l24",
       "start": 87.44,
       "end": 88.68,
-      "text": "My heart loves you.",
-      "singableText": "My heart loves you.",
+      "text": "My heart delights in you.",
+      "singableText": "My heart delights in you.",
       "role": "lyric",
       "tokens": [
         {
           "text": "My",
           "start": 87.44,
-          "end": 87.688
+          "end": 87.647
         },
         {
           "text": "heart",
-          "start": 87.688,
-          "end": 87.936
+          "start": 87.647,
+          "end": 87.853
         },
         {
-          "text": "loves",
-          "start": 87.936,
-          "end": 88.184
+          "text": "delights",
+          "start": 87.853,
+          "end": 88.06
+        },
+        {
+          "text": "in",
+          "start": 88.06,
+          "end": 88.267
         },
         {
           "text": "you",
-          "start": 88.184,
-          "end": 88.432
+          "start": 88.267,
+          "end": 88.473
         },
         {
           "text": ".",
-          "start": 88.432,
+          "start": 88.473,
           "end": 88.68
+        }
+      ]
+    },
+    {
+      "id": "l25",
+      "start": 88.68,
+      "end": 90.24,
+      "text": "Still unknown.",
+      "singableText": "Still unknown.",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "Still",
+          "start": 88.68,
+          "end": 89.2
+        },
+        {
+          "text": "unknown",
+          "start": 89.2,
+          "end": 89.72
+        },
+        {
+          "text": ".",
+          "start": 89.72,
+          "end": 90.24
         }
       ]
     }
   ],
   "provenance": {
     "vocalSet": "zh-vocal",
-    "correction": "ACE original-poem hook render selected from XL SFT, XL Turbo single-pass, sectioned, repeated, and hook candidates. Active Mandarin timing is based on large-v3 ASR from the selected full mix. This revision uses a sound-close, context-smooth lyric where the render diverges from strict source text: 心爱君兮 is kept because it is consistently audible and beautiful, 君不知 is displayed as 追不着 where ASR/listening indicate that phrase, and 搴舟中流 is softened to 牵愁中流 because the sung line is closer to 前愁/牵愁 than to the rare source character. The original 越人歌 remains the source and emotional frame, but the active website lyric follows the selected performance."
+    "correction": "ACE original-poem hook render selected from XL SFT, XL Turbo single-pass, sectioned, repeated, and hook candidates. Active Mandarin timing is based on large-v3 ASR from the selected full mix. This revision preserves source text when word count and sound are close: 心爱君兮 is restored to 心悦君兮, 追不着 is restored to 君不知, and 牵愁中流 is restored to 搴舟中流 because the phrase lengths and sounds are close and the original poem is stronger. The final soft 不知 tail is added from user listening even though ASR swallowed it. Larger structural divergences still follow the performance, such as the two 望之 phrases where ASR/listening indicate a changed structure. The original 越人歌 remains the source and emotional frame."
   }
 }

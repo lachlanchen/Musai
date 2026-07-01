@@ -73,77 +73,62 @@
       "id": "l02",
       "start": 19.18,
       "end": 21.64,
-      "text": "愁いを流れの中へ引いていく",
-      "singableText": "愁いを流れの中へ引いていく",
+      "text": "舟を流れの中へ進める",
+      "singableText": "舟を流れの中へ進める",
       "role": "lyric",
       "tokens": [
         {
-          "text": "愁",
+          "text": "舟",
           "start": 19.18,
-          "end": 19.369,
-          "reading": "しゅう"
-        },
-        {
-          "text": "い",
-          "start": 19.369,
-          "end": 19.558
+          "end": 19.426,
+          "reading": "ふね"
         },
         {
           "text": "を",
-          "start": 19.558,
-          "end": 19.748
+          "start": 19.426,
+          "end": 19.672
         },
         {
           "text": "流",
-          "start": 19.748,
-          "end": 19.937,
+          "start": 19.672,
+          "end": 19.918,
           "reading": "りゅう"
         },
         {
           "text": "れ",
-          "start": 19.937,
-          "end": 20.126
+          "start": 19.918,
+          "end": 20.164
         },
         {
           "text": "の",
-          "start": 20.126,
-          "end": 20.315
+          "start": 20.164,
+          "end": 20.41
         },
         {
           "text": "中",
-          "start": 20.315,
-          "end": 20.505,
+          "start": 20.41,
+          "end": 20.656,
           "reading": "なか"
         },
         {
           "text": "へ",
-          "start": 20.505,
-          "end": 20.694
+          "start": 20.656,
+          "end": 20.902
         },
         {
-          "text": "引",
-          "start": 20.694,
-          "end": 20.883,
-          "reading": "ひき"
+          "text": "進",
+          "start": 20.902,
+          "end": 21.148,
+          "reading": "すすむ"
         },
         {
-          "text": "い",
-          "start": 20.883,
-          "end": 21.072
+          "text": "め",
+          "start": 21.148,
+          "end": 21.394
         },
         {
-          "text": "て",
-          "start": 21.072,
-          "end": 21.262
-        },
-        {
-          "text": "い",
-          "start": 21.262,
-          "end": 21.451
-        },
-        {
-          "text": "く",
-          "start": 21.451,
+          "text": "る",
+          "start": 21.394,
           "end": 21.64
         }
       ]
@@ -365,56 +350,51 @@
       "id": "l07",
       "start": 35.39,
       "end": 37.87,
-      "text": "心は君を愛している",
-      "singableText": "心は君を愛している",
+      "text": "心は君を悦ぶのに",
+      "singableText": "心は君を悦ぶのに",
       "role": "lyric",
       "tokens": [
         {
           "text": "心",
           "start": 35.39,
-          "end": 35.666,
+          "end": 35.7,
           "reading": "こころ"
         },
         {
           "text": "は",
-          "start": 35.666,
-          "end": 35.941
+          "start": 35.7,
+          "end": 36.01
         },
         {
           "text": "君",
-          "start": 35.941,
-          "end": 36.217,
+          "start": 36.01,
+          "end": 36.32,
           "reading": "くん"
         },
         {
           "text": "を",
-          "start": 36.217,
-          "end": 36.492
+          "start": 36.32,
+          "end": 36.63
         },
         {
-          "text": "愛",
-          "start": 36.492,
-          "end": 36.768,
-          "reading": "あい"
+          "text": "悦",
+          "start": 36.63,
+          "end": 36.94,
+          "reading": "えつ"
         },
         {
-          "text": "し",
-          "start": 36.768,
-          "end": 37.043
+          "text": "ぶ",
+          "start": 36.94,
+          "end": 37.25
         },
         {
-          "text": "て",
-          "start": 37.043,
-          "end": 37.319
+          "text": "の",
+          "start": 37.25,
+          "end": 37.56
         },
         {
-          "text": "い",
-          "start": 37.319,
-          "end": 37.594
-        },
-        {
-          "text": "る",
-          "start": 37.594,
+          "text": "に",
+          "start": 37.56,
           "end": 37.87
         }
       ]
@@ -423,49 +403,60 @@
       "id": "l08",
       "start": 37.87,
       "end": 40.53,
-      "text": "それでも届かない",
-      "singableText": "それでも届かない",
+      "text": "それでも君は知らない",
+      "singableText": "それでも君は知らない",
       "role": "lyric",
       "tokens": [
         {
           "text": "そ",
           "start": 37.87,
-          "end": 38.203
+          "end": 38.136
         },
         {
           "text": "れ",
-          "start": 38.203,
-          "end": 38.535
+          "start": 38.136,
+          "end": 38.402
         },
         {
           "text": "で",
-          "start": 38.535,
-          "end": 38.867
+          "start": 38.402,
+          "end": 38.668
         },
         {
           "text": "も",
-          "start": 38.867,
-          "end": 39.2
+          "start": 38.668,
+          "end": 38.934
         },
         {
-          "text": "届",
+          "text": "君",
+          "start": 38.934,
+          "end": 39.2,
+          "reading": "くん"
+        },
+        {
+          "text": "は",
           "start": 39.2,
-          "end": 39.532,
-          "reading": "とどけ"
+          "end": 39.466
         },
         {
-          "text": "か",
-          "start": 39.532,
-          "end": 39.865
+          "text": "知",
+          "start": 39.466,
+          "end": 39.732,
+          "reading": "ち"
+        },
+        {
+          "text": "ら",
+          "start": 39.732,
+          "end": 39.998
         },
         {
           "text": "な",
-          "start": 39.865,
-          "end": 40.197
+          "start": 39.998,
+          "end": 40.264
         },
         {
           "text": "い",
-          "start": 40.197,
+          "start": 40.264,
           "end": 40.53
         }
       ]
@@ -474,56 +465,51 @@
       "id": "l09",
       "start": 40.53,
       "end": 44.56,
-      "text": "心は君を愛している",
-      "singableText": "心は君を愛している",
+      "text": "心は君を悦ぶのに",
+      "singableText": "心は君を悦ぶのに",
       "role": "lyric",
       "tokens": [
         {
           "text": "心",
           "start": 40.53,
-          "end": 40.978,
+          "end": 41.034,
           "reading": "こころ"
         },
         {
           "text": "は",
-          "start": 40.978,
-          "end": 41.426
+          "start": 41.034,
+          "end": 41.538
         },
         {
           "text": "君",
-          "start": 41.426,
-          "end": 41.873,
+          "start": 41.538,
+          "end": 42.041,
           "reading": "くん"
         },
         {
           "text": "を",
-          "start": 41.873,
-          "end": 42.321
+          "start": 42.041,
+          "end": 42.545
         },
         {
-          "text": "愛",
-          "start": 42.321,
-          "end": 42.769,
-          "reading": "あい"
+          "text": "悦",
+          "start": 42.545,
+          "end": 43.049,
+          "reading": "えつ"
         },
         {
-          "text": "し",
-          "start": 42.769,
-          "end": 43.217
+          "text": "ぶ",
+          "start": 43.049,
+          "end": 43.553
         },
         {
-          "text": "て",
-          "start": 43.217,
-          "end": 43.664
+          "text": "の",
+          "start": 43.553,
+          "end": 44.056
         },
         {
-          "text": "い",
-          "start": 43.664,
-          "end": 44.112
-        },
-        {
-          "text": "る",
-          "start": 44.112,
+          "text": "に",
+          "start": 44.056,
           "end": 44.56
         }
       ]
@@ -591,77 +577,62 @@
       "id": "l11",
       "start": 51.08,
       "end": 54.48,
-      "text": "愁いを流れの中へ引いていく",
-      "singableText": "愁いを流れの中へ引いていく",
+      "text": "舟を流れの中へ進める",
+      "singableText": "舟を流れの中へ進める",
       "role": "lyric",
       "tokens": [
         {
-          "text": "愁",
+          "text": "舟",
           "start": 51.08,
-          "end": 51.342,
-          "reading": "しゅう"
-        },
-        {
-          "text": "い",
-          "start": 51.342,
-          "end": 51.603
+          "end": 51.42,
+          "reading": "ふね"
         },
         {
           "text": "を",
-          "start": 51.603,
-          "end": 51.865
+          "start": 51.42,
+          "end": 51.76
         },
         {
           "text": "流",
-          "start": 51.865,
-          "end": 52.126,
+          "start": 51.76,
+          "end": 52.1,
           "reading": "りゅう"
         },
         {
           "text": "れ",
-          "start": 52.126,
-          "end": 52.388
+          "start": 52.1,
+          "end": 52.44
         },
         {
           "text": "の",
-          "start": 52.388,
-          "end": 52.649
+          "start": 52.44,
+          "end": 52.78
         },
         {
           "text": "中",
-          "start": 52.649,
-          "end": 52.911,
+          "start": 52.78,
+          "end": 53.12,
           "reading": "なか"
         },
         {
           "text": "へ",
-          "start": 52.911,
-          "end": 53.172
+          "start": 53.12,
+          "end": 53.46
         },
         {
-          "text": "引",
-          "start": 53.172,
-          "end": 53.434,
-          "reading": "ひき"
+          "text": "進",
+          "start": 53.46,
+          "end": 53.8,
+          "reading": "すすむ"
         },
         {
-          "text": "い",
-          "start": 53.434,
-          "end": 53.695
+          "text": "め",
+          "start": 53.8,
+          "end": 54.14
         },
         {
-          "text": "て",
-          "start": 53.695,
-          "end": 53.957
-        },
-        {
-          "text": "い",
-          "start": 53.957,
-          "end": 54.218
-        },
-        {
-          "text": "く",
-          "start": 54.218,
+          "text": "る",
+          "start": 54.14,
           "end": 54.48
         }
       ]
@@ -1158,56 +1129,51 @@
       "id": "l20",
       "start": 80.14,
       "end": 81.74,
-      "text": "心は君を愛している",
-      "singableText": "心は君を愛している",
+      "text": "心は君を悦ぶのに",
+      "singableText": "心は君を悦ぶのに",
       "role": "lyric",
       "tokens": [
         {
           "text": "心",
           "start": 80.14,
-          "end": 80.318,
+          "end": 80.34,
           "reading": "こころ"
         },
         {
           "text": "は",
-          "start": 80.318,
-          "end": 80.496
+          "start": 80.34,
+          "end": 80.54
         },
         {
           "text": "君",
-          "start": 80.496,
-          "end": 80.673,
+          "start": 80.54,
+          "end": 80.74,
           "reading": "くん"
         },
         {
           "text": "を",
-          "start": 80.673,
-          "end": 80.851
+          "start": 80.74,
+          "end": 80.94
         },
         {
-          "text": "愛",
-          "start": 80.851,
-          "end": 81.029,
-          "reading": "あい"
+          "text": "悦",
+          "start": 80.94,
+          "end": 81.14,
+          "reading": "えつ"
         },
         {
-          "text": "し",
-          "start": 81.029,
-          "end": 81.207
+          "text": "ぶ",
+          "start": 81.14,
+          "end": 81.34
         },
         {
-          "text": "て",
-          "start": 81.207,
-          "end": 81.384
+          "text": "の",
+          "start": 81.34,
+          "end": 81.54
         },
         {
-          "text": "い",
-          "start": 81.384,
-          "end": 81.562
-        },
-        {
-          "text": "る",
-          "start": 81.562,
+          "text": "に",
+          "start": 81.54,
           "end": 81.74
         }
       ]
@@ -1216,49 +1182,60 @@
       "id": "l21",
       "start": 81.74,
       "end": 83.32,
-      "text": "それでも届かない",
-      "singableText": "それでも届かない",
+      "text": "それでも君は知らない",
+      "singableText": "それでも君は知らない",
       "role": "lyric",
       "tokens": [
         {
           "text": "そ",
           "start": 81.74,
-          "end": 81.938
+          "end": 81.898
         },
         {
           "text": "れ",
-          "start": 81.938,
-          "end": 82.135
+          "start": 81.898,
+          "end": 82.056
         },
         {
           "text": "で",
-          "start": 82.135,
-          "end": 82.332
+          "start": 82.056,
+          "end": 82.214
         },
         {
           "text": "も",
-          "start": 82.332,
-          "end": 82.53
+          "start": 82.214,
+          "end": 82.372
         },
         {
-          "text": "届",
+          "text": "君",
+          "start": 82.372,
+          "end": 82.53,
+          "reading": "くん"
+        },
+        {
+          "text": "は",
           "start": 82.53,
-          "end": 82.727,
-          "reading": "とどけ"
+          "end": 82.688
         },
         {
-          "text": "か",
-          "start": 82.727,
-          "end": 82.925
+          "text": "知",
+          "start": 82.688,
+          "end": 82.846,
+          "reading": "ち"
+        },
+        {
+          "text": "ら",
+          "start": 82.846,
+          "end": 83.004
         },
         {
           "text": "な",
-          "start": 82.925,
-          "end": 83.122
+          "start": 83.004,
+          "end": 83.162
         },
         {
           "text": "い",
-          "start": 83.122,
+          "start": 83.162,
           "end": 83.32
         }
       ]
@@ -1361,63 +1338,99 @@
       "id": "l24",
       "start": 87.44,
       "end": 88.68,
-      "text": "心は君を愛している",
-      "singableText": "心は君を愛している",
+      "text": "心は君を悦ぶのに",
+      "singableText": "心は君を悦ぶのに",
       "role": "lyric",
       "tokens": [
         {
           "text": "心",
           "start": 87.44,
-          "end": 87.578,
+          "end": 87.595,
           "reading": "こころ"
         },
         {
           "text": "は",
-          "start": 87.578,
-          "end": 87.716
+          "start": 87.595,
+          "end": 87.75
         },
         {
           "text": "君",
-          "start": 87.716,
-          "end": 87.853,
+          "start": 87.75,
+          "end": 87.905,
           "reading": "くん"
         },
         {
           "text": "を",
-          "start": 87.853,
-          "end": 87.991
+          "start": 87.905,
+          "end": 88.06
         },
         {
-          "text": "愛",
-          "start": 87.991,
-          "end": 88.129,
-          "reading": "あい"
+          "text": "悦",
+          "start": 88.06,
+          "end": 88.215,
+          "reading": "えつ"
         },
         {
-          "text": "し",
-          "start": 88.129,
-          "end": 88.267
+          "text": "ぶ",
+          "start": 88.215,
+          "end": 88.37
         },
         {
-          "text": "て",
-          "start": 88.267,
-          "end": 88.404
+          "text": "の",
+          "start": 88.37,
+          "end": 88.525
         },
         {
-          "text": "い",
-          "start": 88.404,
-          "end": 88.542
-        },
-        {
-          "text": "る",
-          "start": 88.542,
+          "text": "に",
+          "start": 88.525,
           "end": 88.68
+        }
+      ]
+    },
+    {
+      "id": "l25",
+      "start": 88.68,
+      "end": 90.24,
+      "text": "知られぬまま",
+      "singableText": "知られぬまま",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "知",
+          "start": 88.68,
+          "end": 88.94,
+          "reading": "ち"
+        },
+        {
+          "text": "ら",
+          "start": 88.94,
+          "end": 89.2
+        },
+        {
+          "text": "れ",
+          "start": 89.2,
+          "end": 89.46
+        },
+        {
+          "text": "ぬ",
+          "start": 89.46,
+          "end": 89.72
+        },
+        {
+          "text": "ま",
+          "start": 89.72,
+          "end": 89.98
+        },
+        {
+          "text": "ま",
+          "start": 89.98,
+          "end": 90.24
         }
       ]
     }
   ],
   "provenance": {
     "vocalSet": "zh-vocal",
-    "correction": "ACE original-poem hook render selected from XL SFT, XL Turbo single-pass, sectioned, repeated, and hook candidates. Active Mandarin timing is based on large-v3 ASR from the selected full mix. This revision uses a sound-close, context-smooth lyric where the render diverges from strict source text: 心爱君兮 is kept because it is consistently audible and beautiful, 君不知 is displayed as 追不着 where ASR/listening indicate that phrase, and 搴舟中流 is softened to 牵愁中流 because the sung line is closer to 前愁/牵愁 than to the rare source character. The original 越人歌 remains the source and emotional frame, but the active website lyric follows the selected performance."
+    "correction": "ACE original-poem hook render selected from XL SFT, XL Turbo single-pass, sectioned, repeated, and hook candidates. Active Mandarin timing is based on large-v3 ASR from the selected full mix. This revision preserves source text when word count and sound are close: 心爱君兮 is restored to 心悦君兮, 追不着 is restored to 君不知, and 牵愁中流 is restored to 搴舟中流 because the phrase lengths and sounds are close and the original poem is stronger. The final soft 不知 tail is added from user listening even though ASR swallowed it. Larger structural divergences still follow the performance, such as the two 望之 phrases where ASR/listening indicate a changed structure. The original 越人歌 remains the source and emotional frame."
   }
 }

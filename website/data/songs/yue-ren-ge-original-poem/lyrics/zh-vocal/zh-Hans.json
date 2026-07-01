@@ -54,21 +54,21 @@
       "id": "l02",
       "start": 19.18,
       "end": 21.64,
-      "text": "牵愁中流",
-      "singableText": "牵愁中流",
+      "text": "搴舟中流",
+      "singableText": "搴舟中流",
       "role": "lyric",
       "tokens": [
         {
-          "text": "牵",
+          "text": "搴",
           "start": 19.18,
           "end": 19.795,
           "pinyin": "qian1"
         },
         {
-          "text": "愁",
+          "text": "舟",
           "start": 19.795,
           "end": 20.41,
-          "pinyin": "chou2"
+          "pinyin": "zhou1"
         },
         {
           "text": "中",
@@ -236,8 +236,8 @@
       "id": "l07",
       "start": 35.39,
       "end": 37.87,
-      "text": "心爱君兮",
-      "singableText": "心爱君兮",
+      "text": "心悦君兮",
+      "singableText": "心悦君兮",
       "role": "lyric",
       "tokens": [
         {
@@ -247,10 +247,10 @@
           "pinyin": "xin1"
         },
         {
-          "text": "爱",
+          "text": "悦",
           "start": 36.01,
           "end": 36.63,
-          "pinyin": "ai4"
+          "pinyin": "yue4"
         },
         {
           "text": "君",
@@ -270,15 +270,15 @@
       "id": "l08",
       "start": 37.87,
       "end": 40.53,
-      "text": "追不着",
-      "singableText": "追不着",
+      "text": "君不知",
+      "singableText": "君不知",
       "role": "lyric",
       "tokens": [
         {
-          "text": "追",
+          "text": "君",
           "start": 37.87,
           "end": 38.757,
-          "pinyin": "zhui1"
+          "pinyin": "jun1"
         },
         {
           "text": "不",
@@ -287,10 +287,10 @@
           "pinyin": "bu4"
         },
         {
-          "text": "着",
+          "text": "知",
           "start": 39.643,
           "end": 40.53,
-          "pinyin": "zhao2"
+          "pinyin": "zhi1"
         }
       ]
     },
@@ -298,8 +298,8 @@
       "id": "l09",
       "start": 40.53,
       "end": 44.56,
-      "text": "心爱君兮",
-      "singableText": "心爱君兮",
+      "text": "心悦君兮",
+      "singableText": "心悦君兮",
       "role": "lyric",
       "tokens": [
         {
@@ -309,10 +309,10 @@
           "pinyin": "xin1"
         },
         {
-          "text": "爱",
+          "text": "悦",
           "start": 41.538,
           "end": 42.545,
-          "pinyin": "ai4"
+          "pinyin": "yue4"
         },
         {
           "text": "君",
@@ -372,21 +372,21 @@
       "id": "l11",
       "start": 51.08,
       "end": 54.48,
-      "text": "牵愁中流",
-      "singableText": "牵愁中流",
+      "text": "搴舟中流",
+      "singableText": "搴舟中流",
       "role": "lyric",
       "tokens": [
         {
-          "text": "牵",
+          "text": "搴",
           "start": 51.08,
           "end": 51.93,
           "pinyin": "qian1"
         },
         {
-          "text": "愁",
+          "text": "舟",
           "start": 51.93,
           "end": 52.78,
-          "pinyin": "chou2"
+          "pinyin": "zhou1"
         },
         {
           "text": "中",
@@ -714,8 +714,8 @@
       "id": "l20",
       "start": 80.14,
       "end": 81.74,
-      "text": "心爱君兮",
-      "singableText": "心爱君兮",
+      "text": "心悦君兮",
+      "singableText": "心悦君兮",
       "role": "lyric",
       "tokens": [
         {
@@ -725,10 +725,10 @@
           "pinyin": "xin1"
         },
         {
-          "text": "爱",
+          "text": "悦",
           "start": 80.54,
           "end": 80.94,
-          "pinyin": "ai4"
+          "pinyin": "yue4"
         },
         {
           "text": "君",
@@ -748,15 +748,15 @@
       "id": "l21",
       "start": 81.74,
       "end": 83.32,
-      "text": "追不着",
-      "singableText": "追不着",
+      "text": "君不知",
+      "singableText": "君不知",
       "role": "lyric",
       "tokens": [
         {
-          "text": "追",
+          "text": "君",
           "start": 81.74,
           "end": 82.267,
-          "pinyin": "zhui1"
+          "pinyin": "jun1"
         },
         {
           "text": "不",
@@ -765,10 +765,10 @@
           "pinyin": "bu4"
         },
         {
-          "text": "着",
+          "text": "知",
           "start": 82.793,
           "end": 83.32,
-          "pinyin": "zhao2"
+          "pinyin": "zhi1"
         }
       ]
     },
@@ -838,8 +838,8 @@
       "id": "l24",
       "start": 87.44,
       "end": 88.68,
-      "text": "心爱君兮",
-      "singableText": "心爱君兮",
+      "text": "心悦君兮",
+      "singableText": "心悦君兮",
       "role": "lyric",
       "tokens": [
         {
@@ -849,10 +849,10 @@
           "pinyin": "xin1"
         },
         {
-          "text": "爱",
+          "text": "悦",
           "start": 87.75,
           "end": 88.06,
-          "pinyin": "ai4"
+          "pinyin": "yue4"
         },
         {
           "text": "君",
@@ -867,10 +867,32 @@
           "pinyin": "xi1"
         }
       ]
+    },
+    {
+      "id": "l25",
+      "start": 88.68,
+      "end": 90.24,
+      "text": "不知",
+      "singableText": "不知",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "不",
+          "start": 88.68,
+          "end": 89.46,
+          "pinyin": "bu4"
+        },
+        {
+          "text": "知",
+          "start": 89.46,
+          "end": 90.24,
+          "pinyin": "zhi1"
+        }
+      ]
     }
   ],
   "provenance": {
     "vocalSet": "zh-vocal",
-    "correction": "ACE original-poem hook render selected from XL SFT, XL Turbo single-pass, sectioned, repeated, and hook candidates. Active Mandarin timing is based on large-v3 ASR from the selected full mix. This revision uses a sound-close, context-smooth lyric where the render diverges from strict source text: 心爱君兮 is kept because it is consistently audible and beautiful, 君不知 is displayed as 追不着 where ASR/listening indicate that phrase, and 搴舟中流 is softened to 牵愁中流 because the sung line is closer to 前愁/牵愁 than to the rare source character. The original 越人歌 remains the source and emotional frame, but the active website lyric follows the selected performance."
+    "correction": "ACE original-poem hook render selected from XL SFT, XL Turbo single-pass, sectioned, repeated, and hook candidates. Active Mandarin timing is based on large-v3 ASR from the selected full mix. This revision preserves source text when word count and sound are close: 心爱君兮 is restored to 心悦君兮, 追不着 is restored to 君不知, and 牵愁中流 is restored to 搴舟中流 because the phrase lengths and sounds are close and the original poem is stronger. The final soft 不知 tail is added from user listening even though ASR swallowed it. Larger structural divergences still follow the performance, such as the two 望之 phrases where ASR/listening indicate a changed structure. The original 越人歌 remains the source and emotional frame."
   }
 }

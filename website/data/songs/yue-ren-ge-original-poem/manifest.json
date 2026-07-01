@@ -11,7 +11,7 @@
   },
   "artist": "Musia",
   "description": "A Musia ACE-Step Mandarin 越人歌 setting with ASR-corrected, sound-close trilingual website lyrics.",
-  "caption": "A moonlit boat, hidden longing, and the sung confession 山有木兮，心爱君兮.",
+  "caption": "A moonlit boat, hidden longing, and the sung confession 山有木兮，心悦君兮.",
   "duration": 100.0,
   "canonicalUrl": "https://fun.lazying.art/#yue-ren-ge-original-poem",
   "share": {
@@ -268,7 +268,7 @@
         "id": "l02",
         "start": 19.18,
         "end": 21.64,
-        "text": "牵愁中流"
+        "text": "搴舟中流"
       },
       {
         "id": "l03",
@@ -298,19 +298,19 @@
         "id": "l07",
         "start": 35.39,
         "end": 37.87,
-        "text": "心爱君兮"
+        "text": "心悦君兮"
       },
       {
         "id": "l08",
         "start": 37.87,
         "end": 40.53,
-        "text": "追不着"
+        "text": "君不知"
       },
       {
         "id": "l09",
         "start": 40.53,
         "end": 44.56,
-        "text": "心爱君兮"
+        "text": "心悦君兮"
       },
       {
         "id": "l10",
@@ -322,7 +322,7 @@
         "id": "l11",
         "start": 51.08,
         "end": 54.48,
-        "text": "牵愁中流"
+        "text": "搴舟中流"
       },
       {
         "id": "l12",
@@ -376,13 +376,13 @@
         "id": "l20",
         "start": 80.14,
         "end": 81.74,
-        "text": "心爱君兮"
+        "text": "心悦君兮"
       },
       {
         "id": "l21",
         "start": 81.74,
         "end": 83.32,
-        "text": "追不着"
+        "text": "君不知"
       },
       {
         "id": "l22",
@@ -400,7 +400,13 @@
         "id": "l24",
         "start": 87.44,
         "end": 88.68,
-        "text": "心爱君兮"
+        "text": "心悦君兮"
+      },
+      {
+        "id": "l25",
+        "start": 88.68,
+        "end": 90.24,
+        "text": "不知"
       }
     ]
   },
@@ -416,7 +422,7 @@
       "selectionReason": "Best practical balance of poem recovery and final-couplet hook clarity.",
       "gate": "selected-with-documented-classical-poem-imperfections"
     },
-    "lyricCorrection": "Corrected from selected full-mix large-v3 ASR and the poem-only hook prompt. The active lyric now uses a sound-close compromise where the render diverges from strict original text, while the production note documents the source poem and correction choices.",
+    "lyricCorrection": "Corrected from selected full-mix large-v3 ASR and the poem-only hook prompt. The active lyric preserves source text when word count and sound are close, and uses sound-close compromise wording only where the render clearly changes phrase structure.",
     "coverSource": "/home/lachlan/.codex/generated_images/019f0842-25ba-7bd2-9d4b-0b1c60d8a951/ig_0b88aca6cc8e98f5016a4475905be88191ab258691b27b0dea.png",
     "publicAudio": "yue-ren-ge-original-poem-zh-Hans-ace-20260701.mp3"
   }

@@ -329,15 +329,20 @@ Correction policy:
 
 - active vocal language owns timing;
 - translations are based on the corrected active lyric, not the prompt draft;
-- preserve intended words when they are sound-close and contextually right;
+- preserve intended/source words when phrase length and sound are close and the
+  source is contextually stronger; treat ASR's nearby modern word as a guess,
+  not proof;
 - add audible short phrases that ASR swallowed;
+- check the ending manually for soft final syllables; add a conservative tail
+  line when listening catches words that ASR omitted, such as final `不知`;
 - remove planned lines that the audio did not sing;
 - show repeated lines if the audio repeats them;
 - document uncertainty in the production note.
 
 For classical poems, keep the poem text where the rendered syllables are close
-enough and the context is clear. Do not invent clean text that is not supported
-by the audio.
+enough and the context is clear. Only use a sound-close poetic compromise when
+the word count, phrase structure, or audible sound is clearly different. Do not
+invent clean text that is not supported by the audio.
 
 ## Website Preparation
 
