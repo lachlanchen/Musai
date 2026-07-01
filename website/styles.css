@@ -143,6 +143,25 @@ h2 {
   line-height: .8;
 }
 
+.advanced-toggle {
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.82);
+  color: var(--ink);
+  padding: 0 16px;
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 0 10px 24px rgba(42,38,28,.05);
+}
+
+.advanced-toggle:hover,
+.advanced-toggle[aria-pressed="true"] {
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--teal), var(--gold));
+  color: #fff;
+}
+
 .icon-button:hover,
 .icon-button[aria-expanded="true"] {
   border-color: var(--teal);
@@ -843,6 +862,140 @@ rt {
   box-shadow: 0 8px 22px rgba(45,143,131,.24);
 }
 
+.advanced-panel {
+  margin: 0 0 14px;
+  padding: 14px;
+  border: 1px solid rgba(45,143,131,.18);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(45,143,131,.14), transparent 32%),
+    linear-gradient(135deg, rgba(255,255,255,.92), rgba(228,244,241,.68));
+  box-shadow: 0 14px 34px rgba(42,38,28,.08);
+}
+
+.advanced-panel-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.advanced-panel h3 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.diagram-position {
+  min-width: 46px;
+  border-radius: 999px;
+  background: var(--paper-strong);
+  color: var(--muted);
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.guitar-diagram {
+  --diagram-line: rgba(23,33,29,.25);
+  position: relative;
+  width: min(230px, 100%);
+  height: 212px;
+  margin: 0 auto 10px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,253,248,.88), rgba(255,255,255,.62));
+  overflow: hidden;
+}
+
+.guitar-string,
+.guitar-fret {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+.guitar-string {
+  top: 25px;
+  bottom: 18px;
+  width: 2px;
+  background: var(--diagram-line);
+  transform: translateX(-50%);
+}
+
+.guitar-string:nth-child(2n) {
+  width: 1px;
+}
+
+.guitar-fret {
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: var(--diagram-line);
+  transform: translateY(-50%);
+}
+
+.guitar-fret.nut {
+  height: 5px;
+  border-radius: 999px;
+  background: var(--ink);
+}
+
+.guitar-marker {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--teal), var(--gold));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 950;
+  box-shadow: 0 8px 18px rgba(45,143,131,.23);
+  transform: translate(-50%, -50%);
+}
+
+.guitar-open {
+  position: absolute;
+  top: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 950;
+  transform: translateX(-50%);
+}
+
+.guitar-open.muted {
+  color: var(--rose);
+}
+
+.guitar-empty {
+  min-height: 160px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  text-align: center;
+  font-weight: 800;
+}
+
+.chord-fingering {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.chord-fingering span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  padding: 5px 8px;
+}
+
 .full-lyrics-section {
   margin-top: 16px;
   padding: 20px;
@@ -1072,6 +1225,16 @@ body.capture-mode.capture-portrait .carousel-track .ruby-line {
   }
   .vocal-language-select {
     width: min(148px, 34vw);
+  }
+  .advanced-toggle {
+    width: 44px;
+    padding: 0;
+    font-size: 0;
+  }
+  .advanced-toggle::before {
+    content: "A";
+    font-size: 16px;
+    font-weight: 950;
   }
   .library-peek {
     left: 12px;

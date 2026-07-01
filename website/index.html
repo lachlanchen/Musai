@@ -38,6 +38,7 @@
         </a>
       </div>
       <div class="header-actions">
+        <button id="advanced-toggle" class="advanced-toggle" type="button" aria-label="Toggle advanced chord mode" aria-pressed="false" aria-controls="advanced-panel">Advanced</button>
         <button id="search-toggle" class="icon-button" type="button" aria-label="Search media" aria-expanded="false">⌕</button>
         <label class="vocal-select-wrap" aria-label="Vocal language">
           <select id="vocal-language-select" class="vocal-language-select"></select>
@@ -137,6 +138,17 @@
           <div id="language-tabs" class="language-tabs" aria-label="Localization language"></div>
         </div>
         <div id="chord-row" class="chord-row" aria-label="Chord timeline"></div>
+        <div id="advanced-panel" class="advanced-panel" aria-live="polite" hidden>
+          <div class="advanced-panel-head">
+            <div>
+              <span class="eyebrow">Guitar fingering</span>
+              <h3 id="chord-diagram-name">--</h3>
+            </div>
+            <span id="chord-diagram-position" class="diagram-position"></span>
+          </div>
+          <div id="guitar-diagram" class="guitar-diagram" role="img" aria-label="Guitar chord diagram"></div>
+          <div id="chord-fingering" class="chord-fingering"></div>
+        </div>
         <div id="lyric-carousel" class="lyric-carousel">
           <div class="empty-state"><h2>Loading</h2><p>Media data is loading.</p></div>
         </div>
@@ -152,6 +164,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=20260701-background-audio"></script>
+  <script src="app.js?v=20260701-guitar-advanced"></script>
 </body>
 </html>

@@ -32,6 +32,7 @@ const state = {
   playbackMode: "off",
   userPlaybackMode: false,
   advancingPlayback: false,
+  advancedMode: false,
   mediaSessionHandlersInstalled: false
 };
 
@@ -50,6 +51,59 @@ const PLAYBACK_MODES = [
   { id: "shuffle", label: "Shuffle", title: "Play a random song when this one ends" },
   { id: "single", label: "Loop 1", title: "Loop the current song" }
 ];
+
+const NOTE_FRETS = {
+  E: 0,
+  F: 1,
+  "F#": 2,
+  Gb: 2,
+  G: 3,
+  "G#": 4,
+  Ab: 4,
+  A: 5,
+  "A#": 6,
+  Bb: 6,
+  B: 7,
+  C: 8,
+  "C#": 9,
+  Db: 9,
+  D: 10,
+  "D#": 11,
+  Eb: 11
+};
+
+const GUITAR_CHORDS = {
+  A: { frets: ["x", 0, 2, 2, 2, 0], fingers: ["", "", "1", "2", "3", ""], label: "open A" },
+  Am: { frets: ["x", 0, 2, 2, 1, 0], fingers: ["", "", "2", "3", "1", ""], label: "open A minor" },
+  B: { frets: ["x", 2, 4, 4, 4, 2], fingers: ["", "1", "3", "3", "3", "1"], label: "A-shape barre" },
+  Bb: { frets: ["x", 1, 3, 3, 3, 1], fingers: ["", "1", "3", "3", "3", "1"], label: "A-shape barre" },
+  Bbmaj7: { frets: ["x", 1, 3, 2, 3, 1], fingers: ["", "1", "3", "2", "4", "1"], label: "Bb major 7" },
+  Bm: { frets: ["x", 2, 4, 4, 3, 2], fingers: ["", "1", "3", "4", "2", "1"], label: "A minor-shape barre" },
+  Bbm: { frets: ["x", 1, 3, 3, 2, 1], fingers: ["", "1", "3", "4", "2", "1"], label: "A minor-shape barre" },
+  C: { frets: ["x", 3, 2, 0, 1, 0], fingers: ["", "3", "2", "", "1", ""], label: "open C" },
+  Cadd9: { frets: ["x", 3, 2, 0, 3, 3], fingers: ["", "3", "2", "", "4", "4"], label: "open C add 9" },
+  "C#": { frets: ["x", 4, 6, 6, 6, 4], fingers: ["", "1", "3", "3", "3", "1"], label: "A-shape barre" },
+  "C#m": { frets: ["x", 4, 6, 6, 5, 4], fingers: ["", "1", "3", "4", "2", "1"], label: "A minor-shape barre" },
+  Cm: { frets: ["x", 3, 5, 5, 4, 3], fingers: ["", "1", "3", "4", "2", "1"], label: "A minor-shape barre" },
+  D: { frets: ["x", "x", 0, 2, 3, 2], fingers: ["", "", "", "1", "3", "2"], label: "open D" },
+  Dm: { frets: ["x", "x", 0, 2, 3, 1], fingers: ["", "", "", "2", "3", "1"], label: "open D minor" },
+  "Dm/A": { frets: ["x", 0, 0, 2, 3, 1], fingers: ["", "", "", "2", "3", "1"], label: "D minor over A" },
+  Dm9: { frets: ["x", 5, 3, 5, 5, "x"], fingers: ["", "2", "1", "3", "4", ""], label: "D minor 9" },
+  E: { frets: [0, 2, 2, 1, 0, 0], fingers: ["", "2", "3", "1", "", ""], label: "open E" },
+  Eb: { frets: ["x", 6, 8, 8, 8, 6], fingers: ["", "1", "3", "3", "3", "1"], label: "A-shape barre" },
+  Ebm: { frets: ["x", 6, 8, 8, 7, 6], fingers: ["", "1", "3", "4", "2", "1"], label: "A minor-shape barre" },
+  Em: { frets: [0, 2, 2, 0, 0, 0], fingers: ["", "2", "3", "", "", ""], label: "open E minor" },
+  F: { frets: [1, 3, 3, 2, 1, 1], fingers: ["1", "3", "4", "2", "1", "1"], label: "E-shape barre" },
+  Fadd9: { frets: [1, 3, 3, 0, 1, 1], fingers: ["1", "3", "4", "", "1", "1"], label: "F add 9" },
+  "F#": { frets: [2, 4, 4, 3, 2, 2], fingers: ["1", "3", "4", "2", "1", "1"], label: "E-shape barre" },
+  "F#m": { frets: [2, 4, 4, 2, 2, 2], fingers: ["1", "3", "4", "1", "1", "1"], label: "E minor-shape barre" },
+  Fm: { frets: [1, 3, 3, 1, 1, 1], fingers: ["1", "3", "4", "1", "1", "1"], label: "E minor-shape barre" },
+  G: { frets: [3, 2, 0, 0, 0, 3], fingers: ["3", "2", "", "", "", "4"], label: "open G" },
+  Gm: { frets: [3, 5, 5, 3, 3, 3], fingers: ["1", "3", "4", "1", "1", "1"], label: "E minor-shape barre" },
+  Gm7: { frets: [3, 5, 3, 3, 3, 3], fingers: ["1", "3", "1", "1", "1", "1"], label: "G minor 7" },
+  Ab: { frets: [4, 6, 6, 5, 4, 4], fingers: ["1", "3", "4", "2", "1", "1"], label: "E-shape barre" },
+  Abm: { frets: [4, 6, 6, 4, 4, 4], fingers: ["1", "3", "4", "1", "1", "1"], label: "E minor-shape barre" }
+};
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, (char) => ({
@@ -313,6 +367,146 @@ function activeChordAt(time) {
   return list.find((chord) => time >= chord.start && time < chord.end)
     || [...list].reverse().find((chord) => time >= chord.end)
     || null;
+}
+
+function parseChordName(name) {
+  const source = String(name || "").trim().replace(/♯/g, "#").replace(/♭/g, "b");
+  const base = source.split("/")[0];
+  const match = base.match(/^([A-G](?:#|b)?)(.*)$/);
+  if (!match) return null;
+  const root = match[1];
+  const suffix = match[2] || "";
+  let quality = "";
+  if (/^m(?!aj)/i.test(suffix)) quality = "m";
+  if (/maj7/i.test(suffix)) quality = "maj7";
+  else if (/m7/i.test(suffix)) quality = "m7";
+  else if (/7/i.test(suffix)) quality = "7";
+  else if (/add9/i.test(suffix)) quality = "add9";
+  return { root, quality, key: `${root}${quality}`, suffix, source };
+}
+
+function movableShapeForChord(parsed) {
+  if (!parsed || !Object.prototype.hasOwnProperty.call(NOTE_FRETS, parsed.root)) return null;
+  const rootFret = NOTE_FRETS[parsed.root];
+  const useFret = rootFret === 0 ? 12 : rootFret;
+  if (parsed.quality === "m") {
+    return {
+      frets: [useFret, useFret + 2, useFret + 2, useFret, useFret, useFret],
+      fingers: ["1", "3", "4", "1", "1", "1"],
+      label: "movable minor barre"
+    };
+  }
+  if (parsed.quality === "7") {
+    return {
+      frets: [useFret, useFret + 2, useFret, useFret + 1, useFret, useFret],
+      fingers: ["1", "3", "1", "2", "1", "1"],
+      label: "movable dominant 7"
+    };
+  }
+  if (parsed.quality === "" || parsed.quality === "add9" || parsed.quality === "maj7") {
+    return {
+      frets: [useFret, useFret + 2, useFret + 2, useFret + 1, useFret, useFret],
+      fingers: ["1", "3", "4", "2", "1", "1"],
+      label: parsed.quality ? "movable major shape" : "movable major barre"
+    };
+  }
+  return null;
+}
+
+function guitarShapeForChord(name) {
+  const parsed = parseChordName(name);
+  if (!parsed) return null;
+  const exact = GUITAR_CHORDS[parsed.source] || GUITAR_CHORDS[parsed.key];
+  if (exact) return { ...exact, parsed };
+  const movable = movableShapeForChord(parsed);
+  return movable ? { ...movable, parsed } : null;
+}
+
+function diagramBaseFret(frets) {
+  const numeric = frets.filter((fret) => Number.isFinite(Number(fret)) && Number(fret) > 0).map(Number);
+  if (!numeric.length) return 1;
+  if (numeric.some((fret) => fret === 1) || frets.some((fret) => Number(fret) === 0)) return 1;
+  return Math.min(...numeric);
+}
+
+function renderGuitarDiagram(chordName, shape) {
+  const diagram = $("guitar-diagram");
+  const position = $("chord-diagram-position");
+  const fingering = $("chord-fingering");
+  $("chord-diagram-name").textContent = chordName || "--";
+  if (!shape) {
+    position.textContent = "";
+    diagram.innerHTML = `<div class="guitar-empty">No guitar fingering for this chord yet.</div>`;
+    fingering.innerHTML = `<span>${escapeHtml(chordName || "No chord")}</span>`;
+    return;
+  }
+
+  const frets = shape.frets;
+  const fingers = shape.fingers || [];
+  const baseFret = diagramBaseFret(frets);
+  const fretCount = 5;
+  const stringLeft = (index) => 10 + index * 16;
+  const fretTop = (index) => 12 + index * 17;
+  const markerTop = (absoluteFret) => {
+    const relative = Math.max(1, Number(absoluteFret) - baseFret + 1);
+    return (fretTop(relative - 1) + fretTop(relative)) / 2;
+  };
+
+  const strings = frets.map((_, index) =>
+    `<span class="guitar-string" style="left:${stringLeft(index)}%"></span>`
+  ).join("");
+  const fretLines = Array.from({ length: fretCount + 1 }, (_, index) =>
+    `<span class="guitar-fret ${index === 0 && baseFret === 1 ? "nut" : ""}" style="top:${fretTop(index)}%"></span>`
+  ).join("");
+  const openMuted = frets.map((fret, index) => {
+    const muted = String(fret).toLowerCase() === "x";
+    if (!muted && Number(fret) !== 0) return "";
+    return `<span class="guitar-open ${muted ? "muted" : ""}" style="left:${stringLeft(index)}%">${muted ? "×" : "○"}</span>`;
+  }).join("");
+  const markers = frets.map((fret, index) => {
+    const numeric = Number(fret);
+    if (!Number.isFinite(numeric) || numeric <= 0) return "";
+    const relative = numeric - baseFret + 1;
+    if (relative < 1 || relative > fretCount) return "";
+    const finger = fingers[index] || "●";
+    return `<span class="guitar-marker" style="left:${stringLeft(index)}%;top:${markerTop(numeric)}%">${escapeHtml(finger)}</span>`;
+  }).join("");
+
+  position.textContent = baseFret > 1 ? `${baseFret}fr` : "open";
+  diagram.setAttribute("aria-label", `${chordName} guitar fingering`);
+  diagram.innerHTML = `${strings}${fretLines}${openMuted}${markers}`;
+  fingering.innerHTML = [
+    `<span>${escapeHtml(shape.label || "guitar shape")}</span>`,
+    `<span>frets ${escapeHtml(frets.join(" "))}</span>`,
+    `<span>E A D G B E</span>`
+  ].join("");
+}
+
+function updateAdvancedChord(activeChord = null) {
+  const panel = $("advanced-panel");
+  if (!panel) return;
+  panel.hidden = !state.advancedMode || !activeChord;
+  if (!state.advancedMode) return;
+  const chordName = activeChord?.name || "";
+  renderGuitarDiagram(chordName, guitarShapeForChord(chordName));
+}
+
+function setAdvancedMode(enabled, { persist = true } = {}) {
+  state.advancedMode = Boolean(enabled);
+  document.body.classList.toggle("advanced-mode", state.advancedMode);
+  const button = $("advanced-toggle");
+  if (button) {
+    button.setAttribute("aria-pressed", state.advancedMode ? "true" : "false");
+    button.textContent = state.advancedMode ? "Advanced On" : "Advanced";
+  }
+  if (persist) {
+    try {
+      localStorage.setItem("funAdvancedMode", state.advancedMode ? "1" : "0");
+    } catch {
+      // Storage can be unavailable in private or file contexts.
+    }
+  }
+  updateAdvancedChord(activeChordAt(state.mediaElement?.currentTime || 0));
 }
 
 function youtubeIdFromUrl(value) {
@@ -866,6 +1060,7 @@ function renderChords(activeChord = null) {
       row.scrollTo({ left: Math.max(0, centeredLeft), behavior: state.captureMode ? "auto" : "smooth" });
     });
   }
+  updateAdvancedChord(activeChord);
 }
 
 function renderCarousel(activeLine) {
@@ -1092,6 +1287,7 @@ function bindEvents() {
   $("library-close").addEventListener("click", () => setLibraryOpen(false));
   $("library-backdrop").addEventListener("click", () => setLibraryOpen(false));
   $("search-toggle").addEventListener("click", () => setSearchOpen(true));
+  $("advanced-toggle").addEventListener("click", () => setAdvancedMode(!state.advancedMode));
   document.querySelectorAll("[data-kind-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       state.kindFilter = button.dataset.kindFilter;
@@ -1189,10 +1385,16 @@ async function boot() {
   state.captureMode = params.get("capture") === "1" || params.get("record") === "1";
   state.skipIntroOnLoad = params.get("skipIntro") === "1" || params.get("skip") === "vocal";
   state.requestedAssetId = params.get("asset") || "";
+  try {
+    state.advancedMode = params.get("advanced") === "1" || (!state.captureMode && localStorage.getItem("funAdvancedMode") === "1");
+  } catch {
+    state.advancedMode = params.get("advanced") === "1";
+  }
   document.body.classList.toggle("capture-mode", state.captureMode);
   document.body.classList.toggle("capture-full-lyrics", state.captureMode && params.get("fullLyrics") === "1");
   document.body.classList.toggle("capture-portrait", state.captureMode && params.get("portrait") === "1");
   bindEvents();
+  setAdvancedMode(state.advancedMode, { persist: false });
   state.catalog = await loadJson("data/catalog.json");
   startLibraryPeekLoop();
   const requestedId = params.get("media") || params.get("id") || window.location.hash.replace(/^#/, "");
