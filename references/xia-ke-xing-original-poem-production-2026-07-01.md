@@ -157,3 +157,78 @@ git diff --check
 ```
 
 All passed before commit.
+
+## Rerun And Replacement - 2026-07-01
+
+The user requested a new `侠客行 · 原诗版` generation that learns from the
+later original-poem workflows and improves lyric alignment.
+
+New project:
+
+```text
+data/creative_projects/xia-ke-xing-original-poem-rerun-20260701
+```
+
+Routes tested:
+
+- XL sectioned route, 158s, seeds `734101`, `734102`.
+- Non-XL long phrase-sheet route, 166s, seeds `734103`, `734104`.
+- XL sectioned "more candidates" route, 186s, seeds `734105`, `734106`, `734107`.
+- Non-XL couplet route, 112s, seeds `734109`, `734110`, `734111`, `734112`.
+- Non-XL direct-start couplet route, 104s, seeds `734113`, `734114`, `734115`, `734116`.
+
+The successful rerun candidate was:
+
+```text
+data/creative_projects/xia-ke-xing-original-poem-rerun-20260701/ace_outputs/zh_turbo_direct_start/6cafb2cb-ed99-9aa6-bb76-de0b56df38d0.wav
+```
+
+Seed: `734114`
+
+Why it replaced the old public audio:
+
+- Quick small-ASR overlap improved from the old selected seed's `0.2583` to
+  `0.2750`.
+- Selected-audio large-v3 overlap improved to `0.3333`.
+- Vocal-stem large-v3 overlap improved to `0.3417`.
+- It recovers the opening couplet more clearly than seed `734111`, which had
+  a better middle section but skipped the beginning more strongly.
+
+Deep evidence packet:
+
+```text
+data/creative_projects/xia-ke-xing-original-poem-rerun-20260701/correction_packets/seed-734114-large-v3/CORRECTION_PACKET.md
+```
+
+Analysis run:
+
+```text
+data/runs/xia-ke-xing-original-poem-rerun-20260701-seed734114-analysis
+```
+
+Correction decisions:
+
+- Preserve the original poem wording when the rendered syllables are
+  sound-close and supported by both selected-audio and vocal-stem ASR.
+- Show the real rendered repeat around `千里不留行` / `事了拂衣去`.
+- Keep the repeated tail `白首太玄经`.
+- Do not publish the vocal-stem no-VAD hallucinated `作词/作曲 李宗盛` phrase:
+  the separated vocal is silent until about `11.25s`, and the full-mix ASR does
+  not support that as audible lyric.
+
+Updated public audio:
+
+```text
+https://lazyingart.github.io/MusiaSongs/audio/xia-ke-xing-original-poem-zh-Hans-ace-rerun-20260701.mp3
+```
+
+Updated website item:
+
+```text
+https://fun.lazying.art/#xia-ke-xing-original-poem
+```
+
+Important caveat: this is an improvement over the previous exact-poem candidate,
+but it is still not a perfect classical-poem master. ACE continues to mutate
+some dense classical diction. The adapted normal-song `侠客行` remains the
+smoother musical version; this item exists for original-poem mode.

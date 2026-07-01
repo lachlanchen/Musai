@@ -15,10 +15,10 @@ from pypinyin import Style, pinyin
 ROOT = Path(__file__).resolve().parents[1]
 SONGS = ROOT.parent / "MusiaSongs"
 MEDIA_ID = "xia-ke-xing-original-poem"
-PROJECT = ROOT / "data/creative_projects/xia-ke-xing-original-poem-20260701"
-SELECTED_WAV = PROJECT / "ace_outputs/zh_corrected_20260701-022423/94467276-ec50-3742-609c-4654c61e4cda.wav"
-ANALYSIS = ROOT / "data/runs/xia-ke-xing-original-poem-20260701-20260701-022506-analysis"
-PUBLIC_AUDIO_NAME = "xia-ke-xing-original-poem-zh-Hans-ace-20260701.mp3"
+PROJECT = ROOT / "data/creative_projects/xia-ke-xing-original-poem-rerun-20260701"
+SELECTED_WAV = PROJECT / "ace_outputs/zh_turbo_direct_start/6cafb2cb-ed99-9aa6-bb76-de0b56df38d0.wav"
+ANALYSIS = ROOT / "data/runs/xia-ke-xing-original-poem-rerun-20260701-seed734114-analysis"
+PUBLIC_AUDIO_NAME = "xia-ke-xing-original-poem-zh-Hans-ace-rerun-20260701.mp3"
 PUBLIC_AUDIO = f"https://lazyingart.github.io/MusiaSongs/audio/{PUBLIC_AUDIO_NAME}"
 COVER = "assets/covers/xia-ke-xing-original-poem-16x9.png"
 
@@ -69,14 +69,15 @@ def zh_pinyin_for(line_text: str, char: str) -> str:
     if not is_cjk(char):
         return ""
     overrides = {
-        ("飒沓如流星", "沓"): "ta4",
-        ("事了拂衣去", "了"): "liao3",
-        ("千里不留行", "行"): "xing2",
+        ("飒沓", "沓"): "ta4",
+        ("事了", "了"): "liao3",
+        ("不留行", "行"): "xing2",
         ("五岳倒为轻", "为"): "wei2",
-        ("烜赫大梁城", "烜"): "xuan3",
+        ("烜赫", "烜"): "xuan3",
     }
-    if (line_text, char) in overrides:
-        return overrides[(line_text, char)]
+    for (needle, target), reading in overrides.items():
+        if needle in line_text and char == target:
+            return reading
     values = pinyin(char, style=Style.TONE3, strict=False, neutral_tone_with_five=True)
     return values[0][0] if values and values[0] else ""
 
@@ -138,36 +139,26 @@ def make_line(line_id: str, start: float, end: float, text: str, code: str) -> d
 
 
 def corrected_rows() -> list[tuple[str, float, float, str, str, str]]:
-    # Candidate 3 was selected from four exact-poem ACE passes. Timings and line
-    # choices are based on vocal-stem medium/large no-VAD ASR plus a large-v3
-    # prompted pass. The active text preserves Li Bai's poem only where the
-    # rendered syllables support it; omitted, repeated, and mutated lines follow
-    # the actual sound instead of the prompt.
+    # Rerun seed 734114 was selected from fifteen exact-poem ACE passes. Timings
+    # and line choices are based on selected-audio and vocal-stem large-v3 ASR,
+    # with no-VAD segments used for repeated/soft phrases. Preserve Li Bai's
+    # wording where the rendered syllables are sound-close; show repeats where
+    # the model actually repeats a phrase.
     return [
-        ("l01", 20.00, 22.72, "赵客缦胡缨", "Zhao knights wear rough Hu tassels.", "趙の侠客は胡の粗い冠紐をまとう"),
-        ("l02", 22.72, 25.18, "赵客缦胡缨", "Zhao knights wear rough Hu tassels again.", "趙の侠客はふたたび胡の冠紐をまとう"),
-        ("l03", 25.18, 27.24, "吴钩霜雪明", "Their Wu hooks gleam like frost and snow.", "呉鉤は霜雪のように明るい"),
-        ("l04", 28.56, 30.35, "银鞍照白马", "Silver saddles shine on white horses.", "銀の鞍が白馬を照らす"),
-        ("l05", 30.35, 32.18, "飒沓如流星", "Swift and ringing, like falling stars.", "颯沓として流星のように駆ける"),
-        ("l06", 33.14, 34.96, "十步杀一人", "In ten steps, one man falls.", "十歩に一人を斬る"),
-        ("l07", 34.96, 37.14, "事了拂衣去", "When the deed is done, he brushes his robe and leaves.", "事が終われば衣を払って去る"),
-        ("l08", 37.14, 40.00, "深藏身与名", "Hiding both his body and his name.", "身も名も深く隠す"),
-        ("l09", 43.64, 45.82, "脱剑膝前横", "He takes off his sword and lays it across his knees.", "剣を脱ぎ膝前に横たえる"),
-        ("l10", 46.62, 48.92, "将炙啖朱亥", "He brings roast meat for Zhu Hai to eat.", "炙り肉を朱亥にすすめる"),
-        ("l11", 48.92, 51.34, "持觞劝侯嬴", "Holding a cup, he urges Hou Ying to drink.", "杯を持って侯嬴に勧める"),
-        ("l12", 51.34, 53.64, "持觞劝侯嬴", "Holding the cup, he urges Hou Ying again.", "杯を持ち、もう一度侯嬴に勧める"),
-        ("l13", 56.26, 59.20, "三杯吐然诺", "After three cups, his pledge is spoken.", "三杯の後、約束を口にする"),
-        ("l14", 59.20, 61.82, "五岳倒为轻", "The Five Sacred Peaks become light beside it.", "五岳も倒れて軽しとなる"),
-        ("l15", 64.28, 66.55, "眼花耳热后", "When eyes dazzle and ears burn,", "目はくらみ耳は熱した後"),
-        ("l16", 66.55, 68.86, "意气素霓生", "His spirit rises like a white rainbow.", "意気は白い虹となって生じる"),
-        ("l17", 68.86, 71.34, "救赵挥金槌", "To rescue Zhao, he swings the golden hammer.", "趙を救わんと金槌を振るう"),
-        ("l18", 71.34, 75.20, "邯郸先震惊", "Handan is shaken before all others.", "邯鄲はまず震え驚く"),
-        ("l19", 76.20, 78.30, "千秋二壮士", "For a thousand autumns, the two heroes remain.", "千秋に二人の壮士あり"),
-        ("l20", 78.30, 80.50, "烜赫大梁城", "Their fame blazes through Daliang city.", "大梁の城に赫々と名をあげる"),
-        ("l21", 80.50, 83.36, "纵死侠骨香", "Even in death, knightly bones are fragrant.", "たとえ死しても侠骨は香る"),
-        ("l22", 83.36, 86.20, "不惭世上英", "They need not blush before the world's heroes.", "世の英傑に恥じることはない"),
-        ("l23", 88.80, 91.14, "谁能说孤侠", "Who can speak for the lone knight?", "誰が孤高の侠客を語れるだろう"),
-        ("l24", 91.14, 93.96, "白首太仙境", "White hair drifts toward a fairy realm.", "白髪は仙境へと向かう"),
+        ("l01", 10.66, 14.92, "赵客缦胡缨，吴钩霜雪明", "Zhao knights wear rough Hu tassels; Wu hooks gleam like frost and snow.", "趙の侠客は胡の冠紐をまとい、呉鉤は霜雪のように明るい"),
+        ("l02", 16.46, 21.20, "银鞍照白马，飒沓如流星", "Silver saddles shine on white horses, swift as falling stars.", "銀の鞍は白馬を照らし、颯沓として流星のように駆ける"),
+        ("l03", 22.18, 26.78, "十步杀一人，千里不留行", "In ten steps, one man falls; across a thousand miles, no trace remains.", "十歩に一人を斬り、千里にも行跡を残さない"),
+        ("l04", 26.78, 31.66, "事了拂衣去，千里不留行", "The deed done, he brushes his robe and leaves, leaving no trace.", "事が終われば衣を払って去り、行跡を残さない"),
+        ("l05", 31.66, 36.24, "事了拂衣去，深藏身与名", "The deed done, he brushes his robe and hides both body and name.", "事が終われば衣を払って去り、身も名も深く隠す"),
+        ("l06", 39.88, 43.94, "闲过信陵饮，脱剑膝前横", "At ease he drinks with Xinling, sword laid across his knees.", "信陵のもとで酒を飲み、剣を脱いで膝前に横たえる"),
+        ("l07", 45.52, 49.82, "将炙啖朱亥，持觞劝侯嬴", "He offers roast meat to Zhu Hai and raises a cup to Hou Ying.", "炙り肉を朱亥にすすめ、杯を持って侯嬴に勧める"),
+        ("l08", 51.00, 55.42, "三杯吐然诺，五岳倒为轻", "After three cups, his pledge is spoken; the Five Peaks seem light.", "三杯の後に約束を口にすれば、五岳も軽くなる"),
+        ("l09", 55.42, 59.90, "眼花耳热后，意气素霓生", "Eyes dazzle, ears burn, and his spirit rises like a white rainbow.", "目はくらみ耳は熱し、意気は白い虹のように生じる"),
+        ("l10", 60.42, 65.60, "救赵挥金槌，邯郸先震惊", "To rescue Zhao, he swings the golden hammer; Handan trembles first.", "趙を救わんと金槌を振るい、邯鄲はまず震え驚く"),
+        ("l11", 65.60, 71.02, "千秋二壮士，烜赫大梁城", "For a thousand autumns, the two heroes blaze through Daliang city.", "千秋に二人の壮士あり、大梁の城に赫々と名をあげる"),
+        ("l12", 71.02, 75.98, "纵死侠骨香，不惭世上英", "Even in death, knightly bones are fragrant, not ashamed before heroes.", "たとえ死しても侠骨は香り、世の英傑に恥じない"),
+        ("l13", 77.10, 81.18, "谁能书阁下，白首太玄经", "Who would write below the tower, white-haired over the Taixuan classic?", "誰が閣下に記し、白髪で太玄経に向かうのか"),
+        ("l14", 90.50, 93.42, "白首太玄经", "White-haired over the Taixuan classic.", "白髪で太玄経に向かう"),
     ]
 
 
@@ -181,10 +172,11 @@ def track(code: str, lines: list[dict[str, Any]]) -> dict[str, Any]:
         "provenance": {
             "vocalSet": "zh-vocal",
             "correction": (
-                "Original-poem ACE experiment. Candidate 3 selected from four exact-poem renders. "
-                "Timings use vocal-stem medium/large no-VAD ASR. The active Mandarin text preserves Li Bai's "
-                "original poem where the rendered syllables are sound-close, but the production note documents "
-                "that classical diction is imperfect and some lines are weakly recovered."
+                "Original-poem ACE rerun. Seed 734114 selected from fifteen exact-poem candidates. "
+                "Timings use selected-audio and vocal-stem large-v3 ASR plus no-VAD segment anchors. "
+                "The active Mandarin text preserves Li Bai's original poem where rendered syllables are sound-close, "
+                "shows the rendered repeat around 千里不留行/事了拂衣去, and omits no-VAD hallucinated credits "
+                "inside the silent intro."
             ),
         },
     }
@@ -263,7 +255,7 @@ def write_media_item() -> None:
             "ja": "侠客行・原詩版",
         },
         "artist": "Musia",
-        "description": "An ACE-Step original-poem experiment using Li Bai's 侠客行 text as the lyric source, with ASR-audited trilingual website lyrics.",
+        "description": "An ACE-Step original-poem rerun using Li Bai's 侠客行 text as the lyric source, with large-v3 ASR-audited trilingual website lyrics.",
         "caption": "A white horse, moonlit sword light, and Li Bai's original poem set as a wuxia art song.",
         "duration": round(duration(SELECTED_WAV), 3),
         "canonicalUrl": f"https://fun.lazying.art/#{MEDIA_ID}",
@@ -335,20 +327,21 @@ def write_media_item() -> None:
         "artifacts": [],
         "provenance": {
             "createdBy": "Musia",
-            "generationProject": "data/creative_projects/xia-ke-xing-original-poem-20260701",
-            "audioSource": "ACE-Step 1.5 non-XL turbo seed 731903, selected from four exact-poem candidates.",
+            "generationProject": "data/creative_projects/xia-ke-xing-original-poem-rerun-20260701",
+            "audioSource": "ACE-Step 1.5 non-XL turbo direct-start seed 734114, selected from fifteen exact-poem rerun candidates.",
             "analysisRun": str(ANALYSIS.relative_to(ROOT)),
             "quality": {
-                "selectedAudioLargeV3Overlap": 0.25833333333333336,
-                "vocalStemMediumOverlap": 0.3333333333333333,
-                "vocalStemLargeV3Overlap": 0.31666666666666665,
-                "gate": "experimental-review",
+                "quickSmallAsrOverlap": 0.275,
+                "selectedAudioLargeV3Overlap": 0.3333333333333333,
+                "vocalStemLargeV3Overlap": 0.3416666666666667,
+                "gate": "rerun-selected-review",
             },
             "lyricCorrection": (
-                "ASR-realigned original-poem track, updated 2026-07-01 after a large-v3 prompted pass on the separated vocal stem. "
-                "The active Mandarin lyric reflects repeated, omitted, and mutated lines in the render: the opening repeats a "
-                "赵客缦胡缨-like phrase, 千里不留行 and 闲过信陵饮 are not published as sung lines, 持觞劝侯嬴 repeats, and the "
-                "final couplet follows the AI-mutated sound. This render has imperfect classical diction; do not treat it as a perfect commercial master."
+                "ASR-realigned original-poem rerun, updated 2026-07-01 after quick small screening of fifteen candidates and "
+                "large-v3 correction on selected audio plus separated vocal stem. The active Mandarin lyric preserves the original poem "
+                "where sound-close, reflects the rendered repeat around 千里不留行/事了拂衣去, and keeps a repeated 白首太玄经 tail. "
+                "A vocal-stem no-VAD pass hallucinated 作词/作曲 李宗盛 during the silent intro; silencedetect and full-mix ASR do not support publishing that as lyric. "
+                "This is improved over the old seed 731903 item but remains an imperfect exact classical-poem render."
             ),
             "coverSource": "/home/lachlan/.codex/generated_images/019f0842-25ba-7bd2-9d4b-0b1c60d8a951/ig_0075c3bed0eb0cd1016a440b08763c8191833a70b775131ef6.png",
             "publicAudio": PUBLIC_AUDIO_NAME,
@@ -365,7 +358,7 @@ def write_media_item() -> None:
         "artist": "Musia",
         "manifest": f"data/songs/{MEDIA_ID}/manifest.json",
         "cover": COVER,
-        "tags": ["song", "li-bai", "tang-poetry", "wuxia", "ace", "original-poem"],
+        "tags": ["song", "li-bai", "tang-poetry", "wuxia", "ace", "original-poem", "rerun"],
         "languages": ["zh-Hans", "en", "ja"],
     }
     catalog["items"] = [entry for entry in catalog.get("items", []) if entry.get("id") != MEDIA_ID]

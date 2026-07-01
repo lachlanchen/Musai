@@ -12,967 +12,1022 @@
   "lines": [
     {
       "id": "l01",
-      "start": 20.0,
-      "end": 22.72,
-      "text": "赵客缦胡缨",
-      "singableText": "赵客缦胡缨",
+      "start": 10.66,
+      "end": 14.92,
+      "text": "赵客缦胡缨，吴钩霜雪明",
+      "singableText": "赵客缦胡缨，吴钩霜雪明",
       "role": "lyric",
       "tokens": [
         {
           "text": "赵",
-          "start": 20.0,
-          "end": 20.544,
+          "start": 10.66,
+          "end": 11.047,
           "pinyin": "zhao4"
         },
         {
           "text": "客",
-          "start": 20.544,
-          "end": 21.088,
+          "start": 11.047,
+          "end": 11.435,
           "pinyin": "ke4"
         },
         {
           "text": "缦",
-          "start": 21.088,
-          "end": 21.632,
+          "start": 11.435,
+          "end": 11.822,
           "pinyin": "man4"
         },
         {
           "text": "胡",
-          "start": 21.632,
-          "end": 22.176,
+          "start": 11.822,
+          "end": 12.209,
           "pinyin": "hu2"
         },
         {
           "text": "缨",
-          "start": 22.176,
-          "end": 22.72,
+          "start": 12.209,
+          "end": 12.596,
           "pinyin": "ying1"
+        },
+        {
+          "text": "，",
+          "start": 12.596,
+          "end": 12.984
+        },
+        {
+          "text": "吴",
+          "start": 12.984,
+          "end": 13.371,
+          "pinyin": "wu2"
+        },
+        {
+          "text": "钩",
+          "start": 13.371,
+          "end": 13.758,
+          "pinyin": "gou1"
+        },
+        {
+          "text": "霜",
+          "start": 13.758,
+          "end": 14.145,
+          "pinyin": "shuang1"
+        },
+        {
+          "text": "雪",
+          "start": 14.145,
+          "end": 14.533,
+          "pinyin": "xue3"
+        },
+        {
+          "text": "明",
+          "start": 14.533,
+          "end": 14.92,
+          "pinyin": "ming2"
         }
       ]
     },
     {
       "id": "l02",
-      "start": 22.72,
-      "end": 25.18,
-      "text": "赵客缦胡缨",
-      "singableText": "赵客缦胡缨",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "赵",
-          "start": 22.72,
-          "end": 23.212,
-          "pinyin": "zhao4"
-        },
-        {
-          "text": "客",
-          "start": 23.212,
-          "end": 23.704,
-          "pinyin": "ke4"
-        },
-        {
-          "text": "缦",
-          "start": 23.704,
-          "end": 24.196,
-          "pinyin": "man4"
-        },
-        {
-          "text": "胡",
-          "start": 24.196,
-          "end": 24.688,
-          "pinyin": "hu2"
-        },
-        {
-          "text": "缨",
-          "start": 24.688,
-          "end": 25.18,
-          "pinyin": "ying1"
-        }
-      ]
-    },
-    {
-      "id": "l03",
-      "start": 25.18,
-      "end": 27.24,
-      "text": "吴钩霜雪明",
-      "singableText": "吴钩霜雪明",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "吴",
-          "start": 25.18,
-          "end": 25.592,
-          "pinyin": "wu2"
-        },
-        {
-          "text": "钩",
-          "start": 25.592,
-          "end": 26.004,
-          "pinyin": "gou1"
-        },
-        {
-          "text": "霜",
-          "start": 26.004,
-          "end": 26.416,
-          "pinyin": "shuang1"
-        },
-        {
-          "text": "雪",
-          "start": 26.416,
-          "end": 26.828,
-          "pinyin": "xue3"
-        },
-        {
-          "text": "明",
-          "start": 26.828,
-          "end": 27.24,
-          "pinyin": "ming2"
-        }
-      ]
-    },
-    {
-      "id": "l04",
-      "start": 28.56,
-      "end": 30.35,
-      "text": "银鞍照白马",
-      "singableText": "银鞍照白马",
+      "start": 16.46,
+      "end": 21.2,
+      "text": "银鞍照白马，飒沓如流星",
+      "singableText": "银鞍照白马，飒沓如流星",
       "role": "lyric",
       "tokens": [
         {
           "text": "银",
-          "start": 28.56,
-          "end": 28.918,
+          "start": 16.46,
+          "end": 16.891,
           "pinyin": "yin2"
         },
         {
           "text": "鞍",
-          "start": 28.918,
-          "end": 29.276,
+          "start": 16.891,
+          "end": 17.322,
           "pinyin": "an1"
         },
         {
           "text": "照",
-          "start": 29.276,
-          "end": 29.634,
+          "start": 17.322,
+          "end": 17.753,
           "pinyin": "zhao4"
         },
         {
           "text": "白",
-          "start": 29.634,
-          "end": 29.992,
+          "start": 17.753,
+          "end": 18.184,
           "pinyin": "bai2"
         },
         {
           "text": "马",
-          "start": 29.992,
-          "end": 30.35,
+          "start": 18.184,
+          "end": 18.615,
           "pinyin": "ma3"
-        }
-      ]
-    },
-    {
-      "id": "l05",
-      "start": 30.35,
-      "end": 32.18,
-      "text": "飒沓如流星",
-      "singableText": "飒沓如流星",
-      "role": "lyric",
-      "tokens": [
+        },
+        {
+          "text": "，",
+          "start": 18.615,
+          "end": 19.045
+        },
         {
           "text": "飒",
-          "start": 30.35,
-          "end": 30.716,
+          "start": 19.045,
+          "end": 19.476,
           "pinyin": "sa4"
         },
         {
           "text": "沓",
-          "start": 30.716,
-          "end": 31.082,
+          "start": 19.476,
+          "end": 19.907,
           "pinyin": "ta4"
         },
         {
           "text": "如",
-          "start": 31.082,
-          "end": 31.448,
+          "start": 19.907,
+          "end": 20.338,
           "pinyin": "ru2"
         },
         {
           "text": "流",
-          "start": 31.448,
-          "end": 31.814,
+          "start": 20.338,
+          "end": 20.769,
           "pinyin": "liu2"
         },
         {
           "text": "星",
-          "start": 31.814,
-          "end": 32.18,
+          "start": 20.769,
+          "end": 21.2,
           "pinyin": "xing1"
         }
       ]
     },
     {
-      "id": "l06",
-      "start": 33.14,
-      "end": 34.96,
-      "text": "十步杀一人",
-      "singableText": "十步杀一人",
+      "id": "l03",
+      "start": 22.18,
+      "end": 26.78,
+      "text": "十步杀一人，千里不留行",
+      "singableText": "十步杀一人，千里不留行",
       "role": "lyric",
       "tokens": [
         {
           "text": "十",
-          "start": 33.14,
-          "end": 33.504,
+          "start": 22.18,
+          "end": 22.598,
           "pinyin": "shi2"
         },
         {
           "text": "步",
-          "start": 33.504,
-          "end": 33.868,
+          "start": 22.598,
+          "end": 23.016,
           "pinyin": "bu4"
         },
         {
           "text": "杀",
-          "start": 33.868,
-          "end": 34.232,
+          "start": 23.016,
+          "end": 23.435,
           "pinyin": "sha1"
         },
         {
           "text": "一",
-          "start": 34.232,
-          "end": 34.596,
+          "start": 23.435,
+          "end": 23.853,
           "pinyin": "yi1"
         },
         {
           "text": "人",
-          "start": 34.596,
-          "end": 34.96,
+          "start": 23.853,
+          "end": 24.271,
           "pinyin": "ren2"
+        },
+        {
+          "text": "，",
+          "start": 24.271,
+          "end": 24.689
+        },
+        {
+          "text": "千",
+          "start": 24.689,
+          "end": 25.107,
+          "pinyin": "qian1"
+        },
+        {
+          "text": "里",
+          "start": 25.107,
+          "end": 25.525,
+          "pinyin": "li3"
+        },
+        {
+          "text": "不",
+          "start": 25.525,
+          "end": 25.944,
+          "pinyin": "bu4"
+        },
+        {
+          "text": "留",
+          "start": 25.944,
+          "end": 26.362,
+          "pinyin": "liu2"
+        },
+        {
+          "text": "行",
+          "start": 26.362,
+          "end": 26.78,
+          "pinyin": "xing2"
         }
       ]
     },
     {
-      "id": "l07",
-      "start": 34.96,
-      "end": 37.14,
-      "text": "事了拂衣去",
-      "singableText": "事了拂衣去",
+      "id": "l04",
+      "start": 26.78,
+      "end": 31.66,
+      "text": "事了拂衣去，千里不留行",
+      "singableText": "事了拂衣去，千里不留行",
       "role": "lyric",
       "tokens": [
         {
           "text": "事",
-          "start": 34.96,
-          "end": 35.396,
+          "start": 26.78,
+          "end": 27.224,
           "pinyin": "shi4"
         },
         {
           "text": "了",
-          "start": 35.396,
-          "end": 35.832,
+          "start": 27.224,
+          "end": 27.667,
           "pinyin": "liao3"
         },
         {
           "text": "拂",
-          "start": 35.832,
-          "end": 36.268,
+          "start": 27.667,
+          "end": 28.111,
           "pinyin": "fu2"
         },
         {
           "text": "衣",
-          "start": 36.268,
-          "end": 36.704,
+          "start": 28.111,
+          "end": 28.555,
           "pinyin": "yi1"
         },
         {
           "text": "去",
-          "start": 36.704,
-          "end": 37.14,
+          "start": 28.555,
+          "end": 28.998,
           "pinyin": "qu4"
+        },
+        {
+          "text": "，",
+          "start": 28.998,
+          "end": 29.442
+        },
+        {
+          "text": "千",
+          "start": 29.442,
+          "end": 29.885,
+          "pinyin": "qian1"
+        },
+        {
+          "text": "里",
+          "start": 29.885,
+          "end": 30.329,
+          "pinyin": "li3"
+        },
+        {
+          "text": "不",
+          "start": 30.329,
+          "end": 30.773,
+          "pinyin": "bu4"
+        },
+        {
+          "text": "留",
+          "start": 30.773,
+          "end": 31.216,
+          "pinyin": "liu2"
+        },
+        {
+          "text": "行",
+          "start": 31.216,
+          "end": 31.66,
+          "pinyin": "xing2"
         }
       ]
     },
     {
-      "id": "l08",
-      "start": 37.14,
-      "end": 40.0,
-      "text": "深藏身与名",
-      "singableText": "深藏身与名",
+      "id": "l05",
+      "start": 31.66,
+      "end": 36.24,
+      "text": "事了拂衣去，深藏身与名",
+      "singableText": "事了拂衣去，深藏身与名",
       "role": "lyric",
       "tokens": [
         {
+          "text": "事",
+          "start": 31.66,
+          "end": 32.076,
+          "pinyin": "shi4"
+        },
+        {
+          "text": "了",
+          "start": 32.076,
+          "end": 32.493,
+          "pinyin": "liao3"
+        },
+        {
+          "text": "拂",
+          "start": 32.493,
+          "end": 32.909,
+          "pinyin": "fu2"
+        },
+        {
+          "text": "衣",
+          "start": 32.909,
+          "end": 33.325,
+          "pinyin": "yi1"
+        },
+        {
+          "text": "去",
+          "start": 33.325,
+          "end": 33.742,
+          "pinyin": "qu4"
+        },
+        {
+          "text": "，",
+          "start": 33.742,
+          "end": 34.158
+        },
+        {
           "text": "深",
-          "start": 37.14,
-          "end": 37.712,
+          "start": 34.158,
+          "end": 34.575,
           "pinyin": "shen1"
         },
         {
           "text": "藏",
-          "start": 37.712,
-          "end": 38.284,
+          "start": 34.575,
+          "end": 34.991,
           "pinyin": "cang2"
         },
         {
           "text": "身",
-          "start": 38.284,
-          "end": 38.856,
+          "start": 34.991,
+          "end": 35.407,
           "pinyin": "shen1"
         },
         {
           "text": "与",
-          "start": 38.856,
-          "end": 39.428,
+          "start": 35.407,
+          "end": 35.824,
           "pinyin": "yu3"
         },
         {
           "text": "名",
-          "start": 39.428,
-          "end": 40.0,
+          "start": 35.824,
+          "end": 36.24,
           "pinyin": "ming2"
         }
       ]
     },
     {
-      "id": "l09",
-      "start": 43.64,
-      "end": 45.82,
-      "text": "脱剑膝前横",
-      "singableText": "脱剑膝前横",
+      "id": "l06",
+      "start": 39.88,
+      "end": 43.94,
+      "text": "闲过信陵饮，脱剑膝前横",
+      "singableText": "闲过信陵饮，脱剑膝前横",
       "role": "lyric",
       "tokens": [
         {
+          "text": "闲",
+          "start": 39.88,
+          "end": 40.249,
+          "pinyin": "xian2"
+        },
+        {
+          "text": "过",
+          "start": 40.249,
+          "end": 40.618,
+          "pinyin": "guo4"
+        },
+        {
+          "text": "信",
+          "start": 40.618,
+          "end": 40.987,
+          "pinyin": "xin4"
+        },
+        {
+          "text": "陵",
+          "start": 40.987,
+          "end": 41.356,
+          "pinyin": "ling2"
+        },
+        {
+          "text": "饮",
+          "start": 41.356,
+          "end": 41.725,
+          "pinyin": "yin3"
+        },
+        {
+          "text": "，",
+          "start": 41.725,
+          "end": 42.095
+        },
+        {
           "text": "脱",
-          "start": 43.64,
-          "end": 44.076,
+          "start": 42.095,
+          "end": 42.464,
           "pinyin": "tuo1"
         },
         {
           "text": "剑",
-          "start": 44.076,
-          "end": 44.512,
+          "start": 42.464,
+          "end": 42.833,
           "pinyin": "jian4"
         },
         {
           "text": "膝",
-          "start": 44.512,
-          "end": 44.948,
+          "start": 42.833,
+          "end": 43.202,
           "pinyin": "xi1"
         },
         {
           "text": "前",
-          "start": 44.948,
-          "end": 45.384,
+          "start": 43.202,
+          "end": 43.571,
           "pinyin": "qian2"
         },
         {
           "text": "横",
-          "start": 45.384,
-          "end": 45.82,
+          "start": 43.571,
+          "end": 43.94,
           "pinyin": "heng2"
         }
       ]
     },
     {
-      "id": "l10",
-      "start": 46.62,
-      "end": 48.92,
-      "text": "将炙啖朱亥",
-      "singableText": "将炙啖朱亥",
+      "id": "l07",
+      "start": 45.52,
+      "end": 49.82,
+      "text": "将炙啖朱亥，持觞劝侯嬴",
+      "singableText": "将炙啖朱亥，持觞劝侯嬴",
       "role": "lyric",
       "tokens": [
         {
           "text": "将",
-          "start": 46.62,
-          "end": 47.08,
+          "start": 45.52,
+          "end": 45.911,
           "pinyin": "jiang1"
         },
         {
           "text": "炙",
-          "start": 47.08,
-          "end": 47.54,
+          "start": 45.911,
+          "end": 46.302,
           "pinyin": "zhi4"
         },
         {
           "text": "啖",
-          "start": 47.54,
-          "end": 48.0,
+          "start": 46.302,
+          "end": 46.693,
           "pinyin": "dan4"
         },
         {
           "text": "朱",
-          "start": 48.0,
-          "end": 48.46,
+          "start": 46.693,
+          "end": 47.084,
           "pinyin": "zhu1"
         },
         {
           "text": "亥",
-          "start": 48.46,
-          "end": 48.92,
+          "start": 47.084,
+          "end": 47.475,
           "pinyin": "hai4"
-        }
-      ]
-    },
-    {
-      "id": "l11",
-      "start": 48.92,
-      "end": 51.34,
-      "text": "持觞劝侯嬴",
-      "singableText": "持觞劝侯嬴",
-      "role": "lyric",
-      "tokens": [
+        },
+        {
+          "text": "，",
+          "start": 47.475,
+          "end": 47.865
+        },
         {
           "text": "持",
-          "start": 48.92,
-          "end": 49.404,
+          "start": 47.865,
+          "end": 48.256,
           "pinyin": "chi2"
         },
         {
           "text": "觞",
-          "start": 49.404,
-          "end": 49.888,
+          "start": 48.256,
+          "end": 48.647,
           "pinyin": "shang1"
         },
         {
           "text": "劝",
-          "start": 49.888,
-          "end": 50.372,
+          "start": 48.647,
+          "end": 49.038,
           "pinyin": "quan4"
         },
         {
           "text": "侯",
-          "start": 50.372,
-          "end": 50.856,
+          "start": 49.038,
+          "end": 49.429,
           "pinyin": "hou2"
         },
         {
           "text": "嬴",
-          "start": 50.856,
-          "end": 51.34,
+          "start": 49.429,
+          "end": 49.82,
           "pinyin": "ying2"
         }
       ]
     },
     {
-      "id": "l12",
-      "start": 51.34,
-      "end": 53.64,
-      "text": "持觞劝侯嬴",
-      "singableText": "持觞劝侯嬴",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "持",
-          "start": 51.34,
-          "end": 51.8,
-          "pinyin": "chi2"
-        },
-        {
-          "text": "觞",
-          "start": 51.8,
-          "end": 52.26,
-          "pinyin": "shang1"
-        },
-        {
-          "text": "劝",
-          "start": 52.26,
-          "end": 52.72,
-          "pinyin": "quan4"
-        },
-        {
-          "text": "侯",
-          "start": 52.72,
-          "end": 53.18,
-          "pinyin": "hou2"
-        },
-        {
-          "text": "嬴",
-          "start": 53.18,
-          "end": 53.64,
-          "pinyin": "ying2"
-        }
-      ]
-    },
-    {
-      "id": "l13",
-      "start": 56.26,
-      "end": 59.2,
-      "text": "三杯吐然诺",
-      "singableText": "三杯吐然诺",
+      "id": "l08",
+      "start": 51.0,
+      "end": 55.42,
+      "text": "三杯吐然诺，五岳倒为轻",
+      "singableText": "三杯吐然诺，五岳倒为轻",
       "role": "lyric",
       "tokens": [
         {
           "text": "三",
-          "start": 56.26,
-          "end": 56.848,
+          "start": 51.0,
+          "end": 51.402,
           "pinyin": "san1"
         },
         {
           "text": "杯",
-          "start": 56.848,
-          "end": 57.436,
+          "start": 51.402,
+          "end": 51.804,
           "pinyin": "bei1"
         },
         {
           "text": "吐",
-          "start": 57.436,
-          "end": 58.024,
+          "start": 51.804,
+          "end": 52.205,
           "pinyin": "tu3"
         },
         {
           "text": "然",
-          "start": 58.024,
-          "end": 58.612,
+          "start": 52.205,
+          "end": 52.607,
           "pinyin": "ran2"
         },
         {
           "text": "诺",
-          "start": 58.612,
-          "end": 59.2,
+          "start": 52.607,
+          "end": 53.009,
           "pinyin": "nuo4"
-        }
-      ]
-    },
-    {
-      "id": "l14",
-      "start": 59.2,
-      "end": 61.82,
-      "text": "五岳倒为轻",
-      "singableText": "五岳倒为轻",
-      "role": "lyric",
-      "tokens": [
+        },
+        {
+          "text": "，",
+          "start": 53.009,
+          "end": 53.411
+        },
         {
           "text": "五",
-          "start": 59.2,
-          "end": 59.724,
+          "start": 53.411,
+          "end": 53.813,
           "pinyin": "wu3"
         },
         {
           "text": "岳",
-          "start": 59.724,
-          "end": 60.248,
+          "start": 53.813,
+          "end": 54.215,
           "pinyin": "yue4"
         },
         {
           "text": "倒",
-          "start": 60.248,
-          "end": 60.772,
+          "start": 54.215,
+          "end": 54.616,
           "pinyin": "dao4"
         },
         {
           "text": "为",
-          "start": 60.772,
-          "end": 61.296,
+          "start": 54.616,
+          "end": 55.018,
           "pinyin": "wei2"
         },
         {
           "text": "轻",
-          "start": 61.296,
-          "end": 61.82,
+          "start": 55.018,
+          "end": 55.42,
           "pinyin": "qing1"
         }
       ]
     },
     {
-      "id": "l15",
-      "start": 64.28,
-      "end": 66.55,
-      "text": "眼花耳热后",
-      "singableText": "眼花耳热后",
+      "id": "l09",
+      "start": 55.42,
+      "end": 59.9,
+      "text": "眼花耳热后，意气素霓生",
+      "singableText": "眼花耳热后，意气素霓生",
       "role": "lyric",
       "tokens": [
         {
           "text": "眼",
-          "start": 64.28,
-          "end": 64.734,
+          "start": 55.42,
+          "end": 55.827,
           "pinyin": "yan3"
         },
         {
           "text": "花",
-          "start": 64.734,
-          "end": 65.188,
+          "start": 55.827,
+          "end": 56.235,
           "pinyin": "hua1"
         },
         {
           "text": "耳",
-          "start": 65.188,
-          "end": 65.642,
+          "start": 56.235,
+          "end": 56.642,
           "pinyin": "er3"
         },
         {
           "text": "热",
-          "start": 65.642,
-          "end": 66.096,
+          "start": 56.642,
+          "end": 57.049,
           "pinyin": "re4"
         },
         {
           "text": "后",
-          "start": 66.096,
-          "end": 66.55,
+          "start": 57.049,
+          "end": 57.456,
           "pinyin": "hou4"
-        }
-      ]
-    },
-    {
-      "id": "l16",
-      "start": 66.55,
-      "end": 68.86,
-      "text": "意气素霓生",
-      "singableText": "意气素霓生",
-      "role": "lyric",
-      "tokens": [
+        },
+        {
+          "text": "，",
+          "start": 57.456,
+          "end": 57.864
+        },
         {
           "text": "意",
-          "start": 66.55,
-          "end": 67.012,
+          "start": 57.864,
+          "end": 58.271,
           "pinyin": "yi4"
         },
         {
           "text": "气",
-          "start": 67.012,
-          "end": 67.474,
+          "start": 58.271,
+          "end": 58.678,
           "pinyin": "qi4"
         },
         {
           "text": "素",
-          "start": 67.474,
-          "end": 67.936,
+          "start": 58.678,
+          "end": 59.085,
           "pinyin": "su4"
         },
         {
           "text": "霓",
-          "start": 67.936,
-          "end": 68.398,
+          "start": 59.085,
+          "end": 59.493,
           "pinyin": "ni2"
         },
         {
           "text": "生",
-          "start": 68.398,
-          "end": 68.86,
+          "start": 59.493,
+          "end": 59.9,
           "pinyin": "sheng1"
         }
       ]
     },
     {
-      "id": "l17",
-      "start": 68.86,
-      "end": 71.34,
-      "text": "救赵挥金槌",
-      "singableText": "救赵挥金槌",
+      "id": "l10",
+      "start": 60.42,
+      "end": 65.6,
+      "text": "救赵挥金槌，邯郸先震惊",
+      "singableText": "救赵挥金槌，邯郸先震惊",
       "role": "lyric",
       "tokens": [
         {
           "text": "救",
-          "start": 68.86,
-          "end": 69.356,
+          "start": 60.42,
+          "end": 60.891,
           "pinyin": "jiu4"
         },
         {
           "text": "赵",
-          "start": 69.356,
-          "end": 69.852,
+          "start": 60.891,
+          "end": 61.362,
           "pinyin": "zhao4"
         },
         {
           "text": "挥",
-          "start": 69.852,
-          "end": 70.348,
+          "start": 61.362,
+          "end": 61.833,
           "pinyin": "hui1"
         },
         {
           "text": "金",
-          "start": 70.348,
-          "end": 70.844,
+          "start": 61.833,
+          "end": 62.304,
           "pinyin": "jin1"
         },
         {
           "text": "槌",
-          "start": 70.844,
-          "end": 71.34,
+          "start": 62.304,
+          "end": 62.775,
           "pinyin": "chui2"
-        }
-      ]
-    },
-    {
-      "id": "l18",
-      "start": 71.34,
-      "end": 75.2,
-      "text": "邯郸先震惊",
-      "singableText": "邯郸先震惊",
-      "role": "lyric",
-      "tokens": [
+        },
+        {
+          "text": "，",
+          "start": 62.775,
+          "end": 63.245
+        },
         {
           "text": "邯",
-          "start": 71.34,
-          "end": 72.112,
+          "start": 63.245,
+          "end": 63.716,
           "pinyin": "han2"
         },
         {
           "text": "郸",
-          "start": 72.112,
-          "end": 72.884,
+          "start": 63.716,
+          "end": 64.187,
           "pinyin": "dan1"
         },
         {
           "text": "先",
-          "start": 72.884,
-          "end": 73.656,
+          "start": 64.187,
+          "end": 64.658,
           "pinyin": "xian1"
         },
         {
           "text": "震",
-          "start": 73.656,
-          "end": 74.428,
+          "start": 64.658,
+          "end": 65.129,
           "pinyin": "zhen4"
         },
         {
           "text": "惊",
-          "start": 74.428,
-          "end": 75.2,
+          "start": 65.129,
+          "end": 65.6,
           "pinyin": "jing1"
         }
       ]
     },
     {
-      "id": "l19",
-      "start": 76.2,
-      "end": 78.3,
-      "text": "千秋二壮士",
-      "singableText": "千秋二壮士",
+      "id": "l11",
+      "start": 65.6,
+      "end": 71.02,
+      "text": "千秋二壮士，烜赫大梁城",
+      "singableText": "千秋二壮士，烜赫大梁城",
       "role": "lyric",
       "tokens": [
         {
           "text": "千",
-          "start": 76.2,
-          "end": 76.62,
+          "start": 65.6,
+          "end": 66.093,
           "pinyin": "qian1"
         },
         {
           "text": "秋",
-          "start": 76.62,
-          "end": 77.04,
+          "start": 66.093,
+          "end": 66.585,
           "pinyin": "qiu1"
         },
         {
           "text": "二",
-          "start": 77.04,
-          "end": 77.46,
+          "start": 66.585,
+          "end": 67.078,
           "pinyin": "er4"
         },
         {
           "text": "壮",
-          "start": 77.46,
-          "end": 77.88,
+          "start": 67.078,
+          "end": 67.571,
           "pinyin": "zhuang4"
         },
         {
           "text": "士",
-          "start": 77.88,
-          "end": 78.3,
+          "start": 67.571,
+          "end": 68.064,
           "pinyin": "shi4"
-        }
-      ]
-    },
-    {
-      "id": "l20",
-      "start": 78.3,
-      "end": 80.5,
-      "text": "烜赫大梁城",
-      "singableText": "烜赫大梁城",
-      "role": "lyric",
-      "tokens": [
+        },
+        {
+          "text": "，",
+          "start": 68.064,
+          "end": 68.556
+        },
         {
           "text": "烜",
-          "start": 78.3,
-          "end": 78.74,
+          "start": 68.556,
+          "end": 69.049,
           "pinyin": "xuan3"
         },
         {
           "text": "赫",
-          "start": 78.74,
-          "end": 79.18,
+          "start": 69.049,
+          "end": 69.542,
           "pinyin": "he4"
         },
         {
           "text": "大",
-          "start": 79.18,
-          "end": 79.62,
+          "start": 69.542,
+          "end": 70.035,
           "pinyin": "da4"
         },
         {
           "text": "梁",
-          "start": 79.62,
-          "end": 80.06,
+          "start": 70.035,
+          "end": 70.527,
           "pinyin": "liang2"
         },
         {
           "text": "城",
-          "start": 80.06,
-          "end": 80.5,
+          "start": 70.527,
+          "end": 71.02,
           "pinyin": "cheng2"
         }
       ]
     },
     {
-      "id": "l21",
-      "start": 80.5,
-      "end": 83.36,
-      "text": "纵死侠骨香",
-      "singableText": "纵死侠骨香",
+      "id": "l12",
+      "start": 71.02,
+      "end": 75.98,
+      "text": "纵死侠骨香，不惭世上英",
+      "singableText": "纵死侠骨香，不惭世上英",
       "role": "lyric",
       "tokens": [
         {
           "text": "纵",
-          "start": 80.5,
-          "end": 81.072,
+          "start": 71.02,
+          "end": 71.471,
           "pinyin": "zong4"
         },
         {
           "text": "死",
-          "start": 81.072,
-          "end": 81.644,
+          "start": 71.471,
+          "end": 71.922,
           "pinyin": "si3"
         },
         {
           "text": "侠",
-          "start": 81.644,
-          "end": 82.216,
+          "start": 71.922,
+          "end": 72.373,
           "pinyin": "xia2"
         },
         {
           "text": "骨",
-          "start": 82.216,
-          "end": 82.788,
+          "start": 72.373,
+          "end": 72.824,
           "pinyin": "gu3"
         },
         {
           "text": "香",
-          "start": 82.788,
-          "end": 83.36,
+          "start": 72.824,
+          "end": 73.275,
           "pinyin": "xiang1"
-        }
-      ]
-    },
-    {
-      "id": "l22",
-      "start": 83.36,
-      "end": 86.2,
-      "text": "不惭世上英",
-      "singableText": "不惭世上英",
-      "role": "lyric",
-      "tokens": [
+        },
+        {
+          "text": "，",
+          "start": 73.275,
+          "end": 73.725
+        },
         {
           "text": "不",
-          "start": 83.36,
-          "end": 83.928,
+          "start": 73.725,
+          "end": 74.176,
           "pinyin": "bu4"
         },
         {
           "text": "惭",
-          "start": 83.928,
-          "end": 84.496,
+          "start": 74.176,
+          "end": 74.627,
           "pinyin": "can2"
         },
         {
           "text": "世",
-          "start": 84.496,
-          "end": 85.064,
+          "start": 74.627,
+          "end": 75.078,
           "pinyin": "shi4"
         },
         {
           "text": "上",
-          "start": 85.064,
-          "end": 85.632,
+          "start": 75.078,
+          "end": 75.529,
           "pinyin": "shang4"
         },
         {
           "text": "英",
-          "start": 85.632,
-          "end": 86.2,
+          "start": 75.529,
+          "end": 75.98,
           "pinyin": "ying1"
         }
       ]
     },
     {
-      "id": "l23",
-      "start": 88.8,
-      "end": 91.14,
-      "text": "谁能说孤侠",
-      "singableText": "谁能说孤侠",
+      "id": "l13",
+      "start": 77.1,
+      "end": 81.18,
+      "text": "谁能书阁下，白首太玄经",
+      "singableText": "谁能书阁下，白首太玄经",
       "role": "lyric",
       "tokens": [
         {
           "text": "谁",
-          "start": 88.8,
-          "end": 89.268,
+          "start": 77.1,
+          "end": 77.471,
           "pinyin": "shui2"
         },
         {
           "text": "能",
-          "start": 89.268,
-          "end": 89.736,
+          "start": 77.471,
+          "end": 77.842,
           "pinyin": "neng2"
         },
         {
-          "text": "说",
-          "start": 89.736,
-          "end": 90.204,
-          "pinyin": "shuo1"
+          "text": "书",
+          "start": 77.842,
+          "end": 78.213,
+          "pinyin": "shu1"
         },
         {
-          "text": "孤",
-          "start": 90.204,
-          "end": 90.672,
-          "pinyin": "gu1"
+          "text": "阁",
+          "start": 78.213,
+          "end": 78.584,
+          "pinyin": "ge2"
         },
         {
-          "text": "侠",
-          "start": 90.672,
-          "end": 91.14,
-          "pinyin": "xia2"
-        }
-      ]
-    },
-    {
-      "id": "l24",
-      "start": 91.14,
-      "end": 93.96,
-      "text": "白首太仙境",
-      "singableText": "白首太仙境",
-      "role": "lyric",
-      "tokens": [
+          "text": "下",
+          "start": 78.584,
+          "end": 78.955,
+          "pinyin": "xia4"
+        },
+        {
+          "text": "，",
+          "start": 78.955,
+          "end": 79.325
+        },
         {
           "text": "白",
-          "start": 91.14,
-          "end": 91.704,
+          "start": 79.325,
+          "end": 79.696,
           "pinyin": "bai2"
         },
         {
           "text": "首",
-          "start": 91.704,
-          "end": 92.268,
+          "start": 79.696,
+          "end": 80.067,
           "pinyin": "shou3"
         },
         {
           "text": "太",
-          "start": 92.268,
-          "end": 92.832,
+          "start": 80.067,
+          "end": 80.438,
           "pinyin": "tai4"
         },
         {
-          "text": "仙",
-          "start": 92.832,
-          "end": 93.396,
-          "pinyin": "xian1"
+          "text": "玄",
+          "start": 80.438,
+          "end": 80.809,
+          "pinyin": "xuan2"
         },
         {
-          "text": "境",
-          "start": 93.396,
-          "end": 93.96,
-          "pinyin": "jing4"
+          "text": "经",
+          "start": 80.809,
+          "end": 81.18,
+          "pinyin": "jing1"
+        }
+      ]
+    },
+    {
+      "id": "l14",
+      "start": 90.5,
+      "end": 93.42,
+      "text": "白首太玄经",
+      "singableText": "白首太玄经",
+      "role": "lyric",
+      "tokens": [
+        {
+          "text": "白",
+          "start": 90.5,
+          "end": 91.084,
+          "pinyin": "bai2"
+        },
+        {
+          "text": "首",
+          "start": 91.084,
+          "end": 91.668,
+          "pinyin": "shou3"
+        },
+        {
+          "text": "太",
+          "start": 91.668,
+          "end": 92.252,
+          "pinyin": "tai4"
+        },
+        {
+          "text": "玄",
+          "start": 92.252,
+          "end": 92.836,
+          "pinyin": "xuan2"
+        },
+        {
+          "text": "经",
+          "start": 92.836,
+          "end": 93.42,
+          "pinyin": "jing1"
         }
       ]
     }
   ],
   "provenance": {
     "vocalSet": "zh-vocal",
-    "correction": "Original-poem ACE experiment. Candidate 3 selected from four exact-poem renders. Timings use vocal-stem medium/large no-VAD ASR. The active Mandarin text preserves Li Bai's original poem where the rendered syllables are sound-close, but the production note documents that classical diction is imperfect and some lines are weakly recovered."
+    "correction": "Original-poem ACE rerun. Seed 734114 selected from fifteen exact-poem candidates. Timings use selected-audio and vocal-stem large-v3 ASR plus no-VAD segment anchors. The active Mandarin text preserves Li Bai's original poem where rendered syllables are sound-close, shows the rendered repeat around 千里不留行/事了拂衣去, and omits no-VAD hallucinated credits inside the silent intro."
   }
 }

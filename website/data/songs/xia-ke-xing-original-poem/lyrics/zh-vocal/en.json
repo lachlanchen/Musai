@@ -11,1307 +11,1107 @@
   "lines": [
     {
       "id": "l01",
-      "start": 20.0,
-      "end": 22.72,
-      "text": "Zhao knights wear rough Hu tassels.",
-      "singableText": "Zhao knights wear rough Hu tassels.",
+      "start": 10.66,
+      "end": 14.92,
+      "text": "Zhao knights wear rough Hu tassels; Wu hooks gleam like frost and snow.",
+      "singableText": "Zhao knights wear rough Hu tassels; Wu hooks gleam like frost and snow.",
       "role": "lyric",
       "tokens": [
         {
           "text": "Zhao",
-          "start": 20.0,
-          "end": 20.389
+          "start": 10.66,
+          "end": 10.944
         },
         {
           "text": "knights",
-          "start": 20.389,
-          "end": 20.777
+          "start": 10.944,
+          "end": 11.228
         },
         {
           "text": "wear",
-          "start": 20.777,
-          "end": 21.166
+          "start": 11.228,
+          "end": 11.512
         },
         {
           "text": "rough",
-          "start": 21.166,
-          "end": 21.554
+          "start": 11.512,
+          "end": 11.796
         },
         {
           "text": "Hu",
-          "start": 21.554,
-          "end": 21.943
+          "start": 11.796,
+          "end": 12.08
         },
         {
           "text": "tassels",
-          "start": 21.943,
-          "end": 22.331
+          "start": 12.08,
+          "end": 12.364
+        },
+        {
+          "text": ";",
+          "start": 12.364,
+          "end": 12.648
+        },
+        {
+          "text": "Wu",
+          "start": 12.648,
+          "end": 12.932
+        },
+        {
+          "text": "hooks",
+          "start": 12.932,
+          "end": 13.216
+        },
+        {
+          "text": "gleam",
+          "start": 13.216,
+          "end": 13.5
+        },
+        {
+          "text": "like",
+          "start": 13.5,
+          "end": 13.784
+        },
+        {
+          "text": "frost",
+          "start": 13.784,
+          "end": 14.068
+        },
+        {
+          "text": "and",
+          "start": 14.068,
+          "end": 14.352
+        },
+        {
+          "text": "snow",
+          "start": 14.352,
+          "end": 14.636
         },
         {
           "text": ".",
-          "start": 22.331,
-          "end": 22.72
+          "start": 14.636,
+          "end": 14.92
         }
       ]
     },
     {
       "id": "l02",
-      "start": 22.72,
-      "end": 25.18,
-      "text": "Zhao knights wear rough Hu tassels again.",
-      "singableText": "Zhao knights wear rough Hu tassels again.",
+      "start": 16.46,
+      "end": 21.2,
+      "text": "Silver saddles shine on white horses, swift as falling stars.",
+      "singableText": "Silver saddles shine on white horses, swift as falling stars.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "Zhao",
-          "start": 22.72,
-          "end": 23.027
+          "text": "Silver",
+          "start": 16.46,
+          "end": 16.855
         },
         {
-          "text": "knights",
-          "start": 23.027,
-          "end": 23.335
+          "text": "saddles",
+          "start": 16.855,
+          "end": 17.25
         },
         {
-          "text": "wear",
-          "start": 23.335,
-          "end": 23.642
+          "text": "shine",
+          "start": 17.25,
+          "end": 17.645
         },
         {
-          "text": "rough",
-          "start": 23.642,
-          "end": 23.95
+          "text": "on",
+          "start": 17.645,
+          "end": 18.04
         },
         {
-          "text": "Hu",
-          "start": 23.95,
-          "end": 24.258
+          "text": "white",
+          "start": 18.04,
+          "end": 18.435
         },
         {
-          "text": "tassels",
-          "start": 24.258,
-          "end": 24.565
+          "text": "horses",
+          "start": 18.435,
+          "end": 18.83
         },
         {
-          "text": "again",
-          "start": 24.565,
-          "end": 24.872
+          "text": ",",
+          "start": 18.83,
+          "end": 19.225
+        },
+        {
+          "text": "swift",
+          "start": 19.225,
+          "end": 19.62
+        },
+        {
+          "text": "as",
+          "start": 19.62,
+          "end": 20.015
+        },
+        {
+          "text": "falling",
+          "start": 20.015,
+          "end": 20.41
+        },
+        {
+          "text": "stars",
+          "start": 20.41,
+          "end": 20.805
         },
         {
           "text": ".",
-          "start": 24.872,
-          "end": 25.18
+          "start": 20.805,
+          "end": 21.2
         }
       ]
     },
     {
       "id": "l03",
-      "start": 25.18,
-      "end": 27.24,
-      "text": "Their Wu hooks gleam like frost and snow.",
-      "singableText": "Their Wu hooks gleam like frost and snow.",
+      "start": 22.18,
+      "end": 26.78,
+      "text": "In ten steps, one man falls; across a thousand miles, no trace remains.",
+      "singableText": "In ten steps, one man falls; across a thousand miles, no trace remains.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "Their",
-          "start": 25.18,
-          "end": 25.409
+          "text": "In",
+          "start": 22.18,
+          "end": 22.451
         },
         {
-          "text": "Wu",
-          "start": 25.409,
-          "end": 25.638
+          "text": "ten",
+          "start": 22.451,
+          "end": 22.721
         },
         {
-          "text": "hooks",
-          "start": 25.638,
-          "end": 25.867
+          "text": "steps",
+          "start": 22.721,
+          "end": 22.992
         },
         {
-          "text": "gleam",
-          "start": 25.867,
-          "end": 26.096
+          "text": ",",
+          "start": 22.992,
+          "end": 23.262
         },
         {
-          "text": "like",
-          "start": 26.096,
-          "end": 26.324
+          "text": "one",
+          "start": 23.262,
+          "end": 23.533
         },
         {
-          "text": "frost",
-          "start": 26.324,
-          "end": 26.553
+          "text": "man",
+          "start": 23.533,
+          "end": 23.804
         },
         {
-          "text": "and",
-          "start": 26.553,
-          "end": 26.782
+          "text": "falls",
+          "start": 23.804,
+          "end": 24.074
         },
         {
-          "text": "snow",
-          "start": 26.782,
-          "end": 27.011
+          "text": ";",
+          "start": 24.074,
+          "end": 24.345
+        },
+        {
+          "text": "across",
+          "start": 24.345,
+          "end": 24.615
+        },
+        {
+          "text": "a",
+          "start": 24.615,
+          "end": 24.886
+        },
+        {
+          "text": "thousand",
+          "start": 24.886,
+          "end": 25.156
+        },
+        {
+          "text": "miles",
+          "start": 25.156,
+          "end": 25.427
+        },
+        {
+          "text": ",",
+          "start": 25.427,
+          "end": 25.698
+        },
+        {
+          "text": "no",
+          "start": 25.698,
+          "end": 25.968
+        },
+        {
+          "text": "trace",
+          "start": 25.968,
+          "end": 26.239
+        },
+        {
+          "text": "remains",
+          "start": 26.239,
+          "end": 26.509
         },
         {
           "text": ".",
-          "start": 27.011,
-          "end": 27.24
+          "start": 26.509,
+          "end": 26.78
         }
       ]
     },
     {
       "id": "l04",
-      "start": 28.56,
-      "end": 30.35,
-      "text": "Silver saddles shine on white horses.",
-      "singableText": "Silver saddles shine on white horses.",
+      "start": 26.78,
+      "end": 31.66,
+      "text": "The deed done, he brushes his robe and leaves, leaving no trace.",
+      "singableText": "The deed done, he brushes his robe and leaves, leaving no trace.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "Silver",
-          "start": 28.56,
-          "end": 28.816
+          "text": "The",
+          "start": 26.78,
+          "end": 27.105
         },
         {
-          "text": "saddles",
-          "start": 28.816,
-          "end": 29.071
+          "text": "deed",
+          "start": 27.105,
+          "end": 27.431
         },
         {
-          "text": "shine",
-          "start": 29.071,
-          "end": 29.327
+          "text": "done",
+          "start": 27.431,
+          "end": 27.756
         },
         {
-          "text": "on",
-          "start": 29.327,
-          "end": 29.583
+          "text": ",",
+          "start": 27.756,
+          "end": 28.081
         },
         {
-          "text": "white",
-          "start": 29.583,
-          "end": 29.839
+          "text": "he",
+          "start": 28.081,
+          "end": 28.407
         },
         {
-          "text": "horses",
-          "start": 29.839,
-          "end": 30.094
+          "text": "brushes",
+          "start": 28.407,
+          "end": 28.732
+        },
+        {
+          "text": "his",
+          "start": 28.732,
+          "end": 29.057
+        },
+        {
+          "text": "robe",
+          "start": 29.057,
+          "end": 29.383
+        },
+        {
+          "text": "and",
+          "start": 29.383,
+          "end": 29.708
+        },
+        {
+          "text": "leaves",
+          "start": 29.708,
+          "end": 30.033
+        },
+        {
+          "text": ",",
+          "start": 30.033,
+          "end": 30.359
+        },
+        {
+          "text": "leaving",
+          "start": 30.359,
+          "end": 30.684
+        },
+        {
+          "text": "no",
+          "start": 30.684,
+          "end": 31.009
+        },
+        {
+          "text": "trace",
+          "start": 31.009,
+          "end": 31.335
         },
         {
           "text": ".",
-          "start": 30.094,
-          "end": 30.35
+          "start": 31.335,
+          "end": 31.66
         }
       ]
     },
     {
       "id": "l05",
-      "start": 30.35,
-      "end": 32.18,
-      "text": "Swift and ringing, like falling stars.",
-      "singableText": "Swift and ringing, like falling stars.",
+      "start": 31.66,
+      "end": 36.24,
+      "text": "The deed done, he brushes his robe and hides both body and name.",
+      "singableText": "The deed done, he brushes his robe and hides both body and name.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "Swift",
-          "start": 30.35,
-          "end": 30.579
+          "text": "The",
+          "start": 31.66,
+          "end": 31.965
         },
         {
-          "text": "and",
-          "start": 30.579,
-          "end": 30.808
+          "text": "deed",
+          "start": 31.965,
+          "end": 32.271
         },
         {
-          "text": "ringing",
-          "start": 30.808,
-          "end": 31.036
+          "text": "done",
+          "start": 32.271,
+          "end": 32.576
         },
         {
           "text": ",",
-          "start": 31.036,
-          "end": 31.265
+          "start": 32.576,
+          "end": 32.881
         },
         {
-          "text": "like",
-          "start": 31.265,
-          "end": 31.494
+          "text": "he",
+          "start": 32.881,
+          "end": 33.187
         },
         {
-          "text": "falling",
-          "start": 31.494,
-          "end": 31.723
+          "text": "brushes",
+          "start": 33.187,
+          "end": 33.492
         },
         {
-          "text": "stars",
-          "start": 31.723,
-          "end": 31.951
+          "text": "his",
+          "start": 33.492,
+          "end": 33.797
+        },
+        {
+          "text": "robe",
+          "start": 33.797,
+          "end": 34.103
+        },
+        {
+          "text": "and",
+          "start": 34.103,
+          "end": 34.408
+        },
+        {
+          "text": "hides",
+          "start": 34.408,
+          "end": 34.713
+        },
+        {
+          "text": "both",
+          "start": 34.713,
+          "end": 35.019
+        },
+        {
+          "text": "body",
+          "start": 35.019,
+          "end": 35.324
+        },
+        {
+          "text": "and",
+          "start": 35.324,
+          "end": 35.629
+        },
+        {
+          "text": "name",
+          "start": 35.629,
+          "end": 35.935
         },
         {
           "text": ".",
-          "start": 31.951,
-          "end": 32.18
+          "start": 35.935,
+          "end": 36.24
         }
       ]
     },
     {
       "id": "l06",
-      "start": 33.14,
-      "end": 34.96,
-      "text": "In ten steps, one man falls.",
-      "singableText": "In ten steps, one man falls.",
+      "start": 39.88,
+      "end": 43.94,
+      "text": "At ease he drinks with Xinling, sword laid across his knees.",
+      "singableText": "At ease he drinks with Xinling, sword laid across his knees.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "In",
-          "start": 33.14,
-          "end": 33.367
+          "text": "At",
+          "start": 39.88,
+          "end": 40.192
         },
         {
-          "text": "ten",
-          "start": 33.367,
-          "end": 33.595
+          "text": "ease",
+          "start": 40.192,
+          "end": 40.505
         },
         {
-          "text": "steps",
-          "start": 33.595,
-          "end": 33.822
+          "text": "he",
+          "start": 40.505,
+          "end": 40.817
+        },
+        {
+          "text": "drinks",
+          "start": 40.817,
+          "end": 41.129
+        },
+        {
+          "text": "with",
+          "start": 41.129,
+          "end": 41.442
+        },
+        {
+          "text": "Xinling",
+          "start": 41.442,
+          "end": 41.754
         },
         {
           "text": ",",
-          "start": 33.822,
-          "end": 34.05
+          "start": 41.754,
+          "end": 42.066
         },
         {
-          "text": "one",
-          "start": 34.05,
-          "end": 34.278
+          "text": "sword",
+          "start": 42.066,
+          "end": 42.378
         },
         {
-          "text": "man",
-          "start": 34.278,
-          "end": 34.505
+          "text": "laid",
+          "start": 42.378,
+          "end": 42.691
         },
         {
-          "text": "falls",
-          "start": 34.505,
-          "end": 34.733
+          "text": "across",
+          "start": 42.691,
+          "end": 43.003
+        },
+        {
+          "text": "his",
+          "start": 43.003,
+          "end": 43.315
+        },
+        {
+          "text": "knees",
+          "start": 43.315,
+          "end": 43.628
         },
         {
           "text": ".",
-          "start": 34.733,
-          "end": 34.96
+          "start": 43.628,
+          "end": 43.94
         }
       ]
     },
     {
       "id": "l07",
-      "start": 34.96,
-      "end": 37.14,
-      "text": "When the deed is done, he brushes his robe and leaves.",
-      "singableText": "When the deed is done, he brushes his robe and leaves.",
+      "start": 45.52,
+      "end": 49.82,
+      "text": "He offers roast meat to Zhu Hai and raises a cup to Hou Ying.",
+      "singableText": "He offers roast meat to Zhu Hai and raises a cup to Hou Ying.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "When",
-          "start": 34.96,
-          "end": 35.128
+          "text": "He",
+          "start": 45.52,
+          "end": 45.807
         },
         {
-          "text": "the",
-          "start": 35.128,
-          "end": 35.295
+          "text": "offers",
+          "start": 45.807,
+          "end": 46.093
         },
         {
-          "text": "deed",
-          "start": 35.295,
-          "end": 35.463
+          "text": "roast",
+          "start": 46.093,
+          "end": 46.38
         },
         {
-          "text": "is",
-          "start": 35.463,
-          "end": 35.631
+          "text": "meat",
+          "start": 46.38,
+          "end": 46.667
         },
         {
-          "text": "done",
-          "start": 35.631,
-          "end": 35.798
+          "text": "to",
+          "start": 46.667,
+          "end": 46.953
         },
         {
-          "text": ",",
-          "start": 35.798,
-          "end": 35.966
+          "text": "Zhu",
+          "start": 46.953,
+          "end": 47.24
         },
         {
-          "text": "he",
-          "start": 35.966,
-          "end": 36.134
-        },
-        {
-          "text": "brushes",
-          "start": 36.134,
-          "end": 36.302
-        },
-        {
-          "text": "his",
-          "start": 36.302,
-          "end": 36.469
-        },
-        {
-          "text": "robe",
-          "start": 36.469,
-          "end": 36.637
+          "text": "Hai",
+          "start": 47.24,
+          "end": 47.527
         },
         {
           "text": "and",
-          "start": 36.637,
-          "end": 36.805
+          "start": 47.527,
+          "end": 47.813
         },
         {
-          "text": "leaves",
-          "start": 36.805,
-          "end": 36.972
+          "text": "raises",
+          "start": 47.813,
+          "end": 48.1
+        },
+        {
+          "text": "a",
+          "start": 48.1,
+          "end": 48.387
+        },
+        {
+          "text": "cup",
+          "start": 48.387,
+          "end": 48.673
+        },
+        {
+          "text": "to",
+          "start": 48.673,
+          "end": 48.96
+        },
+        {
+          "text": "Hou",
+          "start": 48.96,
+          "end": 49.247
+        },
+        {
+          "text": "Ying",
+          "start": 49.247,
+          "end": 49.533
         },
         {
           "text": ".",
-          "start": 36.972,
-          "end": 37.14
+          "start": 49.533,
+          "end": 49.82
         }
       ]
     },
     {
       "id": "l08",
-      "start": 37.14,
-      "end": 40.0,
-      "text": "Hiding both his body and his name.",
-      "singableText": "Hiding both his body and his name.",
+      "start": 51.0,
+      "end": 55.42,
+      "text": "After three cups, his pledge is spoken; the Five Peaks seem light.",
+      "singableText": "After three cups, his pledge is spoken; the Five Peaks seem light.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "Hiding",
-          "start": 37.14,
-          "end": 37.498
+          "text": "After",
+          "start": 51.0,
+          "end": 51.295
         },
         {
-          "text": "both",
-          "start": 37.498,
-          "end": 37.855
+          "text": "three",
+          "start": 51.295,
+          "end": 51.589
         },
         {
-          "text": "his",
-          "start": 37.855,
-          "end": 38.212
+          "text": "cups",
+          "start": 51.589,
+          "end": 51.884
         },
         {
-          "text": "body",
-          "start": 38.212,
-          "end": 38.57
-        },
-        {
-          "text": "and",
-          "start": 38.57,
-          "end": 38.928
+          "text": ",",
+          "start": 51.884,
+          "end": 52.179
         },
         {
           "text": "his",
-          "start": 38.928,
-          "end": 39.285
+          "start": 52.179,
+          "end": 52.473
         },
         {
-          "text": "name",
-          "start": 39.285,
-          "end": 39.642
+          "text": "pledge",
+          "start": 52.473,
+          "end": 52.768
+        },
+        {
+          "text": "is",
+          "start": 52.768,
+          "end": 53.063
+        },
+        {
+          "text": "spoken",
+          "start": 53.063,
+          "end": 53.357
+        },
+        {
+          "text": ";",
+          "start": 53.357,
+          "end": 53.652
+        },
+        {
+          "text": "the",
+          "start": 53.652,
+          "end": 53.947
+        },
+        {
+          "text": "Five",
+          "start": 53.947,
+          "end": 54.241
+        },
+        {
+          "text": "Peaks",
+          "start": 54.241,
+          "end": 54.536
+        },
+        {
+          "text": "seem",
+          "start": 54.536,
+          "end": 54.831
+        },
+        {
+          "text": "light",
+          "start": 54.831,
+          "end": 55.125
         },
         {
           "text": ".",
-          "start": 39.642,
-          "end": 40.0
+          "start": 55.125,
+          "end": 55.42
         }
       ]
     },
     {
       "id": "l09",
-      "start": 43.64,
-      "end": 45.82,
-      "text": "He takes off his sword and lays it across his knees.",
-      "singableText": "He takes off his sword and lays it across his knees.",
+      "start": 55.42,
+      "end": 59.9,
+      "text": "Eyes dazzle, ears burn, and his spirit rises like a white rainbow.",
+      "singableText": "Eyes dazzle, ears burn, and his spirit rises like a white rainbow.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "He",
-          "start": 43.64,
-          "end": 43.822
+          "text": "Eyes",
+          "start": 55.42,
+          "end": 55.719
         },
         {
-          "text": "takes",
-          "start": 43.822,
-          "end": 44.003
+          "text": "dazzle",
+          "start": 55.719,
+          "end": 56.017
         },
         {
-          "text": "off",
-          "start": 44.003,
-          "end": 44.185
+          "text": ",",
+          "start": 56.017,
+          "end": 56.316
         },
         {
-          "text": "his",
-          "start": 44.185,
-          "end": 44.367
+          "text": "ears",
+          "start": 56.316,
+          "end": 56.615
         },
         {
-          "text": "sword",
-          "start": 44.367,
-          "end": 44.548
+          "text": "burn",
+          "start": 56.615,
+          "end": 56.913
+        },
+        {
+          "text": ",",
+          "start": 56.913,
+          "end": 57.212
         },
         {
           "text": "and",
-          "start": 44.548,
-          "end": 44.73
-        },
-        {
-          "text": "lays",
-          "start": 44.73,
-          "end": 44.912
-        },
-        {
-          "text": "it",
-          "start": 44.912,
-          "end": 45.093
-        },
-        {
-          "text": "across",
-          "start": 45.093,
-          "end": 45.275
+          "start": 57.212,
+          "end": 57.511
         },
         {
           "text": "his",
-          "start": 45.275,
-          "end": 45.457
+          "start": 57.511,
+          "end": 57.809
         },
         {
-          "text": "knees",
-          "start": 45.457,
-          "end": 45.638
+          "text": "spirit",
+          "start": 57.809,
+          "end": 58.108
+        },
+        {
+          "text": "rises",
+          "start": 58.108,
+          "end": 58.407
+        },
+        {
+          "text": "like",
+          "start": 58.407,
+          "end": 58.705
+        },
+        {
+          "text": "a",
+          "start": 58.705,
+          "end": 59.004
+        },
+        {
+          "text": "white",
+          "start": 59.004,
+          "end": 59.303
+        },
+        {
+          "text": "rainbow",
+          "start": 59.303,
+          "end": 59.601
         },
         {
           "text": ".",
-          "start": 45.638,
-          "end": 45.82
+          "start": 59.601,
+          "end": 59.9
         }
       ]
     },
     {
       "id": "l10",
-      "start": 46.62,
-      "end": 48.92,
-      "text": "He brings roast meat for Zhu Hai to eat.",
-      "singableText": "He brings roast meat for Zhu Hai to eat.",
+      "start": 60.42,
+      "end": 65.6,
+      "text": "To rescue Zhao, he swings the golden hammer; Handan trembles first.",
+      "singableText": "To rescue Zhao, he swings the golden hammer; Handan trembles first.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "He",
-          "start": 46.62,
-          "end": 46.85
+          "text": "To",
+          "start": 60.42,
+          "end": 60.79
         },
         {
-          "text": "brings",
-          "start": 46.85,
-          "end": 47.08
+          "text": "rescue",
+          "start": 60.79,
+          "end": 61.16
         },
         {
-          "text": "roast",
-          "start": 47.08,
-          "end": 47.31
+          "text": "Zhao",
+          "start": 61.16,
+          "end": 61.53
         },
         {
-          "text": "meat",
-          "start": 47.31,
-          "end": 47.54
+          "text": ",",
+          "start": 61.53,
+          "end": 61.9
         },
         {
-          "text": "for",
-          "start": 47.54,
-          "end": 47.77
+          "text": "he",
+          "start": 61.9,
+          "end": 62.27
         },
         {
-          "text": "Zhu",
-          "start": 47.77,
-          "end": 48.0
+          "text": "swings",
+          "start": 62.27,
+          "end": 62.64
         },
         {
-          "text": "Hai",
-          "start": 48.0,
-          "end": 48.23
+          "text": "the",
+          "start": 62.64,
+          "end": 63.01
         },
         {
-          "text": "to",
-          "start": 48.23,
-          "end": 48.46
+          "text": "golden",
+          "start": 63.01,
+          "end": 63.38
         },
         {
-          "text": "eat",
-          "start": 48.46,
-          "end": 48.69
+          "text": "hammer",
+          "start": 63.38,
+          "end": 63.75
+        },
+        {
+          "text": ";",
+          "start": 63.75,
+          "end": 64.12
+        },
+        {
+          "text": "Handan",
+          "start": 64.12,
+          "end": 64.49
+        },
+        {
+          "text": "trembles",
+          "start": 64.49,
+          "end": 64.86
+        },
+        {
+          "text": "first",
+          "start": 64.86,
+          "end": 65.23
         },
         {
           "text": ".",
-          "start": 48.69,
-          "end": 48.92
+          "start": 65.23,
+          "end": 65.6
         }
       ]
     },
     {
       "id": "l11",
-      "start": 48.92,
-      "end": 51.34,
-      "text": "Holding a cup, he urges Hou Ying to drink.",
-      "singableText": "Holding a cup, he urges Hou Ying to drink.",
+      "start": 65.6,
+      "end": 71.02,
+      "text": "For a thousand autumns, the two heroes blaze through Daliang city.",
+      "singableText": "For a thousand autumns, the two heroes blaze through Daliang city.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "Holding",
-          "start": 48.92,
-          "end": 49.14
+          "text": "For",
+          "start": 65.6,
+          "end": 66.017
         },
         {
           "text": "a",
-          "start": 49.14,
-          "end": 49.36
+          "start": 66.017,
+          "end": 66.434
         },
         {
-          "text": "cup",
-          "start": 49.36,
-          "end": 49.58
+          "text": "thousand",
+          "start": 66.434,
+          "end": 66.851
+        },
+        {
+          "text": "autumns",
+          "start": 66.851,
+          "end": 67.268
         },
         {
           "text": ",",
-          "start": 49.58,
-          "end": 49.8
+          "start": 67.268,
+          "end": 67.685
         },
         {
-          "text": "he",
-          "start": 49.8,
-          "end": 50.02
+          "text": "the",
+          "start": 67.685,
+          "end": 68.102
         },
         {
-          "text": "urges",
-          "start": 50.02,
-          "end": 50.24
+          "text": "two",
+          "start": 68.102,
+          "end": 68.518
         },
         {
-          "text": "Hou",
-          "start": 50.24,
-          "end": 50.46
+          "text": "heroes",
+          "start": 68.518,
+          "end": 68.935
         },
         {
-          "text": "Ying",
-          "start": 50.46,
-          "end": 50.68
+          "text": "blaze",
+          "start": 68.935,
+          "end": 69.352
         },
         {
-          "text": "to",
-          "start": 50.68,
-          "end": 50.9
+          "text": "through",
+          "start": 69.352,
+          "end": 69.769
         },
         {
-          "text": "drink",
-          "start": 50.9,
-          "end": 51.12
+          "text": "Daliang",
+          "start": 69.769,
+          "end": 70.186
+        },
+        {
+          "text": "city",
+          "start": 70.186,
+          "end": 70.603
         },
         {
           "text": ".",
-          "start": 51.12,
-          "end": 51.34
+          "start": 70.603,
+          "end": 71.02
         }
       ]
     },
     {
       "id": "l12",
-      "start": 51.34,
-      "end": 53.64,
-      "text": "Holding the cup, he urges Hou Ying again.",
-      "singableText": "Holding the cup, he urges Hou Ying again.",
+      "start": 71.02,
+      "end": 75.98,
+      "text": "Even in death, knightly bones are fragrant, not ashamed before heroes.",
+      "singableText": "Even in death, knightly bones are fragrant, not ashamed before heroes.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "Holding",
-          "start": 51.34,
-          "end": 51.57
+          "text": "Even",
+          "start": 71.02,
+          "end": 71.374
         },
         {
-          "text": "the",
-          "start": 51.57,
-          "end": 51.8
+          "text": "in",
+          "start": 71.374,
+          "end": 71.729
         },
         {
-          "text": "cup",
-          "start": 51.8,
-          "end": 52.03
+          "text": "death",
+          "start": 71.729,
+          "end": 72.083
         },
         {
           "text": ",",
-          "start": 52.03,
-          "end": 52.26
+          "start": 72.083,
+          "end": 72.437
         },
         {
-          "text": "he",
-          "start": 52.26,
-          "end": 52.49
+          "text": "knightly",
+          "start": 72.437,
+          "end": 72.791
         },
         {
-          "text": "urges",
-          "start": 52.49,
-          "end": 52.72
+          "text": "bones",
+          "start": 72.791,
+          "end": 73.146
         },
         {
-          "text": "Hou",
-          "start": 52.72,
-          "end": 52.95
+          "text": "are",
+          "start": 73.146,
+          "end": 73.5
         },
         {
-          "text": "Ying",
-          "start": 52.95,
-          "end": 53.18
+          "text": "fragrant",
+          "start": 73.5,
+          "end": 73.854
         },
         {
-          "text": "again",
-          "start": 53.18,
-          "end": 53.41
+          "text": ",",
+          "start": 73.854,
+          "end": 74.209
+        },
+        {
+          "text": "not",
+          "start": 74.209,
+          "end": 74.563
+        },
+        {
+          "text": "ashamed",
+          "start": 74.563,
+          "end": 74.917
+        },
+        {
+          "text": "before",
+          "start": 74.917,
+          "end": 75.271
+        },
+        {
+          "text": "heroes",
+          "start": 75.271,
+          "end": 75.626
         },
         {
           "text": ".",
-          "start": 53.41,
-          "end": 53.64
+          "start": 75.626,
+          "end": 75.98
         }
       ]
     },
     {
       "id": "l13",
-      "start": 56.26,
-      "end": 59.2,
-      "text": "After three cups, his pledge is spoken.",
-      "singableText": "After three cups, his pledge is spoken.",
+      "start": 77.1,
+      "end": 81.18,
+      "text": "Who would write below the tower, white-haired over the Taixuan classic?",
+      "singableText": "Who would write below the tower, white-haired over the Taixuan classic?",
       "role": "lyric",
       "tokens": [
         {
-          "text": "After",
-          "start": 56.26,
-          "end": 56.587
+          "text": "Who",
+          "start": 77.1,
+          "end": 77.414
         },
         {
-          "text": "three",
-          "start": 56.587,
-          "end": 56.913
+          "text": "would",
+          "start": 77.414,
+          "end": 77.728
         },
         {
-          "text": "cups",
-          "start": 56.913,
-          "end": 57.24
+          "text": "write",
+          "start": 77.728,
+          "end": 78.042
+        },
+        {
+          "text": "below",
+          "start": 78.042,
+          "end": 78.355
+        },
+        {
+          "text": "the",
+          "start": 78.355,
+          "end": 78.669
+        },
+        {
+          "text": "tower",
+          "start": 78.669,
+          "end": 78.983
         },
         {
           "text": ",",
-          "start": 57.24,
-          "end": 57.567
+          "start": 78.983,
+          "end": 79.297
         },
         {
-          "text": "his",
-          "start": 57.567,
-          "end": 57.893
+          "text": "white-haired",
+          "start": 79.297,
+          "end": 79.611
         },
         {
-          "text": "pledge",
-          "start": 57.893,
-          "end": 58.22
+          "text": "over",
+          "start": 79.611,
+          "end": 79.925
         },
         {
-          "text": "is",
-          "start": 58.22,
-          "end": 58.547
+          "text": "the",
+          "start": 79.925,
+          "end": 80.238
         },
         {
-          "text": "spoken",
-          "start": 58.547,
-          "end": 58.873
+          "text": "Taixuan",
+          "start": 80.238,
+          "end": 80.552
         },
         {
-          "text": ".",
-          "start": 58.873,
-          "end": 59.2
+          "text": "classic",
+          "start": 80.552,
+          "end": 80.866
+        },
+        {
+          "text": "?",
+          "start": 80.866,
+          "end": 81.18
         }
       ]
     },
     {
       "id": "l14",
-      "start": 59.2,
-      "end": 61.82,
-      "text": "The Five Sacred Peaks become light beside it.",
-      "singableText": "The Five Sacred Peaks become light beside it.",
+      "start": 90.5,
+      "end": 93.42,
+      "text": "White-haired over the Taixuan classic.",
+      "singableText": "White-haired over the Taixuan classic.",
       "role": "lyric",
       "tokens": [
         {
-          "text": "The",
-          "start": 59.2,
-          "end": 59.491
+          "text": "White-haired",
+          "start": 90.5,
+          "end": 90.987
         },
         {
-          "text": "Five",
-          "start": 59.491,
-          "end": 59.782
-        },
-        {
-          "text": "Sacred",
-          "start": 59.782,
-          "end": 60.073
-        },
-        {
-          "text": "Peaks",
-          "start": 60.073,
-          "end": 60.364
-        },
-        {
-          "text": "become",
-          "start": 60.364,
-          "end": 60.656
-        },
-        {
-          "text": "light",
-          "start": 60.656,
-          "end": 60.947
-        },
-        {
-          "text": "beside",
-          "start": 60.947,
-          "end": 61.238
-        },
-        {
-          "text": "it",
-          "start": 61.238,
-          "end": 61.529
-        },
-        {
-          "text": ".",
-          "start": 61.529,
-          "end": 61.82
-        }
-      ]
-    },
-    {
-      "id": "l15",
-      "start": 64.28,
-      "end": 66.55,
-      "text": "When eyes dazzle and ears burn,",
-      "singableText": "When eyes dazzle and ears burn,",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "When",
-          "start": 64.28,
-          "end": 64.604
-        },
-        {
-          "text": "eyes",
-          "start": 64.604,
-          "end": 64.929
-        },
-        {
-          "text": "dazzle",
-          "start": 64.929,
-          "end": 65.253
-        },
-        {
-          "text": "and",
-          "start": 65.253,
-          "end": 65.577
-        },
-        {
-          "text": "ears",
-          "start": 65.577,
-          "end": 65.901
-        },
-        {
-          "text": "burn",
-          "start": 65.901,
-          "end": 66.226
-        },
-        {
-          "text": ",",
-          "start": 66.226,
-          "end": 66.55
-        }
-      ]
-    },
-    {
-      "id": "l16",
-      "start": 66.55,
-      "end": 68.86,
-      "text": "His spirit rises like a white rainbow.",
-      "singableText": "His spirit rises like a white rainbow.",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "His",
-          "start": 66.55,
-          "end": 66.839
-        },
-        {
-          "text": "spirit",
-          "start": 66.839,
-          "end": 67.127
-        },
-        {
-          "text": "rises",
-          "start": 67.127,
-          "end": 67.416
-        },
-        {
-          "text": "like",
-          "start": 67.416,
-          "end": 67.705
-        },
-        {
-          "text": "a",
-          "start": 67.705,
-          "end": 67.994
-        },
-        {
-          "text": "white",
-          "start": 67.994,
-          "end": 68.282
-        },
-        {
-          "text": "rainbow",
-          "start": 68.282,
-          "end": 68.571
-        },
-        {
-          "text": ".",
-          "start": 68.571,
-          "end": 68.86
-        }
-      ]
-    },
-    {
-      "id": "l17",
-      "start": 68.86,
-      "end": 71.34,
-      "text": "To rescue Zhao, he swings the golden hammer.",
-      "singableText": "To rescue Zhao, he swings the golden hammer.",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "To",
-          "start": 68.86,
-          "end": 69.108
-        },
-        {
-          "text": "rescue",
-          "start": 69.108,
-          "end": 69.356
-        },
-        {
-          "text": "Zhao",
-          "start": 69.356,
-          "end": 69.604
-        },
-        {
-          "text": ",",
-          "start": 69.604,
-          "end": 69.852
-        },
-        {
-          "text": "he",
-          "start": 69.852,
-          "end": 70.1
-        },
-        {
-          "text": "swings",
-          "start": 70.1,
-          "end": 70.348
+          "text": "over",
+          "start": 90.987,
+          "end": 91.473
         },
         {
           "text": "the",
-          "start": 70.348,
-          "end": 70.596
+          "start": 91.473,
+          "end": 91.96
         },
         {
-          "text": "golden",
-          "start": 70.596,
-          "end": 70.844
+          "text": "Taixuan",
+          "start": 91.96,
+          "end": 92.447
         },
         {
-          "text": "hammer",
-          "start": 70.844,
-          "end": 71.092
-        },
-        {
-          "text": ".",
-          "start": 71.092,
-          "end": 71.34
-        }
-      ]
-    },
-    {
-      "id": "l18",
-      "start": 71.34,
-      "end": 75.2,
-      "text": "Handan is shaken before all others.",
-      "singableText": "Handan is shaken before all others.",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "Handan",
-          "start": 71.34,
-          "end": 71.891
-        },
-        {
-          "text": "is",
-          "start": 71.891,
-          "end": 72.443
-        },
-        {
-          "text": "shaken",
-          "start": 72.443,
-          "end": 72.994
-        },
-        {
-          "text": "before",
-          "start": 72.994,
-          "end": 73.546
-        },
-        {
-          "text": "all",
-          "start": 73.546,
-          "end": 74.097
-        },
-        {
-          "text": "others",
-          "start": 74.097,
-          "end": 74.649
+          "text": "classic",
+          "start": 92.447,
+          "end": 92.933
         },
         {
           "text": ".",
-          "start": 74.649,
-          "end": 75.2
-        }
-      ]
-    },
-    {
-      "id": "l19",
-      "start": 76.2,
-      "end": 78.3,
-      "text": "For a thousand autumns, the two heroes remain.",
-      "singableText": "For a thousand autumns, the two heroes remain.",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "For",
-          "start": 76.2,
-          "end": 76.41
-        },
-        {
-          "text": "a",
-          "start": 76.41,
-          "end": 76.62
-        },
-        {
-          "text": "thousand",
-          "start": 76.62,
-          "end": 76.83
-        },
-        {
-          "text": "autumns",
-          "start": 76.83,
-          "end": 77.04
-        },
-        {
-          "text": ",",
-          "start": 77.04,
-          "end": 77.25
-        },
-        {
-          "text": "the",
-          "start": 77.25,
-          "end": 77.46
-        },
-        {
-          "text": "two",
-          "start": 77.46,
-          "end": 77.67
-        },
-        {
-          "text": "heroes",
-          "start": 77.67,
-          "end": 77.88
-        },
-        {
-          "text": "remain",
-          "start": 77.88,
-          "end": 78.09
-        },
-        {
-          "text": ".",
-          "start": 78.09,
-          "end": 78.3
-        }
-      ]
-    },
-    {
-      "id": "l20",
-      "start": 78.3,
-      "end": 80.5,
-      "text": "Their fame blazes through Daliang city.",
-      "singableText": "Their fame blazes through Daliang city.",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "Their",
-          "start": 78.3,
-          "end": 78.614
-        },
-        {
-          "text": "fame",
-          "start": 78.614,
-          "end": 78.929
-        },
-        {
-          "text": "blazes",
-          "start": 78.929,
-          "end": 79.243
-        },
-        {
-          "text": "through",
-          "start": 79.243,
-          "end": 79.557
-        },
-        {
-          "text": "Daliang",
-          "start": 79.557,
-          "end": 79.871
-        },
-        {
-          "text": "city",
-          "start": 79.871,
-          "end": 80.186
-        },
-        {
-          "text": ".",
-          "start": 80.186,
-          "end": 80.5
-        }
-      ]
-    },
-    {
-      "id": "l21",
-      "start": 80.5,
-      "end": 83.36,
-      "text": "Even in death, knightly bones are fragrant.",
-      "singableText": "Even in death, knightly bones are fragrant.",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "Even",
-          "start": 80.5,
-          "end": 80.818
-        },
-        {
-          "text": "in",
-          "start": 80.818,
-          "end": 81.136
-        },
-        {
-          "text": "death",
-          "start": 81.136,
-          "end": 81.453
-        },
-        {
-          "text": ",",
-          "start": 81.453,
-          "end": 81.771
-        },
-        {
-          "text": "knightly",
-          "start": 81.771,
-          "end": 82.089
-        },
-        {
-          "text": "bones",
-          "start": 82.089,
-          "end": 82.407
-        },
-        {
-          "text": "are",
-          "start": 82.407,
-          "end": 82.724
-        },
-        {
-          "text": "fragrant",
-          "start": 82.724,
-          "end": 83.042
-        },
-        {
-          "text": ".",
-          "start": 83.042,
-          "end": 83.36
-        }
-      ]
-    },
-    {
-      "id": "l22",
-      "start": 83.36,
-      "end": 86.2,
-      "text": "They need not blush before the world's heroes.",
-      "singableText": "They need not blush before the world's heroes.",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "They",
-          "start": 83.36,
-          "end": 83.676
-        },
-        {
-          "text": "need",
-          "start": 83.676,
-          "end": 83.991
-        },
-        {
-          "text": "not",
-          "start": 83.991,
-          "end": 84.307
-        },
-        {
-          "text": "blush",
-          "start": 84.307,
-          "end": 84.622
-        },
-        {
-          "text": "before",
-          "start": 84.622,
-          "end": 84.938
-        },
-        {
-          "text": "the",
-          "start": 84.938,
-          "end": 85.253
-        },
-        {
-          "text": "world's",
-          "start": 85.253,
-          "end": 85.569
-        },
-        {
-          "text": "heroes",
-          "start": 85.569,
-          "end": 85.884
-        },
-        {
-          "text": ".",
-          "start": 85.884,
-          "end": 86.2
-        }
-      ]
-    },
-    {
-      "id": "l23",
-      "start": 88.8,
-      "end": 91.14,
-      "text": "Who can speak for the lone knight?",
-      "singableText": "Who can speak for the lone knight?",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "Who",
-          "start": 88.8,
-          "end": 89.093
-        },
-        {
-          "text": "can",
-          "start": 89.093,
-          "end": 89.385
-        },
-        {
-          "text": "speak",
-          "start": 89.385,
-          "end": 89.677
-        },
-        {
-          "text": "for",
-          "start": 89.677,
-          "end": 89.97
-        },
-        {
-          "text": "the",
-          "start": 89.97,
-          "end": 90.263
-        },
-        {
-          "text": "lone",
-          "start": 90.263,
-          "end": 90.555
-        },
-        {
-          "text": "knight",
-          "start": 90.555,
-          "end": 90.847
-        },
-        {
-          "text": "?",
-          "start": 90.847,
-          "end": 91.14
-        }
-      ]
-    },
-    {
-      "id": "l24",
-      "start": 91.14,
-      "end": 93.96,
-      "text": "White hair drifts toward a fairy realm.",
-      "singableText": "White hair drifts toward a fairy realm.",
-      "role": "lyric",
-      "tokens": [
-        {
-          "text": "White",
-          "start": 91.14,
-          "end": 91.493
-        },
-        {
-          "text": "hair",
-          "start": 91.493,
-          "end": 91.845
-        },
-        {
-          "text": "drifts",
-          "start": 91.845,
-          "end": 92.197
-        },
-        {
-          "text": "toward",
-          "start": 92.197,
-          "end": 92.55
-        },
-        {
-          "text": "a",
-          "start": 92.55,
-          "end": 92.903
-        },
-        {
-          "text": "fairy",
-          "start": 92.903,
-          "end": 93.255
-        },
-        {
-          "text": "realm",
-          "start": 93.255,
-          "end": 93.607
-        },
-        {
-          "text": ".",
-          "start": 93.607,
-          "end": 93.96
+          "start": 92.933,
+          "end": 93.42
         }
       ]
     }
   ],
   "provenance": {
     "vocalSet": "zh-vocal",
-    "correction": "Original-poem ACE experiment. Candidate 3 selected from four exact-poem renders. Timings use vocal-stem medium/large no-VAD ASR. The active Mandarin text preserves Li Bai's original poem where the rendered syllables are sound-close, but the production note documents that classical diction is imperfect and some lines are weakly recovered."
+    "correction": "Original-poem ACE rerun. Seed 734114 selected from fifteen exact-poem candidates. Timings use selected-audio and vocal-stem large-v3 ASR plus no-VAD segment anchors. The active Mandarin text preserves Li Bai's original poem where rendered syllables are sound-close, shows the rendered repeat around 千里不留行/事了拂衣去, and omits no-VAD hallucinated credits inside the silent intro."
   }
 }
