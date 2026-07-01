@@ -13,6 +13,18 @@ songs that sounded good and aligned well with their lyrics:
 The goal is repeatable: generate a beautiful song first, then publish only
 lyrics and timing that match the actual rendered audio.
 
+Detailed `越人歌` case study and recursive-refinement playbook:
+
+```text
+references/yue-ren-ge-recursive-refinement-playbook-2026-07-01.md
+```
+
+Reusable pack generator for future classical-poem experiments:
+
+```text
+scripts/prepare_ace_poem_refinement_pack.py
+```
+
 ## Core Rule
 
 Use this priority order:
