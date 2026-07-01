@@ -261,7 +261,7 @@ long poem problem: too much text -> select original hooks
 
 The long-poem original-text route should:
 
-- find the most 朗朗上口 / 啷啷上口 original lines;
+- find the most 朗朗上口 original lines;
 - prefer lines with clean rhyme, vowel color, parallelism, and strong imagery;
 - preserve exact source wording for selected lines;
 - omit less musical or overly dense sections instead of cramming them;

@@ -253,7 +253,7 @@ long poem
 
 What to look for:
 
-- 朗朗上口 / 啷啷上口: lines with clean mouth-feel, clear vowels, and natural
+- 朗朗上口: lines with clean mouth-feel, clear vowels, and natural
   phrase endings;
 - 合乎音韵: repeated vowel/rhyme colors, balanced tones, parallel structure,
   and lines that can sit on melody without rushing;
