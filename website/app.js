@@ -251,7 +251,17 @@ function chords() {
 }
 
 function activeMusical() {
-  return activePlayableAsset()?.musical || state.manifest?.musical || {};
+  const manifestMusical = state.manifest?.musical || {};
+  const primaryMusical = state.manifest?.assets?.primaryAudio?.musical || {};
+  const assetMusical = activePlayableAsset()?.musical || {};
+  const timeline = (...values) => values.find((value) => Array.isArray(value) && value.length) || [];
+  return {
+    ...manifestMusical,
+    ...primaryMusical,
+    ...assetMusical,
+    chords: timeline(assetMusical.chords, primaryMusical.chords, manifestMusical.chords),
+    beats: timeline(assetMusical.beats, primaryMusical.beats, manifestMusical.beats)
+  };
 }
 
 function selectedLyricTracks() {
