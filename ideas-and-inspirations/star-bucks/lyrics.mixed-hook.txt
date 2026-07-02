@@ -1,0 +1,22 @@
+# Star Bucks - Optional Mixed Hook Version
+
+Use this only if a mixed-language render is desired. The main public version
+should remain English-first for clearer ACE vocal recovery.
+
+[Chorus]
+Star bucks, star bucks
+Running through the sea
+星光 on the midnight waves
+Still swimming next to me
+
+Star bucks, star bucks
+Hoshi, lead me near
+If you can cross the blackest water
+I can make it here
+
+[Outro]
+星光, stay awake
+Hoshi, do not disappear
+The sea is wide, the heart is tired
+But I will make it here
+
